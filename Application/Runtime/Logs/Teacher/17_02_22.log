@@ -1,0 +1,477 @@
+[ 2017-02-22T19:26:56+08:00 ] 127.0.0.1 /teacher.php/Practice/addCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0000s ]
+SQL: INSERT INTO `dg_corporation` (`name`,`city`,`type`,`contact`,`position`,`address`,`addtime`) VALUES ('传递出的','苏州','国资','对的','','需','2017-02-22 19:26:56') [ RunTime:0.0500s ]
+
+[ 2017-02-22T19:26:58+08:00 ] 127.0.0.1 /teacher.php/Corporation
+ERR: 无法加载控制器:Corporation
+
+[ 2017-02-22T19:27:20+08:00 ] 127.0.0.1 /teacher.php/Corporation/index
+ERR: 无法加载控制器:Corporation
+
+[ 2017-02-22T19:27:49+08:00 ] 127.0.0.1 /teacher.php/teacher.php/Practice/corporation
+ERR: 无法加载控制器:Teacher.php
+
+[ 2017-02-22T19:32:02+08:00 ] 127.0.0.1 /teacher.php/Practice/addCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T20:28:22+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T20:31:19+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T20:31:27+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T20:42:34+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T20:50:18+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T20:50:26+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+
+[ 2017-02-22T20:50:46+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0060s ]
+
+[ 2017-02-22T20:53:16+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0050s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`= 1 in(2,3,4) [ RunTime:0.0010s ]
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 in(2,3,4)
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 in(2,3,4)
+
+[ 2017-02-22T20:54:15+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`= 1 in(2,3) [ RunTime:0.0000s ]
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 in(2,3)
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 in(2,3)
+
+[ 2017-02-22T20:55:41+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in(2,3) [ RunTime:0.0240s ]
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in(2,3)
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in(2,3)
+
+[ 2017-02-22T20:56:47+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0080s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in(4) [ RunTime:0.0010s ]
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in(4)
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in(4)
+
+[ 2017-02-22T20:59:21+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T20:59:51+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T21:00:53+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T21:01:13+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0060s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in(4) [ RunTime:0.0000s ]
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in(4)
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in(4)
+
+[ 2017-02-22T21:03:44+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T21:04:10+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T21:05:15+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T21:05:27+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T21:05:57+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T21:06:08+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T21:07:11+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+
+[ 2017-02-22T21:08:09+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in(4) [ RunTime:0.2068s ]
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in(4)
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in(4)
+
+[ 2017-02-22T21:08:36+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in(4) [ RunTime:0.0010s ]
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in(4)
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in(4)
+
+[ 2017-02-22T21:08:54+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in (4) [ RunTime:0.0010s ]
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in (4)
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in (4)
+
+[ 2017-02-22T21:09:34+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0050s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in (4) [ RunTime:0.0010s ]
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in (4)
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= 1 where `id` in (4)
+
+[ 2017-02-22T21:13:42+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: area E:\work\ye\Application\Teacher\Controller\PracticeController.class.php 第 130 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in ()
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in ()
+
+[ 2017-02-22T21:14:06+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in (4) [ RunTime:0.0000s ]
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in (4)
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in (4)
+
+[ 2017-02-22T21:15:58+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in (4) [ RunTime:0.0010s ]
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in (4)
+ERR: :
+ [ SQL语句 ] : UPDATE `dg_corporation` SET `isUsed`= -1 where `id` in (4)
+
+[ 2017-02-22T21:28:08+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+ERR: 表达式错误:4
+
+[ 2017-02-22T21:30:46+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+
+[ 2017-02-22T21:30:55+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+
+[ 2017-02-22T21:31:09+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0060s ]
+
+[ 2017-02-22T21:31:17+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+
+[ 2017-02-22T21:31:47+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+
+[ 2017-02-22T21:32:14+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0050s ]
+
+[ 2017-02-22T21:33:00+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+
+[ 2017-02-22T21:33:25+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0070s ]
+
+[ 2017-02-22T21:34:36+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+
+[ 2017-02-22T21:36:27+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+
+[ 2017-02-22T21:36:40+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0050s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE ( `id` = 2 ) [ RunTime:0.0180s ]
+
+[ 2017-02-22T21:37:51+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0050s ]
+
+[ 2017-02-22T21:38:07+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+ERR: 表达式错误:4
+
+[ 2017-02-22T21:38:25+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0050s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 4 [ RunTime:0.0010s ]
+
+[ 2017-02-22T21:38:36+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0050s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE `id` = 4 [ RunTime:0.0010s ]
+
+[ 2017-02-22T21:38:43+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2017-02-22T21:38:52+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0050s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 2 [ RunTime:0.0020s ]
+
+[ 2017-02-22T21:39:27+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0698s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 2 [ RunTime:0.0156s ]
+
+[ 2017-02-22T21:39:34+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0020s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2017-02-22T21:39:56+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0060s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2017-02-22T21:40:05+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0000s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE `id` = 3 [ RunTime:0.0000s ]
+
+[ 2017-02-22T21:40:14+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0040s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2017-02-22T21:40:30+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0000s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE `id` = 4 [ RunTime:0.0000s ]
+
+[ 2017-02-22T21:40:35+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0000s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 4 [ RunTime:0.0000s ]
+
+[ 2017-02-22T21:40:41+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0000s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE `id` = 4 [ RunTime:0.0000s ]
+
+[ 2017-02-22T21:40:47+08:00 ] 127.0.0.1 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: USERNAME E:\work\ye\Application\Teacher\Controller\CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0000s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 3 [ RunTime:0.0000s ]
+
+[ 2017-02-22T21:47:05+08:00 ] 127.0.0.1 /teacher.php/Apply/corporation.html
+ERR: 1054:Unknown column 'change.type' in 'where clause'
+ [ SQL语句 ] : SELECT myChange.id AS chid,myChange.applytime AS applytime,myChange.profession AS profession,myChange.insurance AS insurance,myChange.reason AS reason,myChange.status AS status,Corporation.name AS corname,Corporation.address AS address,Practice.guide AS guide,Practice.position AS position,Student.name AS stuname,Student.studentno AS studentno,Student.phone AS phone,Class.classname AS classname,Profession.name AS proname FROM dg_change myChange  JOIN dg_corporation Corporation ON myChange.corporation_id = Corporation.id  JOIN dg_practice Practice ON myChange.corporation_id = Practice.corporation_id  JOIN dg_student Student ON Student.studentno = myChange.student_id  JOIN dg_class Class ON Student.classno = Class.id  JOIN dg_profession Profession ON Class.profession = Profession.id WHERE ( change.type = 1 ) 
+

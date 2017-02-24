@@ -1,0 +1,172 @@
+<include file="Base/header" />
+
+<!-------------------------------------- 头部结束 -------------------------------------->
+<!-------------------------------------- 内容开始 -------------------------------------->
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <div class="user">
+                    <p><img src="__PUBLIC__/Student/img/avatar1.jpg" alt="">
+                        <a href=''><?php echo getLoginUsername();?></a>
+                        <i></i>
+                    </p>
+                    <div class="ex">
+                        <p><a href="">个人信息</a></p>
+                        <p><a href="">修改密码</a></p>
+                        <p><a href="/index.php/student/login/logout">退出</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="" class="on">周报</a></li>
+                    <li><a href="">月报</a></li>
+                    <li><a href="">实习总结</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ht15"></div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht10"></div>
+            <div class="ui-filter">
+                <div class="select">
+                    <p><a href="">时间</a></p>
+                    <div class="ex">
+                        <div class="time">
+                            <p>月份</p>
+                            <div class="ct">
+                                <table>
+                                    <tr>
+                                        <td><a href="">1</a></td>
+                                        <td><a href="">2</a></td>
+                                        <td><a href="" class="on">3</a></td>
+                                        <td><a href="">4</a></td>
+                                        <td><a href="">5</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">6</a></td>
+                                        <td><a href="">7</a></td>
+                                        <td><a href="">8</a></td>
+                                        <td><a href="">9</a></td>
+                                        <td><a href="">10</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">11</a></td>
+                                        <td><a href="">12</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p><a href="">批阅情况</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <p><a href="">已批阅</a></p>
+                            <p><a href="">未批阅</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <a href="" class="bt">查询</a>
+            </div>
+            <div class="ht30"></div>
+            <div class="ui-addone">
+                <p>
+                    <a href="/index.php/student/report/add" class="bt add">补交实习报告</a>
+                </p>
+            </div>
+            <div class="ht15"></div>
+            <div class="ui-table">
+                <div class="hd">
+                    <div class="tool">
+                        <p>
+                            <a href="">新增</a>
+                            &nbsp;
+                            <a href="">查询</a>
+                            &nbsp;
+                            <a href="">导入</a>
+                            &nbsp;
+                            <a href="">导出</a>
+                            &nbsp;
+                            <a href="">删除</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="ct">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><b>学号</b></td>
+                            <td><b>提交人</b></td>
+                            <td><b>班级</b></td>
+                            <td><b>提交时间</b></td>
+                            <td><b>实习单位</b></td>
+                            <td><b>评审结果</b></td>
+                            <td><b>操作</b></td>
+                        </tr>
+                        <volist name="data" id="vo">
+                        <tr>
+                            <td><a href="" class="cbox"></a></td>
+                            <td>{$vo.studentno}</td>
+                            <td>{$vo.name}</td>
+                            <td>{$vo.classname}</td>
+                            <td>{$vo.pubtime}</td>
+                            <td>&nbsp;</td>
+                            <td>{$vo.status|status}</td>
+                            <td>
+                                <a href="">编辑</a>
+                                <a href="">删除</a>
+                            </td>
+                        </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="ht35"></div>
+            <div class="ui-paging">
+                <span>共15页，共143条记录</span>
+                &nbsp;
+                <ul>
+                    <li><a href=""><</a></li>
+                    <li><a href="" class="on">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">></a></li>
+                </ul>
+                <div class="pull-left">
+                    <a href="" class="cbox"><i></i>全选</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+<!-------------------------------------- 尾部开始 -------------------------------------->
+</body>
+</html>
+<style>
+
+</style>
+<script>
+    $(function(){
+
+    });
+</script>

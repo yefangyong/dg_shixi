@@ -1,0 +1,225 @@
+<include file="Practice/nav"/>
+
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <div class="user">
+                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
+                        <a href="">董嘉耀</a>
+                        <i></i>
+                    </p>
+                    <div class="ex">
+                        <p><a href="">个人信息</a></p>
+                        <p><a href="">修改密码</a></p>
+                        <p><a href="">退出</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="ct">
+                    <ul>
+                        <li><a href="{:U('Practice/index')}" class="on">学生实习安排</a></li>
+                        <li><a href="{:U('Practice/corporation')}">实习企业管理</a></li>
+                        <li><a href="">合同管理</a></li>
+                        <li><a href="">学生考评设置</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>
+            </div>
+        </div>
+    </div>
+    <div class="ht15"></div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht10"></div>
+            <div class="ui-filter">
+                <div class="select">
+                    <p><a href="">实习批次</a></p>
+                    <div class="ex">
+                        <div class="list" style="width: 190px;">
+                            <p><a href="">【414】2009~2010批次</a></p>
+                            <p><a href="">【413】2008~2009批次</a></p>
+                            <p><a href="">【412】2008~2009批次</a></p>
+                            <p><a href="">【414】2009~2010批次</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p id="dept"><a href="javascript:void(0)" onchange="checkChange()">学部</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <volist name="dept" id="v">
+                                <p><a href="">{$v.name}</a></p>
+                            </volist>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p id="profession"><a href="">专业</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <volist name="profession" id="v">
+                                <p><a href="">{$v.name}</a></p>
+                            </volist>
+                            <!--<p><a href="">机械设计</a></p>-->
+                            <!--<p><a href="">电气自动化</a></p>-->
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p id="class"><a href="">班级</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <volist name="class" id="v">
+                                <p><a href="">{$v.classname}</a></p>
+                            </volist>
+
+                            <!--<p><a href="">自动化002</a></p>-->
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p><a href="">学号/姓名</a></p>
+                    <div class="ex">
+                        <div class="list" style="width: 140px;">
+                            <p><a href="">1687287 董嘉耀</a></p>
+                            <p><a href="">0976267 郭德纲</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p><a href="">实习单位</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <p><a href="">金龙集团</a></p>
+                            <p><a href="">安溪太阳能</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <a href="javascript:void(0)" class="bt">查询</a>
+            </div>
+            <div class="ht30"></div>
+            <div class="ui-table">
+                <div class="hd">
+                    <div class="tool">
+                        <p>
+                            <a href="">批量安排岗位</a>
+                            &nbsp;
+                            <a href="javascript:void(0)" id="cancel">取消安排岗位</a>
+                            &nbsp;
+                            <a href="">导入</a>
+                            &nbsp;
+                            <a href="">导出</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="ct">
+                    <div class="tb">
+                        <table style="width: 140%;">
+                            <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><b>学号</b></td>
+                                <td><b>姓名</b></td>
+                                <td><b>班级</b></td>
+                                <td><b>联系电话</b></td>
+                                <td><b>实习单位</b></td>
+                                <td><b>实习岗位</b></td>
+                                <td><b>校内指导老师</b></td>
+                                <td><b>校外指导老师</b></td>
+                                <td><b>安排方式</b></td>
+                                <td><b>操作</b></td>
+                            </tr>
+                            <volist name="list" id="v">
+                                <tr>
+                                    <td><a href="" class="cbox"></a></td>
+                                    <td>{$v.student_id}</td>
+                                    <td>{$v.stuname}</td>
+                                    <td>{$v.classname}</td>
+                                    <td>{$v.phone}</td>
+                                    <td>{$v.corname}</td>
+                                    <td>{$v.position}</td>
+                                    <td>{$v.teacher}</td>
+                                    <td>{$v.guide}</td>
+                                    <td>{$v.mode|setPracticeMode}</td>
+                                    <td>
+                                        <if condition="$v.mode eq 1 ">
+                                            <p>无需操作</p>
+                                            <elseif condition="$v.mode eq 2"/>
+                                            <a href="__CONTROLLER__/arrangement/id/{$v.student_id}">安排岗位</a>
+                                        </if>
+                                    </td>
+                                </tr>
+                            </volist>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>
+                </div>
+            </div>
+            <div class="ht35"></div>
+            <div class="ht35"></div>
+            <div class="ui-paging">
+                <span>共{$num}页，共{$count}条记录</span>
+                &nbsp;
+                <ul>
+                    <li><a href=""><</a></li>
+                    <li><a href="" class="on">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">></a></li>
+                </ul>
+                <div class="pull-left">
+                    <a href="" class="cbox"><i></i>全选</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+    </div>
+</footer>
+<script>
+    $(function(){
+       $('#cancel').click(function(){
+          layer.msg('删除');
+       });
+
+       function  checkChange(){
+           console.log($(this).text());
+       }
+
+
+
+      $('.bt').click(function(){
+          $dept = $('#dept').text();
+          $profession = $('#profession').text();
+          $class = $('#class').text();
+//          console.log($data);
+         var $url = "{:U('Practice/index')}";
+          $.ajax({
+              'url':$url,
+              'type':'post',
+              'data': {
+                  'dept':$dept,
+                  'profession':$profession,
+                  'class':$class
+              },
+              'dataType':'json',
+              success:function(msg){
+
+              }
+          });
+      });
+
+
+    });
+</script>

@@ -1,0 +1,387 @@
+[ 2017-02-20T16:05:16+08:00 ] 127.0.0.1 /index.php/student/report/js/agent/agent.js?_=1487577915994
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T16:05:25+08:00 ] 127.0.0.1 /index.php/student/report/js/agent/agent.js?_=1487577924542
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T16:05:33+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0060s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0060s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:33')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:33')
+
+[ 2017-02-20T16:05:36+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0050s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0070s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:36')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:36')
+
+[ 2017-02-20T16:05:36+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0050s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0050s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:36')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:36')
+
+[ 2017-02-20T16:05:36+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0050s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0040s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:36')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:36')
+
+[ 2017-02-20T16:05:36+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0040s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0050s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:36')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:36')
+
+[ 2017-02-20T16:05:36+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0040s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0040s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:36')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:36')
+
+[ 2017-02-20T16:05:37+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0050s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0050s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:37')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:37')
+
+[ 2017-02-20T16:05:37+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0030s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0030s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:37')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:37')
+
+[ 2017-02-20T16:05:37+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0050s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0040s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:37')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:37')
+
+[ 2017-02-20T16:05:37+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0040s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0300s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:37')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:37')
+
+[ 2017-02-20T16:05:37+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0050s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0050s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:37')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','ada','asdas','','asda','asda',NULL,'2017-02-20 :16:05:37')
+
+[ 2017-02-20T16:05:54+08:00 ] 127.0.0.1 /index.php/student/report/js/agent/agent.js?_=1487577954205
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T16:09:10+08:00 ] 127.0.0.1 /index.php/student/report/js/agent/agent.js?_=1487578150002
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T16:09:14+08:00 ] 127.0.0.1 /index.php/student/apply/add
+ERR: 非法操作:add
+
+[ 2017-02-20T16:09:18+08:00 ] 127.0.0.1 /index.php/student/report/js/agent/agent.js?_=1487578158629
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T16:09:26+08:00 ] 127.0.0.1 /index.php/student/apply/js/agent/agent.js?_=1487578166764
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T16:09:31+08:00 ] 127.0.0.1 /index.php/student/apply/js/agent/agent.js?_=1487578171207
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T16:09:33+08:00 ] 127.0.0.1 /index.php?m=student&c=apply&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-20T16:10:12+08:00 ] 127.0.0.1 /index.php/student/login/js/agent/agent.js?_=1487578212044
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T16:10:17+08:00 ] 127.0.0.1 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0960s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-20T16:10:23+08:00 ] 127.0.0.1 /index.php/student/report/js/agent/agent.js?_=1487578223327
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T16:10:25+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-20T16:10:35+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0040s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0050s ]
+SQL: INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','dasd','sdfas','','asdfa','asfd','20170209','2017-02-20 :16:10:35') [ RunTime:0.0000s ]
+
+[ 2017-02-20T17:20:36+08:00 ] 127.0.0.1 /index.php/student/report/js/agent/agent.js?_=1487582436082
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T17:20:44+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-20T17:20:51+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0060s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0070s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:51')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:51')
+
+[ 2017-02-20T17:20:54+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0040s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0050s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:53')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:53')
+
+[ 2017-02-20T17:20:54+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0050s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0050s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:54')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:54')
+
+[ 2017-02-20T17:20:54+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0050s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0030s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:54')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:54')
+
+[ 2017-02-20T17:20:54+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0060s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0050s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:54')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:54')
+
+[ 2017-02-20T17:20:54+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0050s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0050s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:54')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:54')
+
+[ 2017-02-20T17:20:55+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0050s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0040s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:55')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:20:55')
+
+[ 2017-02-20T17:21:06+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0050s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0070s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:21:06')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','sdas','sada','','sda','sda',NULL,'2017-02-20 :17:21:06')
+
+[ 2017-02-20T17:40:32+08:00 ] 127.0.0.1 /index.php/student/report/js/agent/agent.js?_=1487583632306
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T19:22:42+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-20T19:22:50+08:00 ] 127.0.0.1 /index.php/student/report/js/agent/agent.js?_=1487589770016
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T19:22:59+08:00 ] 127.0.0.1 /index.php/student/report/js/agent/agent.js?_=1487589778953
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T19:23:10+08:00 ] 127.0.0.1 /index.php/student/report/js/agent/agent.js?_=1487589790217
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T19:23:17+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0050s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0070s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','sdfas','sfdas','','sdfas','sdfas',NULL,'2017-02-20 :19:23:17')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','sdfas','sfdas','','sdfas','sdfas',NULL,'2017-02-20 :19:23:17')
+
+[ 2017-02-20T19:23:41+08:00 ] 127.0.0.1 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0060s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0060s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','sdfas','sfdas','','sdfas','sdfas',NULL,'2017-02-20 :19:23:41')
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('数学','sdfas','sfdas','','sdfas','sdfas',NULL,'2017-02-20 :19:23:41')
+
+[ 2017-02-20T19:23:59+08:00 ] 127.0.0.1 /index.php/student/report/js/agent/agent.js?_=1487589839778
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:js
+
+[ 2017-02-20T20:41:23+08:00 ] 127.0.0.1 /index.php/student/login/js/agent/agent.js?_=1487594483806
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:js
+

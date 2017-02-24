@@ -1,0 +1,320 @@
+[ 2017-02-23T15:50:48+08:00 ] 61.235.37.202 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="胡家园" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-02-23T15:51:47+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487836316550
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:51:49+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487836318987
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:51:54+08:00 ] 49.77.227.198 /index.php/student/js/agent/agent.js?_=1487836352444
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-02-23T15:51:58+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487836327290
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:51:59+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487836329035
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:52:08+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487836337974
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:52:09+08:00 ] 49.77.227.198 /index.php/student/js/agent/agent.js?_=1487836367796
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-02-23T15:52:11+08:00 ] 61.235.37.202 /index.php/Student/Contact/index.html
+ERR: 无法加载控制器:Contact
+
+[ 2017-02-23T15:52:11+08:00 ] 49.77.227.198 /index.php/student/report/js/agent/agent.js?_=1487836369878
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:52:13+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487836342295
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:52:15+08:00 ] 61.235.37.202 /index.php/Student/Notice/js/agent/agent.js?_=1487836344523
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:52:16+08:00 ] 61.235.37.202 /index.php/Student/Grade/index.html
+ERR: 无法加载控制器:Grade
+
+[ 2017-02-23T15:52:18+08:00 ] 61.235.37.202 /index.php/Student/Notice/js/agent/agent.js?_=1487836347849
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:52:26+08:00 ] 101.226.85.67 /index.php/Student/Grade/index.html
+ERR: 无法加载控制器:Grade
+
+[ 2017-02-23T15:52:34+08:00 ] 61.235.37.202 /index.php/Student/Notice/js/agent/agent.js?_=1487836363333
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:52:54+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487836383849
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:53:07+08:00 ] 49.77.227.198 /index.php/student/js/agent/agent.js?_=1487836425119
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-02-23T15:53:09+08:00 ] 49.77.227.198 /index.php/student/report/js/agent/agent.js?_=1487836427707
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:53:25+08:00 ] 61.235.37.202 /index.php?m=student&c=apply&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="胡家园" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( name="阿里" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_practice` (`profession`,`insurance`,`position`,`phone`,`address`,`starttime`,`endtime`,`student_id`,`corporation_id`) VALUES ('0','0','java','13053112897','安徽省','2016-12-1','2017-02-23 15:50','20170210','6') [ RunTime:0.0001s ]
+
+[ 2017-02-23T15:53:33+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487836422960
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:54:11+08:00 ] 61.235.37.202 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="胡家园" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','大神','萨达','/upload/2017/02/23/58ae951d741b3.jpg','萨达','萨芬的','20170210','2017-02-23 :15:54:11') [ RunTime:0.0001s ]
+
+[ 2017-02-23T15:54:37+08:00 ] 49.77.227.198 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_report` (`course`,`title`,`content`,`pic`,`nexplan`,`address`,`student_id`,`pubtime`) VALUES ('英语','上传照片','上传照片，上传照片上传照上传照片上传照片上传照片上传照片
+上传照片上传照片上传照片上传照片上传照片上传照片上传照片
+上传照片上传照片','/upload/2017/02/23/58ae94f988db9.png','点点滴滴 点点滴滴  点点滴滴点点滴滴  点点滴滴','澳门','20170209','2017-02-23 :15:54:37') [ RunTime:0.0001s ]
+
+[ 2017-02-23T15:54:40+08:00 ] 61.235.37.202 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-02-23T15:54:41+08:00 ] 61.235.37.202 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-02-23T15:54:52+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487836501122
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:59:05+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487836754359
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:59:44+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487836793631
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T15:59:51+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487836800668
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T16:00:23+08:00 ] 61.235.37.202 /index.php?m=student&c=apply&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( name="阿里" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_practice` (`profession`,`insurance`,`position`,`phone`,`address`,`starttime`,`endtime`,`student_id`,`corporation_id`) VALUES ('0','0','c++','13053112897','安徽省','2016-12-1','2017-02-23 16:00','20170209','6') [ RunTime:0.0001s ]
+
+[ 2017-02-23T16:00:36+08:00 ] 61.235.37.202 /index.php/Student/Contact/index.html
+ERR: 无法加载控制器:Contact
+
+[ 2017-02-23T16:00:39+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487836849112
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T16:00:46+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487836855452
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+ERR: 非法操作:js
+
+[ 2017-02-23T16:01:33+08:00 ] 61.235.37.202 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: corporation_id /var/www/html/Application/Student/Controller/ApplyController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:33','20170209',NULL)
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:33','20170209',NULL)
+
+[ 2017-02-23T16:01:35+08:00 ] 61.235.37.202 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: corporation_id /var/www/html/Application/Student/Controller/ApplyController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:35','20170209',NULL)
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:35','20170209',NULL)
+
+[ 2017-02-23T16:01:35+08:00 ] 61.235.37.202 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: corporation_id /var/www/html/Application/Student/Controller/ApplyController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:35','20170209',NULL)
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:35','20170209',NULL)
+
+[ 2017-02-23T16:01:35+08:00 ] 61.235.37.202 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: corporation_id /var/www/html/Application/Student/Controller/ApplyController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:35','20170209',NULL)
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:35','20170209',NULL)
+
+[ 2017-02-23T16:01:35+08:00 ] 61.235.37.202 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: corporation_id /var/www/html/Application/Student/Controller/ApplyController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:35','20170209',NULL)
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:35','20170209',NULL)
+
+[ 2017-02-23T16:01:36+08:00 ] 61.235.37.202 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: corporation_id /var/www/html/Application/Student/Controller/ApplyController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:36','20170209',NULL)
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:36','20170209',NULL)
+
+[ 2017-02-23T16:01:43+08:00 ] 61.235.37.202 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: corporation_id /var/www/html/Application/Student/Controller/ApplyController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:43','20170209',NULL)
+ERR: 1048:Column 'corporation_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:01:43','20170209',NULL)
+
+[ 2017-02-23T16:04:02+08:00 ] 61.235.37.202 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-02-23T16:04:52+08:00 ] 61.235.37.202 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','java','0','0','我不想做了','2017-02-23 16:04:52','20170209','1') [ RunTime:0.0001s ]
+
+[ 2017-02-23T16:06:27+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487837197151
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+ERR: 非法操作:js
+

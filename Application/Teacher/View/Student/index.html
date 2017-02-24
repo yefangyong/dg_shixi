@@ -1,0 +1,168 @@
+<include file="Student/nav"/>
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <div class="user">
+                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
+                        <a href="">董嘉耀</a>
+                        <i></i>
+                    </p>
+                    <div class="ex">
+                        <p><a href="">个人信息</a></p>
+                        <p><a href="">修改密码</a></p>
+                        <p><a href="">退出</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="{:U('Student/index')}" class="on">学生管理</a></li>
+                </ul>
+        </div>
+    </div>
+    <div class="ht15"></div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht10"></div>
+            <div class="ui-filter">
+                <div class="select">
+                    <p><a href="">实习批次</a></p>
+                    <div class="ex">
+                        <div class="list" style="width: 190px;">
+                            <p><a href="">【414】2009~2010批次</a></p>
+                            <p><a href="">【413】2008~2009批次</a></p>
+                            <p><a href="">【412】2008~2009批次</a></p>
+                            <p><a href="">【414】2009~2010批次</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p><a href="">年级</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <p><a href="">2016级</a></p>
+                            <p><a href="">2015级</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p><a href="">学部</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <p><a href="">机械学院</a></p>
+                            <p><a href="">水利学院</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p><a href="">专业</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <p><a href="">机械设计</a></p>
+                            <p><a href="">电气自动化</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p><a href="">班级</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <p><a href="">机设011</a></p>
+                            <p><a href="">自动化002</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p><a href="">学号/姓名</a></p>
+                    <div class="ex">
+                        <div class="list" style="width: 140px;">
+                            <p><a href="">1687287 董嘉耀</a></p>
+                            <p><a href="">0976267 郭德纲</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <a href="" class="bt">查询</a>
+            </div>
+            <div class="ht30"></div>
+            <div class="ui-table">
+                <div class="hd">
+                    <div class="tool">
+                        <p>
+                            <a href="{:U('Student/add')}">新增</a>
+                            &nbsp;
+                            <a href="">导入</a>
+                            &nbsp;
+                            <a href="">导出</a>
+                            &nbsp;
+                            <a href="">删除</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="ct">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><b>学号</b></td>
+                            <td><b>姓名</b></td>
+                            <td><b>性别</b></td>
+                            <td><b>院系</b></td>
+                            <td><b>年级</b></td>
+                            <td><b>班级</b></td>
+                            <td><b>手机</b></td>
+                            <td><b>操作</b></td>
+                        </tr>
+                        <volist name="list" id="v">
+                            <tr>
+                                <td><a href="" class="cbox"></a></td>
+                                <td>{$v.studentno}</td>
+                                <td>{$v.name}</td>
+                                <td>{$v.sex}</td>
+                                <td>{$v.deptname}</td>
+                                <td>{$v.grade}</td>
+                                <td>{$v.classname}</td>
+                                <td>{$v.phone}</td>
+                                <td>
+                                    <a href="__CONTROLLER__/view/id/{$v.sid}">查看</a>
+                                    <a href="">编辑</a>
+                                    <a href="javascript:void(0)" id="del" attr-id="{$v.sid}">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="ht35"></div>
+            <div class="ui-paging">
+                <span>共15页，共143条记录</span>
+                &nbsp;
+                <ul>
+                    <li><a href=""><</a></li>
+                    <li><a href="" class="on">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">></a></li>
+                </ul>
+                <div class="pull-left">
+                    <a href="" class="cbox"><i></i>全选</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>

@@ -1,0 +1,215 @@
+
+<!-------------------------------------- 头部结束 -------------------------------------->
+<!-------------------------------------- 内容开始 -------------------------------------->
+<include file="Student/nav"/>
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <div class="user">
+                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
+                        <a href="">董嘉耀</a>
+                        <i></i>
+                    </p>
+                    <div class="ex">
+                        <p><a href="">个人信息</a></p>
+                        <p><a href="">修改密码</a></p>
+                        <p><a href="">退出</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><span></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ui-path">
+        <p>
+            <!--<a href="" class="home"></a>-->
+            <a href="{:U('Student/index')}">学生管理</a>
+            >
+            <a href="javascript:void(0)" class="on">新增学生信息</a>
+        </p>
+    </div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht10"></div>
+            <div class="ui-form style2">
+                <form class="form-horizontal" method="post" id="studentForm">
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">手机</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" maxlength="11" name="phone" style="width: 210px;" placeholder="请输入您的手机号码">
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">学号</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="studentno" style="width: 210px;" placeholder="请输入学号">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">姓名</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="name" style="width: 210px;" placeholder="请输入你的姓名">
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">密码</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="password" class="form-control" name="password" style="width: 210px;" placeholder="请设置您的密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">院系</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="select" style="width: 210px;">
+                                <p id="dept"><a href="">请选择院系名称</a></p>
+                                <div class="ex">
+                                    <volist name="dept" id="v">
+                                        <p><a href="javascript:void(0)">{$v.name}</a></p>
+                                    </volist>
+                                </div>
+                                <input type="hidden" name="dept">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">年级</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="select" style="width: 210px;">
+                                <p id="grade"><a href="">请选择所在年级</a></p>
+                                <div class="ex">
+                                    <p><a href="">2015级</a></p>
+                                    <p><a href="">2016级</a></p>
+                                </div>
+                                <input type="hidden" name="grade">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">班级</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="select" style="width: 210px;">
+                                <p id="class"><a href="">请选择班级名称</a></p>
+                                <div class="ex">
+                                    <volist name="class" id="v">
+                                        <p><a href="javascript:void(0)" class="class">{$v.classname}</a></p>
+                                    </volist>
+                                </div>
+                                <input type="hidden" name="class">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">班主任</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="master" style="width: 210px; color: #000000; background-color: #fff;" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">实习课程</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="course" style="width: 210px;">
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">性别</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text">
+                                <p>
+                                    <a href="javascript:void(0)" class="rbox on"><i></i>男</a>
+                                    <span class="wh50"></span>
+                                    <a href="javascript:void(0)"  class="rbox"><i></i>女</a>
+                                    <input type="hidden" name="gender">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">电子邮件</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="email" style="width: 210px;" placeholder="请输入电子邮箱">
+                        </div>
+                    </div>
+                    <div class="ht15"></div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            &nbsp;
+                        </div>
+                        <div class="col-sm-10">
+                            <button type='button' class="bt-btn1 style1">保存</button>
+                            <span class="wh40"></span>
+                            <button type="reset" class="bt-btn1 style2">取消</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<script>
+    $(function(){
+        $('.class').click(function(){
+            var $class = $('#class').text();
+            var $url = "{:U('Student/getMaster')}";
+            $.post($url,{'class':$class},function(msg){
+                $('input[name=master]').val(msg);
+            },'JSON');
+        });
+
+        $('.rbox').click(function(){
+           var $gender = $(this).text();
+           $('input[name=gender]').val($gender);
+        });
+
+      $('button[type=button]').click(function(){
+          var $dept = $('#dept').text();
+          var $class = $('#class').text();
+          console.log($class);
+          var $grade = $('#grade').text();
+          var $url = "{:U('Student/add')}";
+          $('input[name=dept]').val($dept);
+          $('input[name=class]').val($class);
+          $('input[name=grade]').val($grade);
+          $data = $('#studentForm').serialize();
+          $.ajax({
+              'url':$url,
+              'type':'post',
+              'data':$data,
+              'dataType':'json',
+              success:function(msg){
+                if(msg.status==0){
+                    layer.msg(msg.message,{icon:5});
+                }else{
+                    layer.msg(msg.message,{icon:6},function(msg){
+                        window.location.href="/teacher.php/Student";
+                    });
+                }
+              }
+          });
+      });
+    });
+</script>

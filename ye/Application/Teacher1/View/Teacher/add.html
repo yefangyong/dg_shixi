@@ -1,0 +1,185 @@
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <div class="user">
+                    <p><img src="__PUBLIC__/admin/img/avatar1.jpg" alt="">
+                        <a href="">董嘉耀</a>
+                        <i></i>
+                    </p>
+                    <div class="ex">
+                        <p><a href="">个人信息</a></p>
+                        <p><a href="">修改密码</a></p>
+                        <p><a href="">退出</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><span></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ui-path">
+        <p>
+            <a href="" class="home"></a>
+            <a href="">学生管理</a>
+            >
+            <a href="" class="on">新增学生信息</a>
+        </p>
+    </div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht10"></div>
+            <div class="ui-form style2">
+                <form class="form-horizontal" method="post" id="signUp_form">
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">手机</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="phone" style="width: 210px;" placeholder="请输入您的手机号码">
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">学号</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="studentno"  maxlength="8" style="width: 210px;" placeholder="请输入学号">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">姓名</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="name" style="width: 210px;" placeholder="请输入你的姓名">
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">密码</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="password" style="width: 210px;" placeholder="请设置您的密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">院系</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="select" style="width: 210px;" >
+                                <p><a href="javascript:void(0)">请选择院系名称</a></p>
+                                <!--<div class="ex" >-->
+                                    <!--<p><a href="">机械学院</a></p>-->
+                                    <!--<p><a href="">水利学院</a></p>-->
+                                <!--</div>-->
+                                <select name="department" class="ex clear-select" >
+                                    <volist name="dept" id="item">
+                                        <option value="{$item.id}"><p><a href="javascipt:void(0)">{$item.name}</a></p></option>
+                                    </volist>
+                                </select>
+
+                                <!--<div class="ex">-->
+                                    <!--<p><a href="">机械学院</a></p>-->
+                                    <!--<p><a href="">水利学院</a></p>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">年级</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="select" style="width: 210px;">
+                                <p><a href="">请选择所在年级（卫东）</a></p>
+                                <div class="ex">
+                                    <p><a href="">2015级</a></p>
+                                    <p><a href="">2016级</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">班级（卫东）</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="select" style="width: 210px;">
+                                <p><a href="">请选择班级名称</a></p>
+                                <div class="ex">
+                                    <p><a href="">机设0982</a></p>
+                                    <p><a href="">机设0983</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">班主任（卫东）</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="" style="width: 210px; color: #000000; background-color: #fff;" readonly="" placeholder="" value="班级确定，班主任即确定">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">实习课程(卫东)</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="" style="width: 210px;" placeholder="请选择班级名称">
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">性别</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text">
+                                <p>
+                                    <input type="radio" name="sex"   value="1"><a href="javascript:void(0)" class="rbox on"><i></i>男</a>
+                                    <span class="wh50"></span>
+                                    <input type="radio" name="sex"   value="0"><a href="javascript:void(0)" class="rbox "><i></i>女</a>
+                                    <!--<a href="" class="rbox on"></a>-->
+
+                                    <!--<a href="" class="rbox"></a>-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">电子邮件</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="email" style="width: 210px;" placeholder="请输入电子邮箱">
+                        </div>
+                    </div>
+                    <div class="ht15"></div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            &nbsp;
+                        </div>
+                        <div class="col-sm-10">
+                            <a href="javascript:void(0)" id="save" class="bt-btn1 style1">保存</a>
+                            <span class="wh40"></span>
+                            <a href="javascript:void(0)" class="bt-btn1 style2">取消</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+<script>
+
+
+
+    $(function(){
+        $('#save').click(function(){
+            $data = $('#signUp_form').serialize();
+            console.log($data);
+        });
+    })
+</script>

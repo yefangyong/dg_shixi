@@ -1,0 +1,300 @@
+[ 2017-02-24T18:07:37+08:00 ] 61.235.37.202 /index.php/student/js/agent/agent.js?_=1487930865036
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-02-24T18:07:42+08:00 ] 61.235.37.202 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-02-24T18:12:31+08:00 ] 61.235.37.202 /index.php/student/Notice/js/agent/agent.js?_=1487931160087
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:12:37+08:00 ] 61.235.37.202 /index.php/student/Notice/js/agent/agent.js?_=1487931166789
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:17:49+08:00 ] 61.235.37.202 /index.php/Student/Report/js/agent/agent.js?_=1487931478580
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:17:55+08:00 ] 61.235.37.202 /index.php/Student/Report/js/agent/agent.js?_=1487931485221
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:17:57+08:00 ] 61.235.37.202 /index.php/Student/Report/js/agent/agent.js?_=1487931487023
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:17:58+08:00 ] 61.235.37.202 /index.php/Student/Report/js/agent/agent.js?_=1487931487867
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:36:11+08:00 ] 61.235.37.202 /index.php/Student/apply/js/agent/agent.js?_=1487932580651
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:36:52+08:00 ] 61.235.37.202 /index.php/Student/Report/js/agent/agent.js?_=1487932621969
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:39:03+08:00 ] 61.235.37.202 /index.php/Student/Apply/js/agent/agent.js?_=1487932752446
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:39:05+08:00 ] 61.235.37.202 /index.php/Student/Report/js/agent/agent.js?_=1487932754898
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:39:15+08:00 ] 61.235.37.202 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-02-24T18:40:14+08:00 ] 61.235.37.202 /index.php/Student/Report/js/agent/agent.js?_=1487932823662
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:40:16+08:00 ] 61.235.37.202 /index.php/Student/Report/js/agent/agent.js?_=1487932825027
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:40:23+08:00 ] 61.235.37.202 /index.php/Student/Report/js/agent/agent.js?_=1487932829982
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:40:28+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487932838015
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:41:58+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487932927127
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:42:27+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487932956940
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:42:30+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487932959934
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:42:35+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487932964691
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:42:40+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487932969666
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:45:08+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487933117874
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:52:54+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487933583863
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:55:30+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487933739614
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:56:32+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487933801361
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:56:41+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487933811137
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T18:59:47+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487933996983
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:02:54+08:00 ] 61.235.37.202 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-02-24T19:03:09+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487934198799
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:04:19+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487934268693
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:04:25+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487934274326
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:04:28+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487934277410
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:05:12+08:00 ] 61.235.37.202 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_report` (`title`,`content`,`pic`,`address`,`student_id`,`pubtime`) VALUES ('你好','你好啊，测试，测试','/upload/2017/02/24/58b013615c131.jpg','安徽省','20170209','2017-02-24 :19:05:12') [ RunTime:0.0001s ]
+
+[ 2017-02-24T19:10:05+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487934614614
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009129s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:10:43+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487934652933
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:11:38+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487934707307
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:11:40+08:00 ] 61.235.37.202 /index.php/student/Report/js/agent/agent.js?_=1487934710212
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:11:42+08:00 ] 61.235.37.202 /index.php/student/Apply/js/agent/agent.js?_=1487934711970
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:11:49+08:00 ] 61.235.37.202 /index.php/student/Report/js/agent/agent.js?_=1487934718433
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:17:46+08:00 ] 61.235.37.202 /index.php/student/Apply/js/agent/agent.js?_=1487935075788
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:22:00+08:00 ] 61.235.37.202 /index.php/student/Apply/js/agent/agent.js?_=1487935329718
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:22:02+08:00 ] 61.235.37.202 /index.php/student/Report/js/agent/agent.js?_=1487935332066
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:22:10+08:00 ] 61.235.37.202 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-02-24T19:25:37+08:00 ] 61.235.37.202 /index.php?m=student&c=report&a=index
+ERR: 1146:Table 'shixi1.dg_coporation' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dg_coporation`
+
+[ 2017-02-24T19:25:56+08:00 ] 61.235.37.202 /index.php?m=student&c=report&a=index
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id=Array ) LIMIT 1  
+
+[ 2017-02-24T19:26:24+08:00 ] 61.235.37.202 /index.php?m=student&c=report&a=index
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2017-02-24T19:33:46+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487936035224
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:33:50+08:00 ] 61.235.37.202 /index.php/student/report/js/agent/agent.js?_=1487936039838
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+ERR: 非法操作:js
+
+[ 2017-02-24T19:34:14+08:00 ] 61.235.37.202 /index.php/student/Report/js/agent/agent.js?_=1487936063536
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: 非法操作:js
+

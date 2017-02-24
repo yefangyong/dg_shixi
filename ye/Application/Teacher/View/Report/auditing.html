@@ -1,0 +1,166 @@
+
+<!-------------------------------------- 头部结束 -------------------------------------->
+<!-------------------------------------- 内容开始 -------------------------------------->
+<include file="Report/nav"/>
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <div class="user">
+                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
+                        <a href="">董嘉耀</a>
+                        <i></i>
+                    </p>
+                    <div class="ex">
+                        <p><a href="">个人信息</a></p>
+                        <p><a href="">修改密码</a></p>
+                        <p><a href="">退出</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="" class="on">周报</a></li>
+                    <li><a href="">月报</a></li>
+                    <li><a href="">实习总结</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ui-path">
+        <p>
+            <a href="" class="home"></a>
+            <a href="{:U('Apply/index')}">实习报告</a>
+            >
+            <a href="" class="on">未审核</a>
+        </p>
+    </div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht15"></div>
+            <div class="ui-article">
+                <div class="hd">
+                    <h3>{$report.title}</h3>
+                    <p>
+                        {$report.course}
+                        <span class="wh30"></span>
+                        {$report.pubtime}
+                    </p>
+                </div>
+                <div class="ct" style="font-size: 15px">
+                    {$report.content}
+                </div>
+            </div>
+            <div class="ht25"></div>
+            <div class="ui-form style3">
+                <form class="form-horizontal" method="post" id="audit-form">
+                    <input type="hidden" name="id" value="{$report.rid}">
+                    <div class="form-group">
+                        <div class="col-sm-1">
+                            <label for="" class="control-label">意见</label>
+                        </div>
+                        <div class="col-sm-11">
+                            <div class="textarea">
+                                <textarea class="form-control" name="suggestion">{$report.suggestion}</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-1">
+                            <label for="" class="control-label">结果</label>
+                        </div>
+                        <div class="col-sm-11">
+                            <div class="text">
+                                <p>
+                                <div style="width:400px;">
+                                    <div id="star1"></div>
+                                </div>
+                                <span class="color1" id="result1" style="font-size: 18px !important;"></span>
+                                    <input type="hidden" name="res" id="score">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-1">
+                            <label for="" class="control-label">定位</label>
+                        </div>
+                        <div class="col-sm-11">
+                            <div class="text">
+                                <p>{$report.address}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ht15"></div>
+                    <div class="form-group">
+                        <div class="col-sm-1">
+                            &nbsp;
+                        </div>
+                        <div class="col-sm-11">
+                            <button type="button" id="audit" class="bt-btn1 style1">提交审核</button>
+                            <span class="wh40"></span>
+                            <button type="reset" class="bt-btn1 style2">取消审核</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+<script src="__PUBLIC__/teacher/js/jquery.raty.js"></script>
+<script type="text/javascript">
+    //滑动星星评分组件
+    $(function() {
+        rat('star1', 'result1');
+        function rat(star,result){
+            star= '#' + star;
+            result= '#' + result;
+            $(star).raty({
+                hints: ['10','20', '30', '40', '50','60', '70', '80', '90', '100'],
+                path: "/Public/teacher/img",
+                starOff: 'star-off-big.png',
+                starOn: 'star-on-big.png',
+                size: 30,
+                start: 0,
+                showHalf: false,
+                target: result,
+                targetKeep : true,
+                click: function (score, evt) {
+                    var text = $(result).text();
+                    $('#score').val(text);
+                }
+            });
+        }
+    });
+</script>
+<script>
+    $(function(){
+        $('#audit').click(function(){
+            var $data = $("#audit-form").serialize();
+            var $url = "{:U('Report/auditing')}";
+            $.ajax({
+                'type':'post',
+                'url':$url,
+                'data':$data,
+                'dataType':'json',
+                success:function(msg){
+                    if((msg.status==0)||(msg.status==-1)){
+                        layer.msg(msg.message,{icon:5});
+                    }else{
+                        layer.msg(msg.message,{icon:6,time:2000},function(){
+                            window.location.href = "/teacher.php/Report";
+                        });
+                    }
+                }
+            });
+        });
+    })
+</script>
+<!-------------------------------------- 尾部开始 -------------------------------------->

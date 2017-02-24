@@ -1,0 +1,90 @@
+[ 2017-02-23T09:53:18+08:00 ] 49.77.227.198 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = 'yfy' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-02-23T09:53:36+08:00 ] 49.77.227.198 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 17 行.
+
+[ 2017-02-23T09:54:11+08:00 ] 49.77.227.198 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 17 行.
+
+[ 2017-02-23T15:46:00+08:00 ] 61.235.37.202 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = 'yfy' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-02-23T15:54:56+08:00 ] 49.77.227.198 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 17 行.
+
+[ 2017-02-23T15:56:04+08:00 ] 49.77.227.198 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='dddd',`score`='50',`status`='-1' WHERE ( `id` = 13 ) [ RunTime:0.0002s ]
+
+[ 2017-02-23T16:06:42+08:00 ] 61.235.37.202 /index.php/Teacher/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = 'yfy' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-02-23T16:23:09+08:00 ] 61.235.37.202 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_practice` SET `status`='1' WHERE ( `id` = 5 ) [ RunTime:0.0002s ]
+
+[ 2017-02-23T16:33:14+08:00 ] 61.235.37.202 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_class` WHERE ( classname="自动化002" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`content`,`class_id`,`user_id`,`pubtime`) VALUES ('fgdfs ','faf','2','100','2017-02-23 :16:33:14') [ RunTime:0.0001s ]
+
+[ 2017-02-23T16:33:21+08:00 ] 61.235.37.202 /index.php?m=teacher&c=notice&a=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_notice` WHERE ( id=15 ) [ RunTime:0.0001s ]
+
+[ 2017-02-23T16:45:19+08:00 ] 61.235.37.202 /index.php/Teacher/Notice/index.html
+ERR: 1054:Unknown column 'Notice.pro_id' in 'on clause'
+ [ SQL语句 ] : SELECT Notice.id AS nid,Notice.pubtime AS pubtime,Notice.title AS title,Notice.content AS content,Teacher.id AS tid,Teacher.name AS teacher_name,Profession.id AS pid,Profession.name AS name FROM dg_notice Notice  JOIN dg_teacher Teacher ON Notice.user_id = Teacher.teacherno  JOIN dg_profession Profession ON Notice.pro_id=Profession.id 
+
+[ 2017-02-23T16:45:29+08:00 ] 101.226.66.181 /index.php/Teacher/Notice/index.html
+ERR: 1054:Unknown column 'Notice.pro_id' in 'on clause'
+ [ SQL语句 ] : SELECT Notice.id AS nid,Notice.pubtime AS pubtime,Notice.title AS title,Notice.content AS content,Teacher.id AS tid,Teacher.name AS teacher_name,Profession.id AS pid,Profession.name AS name FROM dg_notice Notice  JOIN dg_teacher Teacher ON Notice.user_id = Teacher.teacherno  JOIN dg_profession Profession ON Notice.pro_id=Profession.id 
+
+[ 2017-02-23T16:45:55+08:00 ] 120.83.122.153 /index.php/Teacher/Notice/index.html
+ERR: 1054:Unknown column 'Notice.pro_id' in 'on clause'
+ [ SQL语句 ] : SELECT Notice.id AS nid,Notice.pubtime AS pubtime,Notice.title AS title,Notice.content AS content,Teacher.id AS tid,Teacher.name AS teacher_name,Profession.id AS pid,Profession.name AS name FROM dg_notice Notice  JOIN dg_teacher Teacher ON Notice.user_id = Teacher.teacherno  JOIN dg_profession Profession ON Notice.pro_id=Profession.id 
+
+[ 2017-02-23T16:46:10+08:00 ] 61.235.37.202 /index.php/Teacher/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+

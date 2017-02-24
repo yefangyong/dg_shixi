@@ -1,0 +1,1742 @@
+[ 2017-02-23T20:14:06+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+ERR: 无法加载控制器:Report
+
+[ 2017-02-23T20:14:15+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+ERR: 无法加载控制器:Report
+
+[ 2017-02-23T20:14:52+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:16:02+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:16:34+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:16:34+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html?t=1487852057747
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:16:34+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html?t=1487852057747&t=1487852057987
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:16:44+08:00 ] 101.226.66.187 /index.php/Home/Login/index.html
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:16:44+08:00 ] 61.151.218.118 /index.php/Home/Login/index.html?t=1487852057747
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:16:44+08:00 ] 180.153.214.180 /index.php/Home/Login/index.html?t=1487852057747&t=1487852057987
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:17:52+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html?username=yfy&password=123
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:17:52+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html?username=yfy&password=123&t=1487852135494
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:18:02+08:00 ] 101.226.33.201 /index.php/Home/Login/index.html?t=1487852135494
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:18:11+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html?username=yfy&password=123
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:20:23+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:21:28+08:00 ] 101.226.61.189 /index.php/Home/Login/index.html?nsukey=UBVjE9Y6JxoAdda7C2Njw97kT0hTfTLNUlOWjs%2Bxy7E83qsEMzGyBlSdMgbKi%2FKZWo6JBkUGde6Ovo2U%2FMF3cme4hDnHYpE1%2BoDNsmGRGYO8ZvuuxA188TkM0cI71r8Vc4hnFOxcy03BCVgbkL5D04xOb%2BRSnSPDsmtFnYK4OJ0um2FAYqGItj6NmVZ%2FPZ6w
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:21:28+08:00 ] 220.178.157.198 /index.php/Home/Login/index.html?nsukey=UBVjE9Y6JxoAdda7C2Njw97kT0hTfTLNUlOWjs%2Bxy7E83qsEMzGyBlSdMgbKi%2FKZWo6JBkUGde6Ovo2U%2FMF3cme4hDnHYpE1%2BoDNsmGRGYO8ZvuuxA188TkM0cI71r8Vc4hnFOxcy03BCVgbkL5D04xOb%2BRSnSPDsmtFnYK4OJ0um2FAYqGItj6NmVZ%2FPZ6w
+ERR: 无法加载控制器:Login
+
+[ 2017-02-23T20:24:27+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/LoginController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/LoginController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = 'yfy'  [ RunTime:0.0001s ]
+
+[ 2017-02-23T20:25:48+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/LoginController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/LoginController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = 'yfy'  [ RunTime:0.0002s ]
+
+[ 2017-02-23T20:26:26+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/LoginController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/LoginController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = 'yfy'  [ RunTime:0.0002s ]
+
+[ 2017-02-23T20:26:26+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/LoginController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/LoginController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = 'yfy'  [ RunTime:0.0001s ]
+
+[ 2017-02-23T21:09:19+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+ERR: 无法加载控制器:Report
+
+[ 2017-02-23T21:09:22+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+ERR: 无法加载控制器:Report
+
+[ 2017-02-23T21:10:25+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+ERR: 无法加载控制器:Report
+
+[ 2017-02-23T21:10:35+08:00 ] 180.153.201.15 /index.php/Home/Report/add.html
+ERR: 无法加载控制器:Report
+
+[ 2017-02-23T21:11:37+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+ERR: 无法加载控制器:Report
+
+[ 2017-02-23T21:12:10+08:00 ] 101.226.125.15 /index.php/Home/Report/add.html?nsukey=qV87Ejd8SN8epSomZ%2BmGGIekP4cE7%2B4tE6nn5y5sLh2tRe2ZsWFhJ8RdIDJOkJCwb4vSkF5CyRrYaunQy7OOnRk31VYHQqoqMRPEJ512uVJbcFBdMJgVOL6AVRcEQGD9esUJe%2BwQyn9PG0q0uX5opjj51vemhx07528eyHjxOjpKh1SUSgrnVGKYv2BE9Yaz
+ERR: 无法加载控制器:Report
+
+[ 2017-02-23T21:12:10+08:00 ] 101.226.125.18 /index.php/Home/Report/add.html?nsukey=qV87Ejd8SN8epSomZ%2BmGGIekP4cE7%2B4tE6nn5y5sLh2tRe2ZsWFhJ8RdIDJOkJCwb4vSkF5CyRrYaunQy7OOnRk31VYHQqoqMRPEJ512uVJbcFBdMJgVOL6AVRcEQGD9esUJe%2BwQyn9PG0q0uX5opjj51vemhx07528eyHjxOjpKh1SUSgrnVGKYv2BE9Yaz
+ERR: 无法加载控制器:Report
+
+[ 2017-02-23T21:12:10+08:00 ] 101.90.255.130 /index.php/Home/Report/add.html?nsukey=qV87Ejd8SN8epSomZ%2BmGGIekP4cE7%2B4tE6nn5y5sLh2tRe2ZsWFhJ8RdIDJOkJCwb4vSkF5CyRrYaunQy7OOnRk31VYHQqoqMRPEJ512uVJbcFBdMJgVOL6AVRcEQGD9esUJe%2BwQyn9PG0q0uX5opjj51vemhx07528eyHjxOjpKh1SUSgrnVGKYv2BE9Yaz
+ERR: 无法加载控制器:Report
+
+[ 2017-02-23T21:12:17+08:00 ] 101.226.61.186 /index.php/Home/Report/add.html?nsukey=I8DHfe89MplBHqLHcGWoe8PWYtrhoLIdKxqQnY6CarytzDX55OVBGUtacAI7dqNmsemkQJomFS%2BJvpxN%2BTijG5IZyVR%2BsFB4ZHxMM2jU87qlMVgC%2BPl8HJH9VwBOo%2B1BF81D3jozcq04RBPjqKiQTM2j7MeFxb5rk01EUOQvw9ufhvq%2FgPXzuO7M3WT9ILK5
+ERR: 无法加载控制器:Report
+
+[ 2017-02-23T21:12:17+08:00 ] 220.178.157.198 /index.php/Home/Report/add.html?nsukey=I8DHfe89MplBHqLHcGWoe8PWYtrhoLIdKxqQnY6CarytzDX55OVBGUtacAI7dqNmsemkQJomFS%2BJvpxN%2BTijG5IZyVR%2BsFB4ZHxMM2jU87qlMVgC%2BPl8HJH9VwBOo%2B1BF81D3jozcq04RBPjqKiQTM2j7MeFxb5rk01EUOQvw9ufhvq%2FgPXzuO7M3WT9ILK5
+ERR: 无法加载控制器:Report
+
+[ 2017-02-23T21:12:20+08:00 ] 101.226.33.239 /index.php/Home/Report/add.html?nsukey=qV87Ejd8SN8epSomZ%2BmGGIekP4cE7%2B4tE6nn5y5sLh2tRe2ZsWFhJ8RdIDJOkJCwb4vSkF5CyRrYaunQy7OOnRk31VYHQqoqMRPEJ512uVJbcFBdMJgVOL6AVRcEQGD9esUJe%2BwQyn9PG0q0uX5opjj51vemhx07528eyHjxOjpKh1SUSgrnVGKYv2BE9Yaz
+ERR: 无法加载控制器:Report
+
+[ 2017-02-23T21:13:54+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-02-23T21:14:14+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-02-23T21:14:46+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 44 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 45 行.
+NOTIC: [8] Undefined index: course /var/www/html/Application/Home/Controller/ReportController.class.php 第 49 行.
+NOTIC: [8] Undefined index: title /var/www/html/Application/Home/Controller/ReportController.class.php 第 52 行.
+NOTIC: [8] Undefined index: content /var/www/html/Application/Home/Controller/ReportController.class.php 第 55 行.
+NOTIC: [8] Undefined index: nexplan /var/www/html/Application/Home/Controller/ReportController.class.php 第 58 行.
+NOTIC: [8] Undefined index: address /var/www/html/Application/Home/Controller/ReportController.class.php 第 61 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 64 行.
+NOTIC: [8] Undefined variable: res /var/www/html/Application/Home/Controller/ReportController.class.php 第 68 行.
+
+[ 2017-02-23T21:14:49+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 44 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 45 行.
+NOTIC: [8] Undefined index: course /var/www/html/Application/Home/Controller/ReportController.class.php 第 49 行.
+NOTIC: [8] Undefined index: title /var/www/html/Application/Home/Controller/ReportController.class.php 第 52 行.
+NOTIC: [8] Undefined index: content /var/www/html/Application/Home/Controller/ReportController.class.php 第 55 行.
+NOTIC: [8] Undefined index: nexplan /var/www/html/Application/Home/Controller/ReportController.class.php 第 58 行.
+NOTIC: [8] Undefined index: address /var/www/html/Application/Home/Controller/ReportController.class.php 第 61 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 64 行.
+NOTIC: [8] Undefined variable: res /var/www/html/Application/Home/Controller/ReportController.class.php 第 68 行.
+
+[ 2017-02-23T21:17:48+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 44 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 45 行.
+NOTIC: [8] Undefined index: course /var/www/html/Application/Home/Controller/ReportController.class.php 第 49 行.
+NOTIC: [8] Undefined index: title /var/www/html/Application/Home/Controller/ReportController.class.php 第 52 行.
+NOTIC: [8] Undefined index: content /var/www/html/Application/Home/Controller/ReportController.class.php 第 55 行.
+NOTIC: [8] Undefined index: nexplan /var/www/html/Application/Home/Controller/ReportController.class.php 第 58 行.
+NOTIC: [8] Undefined index: address /var/www/html/Application/Home/Controller/ReportController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: res /var/www/html/Application/Home/Controller/ReportController.class.php 第 68 行.
+
+[ 2017-02-23T21:18:37+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 44 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 45 行.
+NOTIC: [8] Undefined index: course /var/www/html/Application/Home/Controller/ReportController.class.php 第 49 行.
+NOTIC: [8] Undefined index: title /var/www/html/Application/Home/Controller/ReportController.class.php 第 52 行.
+NOTIC: [8] Undefined index: content /var/www/html/Application/Home/Controller/ReportController.class.php 第 55 行.
+NOTIC: [8] Undefined index: nexplan /var/www/html/Application/Home/Controller/ReportController.class.php 第 58 行.
+NOTIC: [8] Undefined index: address /var/www/html/Application/Home/Controller/ReportController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: res /var/www/html/Application/Home/Controller/ReportController.class.php 第 68 行.
+
+[ 2017-02-23T21:20:46+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 44 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 45 行.
+NOTIC: [8] Undefined index: course /var/www/html/Application/Home/Controller/ReportController.class.php 第 49 行.
+NOTIC: [8] Undefined index: title /var/www/html/Application/Home/Controller/ReportController.class.php 第 52 行.
+NOTIC: [8] Undefined index: content /var/www/html/Application/Home/Controller/ReportController.class.php 第 55 行.
+NOTIC: [8] Undefined index: nexplan /var/www/html/Application/Home/Controller/ReportController.class.php 第 58 行.
+NOTIC: [8] Undefined index: address /var/www/html/Application/Home/Controller/ReportController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: res /var/www/html/Application/Home/Controller/ReportController.class.php 第 68 行.
+
+[ 2017-02-23T21:21:20+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 44 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 45 行.
+NOTIC: [8] Undefined index: course /var/www/html/Application/Home/Controller/ReportController.class.php 第 49 行.
+NOTIC: [8] Undefined index: title /var/www/html/Application/Home/Controller/ReportController.class.php 第 52 行.
+NOTIC: [8] Undefined index: content /var/www/html/Application/Home/Controller/ReportController.class.php 第 55 行.
+NOTIC: [8] Undefined index: address /var/www/html/Application/Home/Controller/ReportController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: res /var/www/html/Application/Home/Controller/ReportController.class.php 第 68 行.
+
+[ 2017-02-23T21:21:33+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 44 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 45 行.
+NOTIC: [8] Undefined index: course /var/www/html/Application/Home/Controller/ReportController.class.php 第 49 行.
+NOTIC: [8] Undefined index: title /var/www/html/Application/Home/Controller/ReportController.class.php 第 52 行.
+NOTIC: [8] Undefined index: content /var/www/html/Application/Home/Controller/ReportController.class.php 第 55 行.
+NOTIC: [8] Undefined index: nexplan /var/www/html/Application/Home/Controller/ReportController.class.php 第 58 行.
+NOTIC: [8] Undefined index: address /var/www/html/Application/Home/Controller/ReportController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: res /var/www/html/Application/Home/Controller/ReportController.class.php 第 68 行.
+
+[ 2017-02-23T21:21:46+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 44 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 45 行.
+NOTIC: [8] Undefined index: course /var/www/html/Application/Home/Controller/ReportController.class.php 第 49 行.
+NOTIC: [8] Undefined index: title /var/www/html/Application/Home/Controller/ReportController.class.php 第 52 行.
+NOTIC: [8] Undefined index: content /var/www/html/Application/Home/Controller/ReportController.class.php 第 55 行.
+NOTIC: [8] Undefined index: address /var/www/html/Application/Home/Controller/ReportController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: res /var/www/html/Application/Home/Controller/ReportController.class.php 第 68 行.
+
+[ 2017-02-23T21:21:50+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 44 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 45 行.
+NOTIC: [8] Undefined index: course /var/www/html/Application/Home/Controller/ReportController.class.php 第 49 行.
+NOTIC: [8] Undefined index: title /var/www/html/Application/Home/Controller/ReportController.class.php 第 52 行.
+NOTIC: [8] Undefined index: content /var/www/html/Application/Home/Controller/ReportController.class.php 第 55 行.
+NOTIC: [8] Undefined index: address /var/www/html/Application/Home/Controller/ReportController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: res /var/www/html/Application/Home/Controller/ReportController.class.php 第 68 行.
+
+[ 2017-02-23T21:22:16+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 44 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 45 行.
+NOTIC: [8] Undefined index: course /var/www/html/Application/Home/Controller/ReportController.class.php 第 49 行.
+NOTIC: [8] Undefined index: title /var/www/html/Application/Home/Controller/ReportController.class.php 第 52 行.
+NOTIC: [8] Undefined index: address /var/www/html/Application/Home/Controller/ReportController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: res /var/www/html/Application/Home/Controller/ReportController.class.php 第 68 行.
+
+[ 2017-02-23T21:22:44+08:00 ] 117.152.92.126 /index.php/Home/Report/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 44 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 45 行.
+NOTIC: [8] Undefined index: course /var/www/html/Application/Home/Controller/ReportController.class.php 第 49 行.
+NOTIC: [8] Undefined index: title /var/www/html/Application/Home/Controller/ReportController.class.php 第 52 行.
+NOTIC: [8] Undefined index: address /var/www/html/Application/Home/Controller/ReportController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: res /var/www/html/Application/Home/Controller/ReportController.class.php 第 68 行.
+
+[ 2017-02-23T21:26:08+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `student_id` = 20 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=40) ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `student_id` = 20 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=40) ) LIMIT 1  
+
+[ 2017-02-23T21:26:20+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=40) ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=40) ) LIMIT 1  
+
+[ 2017-02-23T21:26:48+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=40) ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=40) ) LIMIT 1  
+
+[ 2017-02-23T21:27:46+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=40) ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=40) ) LIMIT 1  
+
+[ 2017-02-23T21:52:48+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `student_id` = 20170212 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `student_id` = '20170212' ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2017-02-23T21:53:01+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `student_id` = 20170212 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `student_id` = '20170212' ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T21:53:24+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T21:54:29+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T21:56:06+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T21:57:42+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=10000) ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=10000) ) LIMIT 1  
+
+[ 2017-02-23T21:57:49+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=10000) ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=10000) ) LIMIT 1  
+
+[ 2017-02-23T21:58:14+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=10000) ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=10000) ) LIMIT 1  
+
+[ 2017-02-23T21:58:39+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=10000) ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=10000) ) LIMIT 1  
+
+[ 2017-02-23T21:58:45+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T21:58:48+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T21:59:11+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=1) ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=1) ) LIMIT 1  
+
+[ 2017-02-23T21:59:13+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=1) ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=1) ) LIMIT 1  
+
+[ 2017-02-23T21:59:37+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=1) ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=1) ) LIMIT 1  
+
+[ 2017-02-23T22:04:11+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=1) ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (   student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no=1) ) LIMIT 1  
+
+[ 2017-02-23T22:04:47+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:06:29+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:06:43+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:06:51+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:06:53+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:10:43+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:11:07+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:11:13+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:11:27+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:12:51+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:15:06+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:15:11+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:17:25+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:17:46+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:18:10+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:18:44+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:18:59+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:19:28+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:19:34+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:20:10+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0005s ]
+
+[ 2017-02-23T22:20:27+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:20:41+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:21:28+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:21:52+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:22:42+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:23:00+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:23:13+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:23:21+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:23:32+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:23:37+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:23:38+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:23:47+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/LoginController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/LoginController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = 'yfy'  [ RunTime:0.0002s ]
+
+[ 2017-02-23T22:23:56+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:23:58+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:24:13+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:24:28+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:26:00+08:00 ] 117.152.92.126 /index.php/Home/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/LoginController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/LoginController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = 'yfy'  [ RunTime:0.0001s ]
+
+[ 2017-02-23T22:26:05+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:26:10+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '2' ORDER BY `id` desc LIMIT 0,10  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '2' ORDER BY `id` desc LIMIT 0,10  
+
+[ 2017-02-23T22:26:24+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:26:41+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+
+[ 2017-02-23T22:27:01+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:27:29+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:27:56+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+
+[ 2017-02-23T22:29:40+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+
+[ 2017-02-23T22:29:54+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+
+[ 2017-02-23T22:31:04+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+
+[ 2017-02-23T22:31:09+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:31:26+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T22:33:55+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+
+[ 2017-02-23T22:34:28+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+
+[ 2017-02-23T22:34:37+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+
+[ 2017-02-23T22:35:00+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+
+[ 2017-02-23T22:41:17+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+
+[ 2017-02-23T22:41:49+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html%EF%BC%9Fid=6
+ERR: 非法操作:index.html？id=6
+
+[ 2017-02-23T22:42:38+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+
+[ 2017-02-23T22:43:37+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+
+[ 2017-02-23T22:44:11+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+
+[ 2017-02-23T22:44:15+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `student_id` = 20170212 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `student_id` = '20170212' ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2017-02-23T22:44:23+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+
+[ 2017-02-23T22:44:29+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,10  
+
+[ 2017-02-23T22:44:47+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+
+[ 2017-02-23T22:45:53+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+
+[ 2017-02-23T22:51:49+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+
+[ 2017-02-23T22:51:59+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+
+[ 2017-02-23T22:56:12+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `id` = '6' ORDER BY `id` desc LIMIT 0,20  
+
+[ 2017-02-23T22:59:28+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (  dg_report.id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND (  dg_report.id=6 ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.0002s ]
+
+[ 2017-02-23T22:59:44+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (  dg_report.id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND (  dg_report.id=6 ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.0002s ]
+
+[ 2017-02-23T22:59:53+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (  dg_report.id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND (  dg_report.id=6 ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.0002s ]
+
+[ 2017-02-23T23:00:56+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (  dg_report.id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND (  dg_report.id=6 ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.0002s ]
+
+[ 2017-02-23T23:02:43+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (  dg_report.id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND (  dg_report.id=6 ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.0002s ]
+
+[ 2017-02-23T23:03:09+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (  dg_report.id=6 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND (  dg_report.id=6 ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.0002s ]
+
+[ 2017-02-23T23:03:30+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (  dg_report.id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND (  dg_report.id=6 ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.0002s ]
+
+[ 2017-02-23T23:03:30+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `student_id` = 20170212 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `student_id` = '20170212' ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2017-02-23T23:03:36+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (  dg_report.id=6 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND (  dg_report.id=6 ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.0002s ]
+
+[ 2017-02-23T23:03:37+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `student_id` = 20170212 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `student_id` = '20170212' ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2017-02-23T23:03:48+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `student_id` = 20170212 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `student_id` = '20170212' ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2017-02-23T23:04:03+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `student_id` = 20170212 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `student_id` = '20170212' ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2017-02-23T23:04:06+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (  dg_report.id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND (  dg_report.id=6 ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.0002s ]
+
+[ 2017-02-23T23:04:24+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Home/Controller/ReportController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND `student_id` = 20170212 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND `student_id` = '20170212' ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2017-02-23T23:04:25+08:00 ] 117.152.92.126 /index.php/Home/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+NOTIC: [8] Undefined index: data /var/www/html/Application/Home/Controller/ReportController.class.php 第 6 行.
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/Application/Home/Controller/ReportController.class.php 第 7 行.
+NOTIC: [8] Undefined index: student_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 12 行.
+NOTIC: [8] Undefined index: teacher_id /var/www/html/Application/Home/Controller/ReportController.class.php 第 15 行.
+NOTIC: [8] Undefined index: status /var/www/html/Application/Home/Controller/ReportController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_report` WHERE `isDel` = 0 AND (  dg_report.id=6 ) LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Home/Controller/ReportController.class.php 第 37 行.
+NOTIC: [8] Undefined index: limit /var/www/html/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+SQL: SELECT dg_report.*,dg_student.name FROM `dg_report` LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno  WHERE `isDel` = 0 AND (  dg_report.id=6 ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.0002s ]
+

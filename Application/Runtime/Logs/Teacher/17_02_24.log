@@ -1,0 +1,70 @@
+[ 2017-02-24T11:59:27+08:00 ] 61.235.37.202 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-02-24T12:00:21+08:00 ] 61.235.37.202 /teacher.php/Practice/addCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+
+[ 2017-02-24T12:00:23+08:00 ] 61.235.37.202 /teacher.php/Practice/addCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+
+[ 2017-02-24T12:00:25+08:00 ] 61.235.37.202 /teacher.php/Practice/addCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+
+[ 2017-02-24T12:00:51+08:00 ] 61.235.37.202 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-02-24T12:01:30+08:00 ] 61.235.37.202 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE `id` = 2 [ RunTime:0.0002s ]
+
+[ 2017-02-24T12:01:38+08:00 ] 61.235.37.202 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 3 [ RunTime:0.0001s ]
+
+[ 2017-02-24T12:01:40+08:00 ] 61.235.37.202 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE `id` = 3 [ RunTime:0.0002s ]
+
+[ 2017-02-24T12:01:46+08:00 ] 61.235.37.202 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 2 [ RunTime:0.0002s ]
+
+[ 2017-02-24T18:12:08+08:00 ] 61.235.37.202 /index.php/Teacher/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+

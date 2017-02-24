@@ -1,0 +1,169 @@
+
+<!-------------------------------------- 头部结束 -------------------------------------->
+<!-------------------------------------- 内容开始 -------------------------------------->
+<include file="Apply/nav"/>
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <div class="user">
+                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
+                        <a href="">董嘉耀</a>
+                        <i></i>
+                    </p>
+                    <div class="ex">
+                        <p><a href="">个人信息</a></p>
+                        <p><a href="">修改密码</a></p>
+                        <p><a href="">退出</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="ct">
+                    <ul>
+                        <li><a href="{:U('Apply/index')}" >实习申请</a></li>
+                        <li><a href="{:U('Apply/corporation')}" class="on">实习单位变更</a></li>
+                        <li><a href="{:U('Apply/position')}">实习岗位变更</a></li>
+                        <li><a href="">请假申请</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>
+            </div>
+        </div>
+    </div>
+    <div class="ht15"></div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht10"></div>
+            <div class="ui-filter">
+                <div class="select">
+                    <p><a href="">批阅批次</a></p>
+                    <div class="ex">
+                        <div class="list" style="min-width: 150px;">
+                            <p><a href="">[141]2009-2010批次</a></p>
+                            <p><a href="">[142]2009-2010批次</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p><a href="">学部</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <p><a href="">学部1</a></p>
+                            <p><a href="">学部2</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p><a href="">专业</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <p><a href="">专业1</a></p>
+                            <p><a href="">专业2</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p><a href="">班级</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <p><a href="">班级1</a></p>
+                            <p><a href="">班级2</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <div class="select">
+                    <p><a href="">审核状态</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <p><a href="">已通过</a></p>
+                            <p><a href="">未通过</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <a href="" class="bt">查询</a>
+            </div>
+            <div class="ht30"></div>
+            <div class="ui-table">
+                <div class="hd">
+                    <div class="tool">
+                        <p>
+                            <a href="">导出</a>
+                            &nbsp;
+                            <a href="">删除</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="ct">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><b>学号</b></td>
+                            <td><b>提交人</b></td>
+                            <td><b>班级</b></td>
+                            <td><b>提交时间</b></td>
+                            <td><b>实习企业</b></td>
+                            <td><b>评审结果</b></td>
+                            <td><b>操作</b></td>
+                        </tr>
+                        <volist name="list" id="v">
+                            <tr>
+                                <td><a href="" class="cbox"></a></td>
+                                <td>{$v.studentno}</td>
+                                <td>{$v.stuname}</td>
+                                <td>{$v.classname}</td>
+                                <td>{$v.applytime}</td>
+                                <td>{$v.corname}</td>
+                                <td>{$v.status|getChangeStatus}</td>
+                                <td>
+                                    <!-- 有点问题 -->
+
+                                        <a href="__CONTROLLER__/editCor/id/{$v.chid}">审核</a>
+
+                                </td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="ht35"></div>
+            <div class="ui-paging">
+                <span>共15页，共143条记录</span>
+                &nbsp;
+                <ul>
+                    <li><a href=""><</a></li>
+                    <li><a href="" class="on">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">></a></li>
+                </ul>
+                <div class="pull-left">
+                    <a href="" class="cbox"><i></i>全选</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+<!-------------------------------------- 尾部开始 -------------------------------------->
