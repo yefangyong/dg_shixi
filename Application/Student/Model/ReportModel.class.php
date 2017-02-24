@@ -16,9 +16,13 @@ class ReportModel extends Model {
 //    );
 
     public function getReportData($user) {
-        return $this->_db->field('s.studentno,s.name,s.classno,r.status,r.pubtime,c.classname')->table('dg_student s,dg_report r,dg_class c')->
+        return $this->_db->field('s.studentno,s.name,s.classno,r.id,r.status,r.pubtime,c.classname')->table('dg_student s,dg_report r,dg_class c')->
         where('s.studentno=r.student_id and name="'.$user.'" and c.id = s.classno')->select();
 
+    }
+
+    public function getReportById($id) {
+        return $this->_db->where('id='.$id)->find();
     }
 
     public function insert($data) {
@@ -26,6 +30,14 @@ class ReportModel extends Model {
             return show(0,'数据不合法');
         }
         return $this->_db->add($data);
+    }
+
+    public function UpdateReportById($id,$data) {
+        if(!$data || !is_array($data)){
+            return show(0,'数据不合法');
+        }
+
+        return $this->_db->where('id='.$id)->save($data);
     }
 
 

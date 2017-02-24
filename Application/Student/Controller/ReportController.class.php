@@ -24,6 +24,12 @@ class ReportController extends CommonController {
             if(!$_POST['address'] || !isset($_POST['address'])) {
                 return show(0,'实习地址不得为空');
             }
+            if(!$_POST['pic'] || !isset($_POST['pic'])) {
+                return show(0,'请上传图片!');
+            }
+            if($_POST['id']) {
+                return $this->save($_POST);
+            }
             $user = $_SESSION['adminUser']['username'];
             $sid = D('Student')->getStudentId($user);
             $_POST['student_id'] = $sid['studentno'];
@@ -38,6 +44,34 @@ class ReportController extends CommonController {
             }
         }else {
             $this->display();
+        }
+    }
+
+    public function del() {
+        $id = $_POST['id'];
+       $rel = M('Report')->where('id='.$id)->delete($id);
+        if($rel) {
+            return show(1,'删除成功!');
+        }else {
+            return show(0,'删除失败!');
+        }
+    }
+
+    public function edit() {
+        $id = $_GET['id'];
+        $data = D('Report')->getReportById($id);
+        $this->assign('data',$data);
+        $this->display();
+    }
+
+    public function save() {
+        $id = $_POST['id'];
+        unset($_POST['id']);
+        $rel = D('Report')->UpdateReportById($id,$_POST);
+        if($rel) {
+            return show(1,'提交成功!');
+        }else {
+            return show(0,'提交失败!');
         }
     }
 }
