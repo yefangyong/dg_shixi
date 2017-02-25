@@ -56,8 +56,26 @@ class ApplyController extends Controller {
 
     }
 
-    public function leave() {
+    /**
+     * 请假申请
+     */
+    public function addLeave() {
         if($_POST) {
+            if(!$_POST['content'] || !isset($_POST['content'])) {
+                return show(0,'请假原因不得为空！');
+            }
+            if(!$_POST['emegencyconcat'] || !isset($_POST['emegencyconcat'])) {
+                return show(0,'紧急联系人不得为空！');
+            }
+            if(!$_POST['phone'] || !isset($_POST['phone'])) {
+                return show(0,'手机号码不得为空！');
+            }
+            if(!$_POST['applytime'] || !isset($_POST['applytime'])) {
+                return show(0,'开始时间不得为空！');
+            }
+            if(!$_POST['endtime'] || !isset($_POST['endtime'])) {
+                return show(0,'结束时间不得为空！');
+            }
             $user = $_SESSION['adminUser']['username'];
             $sid = D('Student')->getStudentId($user);
             $_POST['student_id'] = $sid['studentno'];
@@ -68,6 +86,27 @@ class ApplyController extends Controller {
                 return show(0,'提交失败!');
             }
         }else{
+            $this->display();
+        }
+    }
+
+    public function leave() {
+        $user = $_SESSION['adminUser']['username'];
+        $sid = D('Student')->getStudentId($user);
+        $rel = D('Leave')->getLeave($sid['studentno']);
+        if(!$rel) {
+            return $this->display('Apply/noleave');
+        }else {
+            $data = D('LeaveView')->getLeaveInfo($sid['studentno']);
+            foreach ($data as $k=>$v) {
+                if($data[$k]['status'] == 1) {
+                    $teacher = M('Teacher')->where('teacherno='.$data[$k]['teacher_id'])->find();
+                    $data[$k]['teacher'] =$teacher['name'];
+                }else {
+                    $data[$k]['teacher'] = '';
+                }
+            }
+            $this->assign('list',$data);
             $this->display();
         }
     }
