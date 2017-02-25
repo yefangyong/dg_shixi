@@ -36,7 +36,7 @@ class ApplyController extends Controller {
             }
             $user = $_SESSION['adminUser']['username'];
             $sid = D('Student')->getStudentId($user);
-            $_POST['student_id'] = $sid['no'];
+            $_POST['student_id'] = $sid['studentno'];
             $corporation = M('corporation')->where('name="'.$_POST['cname'].'"')->find();
             if(!$corporation) {
                 return show(0,'不存在这个公司!');

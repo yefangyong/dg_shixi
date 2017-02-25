@@ -6,37 +6,49 @@
         <div class="container">
             <div class="pull-right">
                 <div class="user">
-                    <p><img src="img/avatar1.jpg" alt="">
-                        <a href=""><?php echo getLoginUsername() ?></a>
+                    <p><img src="__PUBLIC__/Student/img/avatar1.jpg" alt="">
+                        <a href=''><?php echo getLoginUsername();?></a>
                         <i></i>
                     </p>
                     <div class="ex">
                         <p><a href="">个人信息</a></p>
                         <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
+                        <p><a href="/index.php/student/login/logout">退出</a></p>
                     </div>
                 </div>
             </div>
             <div class="tabs">
                 <ul>
-                    <li><a href="/index.php/student/Apply/" class="on">实习申请</a></li>
-                    <li><a href="/index.php/student/Apply/change">实习变更</a></li>
-                    <li><a href="/index.php/student/Apply/leave">请假申请</a></li>
+                    <li><a href="/index.php/student/Notice/index" class="on">公告</a></li>
+                    <li><a href="">系统消息</a></li>
+                    <li><a href="">预警信息</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="ht15"></div>
+    <div class="ui-path">
+        <p>
+            <a href="" class="home"></a>
+            <a href="/index.php/student/Notice/index">消息管理</a>
+            &gt;
+            <a href="/index.php/student/Notice/index" class="on">公告</a>
+        </p>
+    </div>
     <div class="ui-main">
         <div class="container">
-            <div class="ht10"></div>
-            <div class="ui-filter">
-                <div class="pull-right"><a href="/index.php/student/Apply/add" class="bt">新增</a></div>
-            <div class="ht100"></div>
-            <div class="ui-state">
-                <p>
-                    您当前没有申请记录！
-                </p>
+            <div class="ht15"></div>
+            <div class="ui-article">
+                <div class="hd">
+                    <h3>{$list.title}</h3>
+                    <p>
+                        发布人：{$list.pub}
+                        <span class="wh30"></span>
+                        发布时间：{$list.pubtime}
+                    </p>
+                </div>
+                <div class="ct">
+                    <p>{$list.content}</p>
+                </div>
             </div>
         </div>
     </div>
@@ -49,7 +61,6 @@
     </div>
 </footer>
 <!-------------------------------------- 尾部开始 -------------------------------------->
-
 </body>
 </html>
 <style>

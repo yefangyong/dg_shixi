@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="ct">
-                    <table>
+                    <table class="yfycms-table">
                         <tbody>
                         <tr>
                             <td>&nbsp;</td>
@@ -52,15 +52,15 @@
                             <td><b>操作</b></td>
                         </tr>
                         <volist name="data" id="vo">
-                        <tr>
-                            <td><a href="" class="cbox"></a></td>
-                            <td>{$vo.id}</td>
-                            <td>{$vo.title}</td>
-                            <td>{$vo.name}</td>
-                            <td>所有人</td>
-                            <td>{$vo.pubtime}</td>
-                            <td><a href="" class="ul">查看</a></td>
-                        </tr>
+                            <tr>
+                                <td><a href="" class="cbox"></a></td>
+                                <td>{$vo.id}</td>
+                                <td>{$vo.title}</td>
+                                <td>{$vo.name}</td>
+                                <td>所有人</td>
+                                <td>{$vo.pubtime}</td>
+                                <td><a href="javascript:void(0)" attr-id="{$vo.id}" id="yfycms-cat"  class="ul">查看</a></td>
+                            </tr>
                         </volist>
                         </tbody>
                     </table>
@@ -99,7 +99,17 @@
 
 </style>
 <script>
+    var SCOPE = {
+        'cat_url' : '/index.php?m=student&c=notice&a=cat',
+    }
     $(function(){
-
+        /**
+         * 编辑模型
+         */
+        $('.yfycms-table #yfycms-cat').on('click',function(){
+            var id = $(this).attr('attr-id');
+            var url = SCOPE.cat_url+'&id='+id;
+            window.location.href=url;
+        });
     });
 </script>
