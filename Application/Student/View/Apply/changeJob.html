@@ -7,7 +7,7 @@
             <div class="pull-right">
                 <div class="user">
                     <p><img src="img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
+                        <a href=""><?php echo getLoginUsername() ?></a>
                         <i></i>
                     </p>
                     <div class="ex">
@@ -19,9 +19,9 @@
             </div>
             <div class="tabs">
                 <ul>
-                    <li><a href="">实习申请</a></li>
-                    <li><a href="" class="on">实习变更</a></li>
-                    <li><a href="">请假申请</a></li>
+                    <li><a href="/index.php?m=student&c=apply">实习申请</a></li>
+                    <li><a href="/index.php?m=student&c=apply&a=change" class="on">实习变更</a></li>
+                    <li><a href="/index.php?m=student&c=apply&a=leave">请假申请</a></li>
                 </ul>
             </div>
         </div>
@@ -38,7 +38,14 @@
                             <label for="" class="control-label">变更类型</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="type" id="" style="width: 210px;" value="岗位">
+                            <div class="select" style="width: 210px;">
+                                <input type="hidden" name="type" id="type"/>
+                                <p><a href="javascript:void(0)">请选择变更类型</a></p>
+                                <div class="ex">
+                                    <p><a href="javascript:void(0)" id="corporation">单位</a></p>
+                                    <p><a href="javascript:void(0)" id="job">岗位</a></p>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-sm-2">
                             <label for="" class="control-label">新岗位</label>
@@ -80,13 +87,8 @@
                             <label for="" class="control-label">企业老师</label>
                         </div>
                         <div class="col-sm-4">
-                            <div class="select" style="width: 210px;">
-                                <p><a href="javascript:void();">请选择企业老师</a></p>
-                                <input type="hidden" value="" name="cor_teacher" id="teacher"/>
-                                <div class="ex">
-                                    <p><a href="javascript:void();" id="teacher1">叶方勇</a></p>
-                                    <p><a href="javascript:void();" id="teacher2">胡家园</a></p>
-                                </div>
+                            <div class="col-sm-4">
+                                <input type="text" name="guide" class="form-control" id="" style="width: 210px;" placeholder="请输入企业老师">
                             </div>
                         </div>
                         <div class="col-sm-2">
@@ -101,7 +103,7 @@
                             <label for="" class="control-label">老师邮箱</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" name="teacher_email" class="form-control" id="" style="width: 210px;" placeholder="请输入老师联系邮箱">
+                            <input type="text" name="guide_email" class="form-control" id="" style="width: 210px;" placeholder="请输入老师联系邮箱">
                         </div>
                     </div>
                     <div class="form-group">
@@ -150,13 +152,6 @@
     $("#box2").click(function(){
         $("#box").val('1');
     });
-    $("#teacher1").click(function(){
-        $("#teacher").val('叶方勇');
-    });
-
-    $("#teacher2").click(function(){
-        $("#teacher").val('胡家园');
-    });
 
     $("#buy1").click(function(){
         $("#buy").val('0');
@@ -165,12 +160,19 @@
     $("#buy2").click(function(){
         $("#buy").val('1');
     });
+
+    $("#corporation").click(function(){
+        window.location.href='/index.php/student/Apply/changeCorporation';
+    });
+    $("#job").click(function(){
+        $("#type").val(1);
+    });
     $(function(){
 
     });
     var SCOPE = {
         'save_url' : '/index.php?m=student&c=apply&a=changeJob',
-        'jump_url' : '/index.php?m=student&c=report&a=index',
+        'jump_url' : '/index.php?m=student&c=apply&a=change',
     };
     $("#yfycms-button-submit").click(function(){
         var data=$("#yfycms-form").serializeArray();
