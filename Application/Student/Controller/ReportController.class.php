@@ -74,4 +74,15 @@ class ReportController extends CommonController {
             return show(0,'提交失败!');
         }
     }
+
+    public function view() {
+        $id = $_GET['id'];
+        $rel = D('Report')->getReportById($id);
+        if(!$rel) {
+            return show(0,'不存在此报告!');
+        }else {
+           $this->assign('list',$rel);
+            $this->display();
+        }
+    }
 }

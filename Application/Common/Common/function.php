@@ -32,7 +32,7 @@ function status($status) {
 function getReportStatus($status){
     switch($status){
         case 1: $state = '已审核';break;
-        case 0: $state = '未审核';break;
+        case 0: $state = '待审核';break;
         case -1: $state = '已退回';break;
     }
     return $state;

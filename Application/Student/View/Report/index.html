@@ -121,7 +121,7 @@
                       <td>{$corporation}</td>
                       <td>{$vo.status|status}</td>
                       <td>
-                        <a href="javascript:void(0);">查看</a>
+                        <a href="javascript:void(0);" attr-id="{$vo.id}" id="yfycms-view">查看</a>
                         <a href="javascript:void(0);" id="yfycms-edit" attr-id="{$vo.id}">编辑</a>
                         <a href="javascript:void(0);" attr-id="{$vo.id}" attr-message="删除" id="yfycms-delete">删除</a>
                       </td>
@@ -167,7 +167,8 @@
   var SCOPE = {
     'jump_url' : '/index.php?m=student&c=report&a=index',
     'set_status_url':'/index.php?m=student&c=report&a=del',
-    'edit_url':'/index.php?m=student&c=report&a=edit'
+    'edit_url':'/index.php?m=student&c=report&a=edit',
+      'view_url':'/index.php?m=student&c=report&a=view'
   };
 
   $('.yfycms-table #yfycms-delete').on('click',function(){
@@ -210,6 +211,15 @@
   $('.yfycms-table #yfycms-edit').on('click',function(){
     var id = $(this).attr('attr-id');
     var url = SCOPE.edit_url+'&id='+id;
+    window.location.href=url;
+  });
+
+  /**
+   * 查看模型
+   */
+  $('.yfycms-table #yfycms-view').on('click',function(){
+    var id = $(this).attr('attr-id');
+    var url = SCOPE.view_url+'&id='+id;
     window.location.href=url;
   });
 </script>
