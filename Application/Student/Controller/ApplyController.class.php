@@ -23,6 +23,32 @@ class ApplyController extends Controller {
         }
     }
 
+    public function delApply() {
+        $id = $_POST['id'];
+        $rel = M('Practice')->where('id='.$id)->delete();
+        if($rel) {
+            return show(1,'删除成功!');
+        }else {
+            return show(0,'删除失败!');
+        }
+    }
+
+    public function viewApply() {
+        $id = $_GET['id'];
+        $rel = M('Practice')->where('id='.$id)->find();
+        if($rel) {
+            $user = $_SESSION['adminUser']['username'];
+            $student = D('Student')->getStudentId($user);
+            $this->assign('student',$student);
+            $this->assign('practice',$rel);
+            $corporation = M('corporation')->where('id='.$rel['corporation_id'])->find();
+            $this->assign('corporation',$corporation);
+            $this->display();
+        }else {
+            return show(0,'不存在此申请信息!');
+        }
+    }
+
     public function add() {
         if($_POST) {
             if(!$_POST['cname'] || !isset($_POST['cname'])) {
@@ -157,7 +183,11 @@ class ApplyController extends Controller {
                 $_POST['corporation_id'] = 0;
             }
             $_POST['corporation_id'] = $corporation['id'];
-            $data = M('Change')->where('student_id='.$sid['studentno']);
+            $practice = M('Practice')->where('student_id='.$sid['studentno'])->find();
+            if(!$practice) {
+                return show(0,'请先添加实习申请!');
+            }
+            $data = M('Change')->where('student_id='.$sid['studentno'])->find();
             if($data) {
                 return show(0, '请不要重复申请变更!');
             }else {
@@ -198,7 +228,11 @@ class ApplyController extends Controller {
             $sid = D('Student')->getStudentId($user);
             $_POST['student_id'] = $sid['studentno'];
             $_POST['corporation_id'] = $sid['corporation_id'];
-            $data = M('Change')->where('student_id='.$sid['studentno']);
+            $practice = M('Practice')->where('student_id='.$sid['studentno'])->find();
+            if(!$practice) {
+                return show(0,'请先添加实习申请!');
+            }
+            $data = M('Change')->where('student_id='.$sid['studentno'])->find();
             if($data) {
                 return show(0,'请不要重复申请!');
             }else {
@@ -234,30 +268,44 @@ class ApplyController extends Controller {
         }
     }
 
-
-    public function delApply() {
-        $id = $_POST['id'];
-        $rel = M('Practice')->where('id='.$id)->delete();
+    public function delChange() {
+        $id  = $_POST['id'];
+        $rel = M('Change')->where('id='.$id)->delete();
         if($rel) {
             return show(1,'删除成功!');
-        }else {
+        } else {
             return show(0,'删除失败!');
         }
     }
 
-    public function viewApply() {
+    public function viewChange() {
         $id = $_GET['id'];
-        $rel = M('Practice')->where('id='.$id)->find();
-        if($rel) {
+        $change = M('Change')->where('id='.$id)->find();
+        if($change['type'] == 0) {
+            //变更单位
             $user = $_SESSION['adminUser']['username'];
             $student = D('Student')->getStudentId($user);
+            $corporation = M('Corporation')->where('id='.$student['corporation_id'])->find();
+            $change = M('Change')->where('student_id='.$student['studentno'])->find();
             $this->assign('student',$student);
-            $this->assign('practice',$rel);
-            $corporation = M('corporation')->where('id='.$rel['corporation_id'])->find();
+            $this->assign('practice',$corporation);
+            $this->assign('change',$change);
+            $this->display('Apply/viewChangeCorporation');
+        }elseif($change['type'] == 1) {
+            //变更岗位
+            $user = $_SESSION['adminUser']['username'];
+            $student = D('Student')->getStudentId($user);
+            $practice = M('Practice')->where('student_id='.$student['studentno'])->find();
+            $corporation = M('Corporation')->where('id='.$student['corporation_id'])->find();
+            $change = M('Change')->where('student_id='.$student['studentno'])->find();
             $this->assign('corporation',$corporation);
-            $this->display();
-        }else {
-            return show(0,'不存在此申请信息!');
+            $this->assign('practice',$practice);
+            $this->assign('student',$student);
+            $this->assign('change',$change);
+            $this->display('Apply/viewChangeJob');
         }
     }
+
+
+
 }

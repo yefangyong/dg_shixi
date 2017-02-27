@@ -35,7 +35,7 @@
             <div class="ht30"></div>
             <div class="ui-table">
                 <div class="ct">
-                    <table>
+                    <table class="yfycms-table">
                         <tbody>
                         <tr>
                             <td>&nbsp;</td>
@@ -56,7 +56,7 @@
                             <td>{$data['teacher']}</td>
                             <td>{$data['status']|getChangeStatus}</td>
                             <td>
-                                <a href="">查看</a> <a href="">删除</a>
+                                <a href="javascript:void(0);" attr-id="{$data['id']}" id="yfycms-view">查看</a> <a href="javascript:void(0);" id="yfycms-delete" attr-message="删除" attr-id="{$data['id']}">删除</a>
                             </td>
                         </tr>
                         </tbody>
@@ -80,7 +80,51 @@
 
 </style>
 <script>
-    $(function(){
+    var SCOPE = {
+        'jump_url' : '/index.php?m=student&c=apply&a=change',
+        'set_status_url':'/index.php?m=student&c=apply&a=delChange',
+        'view_url':'/index.php?m=student&c=apply&a=viewChange'
+    };
 
+    $('.yfycms-table #yfycms-delete').on('click',function(){
+        var id = $(this).attr('attr-id');
+        var message=$(this).attr('attr-message');
+        var url = SCOPE.set_status_url;
+        data={};
+        data['id'] = id;
+
+        layer.open({
+            type : 0,
+            title : '是否提交？',
+            btn : ['yes','no'],
+            icon :3,
+            closeBtn : 2,
+            content : '是否确认'+message,
+            scorllbar : true,
+            yes: function(){
+                todelete(url,data);
+            },
+        });
+    });
+
+    function todelete(){
+        var url = SCOPE.set_status_url;
+        //ajax的异步操作，交互性好
+        $.post(
+                url,data,function(s){
+                    if(s.status == 1){
+                        return dialog.success('删除成功','');
+                    }else{
+                        return dialog.error('删除失败');
+                    }
+                },"JSON");
+    }
+    /**
+     * 查看模型
+     */
+    $('.yfycms-table #yfycms-view').on('click',function(){
+        var id = $(this).attr('attr-id');
+        var url = SCOPE.view_url+'&id='+id;
+        window.location.href=url;
     });
 </script>

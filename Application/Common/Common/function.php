@@ -40,8 +40,9 @@ function getReportStatus($status){
 
 function getChangeStatus($status){
     switch($status){
-        case 1: $state = '已审核';break;
-        case -1: $state = '未审核';break;
+        case 1: $state = '已同意';break;
+        case 0: $state = '未审核';break;
+        case -1: $state = '不同意';break;
     }
     return $state;
 }
