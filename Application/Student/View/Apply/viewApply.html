@@ -1,0 +1,122 @@
+<include file="Base/header"/>
+<!-------------------------------------- 头部结束 -------------------------------------->
+<!-------------------------------------- 内容开始 -------------------------------------->
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <div class="user">
+                    <p><img src="__PUBLIC__/Student/img/avatar1.jpg" alt="">
+                        <a href=''><?php echo getLoginUsername();?></a>
+                        <i></i>
+                    </p>
+                    <div class="ex">
+                        <p><a href="">个人信息</a></p>
+                        <p><a href="">修改密码</a></p>
+                        <p><a href="/index.php/student/login/logout">退出</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="ct">
+                    <ul>
+                        <li><a href="" class="on">实习申请</a></li>
+                        <li><a href="">实习变更</a></li>
+                        <li><a href="">请假申请</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>
+            </div>
+        </div>
+    </div>
+    <div class="ui-path">
+        <p><span class="pull-right"><a href="/index.php/student/apply/index">返回</a></span>
+            <a href="" class="home"></a>
+            <a href="/index.php/student/apply/index">实习申请</a>
+            &gt;
+            <a href="" class="on">实习申请状态</a>
+        </p>
+    </div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht15"></div>
+            <div class="ui-article">
+                <div class="hd">
+                    <h3><?php echo getLoginUsername();?>的实习申请</h3>
+                </div>
+            </div>
+            <div class="ht25"></div>
+            <div class="ui-head1">
+                <p>个人信息</p>
+            </div>
+            <div class="ht15"></div>
+            <div class="ui-article">
+                <div class="hd">
+                    <table>
+                        <tr>
+                            <td align="left">学号：{$student.studentno}</td>
+                            <td align="center">姓名：{$student.name}</td>
+                            <td align="right">联系方式：{$student.phone}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="ht25"></div>
+            <div class="ui-head1">
+                <p>公司信息</p>
+            </div>
+            <div class="ht15"></div>
+            <div class="ui-article">
+                <div class="hd">
+                    <table>
+                        <tr>
+                            <td align="left">企业名称：{$corporation['name']}</td>
+                            <td align="">企业地址：{$corporation['address']}</td>
+                            <td align="">专业对口：{$practice['profession']}</td>
+                            <td align="">保险购买：{$practice['insurance']}</td>
+                        </tr>
+                        <tr>
+                            <td align="left">职务：{$practice['position']}</td>
+                            <td align="">企业联系人：{$corporation['contact']}</td>
+                            <td align="" colspan="2">联系电话：{$corporation['mobile']}</td>
+                        </tr>
+                    </table>
+                    <p>
+                <span class="pull-left">
+                  详细地址：{$corporation['detailaddress']}
+                  <span class="wh40"></span>
+                  开始日期：{$practice['starttime']}
+                  <span class="wh40"></span>
+                  结束日期：{$practice['endtime']}
+                </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="ht90"></div>
+            <div class="ui-state">
+                <p class="text-center" style="font-size: 20px;">
+                    <b>当前状态：</b>{$practice['status']|getApplyStatus}
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+<!-------------------------------------- 尾部开始 -------------------------------------->
+</body>
+</html>
+<style>
+
+</style>
+<script>
+    $(function(){
+
+    });
+</script>

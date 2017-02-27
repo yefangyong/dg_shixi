@@ -22,7 +22,10 @@ class LoginController extends Controller {
         }
 
         $rel = D('User')->getStudentByUsername($username);
-
+        $student = M('Student')->where('name="'.$username.'"')->find();
+        if(!$student) {
+            return show(0,'不存在此学生!');
+        }
         if(!$rel) {
             return show(0,'该用户不存在');
         }

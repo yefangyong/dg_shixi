@@ -1,0 +1,90 @@
+<include file="Base/header"/>
+<!-------------------------------------- 头部结束 -------------------------------------->
+<!-------------------------------------- 内容开始 -------------------------------------->
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <div class="user">
+                    <p><img src="img/avatar1.jpg" alt="">
+                        <a href=""><?php echo getLoginUsername() ?></a>
+                        <i></i>
+                    </p>
+                    <div class="ex">
+                        <p><a href="">个人信息</a></p>
+                        <p><a href="">修改密码</a></p>
+                        <p><a href="/index.php?m=student&c=login&a=logout">退出</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="ct">
+                    <ul>
+                        <li><a href="/index.php?m=student&c=apply&a=index">实习申请</a></li>
+                        <li><a href="/index.php?m=student&c=apply&a=change">实习变更</a></li>
+                        <li><a href="/index.php?m=student&c=apply&a=leave" class="on">请假申请</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>
+            </div>
+        </div>
+    </div>
+    <div class="ui-path">
+        <p><span class="pull-right"><a href="/index.php?m=student&c=apply&a=leave">返回</a></span>
+            <a href="" class="home"></a>
+            <a href="/index.php?m=student&c=apply&a=leave">请假申请</a>
+            &gt;
+            <a href="" class="on">请假申请状态</a>
+        </p>
+    </div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht15"></div>
+            <div class="ui-article">
+                <div class="hd">
+                    <h3><?php echo getLoginUsername() ?>的请假申请</h3>
+                    <p>
+                        紧急联系人：{$rel['emegencyconcat']}
+                        <span class="wh30"></span>
+                        电话：{$rel['telephone']}
+                    </p>
+                </div>
+                <div class="ct">
+                    <p>{$rel['content']}</p>
+                </div>
+                <div class="ft">
+                    <p>
+                        <label for="">请假人：<b><?php echo getLoginUsername() ?></b></label>
+                    </p>
+                    <p>
+                        <label for="">时间：<b>{$rel['starttime']}~{$rel['endtime']}</b></label>
+                    </p>
+                </div>
+            </div>
+            <div class="ht90"></div>
+            <div class="ui-state">
+                <p class="text-center" style="font-size: 20px;">
+                    <b>当前状态：</b>{$rel['status']|getApplyStatus}
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+<!-------------------------------------- 尾部开始 -------------------------------------->
+</body>
+</html>
+<style>
+
+</style>
+<script>
+    $(function(){
+
+    });
+</script>

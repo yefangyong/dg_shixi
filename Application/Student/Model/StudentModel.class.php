@@ -11,6 +11,6 @@ class StudentModel extends Model {
     }
 
     public function getStudentId($user) {
-        return $this->_db->field('studentno,corporation_id')->where('name="'.$user.'"')->find();
+        return $this->_db->field('studentno,corporation_id,name,phone')->where('name="'.$user.'"')->find();
     }
 }

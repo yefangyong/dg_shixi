@@ -55,6 +55,15 @@ function getAuditStatus($status){
     return $state;
 }
 
+function getApplyStatus($status){
+    switch($status){
+        case 0:$state='未审核';break;
+        case 1:$state='已同意';break;
+        case -1:;$state='不同意';break;
+    }
+    return $state;
+}
+
 function CorporationStatus($status){
     return $status == 1?'是':'否';
 }

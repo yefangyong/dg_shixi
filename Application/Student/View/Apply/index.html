@@ -39,7 +39,7 @@
 
                 </div>
                 <div class="ct">
-                    <table>
+                    <table class="yfycms-table">
                         <tbody>
                         <tr>
                             <td>&nbsp;</td>
@@ -54,14 +54,14 @@
 
                             <tr>
                                 <td><a href="" class="cbox"></a></td>
-                                <td>{$data['studentno']}</td>
-                                <td>{$data['name']}</td>
-                                <td>{$data['classname']}</td>
-                                <td>{$data['starttime']}</td>
-                                <td>{$data['teacher']}</td>
-                                <td>{$data['status']|getReportStatus}</td>
+                                <td>{$list['studentno']}</td>
+                                <td>{$list['name']}</td>
+                                <td>{$list['classname']}</td>
+                                <td>{$list['starttime']}</td>
+                                <td>{$list['teacher']}</td>
+                                <td>{$list['status']|getReportStatus}</td>
                                 <td>
-                                    <a href="">查看</a> <a href="">删除</a>
+                                    <a href="javascript:void(0);" id="yfycms-view" attr-id="{$list['id']}">查看</a> <a href="javascript:void(0);" id="yfycms-delete" attr-message="删除" attr-id="{$list['id']}">删除</a>
                                 </td>
                             </tr>
 
@@ -80,30 +80,60 @@
     </div>
 </footer>
 <!-------------------------------------- 尾部开始 -------------------------------------->
-<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
-<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
-<script type="text/javascript" src="js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
-<script>
-    $(function(){
-        $('.dtp').datetimepicker({
-            language: 'zh-CN',
-            weekStart: 1,
-            todayBtn:  1,
-            autoclose: 1,
-            todayHighlight: 1,
-            startView: 2,
-            forceParse: 0,
-            showMeridian: 1
-        });
-    });
-</script>
 </body>
 </html>
 <style>
 
 </style>
 <script>
-    $(function(){
 
+        var SCOPE = {
+            'jump_url' : '/index.php?m=student&c=apply&a=index',
+            'set_status_url':'/index.php?m=student&c=apply&a=delApply',
+            'edit_url':'/index.php?m=student&c=apply&a=edit',
+            'view_url':'/index.php?m=student&c=apply&a=viewApply'
+        };
+
+        $('#yfycms-delete').on('click',function(){
+            var id = $(this).attr('attr-id');
+            var message=$(this).attr('attr-message');
+            var url = SCOPE.set_status_url;
+            data={};
+            data['id'] = id;
+
+            layer.open({
+                type : 0,
+                title : '是否提交？',
+                btn : ['yes','no'],
+                icon :3,
+                closeBtn : 2,
+                content : '是否确认'+message,
+                scorllbar : true,
+                yes: function(){
+                    todelete(url,data);
+                },
+            });
+        });
+
+        function todelete(){
+            var url = SCOPE.set_status_url;
+            //ajax的异步操作，交互性好
+            $.post(
+                    url,data,function(s){
+                        if(s.status == 1){
+                            return dialog.success('删除成功','');
+                        }else{
+                            return dialog.error('删除失败');
+                        }
+                    },"JSON");
+        }
+
+    /**
+     * 查看模型
+     */
+    $('.yfycms-table #yfycms-view').on('click',function(){
+        var id = $(this).attr('attr-id');
+        var url = SCOPE.view_url+'&id='+id;
+        window.location.href=url;
     });
 </script>

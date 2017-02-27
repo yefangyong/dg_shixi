@@ -17,7 +17,7 @@ class ReportModel extends Model {
 
     public function getReportData($user) {
         return $this->_db->field('s.studentno,s.name,s.classno,r.id,r.status,r.pubtime,c.classname')->table('dg_student s,dg_report r,dg_class c')->
-        where('s.studentno=r.student_id and name="'.$user.'" and c.id = s.classno')->select();
+        where('s.studentno=r.student_id and name="'.$user.'" and c.id = s.classno')->order('r.pubtime desc')->select();
 
     }
 
