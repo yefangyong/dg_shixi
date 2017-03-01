@@ -23,6 +23,7 @@
                     <div class="tool">
                         <p>
                             <a href="/teacher.php?c=notice&a=add">新增</a>
+                            <a href="#">刪除</a>
                         </p>
                     </div>
                 </div>
@@ -31,21 +32,21 @@
                         <tbody>
                         <tr>
                             <td>&nbsp;</td>
-                            <td><b>标题</b></td>
                             <td><b>公告标题</b></td>
                             <td><b>发布人</b></td>
                             <td><b>发布对象</b></td>
                             <td><b>发布时间</b></td>
+                            <td><b>状态</b></td>
                             <td><b>操作</b></td>
                         </tr>
                         <volist name="data" id="vo">
                             <tr>
                                 <td><a href="" class="cbox"></a></td>
-                                <td>{$vo.title}</td>
                                 <td>{$vo.content}</td>
                                 <td>{$vo.teacher_name}</td>
                                 <td>{$vo.name}</td>
                                 <td>{$vo.pubtime}</td>
+                                <td>{$vo.title}</td>
                                 <td>
                                     <a href="javascript:void();">查看</a>
                                     <a href="javascript:void();" attr-id="{$vo.nid}" attr-message="删除" id="yfycms-delete">删除</a>

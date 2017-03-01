@@ -3,26 +3,17 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
+                <include file="Public/user"/>
             </div>
             <div class="tabs">
                 <div class="ct">
                     <ul>
                         <ul>
                             <li><a href="{:U('Apply/index')}" >实习申请</a></li>
-                            <li><a href="{:U('Apply/corporation')}" class="on">实习单位变更</a></li>
-                            <li><a href="{:U('Apply/position')}">实习岗位变更</a></li>
-                            <li><a href="">请假申请</a></li>
+                            <!--<li><a href="{:U('Apply/corporation')}" class="on">实习单位变更</a></li>-->
+                            <!--<li><a href="{:U('Apply/position')}">实习岗位变更</a></li>-->
+                            <li><a href="#">实习变更</a></li>
+                            <li><a href="{:U('Apply/leave')}">请假申请</a></li>
                         </ul>
                     </ul>
                 </div>

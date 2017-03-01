@@ -3,17 +3,7 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
+               <include file="Public/user"/>
             </div>
             <div class="tabs">
                 <div class="ct">
@@ -46,51 +36,36 @@
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p id="dept"><a href="javascript:void(0)" onchange="checkChange()">学部</a></p>
+                    <p><a href="">院系</a></p>
                     <div class="ex">
                         <div class="list">
-                            <volist name="dept" id="v">
-                                <p><a href="">{$v.name}</a></p>
-                            </volist>
+                            <p><a href="">机械学院</a></p>
+                            <p><a href="">水利学院</a></p>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p id="profession"><a href="">专业</a></p>
+                    <p><a href="">专业</a></p>
                     <div class="ex">
                         <div class="list">
-                            <volist name="profession" id="v">
-                                <p><a href="">{$v.name}</a></p>
-                            </volist>
-                            <!--<p><a href="">机械设计</a></p>-->
-                            <!--<p><a href="">电气自动化</a></p>-->
+                            <p><a href="">机械设计</a></p>
+                            <p><a href="">电气自动化</a></p>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p id="class"><a href="">班级</a></p>
+                    <p><a href="">班级</a></p>
                     <div class="ex">
                         <div class="list">
-                            <volist name="class" id="v">
-                                <p><a href="">{$v.classname}</a></p>
-                            </volist>
-
-                            <!--<p><a href="">自动化002</a></p>-->
+                            <p><a href="">机设011</a></p>
+                            <p><a href="">自动化002</a></p>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <div class="select">
-                    <p><a href="">学号/姓名</a></p>
-                    <div class="ex">
-                        <div class="list" style="width: 140px;">
-                            <p><a href="">1687287 董嘉耀</a></p>
-                            <p><a href="">0976267 郭德纲</a></p>
-                        </div>
-                    </div>
-                </div>
+                <input type="text" class="text control-form" placeholder="学号/姓名">
                 <span class="wh10"></span>
                 <div class="select">
                     <p><a href="">实习单位</a></p>
@@ -102,7 +77,7 @@
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <a href="javascript:void(0)" class="bt">查询</a>
+                <a href="" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
@@ -131,8 +106,7 @@
                                 <td><b>联系电话</b></td>
                                 <td><b>实习单位</b></td>
                                 <td><b>实习岗位</b></td>
-                                <td><b>校内指导老师</b></td>
-                                <td><b>校外指导老师</b></td>
+                                <td><b>校内老师</b></td>
                                 <td><b>安排方式</b></td>
                                 <td><b>操作</b></td>
                             </tr>
@@ -146,12 +120,11 @@
                                     <td>{$v.corname}</td>
                                     <td>{$v.position}</td>
                                     <td>{$v.teacher}</td>
-                                    <td>{$v.guide}</td>
                                     <td>{$v.mode|setPracticeMode}</td>
                                     <td>
                                         <if condition="$v.mode eq 1 ">
                                             <p>无需操作</p>
-                                            <elseif condition="$v.mode eq 2"/>
+                                            <elseif condition="$v.mode eq 0"/>
                                             <a href="__CONTROLLER__/arrangement/id/{$v.student_id}">安排岗位</a>
                                         </if>
                                     </td>

@@ -34,16 +34,16 @@
 <nav class="navi">
     <div class="hd">
         <div class="logo">
-            <p><a href=""><img src="/Public/teacher/img/logo.png" alt=""></a></p>
+            <p><a href=""><img src="/Public/Student/img/logo.png" alt=""></a></p>
         </div>
-    </div>
+    </div>/
     <div class="ct">
         <div class="ht15"></div>
         <div class="list">
             <ul>
                 <li>
                     <div class="i on">
-                        <a href="<?php echo U('Report/index');?>">
+                        <a href="/index.php/student/Report/index">
                             <p><i class="ico1"></i>
                                 实习报告
                             </p>
@@ -51,8 +51,8 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
-                        <a href="<?php echo U('Apply/index');?>">
+                    <div  class="i">
+                        <a href="/index.php/student/Apply/index">
                             <p><i class="ico2"></i>
                                 我的申请
                             </p>
@@ -61,45 +61,27 @@
                 </li>
                 <li>
                     <div class="i">
-                        <a href="">
-                            <p><i class="ico6"></i>
-                                实习管理
-                            </p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="i">
-                        <a href="">
-                            <p><i class="ico7"></i>
-                                通知公告
-                            </p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="i">
-                        <a href="">
-                            <p><i class="ico8"></i>
-                                统计分析
-                            </p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="i ">
-                        <a href="">
-                            <p><i class="ico9"></i>
-                                学生管理
-                            </p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="i">
-                        <a href="">
+                        <a href="/index.php/student/Contact/student">
                             <p><i class="ico3"></i>
                                 通讯录
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i">
+                        <a href="/index.php/student/Notice/index">
+                            <p><i class="ico4"></i>
+                                消息管理
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i">
+                        <a href="/index.php/student/Grade/index">
+                            <p><i class="ico5"></i>
+                                我的成绩
                             </p>
                         </a>
                     </div>
@@ -108,6 +90,15 @@
         </div>
     </div>
 </nav>
+<script>
+    $(function(){
+        $('.i').click(function(){
+            $('.i').removeClass('on');
+            $(this).addClass('on');
+        });
+    });
+</script>
+
 <!-------------------------------------- 内容开始 -------------------------------------->
 <main>
     <div class="ui-head">
@@ -142,14 +133,12 @@
                 <div class="hd">
                     <div class="tool">
                         <p>
-                            <a href="">查询</a>
-                            &nbsp;
                             <a href="">删除</a>
                         </p>
                     </div>
                 </div>
                 <div class="ct">
-                    <table>
+                    <table class="yfycms-table">
                         <tbody>
                         <tr>
                             <td>&nbsp;</td>
@@ -161,14 +150,15 @@
                             <td><b>操作</b></td>
                         </tr>
                         <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                            <td><a href="" class="cbox"></a></td>
-                            <td><?php echo ($vo["id"]); ?></td>
-                            <td><?php echo ($vo["title"]); ?></td>
-                            <td><?php echo ($vo["name"]); ?></td>
-                            <td>所有人</td>
-                            <td><?php echo ($vo["pubtime"]); ?></td>
-                            <td><a href="" class="ul">查看</a></td>
-                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                <td><a href="" class="cbox"></a></td>
+                                <td><?php echo ($vo["id"]); ?></td>
+                                <td><?php echo ($vo["title"]); ?></td>
+                                <td><?php echo ($vo["name"]); ?></td>
+                                <td>所有人</td>
+                                <td><?php echo ($vo["pubtime"]); ?></td>
+                                <td><a href="javascript:void(0)" attr-id="<?php echo ($vo["id"]); ?>" id="yfycms-cat"  class="ul">查看</a>&nbsp;<a href="">删除</a>
+                                    </td>
+                            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         </tbody>
                     </table>
                 </div>
@@ -206,7 +196,17 @@
 
 </style>
 <script>
+    var SCOPE = {
+        'cat_url' : '/index.php?m=student&c=notice&a=cat',
+    }
     $(function(){
-
+        /**
+         * 编辑模型
+         */
+        $('.yfycms-table #yfycms-cat').on('click',function(){
+            var id = $(this).attr('attr-id');
+            var url = SCOPE.cat_url+'&id='+id;
+            window.location.href=url;
+        });
     });
 </script>

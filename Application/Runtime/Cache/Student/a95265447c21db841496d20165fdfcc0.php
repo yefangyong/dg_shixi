@@ -42,7 +42,7 @@
         <div class="list">
             <ul>
                 <li>
-                    <div class="i">
+                    <div class="i on">
                         <a href="/index.php/student/Report/index">
                             <p><i class="ico1"></i>
                                 实习报告
@@ -51,7 +51,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
+                    <div  class="i">
                         <a href="/index.php/student/Apply/index">
                             <p><i class="ico2"></i>
                                 我的申请
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                     <div class="i">
-                        <a href="/index.php/student/Contact/index">
+                        <a href="/index.php/student/Contact/student">
                             <p><i class="ico3"></i>
                                 通讯录
                             </p>
@@ -69,7 +69,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i on">
+                    <div class="i">
                         <a href="/index.php/student/Notice/index">
                             <p><i class="ico4"></i>
                                 消息管理
@@ -90,6 +90,15 @@
         </div>
     </div>
 </nav>
+<script>
+    $(function(){
+        $('.i').click(function(){
+            $('.i').removeClass('on');
+            $(this).addClass('on');
+        });
+    });
+</script>
+
 <!-------------------------------------- 头部结束 -------------------------------------->
 <!-------------------------------------- 内容开始 -------------------------------------->
 <main>
@@ -98,7 +107,7 @@
             <div class="pull-right">
                 <div class="user">
                     <p><img src="img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
+                        <a href=""><?php echo getLoginUsername() ?></a>
                         <i></i>
                     </p>
                     <div class="ex">
@@ -110,126 +119,57 @@
             </div>
             <div class="tabs">
                 <ul>
-                    <li><a href="" class="on">实习申请</a></li>
-                    <li><a href="">实习变更</a></li>
-                    <li><a href="">请假申请</a></li>
+                    <li><a href="/index.php?m=student&c=apply" class="on">实习申请</a></li>
+                    <li><a href="/index.php?m=student&c=apply&a=change">实习变更</a></li>
+                    <li><a href="/index.php?m=student&c=apply&a=leave">请假申请</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="ht15"></div>
     <div class="ui-main">
-
         <div class="container">
             <div class="ht10"></div>
-            <div class="ui-form style2">
-                <form class="form-horizontal" id="yfycms-form">
-                    <div class="form-group">
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">企业名称</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <select class="select" name="cname" class="select" style="width: 210px;">
-                                <div class="ex">
-                                    <option value="">请选择企业名称</option>
-                                    <?php if(is_array($corporation)): $i = 0; $__LIST__ = $corporation;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["name"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </div>
-                            </select>
-                        </div>
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">所在地址</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <select class="select"  class="select" style="width: 210px;">
-                                <div class="ex">
-                                    <option value="">请选择企业名地址</option>
-                                    <?php if(is_array($corporation)): $i = 0; $__LIST__ = $corporation;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["address"]); ?>"><?php echo ($vo["address"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </div>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">专业对口</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="text">
-                                <p>
-                                    <a href="javascript:void();" id="box1" class="rbox on"><i></i>对口</a>
-                                    <input type="hidden" value="" id="box" name="profession"/>
-                                    <span class="wh50"></span>
-                                    <a href="javascript:void();" id="box2" class="rbox"><i></i>不对口</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">保险购买</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="text">
-                                <p>
-                                    <a href="" id="buy1" class="rbox on"><i></i>已购买</a>
-                                    <input type="hidden" value="" id="buy" name="insurance"/>
-                                    <span class="wh50"></span>
-                                    <a href="" id="buy2" class="rbox"><i></i>未购买</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">职务</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input type="text" name="position" class="form-control" id="" style="width: 210px;" placeholder="请输入工作职务">
-                        </div>
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">企业联系人</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control" id="" style="width: 210px;" placeholder="请输入企业联系人">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">联系电话</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control" name="phone" id="" style="width: 210px;" placeholder="请输入联系电话">
-                        </div>
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">详细地址</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="select" style="width: 210px;">
-                                <input type="text" class="form-control" name="address" id="" style="width: 210px;" placeholder="请输入详细地址">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">开始日期</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control dtp" name="starttime" id="" style="width: 210px;" placeholder="例XXXX-XX-XX" value="2016-12-1">
-                        </div>
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">结束日期</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control dtp" name="endtime" id="" style="width: 210px;" placeholder="例XXXX-XX-XX">
-                        </div>
-                    </div>
-                </form>
-                <div class="ht90"></div>
-                <p class="text-center">
-                    <a href="javascript:void();" id="yfycms-button-submit" class="bt-btn1 style1">提交</a>
-                    <span class="wh40"></span>
-                    <a href="" class="bt-btn1 style2">取消</a>
-                </p>
+            <div class="ui-filter">
+
+
+            <div class="ht30"></div>
+            <div class="ui-table">
+                <div class="hd">
+
+                </div>
+                <div class="ct">
+                    <table class="yfycms-table">
+                        <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><b>学号</b></td>
+                            <td><b>提交人</b></td>
+                            <td><b>班级</b></td>
+                            <td><b>提交时间</b></td>
+                            <td><b>审核人</b></td>
+                            <td><b>评审结果</b></td>
+                            <td><b>操作</b></td>
+                        </tr>
+
+                            <tr>
+                                <td><a href="" class="cbox"></a></td>
+                                <td><?php echo ($list['studentno']); ?></td>
+                                <td><?php echo ($list['name']); ?></td>
+                                <td><?php echo ($list['classname']); ?></td>
+                                <td><?php echo ($list['starttime']); ?></td>
+                                <td><?php echo ($list['teacher']); ?></td>
+                                <td><?php echo (getReportStatus($list['status'])); ?></td>
+                                <td>
+                                    <a href="javascript:void(0);" id="yfycms-view" attr-id="<?php echo ($list['id']); ?>">查看</a> <a href="javascript:void(0);" id="yfycms-delete" attr-message="删除" attr-id="<?php echo ($list['id']); ?>">删除</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </main>
 <!-------------------------------------- 内容结束 -------------------------------------->
@@ -240,64 +180,60 @@
     </div>
 </footer>
 <!-------------------------------------- 尾部开始 -------------------------------------->
-<link rel="stylesheet" type="text/css" href="/Public/Student/css/bootstrap-datetimepicker.min.css">
-<script type="text/javascript" src="/Public/Student/js/bootstrap-datetimepicker.min.js"></script>
-<script type="text/javascript" src="/Public/Student/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
-<script>
-    $(function(){
-        $('.dtp').datetimepicker({
-            language: 'zh-CN',
-            weekStart: 1,
-            todayBtn:  1,
-            autoclose: 1,
-            todayHighlight: 1,
-            startView: 2,
-            forceParse: 0,
-            showMeridian: 1
-        });
-    });
-</script>
 </body>
 </html>
 <style>
 
 </style>
 <script>
-    $("#box1").click(function(){
-        $("#box").val('0');
-    });
 
-    $("#box2").click(function(){
-        $("#box").val('1');
-    });
+        var SCOPE = {
+            'jump_url' : '/index.php?m=student&c=apply&a=index',
+            'set_status_url':'/index.php?m=student&c=apply&a=delApply',
+            'edit_url':'/index.php?m=student&c=apply&a=edit',
+            'view_url':'/index.php?m=student&c=apply&a=viewApply'
+        };
 
-    $("#buy1").click(function(){
-        $("#buy").val('0');
-    });
+        $('#yfycms-delete').on('click',function(){
+            var id = $(this).attr('attr-id');
+            var message=$(this).attr('attr-message');
+            var url = SCOPE.set_status_url;
+            data={};
+            data['id'] = id;
 
-    $("#buy2").click(function(){
-        $("#buy").val('1');
-    });
-
-    var SCOPE = {
-        'save_url' : '/index.php?m=student&c=apply&a=index',
-        'jump_url' : '/index.php?m=student&c=report&a=index',
-    };
-    $("#yfycms-button-submit").click(function(){
-        var data=$("#yfycms-form").serializeArray();
-        postData={};
-        $(data).each(function(i){
-            postData[this.name]=this.value;
+            layer.open({
+                type : 0,
+                title : '是否提交？',
+                btn : ['yes','no'],
+                icon :3,
+                closeBtn : 2,
+                content : '是否确认'+message,
+                scorllbar : true,
+                yes: function(){
+                    todelete(url,data);
+                },
+            });
         });
-        console.log(postData);
-        url=SCOPE.save_url;
-        jump_url=SCOPE.jump_url;
-        $.post(url,postData,function($result){
-            if($result.status == 1){
-                return dialog.success($result.message,jump_url);
-            }else if($result.status == 0){
-                return dialog.error($result.message);
-            }
-        },"JSON");
+
+        function todelete(){
+            var url = SCOPE.set_status_url;
+            //ajax的异步操作，交互性好
+            $.post(
+                    url,data,function(s){
+                        if(s.status == 1){
+                            return dialog.success('删除成功','');
+                        }else{
+                            return dialog.error('删除失败');
+                        }
+                    },"JSON");
+        }
+
+    /**
+     * 查看模型
+     */
+    $('.yfycms-table #yfycms-view').on('click',function(){
+        var id = $(this).attr('attr-id');
+        var url = SCOPE.view_url+'&id='+id;
+        window.location.href=url;
     });
 </script>

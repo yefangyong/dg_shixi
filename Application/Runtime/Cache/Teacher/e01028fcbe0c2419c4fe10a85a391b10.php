@@ -119,8 +119,8 @@
         <div class="list">
             <ul>
                 <li>
-                    <div class="i">
-                        <a href="Report/index">
+                    <div class="i ">
+                        <a href="<?php echo U('Report/index');?>">
                             <p><i class="ico1"></i>
                                 实习报告
                             </p>
@@ -131,7 +131,7 @@
                     <div class="i">
                         <a href="<?php echo U('Apply/index');?>">
                             <p><i class="ico2"></i>
-                                我的申请
+                                申请审核
                             </p>
                         </a>
                     </div>
@@ -147,7 +147,7 @@
                 </li>
                 <li>
                     <div class="i">
-                        <a href="">
+                        <a href="<?php echo U('Notice/index');?>">
                             <p><i class="ico7"></i>
                                 通知公告
                             </p>
@@ -166,7 +166,7 @@
                 <li>
                     <div class="i on">
                         <a href="<?php echo U('Student/index');?>">
-                            <p><i class="ico6"></i>
+                            <p><i class="ico9"></i>
                                 学生管理
                             </p>
                         </a>
@@ -174,7 +174,7 @@
                 </li>
                 <li>
                     <div class="i">
-                        <a href="">
+                        <a href="<?php echo U('Contact/index');?>">
                             <p><i class="ico3"></i>
                                 通讯录
                             </p>
@@ -189,18 +189,18 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
-            </div>
+    <div class="user">
+        <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
+            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <i></i>
+        </p>
+        <div class="ex">
+            <p><a href="">个人信息</a></p>
+            <p><a href="javascript:void(0)">修改密码</a></p>
+            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+        </div>
+    </div>
+</div>
             <div class="tabs">
                 <ul>
                     <li><a href="<?php echo U('Student/index');?>" class="on">学生管理</a></li>

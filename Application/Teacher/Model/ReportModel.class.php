@@ -19,5 +19,15 @@
       }
       return $this->where("`id` = ".$id)->delete();
     }
+
+     public function getWeekCount($stuid)
+     {
+       if(!isset($stuid)||empty($stuid)){
+           return 0;
+       }
+       $map['student_id'] = $stuid;
+       $map['type'] = 0;
+       return $this->where($map)->count();
+     }
  }
 

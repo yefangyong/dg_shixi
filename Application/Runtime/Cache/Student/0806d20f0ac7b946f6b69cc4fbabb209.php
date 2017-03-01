@@ -42,7 +42,7 @@
         <div class="list">
             <ul>
                 <li>
-                    <div class="i">
+                    <div class="i on">
                         <a href="/index.php/student/Report/index">
                             <p><i class="ico1"></i>
                                 实习报告
@@ -51,7 +51,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
+                    <div  class="i">
                         <a href="/index.php/student/Apply/index">
                             <p><i class="ico2"></i>
                                 我的申请
@@ -69,7 +69,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i on">
+                    <div class="i">
                         <a href="/index.php/student/Notice/index">
                             <p><i class="ico4"></i>
                                 消息管理
@@ -90,6 +90,15 @@
         </div>
     </div>
 </nav>
+<script>
+    $(function(){
+        $('.i').click(function(){
+            $('.i').removeClass('on');
+            $(this).addClass('on');
+        });
+    });
+</script>
+
 <!-------------------------------------- 头部结束 -------------------------------------->
 <!-------------------------------------- 内容开始 -------------------------------------->
 <main>
@@ -120,9 +129,9 @@
     <div class="ui-path">
         <p>
             <a href="" class="home"></a>
-            <a href="">实习报告</a>
+            <a href=""style="font-size: 15px">实习报告</a>
             >
-            <a href="" class="on">新增实习报告</a>
+            <a href="" class="on"style="font-size: 15px">新增实习报告</a>
         </p>
     </div>
     <div class="ui-main">

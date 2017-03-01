@@ -13,7 +13,7 @@
              $type = session('adminUser.type');
              if($type == 1){
                  //教师
-                 $teacherno = session('adminUser.teacherno');
+                 $teacherno = session('adminUser.no');
                  $teacher = D('Teacher')->getTeacher($teacherno);
                  if($teacher['identity'] == '系主任'){
                      //默认一个系主任管一个学院
@@ -31,12 +31,13 @@
          }
      }
 
-     public function weekly()
+     public function month()
      {
-           return $this->display();
+         $monthList = D('ReportView')->where("type = 1")->select();
+         $this->assign('list',$monthList);
+         return $this->display();
      }
-     
-     
+
      public function del()
      {
          $id = I('post.id',0,'intval');
@@ -100,29 +101,29 @@
          return $this->display();
      }
 
-     public function unaudit()
-     {
-       $rid = I('get.rid',0,'intval');
-       if($_POST){
-            $receive = explode('&',I('post.content','','trim'));
-            $rid = intval(substr($receive[0],4));
-            $suggestion = urldecode(substr($receive[1],11));
-            $data['result'] = I('post.result',0,'intval');
-            $data['suggestion'] = $suggestion;
-            if(empty($data['suggestion'])||!isset($data['suggestion'])){
-                show(0,'请填写意见！');
-            }else{
-               $res =  D('Report')->updateReportById($rid,$data);
-               if($res){
-                   show(1,'意见已更新！');
-               }else{
-                   show(-1,'意见更新失败！');
-               }
-            }
-       }else{
-           $detail = D('ReportView')->getReportById($rid);
-           $this->assign('report',$detail);
-           $this->display();
-       }
-     }
+//     public function unaudit()
+//     {
+//       $rid = I('get.rid',0,'intval');
+//       if($_POST){
+//            $receive = explode('&',I('post.content','','trim'));
+//            $rid = intval(substr($receive[0],4));
+//            $suggestion = urldecode(substr($receive[1],11));
+//            $data['result'] = I('post.result',0,'intval');
+//            $data['suggestion'] = $suggestion;
+//            if(empty($data['suggestion'])||!isset($data['suggestion'])){
+//                show(0,'请填写意见！');
+//            }else{
+//               $res =  D('Report')->updateReportById($rid,$data);
+//               if($res){
+//                   show(1,'意见已更新！');
+//               }else{
+//                   show(-1,'意见更新失败！');
+//               }
+//            }
+//       }else{
+//           $detail = D('ReportView')->getReportById($rid);
+//           $this->assign('report',$detail);
+//           $this->display();
+//       }
+//     }
  }

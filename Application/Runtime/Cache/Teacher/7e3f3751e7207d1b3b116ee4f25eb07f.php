@@ -128,7 +128,7 @@
                     <div class="i">
                         <a href="<?php echo U('Apply/index');?>">
                             <p><i class="ico2"></i>
-                                我的申请
+                                申请审核
                             </p>
                         </a>
                     </div>

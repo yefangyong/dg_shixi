@@ -4,17 +4,7 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
+               <include file="Public/user"/>
             </div>
             <div class="tabs">
                 <ul>
@@ -104,10 +94,11 @@
                                 <td>{$v.city}</td>
                                 <td>{$v.contact}</td>
                                 <td>{$v.telephone}</td>
-                                <td>{$v.isused}</td>
+                                <td>{$v.isused|setCorporationStatus}</td>
                                 <td>
-                                    <a href="javascript:void(0)">编辑</a>
-                                    <a href="JavaScript:void(0)" id="del" attr-id="{$v.id}">删除</a>
+                                    <a href="__CONTROLLER__/viewcor/id/{$v.id}">查看</a>
+                                    <a href="__CONTROLLER__/editCor/id/{$v.id}">编辑</a>
+                                    <a href="JavaScript:void(0)" class="del" attr-id="{$v.id}">删除</a>
                                 </td>
                             </tr>
                         </volist>
@@ -134,23 +125,23 @@
 </footer>
 <script>
     $(function(){
-//        $('#del').click(function(){
-//            var $id = $(this).attr('attr-id');
-//             layer.confirm("真的要删除本条数据吗？",{icon:3},function(){
-//                 var $url = "{:U('Practice/delCor')}";
-//                 $.post($url,{id:$id},function(msg){
-//                     if(msg.status==1){
-//                         layer.msg(msg.message,{icon:6},function(){
-//                             window.location.href="/teacher.php/Practice/corporation";
-//                         });
-//                     }else{
-//                         layer.msg(msg.message,{icon:5},function(){
-//                             window.location.href="/teacher.php/Practice/corporation";
-//                         });
-//                     }
-//                 },'JSON');
-//             });
-//        });
+        $('.del').click(function(){
+            var $id = $(this).attr('attr-id');
+             layer.confirm("真的要删除本条数据吗？",{icon:3},function(){
+                 var $url = "{:U('Practice/delCor')}";
+                 $.post($url,{id:$id},function(msg){
+                     if(msg.status==1){
+                         layer.msg(msg.message,{icon:6},function(){
+                             window.location.href="/teacher.php/Practice/corporation";
+                         });
+                     }else{
+                         layer.msg(msg.message,{icon:5},function(){
+                             window.location.href="/teacher.php/Practice/corporation";
+                         });
+                     }
+                 },'JSON');
+             });
+        });
 
         $('#used').click(function(){
             var $checked = $('a.cbox.on');

@@ -128,7 +128,7 @@
                     <div class="i">
                         <a href="<?php echo U('Apply/index');?>">
                             <p><i class="ico2"></i>
-                                我的申请
+                                申请审核
                             </p>
                         </a>
                     </div>
@@ -216,6 +216,7 @@
                     <div class="tool">
                         <p>
                             <a href="/teacher.php?c=notice&a=add">新增</a>
+                            <a href="#">刪除</a>
                         </p>
                     </div>
                 </div>
@@ -224,20 +225,20 @@
                         <tbody>
                         <tr>
                             <td>&nbsp;</td>
-                            <td><b>标题</b></td>
                             <td><b>公告标题</b></td>
                             <td><b>发布人</b></td>
                             <td><b>发布对象</b></td>
                             <td><b>发布时间</b></td>
+                            <td><b>状态</b></td>
                             <td><b>操作</b></td>
                         </tr>
                         <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
                                 <td><a href="" class="cbox"></a></td>
-                                <td><?php echo ($vo["title"]); ?></td>
                                 <td><?php echo ($vo["content"]); ?></td>
                                 <td><?php echo ($vo["teacher_name"]); ?></td>
                                 <td><?php echo ($vo["name"]); ?></td>
                                 <td><?php echo ($vo["pubtime"]); ?></td>
+                                <td><?php echo ($vo["title"]); ?></td>
                                 <td>
                                     <a href="javascript:void();">查看</a>
                                     <a href="javascript:void();" attr-id="<?php echo ($vo["nid"]); ?>" attr-message="删除" id="yfycms-delete">删除</a>

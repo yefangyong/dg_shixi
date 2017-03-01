@@ -2,19 +2,7 @@
 <main>
     <div class="ui-head">
         <div class="container">
-            <div class="pull-right">
-                <div class="user">
-                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
-            </div>
+           <include file="Public/user"/>
             <div class="tabs">
                 <ul>
                     <li><a href="{:U('Student/index')}" class="on">学生管理</a></li>
@@ -49,7 +37,7 @@
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">学部</a></p>
+                    <p><a href="">院系</a></p>
                     <div class="ex">
                         <div class="list">
                             <p><a href="">机械学院</a></p>
@@ -78,15 +66,7 @@
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <div class="select">
-                    <p><a href="">学号/姓名</a></p>
-                    <div class="ex">
-                        <div class="list" style="width: 140px;">
-                            <p><a href="">1687287 董嘉耀</a></p>
-                            <p><a href="">0976267 郭德纲</a></p>
-                        </div>
-                    </div>
-                </div>
+                <input type="text" class="text control-form" placeholder="请输入学号/姓名">
                 <span class="wh10"></span>
                 <a href="" class="bt">查询</a>
             </div>
@@ -124,15 +104,15 @@
                                 <td><a href="" class="cbox"></a></td>
                                 <td>{$v.studentno}</td>
                                 <td>{$v.name}</td>
-                                <td>{$v.sex}</td>
+                                <td>{$v.sex|setGender}</td>
                                 <td>{$v.deptname}</td>
                                 <td>{$v.grade}</td>
                                 <td>{$v.classname}</td>
-                                <td>{$v.phone}</td>
+                                <td>{$v.stuphone}</td>
                                 <td>
                                     <a href="__CONTROLLER__/view/id/{$v.sid}">查看</a>
-                                    <a href="">编辑</a>
-                                    <a href="javascript:void(0)" id="del" attr-id="{$v.sid}">删除</a>
+                                    <a href="__CONTROLLER__/update/id/{$v.sid}">编辑</a>
+                                    <a href="javascript:void(0)" class="del" attr-id="{$v.sid}">删除</a>
                                 </td>
                             </tr>
                         </volist>
@@ -166,3 +146,24 @@
 
     </div>
 </footer>
+<script>
+    $(function(){
+        $('.del').click(function(){
+            var $data = $(this).attr('attr-id');
+            layer.confirm('您真的要删除本条记录吗?', {icon: 3, title:'删除记录'}, function(index){
+                var $url = "{:U('Student/del')}";
+                $.post($url,{id:$data},function(msg){
+                    if(msg.status==1){
+                        layer.msg(msg.message,{icon:6},function(){
+                            window.location.href="/teacher.php/Student/index";
+                        });
+                    }else{
+                        layer.msg(msg.message,{icon:5},function(){
+                            window.location.href="/teacher.php/Student/index";
+                        });
+                    }
+                },'JSON');
+            });
+        });
+    });
+</script>

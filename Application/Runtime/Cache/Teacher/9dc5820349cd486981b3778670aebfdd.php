@@ -128,7 +128,7 @@
                     <div class="i">
                         <a href="<?php echo U('Apply/index');?>">
                             <p><i class="ico2"></i>
-                                我的申请
+                                申请审核
                             </p>
                         </a>
                     </div>
@@ -185,19 +185,19 @@
 <main>
     <div class="ui-head">
         <div class="container">
-            <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
-            </div>
+           <div class="pull-right">
+    <div class="user">
+        <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
+            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <i></i>
+        </p>
+        <div class="ex">
+            <p><a href="">个人信息</a></p>
+            <p><a href="javascript:void(0)">修改密码</a></p>
+            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+        </div>
+    </div>
+</div>
             <div class="tabs">
                 <ul>
                     <li><a href="<?php echo U('Student/index');?>" class="on">学生管理</a></li>
@@ -232,7 +232,7 @@
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">学部</a></p>
+                    <p><a href="">院系</a></p>
                     <div class="ex">
                         <div class="list">
                             <p><a href="">机械学院</a></p>
@@ -261,15 +261,7 @@
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <div class="select">
-                    <p><a href="">学号/姓名</a></p>
-                    <div class="ex">
-                        <div class="list" style="width: 140px;">
-                            <p><a href="">1687287 董嘉耀</a></p>
-                            <p><a href="">0976267 郭德纲</a></p>
-                        </div>
-                    </div>
-                </div>
+                <input type="text" class="text control-form" placeholder="请输入学号/姓名">
                 <span class="wh10"></span>
                 <a href="" class="bt">查询</a>
             </div>
@@ -306,15 +298,15 @@
                                 <td><a href="" class="cbox"></a></td>
                                 <td><?php echo ($v["studentno"]); ?></td>
                                 <td><?php echo ($v["name"]); ?></td>
-                                <td><?php echo ($v["sex"]); ?></td>
+                                <td><?php echo (setGender($v["sex"])); ?></td>
                                 <td><?php echo ($v["deptname"]); ?></td>
                                 <td><?php echo ($v["grade"]); ?></td>
                                 <td><?php echo ($v["classname"]); ?></td>
-                                <td><?php echo ($v["phone"]); ?></td>
+                                <td><?php echo ($v["stuphone"]); ?></td>
                                 <td>
-                                    <a href="/index.php/Teacher/Student/view/id/<?php echo ($v["sid"]); ?>">查看</a>
-                                    <a href="">编辑</a>
-                                    <a href="javascript:void(0)" id="del" attr-id="<?php echo ($v["sid"]); ?>">删除</a>
+                                    <a href="/teacher.php/Student/view/id/<?php echo ($v["sid"]); ?>">查看</a>
+                                    <a href="/teacher.php/Student/update/id/<?php echo ($v["sid"]); ?>">编辑</a>
+                                    <a href="javascript:void(0)" class="del" attr-id="<?php echo ($v["sid"]); ?>">删除</a>
                                 </td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         </tbody>
@@ -347,6 +339,27 @@
 
     </div>
 </footer>
+<script>
+    $(function(){
+        $('.del').click(function(){
+            var $data = $(this).attr('attr-id');
+            layer.confirm('您真的要删除本条记录吗?', {icon: 3, title:'删除记录'}, function(index){
+                var $url = "<?php echo U('Student/del');?>";
+                $.post($url,{id:$data},function(msg){
+                    if(msg.status==1){
+                        layer.msg(msg.message,{icon:6},function(){
+                            window.location.href="/teacher.php/Student/index";
+                        });
+                    }else{
+                        layer.msg(msg.message,{icon:5},function(){
+                            window.location.href="/teacher.php/Student/index";
+                        });
+                    }
+                },'JSON');
+            });
+        });
+    });
+</script>
 </body>
 </html>
 <script>

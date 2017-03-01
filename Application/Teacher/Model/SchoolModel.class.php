@@ -14,4 +14,5 @@ class SchoolModel extends Model{
         return $this->where("`name` = ".$name)->field('id')->find();
     }
 
+
 }

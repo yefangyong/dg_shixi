@@ -131,7 +131,7 @@
                     <div class="i">
                         <a href="<?php echo U('Apply/index');?>">
                             <p><i class="ico2"></i>
-                                我的申请
+                                申请审核
                             </p>
                         </a>
                     </div>
@@ -189,22 +189,22 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
-            </div>
+    <div class="user">
+        <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
+            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <i></i>
+        </p>
+        <div class="ex">
+            <p><a href="">个人信息</a></p>
+            <p><a href="javascript:void(0)">修改密码</a></p>
+            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+        </div>
+    </div>
+</div>
             <div class="tabs">
                 <ul>
-                    <li><a href="" class="on">周报</a></li>
-                    <li><a href="">月报</a></li>
+                    <li><a href="<?php echo U('Report/index');?>" class="on">周报</a></li>
+                    <li><a href="<?php echo U('Report/month');?>">月报</a></li>
                     <li><a href="">实习总结</a></li>
                 </ul>
             </div>
@@ -264,7 +264,7 @@
                         <p>
                             <a href="">导出</a>
                             &nbsp;
-                            <a href="">删除</a>
+                            <a href="JavaScript:void(0)" id="delall">删除</a>
                         </p>
                     </div>
                 </div>
@@ -283,6 +283,7 @@
                         </tr>
                         <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
                                 <td><a href="" class="cbox"></a></td>
+                                <input type="hidden" name="id" value="<?php echo ($v["id"]); ?>">
                                 <td><?php echo ($v["studentno"]); ?></td>
                                 <td><?php echo ($v["name"]); ?></td>
                                 <td><?php echo ($v["classname"]); ?></td>
@@ -290,7 +291,7 @@
                                 <td>&nbsp;</td>
                                 <td><?php echo (setReportStatus($v["status"])); ?></td>
                                 <td>
-                                    <a href="javascript:void(0)" class="edit" attr-id="<?php echo ($v["rid"]); ?>" attr-status="<?php echo ($v["status"]); ?>">编辑</a>
+                                    <a href="javascript:void(0)" class="edit" attr-id="<?php echo ($v["rid"]); ?>" attr-status="<?php echo ($v["status"]); ?>">查看</a>
                                     <a href="javascript:void(0)" class="del" attr-id="<?php echo ($v["rid"]); ?>">删除</a>
                                 </td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -303,14 +304,14 @@
             <div class="ui-paging">
                 <span>共<?php echo ($num); ?>页，共<?php echo ($count); ?>条记录</span>
                 &nbsp;
-                <!--<ul>-->
-                    <!--<li><a href=""><</a></li>-->
-                    <!--<li><a href="" class="on">1</a></li>-->
-                    <!--<li><a href="">2</a></li>-->
-                    <!--<li><a href="">3</a></li>-->
-                    <!--<li><a href="">4</a></li>-->
-                    <!--<li><a href="">></a></li>-->
-                <!--</ul>-->
+                <ul>
+                    <li><a href=""><</a></li>
+                    <li><a href="" class="on">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">></a></li>
+                </ul>
                 <div class="pull-left">
                     <a href="" class="cbox"><i></i>全选</a>
                 </div>
@@ -372,7 +373,7 @@
             var $id = $(this).attr('attr-id');
             var $status = $(this).attr('attr-status');
             $.post($url,{rid:$id,status:$status},function(msg){
-                window.location.href=msg;
+                window.location.href = msg;
             },'JSON');
         });
 
@@ -393,6 +394,18 @@
                     }
                 },'JSON');
             });
+        });
+
+        $('#delall').click(function(){
+            var $allBtn = $('.cbox:last');
+            var $ids = new Array();
+            if($allBtn.hasClass('on')){
+                var $items = $('.cbox:not(.cbox:last)');
+                for(var $i=0;$i<$items.length;$i++){
+                    console.log($items[$i].closest());
+                }
+
+            }
         });
     });
 </script>

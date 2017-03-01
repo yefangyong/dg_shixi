@@ -54,42 +54,17 @@ class PracticeController extends CommonController{
                 show(0,'请填写联系人！');
             }
             $data["position"] = I('post.position','','trim');
-//             if(!isset($data['position'])||empty($data['position'])){
-//                show(0,'请填写职位！');
-//            }
-//            $data["telephone"] = I('post.telephone','','trim');
-//             if(!isset($data['telephone'])||empty($data['telephone'])){
-//                show(0,'请填写公司联系方式！');
-//            }
-//            $data["mobile"] = I('post.mobile','','trim');
-//             if(!isset($data['mobile'])||empty($data['mobile'])){
-//                show(0,'请填写公司联系人联系方式！');
-//            }
-//            $data["email"] = I('post.email','','trim');
-//             if(!isset($data['email'])||empty($data['email'])){
-//                show(0,'请填写公司邮箱地址！');
-//            }
-//            $data["zipcode"] = I('post.zipcode','','trim');
-//             if(!isset($data['zipcode'])||empty($data['zipcode'])){
-//                show(0,'请填写公司所在地邮编！');
-//            }
+            $data["telephone"] = I('post.telephone','','trim');
+            $data["mobile"] = I('post.mobile','','trim');
+            $data["email"] = I('post.email','','trim');
+            $data["zipcode"] = I('post.zipcode','','trim');
 //            $data["fax"] = I('post.fax','','trim');
-//             if(!isset($data['fax'])||empty($data['fax'])){
-//                show(0,'请填写公司传真！');
-//            }
-//            unset($data['fax']);
-//            $data["website"] = I('post.website','','trim');
-//             if(!isset($data['website'])||empty($data['website'])){
-//                show(0,'请填写公司网址！');
-//            }
+            $data["website"] = I('post.website','','trim');
             $data['address'] = I('post.address','','trim');
              if(!isset($data['address'])||empty($data['address'])){
                 show(0,'请填写公司详细地址！');
             }
-//            $data["introduction"] = I('post.introduction','','trim');
-//             if(!isset($data['introduction'])||empty($data['introduction'])){
-//                show(0,'请填写公司简介！');
-//            }
+            $data["introduction"] = I('post.introduction','','trim');
             $data['addtime'] = date('Y-m-d H:i:s',time());
             $res = D('Corporation')->addCorporation($data);
             if($res){
@@ -113,6 +88,74 @@ class PracticeController extends CommonController{
         }
     }
 
+    public function editCor()
+    {
+        if($_POST){
+            $id = I('post.id',0,'intval');
+            $data['name'] =  I('post.name','','trim');
+            if(!isset($data['name'])||empty($data['name'])){
+                show(0,'请填写公司名！');
+            }
+            $data['city'] = I('post.city','','trim');
+            if(!isset($data['city'])||empty($data['city'])){
+                show(0,'请填写公司地址！');
+            }
+            $data["type"] = I('post.type','','trim');
+            if(!isset($data['type'])||empty($data['type'])){
+                show(0,'请填写公司性质！');
+            }
+            $data["contact"] = I('post.contact','','trim');
+            if(!isset($data['contact'])||empty($data['contact'])){
+                show(0,'请填写联系人！');
+            }
+            $data["position"] = I('post.position','','trim');
+            $data["telephone"] = I('post.telephone','','trim');
+            $data["mobile"] = I('post.mobile','','trim');
+            $data["email"] = I('post.email','','trim');
+            $data["zipcode"] = I('post.zipcode','','trim');
+//            $data["fax"] = I('post.fax','','trim');
+            $data["website"] = I('post.website','','trim');
+            $data['address'] = I('post.address','','trim');
+            if(!isset($data['address'])||empty($data['address'])){
+                show(0,'请填写公司详细地址！');
+            }
+            $data["introduction"] = I('post.introduction','','trim');
+            $data['addtime'] = date('Y-m-d H:i:s',time());
+            $res = D('Corporation')->editCorporation($id,$data);
+            if($res){
+                show(1,'编辑成功！');
+            }else{
+                show(0,'编辑失败！');
+            }
+        }else{
+            $id = I('get.id',0,'intval');
+            if(!isset($id)||empty($id)){
+                show(0,'获取失败');
+            }else{
+                $data['id'] = $id;
+                $corporationInfo = D('Corporation')->getCorporation($data);
+                $corporationInfo = $corporationInfo[0];
+                $this->assign('info',$corporationInfo);
+                return $this->display();
+            }
+        }
+    }
+
+    public function viewCor()
+    {
+        $id = I('get.id', 0, 'intval');
+        if (!isset($id) || empty($id)) {
+            show(0, '获取失败');
+        } else {
+            $corporationInfo = D('Corporation')->getCorporationById($id);
+//            echo '<pre>';
+//            var_dump($corporationInfo);
+//            exit;
+//            $corporationInfo = $corporationInfo[0];
+            $this->assign('info', $corporationInfo);
+            return $this->display();
+        }
+    }
 
     public function setCorStatus()
     {
@@ -193,6 +236,9 @@ class PracticeController extends CommonController{
             }
         }else{
             $addressList  = D('Corporation')->getAddress();
+            echo '<pre>';
+            var_dump($addressList);
+            exit;
             $nameList = D('Corporation')->getName();
             $guideList = D('Practice')->getGuide();
             $typeList = D('Corporation')->getCorporationType();
@@ -208,12 +254,6 @@ class PracticeController extends CommonController{
         return $this->display();
     }
 
-
-//    public function ()
-//    {
-        #合同
-//    }
-
     public function evaluation()
     {
         return $this->display();
@@ -223,6 +263,4 @@ class PracticeController extends CommonController{
     {
         return $this->display('Practice/add');
     }
-
-
 }

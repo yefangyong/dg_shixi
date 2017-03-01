@@ -6,25 +6,16 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
+                <include file="Public/user"/>
             </div>
             <div class="tabs">
                 <div class="ct">
                     <ul>
                         <li><a href="{:U('Apply/index')}" class="on">实习申请</a></li>
-                        <li><a href="{:U('Apply/corporation')}" >实习单位变更</a></li>
-                        <li><a href="{:U('Apply/position')}">实习岗位变更</a></li>
-                        <li><a href="">请假申请</a></li>
+                        <!--<li><a href="{:U('Apply/corporation')}" class="on">实习单位变更</a></li>-->
+                        <!--<li><a href="{:U('Apply/position')}">实习岗位变更</a></li>-->
+                        <li><a href="#">实习变更</a></li>
+                        <li><a href="{:U('Apply/leave')}">请假申请</a></li>
                     </ul>
                 </div>
                 <a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>
@@ -37,7 +28,7 @@
             <div class="ht10"></div>
             <div class="ui-filter">
                 <div class="select">
-                    <p><a href="">批阅批次</a></p>
+                    <p><a href="">实习批次</a></p>
                     <div class="ex">
                         <div class="list" style="min-width: 150px;">
                             <p><a href="">[141]2009-2010批次</a></p>
@@ -47,7 +38,7 @@
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">学部</a></p>
+                    <p><a href="">院系</a></p>
                     <div class="ex">
                         <div class="list">
                             <p><a href="">学部1</a></p>
@@ -122,8 +113,8 @@
                                 <td>{$v.corname}</td>
                                 <td>{$v.status|getReportStatus}</td>
                                 <td>
-                                        <a href="__CONTROLLER__/editApply/id/{$v.pid}">查看</a>
-                                    <!--<a href="javascript:void(0)" id="del">删除</a>-->
+                                    <a href="__CONTROLLER__/editApply/id/{$v.pid}">查看</a>
+                                    <a href="javascript:void(0)" class="del" attr-id="{$v.pid}">删除</a>
                                 </td>
                             </tr>
                         </volist>
@@ -164,4 +155,25 @@
 
     </div>
 </footer>
+<script>
+    $(function(){
+        $('.del').click(function(){
+           var $id = $(this).attr('attr-id');
+           var $url = "{:U('Apply/delApply')}";
+           layer.confirm('真的要删除本条数据吗？',{icon:3},function(msg){
+               $.post($url,{id:$id},function(msg){
+                    if(msg.status==1){
+                        layer.msg(msg.message,{icon:6},function(){
+                            window.location.href = "/teacher.php/Apply/index";
+                        });
+                    }else{
+                        layer.msg(msg.message,{icon:5},function(){
+                            window.location.href = "/teacher.php/Apply/index";
+                        });
+                    }
+               },'JSON');
+           })
+        });
+    })
+</script>
 <!-------------------------------------- 尾部开始 -------------------------------------->

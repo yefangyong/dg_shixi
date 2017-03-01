@@ -205,7 +205,7 @@
                             <li><a href="<?php echo U('Apply/index');?>" >实习申请</a></li>
                             <li><a href="<?php echo U('Apply/corporation');?>" class="on">实习单位变更</a></li>
                             <li><a href="<?php echo U('Apply/position');?>">实习岗位变更</a></li>
-                            <li><a href="">请假申请</a></li>
+                            <li><a href="<?php echo U('Apply/leave');?>">请假申请</a></li>
                         </ul>
                     </ul>
                 </div>

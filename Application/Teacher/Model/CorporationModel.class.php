@@ -4,9 +4,18 @@ use Think\Model;
 
 class CorporationModel extends Model
 {
-    public function getCorporation()
+    public function getCorporation($data = array())
     {
-        return $this->select();
+        return $this->where($data)->select();
+    }
+
+    public function getCorporationById($id)
+    {
+        if (!isset($id) || empty($id)) {
+            return '';
+        } else {
+            return $this->where("`id` = ".$id)->find();
+        }
     }
 
     public function getAddress()
@@ -60,5 +69,16 @@ class CorporationModel extends Model
             return 0;
         }
         return $this->where("`id` = " . $id)->delete();
+    }
+
+    public function editCorporation($id,$data)
+    {
+        if (!is_array($data) || empty($data)) {
+            return 0;
+        }
+        if(!isset($id)||empty($id)){
+            return 0;
+        }
+        return $this->where("`id` = ".$id)->save($data);
     }
 }

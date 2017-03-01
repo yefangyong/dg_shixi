@@ -8,7 +8,6 @@ class ReportController extends Controller {
 			$_POST[$key]=$v;
 		}	
 		unset($_POST['data']);
-		$map['isDel']=0;
 		if($_POST['student_id']){
 			$map['student_id']=$_POST['student_id'];
 		}
@@ -32,6 +31,7 @@ class ReportController extends Controller {
 		$listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
 		// 实例化分页类 传入总记录数和每页显示的记录数
 		$page = new \Think\Page($count,$listRows);
+		$map[]=' dg_student.id is not null ';
 		// 当前页数
 		$currentPage = I(C('VAR_PAGE'),1);
        	$data = D('Report')->join("LEFT JOIN dg_student ON dg_report.student_id=dg_student.studentno")->where($map)->order($worder)->page($currentPage.','.$listRows)->field("dg_report.*,dg_student.name")->select();

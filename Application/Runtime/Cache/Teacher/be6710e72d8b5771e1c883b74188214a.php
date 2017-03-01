@@ -143,8 +143,8 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
-                        <a href="">
+                    <div class="i ">
+                        <a href="<?php echo U('Notice/index');?>">
                             <p><i class="ico7"></i>
                                 通知公告
                             </p>
@@ -162,7 +162,7 @@
                 </li>
                 <li>
                     <div class="i ">
-                        <a href="">
+                        <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
                                 学生管理
                             </p>
@@ -171,7 +171,7 @@
                 </li>
                 <li>
                     <div class="i">
-                        <a href="">
+                        <a href="<?php echo U('Contact/index');?>">
                             <p><i class="ico3"></i>
                                 通讯录
                             </p>

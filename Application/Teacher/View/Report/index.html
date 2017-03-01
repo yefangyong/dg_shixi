@@ -5,23 +5,11 @@
 <main>
     <div class="ui-head">
         <div class="container">
-            <div class="pull-right">
-                <div class="user">
-                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
-            </div>
+            <include file="Public/user"/>
             <div class="tabs">
                 <ul>
-                    <li><a href="" class="on">周报</a></li>
-                    <li><a href="">月报</a></li>
+                    <li><a href="{:U('Report/index')}" class="on">周报</a></li>
+                    <li><a href="{:U('Report/month')}">月报</a></li>
                     <li><a href="">实习总结</a></li>
                 </ul>
             </div>
@@ -81,7 +69,7 @@
                         <p>
                             <a href="">导出</a>
                             &nbsp;
-                            <a href="">删除</a>
+                            <a href="JavaScript:void(0)" id="delall">删除</a>
                         </p>
                     </div>
                 </div>
@@ -101,6 +89,7 @@
                         <volist name="list" id="v">
                             <tr>
                                 <td><a href="" class="cbox"></a></td>
+                                <input type="hidden" name="id" value="{$v.id}">
                                 <td>{$v.studentno}</td>
                                 <td>{$v.name}</td>
                                 <td>{$v.classname}</td>
@@ -108,7 +97,7 @@
                                 <td>&nbsp;</td>
                                 <td>{$v.status|setReportStatus}</td>
                                 <td>
-                                    <a href="javascript:void(0)" class="edit" attr-id="{$v.rid}" attr-status="{$v.status}">编辑</a>
+                                    <a href="javascript:void(0)" class="edit" attr-id="{$v.rid}" attr-status="{$v.status}">查看</a>
                                     <a href="javascript:void(0)" class="del" attr-id="{$v.rid}">删除</a>
                                 </td>
                             </tr>
@@ -124,14 +113,14 @@
             <div class="ui-paging">
                 <span>共{$num}页，共{$count}条记录</span>
                 &nbsp;
-                <!--<ul>-->
-                    <!--<li><a href=""><</a></li>-->
-                    <!--<li><a href="" class="on">1</a></li>-->
-                    <!--<li><a href="">2</a></li>-->
-                    <!--<li><a href="">3</a></li>-->
-                    <!--<li><a href="">4</a></li>-->
-                    <!--<li><a href="">></a></li>-->
-                <!--</ul>-->
+                <ul>
+                    <li><a href=""><</a></li>
+                    <li><a href="" class="on">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">></a></li>
+                </ul>
                 <div class="pull-left">
                     <a href="" class="cbox"><i></i>全选</a>
                 </div>
@@ -193,7 +182,7 @@
             var $id = $(this).attr('attr-id');
             var $status = $(this).attr('attr-status');
             $.post($url,{rid:$id,status:$status},function(msg){
-                window.location.href=msg;
+                window.location.href = msg;
             },'JSON');
         });
 
@@ -214,6 +203,18 @@
                     }
                 },'JSON');
             });
+        });
+
+        $('#delall').click(function(){
+            var $allBtn = $('.cbox:last');
+            var $ids = new Array();
+            if($allBtn.hasClass('on')){
+                var $items = $('.cbox:not(.cbox:last)');
+                for(var $i=0;$i<$items.length;$i++){
+                    console.log($items[$i].closest());
+                }
+
+            }
         });
     });
 </script>

@@ -202,7 +202,8 @@
             </div>
             <div class="tabs">
                 <ul>
-                    <li><a href="<?php echo U('Contact/index');?>" class="on">通讯录</a></li>
+                    <li><a href="<?php echo U('Contact/index');?>" class="on">学生群</a></li>
+                    <li><a href="<?php echo U('Contact/teacher');?>" >老师群</a></li>
                 </ul>
             </div>
         </div>
@@ -242,6 +243,8 @@
                     </div>
                 </div>
                 <span class="wh10"></span>
+                <input type="text" class="form-control text" placeholder="请输入姓名">
+                <span class="wh10"></span>
                 <a href="" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
@@ -253,17 +256,17 @@
                             <td><b>姓名</b></td>
                             <td><b>学号</b></td>
                             <td><b>电话</b></td>
-                            <td><b>邮箱</b></td>
+                            <td><b>实习企业</b></td>
                             <td><b>紧急联系人</b></td>
                             <td><b>联系电话</b></td>
                         </tr>
                         <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
-                                <td><?php echo ($v["name"]); ?></td>
+                                <td><?php echo ($v["stuname"]); ?></td>
                                 <td><?php echo ($v["studentno"]); ?></td>
                                 <td><?php echo ($v["phone"]); ?></td>
-                                <td><?php echo ($v["email"]); ?></td>
-                                <td>紧急联系人</td>
-                                <td>紧急联系人电话</td>
+                                <td><?php echo ($v["corname"]); ?></td>
+                                <td><?php echo ($v["contact"]); ?></td>
+                                <td><?php echo ($v["telephone"]); ?></td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
                     </table>

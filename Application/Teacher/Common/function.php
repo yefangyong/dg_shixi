@@ -27,6 +27,12 @@ function setAuditStatus($status){
     return $state;
 }
 
+
+function setGender($sex){
+    return $sex == 1 ? '男':'女';
+}
+
+
 /**
  * 设置公司状态
  * @param $status
@@ -56,8 +62,14 @@ function isMajor($major){
     return $major == 1 ? '对口' :'不对口';
 }
 
+
+function setApplyStatus($state){
+    return $state == -1 ? "不同意" : "同意";
+}
+
+
 function isPayInsurance($insurance){
-    return $insurance == 1 ? '是' : '否';
+    return $insurance == 1 ? '已购买' : '未购买';
 }
 
 

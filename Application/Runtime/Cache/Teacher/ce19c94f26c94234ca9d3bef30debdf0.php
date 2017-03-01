@@ -128,7 +128,7 @@
                     <div class="i on">
                         <a href="<?php echo U('Apply/index');?>">
                             <p><i class="ico2"></i>
-                                我的申请
+                                申请审核
                             </p>
                         </a>
                     </div>
@@ -186,25 +186,28 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
+                <div class="pull-right">
+    <div class="user">
+        <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
+            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <i></i>
+        </p>
+        <div class="ex">
+            <p><a href="">个人信息</a></p>
+            <p><a href="javascript:void(0)">修改密码</a></p>
+            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+        </div>
+    </div>
+</div>
             </div>
             <div class="tabs">
                 <div class="ct">
                     <ul>
                         <li><a href="<?php echo U('Apply/index');?>" class="on">实习申请</a></li>
-                        <li><a href="<?php echo U('Apply/corporation');?>" >实习单位变更</a></li>
-                        <li><a href="<?php echo U('Apply/position');?>">实习岗位变更</a></li>
-                        <li><a href="">请假申请</a></li>
+                        <!--<li><a href="<?php echo U('Apply/corporation');?>" class="on">实习单位变更</a></li>-->
+                        <!--<li><a href="<?php echo U('Apply/position');?>">实习岗位变更</a></li>-->
+                        <li><a href="#">实习变更</a></li>
+                        <li><a href="<?php echo U('Apply/leave');?>">请假申请</a></li>
                     </ul>
                 </div>
                 <a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>
@@ -238,31 +241,34 @@
                             <tr>
                                 <input type="hidden" name="id" value="<?php echo ($apply["pid"]); ?>">
                                 <td align="left">学号：<?php echo ($apply["studentno"]); ?></td>
-                                <td align="center">年级：<?php echo (setGrade($apply["grade"])); ?></td>
                                 <td align="center">姓名：<?php echo ($apply["stuname"]); ?></td>
-                                <td align="center">班级：<?php echo ($apply["classname"]); ?></td>
-                                <td align="right">专业：<?php echo ($apply["proname"]); ?></td>
+                                <td align="right">联系方式：<?php echo ($apply["phone"]); ?></td>
                             </tr>
                         </table>
                     </div>
                 </div>
+            </div>
                 <div class="ht25"></div>
                 <div class="ui-head1">
                     <p>公司信息</p>
                 </div>
                 <div class="ht15"></div>
                 <div class="ui-article">
-                    <div class="hd">
-                        <table>
-                            <tr>
-                                <td align="left">企业名称：<?php echo ($apply["corname"]); ?></td>
-                                <td align="center">所在地址：<?php echo ($apply["city"]); ?></td>
-                                <td align="center">职务：<?php echo ($apply["position"]); ?></td>
-                                <td align="center">企业联系人：<?php echo ($apply["contact"]); ?></td>
-                                <td align="right">联系电话：<?php echo ($apply["telephone"]); ?></td>
-                            </tr>
-                        </table>
-                        <p>
+            <div class="hd">
+                <table>
+                    <tr>
+                        <td align="left">企业名称：<?php echo ($apply["corname"]); ?></td>
+                        <td align="">企业地址：<?php echo ($apply["city"]); ?></td>
+                        <td align="">专业对口：<?php echo (isMajor($apply["profession"])); ?></td>
+                        <td align="">保险购买：<?php echo (isPayInsurance($apply["insurance"])); ?></td>
+                    </tr>
+                    <tr>
+                        <td align="left">职务：<?php echo ($apply["position"]); ?></td>
+                        <td align="">企业联系人：<?php echo ($apply["contact"]); ?></td>
+                        <td align="" colspan="2">联系电话：<?php echo ($apply["telephone"]); ?></td>
+                    </tr>
+                </table>
+                <p>
                 <span class="pull-left">
                   详细地址：<?php echo ($apply["address"]); ?>
                   <span class="wh40"></span>
@@ -270,10 +276,10 @@
                   <span class="wh40"></span>
                   结束时间：<?php echo ($apply["endtime"]); ?>
                 </span>
-                        </p>
-                    </div>
-                </div>
-            <div class="ht90"></div>
+                </p>
+            </div>
+        </div>
+                <div class="ht90"></div>
             <p class="text-center">
                 <button type='button' class="bt-btn1 style1" attr-opinion="1">同意</button>
                 <span class="wh40"></span>

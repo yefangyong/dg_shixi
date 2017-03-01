@@ -12,6 +12,16 @@ class PracticeModel extends Model{
         }
     }
 
+    public function delApply($id)
+    {
+        if(!isset($id)||empty($id)){
+            return 0;
+        }
+        return $this->where("`id` = ".$id)->delete();
+    }
+
+
+
     public function getGuide()
     {
         return $this->field('guide')->select();

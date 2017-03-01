@@ -18,7 +18,7 @@ class LoginController extends Controller{
                 $data['password'] = md5($data['password']);
                 //原始密码为123
                 $res = D('User')->findUser($data);
-                if($res){
+                if($res && $res['type']!=0){
                     session('adminUser',$res);
                     show(1,'登录成功！');
                 }else{

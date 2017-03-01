@@ -128,7 +128,7 @@
                     <div class="i on">
                         <a href="<?php echo U('Apply/index');?>">
                             <p><i class="ico2"></i>
-                                我的申请
+                                申请审核
                             </p>
                         </a>
                     </div>
@@ -144,7 +144,7 @@
                 </li>
                 <li>
                     <div class="i">
-                        <a href="">
+                        <a href="<?php echo U('Notice/index');?>">
                             <p><i class="ico7"></i>
                                 通知公告
                             </p>
@@ -162,7 +162,7 @@
                 </li>
                 <li>
                     <div class="i ">
-                        <a href="">
+                        <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
                                 学生管理
                             </p>
@@ -171,7 +171,7 @@
                 </li>
                 <li>
                     <div class="i">
-                        <a href="">
+                        <a href="<?php echo U('Contact/index');?>">
                             <p><i class="ico3"></i>
                                 通讯录
                             </p>
@@ -186,24 +186,28 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
+                <div class="pull-right">
+    <div class="user">
+        <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
+            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <i></i>
+        </p>
+        <div class="ex">
+            <p><a href="">个人信息</a></p>
+            <p><a href="javascript:void(0)">修改密码</a></p>
+            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+        </div>
+    </div>
+</div>
             </div>
             <div class="tabs">
                 <div class="ct">
                     <ul>
-                        <li><a href="">实习申请</a></li>
-                        <li><a href="">实习变更</a></li>
-                        <li><a href="" class="on">请假申请</a></li>
+                        <li><a href="<?php echo U('Apply/index');?>" >实习申请</a></li>
+                        <!--<li><a href="<?php echo U('Apply/corporation');?>" class="on">实习单位变更</a></li>-->
+                        <!--<li><a href="<?php echo U('Apply/position');?>">实习岗位变更</a></li>-->
+                        <li><a href="#">实习变更</a></li>
+                        <li><a href="<?php echo U('Apply/leave');?>" class="on">请假申请</a></li>
                     </ul>
                 </div>
                 <a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>
@@ -216,7 +220,7 @@
             <div class="ht10"></div>
             <div class="ui-filter">
                 <div class="select">
-                    <p><a href="">批阅批次</a></p>
+                    <p><a href="">实习批次</a></p>
                     <div class="ex">
                         <div class="list" style="min-width: 150px;">
                             <p><a href="">[141]2009-2010批次</a></p>
@@ -226,11 +230,11 @@
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">学部</a></p>
+                    <p><a href="">院系</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">学部1</a></p>
-                            <p><a href="">学部2</a></p>
+                            <p><a href="">院系1</a></p>
+                            <p><a href="">院系2</a></p>
                         </div>
                     </div>
                 </div>
@@ -283,33 +287,23 @@
                         <tbody>
                         <tr>
                             <td>&nbsp;</td>
-                            <td><b>标题</b></td>
                             <td><b>学号</b></td>
                             <td><b>提交人</b></td>
                             <td><b>班级</b></td>
-                            <td><b>实习课程</b></td>
                             <td><b>提交时间</b></td>
-                            <td><b>实习单位</b></td>
-                            <td><b>评审人</b></td>
-                            <td><b>评审时间</b></td>
                             <td><b>评审结果</b></td>
                             <td><b>操作</b></td>
                         </tr>
-
-
                         <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
                                 <td><a href="" class="cbox"></a></td>
-                                <td>哈哈</td>
-                                <td>20161005</td>
-                                <td>董嘉耀</td>
-                                <td>产品班</td>
-                                <td>语文</td>
-                                <td>2016-11-18</td>
-                                <td>&nbsp;</td>
-                                <td>班主任</td>
-                                <td>2017-01-16</td>
-                                <td>已退回</td>
-                                <td><a href="">删除</a></td>
+                                <td><?php echo ($v["student_id"]); ?></td>
+                                <td><?php echo ($v["stuname"]); ?></td>
+                                <td><?php echo ($v["classname"]); ?></td>
+                                <td><?php echo ($v["applytime"]); ?></td>
+                                <td><?php echo (setAuditStatus($v["status"])); ?></td>
+                                <td><a href="/teacher.php/Apply/editLeave/id/<?php echo ($v["id"]); ?>">查看</a>
+                                    <a href="javascript:void(0)" class="del" attr-id="<?php echo ($v["id"]); ?>">删除</a>
+                                </td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         </tbody>
                     </table>
@@ -341,6 +335,27 @@
 
     </div>
 </footer>
+<script>
+    $(function(){
+        $('.del').click(function(){
+            var $id = $(this).attr('attr-id');
+            var $url = "<?php echo U('Apply/delLeave');?>";
+            layer.confirm('真的要删除本条数据吗？',{icon:3},function(msg){
+                $.post($url,{id:$id},function(msg){
+                    if(msg.status==1){
+                        layer.msg(msg.message,{icon:6},function(){
+                            window.location.href = "/teacher.php/Apply/leave";
+                        });
+                    }else{
+                        layer.msg(msg.message,{icon:5},function(){
+                            window.location.href = "/teacher.php/Apply/leave";
+                        });
+                    }
+                },'JSON');
+            })
+        });
+    })
+</script>
 </body>
 </html>
 <script>

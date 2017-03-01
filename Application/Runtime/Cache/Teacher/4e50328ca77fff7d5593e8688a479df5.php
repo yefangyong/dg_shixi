@@ -128,7 +128,7 @@
                     <div class="i">
                         <a href="<?php echo U('Apply/index');?>">
                             <p><i class="ico2"></i>
-                                我的申请
+                                申请审核
                             </p>
                         </a>
                     </div>
@@ -187,32 +187,32 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
-            </div>
+    <div class="user">
+        <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
+            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <i></i>
+        </p>
+        <div class="ex">
+            <p><a href="">个人信息</a></p>
+            <p><a href="javascript:void(0)">修改密码</a></p>
+            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+        </div>
+    </div>
+</div>
             <div class="tabs">
                 <ul>
-                    <li><a href="" class="on">周报</a></li>
-                    <li><a href="">月报</a></li>
+                    <li><a href="<?php echo U('Report/index');?>" class="on">周报</a></li>
+                    <li><a href="<?php echo U('Report/month');?>">月报</a></li>
                     <li><a href="">实习总结</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="ui-path">
-        <p>
+        <p><span class="pull-right"><a href="<?php echo U('Report/index');?>">返回</a></span>
             <a href="" class="home"></a>
-            <a href="<?php echo U('Apply/index');?>">实习报告</a>
-            >
+            <a href="">实习报告</a>
+            &gt;
             <a href="" class="on">已审核</a>
         </p>
     </div>
@@ -230,6 +230,9 @@
                 </div>
                 <div class="ct" style="font-size: 15px">
                     <?php echo ($report["content"]); ?>
+                    <div class="ct">
+                        <p class="text-center"><img src="<?php echo ($report["pic"]); ?>" alt=""></p>
+                    </div>
                 </div>
             </div>
             <div class="ht25"></div>

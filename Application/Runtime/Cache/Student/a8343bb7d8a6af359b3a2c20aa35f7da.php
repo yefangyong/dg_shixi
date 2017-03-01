@@ -42,7 +42,7 @@
         <div class="list">
             <ul>
                 <li>
-                    <div class="i">
+                    <div class="i on">
                         <a href="/index.php/student/Report/index">
                             <p><i class="ico1"></i>
                                 实习报告
@@ -51,7 +51,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
+                    <div  class="i">
                         <a href="/index.php/student/Apply/index">
                             <p><i class="ico2"></i>
                                 我的申请
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                     <div class="i">
-                        <a href="/index.php/student/Contact/index">
+                        <a href="/index.php/student/Contact/student">
                             <p><i class="ico3"></i>
                                 通讯录
                             </p>
@@ -69,7 +69,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i on">
+                    <div class="i">
                         <a href="/index.php/student/Notice/index">
                             <p><i class="ico4"></i>
                                 消息管理
@@ -90,6 +90,15 @@
         </div>
     </div>
 </nav>
+<script>
+    $(function(){
+        $('.i').click(function(){
+            $('.i').removeClass('on');
+            $(this).addClass('on');
+        });
+    });
+</script>
+
     <!-------------------------------------- 头部结束 -------------------------------------->
     <!-------------------------------------- 内容开始 -------------------------------------->
     <main>
@@ -190,7 +199,7 @@
               </div>
             </div>
             <div class="ct">
-              <table>
+              <table class="yfycms-table">
                 <tbody>
                   <tr>
                     <td>&nbsp;</td>
@@ -211,9 +220,9 @@
                       <td><?php echo ($corporation); ?></td>
                       <td><?php echo (status($vo["status"])); ?></td>
                       <td>
-                        <a href="">查看</a>
-                        <a href="">编辑</a>
-                        <a href="">删除</a>
+                        <a href="javascript:void(0);" attr-id="<?php echo ($vo["id"]); ?>" id="yfycms-view">查看</a>
+                        <a href="javascript:void(0);" <?php if($vo["status"] == 0): ?>id="yfycms-edit"<?php endif; ?> attr-id="<?php echo ($vo["id"]); ?>">编辑</a>
+                        <a href="javascript:void(0);" attr-id="<?php echo ($vo["id"]); ?>" attr-message="删除" id="yfycms-delete">删除</a>
                       </td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>      
                 </tbody>
@@ -253,7 +262,62 @@
   
 </style>
 <script>
-  $(function(){
-    
+  var SCOPE = {
+    'jump_url' : '/index.php?m=student&c=report&a=index',
+    'set_status_url':'/index.php?m=student&c=report&a=del',
+    'edit_url':'/index.php?m=student&c=report&a=edit',
+      'view_url':'/index.php?m=student&c=report&a=view'
+  };
+
+  $('.yfycms-table #yfycms-delete').on('click',function(){
+    var id = $(this).attr('attr-id');
+    var message=$(this).attr('attr-message');
+    var url = SCOPE.set_status_url;
+    data={};
+    data['id'] = id;
+
+    layer.open({
+      type : 0,
+      title : '是否提交？',
+      btn : ['yes','no'],
+      icon :3,
+      closeBtn : 2,
+      content : '是否确认'+message,
+      scorllbar : true,
+      yes: function(){
+        todelete(url,data);
+      },
+    });
+  });
+
+  function todelete(){
+    var url = SCOPE.set_status_url;
+    //ajax的异步操作，交互性好
+    $.post(
+            url,data,function(s){
+              if(s.status == 1){
+                return dialog.success('删除成功','');
+              }else{
+                return dialog.error('删除失败');
+              }
+            },"JSON");
+  }
+
+  /**
+   * 编辑模型
+   */
+  $('.yfycms-table #yfycms-edit').on('click',function(){
+    var id = $(this).attr('attr-id');
+    var url = SCOPE.edit_url+'&id='+id;
+    window.location.href=url;
+  });
+
+  /**
+   * 查看模型
+   */
+  $('.yfycms-table #yfycms-view').on('click',function(){
+    var id = $(this).attr('attr-id');
+    var url = SCOPE.view_url+'&id='+id;
+    window.location.href=url;
   });
 </script>

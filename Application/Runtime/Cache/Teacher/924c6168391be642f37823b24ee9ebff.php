@@ -131,7 +131,7 @@
                     <div class="i on">
                         <a href="<?php echo U('Apply/index');?>">
                             <p><i class="ico2"></i>
-                                我的申请
+                                申请审核
                             </p>
                         </a>
                     </div>
@@ -189,17 +189,19 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
+                <div class="pull-right">
+    <div class="user">
+        <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
+            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <i></i>
+        </p>
+        <div class="ex">
+            <p><a href="">个人信息</a></p>
+            <p><a href="javascript:void(0)">修改密码</a></p>
+            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+        </div>
+    </div>
+</div>
             </div>
             <div class="tabs">
                 <div class="ct">
@@ -207,7 +209,7 @@
                         <li><a href="<?php echo U('Apply/index');?>" >实习申请</a></li>
                         <li><a href="<?php echo U('Apply/corporation');?>" class="on">实习单位变更</a></li>
                         <li><a href="<?php echo U('Apply/position');?>">实习岗位变更</a></li>
-                        <li><a href="">请假申请</a></li>
+                        <li><a href="<?php echo U('Apply/leave');?>">请假申请</a></li>
                     </ul>
                 </div>
                 <a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>
@@ -220,7 +222,7 @@
             <div class="ht10"></div>
             <div class="ui-filter">
                 <div class="select">
-                    <p><a href="">批阅批次</a></p>
+                    <p><a href="">实习批次</a></p>
                     <div class="ex">
                         <div class="list" style="min-width: 150px;">
                             <p><a href="">[141]2009-2010批次</a></p>
@@ -230,7 +232,7 @@
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">学部</a></p>
+                    <p><a href="">学院</a></p>
                     <div class="ex">
                         <div class="list">
                             <p><a href="">学部1</a></p>

@@ -128,7 +128,7 @@
                     <div class="i">
                         <a href="<?php echo U('Apply/index');?>">
                             <p><i class="ico2"></i>
-                                我的申请
+                                申请审核
                             </p>
                         </a>
                     </div>
@@ -348,7 +348,7 @@
                         <p class="text-center">
                             <button type="button" class="bt-btn1 style1">保存</button>
                             <span class="wh40"></span>
-                            <button type="button" class="bt-btn1 style2">取消</button>
+                            <button type="reset" class="bt-btn1 style2">取消</button>
                         </p>
                     </div>
                 </form>

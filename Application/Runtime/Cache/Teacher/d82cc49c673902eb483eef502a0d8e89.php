@@ -128,7 +128,7 @@
                     <div class="i">
                         <a href="<?php echo U('Apply/index');?>">
                             <p><i class="ico2"></i>
-                                我的申请
+                                申请审核
                             </p>
                         </a>
                     </div>
@@ -187,17 +187,19 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
+               <div class="pull-right">
+    <div class="user">
+        <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
+            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <i></i>
+        </p>
+        <div class="ex">
+            <p><a href="">个人信息</a></p>
+            <p><a href="javascript:void(0)">修改密码</a></p>
+            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+        </div>
+    </div>
+</div>
             </div>
             <div class="tabs">
                 <ul>
@@ -286,10 +288,11 @@
                                 <td><?php echo ($v["city"]); ?></td>
                                 <td><?php echo ($v["contact"]); ?></td>
                                 <td><?php echo ($v["telephone"]); ?></td>
-                                <td><?php echo ($v["isused"]); ?></td>
+                                <td><?php echo (setCorporationStatus($v["isused"])); ?></td>
                                 <td>
-                                    <a href="javascript:void(0)">编辑</a>
-                                    <a href="JavaScript:void(0)" id="del" attr-id="<?php echo ($v["id"]); ?>">删除</a>
+                                    <a href="/teacher.php/Practice/viewcor/id/<?php echo ($v["id"]); ?>">查看</a>
+                                    <a href="/teacher.php/Practice/editCor/id/<?php echo ($v["id"]); ?>">编辑</a>
+                                    <a href="JavaScript:void(0)" class="del" attr-id="<?php echo ($v["id"]); ?>">删除</a>
                                 </td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         </tbody>
@@ -315,23 +318,23 @@
 </footer>
 <script>
     $(function(){
-//        $('#del').click(function(){
-//            var $id = $(this).attr('attr-id');
-//             layer.confirm("真的要删除本条数据吗？",{icon:3},function(){
-//                 var $url = "<?php echo U('Practice/delCor');?>";
-//                 $.post($url,{id:$id},function(msg){
-//                     if(msg.status==1){
-//                         layer.msg(msg.message,{icon:6},function(){
-//                             window.location.href="/teacher.php/Practice/corporation";
-//                         });
-//                     }else{
-//                         layer.msg(msg.message,{icon:5},function(){
-//                             window.location.href="/teacher.php/Practice/corporation";
-//                         });
-//                     }
-//                 },'JSON');
-//             });
-//        });
+        $('.del').click(function(){
+            var $id = $(this).attr('attr-id');
+             layer.confirm("真的要删除本条数据吗？",{icon:3},function(){
+                 var $url = "<?php echo U('Practice/delCor');?>";
+                 $.post($url,{id:$id},function(msg){
+                     if(msg.status==1){
+                         layer.msg(msg.message,{icon:6},function(){
+                             window.location.href="/teacher.php/Practice/corporation";
+                         });
+                     }else{
+                         layer.msg(msg.message,{icon:5},function(){
+                             window.location.href="/teacher.php/Practice/corporation";
+                         });
+                     }
+                 },'JSON');
+             });
+        });
 
         $('#used').click(function(){
             var $checked = $('a.cbox.on');

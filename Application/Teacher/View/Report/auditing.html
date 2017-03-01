@@ -5,34 +5,22 @@
 <main>
     <div class="ui-head">
         <div class="container">
-            <div class="pull-right">
-                <div class="user">
-                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
-            </div>
+            <include file="Public/user"/>
             <div class="tabs">
                 <ul>
-                    <li><a href="" class="on">周报</a></li>
-                    <li><a href="">月报</a></li>
+                    <li><a href="{:U('Report/index')}" class="on">周报</a></li>
+                    <li><a href="{:U('Report/month')}">月报</a></li>
                     <li><a href="">实习总结</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="ui-path">
-        <p>
+        <p><span class="pull-right"><a href="{:U('Report/index')}">返回</a></span>
             <a href="" class="home"></a>
-            <a href="{:U('Apply/index')}">实习报告</a>
-            >
-            <a href="" class="on">未审核</a>
+            <a href="">实习报告</a>
+            &gt;
+            <a href="" class="on">审核中</a>
         </p>
     </div>
     <div class="ui-main">
@@ -49,6 +37,9 @@
                 </div>
                 <div class="ct" style="font-size: 15px">
                     {$report.content}
+                    <div class="ct">
+                        <p class="text-center"><img src="{$report.pic}" alt=""></p>
+                    </div>
                 </div>
             </div>
             <div class="ht25"></div>

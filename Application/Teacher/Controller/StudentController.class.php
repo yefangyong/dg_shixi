@@ -4,7 +4,7 @@ use Think\Controller;
 
 class StudentController extends Controller{
     public function index(){
-        $studentList = D('StudentView')->select();
+        $studentList = D('StudentsView')->select();
         $this->assign('list',$studentList);
         return $this->display();
     }
@@ -24,10 +24,55 @@ class StudentController extends Controller{
         if(!isset($sid)||empty($sid)){
             return 0;
         }
-
         $studentInfo = D('StudentView')->getStudentInfo($sid);
+        $weeklyCount = D('Report')->getWeekCount($studentInfo['studentno']);
+        $leaveCount = D('Leave')->getLeaveCount($studentInfo['studentno']);
+        $this->assign('leavecount',$leaveCount);
+        $this->assign('weekc44444
+        ount',$weeklyCount);
         $this->assign('student',$studentInfo);
         return $this->display();
+    }
+
+    public function week()
+    {
+        $stuno = I('get.id',0,'intval');
+
+        if(isset($stuno)){
+            $list = D('ReportView')->getReportByStuno($stuno,0);
+            $this->assign('list',$list);
+            return $this->display();
+        }
+    }
+
+
+    public function showweek()
+    {
+        $rid = I('get.id',0,'intval');
+        $detail = D('ReportView')->getReportById($rid);
+        $this->assign('report',$detail);
+        return $this->display();
+    }
+
+    public function leave()
+    {
+        $stuno = I('get.id',0,'intval');
+
+        if(isset($stuno)){
+            $list = D('LeaveView')->getLeaveByStuno($stuno);
+            $this->assign('list',$list);
+            return $this->display();
+        }
+    }
+
+    public function showleave()
+    {
+        $stuno = I('get.id',0,'intval');
+        if(isset($stuno)){
+            $list = D('LeaveView')->getLeave($stuno);
+            $this->assign('apply',$list);
+            return $this->display();
+        }
     }
 
     public function add(){
@@ -88,6 +133,67 @@ class StudentController extends Controller{
     }
 
     public function update(){
-        return $this->display();
+        if($_POST){
+            $stuid = I('post.id',0,'intval');
+            $data['studentno'] = I('post.studentno','','trim');
+            if(!isset($data['studentno'])||empty($data['studentno'])){
+                show(0,'请填写学号！');
+            }
+            $data['password'] = I('post.password','','trim');
+            if(!isset($data['password'])||empty($data['password'])){
+                show(0,'请填写密码！');
+            }
+            $data['name'] = I('post.name','','trim');
+            if(!isset($data['name'])||empty($data['name'])){
+                show(0,'请填写姓名！');
+            }
+            $data['phone'] = I('post.phone','','trim');
+            if(!isset($data['phone'])||empty($data['phone'])){
+                show(0,'请填写手机号！');
+            }
+            $classno = D('Class')->getIdByName(I('post.class','','trim'));
+            $data['classno'] = $classno['id'];
+            $data['course']  = I('post.course','','trim');
+            if(!isset($data['course'])||empty($data['course'])){
+                show(0,'请填写课程！');
+            }
+            $data['email'] = I('post.email','','trim');
+            if(!isset($data['email'])||empty($data['email'])){
+                show(0,'请填写邮箱！');
+            }
+            $data['gender'] = I('post.gender',0,'intval');
+            $res = D('Student')->updateStu($stuid,$data);
+            if($res){
+                show(1,'成功！');
+            }else{
+                show(0,'失败！');
+            }
+
+        }else{
+            $department = D('School')->getAllDepartment();
+            $class = D('Class')->getAllClassesName();
+            $stuno = I('get.id',0,'intval');
+            if(isset($stuno)){
+                $stuinfo = D('StudentView')->getStudentInfo($stuno);
+                $this->assign('info',$stuinfo);
+                $this->assign('dept',$department);
+                $this->assign('class',$class);
+                return $this->display();
+            }
+        }
+    }
+
+    public function del()
+    {
+        $id = I('post.id',0,'intval');
+        if(!isset($id)||empty($id)){
+            show(0,'删除失败');
+        }
+        $res  = D('Student')->delStu($id);
+        if($res){
+            show(1,'删除成功！');
+        }else{
+            show(0,'删除失败');
+        }
     }
 }

@@ -3,25 +3,16 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
+                <include file="Public/user"/>
             </div>
             <div class="tabs">
                 <div class="ct">
                     <ul>
                         <li><a href="{:U('Apply/index')}" class="on">实习申请</a></li>
-                        <li><a href="{:U('Apply/corporation')}" >实习单位变更</a></li>
-                        <li><a href="{:U('Apply/position')}">实习岗位变更</a></li>
-                        <li><a href="">请假申请</a></li>
+                        <!--<li><a href="{:U('Apply/corporation')}" class="on">实习单位变更</a></li>-->
+                        <!--<li><a href="{:U('Apply/position')}">实习岗位变更</a></li>-->
+                        <li><a href="#">实习变更</a></li>
+                        <li><a href="{:U('Apply/leave')}">请假申请</a></li>
                     </ul>
                 </div>
                 <a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>
@@ -55,31 +46,34 @@
                             <tr>
                                 <input type="hidden" name="id" value="{$apply.pid}">
                                 <td align="left">学号：{$apply.studentno}</td>
-                                <td align="center">年级：{$apply.grade|setGrade}</td>
                                 <td align="center">姓名：{$apply.stuname}</td>
-                                <td align="center">班级：{$apply.classname}</td>
-                                <td align="right">专业：{$apply.proname}</td>
+                                <td align="right">联系方式：{$apply.phone}</td>
                             </tr>
                         </table>
                     </div>
                 </div>
+            </div>
                 <div class="ht25"></div>
                 <div class="ui-head1">
                     <p>公司信息</p>
                 </div>
                 <div class="ht15"></div>
                 <div class="ui-article">
-                    <div class="hd">
-                        <table>
-                            <tr>
-                                <td align="left">企业名称：{$apply.corname}</td>
-                                <td align="center">所在地址：{$apply.city}</td>
-                                <td align="center">职务：{$apply.position}</td>
-                                <td align="center">企业联系人：{$apply.contact}</td>
-                                <td align="right">联系电话：{$apply.telephone}</td>
-                            </tr>
-                        </table>
-                        <p>
+            <div class="hd">
+                <table>
+                    <tr>
+                        <td align="left">企业名称：{$apply.corname}</td>
+                        <td align="">企业地址：{$apply.city}</td>
+                        <td align="">专业对口：{$apply.profession|isMajor}</td>
+                        <td align="">保险购买：{$apply.insurance|isPayInsurance}</td>
+                    </tr>
+                    <tr>
+                        <td align="left">职务：{$apply.position}</td>
+                        <td align="">企业联系人：{$apply.contact}</td>
+                        <td align="" colspan="2">联系电话：{$apply.telephone}</td>
+                    </tr>
+                </table>
+                <p>
                 <span class="pull-left">
                   详细地址：{$apply.address}
                   <span class="wh40"></span>
@@ -87,10 +81,10 @@
                   <span class="wh40"></span>
                   结束时间：{$apply.endtime}
                 </span>
-                        </p>
-                    </div>
-                </div>
-            <div class="ht90"></div>
+                </p>
+            </div>
+        </div>
+                <div class="ht90"></div>
             <p class="text-center">
                 <button type='button' class="bt-btn1 style1" attr-opinion="1">同意</button>
                 <span class="wh40"></span>

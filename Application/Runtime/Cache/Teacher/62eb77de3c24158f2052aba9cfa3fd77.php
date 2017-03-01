@@ -128,7 +128,7 @@
                     <div class="i">
                         <a href="<?php echo U('Apply/index');?>">
                             <p><i class="ico2"></i>
-                                我的申请
+                                申请审核
                             </p>
                         </a>
                     </div>
@@ -183,21 +183,24 @@
     </div>
 </nav>
 <main>
+    <style>
+        label,td{font-size: 13px;}
+    </style>
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
-            </div>
+    <div class="user">
+        <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
+            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <i></i>
+        </p>
+        <div class="ex">
+            <p><a href="">个人信息</a></p>
+            <p><a href="javascript:void(0)">修改密码</a></p>
+            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+        </div>
+    </div>
+</div>
             <div class="tabs">
                 <div class="ct">
                     <ul>
@@ -209,6 +212,7 @@
     </div>
     <div class="ui-path">
         <p>
+            <span class="pull-right"><a href="<?php echo U('Student/index');?>">返回</a></span>
             <a href="javascript:void(0)" class="home"></a>
             <a href="<?php echo U('Student/index');?>">学生管理</a>
             >
@@ -285,79 +289,73 @@
                                         <td><label for="">实习状态</label></td>
                                         <td><?php echo ($student["ispractice"]); ?></td>
                                     </tr>
-                                    <?php if(($student["ispractice"]) == "1"): ?><tr>
-                                            <td><label for="">实习企业</label></td>
-                                            <td><?php echo ($student["proname"]); ?></td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="">实习地址</label></td>
-                                            <td><?php echo ($student["city"]); ?></td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="">实习岗位</label></td>
-                                            <td><?php echo ($student["position"]); ?></td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="">实习时间</label></td>
-                                            <td><?php echo ($student["starttime"]); ?>~<?php echo ($student["endtime"]); ?></td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="">实习导师</label></td>
-                                            <td><?php echo ($student["guide"]); ?></td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="">导师联系方式</label></td>
-                                            <td>1689829379</td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="">住宿地址</label></td>
-                                            <td>苏州金龙集团职工宿舍</td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="">实习小结</label></td>
-                                            <td>已提交</td>
-                                        </tr><?php endif; ?>
-
+                                    <tr>
+                                        <td><label for="">实习企业</label></td>
+                                        <td><?php echo ($student["corname"]); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">实习地址</label></td>
+                                        <td><?php echo ($student["address"]); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">实习岗位</label></td>
+                                        <td><?php echo ($student["position"]); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">实习时间</label></td>
+                                        <td><?php echo ($student["starttime"]); ?>~<?php echo ($student["endtime"]); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">实习导师</label></td>
+                                        <td><?php echo ($student["guide"]); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">导师联系方式</label></td>
+                                        <td><?php echo ($student["phone"]); ?></td>
+                                    </tr>
                                 </table>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="ht30"></div>
-                <?php if(($student["ispractice"]) == "1"): ?><div class="ui-infbox">
-                        <div class="hd">
-                            <p>日常任务</p>
-                        </div>
-                        <div class="ct">
-                            <div class="info">
-                                <div class="ct">
-                                    <table>
-                                        <tr>
-                                            <td><label for="">周报</label></td>
-                                            <td>已提交3篇</td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="">打卡</label></td>
-                                            <td>2016-12-01 08;30;00</td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="">月报</label></td>
-                                            <td>已提交3篇</td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="">实习小结</label></td>
-                                            <td>已提交5篇</td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="">实习申请</label></td>
-                                            <td>已提交4篇</td>
-                                        </tr>
-                                    </table>
-                                </div>
+            </div>
+            <div class="pull-left">
+                <div class="ui-infbox">
+                    <div class="hd">
+                        <p>实习信息</p>
+                    </div>
+                    <div class="ct">
+                        <div class="info">
+                            <div class="ct">
+                                <table>
+                                    <tr>
+                                        <td><label for="">打卡</label></td>
+                                        <td>2016-12-01 08;30;00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">周报</label></td>
+                                        <td><div class="pull-right"><a href="/teacher.php/Student/week/id/<?php echo ($student["studentno"]); ?>">查看</a></div>已提交<?php echo ($weekcount); ?>篇</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">月报</label></td>
+                                        <td><div class="pull-right"><a href="javascript:void(0)">查看</a></div>已提交0篇</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">实习小结</label></td>
+                                        <td><div class="pull-right"><a href="javascript:void(0)">查看</a></div>已提交0篇</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">请假记录</label></td>
+                                        <td><div class="pull-right"><a href="/teacher.php/Student/leave/id/<?php echo ($student["studentno"]); ?>"">查看</a></div>已提交<?php echo ($leavecount); ?>篇</td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
-                    </div><?php endif; ?>
+                    </div>
+                </div>
             </div>
+            <div class="clearfix"></div>
 </main>
 <!-------------------------------------- 内容结束 -------------------------------------->
 <!-------------------------------------- 尾部开始 -------------------------------------->

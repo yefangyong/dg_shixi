@@ -8,7 +8,6 @@ class ApplyController extends Controller {
 			$_POST[$key]=$v;
 		}	
 		unset($_POST['data']);
-		$map['isDel']=0;
 		if($_POST['student_id']){
 			$map['student_id']=$_POST['student_id'];
 		}
@@ -18,13 +17,13 @@ class ApplyController extends Controller {
 		if($_POST['status']){
 			$map['status']=$_POST['status']-2;
 		}
-		if($_POST['id']){
-			$map['id']=$_POST['id'];
-		}
 		return $map;
    }
    public function index() {
         $map = $this->map();
+        if($_POST['id']){
+            $map[]=' dg_practice.id='.$_POST['id'];
+        }
 		$order = I('get._order',D('Practice')->getPk());
 		// 排序方式 默认为降序排列
 		$sort  = I('get._sort','desc');
@@ -38,7 +37,7 @@ class ApplyController extends Controller {
 		$page = new \Think\Page($count,$listRows);
 		// 当前页数
 		$currentPage = I(C('VAR_PAGE'),1);
-       	$data = D('practice')->where($map)->order($worder)->page($currentPage.','.$listRows)->select();
+       	$data = D('practice')->join("LEFT JOIN dg_student ON dg_practice.student_id=dg_student.studentno")->where($map)->order($worder)->page($currentPage.','.$listRows)->field("dg_practice.*,dg_student.name")->select();
        	return $this->ajaxReturn(array('status'=>1,'info'=>'操作成功','data'=>$data));
    }
 
@@ -47,6 +46,9 @@ class ApplyController extends Controller {
         $map = $this->map();
         if(!$_POST['type']){
         	$_POST['type']=1;
+        }
+        if($_POST['id']){
+            $map[]=' dg_change.id='.$_POST['id'];
         }
         $_POST['type']=$_POST['type']-1;
 		$order = I('get._order',D('change')->getPk());
@@ -62,7 +64,8 @@ class ApplyController extends Controller {
 		$page = new \Think\Page($count,$listRows);
 		// 当前页数
 		$currentPage = I(C('VAR_PAGE'),1);
-       	$data = D('change')->where($map)->order($worder)->page($currentPage.','.$listRows)->select();
+       	$data = D('change')->join("LEFT JOIN dg_student ON dg_change.student_id=dg_student.studentno")->where($map)->order($worder)->page($currentPage.','.$listRows)->field("dg_change.*,dg_student.name")->select();
+        //echo D('change')->getLastSql();
        	return $this->ajaxReturn(array('status'=>1,'info'=>'操作成功','data'=>$data));
     }
 
@@ -82,7 +85,7 @@ class ApplyController extends Controller {
 		$page = new \Think\Page($count,$listRows);
 		// 当前页数
 		$currentPage = I(C('VAR_PAGE'),1);
-       	$data = D('leave')->where($map)->order($worder)->page($currentPage.','.$listRows)->select();
+       	$data = D('leave')->join("LEFT JOIN dg_student ON dg_leave.student_id=dg_student.studentno")->where($map)->order($worder)->page($currentPage.','.$listRows)->field("dg_leave.*,dg_student.name")->select();
        	return $this->ajaxReturn(array('status'=>1,'info'=>'操作成功','data'=>$data));
     }
 

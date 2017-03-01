@@ -4,7 +4,7 @@
 
  class ReportViewModel extends ViewModel{
      public $viewFields = array(
-        'Report' => array('id'=>'rid','pubtime','status','title','content','course','result','address','suggestion'),
+        'Report' => array('id'=>'rid','pubtime','pic','status','title','content','course','result','address','suggestion'),
         'Student' => array('id'=>'sid','studentno','name','classno','_on'=>'Report.student_id = Student.studentno'),
         'Class' => array('id'=>'cid','classname','_on'=>'Student.classno=Class.id'),
         'Profession' => array('_on'=>'Profession.id = Class.profession'),
@@ -18,6 +18,22 @@
          return $this->where("Report.id = ".$rid)->find();
      }
 
+     public function getReportByStuno($stuno,$type=0)
+     {
+
+         if(!isset($stuno)&&empty($stuno)){
+             return 0;
+         }
+
+         if(!in_array($type,array(0,1))){
+             return 0;
+         }
+         $map['Report.student_id'] = $stuno;
+         $map['Report.type'] = $type;
+
+         return $this->where($map)->select();
+     }
+
      public function getResult($data){
          if(!is_array($data)||empty($data)){
              return 0;
@@ -25,12 +41,14 @@
          return $this->where($data)->select();
      }
 
-     public function getAllReportByProfession($proid)
+     public function getAllReportByProfession($proid,$type =0)
      {
          if(!isset($proid)||empty($proid)){
              return '';
          }
-        return $this->where("Profession.id = ".$proid)->select();
+         $data['Profession.id'] = $proid;
+         $data['Report.type'] = $type;
+        return $this->where($data)->select();
      }
 
      public function getAllReportByMaster($masterid)
@@ -40,4 +58,5 @@
         }
         return $this->where("Class.master_no = ".$masterid)->select();
      }
+
  }

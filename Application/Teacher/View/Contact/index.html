@@ -19,7 +19,8 @@
             </div>
             <div class="tabs">
                 <ul>
-                    <li><a href="{:U('Contact/index')}" class="on">通讯录</a></li>
+                    <li><a href="{:U('Contact/index')}" class="on">学生群</a></li>
+                    <li><a href="{:U('Contact/teacher')}" >老师群</a></li>
                 </ul>
             </div>
         </div>
@@ -59,6 +60,8 @@
                     </div>
                 </div>
                 <span class="wh10"></span>
+                <input type="text" class="form-control text" placeholder="请输入姓名">
+                <span class="wh10"></span>
                 <a href="" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
@@ -70,18 +73,18 @@
                             <td><b>姓名</b></td>
                             <td><b>学号</b></td>
                             <td><b>电话</b></td>
-                            <td><b>邮箱</b></td>
+                            <td><b>实习企业</b></td>
                             <td><b>紧急联系人</b></td>
                             <td><b>联系电话</b></td>
                         </tr>
                         <volist name="list" id="v">
                             <tr>
-                                <td>{$v.name}</td>
+                                <td>{$v.stuname}</td>
                                 <td>{$v.studentno}</td>
                                 <td>{$v.phone}</td>
-                                <td>{$v.email}</td>
-                                <td>紧急联系人</td>
-                                <td>紧急联系人电话</td>
+                                <td>{$v.corname}</td>
+                                <td>{$v.contact}</td>
+                                <td>{$v.telephone}</td>
                             </tr>
                         </volist>
 
