@@ -8,4 +8,8 @@ class ApplyModel extends Model {
         $leave = M('leave');
         return $leave->table('leave')->add($data);
     }
+
+
+
+
 }

@@ -15,9 +15,9 @@ class ReportModel extends Model {
 //        'Class'=>array('id'=>'cid','name'=>'classname','_on'=>'Student.class=Class.id'),
 //    );
 
-    public function getReportData($user) {
+    public function getWeekReportData($user) {
         return $this->_db->field('s.studentno,s.name,s.classno,r.id,r.status,r.pubtime,c.classname')->table('dg_student s,dg_report r,dg_class c')->
-        where('s.studentno=r.student_id and name="'.$user.'" and c.id = s.classno')->order('r.pubtime desc')->select();
+        where('s.studentno=r.student_id and name="'.$user.'" and c.id = s.classno and r.type=0')->order('r.pubtime desc')->select();
 
     }
 
@@ -36,9 +36,37 @@ class ReportModel extends Model {
         if(!$data || !is_array($data)){
             return show(0,'数据不合法');
         }
-
         return $this->_db->where('id='.$id)->save($data);
     }
+
+    //周报数量
+    public function getWeekReportCountById($id) {
+        $data =array(
+            'student_id'=>$id,
+            'type'=>0
+        );
+        return $this->_db->where($data)->Count();
+    }
+
+    //月报数量
+    public function getMonthReportCountById($id) {
+        $data =array(
+            'student_id'=>$id,
+            'type'=>1
+        );
+        return $this->_db->where($data)->Count();
+    }
+
+    //实习小结
+    public function getReportSum($id) {
+        $data =array(
+            'student_id'=>$id,
+            'type'=>2
+        );
+        return $this->_db->where($data)->Count();
+    }
+
+
 
 
 

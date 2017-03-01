@@ -7,7 +7,7 @@ class ReportController extends CommonController {
        $sid = $_SESSION['adminUser']['no'];
        $cid = M('Student')->where('studentno='.$sid)->find();
        $corporation = M('Corporation')->where('id='.$cid['corporation_id'])->find();
-       $data = D('Report')->getReportData($user); 
+       $data = D('Report')->getWeekReportData($user);
        $this->assign('corporation',$corporation['name']);
        $this->assign('data',$data);
        $this->display();

@@ -1,0 +1,87 @@
+<include file="Base/header"/>
+<!-------------------------------------- 头部结束 -------------------------------------->
+<!-------------------------------------- 内容开始 -------------------------------------->
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <div class="user">
+                    <p><img src="__PUBLIC__/Student/img/avatar1.jpg" alt="">
+                        <a href=''><?php echo getLoginUsername();?></a>
+                        <i></i>
+                    </p>
+                    <div class="ex">
+                        <p><a href="">个人信息</a></p>
+                        <p><a href="">修改密码</a></p>
+                        <p><a href="/index.php/student/login/logout">退出</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="{:U('Grade/index')}" class="on">我的成绩</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ht15"></div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht10"></div>
+            <div class="ui-head1">
+                <p>日常任务</p>
+            </div>
+            <div class="ht30"></div>
+            <div class="ui-infbox style2">
+                <div class="info">
+                    <div class="ct">
+                        <table>
+                            <tr>
+                                <td><label for="">周报</label></td>
+                                <td>已提交{$weekReportCount}篇</td>
+                            </tr>
+                            <tr>
+                                <td><label for="">打卡</label></td>
+                                <td>{$signin['pubtime']}</td>
+                            </tr>
+                            <tr>
+                                <td><label for="">月报</label></td>
+                                <td>已提交{$monthReportCount}篇</td>
+                            </tr>
+                            <tr>
+                                <td><label for="">实习小结</label></td>
+                                <td>已提交{$reportSum}篇</td>
+                            </tr>
+                            <tr>
+                                <td><label for="">实习申请</label></td>
+                                <td>已提交1篇</td>
+                            </tr>
+                            <tr>
+                                <td><label for="">总成绩</label></td>
+                                <td>{$grade['score']}分</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+<!-------------------------------------- 尾部开始 -------------------------------------->
+</body>
+</html>
+<style>
+
+</style>
+<script>
+    $(function(){
+
+    });
+</script>
