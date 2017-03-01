@@ -47,6 +47,22 @@ function getChangeStatus($status){
     return $state;
 }
 
+function getProfessionStatus($status) {
+    switch($status){
+        case 1: $state = '已购买';break;
+        case 0: $state = '未购买';break;
+    }
+    return $state;
+}
+
+function getInsuranceStatus($status) {
+    switch($status){
+        case 1: $state = '已购买';break;
+        case 0: $state = '未购买';break;
+    }
+    return $state;
+}
+
 function getAuditStatus($status){
     switch($status){
         case 0:$state='未审核';break;

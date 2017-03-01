@@ -20,9 +20,9 @@
             <div class="tabs">
                 <div class="ct">
                     <ul>
-                        <li><a href="" class="on">实习申请</a></li>
-                        <li><a href="">实习变更</a></li>
-                        <li><a href="">请假申请</a></li>
+                        <li><a href="/index.php/student/apply/index" class="on">实习申请</a></li>
+                        <li><a href="/index.php/student/apply/change">实习变更</a></li>
+                        <li><a href="/index.php/student/apply/leave">请假申请</a></li>
                     </ul>
                 </div>
                 <a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>
@@ -72,24 +72,20 @@
                         <tr>
                             <td align="left">企业名称：{$corporation['name']}</td>
                             <td align="">企业地址：{$corporation['address']}</td>
-                            <td align="">专业对口：{$practice['profession']}</td>
-                            <td align="">保险购买：{$practice['insurance']}</td>
+                            <td align="">专业对口：{$practice['profession']|getProfessionStatus}</td>
+                            <td align="">保险购买：{$practice['insurance']|getInsuranceStatus}</td>
                         </tr>
                         <tr>
                             <td align="left">职务：{$practice['position']}</td>
                             <td align="">企业联系人：{$corporation['contact']}</td>
                             <td align="" colspan="2">联系电话：{$corporation['mobile']}</td>
                         </tr>
+                        <tr>
+                            <td align="left">详细地址：{$corporation['detailaddress']}</td>
+                            <td align="">开始日期：{$practice['starttime']}</td>
+                            <td align="" colspan="2">结束日期：{$practice['endtime']}</td>
+                        </tr>
                     </table>
-                    <p>
-                <span class="pull-left">
-                  详细地址：{$corporation['detailaddress']}
-                  <span class="wh40"></span>
-                  开始日期：{$practice['starttime']}
-                  <span class="wh40"></span>
-                  结束日期：{$practice['endtime']}
-                </span>
-                    </p>
                 </div>
             </div>
 

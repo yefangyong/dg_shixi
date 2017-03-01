@@ -24,9 +24,6 @@ class ReportController extends CommonController {
             if(!$_POST['address'] || !isset($_POST['address'])) {
                 return show(0,'实习地址不得为空');
             }
-            if(!$_POST['pic'] || !isset($_POST['pic'])) {
-                return show(0,'请上传图片!');
-            }
             if($_POST['id']) {
                 return $this->save($_POST);
             }
