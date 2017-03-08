@@ -70,7 +70,7 @@ class Local{
      * @param  boolean $replace 同名文件是否覆盖
      * @return boolean          保存状态，true-成功，false-失败
      */
-    public function save($file, $replace=true) {
+    public function save($file, $replace=true, $nohttp=false) {
         $filename = $this->rootPath . $file['savepath'] . $file['savename'];
 
         /* 不覆盖同名文件 */ 
@@ -80,10 +80,18 @@ class Local{
         }
 
         /* 移动文件 */
-        if (!move_uploaded_file($file['tmp_name'], $filename)) {
-            $this->error = '文件上传保存错误！';
-            return false;
+        if(!$nohttp){
+            if (!move_uploaded_file($file['tmp_name'], $filename)) {
+                $this->error = '文件上传保存错误！';
+                return false;
+            }
+        }else{
+            if (!copy($file['tmp_name'], $filename)) {
+                $this->error = '文件上传保存错误！';
+                return false;
+            }
         }
+        
         
         return true;
     }

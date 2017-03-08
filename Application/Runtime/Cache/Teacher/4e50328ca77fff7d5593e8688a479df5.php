@@ -254,7 +254,7 @@
                         </div>
                         <div class="col-sm-11">
                             <div class="text">
-                                <p><span class="color1"><?php echo (setAuditStatus($report["status"])); ?></td></span></p>
+                                <p><span class="color1"><?php echo (setAuditStatus($report["status"])); ?>/<?php echo (setLevel($report["score"])); ?></td></span></p>
                             </div>
                         </div>
                     </div>

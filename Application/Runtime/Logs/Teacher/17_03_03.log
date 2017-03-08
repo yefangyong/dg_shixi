@@ -1,0 +1,287 @@
+[ 2017-03-03T14:23:19+08:00 ] 49.77.217.48 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-03T14:35:52+08:00 ] 49.77.217.48 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE `id` = 2 [ RunTime:0.0002s ]
+
+[ 2017-03-03T14:36:00+08:00 ] 49.77.217.48 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 2 [ RunTime:0.0002s ]
+
+[ 2017-03-03T14:36:26+08:00 ] 49.77.217.48 /teacher.php/Practice/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `name`='上海腾讯计算机有限公司',`city`='上海',`type`='私企',`contact`='马化腾',`position`='',`telephone`='8912878',`mobile`='',`email`='1281074511@qq.com',`zipcode`='225653',`website`='www.qq.comm',`address`='上海',`introduction`='腾讯有限公司',`addtime`='2017-03-03 14:36:26' WHERE ( `id` = 2 ) [ RunTime:0.0002s ]
+
+[ 2017-03-03T14:36:41+08:00 ] 49.77.217.48 /teacher.php/Practice/delCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0007s ]
+SQL: DELETE FROM `dg_corporation` WHERE ( `id` = 9 ) [ RunTime:0.0001s ]
+
+[ 2017-03-03T14:36:58+08:00 ] 49.77.217.48 /teacher.php/Practice/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `name`='6666666666666666',`city`='苏州',`type`='国资',`contact`='uu',`position`='',`telephone`='',`mobile`='',`email`='',`zipcode`='225653',`website`='',`address`='uuu',`introduction`='',`addtime`='2017-03-03 14:36:58' WHERE ( `id` = 8 ) [ RunTime:0.0002s ]
+
+[ 2017-03-03T14:38:46+08:00 ] 49.77.217.48 /teacher.php/Practice/delCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_corporation` WHERE ( `id` = 8 ) [ RunTime:0.0001s ]
+
+[ 2017-03-03T14:40:12+08:00 ] 49.77.217.48 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE `id` = 6 [ RunTime:0.0002s ]
+
+[ 2017-03-03T14:46:04+08:00 ] 49.77.217.48 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-03T14:53:22+08:00 ] 180.153.214.198 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-03T18:21:44+08:00 ] 61.235.37.202 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-03T18:22:44+08:00 ] 61.235.37.202 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+
+[ 2017-03-03T18:23:01+08:00 ] 61.235.37.202 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE `id` = 4 [ RunTime:0.0002s ]
+
+[ 2017-03-03T18:23:07+08:00 ] 61.235.37.202 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 4 [ RunTime:0.0002s ]
+
+[ 2017-03-03T18:24:03+08:00 ] 61.235.37.202 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-03T18:24:05+08:00 ] 61.235.37.202 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0005s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '自动化002' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-03T20:13:08+08:00 ] 120.210.164.32 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-03T20:13:14+08:00 ] 120.210.164.32 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-03T20:13:31+08:00 ] 120.210.164.32 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-03T20:13:37+08:00 ] 120.210.164.32 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-03T20:15:20+08:00 ] 120.210.164.32 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='100',`status`='1' WHERE ( `id` = 29 ) [ RunTime:0.0002s ]
+
+[ 2017-03-03T20:15:25+08:00 ] 120.210.164.32 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-03T20:15:30+08:00 ] 120.210.164.32 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-03T20:23:51+08:00 ] 120.210.164.32 /teacher.php/Practice/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `name`='上海腾讯计算机有限公司',`city`='上海',`type`='私企',`contact`='马化腾',`position`='',`telephone`='8912878',`mobile`='',`email`='1281074511@qq.com',`zipcode`='225653',`website`='www.qq.comm',`address`='上海',`introduction`='腾讯有限公司',`addtime`='2017-03-03 20:23:51' WHERE ( `id` = 2 ) [ RunTime:0.0002s ]
+
+[ 2017-03-03T20:35:06+08:00 ] 120.210.164.32 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-03T20:35:19+08:00 ] 120.210.164.32 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('12345678','20170303','SSM','123456','数学','123@rw.com','1','0','2017-03-03 20:35:19') [ RunTime:0.0001s ]
+
+[ 2017-03-03T20:40:07+08:00 ] 120.210.164.32 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` = 21 ) [ RunTime:0.0002s ]
+
+[ 2017-03-03T20:40:32+08:00 ] 120.210.164.32 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-03T20:40:39+08:00 ] 120.210.164.32 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+
+[ 2017-03-03T20:41:06+08:00 ] 120.210.164.32 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('123456','1234566','123','123','123','123','1','0','2017-03-03 20:41:06') [ RunTime:0.0002s ]
+
+[ 2017-03-03T20:42:21+08:00 ] 120.210.164.32 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` = 22 ) [ RunTime:0.0002s ]
+
+[ 2017-03-03T20:42:38+08:00 ] 120.210.164.32 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-03T20:42:42+08:00 ] 120.210.164.32 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('123456','123456','ffy','123456','123456','123','1','1','2017-03-03 20:42:42') [ RunTime:0.0002s ]
+
+[ 2017-03-03T20:52:33+08:00 ] 223.104.147.8 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-03T20:52:56+08:00 ] 223.104.147.8 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-03T20:53:11+08:00 ] 223.104.147.8 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-03T20:54:06+08:00 ] 223.104.147.8 /teacher.php/Apply/editLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_leave` SET `status`='1' WHERE ( `id` = 14 ) [ RunTime:0.0001s ]
+
+[ 2017-03-03T20:54:32+08:00 ] 223.104.147.8 /teacher.php/Practice/addCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-03T21:45:40+08:00 ] 120.210.164.32 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-03T22:37:13+08:00 ] 222.190.47.60 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-03T22:37:16+08:00 ] 222.190.47.60 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+

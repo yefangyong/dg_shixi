@@ -72,9 +72,7 @@
                  ];
                  exit(json_encode($returnMsg));
              }
-             if(empty($data['suggestion'])||!isset($data['suggestion'])) {
-                 show(0,'请填写意见！');
-             }
+
              if($data['score']<60){
                  $data['status'] = -1;
              }elseif($data['score']>=60 && $data['score']<=100){

@@ -42,21 +42,21 @@
                         <tbody>
                         <tr>
                             <td>&nbsp;</td>
-                            <td><b>序号</b></td>
                             <td><b>公告标题</b></td>
                             <td><b>发布人</b></td>
                             <td><b>发布对象</b></td>
                             <td><b>发布时间</b></td>
+                            <td><b>状态</b></td>
                             <td><b>操作</b></td>
                         </tr>
                         <volist name="data" id="vo">
                             <tr>
                                 <td><a href="" class="cbox"></a></td>
-                                <td>{$vo.id}</td>
                                 <td>{$vo.title}</td>
                                 <td>{$vo.name}</td>
                                 <td>所有人</td>
                                 <td>{$vo.pubtime}</td>
+                                <td>未读</td>
                                 <td><a href="javascript:void(0)" attr-id="{$vo.id}" id="yfycms-cat"  class="ul">查看</a>&nbsp;<a href="">删除</a>
                                     </td>
                             </tr>

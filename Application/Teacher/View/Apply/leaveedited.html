@@ -1,0 +1,69 @@
+<include file="Apply/nav"/>
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <include file="Public/user"/>
+            </div>
+            <div class="tabs">
+                <div class="ct">
+                    <ul>
+                        <li><a href="{:U('Apply/index')}" >实习申请</a></li>
+                        <!--<li><a href="{:U('Apply/corporation')}" class="on">实习单位变更</a></li>-->
+                        <!--<li><a href="{:U('Apply/position')}">实习岗位变更</a></li>-->
+                        <li><a href="#">实习变更</a></li>
+                        <li><a href="{:U('Apply/leave')}" class="on">请假申请</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="ui-path">
+        <p><span class="pull-right"><a href="{:U('Apply/leave')}">返回</a></span>
+            <a href="" class="home"></a>
+            <a href="{:U('Apply/leave')}">请假申请</a>
+            &gt;
+            <a href="" class="on">请假申请批阅</a>
+        </p>
+    </div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht15"></div>
+            <div class="ui-article">
+                <div class="hd">
+                    <h3>董嘉耀的请假申请</h3>
+                    <p>
+                        紧急联系人：{$apply.emegencyconcat}
+                        <span class="wh30"></span>
+                        电话：{$apply.telephone}
+                    </p>
+                </div>
+                <div class="ct" style="font-size:15px ;">
+                   {$apply.content}
+                </div>
+                <div class="ft">
+                    <p>
+                        <label for="">请假人：<b>{$apply.stuname}</b></label>
+                    </p>
+                    <p>
+                        <label for="">时间:<b>{$apply.starttime|substr=0,10}~{$apply.endtime|substr=0,10}</b></label>
+                    </p>
+                </div>
+            </div>
+            <div class="ht30"></div>
+            <div class="ui-state">
+                <p class="text-center" style="font-size: 20px;">
+                    <b>当前状态：</b>已审核/{$apply.status|setApplyStatus}
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>

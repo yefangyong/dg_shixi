@@ -12,7 +12,7 @@ class ApplyController extends Controller {
 			$map['student_id']=$_POST['student_id'];
 		}
 		if($_POST['teacher_id']){
-			$map[]=' student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no='.$_POST['teacher_id'].')';
+			$map[]=' student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no='.$_POST['teacher_id'].'))';
 		}
 		if($_POST['status']){
 			$map['status']=$_POST['status']-2;
@@ -207,12 +207,12 @@ class ApplyController extends Controller {
             //$_POST['student_id']
             //$_POST['corporation_id']
             //新增
+            $_POST['applytime']=date('Y-m-d H:i:s');
             if($_POST['id']){
             	$rel = D('practice')->where(array('id'=>$_POST['id']))->save($_POST);
             }else{
             	$rel = D('practice')->add($_POST);
             }
-
             if($rel) {
             	 $res = D('practice')->where("`id` = ".$rel)->select();
              	 $res = $res[0];

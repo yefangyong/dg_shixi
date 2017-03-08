@@ -1,0 +1,65 @@
+<include file="Student/nav"/>
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <include file="Public/user"/>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="" class="on">学生管理</a>/li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ui-path">
+        <p>
+            <span class="pull-right"><a href="javascript:history.back()">返回</a></span>
+            <a href="" class="home"></a>
+            <a href="">学生管理</a>
+            &gt;
+            <a href="" class="on">请假记录</a>
+        </p>
+    </div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht15"></div>
+            <div class="ui-article">
+                <div class="hd">
+                    <h3>董嘉耀的请假申请</h3>
+                    <input type="hidden" name="id" value="{$apply.id}">
+                    <p>
+                        紧急联系人：{$apply.emegencyconcat}
+                        <span class="wh30"></span>
+                        电话：{$apply.telephone}
+                    </p>
+                </div>
+                <div class="ct" style="font-size:15px ;">
+                    {$apply.content}
+                </div>
+                <div class="ft">
+                    <p>
+                        <label for="">请假人：<b>{$apply.stuname}</b></label>
+                    </p>
+                    <p>
+                        <label for="">时间：<b>{$apply.starttime}~{$apply.endtime}</b></label>
+                    </p>
+                </div>
+            </div>
+            <div class="ht90"></div>
+            <div class="ht90"></div>
+            <div class="ui-state">
+                <p class="text-center" style="font-size: 20px;">
+                    <b>当前状态：</b>已审核/{$apply.status|isAgree}
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>

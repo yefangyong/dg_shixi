@@ -108,7 +108,7 @@
                                     </tr>
                                     <tr>
                                         <td><label for="">实习时间</label></td>
-                                        <td>{$student.starttime}~{$student.endtime}</td>
+                                        <td>{$student.starttime|substr=0,10}~{$student.endtime|substr=0,10}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">实习导师</label></td>

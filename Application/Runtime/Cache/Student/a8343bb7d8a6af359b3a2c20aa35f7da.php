@@ -22,7 +22,6 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
-
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -93,7 +92,7 @@
 <script>
     $(function(){
         $('.i').click(function(){
-            $('.i').removeClass('on');
+            $('.i on').removeClass('on');
             $(this).addClass('on');
         });
     });

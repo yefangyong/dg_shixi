@@ -210,6 +210,7 @@
     </div>
     <div class="ui-path">
         <p>
+            <span class="pull-right"><a href="<?php echo U('Student/index');?>">返回</a></span>
             <a href="" class="home"></a>
             <a href="<?php echo U('Student/index');?>">学生管理</a>
             >
@@ -223,35 +224,35 @@
                 <form class="form-horizontal" method="post" id="studentForm">
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <label for="" class="control-label">手机</label>
+                            <label for="" class="control-label"><i></i>手机</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" maxlength="11" name="phone" style="width: 210px;" placeholder="请输入您的手机号码">
+                            <input type="text" class="form-control" maxlength="11" name="phone" style="width: 210px;" placeholder="请输入您的手机号码"  id="phone" onblur="isEmpty(this.id)">
                         </div>
                         <div class="col-sm-2">
-                            <label for="" class="control-label">学号</label>
+                            <label for="" class="control-label"><i></i>学号</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="studentno" style="width: 210px;" placeholder="请输入学号">
+                            <input type="text" class="form-control" name="studentno" style="width: 210px;" placeholder="请输入学号" id="stuno" onblur="isEmpty(this.id)">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <label for="" class="control-label">姓名</label>
+                            <label for="" class="control-label"><i></i>姓名</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="name" style="width: 210px;" placeholder="请输入你的姓名">
+                            <input type="text" class="form-control" name="name" style="width: 210px;" placeholder="请输入你的姓名" id="stuname" onblur="isEmpty(this.id)">
                         </div>
                         <div class="col-sm-2">
-                            <label for="" class="control-label">密码</label>
+                            <label for="" class="control-label"><i></i>密码</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="password" class="form-control" name="password" style="width: 210px;" placeholder="请设置您的密码">
+                            <input type="text" class="form-control" name="password" style="width: 210px;" placeholder="请设置您的密码" id="pass" onblur="isEmpty(this.id)">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <label for="" class="control-label">院系</label>
+                            <label for="" class="control-label"><i></i>院系</label>
                         </div>
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
@@ -259,11 +260,11 @@
                                 <div class="ex">
                                     <?php if(is_array($dept)): $i = 0; $__LIST__ = $dept;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="javascript:void(0)"><?php echo ($v["name"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </div>
-                                <input type="hidden" name="dept">
+                                <input type="hidden" name="dept" >
                             </div>
                         </div>
                         <div class="col-sm-2">
-                            <label for="" class="control-label">年级</label>
+                            <label for="" class="control-label"><i></i>年级</label>
                         </div>
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
@@ -278,7 +279,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <label for="" class="control-label">班级</label>
+                            <label for="" class="control-label"><i></i>班级</label>
                         </div>
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
@@ -290,10 +291,10 @@
                             </div>
                         </div>
                         <div class="col-sm-2">
-                            <label for="" class="control-label">班主任</label>
+                            <label for="" class="control-label"><i></i>班主任</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="master" style="width: 210px; color: #000000; background-color: #fff;" readonly>
+                            <input type="text" class="form-control" name="master" style="width: 210px; color: #000000; background-color: #fff;" readonly id="master" onblur="isEmpty(this.id)">
                         </div>
                     </div>
                     <div class="form-group">
@@ -309,9 +310,9 @@
                         <div class="col-sm-4">
                             <div class="text">
                                 <p>
-                                    <a href="javascript:void(0)" class="rbox on"><i></i>男</a>
+                                    <a href="javascript:void(0)" class="rbox on" attr-gender="1"><i></i>男</a>
                                     <span class="wh50"></span>
-                                    <a href="javascript:void(0)"  class="rbox"><i></i>女</a>
+                                    <a href="javascript:void(0)"  class="rbox" attr-gender="0"><i></i>女</a>
                                     <input type="hidden" name="gender">
                                 </p>
                             </div>
@@ -359,16 +360,21 @@
             },'JSON');
         });
 
-        $('.rbox').click(function(){
-           var $gender = $(this).text();
-           $('input[name=gender]').val($gender);
-        });
-
       $('button[type=button]').click(function(){
+          var $gender = $('a.rbox.on').attr('attr-gender');
+          $('input[name=gender]').val($gender);
           var $dept = $('#dept').text();
+          if($dept=="请选择院系名称"|| $dept==''){
+              layer.msg('此项为必填项！');
+          }
           var $class = $('#class').text();
-          console.log($class);
+          if($class=="请选择班级名称"|| $class==''){
+              layer.msg('此项为必填项！');
+          }
           var $grade = $('#grade').text();
+          if($grade=="请选择班所在年级"|| $grade==''){
+              layer.msg('此项为必填项！');
+          }
           var $url = "<?php echo U('Student/add');?>";
           $('input[name=dept]').val($dept);
           $('input[name=class]').val($class);
@@ -391,6 +397,13 @@
           });
       });
     });
+    function isEmpty(x)
+    {
+        var y = document.getElementById(x).value;
+        if(y==''){
+            layer.msg('此项为必填项',{icon:5});
+        }
+    }
 </script>
 
 </body>

@@ -15,6 +15,15 @@ class ApplyController extends CommonController{
             }
         }else{
             $applyList = D('PracticeView')->select();
+            foreach ($applyList as $k => $v) {
+                //根据有无实习公司查询公司名称
+                if ($v['corporation_id'] != 0) {
+                    $corname = D('Corporation')->getNameById($v['corporation_id']);
+                    $applyList[$k]['corname'] = $corname['name'];
+                } else {
+                    $applyList[$k]['corname'] = '';
+                }
+            }
             $this->assign('list',$applyList);
             return $this->display();
         }

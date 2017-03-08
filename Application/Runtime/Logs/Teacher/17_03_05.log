@@ -1,0 +1,110 @@
+[ 2017-03-05T20:23:54+08:00 ] 180.171.128.31 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-05T20:23:57+08:00 ] 180.171.128.31 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+
+[ 2017-03-05T20:26:26+08:00 ] 180.171.128.31 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-05T20:30:05+08:00 ] 180.171.128.31 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0005s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-05T20:30:07+08:00 ] 180.171.128.31 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('s','20170305','s','s','','','1','1','2017-03-05 20:30:07') [ RunTime:0.0001s ]
+
+[ 2017-03-05T20:31:31+08:00 ] 180.171.128.31 /teacher.php/Practice/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-03-05T20:33:50+08:00 ] 180.171.128.31 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-05T20:34:32+08:00 ] 180.171.128.31 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-05T20:43:52+08:00 ] 180.171.128.31 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-05T20:51:00+08:00 ] 180.171.128.31 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-05T20:51:13+08:00 ] 180.171.128.31 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-05T21:51:29+08:00 ] 117.185.27.115 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-05T21:54:12+08:00 ] 101.226.89.117 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-05T21:54:53+08:00 ] 117.88.213.135 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = 'ae6e334f62fb5d989398deed87568c94' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-05T21:54:57+08:00 ] 117.88.213.135 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = 'ae6e334f62fb5d989398deed87568c94' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-05T21:54:58+08:00 ] 117.88.213.135 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = 'ae6e334f62fb5d989398deed87568c94' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-05T21:55:05+08:00 ] 117.88.213.135 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-05T21:56:07+08:00 ] 101.226.33.204 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+

@@ -1,0 +1,85 @@
+<include file="Student/nav"/>
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <include file="Public/user"/>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="{:U('Student/index')}" class="on">学生管理</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ui-path">
+        <p>
+            <span class="pull-right"><a href="javascript:history.back()">返回</a></span>
+            <a href="javascript:void(0)" class="home"></a>
+            <a href="{:U('Student/index')}">学生管理</a>
+            >
+            <a href="javascript:void(0)" class="on">查看学生信息</a>
+        </p>
+    </div>
+    <div class="ht15"></div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht10"></div>
+            <div class="ui-table">
+                <div class="ct">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><b>学号</b></td>
+                            <td><b>提交人</b></td>
+                            <td><b>班级</b></td>
+                            <td><b>提交时间</b></td>
+                            <td><b>实习单位</b></td>
+                            <td><b>评审结果</b></td>
+                            <td><b>操作</b></td>
+                        </tr>
+                        <volist name="list" id="v">
+                            <tr>
+                                <td><a href="" class="cbox"></a></td>
+                                <td>{$v.studentno}</td>
+                                <td>{$v.name}</td>
+                                <td>{$v.classname}</td>
+                                <td>{$v.pubtime}</td>
+                                <td>{$v.corname}</td>
+                                <td>{$v.status|setAuditStatus}</td>
+                                <td>
+                                    <a href="__CONTROLLER__/showweek/id/{$v.rid}">查看</a>
+                                </td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="ht35"></div>
+            <div class="ui-paging">
+                <span>共15页，共143条记录</span>
+                &nbsp;
+                <ul>
+                    <li><a href=""><</a></li>
+                    <li><a href="" class="on">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">></a></li>
+                </ul>
+                <div class="pull-left">
+                    <a href="" class="cbox"><i></i>全选</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>

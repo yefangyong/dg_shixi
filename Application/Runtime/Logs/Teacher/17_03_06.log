@@ -1,0 +1,743 @@
+[ 2017-03-06T00:37:43+08:00 ] 101.226.64.174 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-06T00:37:52+08:00 ] 101.226.89.117 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-06T00:38:03+08:00 ] 118.89.224.224 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-06T00:49:55+08:00 ] 101.226.69.246 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-06T09:15:08+08:00 ] 220.178.150.44 /index.php/Teacher/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-06T09:15:53+08:00 ] 220.178.150.44 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 2 [ RunTime:0.0002s ]
+
+[ 2017-03-06T09:15:57+08:00 ] 220.178.150.44 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-06T09:16:02+08:00 ] 220.178.150.44 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE `id` = 2 [ RunTime:0.0002s ]
+
+[ 2017-03-06T09:16:09+08:00 ] 220.178.150.44 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 2 [ RunTime:0.0003s ]
+
+[ 2017-03-06T09:16:34+08:00 ] 220.178.150.44 /index.php?m=teacher&c=notice&a=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_notice` WHERE ( id=20 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T09:21:29+08:00 ] 220.178.150.44 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-06T09:22:06+08:00 ] 220.178.150.44 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-06T09:43:36+08:00 ] 49.77.233.71 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-06T09:43:43+08:00 ] 49.77.233.71 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='70',`status`='1' WHERE ( `id` = 23 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T09:50:54+08:00 ] 220.178.150.44 /index.php/Teacher/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-06T09:51:35+08:00 ] 220.178.150.44 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-06T09:51:40+08:00 ] 220.178.150.44 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='30',`status`='-1' WHERE ( `id` = 24 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T09:52:36+08:00 ] 220.178.150.44 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-06T09:52:41+08:00 ] 220.178.150.44 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-06T10:32:42+08:00 ] 49.77.233.71 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-06T13:54:07+08:00 ] 49.77.233.71 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-06T13:54:16+08:00 ] 49.77.233.71 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='30',`status`='-1' WHERE ( `id` = 51 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T14:36:06+08:00 ] 49.77.233.71 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE ( `id` = 27 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T14:36:34+08:00 ] 49.77.233.71 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_report` WHERE ( `id` = 31 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T15:34:53+08:00 ] 49.65.251.163 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_practice` SET `status`='-1' WHERE ( `id` = 33 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T15:43:55+08:00 ] 49.65.251.163 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `id` = 3 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T15:52:55+08:00 ] 49.65.251.163 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='-1' WHERE ( `id` = 34 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:26:32+08:00 ] 49.65.251.163 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='-1' WHERE ( `id` = 18 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T16:29:02+08:00 ] 49.65.251.163 /teacher.php/Apply/editLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_leave` SET `status`='1' WHERE ( `id` = 50 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T16:35:20+08:00 ] 49.65.251.163 /teacher.php/Apply/editLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_leave` SET `status`='-1' WHERE ( `id` = 51 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T16:48:55+08:00 ] 49.65.251.163 /teacher.php/Apply/leave.html
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:49:03+08:00 ] 49.65.251.163 /teacher.php/Apply/leave.html
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:49:04+08:00 ] 49.65.251.163 /teacher.php/Apply/leave.html
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:49:05+08:00 ] 49.65.251.163 /teacher.php/Apply/leave.html
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:49:50+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:49:52+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:49:53+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:49:53+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:49:53+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:50:01+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:50:26+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:50:27+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:50:30+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:50:37+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:50:46+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:50:47+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T16:50:47+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:06:57+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:06:59+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:06:59+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:07:44+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:07:44+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:07:44+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:07:44+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:07:45+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:07:45+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:07:45+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:08:20+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:08:20+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:08:20+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:08:20+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:08:26+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:08:26+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:08:51+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:08:51+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:08:52+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:20+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:20+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:21+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:21+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:21+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:21+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:21+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:22+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:22+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:22+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:22+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:22+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:23+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:19+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:20+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:20+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:20+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:20+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:20+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:20+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:21+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:21+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:21+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:21+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:21+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:21+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:22+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:22+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:24+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:24+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:07:24+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:14:13+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0329s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2017-03-06T19:14:13+08:00 ] 49.65.251.163 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-03-06T19:14:13+08:00 ] 49.65.251.163 /teacher.php/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-06T19:14:14+08:00 ] 49.65.251.163 /teacher.php/Report/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( `teacherno` = 100 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `dg_profession` [ RunTime:0.0055s ]
+SQL: SELECT Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address AS address,Report.suggestion AS suggestion,Report.score AS score,Student.id AS sid,Student.studentno AS studentno,Student.name AS name,Student.classno AS classno,Class.id AS cid,Class.classname AS classname FROM dg_report Report  JOIN dg_student Student ON Report.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id  JOIN dg_profession Profession ON Profession.id = Class.profession WHERE Profession.id = '1' AND Report.type = 0  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dg_report Report  JOIN dg_student Student ON Report.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id  JOIN dg_profession Profession ON Profession.id = Class.profession LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined index: id /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 286 行.
+NOTIC: [8] Undefined variable: allClass /var/www/html/Application/Runtime/Cache/Teacher/71903a5bda89574b192557f9e730df04.php 第 302 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-03-06T22:32:32+08:00 ] 58.212.247.133 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-06T22:39:51+08:00 ] 58.212.247.133 /teacher.php/Apply/delLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_leave` WHERE ( `id` = 5 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T22:40:14+08:00 ] 58.212.247.133 /teacher.php/Apply/delLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_leave` WHERE ( `id` = 52 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T22:40:23+08:00 ] 58.212.247.133 /teacher.php/Apply/delLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_leave` WHERE ( `id` = 53 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T22:40:30+08:00 ] 58.212.247.133 /teacher.php/Apply/delLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_leave` WHERE ( `id` = 50 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T22:40:38+08:00 ] 58.212.247.133 /teacher.php/Apply/delLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_leave` WHERE ( `id` = 51 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T22:40:45+08:00 ] 58.212.247.133 /teacher.php/Apply/delLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_leave` WHERE ( `id` = 46 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T22:40:57+08:00 ] 58.212.247.133 /teacher.php/Apply/delLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_leave` WHERE ( `id` = 47 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T22:41:04+08:00 ] 58.212.247.133 /teacher.php/Apply/delLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_leave` WHERE ( `id` = 48 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T22:41:11+08:00 ] 58.212.247.133 /teacher.php/Apply/delLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_leave` WHERE ( `id` = 49 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T22:42:37+08:00 ] 58.212.247.133 /teacher.php/Apply/editLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_leave` SET `status`='1' WHERE ( `id` = 54 ) [ RunTime:0.0002s ]
+

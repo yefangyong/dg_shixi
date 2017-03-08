@@ -4,10 +4,10 @@
 
  class ReportViewModel extends ViewModel{
      public $viewFields = array(
-        'Report' => array('id'=>'rid','pubtime','pic','status','title','content','course','result','address','suggestion'),
-        'Student' => array('id'=>'sid','studentno','name','classno','_on'=>'Report.student_id = Student.studentno'),
-        'Class' => array('id'=>'cid','classname','_on'=>'Student.classno=Class.id'),
-        'Profession' => array('_on'=>'Profession.id = Class.profession'),
+        'Report' => array('id'=>'rid','pubtime','pic','status','title','content','course','result','address','suggestion','score','_type'=>'LEFT'),
+        'Student' => array('id'=>'sid','studentno','name','classno','_on'=>'Report.student_id = Student.studentno','_type'=>'LEFT'),
+        'Class' => array('id'=>'cid','classname','_on'=>'Student.classno=Class.id','_type'=>'LEFT'),
+        'Profession' => array('_on'=>'Profession.id = Class.profession','_type'=>'LEFT'),
      );
 
      public function getReportById($rid)

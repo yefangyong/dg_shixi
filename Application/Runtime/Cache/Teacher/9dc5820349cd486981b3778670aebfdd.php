@@ -272,9 +272,9 @@
                         <p>
                             <a href="<?php echo U('Student/add');?>">新增</a>
                             &nbsp;
-                            <a href="">导入</a>
+                            <a href="<?php echo U('Student/import');?>">导入</a>
                             &nbsp;
-                            <a href="">导出</a>
+                            <a href="<?php echo U('Student/export');?>">导出</a>
                             &nbsp;
                             <a href="">删除</a>
                         </p>
@@ -315,16 +315,7 @@
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                <span>共15页，共143条记录</span>
-                &nbsp;
-                <ul>
-                    <li><a href=""><</a></li>
-                    <li><a href="" class="on">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">></a></li>
-                </ul>
+               <?php echo ($page); ?> 
                 <div class="pull-left">
                     <a href="" class="cbox"><i></i>全选</a>
                 </div>
@@ -339,8 +330,13 @@
 
     </div>
 </footer>
+
 <script>
+    function upfile(){alert('a');
+        document.getElementById('file').click();
+    }
     $(function(){
+
         $('.del').click(function(){
             var $data = $(this).attr('attr-id');
             layer.confirm('您真的要删除本条记录吗?', {icon: 3, title:'删除记录'}, function(index){

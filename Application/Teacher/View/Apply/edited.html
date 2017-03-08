@@ -1,0 +1,101 @@
+<include file="Apply/nav"/>
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <include file="Public/user"/>
+            </div>
+            <div class="tabs">
+                <div class="ct">
+                    <ul>
+                        <li><a href="{:U('Apply/index')}" class="on">实习申请</a></li>
+                        <!--<li><a href="{:U('Apply/corporation')}" class="on">实习单位变更</a></li>-->
+                        <!--<li><a href="{:U('Apply/position')}">实习岗位变更</a></li>-->
+                        <li><a href="#">实习变更</a></li>
+                        <li><a href="{:U('Apply/leave')}">请假申请</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>
+            </div>
+        </div>
+    </div>
+    <div class="ui-path">
+        <p><span class="pull-right"><a href="{:U('Apply/index')}">返回</a></span>
+            <a href="" class="home"></a>
+            <a href="{:U('Apply/index')}">实习申请</a>
+            &gt;
+            <a href="" class="on">实习申请批阅</a>
+        </p>
+    </div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht15"></div>
+            <div class="ui-article">
+                <div class="hd">
+                    <h3>董嘉耀的实习申请</h3>
+                </div>
+            </div>
+            <div class="ht25"></div>
+            <div class="ui-head1">
+                <p>个人信息</p>
+            </div>
+            <div class="ht15"></div>
+            <div class="ui-article">
+                <div class="hd">
+                    <table>
+                        <tr>
+                            <input type="hidden" name="id" value="{$apply.pid}">
+                            <td align="left">学号：{$apply.studentno}</td>
+                            <td align="center">姓名：{$apply.stuname}</td>
+                            <td align="right">联系方式：{$apply.phone}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="ht25"></div>
+            <div class="ui-head1">
+                <p>公司信息</p>
+            </div>
+            <div class="ht15"></div>
+            <div class="ui-article">
+                <div class="hd">
+                    <table>
+                        <tr>
+                            <td align="left">企业名称：{$apply.corname}</td>
+                            <td align="">企业地址：{$apply.city}</td>
+                            <td align="">专业对口：{$apply.profession|isMajor}</td>
+                            <td align="">保险购买：{$apply.insurance|isPayInsurance}</td>
+                        </tr>
+                        <tr>
+                            <td align="left">职务：{$apply.position}</td>
+                            <td align="">企业联系人：{$apply.contact}</td>
+                            <td align="" colspan="2">联系电话：{$apply.telephone}</td>
+                        </tr>
+                    </table>
+                    <p>
+                <span class="pull-left">
+                  详细地址：{$apply.address}
+                  <span class="width117"></span>
+                  开始时间：{$apply.starttime|substr=0,10}
+                  <span class="width106"></span>
+                    结束时间：{$apply.endtime|substr=0,10}
+                </span>
+                    </p>
+                </div>
+            </div>
+            <div class="ht30"></div>
+            <div class="ui-state">
+                <p class="text-center" style="font-size: 20px;">
+                    <b>当前状态：</b>已审核/{$apply.status|setApplyStatus}
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>

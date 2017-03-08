@@ -303,7 +303,7 @@
                                     </tr>
                                     <tr>
                                         <td><label for="">实习时间</label></td>
-                                        <td><?php echo ($student["starttime"]); ?>~<?php echo ($student["endtime"]); ?></td>
+                                        <td><?php echo (substr($student["starttime"],0,10)); ?>~<?php echo (substr($student["endtime"],0,10)); ?></td>
                                     </tr>
                                     <tr>
                                         <td><label for="">实习导师</label></td>

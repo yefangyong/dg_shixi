@@ -1,0 +1,1234 @@
+[ 2017-03-01T01:10:32+08:00 ] 112.90.82.218 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T08:21:08+08:00 ] 220.178.150.44 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-01T08:21:14+08:00 ] 220.178.150.44 /index.php?m=student&c=report&a=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE `id` = 25 [ RunTime:0.0001s ]
+
+[ 2017-03-01T08:21:19+08:00 ] 220.178.150.44 /index.php/student/Report/js/agent/agent.js?_=1457914879032
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T08:21:21+08:00 ] 220.178.150.44 /index.php/student/Apply/js/agent/agent.js?_=1457914881123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T08:21:33+08:00 ] 220.178.150.44 /index.php/student/apply/js/agent/agent.js?_=1457914893724
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T08:21:35+08:00 ] 220.178.150.44 /index.php?m=student&c=apply&a=change
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_teacher` WHERE ( teacherno= ) LIMIT 1  
+
+[ 2017-03-01T08:21:57+08:00 ] 220.178.150.44 /index.php/student/Apply/js/agent/agent.js?_=1457914916877
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:23:59+08:00 ] 58.243.254.86 /index.php/Student/Apply/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_practice` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T11:24:07+08:00 ] 58.243.254.86 /index.php/Student/login/js/agent/agent.js?_=1488338657022
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:24:09+08:00 ] 101.226.125.111 /index.php/Student/Apply/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_practice` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T11:24:11+08:00 ] 58.243.254.86 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-01T11:24:17+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338667103
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:24:25+08:00 ] 58.243.254.86 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T11:24:27+08:00 ] 101.226.66.174 /index.php/student/Apply/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_practice` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T11:24:27+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338677013
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:24:28+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338678055
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:24:29+08:00 ] 58.243.254.86 /index.php/student/Grade/index
+ERR: 无法加载控制器:Grade
+
+[ 2017-03-01T11:24:31+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338680810
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:24:33+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338682612
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:24:33+08:00 ] 58.243.254.86 /index.php?m=student&c=apply&a=change
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_teacher` WHERE ( teacherno= ) LIMIT 1  
+
+[ 2017-03-01T11:24:35+08:00 ] 101.226.65.105 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T11:24:36+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338686327
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:24:40+08:00 ] 117.185.27.115 /index.php/student/Grade/index
+ERR: 无法加载控制器:Grade
+
+[ 2017-03-01T11:24:42+08:00 ] 116.226.184.99 /index.php/student/login/js/agent/agent.js?_=1488338635388
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:24:59+08:00 ] 116.226.184.99 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-01T11:28:58+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338947318
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:29:00+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338950050
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:29:02+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338951865
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:29:03+08:00 ] 58.243.254.86 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T11:29:05+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338955253
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:29:06+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338956360
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:29:43+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338992572
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:29:45+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338995174
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:29:48+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488338997424
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:29:50+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488339000357
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:30:26+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488339035335
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:30:29+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488339038550
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:30:32+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488339042388
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:30:34+08:00 ] 58.243.254.86 /index.php/student/Report/js/agent/agent.js?_=1488339043635
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:30:36+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488339045634
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:31:07+08:00 ] 119.147.146.60 /index.php/Student/Apply/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_practice` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T11:31:14+08:00 ] 119.147.146.60 /index.php/Student/Apply/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_practice` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T11:32:27+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488339156462
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:32:31+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488339160829
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:32:33+08:00 ] 58.243.254.86 /index.php/student/Notice/js/agent/agent.js?_=1488339163359
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:32:36+08:00 ] 58.243.254.86 /index.php/student/Notice/js/agent/agent.js?_=1488339165731
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:33:25+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488339214342
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:34:47+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488339296494
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:34:49+08:00 ] 58.243.254.86 /index.php?m=student&c=apply&a=change
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_teacher` WHERE ( teacherno= ) LIMIT 1  
+
+[ 2017-03-01T11:34:51+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488339300757
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:40:26+08:00 ] 58.243.254.86 /index.php/student/Report/js/agent/agent.js?_=1488339636263
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:40:32+08:00 ] 58.243.254.86 /index.php/student/Report/js/agent/agent.js?_=1488339642106
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:40:36+08:00 ] 58.243.254.86 /index.php/student/Report/js/agent/agent.js?_=1488339645955
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:40:42+08:00 ] 58.243.254.86 /index.php/student/Report/js/agent/agent.js?_=1488339652517
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:48:48+08:00 ] 58.243.254.86 /index.php/student/Report/js/agent/agent.js?_=1488340138347
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:48:50+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488340139933
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:50:10+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488340219691
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:50:19+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488340228957
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:50:21+08:00 ] 58.243.254.86 /index.php/student/Notice/js/agent/agent.js?_=1488340231282
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:50:23+08:00 ] 58.243.254.86 /index.php/student/Notice/js/agent/agent.js?_=1488340232768
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:50:35+08:00 ] 58.243.254.86 /index.php/student/Notice/js/agent/agent.js?_=1488340245468
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:51:17+08:00 ] 180.111.133.83 /index.php/student/login/js/agent/agent.js?_=1488340319519
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:51:23+08:00 ] 180.111.133.83 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-01T11:51:29+08:00 ] 180.111.133.83 /index.php/student/Apply/js/agent/agent.js?_=1488340331032
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:51:33+08:00 ] 180.111.133.83 /index.php/student/Apply/js/agent/agent.js?_=1488340334462
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:52:05+08:00 ] 180.111.133.83 /index.php?m=student&c=apply&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno`,`corporation_id`,`name`,`phone` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( name="华为" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_practice` (`cname`,`profession`,`insurance`,`position`,`phone`,`address`,`starttime`,`endtime`,`student_id`,`corporation_id`) VALUES ('华为','0','0','dd','dd','dd','2016-12-1','2017-6-16','20170209','6') [ RunTime:0.0002s ]
+
+[ 2017-03-01T11:52:17+08:00 ] 180.153.214.198 /index.php?m=student&c=apply&a=index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_practice` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T11:52:52+08:00 ] 180.111.133.83 /index.php/student/apply/js/agent/agent.js?_=1488340414663
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:55:04+08:00 ] 58.243.254.86 /index.php/student/Report/js/agent/agent.js?_=1488340514110
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T11:56:54+08:00 ] 58.243.254.86 /index.php/student/report/js/agent/agent.js?_=1488340623942
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T12:02:57+08:00 ] 58.243.254.86 /index.php/student/Report/js/agent/agent.js?_=1488340986534
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T12:05:48+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488341157514
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T12:05:53+08:00 ] 58.243.254.86 /index.php/student/apply/js/agent/agent.js?_=1488341163380
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T12:05:58+08:00 ] 58.243.254.86 /index.php/student/apply/js/agent/agent.js?_=1488341167697
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T12:06:10+08:00 ] 101.226.33.203 /index.php?m=student&c=apply
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_practice` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T12:14:54+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488341703906
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T12:17:46+08:00 ] 58.243.254.86 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T12:17:52+08:00 ] 58.243.254.86 /index.php/student/Notice/js/agent/agent.js?_=1488341881562
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T12:19:45+08:00 ] 58.243.254.86 /index.php/student/Notice/js/agent/agent.js?_=1488341994921
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T12:19:50+08:00 ] 58.243.254.86 /index.php/student/Notice/js/agent/agent.js?_=1488341999907
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T12:21:02+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488342072230
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T12:21:04+08:00 ] 58.243.254.86 /index.php/student/Apply/js/agent/agent.js?_=1488342074116
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T12:21:06+08:00 ] 58.243.254.86 /index.php?m=student&c=apply&a=change
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_teacher` WHERE ( teacherno= ) LIMIT 1  
+
+[ 2017-03-01T12:25:24+08:00 ] 180.153.201.15 /index.php?m=student&c=apply&a=leave
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_leave` WHERE ( student_id= ) 
+
+[ 2017-03-01T13:12:34+08:00 ] 116.226.184.99 /index.php/student/Apply/js/agent/agent.js?_=1488345107772
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T13:12:40+08:00 ] 116.226.184.99 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T13:12:43+08:00 ] 116.226.184.99 /index.php/student/Apply/js/agent/agent.js?_=1488345116142
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T13:12:45+08:00 ] 116.226.184.99 /index.php/student/Notice/js/agent/agent.js?_=1488345118392
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T13:12:49+08:00 ] 116.226.184.99 /index.php/student/Grade/index
+ERR: 无法加载控制器:Grade
+
+[ 2017-03-01T13:12:51+08:00 ] 116.226.184.99 /index.php/student/Notice/js/agent/agent.js?_=1488345124338
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T13:12:56+08:00 ] 116.226.184.99 /index.php/student/Report/js/agent/agent.js?_=1488345129115
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T13:12:58+08:00 ] 116.226.184.99 /index.php/student/Report/js/agent/agent.js?_=1488345131883
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T13:13:00+08:00 ] 116.226.184.99 /index.php/student/Report/js/agent/agent.js?_=1488345133465
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T13:13:01+08:00 ] 116.226.184.99 /index.php/student/Report/js/agent/agent.js?_=1488345134682
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T13:13:03+08:00 ] 116.226.184.99 /index.php/student/Apply/js/agent/agent.js?_=1488345136045
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T13:13:44+08:00 ] 116.226.184.99 /index.php/student/Apply/js/agent/agent.js?_=1488345177495
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T13:13:51+08:00 ] 116.226.184.99 /index.php/student/Apply/js/agent/agent.js?_=1488345184347
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T13:14:38+08:00 ] 116.226.184.99 /index.php/student/Apply/js/agent/agent.js?_=1488345231678
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T13:14:41+08:00 ] 116.226.184.99 /index.php/student/Grade/index
+ERR: 无法加载控制器:Grade
+
+[ 2017-03-01T14:21:29+08:00 ] 116.226.184.99 /index.php?m=student&c=report
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-01T15:16:40+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488352610024
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T15:18:29+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488352718984
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T15:18:34+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488352723592
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T15:18:37+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488352726220
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T15:20:19+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488352829016
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T15:27:23+08:00 ] 58.243.250.17 /index.php/student/Grade/index
+ERR: 无法加载控制器:Grade
+
+[ 2017-03-01T15:51:00+08:00 ] 58.243.250.17 /index.php/student/Grade/index
+ERR: 1146:Table 'shixi1.dg_apply' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dg_apply`
+
+[ 2017-03-01T15:52:23+08:00 ] 58.243.250.17 /index.php/student/Grade/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_grade` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T15:53:40+08:00 ] 58.243.250.17 /index.php/student/Grade/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_grade` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T15:53:41+08:00 ] 58.243.250.17 /index.php/student/Grade/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_grade` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T15:54:02+08:00 ] 58.243.250.17 /index.php/student/Grade/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_grade` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T15:54:03+08:00 ] 58.243.250.17 /index.php/student/Grade/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_grade` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T15:54:47+08:00 ] 58.243.250.17 /index.php/student/Grade/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_grade` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T15:54:48+08:00 ] 58.243.250.17 /index.php/student/Grade/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_grade` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T15:54:50+08:00 ] 58.243.250.17 /index.php/student/Grade/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_grade` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T15:56:23+08:00 ] 58.243.250.17 /index.php/student/Grade/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_grade` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T16:00:48+08:00 ] 58.243.250.17 /index.php/student/Grade/index
+ERR: 1054:Unknown column 'student_id20170209' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `dg_signin` WHERE ( student_id20170209 ) ORDER BY pubtime desc LIMIT 1  
+
+[ 2017-03-01T16:01:15+08:00 ] 58.243.250.17 /index.php/student/Grade/js/agent/agent.js?_=1488355284256
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:03:29+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488355417876
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:03:37+08:00 ] 180.153.214.188 /index.php/student/Apply/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_practice` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-01T16:04:12+08:00 ] 116.226.184.99 /index.php?m=student&c=report
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-01T16:04:33+08:00 ] 116.226.184.99 /index.php?m=student&c=report
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-01T16:06:54+08:00 ] 116.226.184.99 /index.php?m=student&c=report
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-01T16:08:17+08:00 ] 58.243.250.17 /index.php/student/Grade/js/agent/agent.js?_=1488355706733
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:08:23+08:00 ] 58.243.250.17 /index.php/student/Notice/js/agent/agent.js?_=1488355713093
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:08:26+08:00 ] 58.243.250.17 /index.php/student/Grade/js/agent/agent.js?_=1488355715835
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:09:57+08:00 ] 58.243.250.17 /index.php/student/Grade/js/agent/agent.js?_=1488355806413
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:10:02+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488355811382
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:10:03+08:00 ] 58.243.250.17 /index.php/student/Grade/js/agent/agent.js?_=1488355812910
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:11:22+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488355891826
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:11:27+08:00 ] 58.243.250.17 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:12:56+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488355986052
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:13:02+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488355991582
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:13:03+08:00 ] 58.243.250.17 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:13:05+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488355994721
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:13:06+08:00 ] 58.243.250.17 /index.php/student/Notice/js/agent/agent.js?_=1488355995844
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:13:09+08:00 ] 58.243.250.17 /index.php/student/Grade/js/agent/agent.js?_=1488355998269
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:13:22+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488356012064
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:13:29+08:00 ] 58.243.250.17 /index.php/student/apply/js/agent/agent.js?_=1488356018235
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:13:34+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488356024006
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:13:36+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488356025320
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:13:38+08:00 ] 58.243.250.17 /index.php/student/Grade/js/agent/agent.js?_=1488356027737
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:13:42+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488356031848
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:14:35+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488356084900
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:14:39+08:00 ] 58.243.250.17 /index.php/student/apply/js/agent/agent.js?_=1488356088981
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:15:27+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488356136555
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:17:07+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488356236397
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:17:09+08:00 ] 58.243.250.17 /index.php/student/report/js/agent/agent.js?_=1488356238616
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:17:13+08:00 ] 58.243.250.17 /index.php/student/report/js/agent/agent.js?_=1488356243079
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:17:15+08:00 ] 58.243.250.17 /index.php/student/report/js/agent/agent.js?_=1488356245079
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:17:17+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488356246933
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:17:21+08:00 ] 58.243.250.17 /index.php/student/report/js/agent/agent.js?_=1488356250697
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:17:25+08:00 ] 58.243.250.17 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+
+[ 2017-03-01T16:17:27+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488356256885
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:17:28+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488356257940
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:17:35+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488356264703
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:17:36+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488356266033
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:18:25+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488356314444
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:18:26+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488356315986
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:18:36+08:00 ] 180.111.133.83 /index.php/student/apply/js/agent/agent.js?_=1488356356451
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:18:37+08:00 ] 140.207.124.105 /index.php?m=student&c=apply&a=leave
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_leave` WHERE ( student_id= ) 
+
+[ 2017-03-01T16:18:41+08:00 ] 180.111.133.83 /index.php/student/Apply/js/agent/agent.js?_=1488356362588
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:19:03+08:00 ] 58.243.250.17 /index.php/student/Notice/js/agent/agent.js?_=1488356353077
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:19:12+08:00 ] 180.111.133.83 /index.php/student/Apply/js/agent/agent.js?_=1488356393875
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:32:36+08:00 ] 58.243.250.17 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:32:38+08:00 ] 58.243.250.17 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:32:39+08:00 ] 58.243.250.17 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:32:40+08:00 ] 58.243.250.17 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:32:40+08:00 ] 58.243.250.17 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:32:41+08:00 ] 58.243.250.17 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:32:42+08:00 ] 58.243.250.17 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:32:43+08:00 ] 58.243.250.17 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:32:44+08:00 ] 58.243.250.17 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:36:35+08:00 ] 58.243.250.17 /index.php/student/Contact/index
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:36:59+08:00 ] 58.243.250.17 /index.php/student/Notice/js/agent/agent.js?_=1488357429020
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:37:08+08:00 ] 58.243.250.17 /index.php/student/Notice/js/agent/agent.js?_=1488357437182
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:37:10+08:00 ] 58.243.250.17 /index.php/student/Contact/student
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:37:20+08:00 ] 180.153.81.203 /index.php/student/Contact/student
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:38:04+08:00 ] 58.243.250.17 /index.php/student/Contact/student
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:38:08+08:00 ] 58.243.250.17 /index.php/student/Notice/js/agent/agent.js?_=1488357497876
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:39:00+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488357549949
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:39:09+08:00 ] 58.243.250.17 /index.php/student/Contact/student
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:39:15+08:00 ] 58.243.250.17 /index.php/student/Contact/student
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:40:02+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488357611499
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:40:04+08:00 ] 58.243.250.17 /index.php/student/Grade/js/agent/agent.js?_=1488357613532
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:40:07+08:00 ] 58.243.250.17 /index.php/student/Grade/js/agent/agent.js?_=1488357616500
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:40:08+08:00 ] 58.243.250.17 /index.php/student/Grade/js/agent/agent.js?_=1488357618151
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:40:10+08:00 ] 58.243.250.17 /index.php/student/Grade/js/agent/agent.js?_=1488357619599
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:40:18+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488357627272
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:40:43+08:00 ] 58.243.250.17 /index.php/student/Notice/js/agent/agent.js?_=1488357652234
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T16:40:59+08:00 ] 58.243.250.17 /index.php/student/Contact/student
+ERR: 无法加载控制器:Contact
+
+[ 2017-03-01T16:41:24+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488357693112
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:10:03+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488359411197
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:10:44+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488359452354
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:14:16+08:00 ] 58.243.250.17 /index.php/student/Report/js/agent/agent.js?_=1488359664898
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:14:20+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488359669265
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:14:22+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488359671506
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:15:29+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488359738461
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:15:33+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488359742165
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:29:01+08:00 ] 180.111.133.83 /index.php/student/Grade/js/agent/agent.js?_=1488360582923
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:29:31+08:00 ] 180.111.133.83 /index.php/student/Contact/js/agent/agent.js?_=1488360612690
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:29:34+08:00 ] 180.111.133.83 /index.php/student/Contact/js/agent/agent.js?_=1488360616408
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:29:43+08:00 ] 180.111.133.83 /index.php/student/Contact/js/agent/agent.js?_=1488360624830
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:29:47+08:00 ] 180.111.133.83 /index.php/student/Contact/js/agent/agent.js?_=1488360629559
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:29:50+08:00 ] 180.111.133.83 /index.php/student/Contact/js/agent/agent.js?_=1488360631891
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:29:52+08:00 ] 180.111.133.83 /index.php/student/Contact/js/agent/agent.js?_=1488360634419
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:37:00+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488361029247
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:38:50+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488361138232
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:41:54+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488361323044
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:42:00+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488361329687
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:42:03+08:00 ] 58.243.250.17 /index.php/student/Apply/js/agent/agent.js?_=1488361331720
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:42:05+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488361333739
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:42:06+08:00 ] 58.243.250.17 /index.php/student/Notice/js/agent/agent.js?_=1488361335213
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:42:08+08:00 ] 58.243.250.17 /index.php/student/Grade/js/agent/agent.js?_=1488361337294
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:42:10+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488361339265
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:45:12+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488361520677
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:45:15+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488361524025
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T17:45:17+08:00 ] 58.243.250.17 /index.php/student/Contact/js/agent/agent.js?_=1488361526170
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T21:57:42+08:00 ] 222.190.47.60 /index.php/student/Contact/js/agent/agent.js?_=1488376704127
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T21:57:50+08:00 ] 222.190.47.60 /index.php/student/Contact/js/agent/agent.js?_=1488376713112
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T21:57:54+08:00 ] 222.190.47.60 /index.php/student/Grade/js/agent/agent.js?_=1488376716889
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T21:58:01+08:00 ] 222.190.47.60 /index.php/student/Apply/js/agent/agent.js?_=1488376723152
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T21:58:03+08:00 ] 222.190.47.60 /index.php/student/Apply/js/agent/agent.js?_=1488376725245
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T21:58:08+08:00 ] 222.190.47.60 /index.php/student/Report/js/agent/agent.js?_=1488376730484
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T21:58:15+08:00 ] 222.190.47.60 /index.php/student/Apply/js/agent/agent.js?_=1488376737673
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+ERR: 非法操作:js
+
+[ 2017-03-01T21:58:19+08:00 ] 222.190.47.60 /index.php/student/Report/js/agent/agent.js?_=1488376741757
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+ERR: 非法操作:js
+

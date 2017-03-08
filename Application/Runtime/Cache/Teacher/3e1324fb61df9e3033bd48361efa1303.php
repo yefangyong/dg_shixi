@@ -299,7 +299,7 @@
                                 <td><?php echo ($v["student_id"]); ?></td>
                                 <td><?php echo ($v["stuname"]); ?></td>
                                 <td><?php echo ($v["classname"]); ?></td>
-                                <td><?php echo ($v["applytime"]); ?></td>
+                                <td><?php echo (substr($v["applytime"],0,10)); ?></td>
                                 <td><?php echo (setAuditStatus($v["status"])); ?></td>
                                 <td><a href="/teacher.php/Apply/editLeave/id/<?php echo ($v["id"]); ?>">查看</a>
                                     <a href="javascript:void(0)" class="del" attr-id="<?php echo ($v["id"]); ?>">删除</a>

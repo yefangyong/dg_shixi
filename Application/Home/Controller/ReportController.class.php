@@ -12,7 +12,7 @@ class ReportController extends Controller {
 			$map['student_id']=$_POST['student_id'];
 		}
 		if($_POST['teacher_id']){
-			$map[]=' student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no='.$_POST['teacher_id'].')';
+			$map[]=' student_id in(select studentno from dg_student where classno IN(select id from dg_class where master_no='.$_POST['teacher_id'].'))';
 		}
 		if($_POST['status']){
 			$map['status']=$_POST['status']-2;

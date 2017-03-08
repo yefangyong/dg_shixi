@@ -188,18 +188,18 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
-            </div>
+    <div class="user">
+        <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
+            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <i></i>
+        </p>
+        <div class="ex">
+            <p><a href="">个人信息</a></p>
+            <p><a href="javascript:void(0)">修改密码</a></p>
+            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+        </div>
+    </div>
+</div>
             <div class="tabs">
                 <ul>
                     <li><a href="<?php echo U('Practice/index');?>">学生实习安排</a></li>
@@ -211,7 +211,7 @@
         </div>
     </div>
     <div class="ui-path">
-        <p>
+        <p><span class="pull-right"><a href="<?php echo U('Practice/corporation');?>">返回</a></span>
             <a href="" class="home"></a>
             <a href="<?php echo U('Practice/corporation');?>">实习企业管理</a>
             >

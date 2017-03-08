@@ -22,7 +22,6 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
-
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -93,7 +92,7 @@
 <script>
     $(function(){
         $('.i').click(function(){
-            $('.i').removeClass('on');
+            $('.i on').removeClass('on');
             $(this).addClass('on');
         });
     });
@@ -142,20 +141,20 @@
                         <tbody>
                         <tr>
                             <td>&nbsp;</td>
-                            <td><b>序号</b></td>
                             <td><b>公告标题</b></td>
                             <td><b>发布人</b></td>
                             <td><b>发布对象</b></td>
                             <td><b>发布时间</b></td>
+                            <td><b>状态</b></td>
                             <td><b>操作</b></td>
                         </tr>
                         <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
                                 <td><a href="" class="cbox"></a></td>
-                                <td><?php echo ($vo["id"]); ?></td>
                                 <td><?php echo ($vo["title"]); ?></td>
                                 <td><?php echo ($vo["name"]); ?></td>
                                 <td>所有人</td>
                                 <td><?php echo ($vo["pubtime"]); ?></td>
+                                <td>未读</td>
                                 <td><a href="javascript:void(0)" attr-id="<?php echo ($vo["id"]); ?>" id="yfycms-cat"  class="ul">查看</a>&nbsp;<a href="">删除</a>
                                     </td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>

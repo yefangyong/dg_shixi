@@ -22,7 +22,6 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
-
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -61,7 +60,7 @@
                 </li>
                 <li>
                     <div class="i">
-                        <a href="/index.php/student/Contact/index">
+                        <a href="/index.php/student/Contact/student">
                             <p><i class="ico3"></i>
                                 通讯录
                             </p>
@@ -93,7 +92,7 @@
 <script>
     $(function(){
         $('.i').click(function(){
-            $('.i').removeClass('on');
+            $('.i on').removeClass('on');
             $(this).addClass('on');
         });
     });
@@ -127,7 +126,7 @@
         </div>
     </div>
     <div class="ui-path">
-        <p>
+        <p><span class="pull-right"><a href="/index.php/student/Report/index" style="font-size: 15px">返回</a></span>
             <a href="" class="home"></a>
             <a href=""style="font-size: 15px">实习报告</a>
             >

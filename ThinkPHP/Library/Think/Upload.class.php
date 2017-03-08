@@ -116,7 +116,7 @@ class Upload {
      * 上传文件
      * @param 文件信息数组 $files ，通常是 $_FILES数组
      */
-    public function upload($files='') {
+    public function upload($files='', $nohttp=false) {
         if('' === $files){
             $files  =   $_FILES;
         }
@@ -157,6 +157,7 @@ class Upload {
 
             /* 文件上传检测 */
             if (!$this->check($file)){
+                var_dump($this->error);
                 continue;
             }
 
@@ -178,7 +179,9 @@ class Upload {
             }
 
             /* 生成保存文件名 */
+
             $savename = $this->getSaveName($file);
+
             if(false == $savename){
                 continue;
             } else {
@@ -187,6 +190,7 @@ class Upload {
 
             /* 检测并创建子目录 */
             $subpath = $this->getSubPath($file['name']);
+
             if(false === $subpath){
                 continue;
             } else {
@@ -195,6 +199,7 @@ class Upload {
 
             /* 对图像文件进行严格检测 */
             $ext = strtolower($file['ext']);
+
             if(in_array($ext, array('gif','jpg','jpeg','bmp','png','swf'))) {
                 $imginfo = getimagesize($file['tmp_name']);
                 if(empty($imginfo) || ($ext == 'gif' && empty($imginfo['bits']))){
@@ -202,9 +207,8 @@ class Upload {
                     continue;
                 }
             }
-
             /* 保存文件 并记录保存成功的文件 */
-            if ($this->uploader->save($file,$this->replace)) {
+            if ($this->uploader->save($file,$this->replace, $nohttp)) {
                 unset($file['error'], $file['tmp_name']);
                 $info[$key] = $file;
             } else {
@@ -214,6 +218,7 @@ class Upload {
         if(isset($finfo)){
             finfo_close($finfo);
         }
+        
         return empty($info) ? false : $info;
     }
 
@@ -276,11 +281,14 @@ class Upload {
             $this->error = '未知上传错误！';
         }
 
-        /* 检查是否合法上传 */
+        /* 检查是否合法上传 
+
         if (!is_uploaded_file($file['tmp_name'])) {
             $this->error = '非法上传文件！';
             return false;
         }
+
+        */
 
         /* 检查文件大小 */
         if (!$this->checkSize($file['size'])) {

@@ -1,0 +1,95 @@
+<include file="Apply/nav"/>
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <include file="Public/user"/>
+            </div>
+            <div class="tabs">
+                <div class="ct">
+                    <ul>
+                        <li><a href="{:U('Apply/index')}" >实习申请</a></li>
+                        <!--<li><a href="{:U('Apply/corporation')}" class="on">实习单位变更</a></li>-->
+                        <!--<li><a href="{:U('Apply/position')}">实习岗位变更</a></li>-->
+                        <li><a href="#">实习变更</a></li>
+                        <li><a href="{:U('Apply/leave')}">请假申请</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>
+            </div>
+        </div>
+    </div>
+    <div class="ui-path">
+        <p><span class="pull-right"><a href="{:U('Apply/position')}">返回</a></span>
+            <a href="" class="home"></a>
+            <a href="{:U('Apply/position')}">实习岗位变更</a>
+            &gt;
+            <a href="" class="on">实习变更批阅</a>
+        </p>
+    </div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht15"></div>
+            <div class="ui-article">
+                <div class="hd">
+                    <h3>董嘉耀的岗位变更申请</h3>
+                </div>
+                <div class="ht20"></div>
+                <div class="ui-head1">
+                    <p>个人信息</p>
+                </div>
+                <div class="ht15"></div>
+                <div class="ui-article">
+                    <div class="hd">
+                        <table>
+                            <tr>
+                                <td align="left">学号：{$apply.studentno}</td>
+                                <td align="center">姓名：{$apply.stuname}</td>
+                                <td align="right">联系方式：{$apply.phone}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="ht25"></div>
+                <div class="ui-head1">
+                    <p>变更信息</p>
+                </div>
+                <div class="ht15"></div>
+                <div class="hd">
+                    <table>
+                        <tr>
+                            <td>实习企业：{$apply.corname}</td>
+                            <td>原岗位：xxx</td>
+                            <td>现岗位：xxx</td>
+                        </tr>
+                        <tr>
+                            <td>所在地址：{$apply.address}</td>
+                            <td>企业指导老师：{$apply.guide}</td>
+                            <td>联系电话：xxx</td>
+                        </tr>
+                    </table>
+                    <div class="ht15"></div>
+                </div>
+                <div class="ct">
+                    <p style="text-indent: 0;">变更原因：</p>
+                    <div>
+                        {$apply.reason}
+                    </div>
+                </div>
+            </div>
+            <div class="ht30"></div>
+            <div class="ui-state">
+                <p class="text-center" style="font-size: 20px;">
+                    <b>当前状态：</b>已审核/{$apply.status|setApplyStatus}
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>

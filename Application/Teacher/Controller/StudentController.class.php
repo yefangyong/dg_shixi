@@ -4,8 +4,20 @@ use Think\Controller;
 
 class StudentController extends Controller{
     public function index(){
-        $studentList = D('StudentsView')->select();
+        import('ORG.Util.Page');
+        // 每页显示记录数
+        $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
+        $count = D('StudentsView')->where($map)->count();
+        // 实例化分页类 传入总记录数和每页显示的记录数
+        $page = new \Think\Page($count,$listRows);
+        $show = $page->show();
+        $currentPage = I(C('VAR_PAGE'),1);
+        $studentList = D('StudentsView')->page($currentPage.','.$listRows)->select();
         $this->assign('list',$studentList);
+        $this->assign('page',$show);
+        $this->assign('totalCount',$count);
+        $this->assign('numPerPage',$listRows);
+        $this->assign('currentPage',$currentPage);
         return $this->display();
     }
 
@@ -28,8 +40,7 @@ class StudentController extends Controller{
         $weeklyCount = D('Report')->getWeekCount($studentInfo['studentno']);
         $leaveCount = D('Leave')->getLeaveCount($studentInfo['studentno']);
         $this->assign('leavecount',$leaveCount);
-        $this->assign('weekc44444
-        ount',$weeklyCount);
+        $this->assign('weekcount',$weeklyCount);
         $this->assign('student',$studentInfo);
         return $this->display();
     }
@@ -104,18 +115,12 @@ class StudentController extends Controller{
             if(!isset($className)||empty($className)){
                 show(0,'请选择班级！');
             }
-            if(!isset($data['course'])||empty($data['course'])){
-                show(0,'请填写课程！');
-            }
-            if(!isset($data['email'])||empty($data['email'])){
-                show(0,'请填写邮箱！');
-            }
             if(!isset($data['password'])||empty($data['password'])){
                 show(0,'请填写密码！');
             }
             $gender = $data['gender'];
             unset($data['gender']);
-            $data['sex'] = $gender=='男'?1:0;
+            $data['sex'] = $gender;
             $data['addtime'] = date('Y-m-d H:i:s',time());
             $res = D('Student')->addStu($data);
             if($res){
@@ -195,5 +200,95 @@ class StudentController extends Controller{
         }else{
             show(0,'删除失败');
         }
+    }
+
+    public function export()
+    {
+        $users = D('student')->join("LEFT JOIN dg_class ON dg_student.classno=dg_class.id")->field("dg_student.*,dg_class.classname")->select();
+        $str = "#,学号,姓名,密码,手机号,班级,邮箱,性别,地址,紧急联系人,紧急联系电话";
+        $str .= "\n";
+        $row = 1;
+        for($i=0; $i<count($users); $i++)
+        {
+            $str .= $row++.','.$users[$i]['studentno'].','.$users[$i]['name'].','.$users[$i]['password'].','.$users[$i]['phone'].','.$users[$i]['classname'].','.$users[$i]['email'].','.($users[$i]['sex']==0?'男':'女').','.$users[$i]['emegencyconcat'].','.$users[$i]['emegencyphone'].','.$users[$i]['address']."\n";
+        }
+        $str = mb_convert_encoding($str, "GBK", "UTF-8");
+        Header('Cache-Control: private, must-revalidate, max-age=0');
+        Header("Content-type: application/octet-stream"); 
+        Header("Content-Disposition: attachment; filename=student-".date('Ymd').".csv"); 
+        echo $str;
+        exit;
+    }
+
+     public function exporttemp()
+     {
+        $str = "#,学号,姓名,密码,手机号,班级,邮箱,性别,地址,紧急联系人,紧急联系电话";
+        $str .= "\n";
+        $str = mb_convert_encoding($str, "GBK", "UTF-8");
+        Header('Cache-Control: private, must-revalidate, max-age=0');
+        Header("Content-type: application/octet-stream"); 
+        Header("Content-Disposition: attachment; filename=student-template.csv"); 
+        echo $str;
+        exit;
+     }
+
+    public function import()
+    {
+        if($_FILES['file']){
+            if($_FILES['file']['error']==1 or $_FILES['file']['error']==2){
+                echo '<script>alert("上传得文件超过系统限制");</script>';
+                exit;
+            }
+            if(!is_uploaded_file($_FILES['file']['tmp_name']))
+            {
+                echo '<script>alert("请上传文件");</script>';
+                exit;
+            }
+            if (($handle = fopen($_FILES['file']['tmp_name'], "r")) !== FALSE) {
+                while(($lines[] = fgetcsv($handle))!==false);
+            }else{
+                echo '<script>alert("打开文件失败");</script>';
+                exit;
+            }
+            $db = D('student');
+            $classdb = D('class');
+            for($i=1; $i<count($lines); $i++){
+                for($ii=0; $ii<count($lines[$i]); $ii++){
+                    $lines[$i][$ii]=iconv("GBK", "UTF-8", $lines[$i][$ii]);
+                }
+                $data['studentno']=$lines[$i]['1'];
+                if(empty($data['studentno'])){
+                    continue;
+                }
+                $ct = $db->where(array('studentno'=>$data['studentno']))->select();
+                $data['name']=$lines[$i]['2'];
+                $data['password']=$lines[$i]['3'];
+                $data['phone']=$lines[$i]['4'];
+                $classinfo = $classdb->where(array('classname="'.$lines[$i]['5'].'"'))->select();
+                if(!$classinfo[0]){
+                    $error[]="无此班级:".$classinfo[0]['id'];
+                    continue;
+                }
+                $data['classno']=$classinfo[0]['id'];
+                $data['email']=$lines[$i]['6'];
+                $data['sex']=($lines[$i]['7']=='男') ? 0 : 1;
+                $data['address']=$lines[$i]['8'];
+                $data['emegencyconcat']=$lines[$i]['9'];
+                $data['emegencyphone']=$lines[$i]['10'];
+                $data['addtime'] = date('Y-m-d H:i:s',time());
+                if($ct[0])
+                    $db->where(array('id'=>$ct[0]['id']))->save($data);
+                else
+                    $db->add($data);
+                echo $db->getLastSql();
+            }
+            if($error)
+                echo '<script>alert("导入失败！'.implode("  ", $error).'");</script>';
+            else
+                echo '<script>alert("导入成功！");</script>';
+            exit;
+
+        }else
+        $this->display();
     }
 }

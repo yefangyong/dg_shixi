@@ -15,7 +15,23 @@
      return $state;
  }
 
-
+function setLevel($result){
+    $res = $result/10;
+    switch($res){
+        case 10:
+        case 9 : $grade = "优";break;
+        case 8 : $grade = "良";break;
+        case 7 :
+        case 6 : $grade = "良";break;
+        case 5 :
+        case 4 :
+        case 3 :
+        case 2 :
+        case 1 :
+        case 0 :  $grade = "不及格";break;
+    }
+    return $grade;
+}
 
 
 function setAuditStatus($status){
@@ -32,7 +48,9 @@ function setGender($sex){
     return $sex == 1 ? '男':'女';
 }
 
-
+function isAgree($res){
+   return  $res == 1? '已同意':'不同意';
+}
 /**
  * 设置公司状态
  * @param $status

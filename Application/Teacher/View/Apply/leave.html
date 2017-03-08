@@ -105,7 +105,7 @@
                                 <td>{$v.student_id}</td>
                                 <td>{$v.stuname}</td>
                                 <td>{$v.classname}</td>
-                                <td>{$v.applytime}</td>
+                                <td>{$v.applytime|substr=0,10}</td>
                                 <td>{$v.status|setAuditStatus}</td>
                                 <td><a href="__CONTROLLER__/editLeave/id/{$v.id}">查看</a>
                                     <a href="javascript:void(0)" class="del" attr-id="{$v.id}">删除</a>

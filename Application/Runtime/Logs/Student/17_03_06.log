@@ -1,0 +1,1128 @@
+[ 2017-03-06T09:12:47+08:00 ] 220.178.150.44 /index.php/student/js/agent/agent.js?_=1458349967460
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-03-06T09:12:55+08:00 ] 220.178.150.44 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-06T09:13:17+08:00 ] 220.178.150.44 /index.php/student/report/js/agent/agent.js?_=1458349997422
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:13:18+08:00 ] 220.178.150.44 /index.php/student/Apply/js/agent/agent.js?_=1458349999126
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:13:20+08:00 ] 220.178.150.44 /index.php/student/Contact/js/agent/agent.js?_=1458350000717
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:13:21+08:00 ] 220.178.150.44 /index.php/student/Notice/js/agent/agent.js?_=1458350001844
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:13:22+08:00 ] 220.178.150.44 /index.php/student/Grade/js/agent/agent.js?_=1458350002914
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:13:24+08:00 ] 220.178.150.44 /index.php/student/Grade/js/agent/agent.js?_=1458350004333
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:13:25+08:00 ] 220.178.150.44 /index.php/student/Grade/js/agent/agent.js?_=1458350005297
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:13:29+08:00 ] 220.178.150.44 /index.php/student/Contact/js/agent/agent.js?_=1458350009285
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:13:37+08:00 ] 220.178.150.44 /index.php/student/Contact/js/agent/agent.js?_=1458350017546
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:13:42+08:00 ] 220.178.150.44 /index.php/student/Contact/js/agent/agent.js?_=1458350022947
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:13:45+08:00 ] 220.178.150.44 /index.php/student/Apply/js/agent/agent.js?_=1458350025432
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:13:46+08:00 ] 220.178.150.44 /index.php/student/Apply/js/agent/agent.js?_=1458350026939
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:13:50+08:00 ] 220.178.150.44 /index.php?m=student&c=apply&a=delChange
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_change` WHERE ( id=13 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T09:13:51+08:00 ] 220.178.150.44 /index.php/student/Apply/js/agent/agent.js?_=1458350031600
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:14:25+08:00 ] 220.178.150.44 /index.php/student/Apply/js/agent/agent.js?_=1458350065938
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:14:28+08:00 ] 220.178.150.44 /index.php/student/Apply/js/agent/agent.js?_=1458350068447
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T09:14:45+08:00 ] 220.178.150.44 /index.php/student/Report/js/agent/agent.js?_=1458350086065
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T13:52:14+08:00 ] 49.77.233.71 /index.php/student/login/js/agent/agent.js?_=1488779579556
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T13:52:26+08:00 ] 49.77.233.71 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-06T13:53:13+08:00 ] 49.77.233.71 /index.php/student/report/js/agent/agent.js?_=1488779638831
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T13:53:26+08:00 ] 49.77.233.71 /index.php/student/report/js/agent/agent.js?_=1488779651776
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T13:53:29+08:00 ] 49.77.233.71 /index.php/student/report/js/agent/agent.js?_=1488779654931
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T13:53:42+08:00 ] 49.77.233.71 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] Undefined index: id /var/www/html/Application/Student/Controller/ReportController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno`,`corporation_id`,`name`,`phone` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_report` (`title`,`content`,`pic`,`address`,`student_id`,`pubtime`) VALUES ('8899','8899','','oooooo','20170209','2017-03-06 :13:53:42') [ RunTime:0.0002s ]
+
+[ 2017-03-06T13:54:47+08:00 ] 49.77.233.71 /index.php/student/report/js/agent/agent.js?_=1488779731996
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:10:17+08:00 ] 49.65.251.163 /index.php/student/report/js/agent/agent.js?_=1488784262704
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:10:31+08:00 ] 49.65.251.163 /index.php/student/report/js/agent/agent.js?_=1488784276109
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:10:41+08:00 ] 49.65.251.163 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `title`='嗯嗯',`content`='饿 嗯嗯',`pic`='',`address`='a' WHERE ( id=50 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T15:10:44+08:00 ] 49.65.251.163 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_report` SET `title`='嗯嗯',`content`='饿 嗯嗯',`pic`='',`address`='a' WHERE ( id=50 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T15:10:47+08:00 ] 49.65.251.163 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `title`='嗯嗯',`content`='饿 嗯嗯',`pic`='',`address`='a' WHERE ( id=50 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T15:10:52+08:00 ] 49.65.251.163 /index.php/student/Report/js/agent/agent.js?_=1488784296460
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:11:04+08:00 ] 49.65.251.163 /index.php?m=student&c=report&a=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_report` WHERE `id` = 50 [ RunTime:0.0001s ]
+
+[ 2017-03-06T15:11:07+08:00 ] 49.65.251.163 /index.php/student/Report/js/agent/agent.js?_=1488784312067
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:16:07+08:00 ] 49.65.251.163 /index.php/student/Apply/js/agent/agent.js?_=1488784613073
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:16:11+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delApply
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_practice` WHERE ( id=31 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T15:16:13+08:00 ] 49.65.251.163 /index.php/student/Apply/js/agent/agent.js?_=1488784619066
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:16:18+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delApply
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_practice` WHERE ( id=30 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T15:16:20+08:00 ] 49.65.251.163 /index.php/student/Apply/js/agent/agent.js?_=1488784625820
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:16:23+08:00 ] 49.65.251.163 /index.php/student/Apply/js/agent/agent.js?_=1488784629000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:17:21+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno`,`corporation_id`,`name`,`phone` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( name="上海腾讯计算机有限公司" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_practice` (`cname`,`profession`,`insurance`,`position`,`phone`,`address`,`starttime`,`endtime`,`student_id`,`corporation_id`) VALUES ('上海腾讯计算机有限公司','0','0','驱动开发','123456789','南京雨花','2016-12-1','2017-12-1','20170209','2') [ RunTime:0.0002s ]
+
+[ 2017-03-06T15:20:17+08:00 ] 49.65.251.163 /index.php/student/apply/js/agent/agent.js?_=1488784862714
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:20:21+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delApply
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_practice` WHERE ( id=32 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T15:20:23+08:00 ] 49.65.251.163 /index.php/student/apply/js/agent/agent.js?_=1488784869142
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:20:26+08:00 ] 49.65.251.163 /index.php/student/Apply/js/agent/agent.js?_=1488784871673
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:21:09+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno`,`corporation_id`,`name`,`phone` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( name="华为" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_practice` (`cname`,`profession`,`insurance`,`position`,`phone`,`address`,`starttime`,`endtime`,`student_id`,`corporation_id`) VALUES ('华为','0','0','凄凄切切群','1234567','水电费费','2016-12-1','点点滴滴','20170209','6') [ RunTime:0.0002s ]
+
+[ 2017-03-06T15:47:58+08:00 ] 49.65.251.163 /index.php/student/apply/js/agent/agent.js?_=1488786524032
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:48:01+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delApply
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_practice` WHERE ( id=33 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T15:48:03+08:00 ] 49.65.251.163 /index.php/student/apply/js/agent/agent.js?_=1488786529197
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:48:06+08:00 ] 49.65.251.163 /index.php/student/Apply/js/agent/agent.js?_=1488786531657
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:48:17+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+
+[ 2017-03-06T15:48:32+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0006s ]
+SQL: SELECT `studentno`,`corporation_id`,`name`,`phone` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( name="999" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_practice` (`cname`,`profession`,`insurance`,`position`,`phone`,`address`,`starttime`,`endtime`,`student_id`,`corporation_id`) VALUES ('999','1','1','uu','uu','uu','2016-12-1',' uu','20170209','7') [ RunTime:0.0002s ]
+
+[ 2017-03-06T15:48:59+08:00 ] 49.65.251.163 /index.php/student/apply/js/agent/agent.js?_=1488786585426
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:49:03+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delApply
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_practice` WHERE ( id=34 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T15:49:05+08:00 ] 49.65.251.163 /index.php/student/apply/js/agent/agent.js?_=1488786590756
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T15:49:07+08:00 ] 49.65.251.163 /index.php/student/Apply/js/agent/agent.js?_=1488786593246
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T16:27:48+08:00 ] 49.65.251.163 /index.php/student/Apply/js/agent/agent.js?_=1488788914333
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T16:27:50+08:00 ] 49.65.251.163 /index.php/student/Apply/js/agent/agent.js?_=1488788915762
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T16:27:52+08:00 ] 49.65.251.163 /index.php/student/Apply/js/agent/agent.js?_=1488788917868
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T16:27:53+08:00 ] 49.65.251.163 /index.php/student/Report/js/agent/agent.js?_=1488788919250
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T16:27:56+08:00 ] 49.65.251.163 /index.php/student/Apply/js/agent/agent.js?_=1488788921382
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T16:28:02+08:00 ] 49.65.251.163 /index.php/student/apply/js/agent/agent.js?_=1488788928317
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T16:28:07+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delApply
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_practice` WHERE ( id=35 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:28:10+08:00 ] 49.65.251.163 /index.php/student/apply/js/agent/agent.js?_=1488788935794
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T16:28:14+08:00 ] 49.65.251.163 /index.php/student/Apply/js/agent/agent.js?_=1488788940342
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T16:28:40+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=addLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno`,`corporation_id`,`name`,`phone` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_leave` (`content`,`emegencyconcat`,`telephone`,`starttime`,`endtime`,`applytime`,`student_id`) VALUES ('123456','得到','得到','得到','得到','2017-03-06 16:28:40','20170209') [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:29:25+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=35 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T16:29:33+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=39 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:29:40+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=30 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:29:45+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=31 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:29:49+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=32 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:29:53+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=33 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T16:29:58+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=34 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T16:30:03+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=28 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:30:08+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=29 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:30:12+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=25 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:30:17+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=36 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:30:22+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=37 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:30:27+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=38 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T16:31:04+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=40 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:31:08+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=41 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T16:31:14+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=42 ) [ RunTime:0.0001s ]
+
+[ 2017-03-06T16:31:20+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=43 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T16:31:24+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=44 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T16:31:40+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=delLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( id=45 ) [ RunTime:0.0002s ]
+
+[ 2017-03-06T16:33:07+08:00 ] 49.65.251.163 /index.php?m=student&c=apply&a=addLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno`,`corporation_id`,`name`,`phone` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_leave` (`content`,`emegencyconcat`,`telephone`,`starttime`,`endtime`,`applytime`,`student_id`) VALUES ('我就是我  真的  我就是我 ','习近平','13661623965','2017-2-11','2017-3-12','2017-03-06 16:33:07','20170209') [ RunTime:0.0002s ]
+
+[ 2017-03-06T17:28:09+08:00 ] 49.65.251.163 /index.php/student/login/js/agent/agent.js?_=1488792535261
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T17:28:16+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:19+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:19+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:20+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:20+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:20+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:20+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:21+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:21+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:22+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:22+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:22+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:23+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:23+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:24+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:33+08:00 ] 49.65.251.163 /index.php/student/login/js/agent/agent.js?_=1488792559070
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T17:28:33+08:00 ] 49.65.251.163 /index.php/student/login/js/agent/agent.js?_=1488792559020
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T17:28:39+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:40+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:41+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:41+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:28:52+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:09+08:00 ] 49.65.251.163 /index.php/student/login/js/agent/agent.js?_=1488792774371
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T17:32:16+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:17+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:17+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:17+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:17+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:17+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:17+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:18+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:18+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:18+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:18+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:19+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:19+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:19+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:21+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:21+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:22+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:22+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:22+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T17:32:22+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:08:19+08:00 ] 49.65.251.163 /index.php/student/login/js/agent/agent.js?_=1488794945396
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T18:09:16+08:00 ] 49.65.251.163 /index.php/student/login/js/agent/agent.js?_=1488795002414
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T18:09:23+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:23+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:23+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:24+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:24+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:24+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:24+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:24+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:25+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:25+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:25+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:25+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:26+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:26+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:26+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:09:26+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:11:21+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:11:21+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:11:21+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:11:21+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:11:21+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:11:21+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:11:21+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:11:22+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:11:29+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:11:30+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:11:30+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:11:30+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T18:11:31+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:00+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:01+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:02+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T19:03:02+08:00 ] 49.65.251.163 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111
+
+[ 2017-03-06T22:28:57+08:00 ] 58.212.247.133 /index.php/student/login/js/agent/agent.js?_=1488810582605
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T22:29:03+08:00 ] 58.212.247.133 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE (  username="yfy" ) AND (  `type` = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-06T22:29:11+08:00 ] 58.212.247.133 /index.php/student/Apply/js/agent/agent.js?_=1488810596080
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T22:29:20+08:00 ] 101.226.33.221 /index.php/student/Apply/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_practice` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-06T22:35:39+08:00 ] 58.212.247.133 /index.php?m=student&c=apply&a=addLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno`,`corporation_id`,`name`,`phone` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_leave` (`content`,`emegencyconcat`,`telephone`,`starttime`,`endtime`,`applytime`,`student_id`) VALUES ('我要请假。我要去参加党的代表大会！','习近平','1234567890','12-89-98','11-23-66','2017-03-06 22:35:39','20170209') [ RunTime:0.0002s ]
+
+[ 2017-03-06T22:42:10+08:00 ] 58.212.247.133 /index.php?m=student&c=apply&a=addLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT `studentno`,`corporation_id`,`name`,`phone` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_leave` (`content`,`emegencyconcat`,`telephone`,`starttime`,`endtime`,`applytime`,`student_id`) VALUES ('新手上路新手上路新手上路新手上路新手上路新手上路新手上路新手上路新手上路新手上路新手上路新手上路新手上路新手上路新手上路新手上路新手上路新手上路新手上路新手上路','习近平','18116272106','2017-02-10','2017-03-20','2017-03-06 22:42:10','20170209') [ RunTime:0.0002s ]
+
+[ 2017-03-06T22:56:37+08:00 ] 140.207.124.105 /index.php?m=student&c=apply&a=change
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_change` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-06T22:56:54+08:00 ] 58.212.247.133 /index.php/student/Apply/js/agent/agent.js?_=1488812259396
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+ERR: 非法操作:js
+
+[ 2017-03-06T22:57:13+08:00 ] 58.212.247.133 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT `studentno`,`corporation_id`,`name`,`phone` FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=20170209 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_change` WHERE ( student_id=20170209 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`guide`,`phone`,`guide_email`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','999','0','0','999','999','999','999','2017-03-06 22:57:13','20170209','2') [ RunTime:0.0002s ]
+
+[ 2017-03-06T23:07:28+08:00 ] 180.153.206.22 /index.php?m=student&c=apply&a=leave
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_leave` WHERE ( student_id= ) 
+
+[ 2017-03-06T23:07:37+08:00 ] 101.226.99.195 /index.php?m=student&c=apply
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_practice` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-06T23:07:46+08:00 ] 120.83.98.184 /index.php?m=student&c=apply&a=leave
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_leave` WHERE ( student_id= ) 
+

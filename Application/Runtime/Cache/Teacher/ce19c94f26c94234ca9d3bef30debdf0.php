@@ -271,10 +271,10 @@
                 <p>
                 <span class="pull-left">
                   详细地址：<?php echo ($apply["address"]); ?>
-                  <span class="wh40"></span>
-                  开始时间：<?php echo ($apply["starttime"]); ?>
-                  <span class="wh40"></span>
-                  结束时间：<?php echo ($apply["endtime"]); ?>
+                  <span class="width117"></span>
+                  开始时间：<?php echo (substr($apply["starttime"],0,10)); ?>
+                  <span class="width106"></span>
+                  结束时间：<?php echo (substr($apply["endtime"],0,10)); ?>
                 </span>
                 </p>
             </div>
