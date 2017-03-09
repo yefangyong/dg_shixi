@@ -21,18 +21,15 @@ class LoginController extends Controller {
             return show(0,'密码不得为空');
         }
 
-        $rel = D('User')->getStudentByUsername($username);
         $student = M('Student')->where('name="'.$username.'"')->find();
+
         if(!$student) {
             return show(0,'不存在此学生!');
         }
-        if(!$rel) {
-            return show(0,'该用户不存在');
-        }
-        if($rel['password'] !=md5($password)) {
+        if($student['password'] !=md5($password)) {
             return show(0,'密码不正确');
         }
-        session('adminUser',$rel);
+        session('adminUser',$student);
         return show(1,'登录成功');
     }
 

@@ -9,12 +9,6 @@ class ReportModel extends Model {
         $this->_db = M('Report');
     }
 
-//    public $viewFields = array(
-//        'Report'=>array('id'=>'rid','pubtime','status'),
-//        'Student'=>array('id'=>'sid','studentno','name','class','_on'=>'Report.student_id = Student.studentno'),
-//        'Class'=>array('id'=>'cid','name'=>'classname','_on'=>'Student.class=Class.id'),
-//    );
-
     public function getWeekReportData($user,$currentPage,$listRows) {
         return $this->_db->field('s.studentno,s.name,s.classno,r.id,r.status,r.pubtime,c.classname')->table('dg_student s,dg_report r,dg_class c')->
         where('s.studentno=r.student_id and name="'.$user.'" and c.id = s.classno and r.type=0')->order('r.pubtime desc')->page($currentPage.','.$listRows)->select();
@@ -64,6 +58,17 @@ class ReportModel extends Model {
             'type'=>2
         );
         return $this->_db->where($data)->Count();
+    }
+
+    public function delReport($id) {
+        if(!isset($id) || empty($id)) {
+            return 0;
+        }
+        if(is_array($id)) {
+            return $this->_db->where("`id` IN(".implode(',',$id).")")->delete();
+        }else {
+            return $this->_db->where('id='.$id)->delete();
+        }
     }
 
 

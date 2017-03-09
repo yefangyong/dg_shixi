@@ -14,34 +14,14 @@
         <div class="container">
             <div class="ht10"></div>
             <div class="ui-filter">
-                <div class="select">
-                    <p><a href="">实习批次</a></p>
-                    <div class="ex">
-                        <div class="list" style="width: 190px;">
-                            <p><a href="">【414】2009~2010批次</a></p>
-                            <p><a href="">【413】2008~2009批次</a></p>
-                            <p><a href="">【412】2008~2009批次</a></p>
-                            <p><a href="">【414】2009~2010批次</a></p>
-                        </div>
-                    </div>
-                </div>
-                <span class="wh10"></span>
-                <div class="select">
-                    <p><a href="">年级</a></p>
-                    <div class="ex">
-                        <div class="list">
-                            <p><a href="">2016级</a></p>
-                            <p><a href="">2015级</a></p>
-                        </div>
-                    </div>
-                </div>
                 <span class="wh10"></span>
                 <div class="select">
                     <p><a href="">院系</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机械学院</a></p>
-                            <p><a href="">水利学院</a></p>
+                            <volist name="department" id="v">
+                            <p><a href="javascript:void(0)" name="department" attr-id="{$v.id}">{$v.dname}</a></p>
+                            </volist>
                         </div>
                     </div>
                 </div>
@@ -50,8 +30,9 @@
                     <p><a href="">专业</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机械设计</a></p>
-                            <p><a href="">电气自动化</a></p>
+                        <volist name="profession" id="v">
+                            <p><a href="" name="profession" attr-id="{$v.id}">{$v.name}</a></p>
+                        </volist>
                         </div>
                     </div>
                 </div>
@@ -60,15 +41,16 @@
                     <p><a href="">班级</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机设011</a></p>
-                            <p><a href="">自动化002</a></p>
+                        <volist name="class" id="v">
+                            <p><a href="" name="class" attr-id="{$v.id}">{$v.classname}</a></p>
+                        </volist>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <input type="text" class="text control-form" placeholder="请输入学号/姓名">
+                <input type="text" class="text control-form" id="keywords" placeholder="请输入学号/姓名">
                 <span class="wh10"></span>
-                <a href="" class="bt">查询</a>
+                <a href="javascript:void(0)" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
@@ -81,7 +63,7 @@
                             &nbsp;
                             <a href="{:U('Student/export')}">导出</a>
                             &nbsp;
-                            <a href="">删除</a>
+                            <a href="javascript:void(0)" id="deleteall">删除</a>
                         </p>
                     </div>
                 </div>
@@ -101,7 +83,7 @@
                         </tr>
                         <volist name="list" id="v">
                             <tr>
-                                <td><a href="" class="cbox"></a></td>
+                                <td><a href="" class="cbox" attr-id="{$v.sid}"></a></td>
                                 <td>{$v.studentno}</td>
                                 <td>{$v.name}</td>
                                 <td>{$v.sex|setGender}</td>
@@ -124,7 +106,7 @@
             <div class="ui-paging">
                {$page} 
                 <div class="pull-left">
-                    <a href="" class="cbox"><i></i>全选</a>
+                    <a href="" class="cbox" attr-id="0"><i></i>全选</a>
                 </div>
             </div>
         </div>
@@ -139,10 +121,52 @@
 </footer>
 
 <script>
-    function upfile(){alert('a');
-        document.getElementById('file').click();
-    }
     $(function(){
+        $('.bt').click(function(){
+            var _department = 0;
+            var _profession = 0;
+            var _class = 0;
+            $("a[name^='department']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _department = $(this).attr('attr-id');
+                }
+            });
+            $("a[name^='profession']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _profession = $(this).attr('attr-id');
+                }
+            });
+            $("a[name^='class']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _class = $(this).attr('attr-id');
+                }
+            });
+            window.location.href="/teacher.php/Student/index/department/"+_department+"/profession/"+_profession+"/class/"+_class+"/keywords/"+$('#keywords').val();
+
+        });
+
+        $('#deleteall').click(function(){
+            var ids = new Array();
+            $('.cbox').each(function(i){
+                if($(this).attr('class')=='cbox on'){
+                    if($(this).attr('attr-id')>0)
+                    ids[ids.length]=$(this).attr('attr-id');
+                }
+            });
+            var $url = "{:U('Student/del')}";
+            if(ids.length>0)
+            $.post($url,{id:ids},function(msg){
+                if(msg.status==1){
+                    layer.msg(msg.message,{icon:6},function(){
+                        window.location.href="/teacher.php/Student/index";
+                    });
+                }else{
+                    layer.msg(msg.message,{icon:5},function(){
+                        window.location.href="/teacher.php/Student/index";
+                    });
+                }
+            },'JSON');
+        });
 
         $('.del').click(function(){
             var $data = $(this).attr('attr-id');

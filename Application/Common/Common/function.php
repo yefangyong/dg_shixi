@@ -13,7 +13,7 @@ function show($status,$message,$data=array()) {
 }
 
 function getLoginUsername() {
-    return isset($_SESSION['adminUser']['username'])?$_SESSION['adminUser']['username']:null;
+    return isset($_SESSION['adminUser']['name'])?$_SESSION['adminUser']['name']:null;
 }
 
 function status($status) {

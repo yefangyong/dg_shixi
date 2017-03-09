@@ -5,13 +5,12 @@ use Think\Controller;
 class ApplyController extends Controller {
 
     public function index() {
-        $user = $_SESSION['adminUser']['username'];
-        $sid = D('Student')->getStudentId($user);
-        $data = M('Practice')->where('student_id='.$sid['studentno'])->find();
+        $user = $_SESSION['adminUser'];
+        $data = M('Practice')->where('student_id='.$user['studentno'])->find();
         if(!$data) {
             return $this->display('Apply/noapply');
         }else {
-            $data = D('PracticeView')->getPracticeInfo($sid['studentno']);
+            $data = D('PracticeView')->getPracticeInfo($user['studentno']);
             if($data['status'] == 1 || $data['status'] == -1) {
                 $teacher = M('Teacher')->where('teacherno='.$data['teacher_id'])->find();
                 $data['teacher'] = $teacher['name'];
@@ -37,9 +36,8 @@ class ApplyController extends Controller {
         $id = $_GET['id'];
         $rel = M('Practice')->where('id='.$id)->find();
         if($rel) {
-            $user = $_SESSION['adminUser']['username'];
-            $student = D('Student')->getStudentId($user);
-            $this->assign('student',$student);
+            $user = $_SESSION['adminUser'];
+            $this->assign('student',$user);
             $this->assign('practice',$rel);
             $corporation = M('corporation')->where('id='.$rel['corporation_id'])->find();
             $this->assign('corporation',$corporation);
@@ -60,9 +58,8 @@ class ApplyController extends Controller {
             if(!$_POST['phone'] || !isset($_POST['phone'])) {
                 return show(0,'请填写联系方式！');
             }
-            $user = $_SESSION['adminUser']['username'];
-            $sid = D('Student')->getStudentId($user);
-            $_POST['student_id'] = $sid['studentno'];
+            $user = $_SESSION['adminUser'];
+            $_POST['student_id'] = $user['studentno'];
             $corporation = M('corporation')->where('name="'.$_POST['cname'].'"')->find();
             if(!$corporation) {
                 return show(0,'不存在这个公司!');
@@ -103,9 +100,8 @@ class ApplyController extends Controller {
                 return show(0,'结束时间不得为空！');
             }
             $_POST['applytime'] = date('Y-m-d H:i:s',time());
-            $user = $_SESSION['adminUser']['username'];
-            $sid = D('Student')->getStudentId($user);
-            $_POST['student_id'] = $sid['studentno'];
+            $user = $_SESSION['adminUser'];
+            $_POST['student_id'] = $user['studentno'];
             $rel = M('leave')->add($_POST);
             if($rel) {
                 return show(1,'提交成功,请等待审核!');
@@ -118,13 +114,12 @@ class ApplyController extends Controller {
     }
 
     public function leave() {
-        $user = $_SESSION['adminUser']['username'];
-        $sid = D('Student')->getStudentId($user);
-        $rel = D('Leave')->getLeave($sid['studentno']);
+        $user = $_SESSION['adminUser'];
+        $rel = D('Leave')->getLeave($user['studentno']);
         if(!$rel) {
             return $this->display('Apply/noleave');
         }else {
-            $data = D('LeaveView')->getLeaveInfo($sid['studentno']);
+            $data = D('LeaveView')->getLeaveInfo($user['studentno']);
             foreach ($data as $k=>$v) {
                 if($data[$k]['status'] == 1) {
                     $teacher = M('Teacher')->where('teacherno='.$data[$k]['teacher_id'])->find();
@@ -175,19 +170,18 @@ class ApplyController extends Controller {
                $_POST['type'] = 0;
            }
             $_POST['applytime'] = date('Y-m-d H:i:s',time());
-            $user = $_SESSION['adminUser']['username'];
-            $sid = D('Student')->getStudentId($user);
-            $_POST['student_id'] = $sid['studentno'];
+            $user = $_SESSION['adminUser'];
+            $_POST['student_id'] = $user['studentno'];
             $corporation = M('corporation')->where('name="'.$_POST['cname'].'"')->find();
             if(!$corporation) {
                 $_POST['corporation_id'] = 0;
             }
             $_POST['corporation_id'] = $corporation['id'];
-            $practice = M('Practice')->where('student_id='.$sid['studentno'])->find();
+            $practice = M('Practice')->where('student_id='.$user['studentno'])->find();
             if(!$practice) {
                 return show(0,'请先添加实习申请!');
             }
-            $data = M('Change')->where('student_id='.$sid['studentno'])->find();
+            $data = M('Change')->where('student_id='.$user['studentno'])->find();
             if($data) {
                 return show(0, '请不要重复申请变更!');
             }else {
@@ -227,15 +221,14 @@ class ApplyController extends Controller {
                 $_POST['type'] = 1;
             }
             $_POST['applytime'] = date('Y-m-d H:i:s',time());
-            $user = $_SESSION['adminUser']['username'];
-            $sid = D('Student')->getStudentId($user);
-            $_POST['student_id'] = $sid['studentno'];
-            $_POST['corporation_id'] = $sid['corporation_id'];
-            $practice = M('Practice')->where('student_id='.$sid['studentno'])->find();
+            $user = $_SESSION['adminUser'];
+            $_POST['student_id'] = $user['studentno'];
+            $_POST['corporation_id'] = $user['corporation_id'];
+            $practice = M('Practice')->where('student_id='.$user['studentno'])->find();
             if(!$practice) {
                 return show(0,'请先添加实习申请!');
             }
-            $data = M('Change')->where('student_id='.$sid['studentno'])->find();
+            $data = M('Change')->where('student_id='.$user['studentno'])->find();
             if($data) {
                 return show(0,'请不要重复申请!');
             }else {
@@ -253,13 +246,12 @@ class ApplyController extends Controller {
     }
 
     public function change() {
-        $user = $_SESSION['adminUser']['username'];
-        $sid = D('Student')->getStudentId($user);
-        $rel = M('Change')->where('student_id='.$sid['studentno'])->find();
+        $user = $_SESSION['adminUser'];
+        $rel = M('Change')->where('student_id='.$user['studentno'])->find();
         if(!$rel) {
             $this->display('Apply/nochange');
         }else {
-            $data = D('ChangeView')->getChangeInfo($sid['studentno']);
+            $data = D('ChangeView')->getChangeInfo($user['studentno']);
             if($data['status'] == 1) {
                 $teacher = M('Teacher')->where('teacherno='.$data['teacher_id'])->find();
                 $data['teacher'] = $teacher['name'];
@@ -286,24 +278,22 @@ class ApplyController extends Controller {
         $change = M('Change')->where('id='.$id)->find();
         if($change['type'] == 0) {
             //变更单位
-            $user = $_SESSION['adminUser']['username'];
-            $student = D('Student')->getStudentId($user);
-            $corporation = M('Corporation')->where('id='.$student['corporation_id'])->find();
-            $change = M('Change')->where('student_id='.$student['studentno'])->find();
-            $this->assign('student',$student);
+            $user = $_SESSION['adminUser'];
+            $corporation = M('Corporation')->where('id='.$user['corporation_id'])->find();
+            $change = M('Change')->where('student_id='.$user['studentno'])->find();
+            $this->assign('student',$user);
             $this->assign('practice',$corporation);
             $this->assign('change',$change);
             $this->display('Apply/viewChangeCorporation');
         }elseif($change['type'] == 1) {
             //变更岗位
-            $user = $_SESSION['adminUser']['username'];
-            $student = D('Student')->getStudentId($user);
-            $practice = M('Practice')->where('student_id='.$student['studentno'])->find();
-            $corporation = M('Corporation')->where('id='.$student['corporation_id'])->find();
-            $change = M('Change')->where('student_id='.$student['studentno'])->find();
+            $user = $_SESSION['adminUser'];
+            $practice = M('Practice')->where('student_id='.$user['studentno'])->find();
+            $corporation = M('Corporation')->where('id='.$user['corporation_id'])->find();
+            $change = M('Change')->where('student_id='.$user['studentno'])->find();
             $this->assign('corporation',$corporation);
             $this->assign('practice',$practice);
-            $this->assign('student',$student);
+            $this->assign('student',$user);
             $this->assign('change',$change);
             $this->display('Apply/viewChangeJob');
         }

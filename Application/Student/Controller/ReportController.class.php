@@ -3,22 +3,27 @@ namespace Student\Controller;
 use Think\Controller;
 class ReportController extends CommonController {
    public function index() {
-       $user = $_SESSION['adminUser']['username'];
-       $sid = $_SESSION['adminUser']['no'];
-       $cid = M('Student')->where('studentno='.$sid)->find();
+       $userId = $_SESSION['adminUser'];
+       $data = array(
+           'myReport.student_id'=>$userId['studentno'],
+       );
+       $status = I('get.status',123);
+       if($status == 0 || $status == 1) {
+           $data['status'] = $status;
+       }
        import('ORG.Util.Page');
        // 每页显示记录数
        $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
-       $count = D('Report')->getWeekReportCountById($cid['studentno']);
+       $count = D('ReportView')->where($data)->count();
        // 实例化分页类 传入总记录数和每页显示的记录数
        $page = new \Think\Page($count,$listRows);
        $show = $page->show();
        $currentPage = I(C('VAR_PAGE'),1);
-       $corporation = M('Corporation')->where('id='.$cid['corporation_id'])->find();
-       $data = D('Report')->getWeekReportData($user,$currentPage,$listRows);
+       $corporation = M('Corporation')->where('id='.$userId['corporation_id'])->find();
+       $list = D('ReportView')->where($data)->page($currentPage.','.$listRows)->select();
        $this->assign('page',$show);
        $this->assign('corporation',$corporation['name']);
-       $this->assign('data',$data);
+       $this->assign('data',$list);
        $this->assign('totalCount',$count);
        $this->assign('numPerPage',$listRows);
        $this->assign('currentPage',$currentPage);
@@ -39,9 +44,8 @@ class ReportController extends CommonController {
             if($_POST['id']) {
                 return $this->save($_POST);
             }
-            $user = $_SESSION['adminUser']['username'];
-            $sid = D('Student')->getStudentId($user);
-            $_POST['student_id'] = $sid['studentno'];
+            $userId = $_SESSION['adminUser']['studentno'];
+            $_POST['student_id'] = $userId;
             $_POST['pubtime'] = date('Y-m-d :H:i:s',time());
             
             //新增
@@ -57,9 +61,12 @@ class ReportController extends CommonController {
     }
 
     public function del() {
-        $id = $_POST['id'];
-       $rel = M('Report')->where('id='.$id)->delete($id);
-        if($rel) {
+        $id = I('post.id',0,'intval');
+        if(!isset($id) || empty($id)) {
+            return show(0,'删除失败');
+        }
+        $res = D('Report')->delReport($id);
+        if($res) {
             return show(1,'删除成功!');
         }else {
             return show(0,'删除失败!');

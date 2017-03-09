@@ -22,8 +22,7 @@ class SigninController extends Controller {
    }
 
    public function index() {
-        $map = $this->map();
-
+            $map = $this->map();
     		$order = I('get._order',D('Practice')->getPk());
     		// 排序方式 默认为降序排列
     		$sort  = I('get._sort','desc');

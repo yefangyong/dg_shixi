@@ -7,12 +7,29 @@ class StudentController extends Controller{
         import('ORG.Util.Page');
         // 每页显示记录数
         $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
+        $department = I('get.department',0);
+        if($department)
+            $map[] = 'classno IN(select id from dg_class where dep_id='.$department.')';
+        $profession = I('get.profession',0);
+        $class = I('get.class',0);
+        if($class)
+            $map[] = 'classno = '.$class;
+        $keywords = I('get.keywords');
+        if($keywords)
+            $map[] = '(studentno like "%'.$keywords.'%" or Student.name like "%'.$keywords.'%")';
         $count = D('StudentsView')->where($map)->count();
+        //echo D('StudentsView')->getLastSql();
         // 实例化分页类 传入总记录数和每页显示的记录数
         $page = new \Think\Page($count,$listRows);
         $show = $page->show();
         $currentPage = I(C('VAR_PAGE'),1);
-        $studentList = D('StudentsView')->page($currentPage.','.$listRows)->select();
+        $studentList = D('StudentsView')->where($map)->page($currentPage.','.$listRows)->select();
+        $department = D('department')->select();
+        $profession = D('profession')->select();
+        $class = D('class')->select();
+        $this->assign('department',$department);
+        $this->assign('class',$class);
+        $this->assign('profession',$profession);
         $this->assign('list',$studentList);
         $this->assign('page',$show);
         $this->assign('totalCount',$count);
