@@ -223,6 +223,9 @@ class ApplyController extends Controller {
             if(!$_POST['guide_email'] || !isset($_POST['guide_email'])) {
                 return show(0,'请填写老师邮箱！');
             }
+            if($_POST['type'] == '岗位') {
+                $_POST['type'] = 1;
+            }
             $_POST['applytime'] = date('Y-m-d H:i:s',time());
             $user = $_SESSION['adminUser']['username'];
             $sid = D('Student')->getStudentId($user);

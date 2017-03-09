@@ -15,9 +15,9 @@ class ReportModel extends Model {
 //        'Class'=>array('id'=>'cid','name'=>'classname','_on'=>'Student.class=Class.id'),
 //    );
 
-    public function getWeekReportData($user) {
+    public function getWeekReportData($user,$currentPage,$listRows) {
         return $this->_db->field('s.studentno,s.name,s.classno,r.id,r.status,r.pubtime,c.classname')->table('dg_student s,dg_report r,dg_class c')->
-        where('s.studentno=r.student_id and name="'.$user.'" and c.id = s.classno and r.type=0')->order('r.pubtime desc')->select();
+        where('s.studentno=r.student_id and name="'.$user.'" and c.id = s.classno and r.type=0')->order('r.pubtime desc')->page($currentPage.','.$listRows)->select();
 
     }
 

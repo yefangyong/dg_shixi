@@ -6,10 +6,22 @@ class ReportController extends CommonController {
        $user = $_SESSION['adminUser']['username'];
        $sid = $_SESSION['adminUser']['no'];
        $cid = M('Student')->where('studentno='.$sid)->find();
+       import('ORG.Util.Page');
+       // 每页显示记录数
+       $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
+       $count = D('Report')->getWeekReportCountById($cid['studentno']);
+       // 实例化分页类 传入总记录数和每页显示的记录数
+       $page = new \Think\Page($count,$listRows);
+       $show = $page->show();
+       $currentPage = I(C('VAR_PAGE'),1);
        $corporation = M('Corporation')->where('id='.$cid['corporation_id'])->find();
-       $data = D('Report')->getWeekReportData($user);
+       $data = D('Report')->getWeekReportData($user,$currentPage,$listRows);
+       $this->assign('page',$show);
        $this->assign('corporation',$corporation['name']);
        $this->assign('data',$data);
+       $this->assign('totalCount',$count);
+       $this->assign('numPerPage',$listRows);
+       $this->assign('currentPage',$currentPage);
        $this->display();
    }
 

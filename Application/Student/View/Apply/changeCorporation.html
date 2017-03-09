@@ -40,9 +40,8 @@
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
                                 <input name="type" type="hidden" id="type"/>
-                                <p><a href="javascript:void(0)">请选择变更类型</a></p>
+                                <p id="corporation"><a href="javascript:void(0)">单位</a></p>
                                 <div class="ex">
-                                    <p><a href="javascript:void(0)" id="corporation">单位</a></p>
                                     <p><a href="javascript:void(0)" id="job">岗位</a></p>
                                 </div>
                             </div>
@@ -52,8 +51,8 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
-                                <p><a href="">请选择企业名称</a></p>
-                                <input type="hidden" value="" name="cname" id="cname"/>
+                                <p id="cname"><a href="javascript:void();">请选择企业名称</a></p>
+                                <input type="hidden" value="" name="cname"/>
                                 <div class="ex">
                                     <volist name="corporation" id="vo">
                                     <p><a href="javascript:void();" id="{$vo.id}">{$vo.name}</a></p>
@@ -170,13 +169,6 @@
     $("#job").click(function(){
         window.location.href='/index.php/student/Apply/changeJob';
     });
-    $("#corporation").click(function(){
-        $("#type").val(0);
-    });
-    $("#{$vo.id}").click(function(){
-        $("#cname").val('{$vo.name}');
-    });
-
     $("#box1").click(function(){
         $("#box").val('0');
     });
@@ -197,6 +189,10 @@
         'jump_url' : '/index.php?m=student&c=apply&a=change',
     };
     $("#yfycms-button-submit").click(function(){
+        var type = $('#corporation').text();
+        $('input[name=type]').val(type);
+        var cname = $('#cname').text();
+        $('input[name=cname]').val(cname);
         var data=$("#yfycms-form").serializeArray();
         postData={};
         $(data).each(function(i){

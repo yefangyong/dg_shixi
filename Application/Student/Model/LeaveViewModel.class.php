@@ -12,6 +12,6 @@ class LeaveViewModel extends ViewModel {
     );
 
     public function getLeaveInfo($id) {
-        return $this->where('myLeave.student_id='.$id)->select();
+        return $this->where('myLeave.student_id='.$id)->order('myLeave.applytime desc')->select();
     }
 }
