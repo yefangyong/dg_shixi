@@ -30,11 +30,10 @@
             if($keywords)
                 $map[] = '(studentno like "%'.$keywords.'%" or Student.name like "%'.$keywords.'%")';
 
-            $type = session('adminUser.type');
-            if($type == 1){
+            $teacher = $_SESSION['adminUser'];
+
+            if($teacher['type'] == 1){
              //教师
-             $teacherno = session('adminUser.no');
-             $teacher = D('Teacher')->getTeacher($teacherno);
              if($teacher['identity'] == '系主任'){
                  //默认一个系主任管一个学院
                 $map['Profession.id'] = $teacher['profession'];
@@ -45,7 +44,7 @@
                 $currentPage = I(C('VAR_PAGE'),1);
                 $reportList = D('ReportView')->where($map)->page($currentPage.','.$listRows)->select();
              }elseif($teacher['identity'] == '班主任'){
-                $map[] = "Class.master_no = ".$teacherno;
+                $map[] = "Class.master_no = ".$teacher['teacherno'];
                 $map['Report.type'] = 0;
                 $count = D('ReportView')->where($map)->count();
                 $page = new \Think\Page($count,$listRows);

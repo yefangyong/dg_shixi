@@ -3,35 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="525fb28f-c3d2-4160-a661-1f5e0291d7cb" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Report/add.html" afterPath="$PROJECT_DIR$/Application/Student/View/Report/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Teacher/Conf/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/ApplyController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/ApplyController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Controller/ContactController.class.php" afterPath="$PROJECT_DIR$/Application/Student/Controller/ContactController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Contact/student.html" afterPath="$PROJECT_DIR$/Application/Student/View/Contact/student.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Contact/teacher.html" afterPath="$PROJECT_DIR$/Application/Student/View/Contact/teacher.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/ContactController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/ContactController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/NoticeController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/NoticeController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/PracticeController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/PracticeController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/LoginController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/LoginController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/ReportController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/ReportController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/StudentController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/StudentController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/ChangeModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/ChangeModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/ChangeViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/ChangeViewModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/CorporationModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/CorporationModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/LeaveModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/LeaveModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/LeaveViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/LeaveViewModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/PracticeModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/PracticeModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/PracticeViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/PracticeViewModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/ReportModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/ReportModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/ReportViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/ReportViewModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/corporation.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/corporation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/index.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/leave.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/leave.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/position.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/position.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Contact/index.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Contact/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Contact/teacher.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Contact/teacher.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Notice/index.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Notice/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Practice/corporation.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Practice/corporation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Practice/index.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Practice/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Report/index.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Report/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Report/month.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Report/month.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Student/index.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/index.html" />
     </list>
     <ignored path="shixi1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,48 +31,7 @@
     <favorites_list name="shixi1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ApplyController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Teacher/Controller/ApplyController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReportController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Teacher/Controller/ReportController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41428572">
-              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PracticeController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Teacher/Controller/PracticeController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Teacher/Controller/StudentController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.7894735">
-              <caret line="283" column="57" selection-start-line="283" selection-start-column="57" selection-end-line="283" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,8 +39,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Application/Student/View/Apply/nochange.html" />
-        <option value="$PROJECT_DIR$/Application/Student/Model/LeaveModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Student/View/Apply/noleave.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Apply/noapply.html" />
         <option value="$PROJECT_DIR$/Application/Student/Controller/NoticeController.class.php" />
@@ -124,9 +60,6 @@
         <option value="$PROJECT_DIR$/Application/Student/Model/SigninModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Student/View/Grade/index.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Apply/viewApply.html" />
-        <option value="$PROJECT_DIR$/Application/Student/View/Contact/student.html" />
-        <option value="$PROJECT_DIR$/Application/Student/Controller/ContactController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Student/View/Contact/teacher.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Report/edit.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Notice/index.html" />
         <option value="$PROJECT_DIR$/Application/Teacher/Conf/config.php" />
@@ -147,8 +80,16 @@
         <option value="$PROJECT_DIR$/Application/Student/View/Report/index.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Report/add.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Base/header.html" />
-        <option value="$PROJECT_DIR$/Application/Teacher/Controller/ReportController.class.php" />
         <option value="$PROJECT_DIR$/Application/Teacher/Controller/StudentController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Student/View/Contact/student.html" />
+        <option value="$PROJECT_DIR$/Application/Teacher/Controller/ReportController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Teacher/View/Contact/teacher1.html" />
+        <option value="$PROJECT_DIR$/Application/Teacher/Controller/LoginController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Teacher/View/Contact/teacher.html" />
+        <option value="$PROJECT_DIR$/Application/Student/View/Contact/teacher.html" />
+        <option value="$PROJECT_DIR$/Application/Student/Controller/ContactController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Teacher/Controller/ContactController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Teacher/View/Contact/index.html" />
       </list>
     </option>
   </component>
@@ -247,70 +188,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -321,10 +198,11 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WWW\shixi\Application\Teacher\View\Contact" />
       <recent name="E:\WWW\shixi\Application\Student\Model" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\WWW\shixi\Application\Student\Model" />
     </key>
   </component>
@@ -459,7 +337,13 @@
       <option name="project" value="LOCAL" />
       <updated>1489065483932</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="教师端的查询，分页，全选删除功能">
+      <created>1489227188494</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1489227188494</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -473,15 +357,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1918" height="1039" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20344457" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20344457" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32524806" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -491,7 +376,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -528,97 +412,14 @@
     <MESSAGE value="前台接口开发和教师端的导入导出功能开发" />
     <MESSAGE value="学生端实习报告分页功能" />
     <MESSAGE value="学生端实习报告全选删除和查询功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="学生端实习报告全选删除和查询功能" />
+    <MESSAGE value="教师端的查询，分页，全选删除功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="教师端的查询，分页，全选删除功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Student/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="77.8421">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/Model/ApplyModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3797619">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/Model/SigninModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44880953">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/Model/GradeModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3797619">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Grade/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.20714286">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Report/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5392857">
-          <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.8083334">
-          <caret line="161" column="30" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/addLeave.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0119047">
-          <caret line="64" column="83" selection-start-line="64" selection-start-column="83" selection-end-line="64" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/viewLeave.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14642857">
-          <caret line="32" column="106" selection-start-line="32" selection-start-column="106" selection-end-line="32" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/viewChangeJob.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5">
-          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/viewChangeCorporation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39761904">
-          <caret line="32" column="107" selection-start-line="32" selection-start-column="107" selection-end-line="32" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/viewApply.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20714286">
-          <caret line="34" column="76" selection-start-line="34" selection-start-column="76" selection-end-line="34" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/xsd-master/教师-通讯录.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.93095237">
@@ -630,20 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="155.6842">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Contact/student.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24166666">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Contact/teacher.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5714286">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -694,13 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3797619">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Student/View/Notice/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7631579">
@@ -733,6 +513,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48214287">
           <caret line="207" column="5" selection-start-line="207" selection-start-column="5" selection-end-line="207" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -743,17 +524,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/Controller/ContactController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76785713">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Student/Controller/GradeController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44880953">
           <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -775,6 +550,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.725">
           <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -790,13 +566,6 @@
         <state vertical-scroll-proportion="-9.921053">
           <caret line="15" column="85" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Student/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.31579">
-          <caret line="168" column="11" selection-start-line="147" selection-start-column="8" selection-end-line="168" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -828,24 +597,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/Controller/ReportController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3157897">
-          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Student/View/Report/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-35.105263">
           <caret line="46" column="108" selection-start-line="46" selection-start-column="108" selection-end-line="46" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Report/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-70.42105">
-          <caret line="106" column="39" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -864,10 +619,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Teacher/Controller/StudentController.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Apply/editCor.html.bak">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.7894735">
-          <caret line="283" column="57" selection-start-line="283" selection-start-column="57" selection-end-line="283" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Apply/editCor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/NoticeController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6595237">
+          <caret line="20" column="90" selection-start-line="20" selection-start-column="90" selection-end-line="20" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Apply/leave.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6559524">
+          <caret line="112" column="55" selection-start-line="112" selection-start-column="55" selection-end-line="112" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Apply/coredited.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8642857">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Apply/change.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.31071427">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -880,7 +675,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3797619">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Student/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83809525">
+          <caret line="139" column="48" selection-start-line="139" selection-start-column="48" selection-end-line="139" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Report/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.178571">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Contact/student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51666665">
+          <caret line="81" column="7" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/Controller/StudentController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.552381">
+          <caret line="283" column="57" selection-start-line="283" selection-start-column="57" selection-end-line="283" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/Controller/ReportController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58690476">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Report/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.447369">
+          <caret line="168" column="22" selection-start-line="168" selection-start-column="22" selection-end-line="168" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/Controller/ReportController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6559524">
+          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Teacher/Controller/LoginController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73452383">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Contact/teacher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73452383">
+          <caret line="100" column="54" selection-start-line="100" selection-start-column="54" selection-end-line="100" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/Controller/ContactController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3421054">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#36#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Notice/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Notice/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -888,10 +781,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Teacher/Controller/ReportController.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Contact/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41428572">
-          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.44880953">
+          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Contact/teacher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20714286">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/Controller/ContactController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58690476">
+          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
           <folding />
         </state>
       </provider>

@@ -17,8 +17,8 @@ class LoginController extends Controller{
                 }
                 $data['password'] = md5($data['password']);
                 //原始密码为123
-                $res = D('User')->findUser($data);
-                if($res && $res['type']!=0){
+                $res = M('Teacher')->where('name="'.$data['username'].'"')->find();
+                if($res){
                     session('adminUser',$res);
                     show(1,'登录成功！');
                 }else{
@@ -31,8 +31,7 @@ class LoginController extends Controller{
     }
 
     public function loginOut(){
-       session(C('USE_AUTH_KEY',null));
-       session('USERNAME,null');
+       session('adminUser',null);
        return $this->redirect('index');
     }
 }
