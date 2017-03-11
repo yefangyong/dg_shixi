@@ -14,7 +14,7 @@
                         <li><a href="{:U('Apply/index')}" class="on">实习申请</a></li>
                         <!--<li><a href="{:U('Apply/corporation')}" class="on">实习单位变更</a></li>-->
                         <!--<li><a href="{:U('Apply/position')}">实习岗位变更</a></li>-->
-                        <li><a href="#">实习变更</a></li>
+                        <li><a href="{:U('Apply/change')}">实习变更</a></li>
                         <li><a href="{:U('Apply/leave')}">请假申请</a></li>
                     </ul>
                 </div>
@@ -27,66 +27,72 @@
         <div class="container">
             <div class="ht10"></div>
             <div class="ui-filter">
-                <div class="select">
-                    <p><a href="">实习批次</a></p>
-                    <div class="ex">
-                        <div class="list" style="min-width: 150px;">
-                            <p><a href="">[141]2009-2010批次</a></p>
-                            <p><a href="">[142]2009-2010批次</a></p>
-                        </div>
-                    </div>
-                </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">院系</a></p>
+                    <p><a href="#">院系</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">学部1</a></p>
-                            <p><a href="">学部2</a></p>
+                            <volist name="department" id="v">
+                            <p><a href="javascript:void(0)" name="department" attr-id="{$v.id}">{$v.dname}</a></p>
+                            </volist>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">专业</a></p>
+                    <p><a href="#">专业</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">专业1</a></p>
-                            <p><a href="">专业2</a></p>
+                        <volist name="profession" id="v">
+                            <p><a href="" name="profession" attr-id="{$v.id}">{$v.name}</a></p>
+                        </volist>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">班级</a></p>
+                    <p><a href="#">班级</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">班级1</a></p>
-                            <p><a href="">班级2</a></p>
+                            <volist name="class" id="v">
+                            <p><a href="" name="class" attr-id="{$v.id}">{$v.classname}</a></p>
+                            </volist>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">审核状态</a></p>
+                    <p><a href="#">实习单位</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">已通过</a></p>
-                            <p><a href="">未通过</a></p>
+                            <volist name="corporation" id="v">
+                            <p><a href="" name="corporation" attr-id="{$v.id}">{$v.name}</a></p>
+                            </volist>
+                        </div>
+                    </div>
+                </div>
+                <div class="select">
+                    <p><a href="#">评审结果</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <p><a name="status" attr-id="2" href="">已批准</a></p>
+                            <p><a name="status" attr-id="1" href="">未批准</a></p>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <a href="" class="bt">查询</a>
+                <input type="text" class="text control-form" id="keywords" placeholder="请输入学号/姓名">
+                <span class="wh10"></span>
+                <a href="javascript:void(0)" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
                 <div class="hd">
                     <div class="tool">
                         <p>
-                            <a href="">导出</a>
+                            <a href="{:U('Apply/export')}">导出</a>
                             &nbsp;
-                            <a href="">删除</a>
+                            <a href="javascript:void(0)" id="deleteall">删除</a>
                         </p>
                     </div>
                 </div>
@@ -105,7 +111,7 @@
                         </tr>
                         <volist name="list" id="v">
                             <tr>
-                                <td><a href="" class="cbox"></a></td>
+                                <td><a href="" class="cbox" attr-id="{$v.pid}"></a></td>
                                 <td>{$v.studentno}</td>
                                 <td>{$v.stuname}</td>
                                 <td>{$v.classname}</td>
@@ -124,18 +130,9 @@
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                <span>共15页，共143条记录</span>
-                &nbsp;
-                <ul>
-                    <li><a href=""><</a></li>
-                    <li><a href="" class="on">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">></a></li>
-                </ul>
+                {$page} 
                 <div class="pull-left">
-                    <a href="" class="cbox"><i></i>全选</a>
+                    <a href="" class="cbox" attr-id="0"><i></i>全选</a>
                 </div>
             </div>
         </div>
@@ -157,6 +154,64 @@
 </footer>
 <script>
     $(function(){
+        $('.bt').click(function(){
+            var _department = 0;
+            var _profession = 0;
+            var _class = 0;
+            var _corporation = 0;
+            var _status = 0;
+            $("a[name^='department']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _department = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='profession']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _profession = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='class']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _class = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='corporation']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _corporation = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='status']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _status = $(this).attr('attr-id');
+                }
+            })
+            window.location.href="/teacher.php/Apply/index/department/"+_department+"/profession/"+_profession+"/class/"+_class+"/corporation/"+_corporation+"/status/"+_status+"/keywords/"+$('#keywords').val();
+        })
+        $('#deleteall').click(function(){
+            var ids = new Array();
+            $('.cbox').each(function(i){
+                if($(this).attr('class')=='cbox on'){
+                    if($(this).attr('attr-id')>0)
+                    ids[ids.length]=$(this).attr('attr-id');
+                }
+            });
+            if(ids.length>0)
+                layer.confirm('您真的要删除选中记录吗?', {icon: 3, title:'删除记录'}, function(index){
+                    var $url = "{:U('Apply/delApply')}";
+                    $.post($url,{id:ids},function(msg){
+                        if(msg.status==1){
+                            layer.msg(msg.message,{icon:6},function(){
+                                window.location.href="/teacher.php/Apply/index";
+                            });
+                        }else{
+                            layer.msg(msg.message,{icon:5},function(){
+                                window.location.href="/teacher.php/Apply/index";
+                            });
+                        }
+                    },'JSON');
+                })
+        });
+        
         $('.del').click(function(){
            var $id = $(this).attr('attr-id');
            var $url = "{:U('Apply/delApply')}";

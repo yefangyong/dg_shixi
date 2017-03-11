@@ -279,7 +279,7 @@ class StudentController extends Controller{
                 }
                 $ct = $db->where(array('studentno'=>$data['studentno']))->select();
                 $data['name']=$lines[$i]['2'];
-                $data['password']=$lines[$i]['3'];
+                $data['password']=md5($lines[$i]['3']);
                 $data['phone']=$lines[$i]['4'];
                 $classinfo = $classdb->where(array('classname="'.$lines[$i]['5'].'"'))->select();
                 if(!$classinfo[0]){

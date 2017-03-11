@@ -68,7 +68,10 @@ class CorporationModel extends Model
         if (!isset($id) || empty($id)) {
             return 0;
         }
-        return $this->where("`id` = " . $id)->delete();
+        if(is_array($id))
+            return $this->where("`id` IN(".implode(',', $id).") ")->delete();
+        else
+            return $this->where("`id` = " . $id)->delete();
     }
 
     public function editCorporation($id,$data)

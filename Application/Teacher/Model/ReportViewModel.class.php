@@ -8,6 +8,7 @@
         'Student' => array('id'=>'sid','studentno','name','classno','_on'=>'Report.student_id = Student.studentno','_type'=>'LEFT'),
         'Class' => array('id'=>'cid','classname','_on'=>'Student.classno=Class.id','_type'=>'LEFT'),
         'Profession' => array('_on'=>'Profession.id = Class.profession','_type'=>'LEFT'),
+        'Practice' => array('cname','_on'=>'Student.studentno = Practice.student_id','_type'=>'LEFT'),
      );
 
      public function getReportById($rid)

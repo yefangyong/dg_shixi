@@ -8,10 +8,30 @@ class PracticeController extends CommonController{
            $data['name'] = I('post.name','','trim');//profession 专业名称
            $data['classname'] = I('post.class','','trim');//class 班级名称
         }else{
-            $list = D('PracticeView')->select();
+            $department = I('get.department',0);
+            if($department)
+                $map[] = 'classno IN(select id from dg_class where dep_id='.$department.')';
+            $profession = I('get.profession',0);
+            $class = I('get.class',0);
+            if($class)
+                $map[] = 'classno = '.$class;
+            $corporation = I('get.corporation',0);
+            if($corporation)
+                $map[] = 'Practice.corporation_id = '.$corporation;
+            $keywords = I('get.keywords');
+            if($keywords)
+                $map[] = '(studentno like "%'.$keywords.'%" or Student.name like "%'.$keywords.'%")';
+
+            import('ORG.Util.Page');
+            // 每页显示记录数
+            $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
+            $count= D('PracticeView')->where($map)->count();
+            $page = new \Think\Page($count,$listRows);
+            $show = $page->show();
+            $currentPage = I(C('VAR_PAGE'),1);
+            $list = D('PracticeView')->where($map)->page($currentPage.','.$listRows)->select();
+
             $dept = D('School')->getAllDepartment();
-            $profession = D('Profession')->getAllProfession();
-            $class = D('Class')->getAllClassesName();
             foreach ($list as $k => $v) {
                 //根据有无实习公司查询公司名称
                 if ($v['corporation_id'] != 0) {
@@ -22,17 +42,49 @@ class PracticeController extends CommonController{
                 }
             }
             $this->assign('dept', $dept);
-            $this->assign('profession', $profession);
-            $this->assign('class', $class);
+
+            $class = D('class')->select();
+            $department = D('department')->select();
+            $profession = D('profession')->select();
+            $corporation = D('corporation')->select();
+            $this->assign('department',$department);
+            $this->assign('class',$class);
+            $this->assign('profession',$profession);
+            $this->assign('corporation',$corporation);
+
             $this->assign('list', $list);
             return $this->display();
         }
     }
 
     public function corporation(){
-        $corporationList = M('Corporation')->select();
+        import('ORG.Util.Page');
+        // 每页显示记录数
+        $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
+        $count= D('Corporation')->count();
+        $page = new \Think\Page($count,$listRows);
+        $show = $page->show();
+        $currentPage = I(C('VAR_PAGE'),1);
+        $corporationList = D('Corporation')->page($currentPage.','.$listRows)->select();
         $this->assign('list',$corporationList);
         return $this->display();
+    }
+
+    public function exportCor(){
+        $applyList = D('Corporation')->select();
+        $str = "#,企业名称,城市,类型,联系人,部门,职务,电话号码,手机,邮箱,邮编,地址,网站,简介,详细地址,添加时间";
+        $str .= "\n";
+        $row = 1;
+        for($i=0; $i<count($applyList); $i++)
+        {
+            $str .= $row++.','.$applyList[$i]['name'].','.$applyList[$i]['city'].','.$applyList[$i]['type'].','.$applyList[$i]['contact'].','.$applyList[$i]['department'].','.$applyList[$i]['position'].','.$applyList[$i]['telephone'].','.$applyList[$i]['mobile'].','.$applyList[$i]['email'].','.$applyList[$i]['zipcode'].','.$applyList[$i]['address'].','.$applyList[$i]['website'].','.$applyList[$i]['introduction'].','.$applyList[$i]['detailaddress'].','.$applyList[$i]['addtime']."\n";
+        }
+        $str = mb_convert_encoding($str, "GBK", "UTF-8");
+        Header('Cache-Control: private, must-revalidate, max-age=0');
+        Header("Content-type: application/octet-stream"); 
+        Header("Content-Disposition: attachment; filename=Corporation-".date('Ymd').".csv"); 
+        echo $str;
+        exit;
     }
 
     public function addCor(){

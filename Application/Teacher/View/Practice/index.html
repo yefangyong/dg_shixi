@@ -23,61 +23,54 @@
         <div class="container">
             <div class="ht10"></div>
             <div class="ui-filter">
-                <div class="select">
-                    <p><a href="">实习批次</a></p>
-                    <div class="ex">
-                        <div class="list" style="width: 190px;">
-                            <p><a href="">【414】2009~2010批次</a></p>
-                            <p><a href="">【413】2008~2009批次</a></p>
-                            <p><a href="">【412】2008~2009批次</a></p>
-                            <p><a href="">【414】2009~2010批次</a></p>
-                        </div>
-                    </div>
-                </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">院系</a></p>
+                    <p><a href="#">院系</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机械学院</a></p>
-                            <p><a href="">水利学院</a></p>
+                            <volist name="department" id="v">
+                            <p><a href="javascript:void(0)" name="department" attr-id="{$v.id}">{$v.dname}</a></p>
+                            </volist>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">专业</a></p>
+                    <p><a href="#">专业</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机械设计</a></p>
-                            <p><a href="">电气自动化</a></p>
+                        <volist name="profession" id="v">
+                            <p><a href="" name="profession" attr-id="{$v.id}">{$v.name}</a></p>
+                        </volist>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">班级</a></p>
+                    <p><a href="#">班级</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机设011</a></p>
-                            <p><a href="">自动化002</a></p>
+                            <volist name="class" id="v">
+                            <p><a href="" name="class" attr-id="{$v.id}">{$v.classname}</a></p>
+                            </volist>
                         </div>
                     </div>
                 </div>
-                <span class="wh10"></span>
-                <input type="text" class="text control-form" placeholder="学号/姓名">
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">实习单位</a></p>
+                    <p><a href="#">实习单位</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">金龙集团</a></p>
-                            <p><a href="">安溪太阳能</a></p>
+                            <volist name="corporation" id="v">
+                            <p><a href="" name="corporation" attr-id="{$v.id}">{$v.name}</a></p>
+                            </volist>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <a href="" class="bt">查询</a>
+                <input type="text" class="text control-form" id="keywords" placeholder="请输入学号/姓名">
+                <span class="wh10"></span>
+                <a href="javascript:void(0)" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
@@ -139,16 +132,7 @@
             <div class="ht35"></div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                <span>共{$num}页，共{$count}条记录</span>
-                &nbsp;
-                <ul>
-                    <li><a href=""><</a></li>
-                    <li><a href="" class="on">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">></a></li>
-                </ul>
+                {$page} 
                 <div class="pull-left">
                     <a href="" class="cbox"><i></i>全选</a>
                 </div>
@@ -162,6 +146,34 @@
 </footer>
 <script>
     $(function(){
+        $('.bt').click(function(){
+            var _department = 0;
+            var _profession = 0;
+            var _class = 0;
+            var _corporation = 0;
+            $("a[name^='department']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _department = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='profession']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _profession = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='class']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _class = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='corporation']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _corporation = $(this).attr('attr-id');
+                }
+            })
+            window.location.href="/teacher.php/Practice/index/department/"+_department+"/profession/"+_profession+"/class/"+_class+"/corporation/"+_corporation+"/keywords/"+$('#keywords').val();
+        })
+
        $('#cancel').click(function(){
           layer.msg('删除');
        });

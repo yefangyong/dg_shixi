@@ -30,12 +30,14 @@
         <div class="container">
             <div class="ht10"></div>
             <div class="ui-filter">
+                <span class="wh10"></span>
                 <div class="select">
                     <p><a href="">院系</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">计算机学院</a></p>
-                            <p><a href="">水利学院</a></p>
+                            <volist name="department" id="v">
+                            <p><a href="javascript:void(0)" name="department" attr-id="{$v.id}">{$v.dname}</a></p>
+                            </volist>
                         </div>
                     </div>
                 </div>
@@ -44,8 +46,9 @@
                     <p><a href="">专业</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机械设计</a></p>
-                            <p><a href="">机械自动化</a></p>
+                        <volist name="profession" id="v">
+                            <p><a href="" name="profession" attr-id="{$v.id}">{$v.name}</a></p>
+                        </volist>
                         </div>
                     </div>
                 </div>
@@ -54,15 +57,16 @@
                     <p><a href="">班级</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机械设计002</a></p>
-                            <p><a href="">机械设计003</a></p>
+                        <volist name="class" id="v">
+                            <p><a href="" name="class" attr-id="{$v.id}">{$v.classname}</a></p>
+                        </volist>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <input type="text" class="form-control text" placeholder="请输入姓名">
+                <input type="text" class="text control-form" id="keywords" placeholder="请输入学号/姓名">
                 <span class="wh10"></span>
-                <a href="" class="bt">查询</a>
+                <a href="javascript:void(0)" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
@@ -93,16 +97,7 @@
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                <span>共15页，共143条记录</span>
-                &nbsp;
-                <ul>
-                    <li><a href=""><</a></li>
-                    <li><a href="" class="on">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">></a></li>
-                </ul>
+                {$page} 
             </div>
         </div>
     </div>
@@ -122,6 +117,27 @@
 </style>
 <script>
     $(function(){
+        $('.bt').click(function(){
+            var _department = 0;
+            var _profession = 0;
+            var _class = 0;
+            $("a[name^='department']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _department = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='profession']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _profession = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='class']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _class = $(this).attr('attr-id');
+                }
+            })
+            window.location.href="/teacher.php/Contact/index/department/"+_department+"/profession/"+_profession+"/class/"+_class+"/keywords/"+$('#keywords').val();
 
+        })
     });
 </script>

@@ -5,8 +5,19 @@ use Think\Controller;
 class NoticeController extends Controller {
 
     public function index() {
-        $data = D('NoticeView')->select();
+        import('ORG.Util.Page');
+        // 每页显示记录数
+        $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
+        $count= D('NoticeView')->count();
+        $page = new \Think\Page($count,$listRows);
+        $show = $page->show();
+        $currentPage = I(C('VAR_PAGE'),1);
+        $data = D("NoticeView")->page($currentPage.','.$listRows)->select();
         $this->assign('data',$data);
+        $this->assign('page',$show);
+        $this->assign('totalCount',$count);
+        $this->assign('numPerPage',$listRows);
+        $this->assign('currentPage',$currentPage);
         $this->display();
     }
 
@@ -45,7 +56,10 @@ class NoticeController extends Controller {
 
     public function del() {
         $id = $_POST['id'];
-        $rel = M('Notice')->where('id='.$id)->delete();
+        if(is_array($id))
+            $rel = M('Notice')->where("`id` IN(".implode(',', $id).") ")->delete();
+        else
+            $rel = M('Notice')->where('id='.$id)->delete();
         if($rel) {
             return show(1,'删除成功!');
         }else {

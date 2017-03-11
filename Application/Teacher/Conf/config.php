@@ -5,6 +5,6 @@ return array(
     'USER_AUTH_KEY'=>'userid',
     'PASS_SUFFIX'=>'xsd',
     'URL_ROUTER_ON' => true,
-    'PAGE_LISTROWS' => 15,
+    'PAGE_LISTROWS' => 3,
     'VAR_PAGE'=>'pageNum'
 );

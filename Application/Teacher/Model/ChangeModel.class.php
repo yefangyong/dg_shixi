@@ -15,4 +15,15 @@ class ChangeModel extends Model{
 
         }
     }
+
+    public function delApply($id)
+    {
+        if(!isset($id)||empty($id)){
+            return 0;
+        }
+        if(is_array($id))
+          return $this->where("`id` IN(".implode(',', $id).") ")->delete();
+        else
+        return $this->where("`id` = ".$id)->delete();
+    }
 }

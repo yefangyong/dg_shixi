@@ -130,20 +130,20 @@
                 if($(this).attr('class')=='on'){
                     _department = $(this).attr('attr-id');
                 }
-            });
+            })
             $("a[name^='profession']").each(function(i){
                 if($(this).attr('class')=='on'){
                     _profession = $(this).attr('attr-id');
                 }
-            });
+            })
             $("a[name^='class']").each(function(i){
                 if($(this).attr('class')=='on'){
                     _class = $(this).attr('attr-id');
                 }
-            });
+            })
             window.location.href="/teacher.php/Student/index/department/"+_department+"/profession/"+_profession+"/class/"+_class+"/keywords/"+$('#keywords').val();
 
-        });
+        })
 
         $('#deleteall').click(function(){
             var ids = new Array();
@@ -153,19 +153,21 @@
                     ids[ids.length]=$(this).attr('attr-id');
                 }
             });
-            var $url = "{:U('Student/del')}";
             if(ids.length>0)
-            $.post($url,{id:ids},function(msg){
-                if(msg.status==1){
-                    layer.msg(msg.message,{icon:6},function(){
-                        window.location.href="/teacher.php/Student/index";
-                    });
-                }else{
-                    layer.msg(msg.message,{icon:5},function(){
-                        window.location.href="/teacher.php/Student/index";
-                    });
-                }
-            },'JSON');
+                layer.confirm('您真的要删除选中记录吗?', {icon: 3, title:'删除记录'}, function(index){
+                    var $url = "{:U('Student/del')}";
+                    $.post($url,{id:ids},function(msg){
+                        if(msg.status==1){
+                            layer.msg(msg.message,{icon:6},function(){
+                                window.location.href="/teacher.php/Student/index";
+                            });
+                        }else{
+                            layer.msg(msg.message,{icon:5},function(){
+                                window.location.href="/teacher.php/Student/index";
+                            });
+                        }
+                    },'JSON');
+                })
         });
 
         $('.del').click(function(){

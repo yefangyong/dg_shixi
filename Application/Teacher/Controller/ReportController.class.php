@@ -4,39 +4,191 @@
  class ReportController extends CommonController{
 
      public function index(){
+        import('ORG.Util.Page');
+        // 每页显示记录数
+        $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
          if($_POST){
-             $data['student_id'] = I('post.sid',0,'trim');
-             $data['status'] = I('post.status',0,'intval');
-             $res = D('ReportView')->getResult($data);
-             exit(json_encode($res));
+            $data['student_id'] = I('post.sid',0,'trim');
+            $data['status'] = I('post.status',0,'intval');
+            $res = D('ReportView')->getResult($data);
+            exit(json_encode($res));
          }else{
-             $type = session('adminUser.type');
-             if($type == 1){
-                 //教师
-                 $teacherno = session('adminUser.no');
-                 $teacher = D('Teacher')->getTeacher($teacherno);
-                 if($teacher['identity'] == '系主任'){
-                     //默认一个系主任管一个学院
-                     $reportList = D('ReportView')->getAllReportByProfession($teacher['profession']);
-                 }elseif($teacher['identity'] == '班主任'){
-                     $reportList = D('ReportView')->getAllReportByMaster($teacherno);
-                 }
+            $department = I('get.department',0);
+            if($department)
+                $map[] = 'classno IN(select id from dg_class where dep_id='.$department.')';
+            $profession = I('get.profession',0);
+            $class = I('get.class',0);
+            if($class)
+                $map[] = 'classno = '.$class;
+            $corporation = I('get.corporation',0);
+            if($corporation)
+                $map[] = 'Practice.corporation_id = '.$corporation;
+            $status = I('get.status',0);
+            if($status)
+                $map[] = 'Report.status = '.($status-1);
+            $keywords = I('get.keywords');
+            if($keywords)
+                $map[] = '(studentno like "%'.$keywords.'%" or Student.name like "%'.$keywords.'%")';
+
+            $type = session('adminUser.type');
+            if($type == 1){
+             //教师
+             $teacherno = session('adminUser.no');
+             $teacher = D('Teacher')->getTeacher($teacherno);
+             if($teacher['identity'] == '系主任'){
+                 //默认一个系主任管一个学院
+                $map['Profession.id'] = $teacher['profession'];
+                $map['Report.type'] = 0;
+                $count = D('ReportView')->where($map)->count();
+                $page = new \Think\Page($count,$listRows);
+                $show = $page->show();
+                $currentPage = I(C('VAR_PAGE'),1);
+                $reportList = D('ReportView')->where($map)->page($currentPage.','.$listRows)->select();
+             }elseif($teacher['identity'] == '班主任'){
+                $map[] = "Class.master_no = ".$teacherno;
+                $map['Report.type'] = 0;
+                $count = D('ReportView')->where($map)->count();
+                $page = new \Think\Page($count,$listRows);
+                $show = $page->show();
+                $currentPage = I(C('VAR_PAGE'),1);
+                $reportList = D('ReportView')->where($map)->page($currentPage.','.$listRows)->select();
              }
-             $count = D('ReportView')->field('rid,pubtime,status,classname,studentno,name,status')->count();
-             $pageNum = ceil($count/1);
-             $this->assign('list',$reportList);
-             $this->assign('count',$count);
-             $this->assign('num',$pageNum);
-             return $this->display();
+            }
+
+            $class = D('class')->select();
+            $department = D('department')->select();
+            $profession = D('profession')->select();
+            $corporation = D('corporation')->select();
+            $this->assign('department',$department);
+            $this->assign('class',$class);
+            $this->assign('profession',$profession);
+            $this->assign('corporation',$corporation);
+            $this->assign('list',$reportList);
+            $this->assign('page',$show);
+            $this->assign('totalCount',$count);
+            $this->assign('numPerPage',$listRows);
+            $this->assign('currentPage',$currentPage);
+            return $this->display();
          }
      }
 
      public function month()
      {
-         $monthList = D('ReportView')->where("type = 1")->select();
-         $this->assign('list',$monthList);
-         return $this->display();
+          import('ORG.Util.Page');
+        // 每页显示记录数
+        $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
+         if($_POST){
+            $data['student_id'] = I('post.sid',0,'trim');
+            $data['status'] = I('post.status',0,'intval');
+            $res = D('ReportView')->getResult($data);
+            exit(json_encode($res));
+         }else{
+            $department = I('get.department',0);
+            if($department)
+                $map[] = 'classno IN(select id from dg_class where dep_id='.$department.')';
+            $profession = I('get.profession',0);
+            $class = I('get.class',0);
+            if($class)
+                $map[] = 'classno = '.$class;
+            $corporation = I('get.corporation',0);
+            if($corporation)
+                $map[] = 'corporation_id = '.$corporation;
+            $status = I('get.status',0);
+            if($status)
+                $map[] = 'status = '.($status-1);
+            $keywords = I('get.keywords');
+            if($keywords)
+                $map[] = '(studentno like "%'.$keywords.'%" or Student.name like "%'.$keywords.'%")';
+
+            $type = session('adminUser.type');
+            if($type == 1){
+             //教师
+             $teacherno = session('adminUser.no');
+             $teacher = D('Teacher')->getTeacher($teacherno);
+             if($teacher['identity'] == '系主任'){
+                 //默认一个系主任管一个学院
+                $map['Profession.id'] = $teacher['profession'];
+                $map['Report.type'] = 1;
+                $count = D('ReportView')->where($map)->count();
+                $page = new \Think\Page($count,$listRows);
+                $show = $page->show();
+                $currentPage = I(C('VAR_PAGE'),1);
+                $reportList = D('ReportView')->where($map)->page($currentPage.','.$listRows)->select();
+             }elseif($teacher['identity'] == '班主任'){
+                $map[] = "Class.master_no = ".$teacherno;
+                $map['Report.type'] = 1;
+                $count = D('ReportView')->where($map)->count();
+                $page = new \Think\Page($count,$listRows);
+                $show = $page->show();
+                $currentPage = I(C('VAR_PAGE'),1);
+                $reportList = D('ReportView')->where($map)->page($currentPage.','.$listRows)->select();
+             }
+            }
+
+            $class = D('class')->select();
+            $department = D('department')->select();
+            $profession = D('profession')->select();
+            $corporation = D('corporation')->select();
+            $this->assign('department',$department);
+            $this->assign('class',$class);
+            $this->assign('profession',$profession);
+            $this->assign('corporation',$corporation);
+            $this->assign('list',$reportList);
+            $this->assign('page',$show);
+            $this->assign('totalCount',$count);
+            $this->assign('numPerPage',$listRows);
+            $this->assign('currentPage',$currentPage);
+            return $this->display();
+         }
      }
+
+     public function export($type=0)
+    {
+        $teacherno = session('adminUser.no');
+        $teacher = D('Teacher')->getTeacher($teacherno);
+        if($teacher['identity'] == '系主任'){
+             //默认一个系主任管一个学院
+            $data['Profession.id'] = $teacher['profession'];
+            $data['Report.type'] = $type;
+            $count = D('ReportView')->where($data)->count();
+            $page = new \Think\Page($count,$listRows);
+            $show = $page->show();
+            $currentPage = I(C('VAR_PAGE'),1);
+            $reportList = D('ReportView')->where($data)->select();
+        }elseif($teacher['identity'] == '班主任'){
+            $data[] = "Class.master_no = ".$teacherno;
+            $data['Report.type'] = $type;
+            $count = D('ReportView')->where($data)->count();
+            $page = new \Think\Page($count,$listRows);
+            $show = $page->show();
+            $currentPage = I(C('VAR_PAGE'),1);
+            $reportList = D('ReportView')->where($data)->select();
+        }
+
+        $str = "#,学号,姓名,班级,提交时间,标题,内容,实习单位,评审结果";
+        $str .= "\n";
+        $row = 1;
+        for($i=0; $i<count($reportList); $i++)
+        {
+            $str .= $row++.','.$reportList[$i]['studentno'].','.$reportList[$i]['name'].','.$reportList[$i]['classname'].','.$reportList[$i]['pubtime'].','.$reportList[$i]['title'].','.$reportList[$i]['content'].','.$reportList[$i]['cname'].','.($reportList[$i]['status']==1?'已审核':($reportList[$i]['status']==0 ? '未审核' : '已退回'))."\n";
+        }
+        $str = mb_convert_encoding($str, "GBK", "UTF-8");
+        Header('Cache-Control: private, must-revalidate, max-age=0');
+        Header("Content-type: application/octet-stream"); 
+        Header("Content-Disposition: attachment; filename=Report-".date('Ymd').".csv"); 
+        echo $str;
+        exit;
+    }
+
+    public function exportWeek()
+    {
+        $this->export(0);
+    }
+
+    public function exportMonth()
+    {
+        $this->export(1);
+    }
 
      public function del()
      {
