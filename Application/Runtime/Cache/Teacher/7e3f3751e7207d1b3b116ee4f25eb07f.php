@@ -164,7 +164,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -210,6 +210,7 @@
     </div>
     <div class="ui-path">
         <p>
+            <span class="pull-right"><a href="<?php echo U('Notice/index');?>">返回</a></span>
             <a href="javascript:void(0)" class="home"></a>
             <a href="<?php echo U('Notice/index');?>">公告</a>
             >
@@ -222,24 +223,42 @@
             <div class="ui-form style2">
                 <form class="form-horizontal" id="yfycms-form">
                     <div class="form-group">
+                        
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">标题</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" name="title" class="form-control" id="" style="width: 210px;" placeholder="请输入公告标题信息">
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="col-sm-2">
                             <label for="" class="control-label">发布至</label>
                         </div>
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
                                 <p><a href="javascript:void();">请选择您的发送对象</a></p>
-                                <input type="hidden" id="pro_name" name="pro_name"/>
+                                <input type="hidden" id="school" name="school" value="0" />
+                                <input type="hidden" id="class_id" name="class_id" value="0" />
+                                <input type="hidden" id="dep_id" name="dep_id" value="0" />
                                 <div class="ex">
-                                    <p><a href="javascript:void();" id="select1">所有人</a></p>
-                                    <p><a href="javascript:void();" id="select2">机械设计</a></p>
+                                    <?php if($THINK.session.adminUser.type == 2): ?><p><a href="javascript:void();" onclick="setAll();">所有人</a></p><?php endif; ?>
+                                    <?php if(is_array($department)): $i = 0; $__LIST__ = $department;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="javascript:void();" onclick="setDep(<?php echo ($v["id"]); ?>);"><?php echo ($v["dname"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
+                                    <hr />
+                                    <?php if(is_array($class)): $i = 0; $__LIST__ = $class;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="javascript:void();" onclick="setCla(<?php echo ($v["id"]); ?>);"><?php echo ($v["classname"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">标题</label>
-                        </div>
                         <div class="col-sm-4">
-                            <input type="text" name="title" class="form-control" id="" style="width: 210px;" placeholder="请输入公告标题信息">
+                            <div class="select" style="width: 210px;">
+                                <p><a href="javascript:void();">请选择您的发送对象类型</a></p>
+                                <input type="hidden" id="type" name="type" value="0" />
+                                <div class="ex">
+                                    <p><a href="javascript:void();" onclick="setType(0);">不限</a></p>
+                                    <p><a href="javascript:void();" onclick="setType(2);">教师</a></p>
+                                    <p><a href="javascript:void();" onclick="setType(1);">学生</a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">
@@ -254,7 +273,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <label for="" class="control-label">上传时间</label>
+                            <label for="" class="control-label">发布时间</label>
                         </div>
                         <div class="col-sm-4">
                             <input type="text" class="form-control dtp" name="pubtime" id="" style="width: 210px;" placeholder="请输入上传时间" value="">
@@ -293,22 +312,24 @@
     $(function(){
         $('.dtp').datetimepicker({
             language: 'zh-CN',
-            weekStart: 1,
-            todayBtn:  1,
-            autoclose: 1,
-            todayHighlight: 1,
-            startView: 2,
-            forceParse: 0,
-            showMeridian: 1
+            minView: "month",//设置只显示到月份
+            format : "yyyy-mm-dd",//日期格式
+            autoclose:true,//选中关闭
+            todayBtn: true//今日按钮
         });
     });
-
-    $('#select1').click(function() {
-        $('#pro_name').val('所有人');
-    });
-    $('#select2').click(function() {
-        $('#pro_name').val('机械设计');
-    });
+    function setAll(){
+        $('#school').val(1);
+    }
+    function setDep(i){
+        $('#dep_id').val(i);
+    }
+    function setCla(i){
+        $('#class_id').val(i);
+    }
+    function setType(i){
+        $('#type').val(i);
+    }
 
     var SCOPE = {
         'save_url' : '/index.php?m=teacher&c=notice&a=add',

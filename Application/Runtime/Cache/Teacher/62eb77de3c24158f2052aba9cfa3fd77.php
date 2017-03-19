@@ -164,7 +164,7 @@
                     <div class="i on">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -191,13 +191,13 @@
             <div class="pull-right">
     <div class="user">
         <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <a href=""><?php echo ($_SESSION['adminUser']['name']); ?></a>
             <i></i>
         </p>
         <div class="ex">
             <p><a href="">个人信息</a></p>
             <p><a href="javascript:void(0)">修改密码</a></p>
-            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+            <p><a href="/index.php/Home/Login/logOut">退出</a></p>
         </div>
     </div>
 </div>
@@ -205,6 +205,7 @@
                 <div class="ct">
                     <ul>
                         <li><a href="<?php echo U('Student/index');?>" class="on">学生管理</a></li>
+                        <li><a href="<?php echo U('Student/teacher');?>" >教师管理</a></li>
                     </ul>
                 </div>
             </div>
@@ -240,7 +241,7 @@
                                     </tr>
                                     <tr>
                                         <td><label for="">手机</label></td>
-                                        <td><?php echo ($student["phone"]); ?></td>
+                                        <td><?php echo ($student["stuphone"]); ?></td>
                                     </tr>
                                     <tr>
                                         <td><label for="">学号</label></td>
@@ -270,6 +271,14 @@
                                         <td><label for="">班主任</label></td>
                                         <td><?php echo ($student["master"]); ?></td>
                                     </tr>
+                                    <tr>
+                                        <td><label for="">紧急联系人</label></td>
+                                        <td><?php echo ($student["emegencyconcat"]); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">紧急联系电话</label></td>
+                                        <td><?php echo ($student["emegencyphone"]); ?></td>
+                                    </tr>
                                 </table>
                             </div>
                         </div>
@@ -295,7 +304,7 @@
                                     </tr>
                                     <tr>
                                         <td><label for="">实习地址</label></td>
-                                        <td><?php echo ($student["address"]); ?></td>
+                                        <td><?php echo ($student["pracaddress"]); ?></td>
                                     </tr>
                                     <tr>
                                         <td><label for="">实习岗位</label></td>
@@ -323,7 +332,7 @@
             <div class="pull-left">
                 <div class="ui-infbox">
                     <div class="hd">
-                        <p>实习信息</p>
+                        <p>日常任务</p>
                     </div>
                     <div class="ct">
                         <div class="info">
@@ -331,7 +340,7 @@
                                 <table>
                                     <tr>
                                         <td><label for="">打卡</label></td>
-                                        <td>2016-12-01 08;30;00</td>
+                                        <td><?php echo ($student["signin"]["pubtime"]); ?></td>
                                     </tr>
                                     <tr>
                                         <td><label for="">周报</label></td>

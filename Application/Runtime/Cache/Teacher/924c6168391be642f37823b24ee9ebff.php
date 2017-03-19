@@ -167,7 +167,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -192,13 +192,13 @@
                 <div class="pull-right">
     <div class="user">
         <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <a href=""><?php echo ($_SESSION['adminUser']['name']); ?></a>
             <i></i>
         </p>
         <div class="ex">
             <p><a href="">个人信息</a></p>
             <p><a href="javascript:void(0)">修改密码</a></p>
-            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+            <p><a href="/index.php/Home/Login/logOut">退出</a></p>
         </div>
     </div>
 </div>
@@ -207,8 +207,9 @@
                 <div class="ct">
                     <ul>
                         <li><a href="<?php echo U('Apply/index');?>" >实习申请</a></li>
-                        <li><a href="<?php echo U('Apply/corporation');?>" class="on">实习单位变更</a></li>
-                        <li><a href="<?php echo U('Apply/position');?>">实习岗位变更</a></li>
+                        <!--<li><a href="<?php echo U('Apply/corporation');?>" class="on">实习单位变更</a></li>-->
+                        <!--<li><a href="<?php echo U('Apply/position');?>">实习岗位变更</a></li>-->
+                        <li><a href="#" class="on">实习变更</a></li>
                         <li><a href="<?php echo U('Apply/leave');?>">请假申请</a></li>
                     </ul>
                 </div>
@@ -302,7 +303,7 @@
                                 <td><?php echo ($v["studentno"]); ?></td>
                                 <td><?php echo ($v["stuname"]); ?></td>
                                 <td><?php echo ($v["classname"]); ?></td>
-                                <td><?php echo ($v["applytime"]); ?></td>
+                                <td><?php echo (substr($v["applytime"],0,10)); ?></td>
                                 <td><?php echo ($v["corname"]); ?></td>
                                 <td><?php echo (getChangeStatus($v["status"])); ?></td>
                                 <td>
@@ -318,16 +319,7 @@
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                <span>共15页，共143条记录</span>
-                &nbsp;
-                <ul>
-                    <li><a href=""><</a></li>
-                    <li><a href="" class="on">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">></a></li>
-                </ul>
+                <?php echo ($page); ?> 
                 <div class="pull-left">
                     <a href="" class="cbox"><i></i>全选</a>
                 </div>

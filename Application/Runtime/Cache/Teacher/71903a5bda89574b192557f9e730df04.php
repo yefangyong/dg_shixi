@@ -167,7 +167,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -191,13 +191,13 @@
             <div class="pull-right">
     <div class="user">
         <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <a href=""><?php echo ($_SESSION['adminUser']['name']); ?></a>
             <i></i>
         </p>
         <div class="ex">
             <p><a href="">个人信息</a></p>
             <p><a href="javascript:void(0)">修改密码</a></p>
-            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+            <p><a href="/index.php/Home/Login/logOut">退出</a></p>
         </div>
     </div>
 </div>
@@ -215,54 +215,62 @@
         <div class="container">
             <div class="ht10"></div>
             <div class="ui-filter">
-                <div class="select">
-                    <select name="" id="">
-                        <option value="">提交人</option>
-                        <option value="">董嘉耀</option>
-                        <option value="">侯震</option>
-                        <option value="">郭德纲</option>
-                        <option value="">董嘉耀</option>
-                    </select>
-                </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">批阅情况</a></p>
+                    <p><a href="#">院系</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">已批阅</a></p>
-                            <p><a href="">未批阅</a></p>
+                            <?php if(is_array($department)): $i = 0; $__LIST__ = $department;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="javascript:void(0)" name="department" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["dname"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">班级</a></p>
+                    <p><a href="#">专业</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机设011</a></p>
-                            <p><a href="">自动化002</a></p>
+                        <?php if(is_array($profession)): $i = 0; $__LIST__ = $profession;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="" name="profession" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">实习单位</a></p>
+                    <p><a href="#">班级</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">金龙集团</a></p>
-                            <p><a href="">安溪太阳能</a></p>
+                            <?php if(is_array($class)): $i = 0; $__LIST__ = $class;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="" name="class" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["classname"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <a href="" class="bt">查询</a>
+                <div class="select">
+                    <p><a href="#">实习单位</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <?php if(is_array($corporation)): $i = 0; $__LIST__ = $corporation;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="" name="corporation" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="select">
+                    <p><a href="#">评审结果</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <p><a name="status" attr-id="1" href="">已审核</a></p>
+                            <p><a name="status" attr-id="0" href="">未审核</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <input type="text" class="text control-form" id="keywords" placeholder="请输入学号/姓名">
+                <span class="wh10"></span>
+                <a href="javascript:void(0)" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
                 <div class="hd">
                     <div class="tool">
                         <p>
-                            <a href="">导出</a>
+                            <a href="<?php echo U('Report/exportWeek');?>">导出</a>
                             &nbsp;
                             <a href="JavaScript:void(0)" id="delall">删除</a>
                         </p>
@@ -282,14 +290,14 @@
                             <td><b>操作</b></td>
                         </tr>
                         <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
-                                <td><a href="" class="cbox"></a></td>
-                                <input type="hidden" name="id" value="<?php echo ($v["id"]); ?>">
+                                <td><a href="" class="cbox" attr-id="<?php echo ($v["rid"]); ?>"></a></td>
+                                <input type="hidden" name="id" value="<?php echo ($v["rid"]); ?>">
                                 <td><?php echo ($v["studentno"]); ?></td>
                                 <td><?php echo ($v["name"]); ?></td>
                                 <td><?php echo ($v["classname"]); ?></td>
-                                <td><?php echo ($v["pubtime"]); ?></td>
-                                <td>&nbsp;</td>
-                                <td><?php echo (setReportStatus($v["status"])); ?></td>
+                                <td><?php echo (substr($v["pubtime"],0,10)); ?></td>
+                                <td><?php echo ($v["corname"]); ?></td>
+                                <td><?php echo (setReportStatus2($v["status"])); if($v["status"] == 1): ?>/<?php echo (setReportScore($v["score"])); endif; ?></td>
                                 <td>
                                     <a href="javascript:void(0)" class="edit" attr-id="<?php echo ($v["rid"]); ?>" attr-status="<?php echo ($v["status"]); ?>">查看</a>
                                     <a href="javascript:void(0)" class="del" attr-id="<?php echo ($v["rid"]); ?>">删除</a>
@@ -302,18 +310,9 @@
             <?php if(is_array($allClass)): $i = 0; $__LIST__ = $allClass;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i; echo ($v["classname"]); endforeach; endif; else: echo "" ;endif; ?>
             <div class="ht35"></div>
             <div class="ui-paging">
-                <span>共<?php echo ($num); ?>页，共<?php echo ($count); ?>条记录</span>
-                &nbsp;
-                <ul>
-                    <li><a href=""><</a></li>
-                    <li><a href="" class="on">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">></a></li>
-                </ul>
+                 <?php echo ($page); ?> 
                 <div class="pull-left">
-                    <a href="" class="cbox"><i></i>全选</a>
+                    <a href="" class="cbox" attr-id="0"><i></i>全选</a>
                 </div>
             </div>
         </div>
@@ -327,45 +326,39 @@
     </div>
 </footer>
 <script>
-    $(function(){
-        //查询
-//        $(".bt").click(function(){
-//            var $data = $('#query-form').serialize();
-//            var $url = "<?php echo U('Report/index');?>";
-//            $.ajax({
-//                'url':$url,
-//                'type':'post',
-//                'data': $data,
-//                'dataType':'json',
-//                success:function(msg){
-//                    var $table = $('.ct:eq(1) table');
-//                    $table.html('');
-//                    var content = '<tr>';
-//                    content += '<td><b>ID</b></td>';
-//                    content += '<td><b>学号</b></td>';
-//                    content += '<td><b>提交人</b></td>';
-//                    content += '<td><b>班级</b></td>';
-//                    content += '<td><b>提交时间</b></td>';
-//                    content += '<td><b>实习单位</b></td>';
-//                    content += '<td><b>评审结果</b></td>';
-//                    content += '<td><b>操作</b></td>';
-//                    content += '</tr>';
-//                    for(var $i=0;$i<msg.length;$i++){
-//                        content += '<tr>';
-//                        content += '<td>'+msg[$i].rid+'</td>';
-//                        content += '<td>'+msg[$i].studentno+'</td>';
-//                        content += '<td>'+msg[$i].name+'</td>';
-//                        content += '<td>'+msg[$i].classname+'</td>';
-//                        content += '<td>'+msg[$i].pubtime+'</td>';
-//                        content += '<td>'+' '+'</td>';
-//                        content += '<td>'+msg[$i].result+'</td>';
-//                        content += '<td><a href="javascript:void(0)" class="edit" attr-id="'+msg[$i].rid+'" attr-status="'+msg[$i].status+'">编辑</a>&nbsp;&nbsp;<a href="javascript:void(0)" class="del" attr-id="'+msg[$i].rid+'">删除</a> </td>';
-//                        content += '</tr>';
-//                    }
-//                    $table.html(content);
-//                }
-//            });
-//        });
+        $(function(){$('.bt').click(function(){
+            var _department = 0;
+            var _profession = 0;
+            var _class = 0;
+            var _corporation = 0;
+            var _status = 0;
+            $("a[name^='department']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _department = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='profession']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _profession = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='class']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _class = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='corporation']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _corporation = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='status']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _status = $(this).attr('attr-id');
+                }
+            })
+            window.location.href="/teacher.php/Report/index/department/"+_department+"/profession/"+_profession+"/class/"+_class+"/corporation/"+_corporation+"/status/"+_status+"/keywords/"+$('#keywords').val();
+        })
 
         //编辑
         $('.edit').click(function(){
@@ -375,6 +368,31 @@
             $.post($url,{rid:$id,status:$status},function(msg){
                 window.location.href = msg;
             },'JSON');
+        });
+
+         $('#delall').click(function(){
+            var ids = new Array();
+            $('.cbox').each(function(i){
+                if($(this).attr('class')=='cbox on'){
+                    if($(this).attr('attr-id')>0)
+                    ids[ids.length]=$(this).attr('attr-id');
+                }
+            });
+            if(ids.length>0)
+                layer.confirm('您真的要删除选中记录吗?', {icon: 3, title:'删除记录'}, function(index){
+                    var $url = "<?php echo U('Report/del');?>";
+                    $.post($url,{id:ids},function(msg){
+                        if(msg.status==1){
+                            layer.msg(msg.message,{icon:6},function(){
+                                window.location.href="/teacher.php/Report/index";
+                            });
+                        }else{
+                            layer.msg(msg.message,{icon:5},function(){
+                                window.location.href="/teacher.php/Report/index";
+                            });
+                        }
+                    },'JSON');
+                })
         });
 
         //删除
@@ -394,18 +412,6 @@
                     }
                 },'JSON');
             });
-        });
-
-        $('#delall').click(function(){
-            var $allBtn = $('.cbox:last');
-            var $ids = new Array();
-            if($allBtn.hasClass('on')){
-                var $items = $('.cbox:not(.cbox:last)');
-                for(var $i=0;$i<$items.length;$i++){
-                    console.log($items[$i].closest());
-                }
-
-            }
         });
     });
 </script>

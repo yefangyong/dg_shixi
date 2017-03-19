@@ -22,6 +22,7 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="/Public/Student/js/H-ui-Admin.js"></script>
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -104,15 +105,15 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
+                                <div class="user">
                     <p><img src="img/avatar1.jpg" alt="">
                         <a href=""><?php echo getLoginUsername() ?></a>
                         <i></i>
                     </p>
                     <div class="ex">
                         <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
+                        <p><a href="/index.php/Student/Common/password">修改密码</a></p>
+                        <p><a href="/index.php/Home/Login/logOut">退出</a></p>
                     </div>
                 </div>
             </div>
@@ -139,10 +140,9 @@
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
                                 <input type="hidden" name="type" id="type"/>
-                                <p><a href="javascript:void(0)">请选择变更类型</a></p>
+                                <p id="job"><a href="javascript:void(0)">岗位</a></p>
                                 <div class="ex">
                                     <p><a href="javascript:void(0)" id="corporation">单位</a></p>
-                                    <p><a href="javascript:void(0)" id="job">岗位</a></p>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +221,7 @@
                         <p class="text-center">
                             <a href="javascript:void();" id="yfycms-button-submit" class="bt-btn1 style1">提交</a>
                             <span class="wh40"></span>
-                            <a href="javascript:void();" class="bt-btn1 style2">取消</a>
+                            <a href="/index.php?m=student&c=apply&a=change" class="bt-btn1 style2">取消</a>
                         </p>
                         </p>
                     </div>
@@ -263,9 +263,6 @@
     $("#corporation").click(function(){
         window.location.href='/index.php/student/Apply/changeCorporation';
     });
-    $("#job").click(function(){
-        $("#type").val(1);
-    });
     $(function(){
 
     });
@@ -274,6 +271,8 @@
         'jump_url' : '/index.php?m=student&c=apply&a=change',
     };
     $("#yfycms-button-submit").click(function(){
+        var type=$('#job').text();
+        $('input[name=type]').val(type);
         var data=$("#yfycms-form").serializeArray();
         postData={};
         $(data).each(function(i){

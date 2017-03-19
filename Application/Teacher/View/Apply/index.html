@@ -75,8 +75,9 @@
                     <p><a href="#">评审结果</a></p>
                     <div class="ex">
                         <div class="list">
+                            <p><a name="status" attr-id="1" href="">未审核</a></p>
                             <p><a name="status" attr-id="2" href="">已批准</a></p>
-                            <p><a name="status" attr-id="1" href="">未批准</a></p>
+                            <p><a name="status" attr-id="0" href="">未批准</a></p>
                         </div>
                     </div>
                 </div>
@@ -111,16 +112,16 @@
                         </tr>
                         <volist name="list" id="v">
                             <tr>
-                                <td><a href="" class="cbox" attr-id="{$v.pid}"></a></td>
+                                <td><a href="" class="cbox" attr-id="{$v.studentno}"></a></td>
                                 <td>{$v.studentno}</td>
                                 <td>{$v.stuname}</td>
                                 <td>{$v.classname}</td>
-                                <td>{$v.applytime}</td>
+                                <td>{$v.applytime|substr=0,10}</td>
                                 <td>{$v.corname}</td>
                                 <td>{$v.status|getReportStatus}</td>
                                 <td>
                                     <a href="__CONTROLLER__/editApply/id/{$v.pid}">查看</a>
-                                    <a href="javascript:void(0)" class="del" attr-id="{$v.pid}">删除</a>
+                                    <a href="javascript:void(0)" class="del" attr-id="{$v.studentno}">删除</a>
                                 </td>
                             </tr>
                         </volist>

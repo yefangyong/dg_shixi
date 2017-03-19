@@ -11,7 +11,7 @@
                         <li><a href="{:U('Apply/index')}" >实习申请</a></li>
                         <!--<li><a href="{:U('Apply/corporation')}" class="on">实习单位变更</a></li>-->
                         <!--<li><a href="{:U('Apply/position')}">实习岗位变更</a></li>-->
-                        <li><a href="#">实习变更</a></li>
+                        <li><a href="{:U('Apply/change')}">实习变更</a></li>
                         <li><a href="{:U('Apply/leave')}"  class="on">请假申请</a></li>
                     </ul>
                 </div>
@@ -25,7 +25,7 @@
             <div class="ht15"></div>
             <div class="ui-article">
                 <div class="hd">
-                    <h3>董嘉耀的请假申请</h3>
+                    <h3>{$apply.stuname}的请假申请</h3>
                     <input type="hidden" name="id" value="{$apply.id}">
                     <p>
                         紧急联系人：{$apply.emegencyconcat}

@@ -8,11 +8,32 @@
 
  function setReportStatus($status){
      switch($status){
-         case 1: $state = '已审核';break;
-         case 0: $state = '未审核';break;
-         case -1: $state ='已退回';break;
+         case 1: $state = '已批准';break;
+         case 0: $state = '未批准';break;
+         case -1: $state ='不及格';break;
      }
      return $state;
+ }
+
+ function setReportStatus2($status){
+     switch($status){
+         case 1: $state = '已审核';break;
+         case 0: $state = '未审核';break;
+         case -1: $state ='不及格';break;
+     }
+     return $state;
+ }
+
+ function setReportScore($score){
+    if($score>=90 )
+        return '优';
+    elseif($score>=80&&$score<90)
+        return '良';
+    elseif($score>=60&&$score<80)
+        return '合格';
+    elseif($score>=80&&$score<90)
+        return '不合格';
+
  }
 
 function setLevel($result){
@@ -37,8 +58,8 @@ function setLevel($result){
 function setAuditStatus($status){
     switch($status){
         case 0:$state='未审核';break;
-        case 1:$state='已审阅';break;
-        case -1:;$state='已退回';break;
+        case 1:$state='已批准';break;
+        case -1:;$state='不及格';break;
     }
     return $state;
 }
@@ -46,6 +67,19 @@ function setAuditStatus($status){
 
 function setGender($sex){
     return $sex == 1 ? '男':'女';
+}
+
+function setTeacherType($type){
+    return $type == 1 ? '系主任': ($type == 2 ? '校领导':'班主任');
+}
+
+function getTeacherType($type){
+    switch($type){
+        case 0:$state='班主任';break;
+        case 1:$state='系主任';break;
+        case 2:;$state='校领导';break;
+    }
+    return $state;
 }
 
 function isAgree($res){
@@ -77,7 +111,7 @@ function setGrade($grade){
  */
 
 function isMajor($major){
-    return $major == 1 ? '对口' :'不对口';
+    return $major == 0 ? '对口' :'不对口';
 }
 
 
@@ -87,11 +121,11 @@ function setApplyStatus($state){
 
 
 function isPayInsurance($insurance){
-    return $insurance == 1 ? '已购买' : '未购买';
+    return $insurance == 0 ? '已购买' : '未购买';
 }
 
 
 function setPracticeMode($mode){
-     return $mode == 1 ? '自己寻找' : '学校安排';
+     return $mode == 2 ? '学校安排' : '自己寻找';
 }
 

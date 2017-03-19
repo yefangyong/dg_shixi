@@ -7,6 +7,9 @@ class TeacherController extends Controller {
 		// 排序方式 默认为降序排列
 		$sort  = I('get._sort','desc');
 		$worder[$order]= $sort;
+		if($_POST['teacherno']){
+			$map['teacherno']=$_POST['teacherno'];
+		}
        	$data = D('teacher')->where($map)->select();
        	return $this->ajaxReturn(array('status'=>1,'info'=>'操作成功','data'=>$data));
    }

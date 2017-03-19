@@ -22,6 +22,7 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="/Public/Student/js/H-ui-Admin.js"></script>
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -104,15 +105,15 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
+                                <div class="user">
                     <p><img src="img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
+                        <a href=""><?php echo getLoginUsername() ?></a>
                         <i></i>
                     </p>
                     <div class="ex">
                         <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
+                        <p><a href="/index.php/Student/Common/password">修改密码</a></p>
+                        <p><a href="/index.php/Home/Login/logOut">退出</a></p>
                     </div>
                 </div>
             </div>
@@ -186,7 +187,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <label for="" class="control-label">职务</label>
+                            <label for="" class="control-label">实习岗位</label>
                         </div>
                         <div class="col-sm-4">
                             <input type="text" name="position" class="form-control" id="" style="width: 210px;" placeholder="请输入工作职务">
@@ -210,7 +211,7 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
-                                <input type="text" class="form-control" name="address" id="" style="width: 210px;" placeholder="请输入详细地址">
+                                <input type="text" class="form-control" name="detailaddress" id="" style="width: 210px;" placeholder="请输入详细地址">
                             </div>
                         </div>
                     </div>

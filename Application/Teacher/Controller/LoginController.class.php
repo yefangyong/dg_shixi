@@ -4,6 +4,8 @@ use Think\Controller;
 
 class LoginController extends Controller{
     public function index(){
+        redirect('/index.php/Home/Login');
+        return;
         if(session('adminUser')){
             return $this->redirect('Index/index');
         }else{
@@ -31,7 +33,9 @@ class LoginController extends Controller{
     }
 
     public function loginOut(){
-       session('adminUser',null);
-       return $this->redirect('index');
+        redirect('/index.php/Home/Login');
+        return ;
+        session('adminUser',null);
+        return $this->redirect('index');
     }
 }

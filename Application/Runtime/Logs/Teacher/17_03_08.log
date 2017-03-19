@@ -7,3 +7,311 @@ ERR: 非法操作:login
 [ 2017-03-08T10:09:49+08:00 ] 112.194.222.22 /teacher.php/student/login/index.html
 ERR: 非法操作:login
 
+[ 2017-03-08T12:04:10+08:00 ] 61.235.37.202 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-08T14:17:27+08:00 ] 61.235.37.202 /index.php/Teacher/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-08T15:32:18+08:00 ] 61.235.37.202 /index.php/Teacher/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-08T16:34:30+08:00 ] 117.136.45.148 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-08T16:43:55+08:00 ] 117.136.45.148 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = 'yfy' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-08T16:44:01+08:00 ] 117.136.45.148 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = 'yfy' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-08T16:46:32+08:00 ] 117.136.45.148 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-08T17:43:32+08:00 ] 180.111.33.22 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-08T17:46:42+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:42')
+
+[ 2017-03-08T17:46:44+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:44')
+
+[ 2017-03-08T17:46:44+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:44')
+
+[ 2017-03-08T17:46:45+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:45')
+
+[ 2017-03-08T17:46:45+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:45')
+
+[ 2017-03-08T17:46:45+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:45')
+
+[ 2017-03-08T17:46:45+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:45')
+
+[ 2017-03-08T17:46:46+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:46')
+
+[ 2017-03-08T17:46:46+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:46')
+
+[ 2017-03-08T17:46:46+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:46')
+
+[ 2017-03-08T17:46:46+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:46')
+
+[ 2017-03-08T17:46:46+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:46')
+
+[ 2017-03-08T17:46:47+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:47')
+
+[ 2017-03-08T17:46:47+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:47')
+
+[ 2017-03-08T17:46:50+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:50')
+
+[ 2017-03-08T17:46:50+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:50')
+
+[ 2017-03-08T17:46:50+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:50')
+
+[ 2017-03-08T17:46:51+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:51')
+
+[ 2017-03-08T17:46:52+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:52')
+
+[ 2017-03-08T17:46:52+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:52')
+
+[ 2017-03-08T17:46:52+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:52')
+
+[ 2017-03-08T17:46:52+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:52')
+
+[ 2017-03-08T17:46:55+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:55')
+
+[ 2017-03-08T17:46:55+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:55')
+
+[ 2017-03-08T17:46:55+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:55')
+
+[ 2017-03-08T17:46:55+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:46:55')
+
+[ 2017-03-08T17:47:40+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:47:40')
+
+[ 2017-03-08T17:48:15+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:48:15')
+
+[ 2017-03-08T17:48:16+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:48:16')
+
+[ 2017-03-08T17:48:16+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:48:16')
+
+[ 2017-03-08T17:48:16+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:48:16')
+
+[ 2017-03-08T17:48:17+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:48:17')
+
+[ 2017-03-08T17:48:17+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:48:17')
+
+[ 2017-03-08T17:48:17+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:48:17')
+
+[ 2017-03-08T17:48:17+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
+ERR: 1048:Column 'emegencyconcat' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`emegencyconcat`,`emegencyphone`,`addtime`) VALUES ('9999','周杰伦','123','15939801290','1','234@qq.com','0','南京雨花区软件大道180号',NULL,NULL,'2017-03-08 17:48:17')
+
+[ 2017-03-08T20:38:25+08:00 ] 223.242.120.90 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-08T20:39:45+08:00 ] 223.242.120.90 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` = 42 ) [ RunTime:0.0001s ]
+
+[ 2017-03-08T22:50:08+08:00 ] 223.242.120.90 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Teacher/Model/StudentModel.class.php 第 27 行.
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `dg_student` WHERE ( `id` = Array )
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `dg_student` WHERE ( `id` = Array )
+
+[ 2017-03-08T22:51:22+08:00 ] 223.242.120.90 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Teacher/Model/StudentModel.class.php 第 27 行.
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `dg_student` WHERE ( `id` = Array )
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `dg_student` WHERE ( `id` = Array )
+
+[ 2017-03-08T22:51:23+08:00 ] 223.242.120.90 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Teacher/Model/StudentModel.class.php 第 27 行.
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `dg_student` WHERE ( `id` = Array )
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `dg_student` WHERE ( `id` = Array )
+
+[ 2017-03-08T22:52:00+08:00 ] 223.242.120.90 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+NOTIC: [8] Array to string conversion /var/www/html/Application/Teacher/Model/StudentModel.class.php 第 27 行.
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `dg_student` WHERE ( `id` = Array )
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `dg_student` WHERE ( `id` = Array )
+
+[ 2017-03-08T22:54:10+08:00 ] 223.242.120.90 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` IN(20,43)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-08T22:55:20+08:00 ] 223.242.120.90 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` IN(18,19)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-08T23:00:21+08:00 ] 58.217.174.38 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-08T23:01:13+08:00 ] 58.217.174.38 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` IN(14)  ) [ RunTime:0.0001s ]
+
+[ 2017-03-08T23:29:55+08:00 ] 58.217.174.38 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-08T23:30:23+08:00 ] 58.217.174.38 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='很好',`score`='80',`status`='1' WHERE ( `id` = 62 ) [ RunTime:0.0002s ]
+
+[ 2017-03-08T23:30:28+08:00 ] 58.217.174.38 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-08T23:32:25+08:00 ] 58.217.174.38 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+

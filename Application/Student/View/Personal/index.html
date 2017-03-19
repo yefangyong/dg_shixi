@@ -1,0 +1,182 @@
+<include file="Base/header" />
+<!-------------------------------------- 头部结束 -------------------------------------->
+<!-------------------------------------- 内容开始 -------------------------------------->
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <include file="Base/personal"/>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="" class="on">个人中心</a>/li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ui-path">
+        <p>
+            <a href="" class="home"></a>
+        </p>
+    </div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht20"></div>
+            <div class="pull-left" style="margin-right: 30px;">
+                <div class="ui-infbox">
+                    <div class="hd">
+                        <p>个人信息</p>
+                    </div>
+                    <div class="ct">
+                        <div class="info">
+                            <p>
+                                <img src="img/avatar2.jpg" alt="">
+                            </p>
+                            <div class="ct">
+                                <table>
+                                    <tr>
+                                        <td><label for="">姓　　名</label></td>
+                                        <td>　　{$student['name']}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">手　　机</label></td>
+                                        <td>　　{$student['phone']}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">学　　号</label></td>
+                                        <td>　　{$student.studentno}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">电子邮箱</label></td>
+                                        <td>　　{$student.email}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">联系地址</label></td>
+                                        <td>　　{$student.address}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">院　　系</label></td>
+                                        <td>　　{$student.dname}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">年　　级</label></td>
+                                        <td>　　2017级</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">班　　级</label></td>
+                                        <td>　　{$student.classname}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">班 主 任</label></td>
+                                        <td>　　{$student.teacher_name}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left" style="margin-right: 30px;">
+                <div class="ui-infbox">
+                    <div class="hd">
+                        <p>实习信息</p>
+                    </div>
+                    <div class="ct">
+                        <div class="info">
+                            <div class="ct">
+                                <table>
+                                    <tr>
+                                        <td><label for="">实习状态</label></td>
+                                        <td>{$practice.ispractice|getPracticeStatus}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">实习企业</label></td>
+                                        <td>{$practice.name}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">实习地址</label></td>
+                                        <td>{$practice.address}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">实习岗位</label></td>
+                                        <td>{$practice.position}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">实习时间</label></td>
+                                        <td>{$practice.starttime|substr=0,10}~{$practice.endtime|substr=0,10}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">实习导师</label></td>
+                                        <td>{$practice.guide}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">导师联系方式</label></td>
+                                        <td>{$practice.phone}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left">
+                <div class="ui-infbox">
+                    <div class="hd">
+                        <p>实习信息</p>
+                    </div>
+                    <div class="ct">
+                        <div class="info">
+                            <div class="ct">
+                                <table>
+                                    <tr>
+                                        <td><label for="">周　　报</label></td>
+                                        <td>已提交{$weekReportCount}篇</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">打　　卡</label></td>
+                                        <td>{$signin['pubtime']}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">月　　报</label></td>
+                                        <td>已提交{$monthReportCount}篇</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">实习小结</label></td>
+                                        <td>已提交{$reportSum}篇</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">实习申请</label></td>
+                                        <td>已提交1篇</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">总 成 绩</label></td>
+                                        <td>{$grade['score']}分</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+<!-------------------------------------- 尾部开始 -------------------------------------->
+</body>
+</html>
+<style>
+
+</style>
+<script>
+    $(function(){
+
+    });
+</script>

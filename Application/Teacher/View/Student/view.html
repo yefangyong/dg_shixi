@@ -10,6 +10,7 @@
                 <div class="ct">
                     <ul>
                         <li><a href="{:U('Student/index')}" class="on">学生管理</a></li>
+                        <li><a href="{:U('Student/teacher')}" >教师管理</a></li>
                     </ul>
                 </div>
             </div>
@@ -45,7 +46,7 @@
                                     </tr>
                                     <tr>
                                         <td><label for="">手机</label></td>
-                                        <td>{$student.phone}</td>
+                                        <td>{$student.stuphone}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">学号</label></td>
@@ -75,6 +76,14 @@
                                         <td><label for="">班主任</label></td>
                                         <td>{$student.master}</td>
                                     </tr>
+                                    <tr>
+                                        <td><label for="">紧急联系人</label></td>
+                                        <td>{$student.emegencyconcat}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">紧急联系电话</label></td>
+                                        <td>{$student.emegencyphone}</td>
+                                    </tr>
                                 </table>
                             </div>
                         </div>
@@ -100,7 +109,7 @@
                                     </tr>
                                     <tr>
                                         <td><label for="">实习地址</label></td>
-                                        <td>{$student.address}</td>
+                                        <td>{$student.pracaddress}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">实习岗位</label></td>
@@ -128,7 +137,7 @@
             <div class="pull-left">
                 <div class="ui-infbox">
                     <div class="hd">
-                        <p>实习信息</p>
+                        <p>日常任务</p>
                     </div>
                     <div class="ct">
                         <div class="info">
@@ -136,7 +145,7 @@
                                 <table>
                                     <tr>
                                         <td><label for="">打卡</label></td>
-                                        <td>2016-12-01 08;30;00</td>
+                                        <td>{$student.signin.pubtime}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">周报</label></td>

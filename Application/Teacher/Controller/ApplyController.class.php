@@ -14,11 +14,28 @@ class ApplyController extends CommonController{
                 show(0,'审核失败');
             }
         }else{
+        $teacher = $_SESSION['adminUser'];
             $department = I('get.department',0);
+            $class = I('get.class',0);
+            switch($teacher['type']){
+                case 0:
+                    $classes = D('class')->where("master_no='".$teacher['teacherno']."'")->select();
+                    $class = $teacher['class_id'];
+                    break;
+                case 1:
+                    $departments = D('department')->where("id='".$teacher['department_id']."'")->select();
+                    $classes = D('class')->where("dep_id='".$teacher['department_id']."'")->select();
+                    $department = $teacher['department_id'];
+                    break;
+                case 2:
+                    $departments = D('department')->select();
+                    $classes = D('class')->select();
+                    break;
+            }
+            $map[]="Practice.id is not null";
             if($department)
                 $map[] = 'classno IN(select id from dg_class where dep_id='.$department.')';
             $profession = I('get.profession',0);
-            $class = I('get.class',0);
             if($class)
                 $map[] = 'classno = '.$class;
             $corporation = I('get.corporation',0);
@@ -48,12 +65,10 @@ class ApplyController extends CommonController{
                     $applyList[$k]['corname'] = '';
                 }
             }
-            $class = D('class')->select();
-            $department = D('department')->select();
             $profession = D('profession')->select();
             $corporation = D('corporation')->select();
-            $this->assign('department',$department);
-            $this->assign('class',$class);
+            $this->assign('department',$departments);
+            $this->assign('class',$classes);
             $this->assign('profession',$profession);
             $this->assign('corporation',$corporation);
             $this->assign('list',$applyList);
@@ -130,11 +145,27 @@ class ApplyController extends CommonController{
     //实习企业变更
     public function change()
     {
+        $teacher = $_SESSION['adminUser'];
         $department = I('get.department',0);
+        $class = I('get.class',0);
+        switch($teacher['type']){
+            case 0:
+                $classes = D('class')->where("master_no='".$teacher['teacherno']."'")->select();
+                $class = $teacher['class_id'];
+                break;
+            case 1:
+                $departments = D('department')->where("id='".$teacher['department_id']."'")->select();
+                $classes = D('class')->where("dep_id='".$teacher['department_id']."'")->select();
+                $department = $teacher['department_id'];
+                break;
+            case 2:
+                $departments = D('department')->select();
+                $classes = D('class')->select();
+                break;
+        }
         if($department)
             $map[] = 'classno IN(select id from dg_class where dep_id='.$department.')';
         $profession = I('get.profession',0);
-        $class = I('get.class',0);
         if($class)
             $map[] = 'classno = '.$class;
         $corporation = I('get.corporation',0);
@@ -155,12 +186,10 @@ class ApplyController extends CommonController{
         $show = $page->show();
         $currentPage = I(C('VAR_PAGE'),1);
         $applyList = D("ChangeView")->where($map)->page($currentPage.','.$listRows)->select();
-        $class = D('class')->select();
-        $department = D('department')->select();
         $profession = D('profession')->select();
         $corporation = D('corporation')->select();
-        $this->assign('department',$department);
-        $this->assign('class',$class);
+        $this->assign('department',$departments);
+        $this->assign('class',$classes);
         $this->assign('profession',$profession);
         $this->assign('corporation',$corporation);
         $this->assign('list',$applyList);
@@ -254,11 +283,10 @@ class ApplyController extends CommonController{
         }else{
             $id = I('get.id',0,'intval');
             $apply = D('ChangeView')->getApply($id);
-            if(!$apply['status']){
-                $this->assign('apply',$apply);
-                $this->display();
+            if($apply['type']==0){
+                return $this->editPos();
             }else{
-                $this->corEdited($apply);
+                return $this->editCor();
             }
         }
     }
@@ -280,7 +308,7 @@ class ApplyController extends CommonController{
             $apply = D('ChangeView')->getApply($id);
             if(!$apply['status']){
                 $this->assign('apply',$apply);
-                $this->display();
+                $this->display('Apply/editCor');
             }else{
                 $this->corEdited($apply);
             }
@@ -330,7 +358,7 @@ class ApplyController extends CommonController{
             $apply = D('ChangeView')->getApply($id);
             if(!$apply['status']){
                 $this->assign('apply',$apply);
-                $this->display();
+                $this->display('Apply/editPos');
             }else{
                 $this->posEdited($apply);
             }
@@ -341,11 +369,27 @@ class ApplyController extends CommonController{
 
     public function leave()
     {
+        $teacher = $_SESSION['adminUser'];
         $department = I('get.department',0);
+        $class = I('get.class',0);
+        switch($teacher['type']){
+            case 0:
+                $classes = D('class')->where("master_no='".$teacher['teacherno']."'")->select();
+                $class = $teacher['class_id'];
+                break;
+            case 1:
+                $departments = D('department')->where("id='".$teacher['department_id']."'")->select();
+                $classes = D('class')->where("dep_id='".$teacher['department_id']."'")->select();
+                $department = $teacher['department_id'];
+                break;
+            case 2:
+                $departments = D('department')->select();
+                $classes = D('class')->select();
+                break;
+        }
         if($department)
             $map[] = 'classno IN(select id from dg_class where dep_id='.$department.')';
         $profession = I('get.profession',0);
-        $class = I('get.class',0);
         if($class)
             $map[] = 'classno = '.$class;
         $corporation = I('get.corporation',0);
@@ -365,12 +409,10 @@ class ApplyController extends CommonController{
         $show = $page->show();
         $currentPage = I(C('VAR_PAGE'),1);
         $leaveList = D("LeaveView")->where($map)->page($currentPage.','.$listRows)->select();
-        $class = D('class')->select();
-        $department = D('department')->select();
         $profession = D('profession')->select();
         $corporation = D('corporation')->select();
-        $this->assign('department',$department);
-        $this->assign('class',$class);
+        $this->assign('department',$departments);
+        $this->assign('class',$classes);
         $this->assign('profession',$profession);
         $this->assign('corporation',$corporation);
         $this->assign('list',$leaveList);

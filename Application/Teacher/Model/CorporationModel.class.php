@@ -20,7 +20,7 @@ class CorporationModel extends Model
 
     public function getAddress()
     {
-        return $this->field('city')->select();
+        return $this->group("city")->field('city')->select();
     }
 
     public function getName()
@@ -59,7 +59,12 @@ class CorporationModel extends Model
             return 0;
         }
         $data['isUsed'] = $status;
-        $map['id'] = $area;
+
+        if(is_array($area)){
+            $map[] = " id IN(".implode(',',$area).")";
+        }else{
+            $map['id'] = $area;
+        }
         return $this->where($map)->save($data);
     }
 

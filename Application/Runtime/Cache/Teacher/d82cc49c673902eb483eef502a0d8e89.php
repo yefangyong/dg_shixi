@@ -164,7 +164,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -190,13 +190,13 @@
                <div class="pull-right">
     <div class="user">
         <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <a href=""><?php echo ($_SESSION['adminUser']['name']); ?></a>
             <i></i>
         </p>
         <div class="ex">
             <p><a href="">个人信息</a></p>
             <p><a href="javascript:void(0)">修改密码</a></p>
-            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+            <p><a href="/index.php/Home/Login/logOut">退出</a></p>
         </div>
     </div>
 </div>
@@ -220,35 +220,14 @@
                     <p><a href="">所在地区</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">上海市</a></p>
-                            <p><a href="">苏州市</a></p>
-                            <p><a href="">苏州市</a></p>
-                            <p><a href="">上海市</a></p>
+                        <?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="" name="address" attr-id="<?php echo ($v["city"]); ?>"><?php echo ($v["city"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <div class="select">
-                    <p><a href="">实习单位</a></p>
-                    <div class="ex">
-                        <div class="list">
-                            <p><a href="">金龙集团</a></p>
-                            <p><a href="">安溪太阳能</a></p>
-                        </div>
-                    </div>
-                </div>
+                <input type="text" class="text control-form" id="keywords" placeholder="请输入企业名称或地址">
                 <span class="wh10"></span>
-                <div class="select">
-                    <p><a href="">是否使用</a></p>
-                    <div class="ex">
-                        <div class="list">
-                            <p><a href="">是</a></p>
-                            <p><a href="">否</a></p>
-                        </div>
-                    </div>
-                </div>
-                <span class="wh10"></span>
-                <a href="" class="bt">查询</a>
+                <a href="javascript:void();" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
@@ -263,9 +242,11 @@
                             &nbsp;
                             <a href="javascript:void(0)" id="unused">设置为不使用</a>
                             &nbsp;
-                            <a href="">导入</a>
+                            <a href="<?php echo U('Practice/importCor');?>">导入</a>
                             &nbsp;
-                            <a href="">导出</a>
+                            <a href="<?php echo U('Practice/exportCor');?>">导出</a>
+                            &nbsp;
+                            <a href="javascript:void(0)" id="deleteall">删除</a>
                         </p>
                     </div>
                 </div>
@@ -282,7 +263,7 @@
                             <td><b>操作</b></td>
                         </tr>
                         <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
-                                <td><a href="" class="cbox"></a></td>
+                                <td><a href="" class="cbox" attr-id="<?php echo ($v["id"]); ?>"></a></td>
                                 <input type="hidden" value="<?php echo ($v["id"]); ?>">
                                 <td><?php echo ($v["name"]); ?></td>
                                 <td><?php echo ($v["city"]); ?></td>
@@ -301,9 +282,9 @@
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                &nbsp;
+                 <?php echo ($page); ?> 
                 <div class="pull-left">
-                    <a href="" class="cbox"><i></i>全选</a>
+                    <a href="" class="cbox" attr-id="0"><i></i>全选</a>
                 </div>
             </div>
         </div>
@@ -318,6 +299,43 @@
 </footer>
 <script>
     $(function(){
+        $('.bt').click(function(){
+            var url = "/teacher.php/Practice/corporation/"
+            var _address = '';
+            $("a[name^='address']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _address = $(this).attr('attr-id');
+                    url += "address/"+_address
+                }
+            })
+            window.location.href=url+"/keywords/"+$('#keywords').val();
+        });
+
+        $('#deleteall').click(function(){
+            var ids = new Array();
+            $('.cbox').each(function(i){
+                if($(this).attr('class')=='cbox on'){
+                    if($(this).attr('attr-id')>0)
+                    ids[ids.length]=$(this).attr('attr-id');
+                }
+            });
+            if(ids.length>0)
+                layer.confirm('您真的要删除选中记录吗?', {icon: 3, title:'删除记录'}, function(index){
+                    var $url = "<?php echo U('Practice/delCor');?>";
+                    $.post($url,{id:ids},function(msg){
+                        if(msg.status==1){
+                            layer.msg(msg.message,{icon:6},function(){
+                                window.location.href="/teacher.php/Practice/corporation";
+                            });
+                        }else{
+                            layer.msg(msg.message,{icon:5},function(){
+                                window.location.href="/teacher.php/Practice/corporation";
+                            });
+                        }
+                    },'JSON');
+                })
+        });
+        
         $('.del').click(function(){
             var $id = $(this).attr('attr-id');
              layer.confirm("真的要删除本条数据吗？",{icon:3},function(){

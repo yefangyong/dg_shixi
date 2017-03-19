@@ -22,6 +22,7 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="/Public/Student/js/H-ui-Admin.js"></script>
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -103,15 +104,15 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/Student/img/avatar1.jpg" alt="">
-                        <a href=''><?php echo getLoginUsername();?></a>
+                                <div class="user">
+                    <p><img src="img/avatar1.jpg" alt="">
+                        <a href=""><?php echo getLoginUsername() ?></a>
                         <i></i>
                     </p>
                     <div class="ex">
                         <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="/index.php/student/login/logout">退出</a></p>
+                        <p><a href="/index.php/Student/Common/password">修改密码</a></p>
+                        <p><a href="/index.php/Home/Login/logOut">退出</a></p>
                     </div>
                 </div>
             </div>
@@ -132,7 +133,7 @@
                 <div class="hd">
                     <div class="tool">
                         <p>
-                            <a href="">删除</a>
+                            <a href="javascript:void(0)" id="deleteall">删除</a>
                         </p>
                     </div>
                 </div>
@@ -143,19 +144,17 @@
                             <td>&nbsp;</td>
                             <td><b>公告标题</b></td>
                             <td><b>发布人</b></td>
-                            <td><b>发布对象</b></td>
                             <td><b>发布时间</b></td>
                             <td><b>状态</b></td>
                             <td><b>操作</b></td>
                         </tr>
                         <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                <td><a href="" class="cbox"></a></td>
+                                <td><a href="" class="cbox" attr-id="<?php echo ($vo["id"]); ?>"></a></td>
                                 <td><?php echo ($vo["title"]); ?></td>
                                 <td><?php echo ($vo["name"]); ?></td>
-                                <td>所有人</td>
-                                <td><?php echo ($vo["pubtime"]); ?></td>
-                                <td>未读</td>
-                                <td><a href="javascript:void(0)" attr-id="<?php echo ($vo["id"]); ?>" id="yfycms-cat"  class="ul">查看</a>&nbsp;<a href="">删除</a>
+                                <td><?php echo (substr($vo["pubtime"],0,10)); ?></td>
+                                <td><?php if($vo["viewid"] == 0): ?>未读<?php else: ?>已读<?php endif; ?></td>
+                                <td><a href="javascript:void(0)" attr-id="<?php echo ($vo["id"]); ?>" id="yfycms-cat"  class="ul">查看</a>&nbsp;<a href="javascript:void();" attr-id="<?php echo ($vo["id"]); ?>" attr-message="删除" class="del"  >删除</a>
                                     </td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         </tbody>
@@ -164,18 +163,9 @@
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                <span>共15页，共143条记录</span>
-                &nbsp;
-                <ul>
-                    <li><a href=""><</a></li>
-                    <li><a href="" class="on">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">></a></li>
-                </ul>
+                <?php echo ($page); ?>
                 <div class="pull-left">
-                    <a href="" class="cbox"><i></i>全选</a>
+                    <a href="" class="cbox" attr-id="0"><i></i>全选</a>
                 </div>
             </div>
         </div>
@@ -195,6 +185,31 @@
 
 </style>
 <script>
+    $('#deleteall').click(function(){
+        var ids = new Array();
+        $('.cbox').each(function(i){
+            if($(this).attr('class')=='cbox on'){
+                if($(this).attr('attr-id')>0)
+                ids[ids.length]=$(this).attr('attr-id');
+            }
+        });
+        if(ids.length>0)
+            layer.confirm('您真的要删除选中记录吗?', {icon: 3, title:'删除记录'}, function(index){
+                var $url = "<?php echo U('Notice/userdel');?>";
+                $.post($url,{id:ids},function(msg){
+                    if(msg.status==1){
+                        layer.msg(msg.message,{icon:6},function(){
+                            window.location.href="/index.php?m=student&c=notice&a=index";
+                        });
+                    }else{
+                        layer.msg(msg.message,{icon:5},function(){
+                            window.location.href="/index.php?m=student&c=notice&a=index";
+                        });
+                    }
+                },'JSON');
+            })
+    });
+
     var SCOPE = {
         'cat_url' : '/index.php?m=student&c=notice&a=cat',
     }
@@ -206,6 +221,23 @@
             var id = $(this).attr('attr-id');
             var url = SCOPE.cat_url+'&id='+id;
             window.location.href=url;
+        });
+        $('.del').click(function(){
+            var $data = $(this).attr('attr-id');
+            layer.confirm('您真的要删除本条公告吗?', {icon: 3, title:'删除公告'}, function(index){
+                var $url = "<?php echo U('Notice/userdel');?>";
+                $.post($url,{id:$data},function(msg){
+                    if(msg.status==1){
+                        layer.msg(msg.message,{icon:6},function(){
+                            window.location.href="/index.php?m=student&c=notice&a=index";
+                        });
+                    }else{
+                        layer.msg(msg.message,{icon:5},function(){
+                            window.location.href="/index.php?m=student&c=notice&a=index";
+                        });
+                    }
+                },'JSON');
+            });
         });
     });
 </script>

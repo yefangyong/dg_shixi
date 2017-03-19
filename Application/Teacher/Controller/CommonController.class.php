@@ -11,24 +11,14 @@ class CommonController extends Controller {
 
     public function init() {
         $isLogin = $this->isLogin();
-        $isTeacher = $this->isTeacher(session('adminUser'));
         if(!$isLogin) {
-            $this->redirect('login/index');
+            $this->redirect('/Home/login/index');
         }
-        if(!$isTeacher){
-          exit('登录失败！');
-        }
-        $this->assign('user',session('adminUser')['USERNAME']);
+        $this->assign('user',session('adminUser')['name']);
     }
 
     public function getLoginUser() {
         return session("adminUser");
-    }
-
-    public function isTeacher($user)
-    {
-        $isTeacher = $user['type'];
-        return (bool)$isTeacher;
     }
 
 //    protected function getIdentity(){

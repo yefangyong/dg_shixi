@@ -164,7 +164,7 @@
                     <div class="i on">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -188,19 +188,20 @@
            <div class="pull-right">
     <div class="user">
         <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <a href=""><?php echo ($_SESSION['adminUser']['name']); ?></a>
             <i></i>
         </p>
         <div class="ex">
             <p><a href="">个人信息</a></p>
             <p><a href="javascript:void(0)">修改密码</a></p>
-            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+            <p><a href="/index.php/Home/Login/logOut">退出</a></p>
         </div>
     </div>
 </div>
             <div class="tabs">
                 <ul>
                     <li><a href="<?php echo U('Student/index');?>" class="on">学生管理</a></li>
+                    <li><a href="<?php echo U('Student/teacher');?>" >教师管理</a></li>
                 </ul>
         </div>
     </div>
@@ -209,34 +210,12 @@
         <div class="container">
             <div class="ht10"></div>
             <div class="ui-filter">
-                <div class="select">
-                    <p><a href="">实习批次</a></p>
-                    <div class="ex">
-                        <div class="list" style="width: 190px;">
-                            <p><a href="">【414】2009~2010批次</a></p>
-                            <p><a href="">【413】2008~2009批次</a></p>
-                            <p><a href="">【412】2008~2009批次</a></p>
-                            <p><a href="">【414】2009~2010批次</a></p>
-                        </div>
-                    </div>
-                </div>
-                <span class="wh10"></span>
-                <div class="select">
-                    <p><a href="">年级</a></p>
-                    <div class="ex">
-                        <div class="list">
-                            <p><a href="">2016级</a></p>
-                            <p><a href="">2015级</a></p>
-                        </div>
-                    </div>
-                </div>
                 <span class="wh10"></span>
                 <div class="select">
                     <p><a href="">院系</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机械学院</a></p>
-                            <p><a href="">水利学院</a></p>
+                            <?php if(is_array($department)): $i = 0; $__LIST__ = $department;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="javascript:void(0)" name="department" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["dname"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
@@ -245,8 +224,7 @@
                     <p><a href="">专业</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机械设计</a></p>
-                            <p><a href="">电气自动化</a></p>
+                        <?php if(is_array($profession)): $i = 0; $__LIST__ = $profession;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="" name="profession" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
@@ -255,15 +233,14 @@
                     <p><a href="">班级</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机设011</a></p>
-                            <p><a href="">自动化002</a></p>
+                        <?php if(is_array($class)): $i = 0; $__LIST__ = $class;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="" name="class" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["classname"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <input type="text" class="text control-form" placeholder="请输入学号/姓名">
+                <input type="text" class="text control-form" id="keywords" placeholder="请输入学号/姓名">
                 <span class="wh10"></span>
-                <a href="" class="bt">查询</a>
+                <a href="javascript:void(0)" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
@@ -276,7 +253,7 @@
                             &nbsp;
                             <a href="<?php echo U('Student/export');?>">导出</a>
                             &nbsp;
-                            <a href="">删除</a>
+                            <a href="javascript:void(0)" id="deleteall">删除</a>
                         </p>
                     </div>
                 </div>
@@ -295,7 +272,7 @@
                             <td><b>操作</b></td>
                         </tr>
                         <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
-                                <td><a href="" class="cbox"></a></td>
+                                <td><a href="" class="cbox" attr-id="<?php echo ($v["sid"]); ?>"></a></td>
                                 <td><?php echo ($v["studentno"]); ?></td>
                                 <td><?php echo ($v["name"]); ?></td>
                                 <td><?php echo (setGender($v["sex"])); ?></td>
@@ -317,7 +294,7 @@
             <div class="ui-paging">
                <?php echo ($page); ?> 
                 <div class="pull-left">
-                    <a href="" class="cbox"><i></i>全选</a>
+                    <a href="" class="cbox" attr-id="0"><i></i>全选</a>
                 </div>
             </div>
         </div>
@@ -332,10 +309,54 @@
 </footer>
 
 <script>
-    function upfile(){alert('a');
-        document.getElementById('file').click();
-    }
     $(function(){
+        $('.bt').click(function(){
+            var _department = 0;
+            var _profession = 0;
+            var _class = 0;
+            $("a[name^='department']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _department = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='profession']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _profession = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='class']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _class = $(this).attr('attr-id');
+                }
+            })
+            window.location.href="/teacher.php/Student/index/department/"+_department+"/profession/"+_profession+"/class/"+_class+"/keywords/"+$('#keywords').val();
+
+        })
+
+        $('#deleteall').click(function(){
+            var ids = new Array();
+            $('.cbox').each(function(i){
+                if($(this).attr('class')=='cbox on'){
+                    if($(this).attr('attr-id')>0)
+                    ids[ids.length]=$(this).attr('attr-id');
+                }
+            });
+            if(ids.length>0)
+                layer.confirm('您真的要删除选中记录吗?', {icon: 3, title:'删除记录'}, function(index){
+                    var $url = "<?php echo U('Student/del');?>";
+                    $.post($url,{id:ids},function(msg){
+                        if(msg.status==1){
+                            layer.msg(msg.message,{icon:6},function(){
+                                window.location.href="/teacher.php/Student/index";
+                            });
+                        }else{
+                            layer.msg(msg.message,{icon:5},function(){
+                                window.location.href="/teacher.php/Student/index";
+                            });
+                        }
+                    },'JSON');
+                })
+        });
 
         $('.del').click(function(){
             var $data = $(this).attr('attr-id');

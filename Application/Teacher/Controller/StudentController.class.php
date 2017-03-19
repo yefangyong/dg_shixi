@@ -4,14 +4,30 @@ use Think\Controller;
 
 class StudentController extends Controller{
     public function index(){
+        $teacher = $_SESSION['adminUser'];
+        $department = I('get.department',0);
+        $class = I('get.class',0);
+        switch($teacher['type']){
+            case 0:
+                $classes = D('class')->where("master_no='".$teacher['teacherno']."'")->select();
+                $class = $teacher['class_id'];
+                break;
+            case 1:
+                $departments = D('department')->where("id='".$teacher['department_id']."'")->select();
+                $classes = D('class')->where("dep_id='".$teacher['department_id']."'")->select();
+                $department = $teacher['department_id'];
+                break;
+            case 2:
+                $departments = D('department')->select();
+                $classes = D('class')->select();
+                break;
+        }
         import('ORG.Util.Page');
         // 每页显示记录数
         $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
-        $department = I('get.department',0);
         if($department)
             $map[] = 'classno IN(select id from dg_class where dep_id='.$department.')';
         $profession = I('get.profession',0);
-        $class = I('get.class',0);
         if($class)
             $map[] = 'classno = '.$class;
         $keywords = I('get.keywords');
@@ -24,9 +40,57 @@ class StudentController extends Controller{
         $show = $page->show();
         $currentPage = I(C('VAR_PAGE'),1);
         $studentList = D('StudentsView')->where($map)->page($currentPage.','.$listRows)->select();
-        $department = D('department')->select();
         $profession = D('profession')->select();
-        $class = D('class')->select();
+        $this->assign('department',$departments);
+        $this->assign('class',$classes);
+        $this->assign('profession',$profession);
+        $this->assign('list',$studentList);
+        $this->assign('page',$show);
+        $this->assign('totalCount',$count);
+        $this->assign('numPerPage',$listRows);
+        $this->assign('currentPage',$currentPage);
+        return $this->display();
+    }
+
+    public function teacher(){
+        $teacher = $_SESSION['adminUser'];
+        $department = I('get.department',0);
+        $class = I('get.class',0);
+        switch($teacher['type']){
+            case 0:
+                $classes = D('class')->where("master_no='".$teacher['teacherno']."'")->select();
+                $class = $teacher['class_id'];
+                break;
+            case 1:
+                $departments = D('department')->where("id='".$teacher['department_id']."'")->select();
+                $classes = D('class')->where("dep_id='".$teacher['department_id']."'")->select();
+                $department = $teacher['department_id'];
+                break;
+            case 2:
+                $departments = D('department')->select();
+                $classes = D('class')->select();
+                break;
+        }
+        import('ORG.Util.Page');
+        // 每页显示记录数
+        $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
+        if($department)
+            $map[] = 'class_id IN(select master_no from dg_class where dep_id='.$department.')';
+        $profession = I('get.profession',0);
+        if($class)
+            $map[] = 'class_id = '.$class;
+        $keywords = I('get.keywords');
+        if($keywords)
+            $map[] = '(teacherno like "%'.$keywords.'%" or Teacher.name like "%'.$keywords.'%")';
+        $count = D('TeacherView')->where($map)->count();
+        //echo D('StudentsView')->getLastSql();
+        // 实例化分页类 传入总记录数和每页显示的记录数
+        $page = new \Think\Page($count,$listRows);
+        $show = $page->show();
+        $currentPage = I(C('VAR_PAGE'),1);
+        $studentList = D('TeacherView')->where($map)->page($currentPage.','.$listRows)->select();
+
+        $profession = D('profession')->select();
         $this->assign('department',$department);
         $this->assign('class',$class);
         $this->assign('profession',$profession);
@@ -56,6 +120,8 @@ class StudentController extends Controller{
         $studentInfo = D('StudentView')->getStudentInfo($sid);
         $weeklyCount = D('Report')->getWeekCount($studentInfo['studentno']);
         $leaveCount = D('Leave')->getLeaveCount($studentInfo['studentno']);
+        $signin = D('signin')->where(array('student_id'=>$studentInfo['studentno']))->order(array('pubtime'=>'desc'))->limit(1)->select();
+        $studentInfo['signin']=$signin[0];
         $this->assign('leavecount',$leaveCount);
         $this->assign('weekcount',$weeklyCount);
         $this->assign('student',$studentInfo);
@@ -158,38 +224,28 @@ class StudentController extends Controller{
         if($_POST){
             $stuid = I('post.id',0,'intval');
             $data['studentno'] = I('post.studentno','','trim');
-            if(!isset($data['studentno'])||empty($data['studentno'])){
+            if(empty($data['studentno'])){
                 show(0,'请填写学号！');
             }
             $data['password'] = I('post.password','','trim');
-            if(!isset($data['password'])||empty($data['password'])){
+            if(empty($data['password'])){
                 show(0,'请填写密码！');
             }
             $data['name'] = I('post.name','','trim');
-            if(!isset($data['name'])||empty($data['name'])){
+            if(empty($data['name'])){
                 show(0,'请填写姓名！');
             }
             $data['phone'] = I('post.phone','','trim');
-            if(!isset($data['phone'])||empty($data['phone'])){
+            if(empty($data['phone'])){
                 show(0,'请填写手机号！');
             }
-            $classno = D('Class')->getIdByName(I('post.class','','trim'));
-            $data['classno'] = $classno['id'];
-            $data['course']  = I('post.course','','trim');
-            if(!isset($data['course'])||empty($data['course'])){
-                show(0,'请填写课程！');
+            if(strlen($data['password'])!=32){
+                $data['password']=md5($data['password']);
             }
-            $data['email'] = I('post.email','','trim');
-            if(!isset($data['email'])||empty($data['email'])){
-                show(0,'请填写邮箱！');
-            }
-            $data['gender'] = I('post.gender',0,'intval');
+            $data['sex'] = I('post.sex',0,'intval');
             $res = D('Student')->updateStu($stuid,$data);
-            if($res){
-                show(1,'成功！');
-            }else{
-                show(0,'失败！');
-            }
+
+            show(1,'成功！');
 
         }else{
             $department = D('School')->getAllDepartment();
@@ -212,6 +268,20 @@ class StudentController extends Controller{
             show(0,'删除失败');
         }
         $res  = D('Student')->delStu($id);
+        if($res){
+            show(1,'删除成功！');
+        }else{
+            show(0,'删除失败');
+        }
+    }
+
+    public function delteacher()
+    {
+        $id = I('post.id',0,'intval');
+        if(!isset($id)||empty($id)){
+            show(0,'删除失败');
+        }
+        $res  = D('Teacher')->delTeacher($id);
         if($res){
             show(1,'删除成功！');
         }else{
@@ -288,10 +358,111 @@ class StudentController extends Controller{
                 }
                 $data['classno']=$classinfo[0]['id'];
                 $data['email']=$lines[$i]['6'];
-                $data['sex']=($lines[$i]['7']=='男') ? 0 : 1;
+                $data['sex']=($lines[$i]['7']=='男') ? 1 : 0;
                 $data['address']=$lines[$i]['8'];
                 $data['emegencyconcat']=$lines[$i]['9'];
                 $data['emegencyphone']=$lines[$i]['10'];
+                $data['addtime'] = date('Y-m-d H:i:s',time());
+                if($ct[0])
+                    $db->where(array('id'=>$ct[0]['id']))->save($data);
+                else
+                    $db->add($data);
+                echo $db->getLastSql();
+            }
+            if($error)
+                echo '<script>alert("导入失败！'.implode("  ", $error).'");</script>';
+            else
+                echo '<script>alert("导入成功！");</script>';
+            exit;
+
+        }else
+        $this->display();
+    }
+
+
+    public function exportTea()
+    {
+        $users = D('TeacherView')->select();
+        $str = "#,教师编号,姓名,密码,手机,类型,班级,年级,系部";
+        $str .= "\n";
+        $row = 1;
+        for($i=0; $i<count($users); $i++)
+        {
+            $str .= $row++.','.$users[$i]['teacherno'].','.$users[$i]['name'].','.$users[$i]['password'].','.$users[$i]['phone'].','.setTeacherType($users[$i]['type']).','.$users[$i]['classname'].','.$users[$i]['grade'].','.$users[$i]['dname']."\n";
+        }
+        $str = mb_convert_encoding($str, "GBK", "UTF-8");
+        Header('Cache-Control: private, must-revalidate, max-age=0');
+        Header("Content-type: application/octet-stream"); 
+        Header("Content-Disposition: attachment; filename=teacher-".date('Ymd').".csv"); 
+        echo $str;
+        exit;
+    }
+
+     public function exportTeatemp()
+     {
+        $str = "#,教师编号,姓名,密码,手机,类型,班级,年级,系部";
+        $str .= "\n";
+        $str = mb_convert_encoding($str, "GBK", "UTF-8");
+        Header('Cache-Control: private, must-revalidate, max-age=0');
+        Header("Content-type: application/octet-stream"); 
+        Header("Content-Disposition: attachment; filename=teacher-template.csv"); 
+        echo $str;
+        exit;
+     }
+
+    public function importTea()
+    {
+        if($_FILES['file']){
+            if($_FILES['file']['error']==1 or $_FILES['file']['error']==2){
+                echo '<script>alert("上传得文件超过系统限制");</script>';
+                exit;
+            }
+            if(!is_uploaded_file($_FILES['file']['tmp_name']))
+            {
+                echo '<script>alert("请上传文件");</script>';
+                exit;
+            }
+            if (($handle = fopen($_FILES['file']['tmp_name'], "r")) !== FALSE) {
+                while(($lines[] = fgetcsv($handle))!==false);
+            }else{
+                echo '<script>alert("打开文件失败");</script>';
+                exit;
+            }
+            $db = D('teacher');
+            $classdb = D('class');
+            $departmentdb = D('department');
+            for($i=1; $i<count($lines); $i++){
+                for($ii=0; $ii<count($lines[$i]); $ii++){
+                    $lines[$i][$ii]=iconv("GBK", "UTF-8", $lines[$i][$ii]);
+                }
+                $data['teacherno']=$lines[$i]['1'];
+                if(empty($data['teacherno'])){
+                    continue;
+                }
+                $ct = $db->where(array('teacherno'=>$data['teacherno']))->select();
+                $data['name']=$lines[$i]['2'];
+                $data['password']=md5($lines[$i]['3']);
+                $data['phone']=md5($lines[$i]['4']);
+                $data['type']=intval($lines[$i]['5']);
+                $data['identity']=getTeacherType($data['type']);
+                $data['classname']=trim($lines[$i]['6']);
+                $data['grade']=$lines[$i]['7'];
+                $data['dname']=$lines[$i]['8'];
+
+                $departmentinfo = $departmentdb->where(array('dname="'.$data['dname'].'"'))->select();
+                if(!$departmentinfo[0]){
+                    $id = $departmentdb->add(array('dname'=>$data['dname'],'school_id'=>1));
+                    $departmentinfo = $departmentdb->where(array('id="'.$id.'"'))->select();
+                }
+                $data['department_id']=$departmentinfo[0]['id'];
+                $classinfo = $classdb->where(array('classname="'.$data['classname'].'"'))->select();
+                if(!$classinfo[0]){
+                    $id = $classdb->add(array('classname'=>$data['classname'],'grade'=>$data['grade'],'dep_id'=>$departmentinfo[0]['id'],'master'=>$data['name'],'addtime'=>date('Y-m-d H:i:s')));
+                    $classinfo = $classdb->where(array('id="'.$id.'"'))->select();
+                }else{
+                    $classdb->where('id='.$classinfo[0]['id'])->save(array('classname'=>$data['classname'],'grade'=>$data['grade'],'dep_id'=>$departmentinfo[0]['id'],'master'=>$data['name'],'addtime'=>date('Y-m-d H:i:s')));
+                }
+                $data['class_id']=$classinfo[0]['id'];
                 $data['addtime'] = date('Y-m-d H:i:s',time());
                 if($ct[0])
                     $db->where(array('id'=>$ct[0]['id']))->save($data);

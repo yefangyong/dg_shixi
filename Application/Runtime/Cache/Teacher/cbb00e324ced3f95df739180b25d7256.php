@@ -166,7 +166,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -190,7 +190,7 @@
             <div class="pull-right">
                 <div class="user">
                     <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
+                        <a href=""><?=$_SESSION['adminUser']['name']?></a>
                         <i></i>
                     </p>
                     <div class="ex">
@@ -213,12 +213,12 @@
         <div class="container">
             <div class="ht10"></div>
             <div class="ui-filter">
+                <span class="wh10"></span>
                 <div class="select">
                     <p><a href="">院系</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">计算机学院</a></p>
-                            <p><a href="">水利学院</a></p>
+                            <?php if(is_array($department)): $i = 0; $__LIST__ = $department;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="javascript:void(0)" name="department" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["dname"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
@@ -227,8 +227,7 @@
                     <p><a href="">专业</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机械设计</a></p>
-                            <p><a href="">机械自动化</a></p>
+                        <?php if(is_array($profession)): $i = 0; $__LIST__ = $profession;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="" name="profession" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
@@ -237,15 +236,14 @@
                     <p><a href="">班级</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机械设计002</a></p>
-                            <p><a href="">机械设计003</a></p>
+                        <?php if(is_array($class)): $i = 0; $__LIST__ = $class;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="" name="class" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["classname"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <input type="text" class="form-control text" placeholder="请输入姓名">
+                <input type="text" class="text control-form" id="keywords" placeholder="请输入学号/姓名">
                 <span class="wh10"></span>
-                <a href="" class="bt">查询</a>
+                <a href="javascript:void(0)" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
@@ -265,8 +263,8 @@
                                 <td><?php echo ($v["studentno"]); ?></td>
                                 <td><?php echo ($v["phone"]); ?></td>
                                 <td><?php echo ($v["corname"]); ?></td>
-                                <td><?php echo ($v["contact"]); ?></td>
-                                <td><?php echo ($v["telephone"]); ?></td>
+                                <td><?php echo ($v["emegencyconcat"]); ?></td>
+                                <td><?php echo ($v["emegencyphone"]); ?></td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
                     </table>
@@ -274,16 +272,7 @@
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                <span>共15页，共143条记录</span>
-                &nbsp;
-                <ul>
-                    <li><a href=""><</a></li>
-                    <li><a href="" class="on">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">></a></li>
-                </ul>
+                <?php echo ($page); ?> 
             </div>
         </div>
     </div>
@@ -303,7 +292,28 @@
 </style>
 <script>
     $(function(){
+        $('.bt').click(function(){
+            var _department = 0;
+            var _profession = 0;
+            var _class = 0;
+            $("a[name^='department']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _department = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='profession']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _profession = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='class']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _class = $(this).attr('attr-id');
+                }
+            })
+            window.location.href="/teacher.php/Contact/index/department/"+_department+"/profession/"+_profession+"/class/"+_class+"/keywords/"+$('#keywords').val();
 
+        })
     });
 </script>
 

@@ -164,7 +164,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -188,13 +188,13 @@
             <div class="pull-right">
     <div class="user">
         <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <a href=""><?php echo ($_SESSION['adminUser']['name']); ?></a>
             <i></i>
         </p>
         <div class="ex">
             <p><a href="">个人信息</a></p>
             <p><a href="javascript:void(0)">修改密码</a></p>
-            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+            <p><a href="/index.php/Home/Login/logOut">退出</a></p>
         </div>
     </div>
 </div>
@@ -212,56 +212,65 @@
         <div class="container">
             <div class="ht10"></div>
             <div class="ui-filter">
-                <div class="select">
-                    <select name="" id="">
-                        <option value="">提交人</option>
-                        <option value="">董嘉耀</option>
-                        <option value="">侯震</option>
-                        <option value="">郭德纲</option>
-                        <option value="">董嘉耀</option>
-                    </select>
-                </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">批阅情况</a></p>
+                    <p><a href="#">院系</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">已批阅</a></p>
-                            <p><a href="">未批阅</a></p>
+                            <?php if(is_array($department)): $i = 0; $__LIST__ = $department;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="javascript:void(0)" name="department" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["dname"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">班级</a></p>
+                    <p><a href="#">专业</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">机设011</a></p>
-                            <p><a href="">自动化002</a></p>
+                        <?php if(is_array($profession)): $i = 0; $__LIST__ = $profession;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="" name="profession" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="">实习单位</a></p>
+                    <p><a href="#">班级</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">金龙集团</a></p>
-                            <p><a href="">安溪太阳能</a></p>
+                            <?php if(is_array($class)): $i = 0; $__LIST__ = $class;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="" name="class" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["classname"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <a href="" class="bt">查询</a>
+                <div class="select">
+                    <p><a href="#">实习单位</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <?php if(is_array($corporation)): $i = 0; $__LIST__ = $corporation;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="" name="corporation" attr-id="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="select">
+                    <p><a href="#">批阅情况</a></p>
+                    <div class="ex">
+                        <div class="list">
+                            <p><a name="status" attr-id="1" href="">未审核</a></p>
+                            <p><a name="status" attr-id="2" href="">已批准</a></p>
+                            <p><a name="status" attr-id="0" href="">未批准</a></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="wh10"></span>
+                <input type="text" class="text control-form" id="keywords" placeholder="请输入学号/姓名">
+                <span class="wh10"></span>
+                <a href="javascript:void(0)" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
                 <div class="hd">
                     <div class="tool">
                         <p>
-                            <a href="">导出</a>
+                            <a href="<?php echo U('Report/exportMonth');?>">导出</a>
                             &nbsp;
-                            <a href="">删除</a>
+                            <a href="javascript:void(0)" id="deleteall">删除</a>
                         </p>
                     </div>
                 </div>
@@ -283,7 +292,7 @@
                                 <td><?php echo ($v["studentno"]); ?></td>
                                 <td><?php echo ($v["name"]); ?></td>
                                 <td><?php echo ($v["classname"]); ?></td>
-                                <td><?php echo ($v["pubtime"]); ?></td>
+                                <td><?php echo (substr($v["pubtime"],0,10)); ?></td>
                                 <td>&nbsp;</td>
                                 <td><?php echo (setReportStatus($v["status"])); ?></td>
                                 <td>
@@ -297,16 +306,7 @@
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                <span>共15页，共143条记录</span>
-                &nbsp;
-                <ul>
-                    <li><a href=""><</a></li>
-                    <li><a href="" class="on">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">></a></li>
-                </ul>
+                <?php echo ($page); ?> 
                 <div class="pull-left">
                     <a href="" class="cbox"><i></i>全选</a>
                 </div>
@@ -322,31 +322,92 @@
     </div>
 </footer>
 <script>
-    $('.edit').click(function(){
-        var $url = "<?php echo U('Report/edit');?>";
-        var $id = $(this).attr('attr-id');
-        var $status = $(this).attr('attr-status');
-        $.post($url,{rid:$id,status:$status},function(msg){
-            window.location.href = msg;
-        },'JSON');
-    });
-
-    //删除
-    $('.del').click(function(){
-        var $data = $(this).attr('attr-id');
-        layer.confirm('您真的要删除本条记录吗?', {icon: 3, title:'删除记录'}, function(index){
-            var $url = "<?php echo U('Report/del');?>";
-            $.post($url,{id:$data},function(msg){
-                if(msg.status==1){
-                    layer.msg(msg.message,{icon:6},function(){
-                        window.location.href="/teacher.php/Report/month";
-                    });
-                }else{
-                    layer.msg(msg.message,{icon:5},function(){
-                        window.location.href="/teacher.php/Report/month";
-                    });
+    $(function(){
+        $('.bt').click(function(){
+            var _department = 0;
+            var _profession = 0;
+            var _class = 0;
+            var _corporation = 0;
+            var _status = 0;
+            $("a[name^='department']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _department = $(this).attr('attr-id');
                 }
+            })
+            $("a[name^='profession']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _profession = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='class']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _class = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='corporation']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _corporation = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='status']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _status = $(this).attr('attr-id');
+                }
+            })
+            window.location.href="/teacher.php/Report/month/department/"+_department+"/profession/"+_profession+"/class/"+_class+"/corporation/"+_corporation+"/status/"+_status+"/keywords/"+$('#keywords').val();
+        });
+
+        $('.edit').click(function(){
+            var $url = "<?php echo U('Report/edit');?>";
+            var $id = $(this).attr('attr-id');
+            var $status = $(this).attr('attr-status');
+            $.post($url,{rid:$id,status:$status},function(msg){
+                window.location.href = msg;
             },'JSON');
+        });
+
+        $('#deleteall').click(function(){
+            var ids = new Array();
+            $('.cbox').each(function(i){
+                if($(this).attr('class')=='cbox on'){
+                    if($(this).attr('attr-id')>0)
+                    ids[ids.length]=$(this).attr('attr-id');
+                }
+            });
+            if(ids.length>0)
+                layer.confirm('您真的要删除选中记录吗?', {icon: 3, title:'删除记录'}, function(index){
+                    var $url = "<?php echo U('Report/del');?>";
+                    $.post($url,{id:ids},function(msg){
+                        if(msg.status==1){
+                            layer.msg(msg.message,{icon:6},function(){
+                                window.location.href="/teacher.php/Report/month";
+                            });
+                        }else{
+                            layer.msg(msg.message,{icon:5},function(){
+                                window.location.href="/teacher.php/Report/month";
+                            });
+                        }
+                    },'JSON');
+                })
+        });
+
+        //删除
+        $('.del').click(function(){
+            var $data = $(this).attr('attr-id');
+            layer.confirm('您真的要删除本条记录吗?', {icon: 3, title:'删除记录'}, function(index){
+                var $url = "<?php echo U('Report/del');?>";
+                $.post($url,{id:$data},function(msg){
+                    if(msg.status==1){
+                        layer.msg(msg.message,{icon:6},function(){
+                            window.location.href="/teacher.php/Report/month";
+                        });
+                    }else{
+                        layer.msg(msg.message,{icon:5},function(){
+                            window.location.href="/teacher.php/Report/month";
+                        });
+                    }
+                },'JSON');
+            });
         });
     });
 </script>

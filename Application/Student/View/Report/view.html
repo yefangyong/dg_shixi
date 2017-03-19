@@ -1,21 +1,15 @@
 <include file="Base/header"/>
+<style type="text/css">
+    .suofang {MARGIN: auto;WIDTH: 200px;}
+    .suofang img{MAX-WIDTH: 100%!important;HEIGHT: auto!important;width:expression(this.width > 200 ? "200px" :     this.width)!important;}
+</style>
 <!-------------------------------------- 头部结束 -------------------------------------->
 <!-------------------------------------- 内容开始 -------------------------------------->
 <main>
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="__PUBLIC__/Student/img/avatar1.jpg" alt="">
-                        <a href=''><?php echo getLoginUsername();?></a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="/index.php/student/login/logout">退出</a></p>
-                    </div>
-                </div>
+                <include file="Base/personal"/>
             </div>
             <div class="tabs">
                 <ul>
@@ -51,7 +45,7 @@
                 </div>
                 <hr>
                 <div class="ct">
-                    <p class="text-center"><img src="{$list['pic']}" alt=""></p>
+                    <p class="text-center suofang"><img src="{$list['pic']}" alt=""></p>
                 </div>
             </div>
             <div class="ht25"></div>

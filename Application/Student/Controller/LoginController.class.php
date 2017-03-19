@@ -1,16 +1,20 @@
 <?php
 namespace Student\Controller;
 use Think\Controller;
-class LoginController extends Controller {
+class LoginController extends CommonController {
 
     public function index() {
         if(session('adminUser')) {
             redirect('/index.php?m=student&c=report');
         }
+        redirect('/index.php/Home/Login');
+        return;
         return $this->display();
     }
 
     public function check() {
+        redirect('/index.php/Home/Login');
+        return ;
         $username = $_POST['username'];
         $password = $_POST['password'];
         if(!trim($username)) {
@@ -35,6 +39,6 @@ class LoginController extends Controller {
 
     public function logout() {
         session('adminUser',null);
-        redirect('/index.php?m=student&c=login');
+        redirect('/index.php/Home/Login');
     }
 }

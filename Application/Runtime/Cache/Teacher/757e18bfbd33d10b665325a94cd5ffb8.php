@@ -128,7 +128,7 @@
                     <div class="i on">
                         <a href="<?php echo U('Apply/index');?>">
                             <p><i class="ico2"></i>
-                                我的申请
+                                申请审核
                             </p>
                         </a>
                     </div>
@@ -164,7 +164,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -186,25 +186,28 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
+                <div class="pull-right">
+    <div class="user">
+        <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
+            <a href=""><?php echo ($_SESSION['adminUser']['name']); ?></a>
+            <i></i>
+        </p>
+        <div class="ex">
+            <p><a href="">个人信息</a></p>
+            <p><a href="javascript:void(0)">修改密码</a></p>
+            <p><a href="/index.php/Home/Login/logOut">退出</a></p>
+        </div>
+    </div>
+</div>
             </div>
             <div class="tabs">
                 <div class="ct">
                     <ul>
                         <ul>
                             <li><a href="<?php echo U('Apply/index');?>" >实习申请</a></li>
-                            <li><a href="<?php echo U('Apply/corporation');?>" class="on">实习单位变更</a></li>
-                            <li><a href="<?php echo U('Apply/position');?>">实习岗位变更</a></li>
+                            <!--<li><a href="<?php echo U('Apply/corporation');?>" class="on">实习单位变更</a></li>-->
+                            <!--<li><a href="<?php echo U('Apply/position');?>">实习岗位变更</a></li>-->
+                            <li><a href="<?php echo U('Apply/change');?>">实习变更</a></li>
                             <li><a href="<?php echo U('Apply/leave');?>">请假申请</a></li>
                         </ul>
                     </ul>
@@ -214,7 +217,7 @@
         </div>
     </div>
     <div class="ui-path">
-        <p>
+        <p><span class="pull-right"><a href="<?php echo U('Apply/change');?>">返回</a></span>
             <a href="javascript:void(0)" class="home"></a>
             <a href="<?php echo U('Apply/corporation');?>">实习单位变更</a>
             &gt;
@@ -226,7 +229,7 @@
             <div class="ht15"></div>
             <div class="ui-article">
                 <div class="hd">
-                    <h3>董嘉耀的单位变更申请</h3>
+                    <h3><?php echo ($apply["stuname"]); ?>的单位变更申请</h3>
                     <table>
                         <input type="hidden" name="id" value="<?php echo ($apply["chid"]); ?>">
                         <tr>

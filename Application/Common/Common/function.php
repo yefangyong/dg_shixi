@@ -12,18 +12,25 @@ function show($status,$message,$data=array()) {
     exit(json_encode($result));
 }
 
+function getActive($navc){
+    $c = strtolower(CONTROLLER_NAME);
+    if(strtolower($navc) == $c){
+        return 'on';
+    }
+    return '';
+}
+
 function getLoginUsername() {
     return isset($_SESSION['adminUser']['name'])?$_SESSION['adminUser']['name']:null;
 }
 
 function status($status) {
     if($status == 0) {
-        $str = '待审核';
+        $str = '未审核';
     }elseif($status == 1) {
-        $str = '已审核';
+        $str = '已批准';
     }elseif($status == -1) {
-
-        $str = '已退回';
+        $str = '未批准';
     }
 
     return $str;
@@ -31,18 +38,18 @@ function status($status) {
 
 function getReportStatus($status){
     switch($status){
-        case 1: $state = '已审核';break;
-        case 0: $state = '待审核';break;
-        case -1: $state = '已退回';break;
+        case 1: $state = '已批准';break;
+        case 0: $state = '未审核';break;
+        case -1: $state = '未批准';break;
     }
     return $state;
 }
 
 function getChangeStatus($status){
     switch($status){
-        case 1: $state = '已同意';break;
+        case 1: $state = '已批准';break;
         case 0: $state = '未审核';break;
-        case -1: $state = '不同意';break;
+        case -1: $state = '未批准';break;
     }
     return $state;
 }
@@ -63,11 +70,19 @@ function getInsuranceStatus($status) {
     return $state;
 }
 
+function getPracticeStatus($status) {
+    switch($status) {
+        case 0: $status = '未实习';break;
+        case 1: $status = '在实习';break;
+    }
+    return $status;
+}
+
 function getAuditStatus($status){
     switch($status){
         case 0:$state='未审核';break;
-        case 1:$state='已审阅';break;
-        case -1:;$state='已退回';break;
+        case 1:$state='已批准';break;
+        case -1:;$state='未批准';break;
     }
     return $state;
 }
@@ -75,8 +90,8 @@ function getAuditStatus($status){
 function getApplyStatus($status){
     switch($status){
         case 0:$state='未审核';break;
-        case 1:$state='已同意';break;
-        case -1:;$state='不同意';break;
+        case 1:$state='已批准';break;
+        case -1:;$state='未批准';break;
     }
     return $state;
 }

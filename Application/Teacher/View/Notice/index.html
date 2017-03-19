@@ -45,7 +45,7 @@
                                 <td>{$vo.content}</td>
                                 <td>{$vo.teacher_name}</td>
                                 <td>{$vo.name}</td>
-                                <td>{$vo.pubtime}</td>
+                                <td>{$vo.pubtime|substr=0,10}</td>
                                 <td>{$vo.title}</td>
                                 <td>
                                     <a href="javascript:void();">查看</a>
@@ -136,12 +136,12 @@
         var url = SCOPE.set_status_url;
         //ajax的异步操作，交互性好
         $.post(
-                url,data,function(s){
-                    if(s.status == 1){
-                        return dialog.success('删除成功','');
-                    }else{
-                        return dialog.error('删除失败');
-                    }
-                },"JSON");
+            url,data,function(s){
+                if(s.status == 1){
+                    return dialog.success('删除成功','');
+                }else{
+                    return dialog.error('删除失败');
+                }
+            },"JSON");
     }
 </script>

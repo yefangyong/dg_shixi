@@ -25,35 +25,16 @@
                     <p><a href="">所在地区</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">上海市</a></p>
-                            <p><a href="">苏州市</a></p>
-                            <p><a href="">苏州市</a></p>
-                            <p><a href="">上海市</a></p>
+                        <volist name="address" id="v">
+                            <p><a href="" name="address" attr-id="{$v.city}">{$v.city}</a></p>
+                        </volist>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <div class="select">
-                    <p><a href="">实习单位</a></p>
-                    <div class="ex">
-                        <div class="list">
-                            <p><a href="">金龙集团</a></p>
-                            <p><a href="">安溪太阳能</a></p>
-                        </div>
-                    </div>
-                </div>
+                <input type="text" class="text control-form" id="keywords" placeholder="请输入企业名称或地址">
                 <span class="wh10"></span>
-                <div class="select">
-                    <p><a href="">是否使用</a></p>
-                    <div class="ex">
-                        <div class="list">
-                            <p><a href="">是</a></p>
-                            <p><a href="">否</a></p>
-                        </div>
-                    </div>
-                </div>
-                <span class="wh10"></span>
-                <a href="" class="bt">查询</a>
+                <a href="javascript:void();" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
@@ -68,7 +49,7 @@
                             &nbsp;
                             <a href="javascript:void(0)" id="unused">设置为不使用</a>
                             &nbsp;
-                            <a href="">导入</a>
+                            <a href="{:U('Practice/importCor')}">导入</a>
                             &nbsp;
                             <a href="{:U('Practice/exportCor')}">导出</a>
                             &nbsp;
@@ -110,7 +91,7 @@
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                &nbsp;
+                 {$page} 
                 <div class="pull-left">
                     <a href="" class="cbox" attr-id="0"><i></i>全选</a>
                 </div>
@@ -127,6 +108,18 @@
 </footer>
 <script>
     $(function(){
+        $('.bt').click(function(){
+            var url = "/teacher.php/Practice/corporation/"
+            var _address = '';
+            $("a[name^='address']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _address = $(this).attr('attr-id');
+                    url += "address/"+_address
+                }
+            })
+            window.location.href=url+"/keywords/"+$('#keywords').val();
+        });
+
         $('#deleteall').click(function(){
             var ids = new Array();
             $('.cbox').each(function(i){

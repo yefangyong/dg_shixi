@@ -164,7 +164,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -191,13 +191,13 @@
                 <div class="pull-right">
     <div class="user">
         <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <a href=""><?php echo ($_SESSION['adminUser']['name']); ?></a>
             <i></i>
         </p>
         <div class="ex">
             <p><a href="">个人信息</a></p>
             <p><a href="javascript:void(0)">修改密码</a></p>
-            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+            <p><a href="/index.php/Home/Login/logOut">退出</a></p>
         </div>
     </div>
 </div>
@@ -271,7 +271,7 @@
                         </div>
                         <div class="col-sm-4 viewcor ">
                             <div class="col-sm-4 select">
-                                <p><?php echo ($info["postion"]); ?></p>
+                                <p><?php echo ($info["position"]); ?></p>
                             </div>
                         </div>
                     </div>
@@ -289,7 +289,7 @@
                         </div>
                         <div class="col-sm-4 viewcor">
                             <div class="col-sm-4 select">
-                                <p><?php echo ($info["phone"]); ?></p>
+                                <p><?php echo ($info["mobile"]); ?></p>
                             </div>
                         </div>
                     </div>
@@ -321,33 +321,38 @@
                             </div>
                         </div>
                         <div class="col-sm-2">
-                            <label for="" class="control-label">详细地址：</label>
+                            <label for="" class="control-label">企业网址：</label>
                         </div>
                         <div class="col-sm-4 viewcor">
                             <div class="col-sm-4 select">
-                                <p><?php echo ($info["address"]); ?></p>
+                                <p><?php echo ($info["website"]); ?></p>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <p class="control-label">企业网址：</p>
+                            <p class="control-label">详细地址：</p>
                         </div>
                         <div class="col-sm-4 viewcor">
-                            <div class="col-sm-4">
-                                <p><?php echo ($info["website"]); ?></p>
+                            <div class="col-sm-10" style="width:600px;">
+                                <p><?php echo ($info["address"]); ?></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label"></label>
+                        </div>
+                        <div class="col-sm-4 viewcor">
+                            <div class="col-sm-4 select">
+                                <p></p>
                             </div>
                         </div>
                     </div>
-                    <div class="ht15"></div>
                     <div class="form-group">
-                        <div class="col-sm-11 col-sm-offset-1">
-                            <p class="control-label" style="text-align: left;margin-left:-35px">企业介绍：</p>
+                        <div class="col-sm-2 ">
+                            <p class="control-label" >企业介绍：</p>
                         </div>
-                        <div class="col-sm-10">
-                            <div class="viewcor" style="width: 93%;">
-                                <?php echo ($info["introduction"]); ?>
-                            </div>
+                        <div class="col-sm-10 viewcor" style="width:600px;">
+                            <p><?php echo ($info["introduction"]); ?></p>
                         </div>
                     </div>
             </div>

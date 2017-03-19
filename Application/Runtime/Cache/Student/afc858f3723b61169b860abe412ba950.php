@@ -22,6 +22,7 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="/Public/Student/js/H-ui-Admin.js"></script>
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -104,15 +105,15 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
+                                <div class="user">
                     <p><img src="img/avatar1.jpg" alt="">
                         <a href=""><?php echo getLoginUsername() ?></a>
                         <i></i>
                     </p>
                     <div class="ex">
                         <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
+                        <p><a href="/index.php/Student/Common/password">修改密码</a></p>
+                        <p><a href="/index.php/Home/Login/logOut">退出</a></p>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@
                         <li><a href="{:U('Apply/index')}" >实习申请</a></li>
                         <!--<li><a href="{:U('Apply/corporation')}" class="on">实习单位变更</a></li>-->
                         <!--<li><a href="{:U('Apply/position')}">实习岗位变更</a></li>-->
-                        <li><a href="#">实习变更</a></li>
+                        <li><a href="{:U('Apply/change')}">实习变更</a></li>
                         <li><a href="{:U('Apply/leave')}" class="on">请假申请</a></li>
                     </ul>
                 </div>
@@ -54,7 +54,7 @@
             <div class="ht30"></div>
             <div class="ui-state">
                 <p class="text-center" style="font-size: 20px;">
-                    <b>当前状态：</b>已审核/{$apply.status|setApplyStatus}
+                    <b>当前状态：</b>{$apply.status|getReportStatus}/{$apply.status|setApplyStatus}
                 </p>
             </div>
         </div>

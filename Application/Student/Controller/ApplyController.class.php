@@ -2,11 +2,15 @@
 namespace Student\Controller;
 use Think\Controller;
 
-class ApplyController extends Controller {
+class ApplyController extends CommonController {
 
     public function index() {
         $user = $_SESSION['adminUser'];
-        $data = M('Practice')->where('student_id='.$user['studentno'])->find();
+        $condition = [
+            'student_id'=>$user['studentno'],
+            'mode'=>1
+        ];
+        $data = M('Practice')->where($condition)->find();
         if(!$data) {
             return $this->display('Apply/noapply');
         }else {
@@ -15,7 +19,8 @@ class ApplyController extends Controller {
                 $teacher = M('Teacher')->where('teacherno='.$data['teacher_id'])->find();
                 $data['teacher'] = $teacher['name'];
             }else {
-                $data['teacher'] = '';
+                $rel = M('Teacher')->where('class_id='.$user['classno'])->find();
+                $data['teacher'] = $rel['name'];
             }
             $this->assign('list',$data);
             return $this->display();
@@ -59,12 +64,21 @@ class ApplyController extends Controller {
                 return show(0,'请填写联系方式！');
             }
             $user = $_SESSION['adminUser'];
+            $data = [
+                'student_id'=>$user['studentno'],
+                'mode'=>2
+            ];
+            $practice = M('Practice')->where($data)->find();
+            if($practice) {
+                return show(0,'学校已经安排，请勿申请!');
+            }
             $_POST['student_id'] = $user['studentno'];
             $corporation = M('corporation')->where('name="'.$_POST['cname'].'"')->find();
             if(!$corporation) {
                 return show(0,'不存在这个公司!');
             }
             $_POST['corporation_id'] = $corporation['id'];
+            $_POST['applytime'] = date('Y-m-d',time());
             $rel = M('practice')->add($_POST);
             if($rel) {
                 return show(1,'提交成功，请等待审核!');

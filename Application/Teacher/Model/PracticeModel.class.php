@@ -18,9 +18,9 @@ class PracticeModel extends Model{
             return 0;
         }
         if(is_array($id))
-          return $this->where("`id` IN(".implode(',', $id).") ")->delete();
+          return $this->where("`student_id` IN(".implode(',', $id).") ")->delete();
         else
-        return $this->where("`id` = ".$id)->delete();
+        return $this->where("`student_id` = ".$id)->delete();
     }
 
 
@@ -28,6 +28,11 @@ class PracticeModel extends Model{
     public function getGuide()
     {
         return $this->field('guide')->select();
+    }
+
+    public function getAddress()
+    {
+        return $this->group("address")->field('address')->select();
     }
 
     public function setArrangeMent($id,$data){

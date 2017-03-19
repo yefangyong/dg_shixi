@@ -11,7 +11,7 @@
                         <li><a href="{:U('Apply/index')}" >实习申请</a></li>
                         <!--<li><a href="{:U('Apply/corporation')}" class="on">实习单位变更</a></li>-->
                         <!--<li><a href="{:U('Apply/position')}">实习岗位变更</a></li>-->
-                        <li><a href="#">实习变更</a></li>
+                        <li><a href="{:U('Apply/change')}">实习变更</a></li>
                         <li><a href="{:U('Apply/leave')}">请假申请</a></li>
                     </ul>
                 </div>
@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="ui-path">
-        <p>
+        <p><span class="pull-right"><a href="{:U('Apply/change')}">返回</a></span>
             <a href="{:U('Apply/index')}" class="home">实习管理</a>
             &gt;
             <a href="{:U('Apply/position')}">实习岗位变更</a>
@@ -33,7 +33,7 @@
             <div class="ht15"></div>
             <div class="ui-article">
                 <div class="hd">
-                    <h3>董嘉耀的单位变更申请</h3>
+                    <h3>{$apply.stuname}的单位变更申请</h3>
                     <table>
                         <input type="hidden" name="id" value="{$apply.chid}">
                         <tr>

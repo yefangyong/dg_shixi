@@ -124,7 +124,7 @@ class ReportController extends Controller {
 			if(empty($rid)) {
 			 return $this->ajaxReturn(array('status'=>1,'info'=>'报告ID没有','data'=>$res));
 			}
-			if(empty($teacher_id)) {
+			if(empty($data['teacher_id'])) {
 			 return $this->ajaxReturn(array('status'=>1,'info'=>'教师ID没有','data'=>$res));
 			}
 			if($data['score']<60){

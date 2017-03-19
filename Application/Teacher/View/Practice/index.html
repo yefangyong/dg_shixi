@@ -74,10 +74,10 @@
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
-                <div class="hd">
+                <div class="hd" style="width: 140%;">
                     <div class="tool">
                         <p>
-                            <a href="">批量安排岗位</a>
+                            <a href="javascript:void(0)" id="arrangement">批量安排岗位</a>
                             &nbsp;
                             <a href="javascript:void(0)" id="cancel">取消安排岗位</a>
                             &nbsp;
@@ -87,6 +87,7 @@
                         </p>
                     </div>
                 </div>
+                <form action="{:U('Practice/arrangement')}" id="arrangementform" method="POST">
                 <div class="ct">
                     <div class="tb">
                         <table style="width: 140%;">
@@ -99,26 +100,26 @@
                                 <td><b>联系电话</b></td>
                                 <td><b>实习单位</b></td>
                                 <td><b>实习岗位</b></td>
-                                <td><b>校内老师</b></td>
+                                <td><b>企业老师</b></td>
                                 <td><b>安排方式</b></td>
                                 <td><b>操作</b></td>
                             </tr>
                             <volist name="list" id="v">
                                 <tr>
-                                    <td><a href="" class="cbox"></a></td>
-                                    <td>{$v.student_id}</td>
+                                    <td><a href="" class="cbox" attr-id="{$v.sid}"></a></td>
+                                    <td>{$v.studentno}</td>
                                     <td>{$v.stuname}</td>
                                     <td>{$v.classname}</td>
                                     <td>{$v.phone}</td>
                                     <td>{$v.corname}</td>
                                     <td>{$v.position}</td>
-                                    <td>{$v.teacher}</td>
+                                    <td>{$v.guide}</td>
                                     <td>{$v.mode|setPracticeMode}</td>
                                     <td>
-                                        <if condition="$v.mode eq 1 ">
-                                            <p>无需操作</p>
-                                            <elseif condition="$v.mode eq 0"/>
-                                            <a href="__CONTROLLER__/arrangement/id/{$v.student_id}">安排岗位</a>
+                                        <if condition="$v.mode eq 0">
+                                            <a href="__CONTROLLER__/arrangement/studentid/{$v.sid}">安排岗位</a>
+                                        <else />
+                                            <a href="#" onclick="cancel({$v.sid})">取消安排</a>
                                         </if>
                                     </td>
                                 </tr>
@@ -128,13 +129,15 @@
                     </div>
                     <!--<a href="javascript:;" class="aw prev"></a><a href="javascript:;" class="aw next"></a>-->
                 </div>
+                <input type="hidden" name="studentids" id="studentids" value="" />
+                </form>
             </div>
             <div class="ht35"></div>
             <div class="ht35"></div>
-            <div class="ui-paging">
+            <div class="ui-paging" style="width: 140%;">
                 {$page} 
                 <div class="pull-left">
-                    <a href="" class="cbox"><i></i>全选</a>
+                    <a href="" class="cbox" attr-id="0"><i></i>全选</a>
                 </div>
             </div>
         </div>
@@ -145,6 +148,27 @@
     </div>
 </footer>
 <script>
+function cancel(id){
+    var $url = "{:U('Practice/cancelarrangement')}";
+      $.ajax({
+          'url':$url,
+          'type':'post',
+          'data': {
+              'id':id,
+          },
+          'dataType':'json',
+          success:function(msg){
+            if(msg.status==0){
+                layer.msg(msg.message,{icon:5});
+            }else if(msg.status==1){
+                layer.msg(msg.message,{icon:6},function(){
+                    window.location.href="/teacher.php/Practice";
+                });
+            }
+          }
+        });
+}
+
     $(function(){
         $('.bt').click(function(){
             var _department = 0;
@@ -172,39 +196,43 @@
                 }
             })
             window.location.href="/teacher.php/Practice/index/department/"+_department+"/profession/"+_profession+"/class/"+_class+"/corporation/"+_corporation+"/keywords/"+$('#keywords').val();
-        })
+        });
 
+        
        $('#cancel').click(function(){
-          layer.msg('删除');
+            var ids = new Array();
+            $('.cbox').each(function(i){
+                if($(this).attr('class')=='cbox on'){
+                    if($(this).attr('attr-id')>0)
+                    ids[ids.length]=$(this).attr('attr-id');
+                }
+            });
+            if(ids.length<=0){
+                layer.msg('请选择学生',{icon:5});
+                return ;
+            }
+            cancel(ids);
+       });
+
+       $('#arrangement').click(function(){
+            var ids = new Array();
+            $('.cbox').each(function(i){
+                if($(this).attr('class')=='cbox on'){
+                    if($(this).attr('attr-id')>0)
+                    ids[ids.length]=$(this).attr('attr-id');
+                }
+            });
+            if(ids.length<=0){
+                layer.msg('请选择学生',{icon:5});
+                return ;
+            }
+            $('#studentids').val(ids.join(','));
+            $('#arrangementform').submit();
        });
 
        function  checkChange(){
            console.log($(this).text());
        }
-
-
-
-      $('.bt').click(function(){
-          $dept = $('#dept').text();
-          $profession = $('#profession').text();
-          $class = $('#class').text();
-//          console.log($data);
-         var $url = "{:U('Practice/index')}";
-          $.ajax({
-              'url':$url,
-              'type':'post',
-              'data': {
-                  'dept':$dept,
-                  'profession':$profession,
-                  'class':$class
-              },
-              'dataType':'json',
-              success:function(msg){
-
-              }
-          });
-      });
-
 
     });
 </script>

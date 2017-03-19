@@ -105,7 +105,10 @@
         <!--</div>-->
     <!--</div>-->
 <!--</nav>-->
-    
+    <style type="text/css">
+    .suofang {MARGIN: auto;WIDTH: 200px;}
+    .suofang img{MAX-WIDTH: 100%!important;HEIGHT: auto!important;width:expression(this.width > 200 ? "200px" :     this.width)!important;}
+</style>
 <!-------------------------------------- 头部结束 -------------------------------------->
 <!-------------------------------------- 内容开始 -------------------------------------->
 <nav class="navi">
@@ -167,7 +170,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -191,13 +194,13 @@
             <div class="pull-right">
     <div class="user">
         <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <a href=""><?php echo ($_SESSION['adminUser']['name']); ?></a>
             <i></i>
         </p>
         <div class="ex">
             <p><a href="">个人信息</a></p>
             <p><a href="javascript:void(0)">修改密码</a></p>
-            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+            <p><a href="/index.php/Home/Login/logOut">退出</a></p>
         </div>
     </div>
 </div>
@@ -233,7 +236,7 @@
                 <div class="ct" style="font-size: 15px">
                     <?php echo ($report["content"]); ?>
                     <div class="ct">
-                        <p class="text-center"><img src="<?php echo ($report["pic"]); ?>" alt=""></p>
+                        <?php if(is_array($pics)): $i = 0; $__LIST__ = $pics;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p class="suofang"><a href="<?php echo ($v); ?>" target="_blank"><img src="<?php echo ($v); ?>" alt=""></a></p><br /><?php endforeach; endif; else: echo "" ;endif; ?>
                     </div>
                 </div>
             </div>

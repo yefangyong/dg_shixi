@@ -164,7 +164,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -188,17 +188,19 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
+                <div class="pull-right">
+    <div class="user">
+        <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
+            <a href=""><?php echo ($_SESSION['adminUser']['name']); ?></a>
+            <i></i>
+        </p>
+        <div class="ex">
+            <p><a href="">个人信息</a></p>
+            <p><a href="javascript:void(0)">修改密码</a></p>
+            <p><a href="/index.php/Home/Login/logOut">退出</a></p>
+        </div>
+    </div>
+</div>
             </div>
             <div class="tabs">
                 <ul>
@@ -212,6 +214,7 @@
     </div>
     <div class="ui-path">
         <p>
+            <span class="pull-right"><a href="<?php echo U('Practice/corporation');?>">返回</a></span>
             <a href="" class="home"></a>
             <a href="<?php echo U('Practice/corporation');?>">实习企业管理</a>
             >
@@ -232,18 +235,10 @@
                             <input type="text" class="form-control"  name="name" style="width: 210px;" value="<?php echo ($info["name"]); ?>" id="name" onblur="isEmpty(this.id)">
                         </div>
                         <div class="col-sm-2">
-                            <label for="" class="control-label"><i></i>企业地址</label>
+                            <label for="" class="control-label"><i></i>企业地址(城市)</label>
                         </div>
                         <div class="col-sm-4">
-                            <div class="select" style="width: 210px;">
-                                <!--<p id="city"><a href="">请选择企业所在地址</a></p>-->
-                                <!--<div class="ex">-->
-                                    <!--<p><a href="javascript:void(0)">苏州</a></p>-->
-                                    <!--<p><a href="javascript:void(0)">南京</a></p>-->
-                                    <!--<p><a href="javascript:void(0)">上海</a></p>-->
-                                <!--</div>-->
-                            </div>
-                            <input type="hidden" name="city" value="<?php echo ($info["city"]); ?>">
+                            <input type="text" class="form-control" name="city" id="city" style="width: 210px;" value="<?php echo ($info["city"]); ?>">
                         </div>
                     </div>
                     <div class="form-group">
@@ -253,13 +248,13 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
-                                <p id="type"><a href="">请选择企业性质</a></p>
+                                <p id="type"><a href="#"><?php if($info.type): echo ($info["type"]); else: ?>请选择企业性质<?php endif; ?></a></p>
                                 <div class="ex">
-                                    <p><a href="javascript:void(0)">国资</a></p>
-                                    <p><a href="javascript:void(0)">外资</a></p>
-                                    <p><a href="javascript:void(0)">股份制</a></p>
+                                    <p><a href="javascript:void(0)" onclick="document.getElementById('type').value='国资'">国资</a></p>
+                                    <p><a href="javascript:void(0)" onclick="document.getElementById('type').value='外资'">外资</a></p>
+                                    <p><a href="javascript:void(0)" onclick="document.getElementById('type').value='股份制'">股份制</a></p>
                                 </div>
-                                <input type="hidden" name="type" value="<?php echo ($info["type"]); ?>">
+                                <input type="hidden" id="type" name="type" value="<?php echo ($info["type"]); ?>">
                             </div>
                         </div>
                         <div class="col-sm-2">
@@ -280,7 +275,7 @@
                             <label for="" class="control-label">职务</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="position" style="width: 210px;" value="<?php echo ($info["postion"]); ?>">
+                            <input type="text" class="form-control" name="position" style="width: 210px;" value="<?php echo ($info["position"]); ?>">
                         </div>
                     </div>
                     <div class="form-group">
@@ -294,7 +289,7 @@
                             <label for="" class="control-label">移动电话</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="mobile" maxlength='11' style="width: 210px;" value="<?php echo ($info["phone"]); ?>">
+                            <input type="text" class="form-control" name="mobile" id="mobile" maxlength='11' style="width: 210px;" value="<?php echo ($info["mobile"]); ?>">
                         </div>
                     </div>
                     <div class="form-group">
@@ -373,6 +368,13 @@
 //            $('input[name=type]').val($('#type').text());
             var $data = $('#corporationForm').serialize();
             var $url = "<?php echo U('Practice/editCor');?>";
+            var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/; 
+            var mobile = $("#mobile").val();
+            if(mobile.length>0&&!myreg.test(mobile)) 
+            { 
+                layer.msg('请输入有效的手机号码！',{icon:5});
+                return false; 
+            }
             $.ajax({
                 'type':"post",
                 'url':$url,

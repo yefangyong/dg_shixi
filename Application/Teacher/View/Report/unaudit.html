@@ -1,4 +1,7 @@
-
+<style type="text/css">
+    .suofang {MARGIN: auto;WIDTH: 200px;}
+    .suofang img{MAX-WIDTH: 100%!important;HEIGHT: auto!important;width:expression(this.width > 200 ? "200px" :     this.width)!important;}
+</style>
 <!-------------------------------------- 头部结束 -------------------------------------->
 <!-------------------------------------- 内容开始 -------------------------------------->
 <include file="Report/nav"/>
@@ -38,7 +41,9 @@
                 <div class="ct">
                   {$report.content}
                     <div class="ct">
-                        <p class="text-center"><img src="{$report.pic}" alt=""></p>
+                        <volist name="pics" id="v">
+                        <p class="suofang"><a href="{$v}" target="_blank"><img src="{$v}" alt=""></a></p><br />
+                        </volist>
                     </div>
                 </div>
             </div>

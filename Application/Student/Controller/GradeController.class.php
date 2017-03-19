@@ -2,7 +2,7 @@
 namespace Student\Controller;
 use Think\Controller;
 
-class GradeController extends Controller {
+class GradeController extends CommonController {
     public function index() {
         $user = $_SESSION['adminUser'];
         $weekReportCount = D('Report')->getWeekReportCountById($user['studentno']);

@@ -64,10 +64,13 @@ class ReportModel extends Model {
         if(!isset($id) || empty($id)) {
             return 0;
         }
+        $data = [
+            'stu_del'=>0,
+        ];
         if(is_array($id)) {
-            return $this->_db->where("`id` IN(".implode(',',$id).")")->delete();
+            return $this->_db->where("`id` IN(".implode(',',$id).")")->save($data);
         }else {
-            return $this->_db->where('id='.$id)->delete();
+            return $this->_db->where('id='.$id)->save($data);
         }
     }
 

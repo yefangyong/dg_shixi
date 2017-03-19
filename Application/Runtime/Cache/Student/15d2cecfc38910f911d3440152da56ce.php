@@ -22,6 +22,7 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="/Public/Student/js/H-ui-Admin.js"></script>
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -104,15 +105,15 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
+                                <div class="user">
                     <p><img src="img/avatar1.jpg" alt="">
                         <a href=""><?php echo getLoginUsername() ?></a>
                         <i></i>
                     </p>
                     <div class="ex">
                         <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
+                        <p><a href="/index.php/Student/Common/password">修改密码</a></p>
+                        <p><a href="/index.php/Home/Login/logOut">退出</a></p>
                     </div>
                 </div>
             </div>
@@ -139,9 +140,8 @@
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
                                 <input name="type" type="hidden" id="type"/>
-                                <p><a href="javascript:void(0)">请选择变更类型</a></p>
+                                <p id="corporation"><a href="javascript:void(0)">单位</a></p>
                                 <div class="ex">
-                                    <p><a href="javascript:void(0)" id="corporation">单位</a></p>
                                     <p><a href="javascript:void(0)" id="job">岗位</a></p>
                                 </div>
                             </div>
@@ -151,8 +151,8 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
-                                <p><a href="">请选择企业名称</a></p>
-                                <input type="hidden" value="" name="cname" id="cname"/>
+                                <p id="cname"><a href="javascript:void();">请选择企业名称</a></p>
+                                <input type="hidden" value="" name="cname"/>
                                 <div class="ex">
                                     <?php if(is_array($corporation)): $i = 0; $__LIST__ = $corporation;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><p><a href="javascript:void();" id="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </div>
@@ -267,13 +267,6 @@
     $("#job").click(function(){
         window.location.href='/index.php/student/Apply/changeJob';
     });
-    $("#corporation").click(function(){
-        $("#type").val(0);
-    });
-    $("#<?php echo ($vo["id"]); ?>").click(function(){
-        $("#cname").val('<?php echo ($vo["name"]); ?>');
-    });
-
     $("#box1").click(function(){
         $("#box").val('0');
     });
@@ -294,6 +287,10 @@
         'jump_url' : '/index.php?m=student&c=apply&a=change',
     };
     $("#yfycms-button-submit").click(function(){
+        var type = $('#corporation').text();
+        $('input[name=type]').val(type);
+        var cname = $('#cname').text();
+        $('input[name=cname]').val(cname);
         var data=$("#yfycms-form").serializeArray();
         postData={};
         $(data).each(function(i){

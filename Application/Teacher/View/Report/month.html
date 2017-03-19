@@ -65,8 +65,9 @@
                     <p><a href="#">批阅情况</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a name="status" attr-id="2" href="">已批阅</a></p>
-                            <p><a name="status" attr-id="1" href="">未批阅</a></p>
+                            <p><a name="status" attr-id="1" href="">未审核</a></p>
+                            <p><a name="status" attr-id="2" href="">已批准</a></p>
+                            <p><a name="status" attr-id="0" href="">未批准</a></p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +106,7 @@
                                 <td>{$v.studentno}</td>
                                 <td>{$v.name}</td>
                                 <td>{$v.classname}</td>
-                                <td>{$v.pubtime}</td>
+                                <td>{$v.pubtime|substr=0,10}</td>
                                 <td>&nbsp;</td>
                                 <td>{$v.status|setReportStatus}</td>
                                 <td>

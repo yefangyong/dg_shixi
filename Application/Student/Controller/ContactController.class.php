@@ -1,6 +1,6 @@
 <?php
 namespace Student\Controller;
-use Teacher\Controller\CommonController;
+use Student\Controller\CommonController;
 use Think\Controller;
 
 class ContactController extends CommonController {
@@ -50,6 +50,12 @@ class ContactController extends CommonController {
         $show = $page->show();
         $currentPage = I(C('VAR_PAGE'),1);
         $data = M('Teacher')->where($map)->page($currentPage.','.$listRows)->select();
+        foreach($data as $k=>$v) {
+            if($data[$k]['identity'] == '班主任') {
+                $class = M('Class')->where('id='.$data[$k]['class_id'])->find();
+                $data[$k]['identity'] = $class['classname'].'班主任';
+            }
+        }
         foreach($data as $k=>$v) {
             $did = $data[$k]['department_id'];
             $department = M('Department')->where('id='.$did)->find();

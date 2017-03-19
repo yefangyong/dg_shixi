@@ -5,17 +5,7 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
+                <include file="Base/personal"/>
             </div>
             <div class="tabs">
                 <ul>
@@ -38,27 +28,23 @@
                             <label for="" class="control-label">企业名称</label>
                         </div>
                         <div class="col-sm-4">
-                            <select class="select" name="cname" class="select" style="width: 210px;">
+                            <div class="select" style="width: 210px;">
+                                <p ><a href="#">请选择企业名称</a></p>
                                 <div class="ex">
-                                    <option value="">请选择企业名称</option>
-                                    <volist name="corporation" id="vo">
-                                    <option value="{$vo.name}">{$vo.name}</option>
-                                    </volist>
+                                    <div class="list">
+                                        <input type="hidden" name="cname" id="cname"/>
+                                        <volist name="corporation" id="vo">
+                                            <p><a href="javascript:void(0);" onclick="selectCor({$vo.id});"  attr-id="{$vo.id}">{$vo.name}</a></p>
+                                        </volist>
+                                    </div>
                                 </div>
-                            </select>
+                            </div>
                         </div>
                         <div class="col-sm-2">
                             <label for="" class="control-label">所在地址</label>
                         </div>
                         <div class="col-sm-4">
-                            <select class="select"  class="select" style="width: 210px;">
-                                <div class="ex">
-                                    <option value="">请选择企业名地址</option>
-                                    <volist name="corporation" id="vo">
-                                        <option value="{$vo.address}">{$vo.address}</option>
-                                    </volist>
-                                </div>
-                            </select>
+                            <input type="text" class="form-control" name="address" id="address" style="width: 210px;" >
                         </div>
                     </div>
                     <div class="form-group">
@@ -91,7 +77,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <label for="" class="control-label">职务</label>
+                            <label for="" class="control-label">实习岗位</label>
                         </div>
                         <div class="col-sm-4">
                             <input type="text" name="position" class="form-control" id="" style="width: 210px;" placeholder="请输入工作职务">
@@ -100,7 +86,7 @@
                             <label for="" class="control-label">企业联系人</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" id="" style="width: 210px;" placeholder="请输入企业联系人">
+                            <input type="text" class="form-control" id="contact"  style="width: 210px;" placeholder="请输入企业联系人">
                         </div>
                     </div>
                     <div class="form-group">
@@ -108,14 +94,14 @@
                             <label for="" class="control-label">联系电话</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="phone" id="" style="width: 210px;" placeholder="请输入联系电话">
+                            <input type="text" class="form-control" name="phone" id="telephone" style="width: 210px;" placeholder="请输入联系电话">
                         </div>
                         <div class="col-sm-2">
                             <label for="" class="control-label">详细地址</label>
                         </div>
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
-                                <input type="text" class="form-control" name="address" id="" style="width: 210px;" placeholder="请输入详细地址">
+                                <input type="text" class="form-control" name="detailaddress" id="detailaddress" style="width: 210px;" placeholder="请输入详细地址">
                             </div>
                         </div>
                     </div>
@@ -124,7 +110,7 @@
                             <label for="" class="control-label">开始日期</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control dtp" name="starttime" id="" style="width: 210px;" placeholder="例XXXX-XX-XX" value="2016-12-1">
+                            <input type="text" class="form-control dtp" name="starttime" id="" style="width: 210px;" placeholder="例XXXX-XX-XX" value="">
                         </div>
                         <div class="col-sm-2">
                             <label for="" class="control-label">结束日期</label>
@@ -160,13 +146,10 @@
     $(function(){
         $('.dtp').datetimepicker({
             language: 'zh-CN',
-            weekStart: 1,
-            todayBtn:  1,
-            autoclose: 1,
-            todayHighlight: 1,
-            startView: 2,
-            forceParse: 0,
-            showMeridian: 1
+            minView: "month",//设置只显示到月份
+            format : "yyyy-mm-dd",//日期格式
+            autoclose:true,//选中关闭
+            todayBtn: true//今日按钮
         });
     });
 </script>
@@ -213,4 +196,29 @@
             }
         },"JSON");
     });
+
+    function selectCor(v) {
+        for(var i=1; i<corporation.length;i++) {
+            console.log(corporation);
+            if(corporation[i]['id'] == v) {
+                $('#cname').val(corporation[i]['name']);
+                $('#address').val(corporation[i]['address']);
+                $('#contact').val(corporation[i]['contact']);
+                $('#detailaddress').val(corporation[i]['detailaddress']);
+                $('#telephone').val(corporation[i]['telephone']);
+            }
+        }
+    }
+
+    var corporation = new Array();
+    var i=0;
+    <volist name="corporation" id="vo">
+    corporation[{$i}] = new Array();
+    corporation[{$i}]['id'] = {$vo.id};
+    corporation[{$i}]['name'] = '{$vo.name}';
+    corporation[{$i}]['detailaddress'] = '{$vo.detailaddress}';
+    corporation[{$i}]['address'] = '{$vo.address}';
+    corporation[{$i}]['contact'] = '{$vo.contact}';
+    corporation[{$i}]['telephone'] = '{$vo.telephone}';
+    </volist>
 </script>

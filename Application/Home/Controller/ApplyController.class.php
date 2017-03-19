@@ -72,12 +72,15 @@ class ApplyController extends Controller {
     public function leave()
     {
         $map = $this->map();
+        if($_POST['id']){
+            $map[]=' dg_leave.id='.$_POST['id'];
+        }
 		$order = I('get._order',D('Practice')->getPk());
 		// 排序方式 默认为降序排列
 		$sort  = I('get._sort','desc');
 		$worder[$order]= $sort;
 		// 统计
-		$count = D('Practice')->where($map)->count();
+		$count = D('leave')->where($map)->count();
 		import('ORG.Util.Page');
 		// 每页显示记录数
 		$listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
@@ -281,14 +284,11 @@ class ApplyController extends Controller {
             if(!$_POST['reason'] ) {
                 $error = '请填写变更原因！';
             }
-            if(!$_POST['cor_teacher'] ) {
+            if(!$_POST['guide'] ) {
                 $error = '请填写企业老师！';
             }
             if(!$_POST['phone']) {
                 $error = '请填写联系方式！';
-            }
-            if(!$_POST['teacher_email']) {
-                $error = '请填写老师邮箱！';
             }
             if($error){
             	return $this->ajaxReturn(array('status'=>0,'info'=>$error,'data'=>$res));
@@ -312,8 +312,6 @@ class ApplyController extends Controller {
             }else{
                 return $this->ajaxReturn(array('status'=>0,'info'=>'提交失败','data'=>$res));
             }
-        }else {
-            $this->display();
         }
 
     }

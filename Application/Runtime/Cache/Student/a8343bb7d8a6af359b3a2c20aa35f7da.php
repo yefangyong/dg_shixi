@@ -22,6 +22,7 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="/Public/Student/js/H-ui-Admin.js"></script>
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -104,17 +105,17 @@
       <div class="ui-head">
         <div class="container">
           <div class="pull-right">
-            <div class="user">
-                <p><img src="/Public/Student/img/avatar1.jpg" alt="">
-                    <a href=''><?php echo getLoginUsername();?></a>
-                    <i></i>
-                </p>
-                <div class="ex">
-                    <p><a href="">个人信息</a></p>
-                    <p><a href="">修改密码</a></p>
-                    <p><a href="/index.php/student/login/logout">退出</a></p>
+                              <div class="user">
+                    <p><img src="img/avatar1.jpg" alt="">
+                        <a href=""><?php echo getLoginUsername() ?></a>
+                        <i></i>
+                    </p>
+                    <div class="ex">
+                        <p><a href="">个人信息</a></p>
+                        <p><a href="/index.php/Student/Common/password">修改密码</a></p>
+                        <p><a href="/index.php/Home/Login/logOut">退出</a></p>
+                    </div>
                 </div>
-            </div>
           </div>
           <div class="tabs">
             <ul>
@@ -165,16 +166,16 @@
             </div>
             <span class="wh10"></span>
             <div class="select">
-              <p><a href="">批阅情况</a></p>
+              <p><a href="javascript:void(0);">批阅情况</a></p>
               <div class="ex">
                 <div class="list">
-                  <p><a href="">已批阅</a></p>
-                  <p><a href="">未批阅</a></p>
+                  <p><a href="javascript:void(0);" name="status" attr-id="0">未批阅</a></p>
+                  <p><a href="javascript:void(0);" name="status" attr-id="1">已批阅</a></p>
                 </div>
               </div>
             </div>
             <span class="wh10"></span>
-            <a href="" class="bt">查询</a>
+            <a href="javascript:void(0);" class="bt">查询</a>
           </div>
           <div class="ht30"></div>
           <div class="ui-addone">
@@ -193,7 +194,7 @@
                   &nbsp;
                   <a href="">导出</a>
                   &nbsp;
-                  <a href="">删除</a>
+                  <a href="javascript:void(0);" id="deleteAll">删除</a>
                 </p>
               </div>
             </div>
@@ -211,7 +212,7 @@
                     <td><b>操作</b></td>
                   </tr>
                   <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                      <td><a href="" class="cbox"></a></td>
+                      <td><a href="javascript:void(0);" attr-id="<?php echo ($vo["id"]); ?>" class="cbox"></a></td>
                       <td><?php echo ($vo["studentno"]); ?></td>
                       <td><?php echo ($vo["name"]); ?></td>
                       <td><?php echo ($vo["classname"]); ?></td>
@@ -230,16 +231,7 @@
           </div>
           <div class="ht35"></div>
           <div class="ui-paging">
-            <span>共15页，共143条记录</span>
-            &nbsp;
-            <ul>
-              <li><a href=""><</a></li>
-              <li><a href="" class="on">1</a></li>
-              <li><a href="">2</a></li>
-              <li><a href="">3</a></li>
-              <li><a href="">4</a></li>
-              <li><a href="">></a></li>
-            </ul>
+           <?php echo ($page); ?>
             <div class="pull-left">
               <a href="" class="cbox"><i></i>全选</a>
             </div>
@@ -261,62 +253,100 @@
   
 </style>
 <script>
-  var SCOPE = {
-    'jump_url' : '/index.php?m=student&c=report&a=index',
-    'set_status_url':'/index.php?m=student&c=report&a=del',
-    'edit_url':'/index.php?m=student&c=report&a=edit',
-      'view_url':'/index.php?m=student&c=report&a=view'
-  };
+        var SCOPE = {
+            'jump_url': '/index.php?m=student&c=report&a=index',
+            'set_status_url': '/index.php?m=student&c=report&a=del',
+            'edit_url': '/index.php?m=student&c=report&a=edit',
+            'view_url': '/index.php?m=student&c=report&a=view'
+        };
 
-  $('.yfycms-table #yfycms-delete').on('click',function(){
-    var id = $(this).attr('attr-id');
-    var message=$(this).attr('attr-message');
-    var url = SCOPE.set_status_url;
-    data={};
-    data['id'] = id;
+        //查询
+        $('.bt').click(function() {
+            var status = '';
+            $("a[name^='status']").each(function(i) {
+                if($(this).attr('class') == 'on') {
+                    status = $(this).attr('attr-id');
+                }
+            });
+            window.location.href="/index.php/Student/report/index/status/"+status;
+        });
 
-    layer.open({
-      type : 0,
-      title : '是否提交？',
-      btn : ['yes','no'],
-      icon :3,
-      closeBtn : 2,
-      content : '是否确认'+message,
-      scorllbar : true,
-      yes: function(){
-        todelete(url,data);
-      },
-    });
-  });
+        //删除全部
+        $('#deleteAll').click(function() {
+            var ids = new Array();
+            $('.cbox').each(function(i){
+                if($(this).attr('class') == 'cbox on') {
+                    if($(this).attr('attr-id')>0)
+                    ids[i] = $(this).attr('attr-id');
+                }
+            });
+            data ={};
+            data =ids;
+            var url = SCOPE.set_status_url;
+            layer.open({
+                type: 0,
+                title: '是否提交？',
+                btn: ['yes', 'no'],
+                icon: 3,
+                closeBtn: 2,
+                content: '是否确认删除',
+                scorllbar: true,
+                yes: function () {
+                    todelete(url, data);
+                },
+            });
+        });
 
-  function todelete(){
-    var url = SCOPE.set_status_url;
-    //ajax的异步操作，交互性好
-    $.post(
-            url,data,function(s){
-              if(s.status == 1){
-                return dialog.success('删除成功','');
-              }else{
-                return dialog.error('删除失败');
-              }
-            },"JSON");
-  }
+        //删除单个
+        $('.yfycms-table #yfycms-delete').on('click', function () {
+            var id = $(this).attr('attr-id');
+            var message = $(this).attr('attr-message');
+            var url = SCOPE.set_status_url;
+            data = {};
+            data['id'] = id;
 
-  /**
-   * 编辑模型
-   */
-  $('.yfycms-table #yfycms-edit').on('click',function(){
-    var id = $(this).attr('attr-id');
-    var url = SCOPE.edit_url+'&id='+id;
-    window.location.href=url;
-  });
+            layer.open({
+                type: 0,
+                title: '是否提交？',
+                btn: ['yes', 'no'],
+                icon: 3,
+                closeBtn: 2,
+                content: '是否确认' + message,
+                scorllbar: true,
+                yes: function () {
+                    todelete(url, data);
+                },
+            });
+        });
 
-  /**
-   * 查看模型
-   */
-  $('.yfycms-table #yfycms-view').on('click',function(){
-    var id = $(this).attr('attr-id');
-    var url = SCOPE.view_url+'&id='+id;
-    window.location.href=url;
-  });
+        function todelete() {
+            var url = SCOPE.set_status_url;
+            //ajax的异步操作，交互性好
+            $.post(
+                    url,{id:data}, function (s) {
+                        if (s.status == 1) {
+                            return dialog.success('删除成功', '');
+                        } else {
+                            return dialog.error('删除失败');
+                        }
+                    }, "JSON");
+        }
+
+        /**
+         * 编辑模型
+         */
+        $('.yfycms-table #yfycms-edit').on('click', function () {
+            var id = $(this).attr('attr-id');
+            var url = SCOPE.edit_url + '&id=' + id;
+            window.location.href = url;
+        });
+
+        /**
+         * 查看模型
+         */
+        $('.yfycms-table #yfycms-view').on('click', function () {
+            var id = $(this).attr('attr-id');
+            var url = SCOPE.view_url + '&id=' + id;
+            window.location.href = url;
+        });
 </script>

@@ -11,6 +11,7 @@ class ReportController extends CommonController {
        if($status == 0 || $status == 1) {
            $data['status'] = $status;
        }
+       $data['stu_del'] = 1;
        import('ORG.Util.Page');
        // 每页显示记录数
        $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
@@ -20,7 +21,7 @@ class ReportController extends CommonController {
        $show = $page->show();
        $currentPage = I(C('VAR_PAGE'),1);
        $corporation = M('Corporation')->where('id='.$userId['corporation_id'])->find();
-       $list = D('ReportView')->where($data)->page($currentPage.','.$listRows)->select();
+       $list = D('ReportView')->where($data)->order('myReport.pubtime desc')->page($currentPage.','.$listRows)->select();
        $this->assign('page',$show);
        $this->assign('corporation',$corporation['name']);
        $this->assign('data',$list);
@@ -44,8 +45,16 @@ class ReportController extends CommonController {
             if($_POST['id']) {
                 return $this->save($_POST);
             }
-            $userId = $_SESSION['adminUser']['studentno'];
-            $_POST['student_id'] = $userId;
+            $userId = $_SESSION['adminUser'];
+            $conidition = [
+                'student_id'=>$userId['studentno'],
+                'status'=>1
+            ];
+            $practice = M('Practice')->where($conidition)->find();
+            if(!$practice) {
+                return show(0,'实习未申请或者未安排!');
+            }
+            $_POST['student_id'] = $userId['studentno'];
             $_POST['pubtime'] = date('Y-m-d :H:i:s',time());
             
             //新增

@@ -164,7 +164,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -182,26 +182,28 @@
         </div>
     </div>
 </nav>
+<!-------------------------------------- 头部结束 -------------------------------------->
+<!-------------------------------------- 内容开始 -------------------------------------->
 <main>
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
                 <div class="user">
-                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
+                    <p><img src="/Public/Teacher/img/avatar1.jpg" alt="">
+                        <a href=''><?php echo getLoginUsername();?></a>
                         <i></i>
                     </p>
                     <div class="ex">
                         <p><a href="">个人信息</a></p>
                         <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
+                        <p><a href="/index.php/Teacher/login/logout">退出</a></p>
                     </div>
                 </div>
             </div>
             <div class="tabs">
                 <ul>
-                    <li><a href="<?php echo U('Contact/index');?>">学生群</a></li>
-                    <li><a href="<?php echo U('Contact/teacher');?>" class="on">老师群</a></li>
+                    <li><a href="/index.php/Teacher/Contact/index">学生群</a></li>
+                    <li><a href="/index.php/Teacher/Contact/teacher" class="on">老师群</a></li>
                 </ul>
             </div>
         </div>
@@ -215,35 +217,14 @@
                     <p><a href="">院系</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a href="">计算机学院</a></p>
-                            <p><a href="">水利学院</a></p>
+                            <?php if(is_array($department)): $i = 0; $__LIST__ = $department;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><p><a href="javascript:void(0);" name="department" attr-id="<?php echo ($vo["id"]); ?>"><?php echo ($vo["dname"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>
                 <span class="wh10"></span>
-                <div class="select">
-                    <p><a href="">专业</a></p>
-                    <div class="ex">
-                        <div class="list">
-                            <p><a href="">机械设计</a></p>
-                            <p><a href="">机械自动化</a></p>
-                        </div>
-                    </div>
-                </div>
+                <input type="text" class="form-control text" id="keywords" placeholder="请输入姓名">
                 <span class="wh10"></span>
-                <div class="select">
-                    <p><a href="">班级</a></p>
-                    <div class="ex">
-                        <div class="list">
-                            <p><a href="">机械设计002</a></p>
-                            <p><a href="">机械设计003</a></p>
-                        </div>
-                    </div>
-                </div>
-                <span class="wh10"></span>
-                <input type="text" class="form-control text" placeholder="请输入姓名">
-                <span class="wh10"></span>
-                <a href="" class="bt">查询</a>
+                <a href="javascript:void(0);" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
@@ -257,85 +238,20 @@
                             <td><b>所在部门</b></td>
                             <td><b>职位</b></td>
                         </tr>
-                        <tr>
-                            <td>董嘉耀</td>
-                            <td>20161056</td>
-                            <td>15850684698</td>
-                            <td>所在部门1</td>
-                            <td>职位1</td>
-                        </tr>
-                        <tr>
-                            <td>郭德纲</td>
-                            <td>20161056</td>
-                            <td>15850684698</td>
-                            <td>所在部门1</td>
-                            <td>职位1</td>
-                        </tr>
-                        <tr>
-                            <td>于谦</td>
-                            <td>20161056</td>
-                            <td>15850684698</td>
-                            <td>所在部门1</td>
-                            <td>职位1</td>
-                        </tr>
-                        <tr>
-                            <td>董嘉耀</td>
-                            <td>20161056</td>
-                            <td>15850684698</td>
-                            <td>所在部门1</td>
-                            <td>职位1</td>
-                        </tr>
-                        <tr>
-                            <td>郭德纲</td>
-                            <td>20161056</td>
-                            <td>15850684698</td>
-                            <td>所在部门1</td>
-                            <td>职位1</td>
-                        </tr>
-                        <tr>
-                            <td>于谦</td>
-                            <td>20161056</td>
-                            <td>15850684698</td>
-                            <td>所在部门1</td>
-                            <td>职位1</td>
-                        </tr>
-                        <tr>
-                            <td>董嘉耀</td>
-                            <td>20161056</td>
-                            <td>15850684698</td>
-                            <td>所在部门1</td>
-                            <td>职位1</td>
-                        </tr>
-                        <tr>
-                            <td>郭德纲</td>
-                            <td>20161056</td>
-                            <td>15850684698</td>
-                            <td>所在部门1</td>
-                            <td>职位1</td>
-                        </tr>
-                        <tr>
-                            <td>于谦</td>
-                            <td>20161056</td>
-                            <td>15850684698</td>
-                            <td>所在部门1</td>
-                            <td>职位1</td>
-                        </tr>
+                        <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                            <td><?php echo ($vo["name"]); ?></td>
+                            <td><?php echo ($vo["teacherno"]); ?></td>
+                            <td><?php echo ($vo["phone"]); ?></td>
+                            <td><?php echo ($vo["dname"]); ?></td>
+                            <td><?php echo ($vo["identity"]); ?></td>
+                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         </tbody>
                     </table>
                 </div>
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                <span>共15页，共143条记录</span>
-                &nbsp;
-                <ul>
-                    <li><a href=""><</a></li>
-                    <li><a href="" class="on">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">></a></li>
-                </ul>
+                <?php echo ($page); ?>
             </div>
         </div>
     </div>
@@ -347,6 +263,24 @@
 
     </div>
 </footer>
+<!-------------------------------------- 尾部开始 -------------------------------------->
+</body>
+</html>
+<style>
+
+</style>
+<script>
+        var _department = 0;
+        $('.bt').click(function() {
+           $('a[name^=department]').each(function(i){
+               if($(this).attr('class')== 'on')
+                 _department = $(this).attr('attr-id');
+           }) ;
+            window.location.href = '/index.php/teacher/contact/teacher/department/'+_department+'/keywords/'+$('#keywords').val();
+
+        });
+</script>
+
 </body>
 </html>
 <script>

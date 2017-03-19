@@ -4,17 +4,7 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="__PUBLIC__/teacher/img/avatar1.jpg" alt="">
-                        <a href="">董嘉耀</a>
-                        <i></i>
-                    </p>
-                    <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="">退出</a></p>
-                    </div>
-                </div>
+                <include file="Public/user"/>
             </div>
             <div class="tabs">
                 <ul>
@@ -28,6 +18,7 @@
     </div>
     <div class="ui-path">
         <p>
+            <span class="pull-right"><a href="{:U('Practice/index')}">返回</a></span>
             <a href="" class="home"></a>
             <a href="{:U('Practice/index')}">学生实习安排</a>
             >
@@ -42,30 +33,25 @@
                     <input type="hidden" name="stuno" value="{$Think.get.id}">
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <label for="" class="control-label">所在地址</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="select" style="width: 210px;">
-                                <p id="address"><a href="">请选择企业所在地址</a></p>
-                                <div class="ex">
-                                    <volist name="addr" id="v">
-                                        <p><a href="javascript:void(0)">{$v.city}</a></p>
-                                    </volist>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
                             <label for="" class="control-label">企业名称</label>
                         </div>
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
-                                <p id="name"><a href="">请选择企业名称</a></p>
+                                <p ><a href="#">请选择企业名称</a></p>
                                 <div class="ex">
-                                    <volist name="name" id="v">
-                                        <p><a href="javascript:void(0)">{$v.name}</a></p>
+                                    <div class="list">
+                                    <volist name="corporation" id="v">
+                                        <p><a href="javascript:void(0);" onclick="selectCor({$v.id});" name="corname" attr-id="{$v.id}">{$v.name}</a></p>
                                     </volist>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">所在地址</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="address" id="address" style="width: 210px;" >
                         </div>
                     </div>
                     <div class="form-group">
@@ -73,20 +59,13 @@
                             <label for="" class="control-label">实习岗位</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="position" style="width: 210px;" placeholder="请输入实习岗位">
+                            <input type="text" class="form-control" name="position" id="position" style="width: 210px;" placeholder="请输入实习岗位">
                         </div>
                         <div class="col-sm-2">
-                            <label for="" class="control-label">指导老师</label>
+                            <label for="" class="control-label">企业指导老师</label>
                         </div>
                         <div class="col-sm-4">
-                            <div class="select" style="width: 210px;">
-                                <p id="guide"><a href="">请选择企业指导老师</a></p>
-                                <div class="ex">
-                                    <volist name="guide" id="v">
-                                        <p><a href="javascript:void(0)">{$v.guide}</a></p>
-                                    </volist>
-                                </div>
-                            </div>
+                            <input type="text" class="form-control" name="guide" id="guide" style="width: 210px;" >
                         </div>
                     </div>
                     <div class="form-group">
@@ -94,7 +73,7 @@
                             <label for="" class="control-label">联系电话</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="telephone" style="width: 210px;" >
+                            <input type="text" class="form-control" name="telephone" id="telephone" style="width: 210px;" >
                         </div>
                         <div class="col-sm-2">
                             <label for="" class="control-label">开始时间</label>
@@ -102,7 +81,7 @@
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
                                 <!--<p><a href="">请选择实习开始时间</a></p>-->
-                                <p><input type="text" name="starttime" class=" form-control timer" value="" ></p>
+                                <p><input type="text" class="form-control dtp" name="starttime" id="starttime" style="width: 210px;" placeholder="例XXXX-XX-XX" value=""></p>
                             </div>
                         </div>
                     </div>
@@ -113,21 +92,14 @@
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
                                 <!--<p><a href="">请选择实习开始时间</a></p>-->
-                                <p><input type="text" name="endtime" class="form-control timer" value="" ></p>
+                                <p><input type="text" class="form-control dtp" name="endtime" id="endtime" style="width: 210px;" placeholder="例XXXX-XX-XX"></p>
                             </div>
                         </div>
                         <div class="col-sm-2">
                             <label for="" class="control-label">企业性质</label>
                         </div>
                         <div class="col-sm-4">
-                            <div class="select" style="width: 210px;">
-                                <p id="type"><a href="">请选择企业性质</a></p>
-                                <div class="ex">
-                                    <volist name="type" id="v">
-                                        <p><a href="">{$v.type}</a></p>
-                                    </volist>
-                                </div>
-                            </div>
+                            <p><input type="text" name="type" id="type" class="form-control" value="" ></p>
                         </div>
                     </div>
                     <div class="ht15"></div>
@@ -140,33 +112,67 @@
                             </p>
                         </div>
                     </div>
+                    <input type="hidden" name="student" id="studentids" value="{$studentids}" />
+                    <input type="hidden" name="corid" id="corid" value="" />
+                    <input type="hidden" name="teacher" id="teacher" value="" />
+                    <input type="hidden" name="action" value="doarrangement" />
                 </form>
             </div>
         </div>
     </div>
 </main>
-<script src="__PUBLIC__/teacher/js/foundation-datepicker.min.js"></script>
-<script src="__PUBLIC__/teacher/js/foundation-datepicker.zh-CN.js"></script>
-<script src="__PUBLIC__/teacher/js/timer.js"></script><!-- 日期插件所用 -->
+<link rel="stylesheet" type="text/css" href="/Public/Student/css/bootstrap-datetimepicker.min.css">
+<script type="text/javascript" src="/Public/Student/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="/Public/Student/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+
 <script>
+$(function(){
+    $('.dtp').datetimepicker({
+        language: 'zh-CN',
+        minView: "month",//设置只显示到月份
+        format : "yyyy-mm-dd",//日期格式
+        autoclose:true,//选中关闭
+        todayBtn: true//今日按钮
+    });
+});
     $(function(){
-       $('button[type=button]').click(function(){
-         var $address = $('#address').text();
-         var $guide = $('#guide').text();
-         var $name  =$('#name').text();
-         var $type = $('#type').text();
-         var $data = $('#arrangement').serialize();
-         var $url = "{:U('Practice'/arrangement)}";
-           $.ajax({
+        $('button[type=button]').click(function(){
+            var cor_id = $('#corid').val();
+            var studentids = $('#studentids').val();
+            var starttime  =$('#starttime').val();
+            var endtime  =$('#endtime').val();
+            var address  =$('#address').val();
+            var guide  =$('#guide').val();
+            var position  =$('#position').val();
+            var $url = "{:U('Practice'/arrangement)}";
+            var reg = /^(\d{4})-(\d{2})-(\d{2})$/;
+            if(cor_id==""){
+                layer.msg("请选择企业",{icon:5});
+                return false;
+            }
+            if (starttime.length>0&&(!reg.test(starttime)||RegExp.$2>=12||RegExp.$3>31)){
+                layer.msg("请输入正确的开始时间格式",{icon:5});
+                return false;
+            }
+            if (endtime.length>0&&(!reg.test(endtime)||RegExp.$2>=12||RegExp.$3>31)){
+                layer.msg("请输入正确的结束时间格式",{icon:5});
+                return false;
+            }
+            $.ajax({
                 url:$url,
                 type:"post",
                 dataType:'json',
                 data:{
-                    'address': $address,
-                    'name':$name,
-                    'guide': $guide,
-                    'type' : $type,
-                    'data' : $data,
+                    'cor_id': cor_id,
+                    'guide': guide,
+                    'studentids': studentids,
+                    'starttime': starttime,
+                    'endtime': endtime,
+                    'position': position,
+                    'address' : address,
+                    'guide' : guide,
+                    'action': 'doarrangement',
+
                 },
                success:function(msg){
                     if(msg.status==0){
@@ -180,4 +186,29 @@
            });
        });
     });
+    function selectCor(v){
+        $('#corid').val(v);
+        for(var i=1; i< corporation.length; i++){
+            if(corporation[i]['id']==v){
+                $('#address').val(corporation[i]['address'])
+                $('#type').val(corporation[i]['type'])
+                $('#contact').val(corporation[i]['contact'])
+                $('#telephone').val(corporation[i]['telephone'])
+            }
+        }
+    }
+    function selectTea(v){
+        $('#teacher').val(v);
+    }
+    var corporation = new Array();
+    var i=0;
+    <volist name="corporation" id="v">
+        corporation[{$i}] = new Array();
+        corporation[{$i}]['id'] = {$v.id};
+        corporation[{$i}]['name'] = '{$v.name}';
+        corporation[{$i}]['type'] = '{$v.type}';
+        corporation[{$i}]['address'] = '{$v.address}';
+        corporation[{$i}]['contact'] = '{$v.contact}';
+        corporation[{$i}]['telephone'] = '{$v.telephone}';
+    </volist>
 </script>

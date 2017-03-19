@@ -2,7 +2,7 @@
 namespace Student\Controller;
 use Think\Controller;
 
-class ImageController extends Controller {
+class ImageController extends CommonController {
 
     public function ajaxUploadImage() {
         $upload = D('UploadImage');

@@ -164,7 +164,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -190,13 +190,13 @@
             <div class="pull-right">
     <div class="user">
         <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <a href=""><?php echo ($_SESSION['adminUser']['name']); ?></a>
             <i></i>
         </p>
         <div class="ex">
             <p><a href="">个人信息</a></p>
             <p><a href="javascript:void(0)">修改密码</a></p>
-            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+            <p><a href="/index.php/Home/Login/logOut">退出</a></p>
         </div>
     </div>
 </div>
@@ -234,14 +234,7 @@
                             <label for="" class="control-label"><i></i>企业地址</label>
                         </div>
                         <div class="col-sm-4">
-                            <div class="select" style="width: 210px;">
-                                <p id="city"><a href="">请选择企业所在地址</a></p>
-                                <div class="ex">
-                                    <p><a href="javascript:void(0)">苏州</a></p>
-                                    <p><a href="javascript:void(0)">南京</a></p>
-                                </div>
-                            </div>
-                            <input type="hidden" name="city">
+                            <input type="text" class="form-control" name="city" id="city" style="width: 210px;" value="<?php echo ($info["city"]); ?>">
                         </div>
                     </div>
                     <div class="form-group">
@@ -292,7 +285,7 @@
                             <label for="" class="control-label">移动电话</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="mobile" maxlength='11' style="width: 210px;" placeholder="请输入手机号码" >
+                            <input type="text" class="form-control" name="mobile" id="mobile" maxlength='11' style="width: 210px;" placeholder="请输入手机号码" >
                         </div>
                     </div>
                     <div class="form-group">
@@ -306,7 +299,7 @@
                             <label for="" class="control-label">企业邮编</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="zipcode" style="width: 210px; color: #78a9e6;" placeholder="请输入企业邮编" value="225653">
+                            <input type="text" class="form-control" name="zipcode" style="width: 210px; color: #78a9e6;" placeholder="请输入企业邮编" value="">
                         </div>
                     </div>
                     <div class="form-group">
@@ -367,10 +360,16 @@
 <script>
     $(function(){
         $('button[type=button]').click(function(){
-            $('input[name=city]').val($('#city').text());
             $('input[name=type]').val($('#type').text());
             var $data = $('#corporationForm').serialize();
             var $url = "<?php echo U('Practice/addCor');?>";
+            var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/; 
+            var mobile = $("#mobile").val();
+            if(mobile.length>0&&!myreg.test(mobile)) 
+            { 
+                layer.msg('请输入有效的手机号码！',{icon:5});
+                return false; 
+            }
             $.ajax({
                 'type':"post",
                 'url':$url,

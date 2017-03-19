@@ -22,6 +22,7 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="/Public/Student/js/H-ui-Admin.js"></script>
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -104,15 +105,15 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/Student/img/avatar1.jpg" alt="">
-                        <a href=''><?php echo getLoginUsername();?></a>
+                                <div class="user">
+                    <p><img src="img/avatar1.jpg" alt="">
+                        <a href=""><?php echo getLoginUsername() ?></a>
                         <i></i>
                     </p>
                     <div class="ex">
                         <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="/index.php/student/login/logout">退出</a></p>
+                        <p><a href="/index.php/Student/Common/password">修改密码</a></p>
+                        <p><a href="/index.php/Home/Login/logOut">退出</a></p>
                     </div>
                 </div>
             </div>
@@ -129,39 +130,10 @@
         <div class="container">
             <div class="ht10"></div>
             <div class="ui-filter">
-                <div class="select">
-                    <p><a href="">院系</a></p>
-                    <div class="ex">
-                        <div class="list">
-                            <p><a href="">计算机学院</a></p>
-                            <p><a href="">水利学院</a></p>
-                        </div>
-                    </div>
-                </div>
                 <span class="wh10"></span>
-                <div class="select">
-                    <p><a href="">专业</a></p>
-                    <div class="ex">
-                        <div class="list">
-                            <p><a href="">机械设计</a></p>
-                            <p><a href="">机械自动化</a></p>
-                        </div>
-                    </div>
-                </div>
+                <input type="text" class="form-control text"  id="keywords" placeholder="请输入姓名或者学号">
                 <span class="wh10"></span>
-                <div class="select">
-                    <p><a href="">班级</a></p>
-                    <div class="ex">
-                        <div class="list">
-                            <p><a href="">机械设计002</a></p>
-                            <p><a href="">机械设计003</a></p>
-                        </div>
-                    </div>
-                </div>
-                <span class="wh10"></span>
-                <input type="text" class="form-control text" placeholder="请输入姓名">
-                <span class="wh10"></span>
-                <a href="" class="bt">查询</a>
+                <a href="javascript:void(0);" class="bt">查询</a>
             </div>
             <div class="ht30"></div>
             <div class="ui-table">
@@ -190,16 +162,7 @@
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                <span>共15页，共143条记录</span>
-                &nbsp;
-                <ul>
-                    <li><a href=""><</a></li>
-                    <li><a href="" class="on">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">></a></li>
-                </ul>
+                <?php echo ($page); ?>
             </div>
         </div>
     </div>
@@ -218,7 +181,7 @@
 
 </style>
 <script>
-    $(function(){
-
-    });
+        $('.bt').click(function() {
+           window.location.href='/index.php/student/contact/student/keywords/'+$('#keywords').val();
+        });
 </script>

@@ -22,6 +22,7 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="/Public/Student/js/H-ui-Admin.js"></script>
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -104,15 +105,15 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="/Public/Student/img/avatar1.jpg" alt="">
-                        <a href=''><?php echo getLoginUsername();?></a>
+                                <div class="user">
+                    <p><img src="img/avatar1.jpg" alt="">
+                        <a href=""><?php echo getLoginUsername() ?></a>
                         <i></i>
                     </p>
                     <div class="ex">
                         <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="/index.php/student/login/logout">退出</a></p>
+                        <p><a href="/index.php/Student/Common/password">修改密码</a></p>
+                        <p><a href="/index.php/Home/Login/logOut">退出</a></p>
                     </div>
                 </div>
             </div>
@@ -129,7 +130,7 @@
         </div>
     </div>
     <div class="ui-path">
-        <p><span class="pull-right"><a href="/index.php/student/apply/index">返回</a></span>
+        <p><span class="pull-right"><a href="/index.php/student/apply/index" style="font-size: 15px">返回</a></span>
             <a href="" class="home"></a>
             <a href="/index.php/student/apply/index" style="font-size: 15px">实习申请</a>
             &gt;
@@ -180,7 +181,7 @@
                             <td align="" colspan="2">联系电话：<?php echo ($corporation['mobile']); ?></td>
                         </tr>
                         <tr>
-                            <td align="left">详细地址：<?php echo ($corporation['detailaddress']); ?></td>
+                            <td align="left">详细地址：<?php echo ($practice['detailaddress']); ?></td>
                             <td align="">开始日期：<?php echo ($practice['starttime']); ?></td>
                             <td align="" colspan="2">结束日期：<?php echo ($practice['endtime']); ?></td>
                         </tr>
@@ -188,7 +189,7 @@
                 </div>
             </div>
 
-            <div class="ht90"></div>
+            <div class="ht30"></div>
             <div class="ui-state">
                 <p class="text-center" style="font-size: 20px;">
                     <b>当前状态：</b><?php echo (getApplyStatus($practice['status'])); ?>

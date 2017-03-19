@@ -164,7 +164,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -216,7 +216,7 @@
                     <div class="tool">
                         <p>
                             <a href="/teacher.php?c=notice&a=add">新增</a>
-                            <a href="#">刪除</a>
+                            <a href="javascript:void(0)" id="deleteall">删除</a>
                         </p>
                     </div>
                 </div>
@@ -233,11 +233,11 @@
                             <td><b>操作</b></td>
                         </tr>
                         <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                <td><a href="" class="cbox"></a></td>
+                                <td><a href="" class="cbox" attr-id="<?php echo ($vo["nid"]); ?>"></a></td>
                                 <td><?php echo ($vo["content"]); ?></td>
                                 <td><?php echo ($vo["teacher_name"]); ?></td>
                                 <td><?php echo ($vo["name"]); ?></td>
-                                <td><?php echo ($vo["pubtime"]); ?></td>
+                                <td><?php echo (substr($vo["pubtime"],0,10)); ?></td>
                                 <td><?php echo ($vo["title"]); ?></td>
                                 <td>
                                     <a href="javascript:void();">查看</a>
@@ -250,18 +250,9 @@
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                <span>共15页，共143条记录</span>
-                &nbsp;
-                <ul>
-                    <li><a href=""><</a></li>
-                    <li><a href="" class="on">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">></a></li>
-                </ul>
+                <?php echo ($page); ?> 
                 <div class="pull-left">
-                    <a href="" class="cbox"><i></i>全选</a>
+                    <a href="" class="cbox" attr-id="0"><i></i>全选</a>
                 </div>
             </div>
         </div>
@@ -281,6 +272,31 @@
 
 </style>
 <script>
+    $('#deleteall').click(function(){
+        var ids = new Array();
+        $('.cbox').each(function(i){
+            if($(this).attr('class')=='cbox on'){
+                if($(this).attr('attr-id')>0)
+                ids[ids.length]=$(this).attr('attr-id');
+            }
+        });
+        if(ids.length>0)
+            layer.confirm('您真的要删除选中记录吗?', {icon: 3, title:'删除记录'}, function(index){
+                var $url = "<?php echo U('Notice/del');?>";
+                $.post($url,{id:ids},function(msg){
+                    if(msg.status==1){
+                        layer.msg(msg.message,{icon:6},function(){
+                            window.location.href="/teacher.php/Notice/index";
+                        });
+                    }else{
+                        layer.msg(msg.message,{icon:5},function(){
+                            window.location.href="/teacher.php/Notice/index";
+                        });
+                    }
+                },'JSON');
+            })
+    });
+
     var SCOPE = {
         'jump_url' : '/index.php?m=teacher&c=notice&a=index',
         'set_status_url':'/index.php?m=teacher&c=notice&a=del',
@@ -311,13 +327,13 @@
         var url = SCOPE.set_status_url;
         //ajax的异步操作，交互性好
         $.post(
-                url,data,function(s){
-                    if(s.status == 1){
-                        return dialog.success('删除成功','');
-                    }else{
-                        return dialog.error('删除失败');
-                    }
-                },"JSON");
+            url,data,function(s){
+                if(s.status == 1){
+                    return dialog.success('删除成功','');
+                }else{
+                    return dialog.error('删除失败');
+                }
+            },"JSON");
     }
 </script>
 

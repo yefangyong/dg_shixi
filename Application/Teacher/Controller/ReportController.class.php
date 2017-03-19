@@ -13,13 +13,30 @@
             $res = D('ReportView')->getResult($data);
             exit(json_encode($res));
          }else{
+            $teacher = $_SESSION['adminUser'];
             $department = I('get.department',0);
-            if($department)
-                $map[] = 'classno IN(select id from dg_class where dep_id='.$department.')';
             $profession = I('get.profession',0);
             $class = I('get.class',0);
+            $teacher = $_SESSION['adminUser'];
+            switch($teacher['type']){
+                case 0:
+                    $classes = D('class')->where("master_no='".$teacher['teacherno']."'")->select();
+                    $class = $teacher['class_id'];
+                    break;
+                case 1:
+                    $departments = D('department')->where("id='".$teacher['department_id']."'")->select();
+                    $classes = D('class')->where("dep_id='".$teacher['department_id']."'")->select();
+                    $department = $teacher['department_id'];
+                    break;
+                case 2:
+                    $departments = D('department')->select();
+                    $classes = D('class')->select();
+                    break;
+            }
+            if($department)
+                $map[] = 'Student.classno IN(select id from dg_class where dep_id='.$department.')';
             if($class)
-                $map[] = 'classno = '.$class;
+                $map[] = 'Student.classno = '.$class;
             $corporation = I('get.corporation',0);
             if($corporation)
                 $map[] = 'Practice.corporation_id = '.$corporation;
@@ -30,36 +47,18 @@
             if($keywords)
                 $map[] = '(studentno like "%'.$keywords.'%" or Student.name like "%'.$keywords.'%")';
 
-            $teacher = $_SESSION['adminUser'];
+           
 
-            if($teacher['type'] == 1){
-             //教师
-             if($teacher['identity'] == '系主任'){
-                 //默认一个系主任管一个学院
-                $map['Profession.id'] = $teacher['profession'];
-                $map['Report.type'] = 0;
-                $count = D('ReportView')->where($map)->count();
-                $page = new \Think\Page($count,$listRows);
-                $show = $page->show();
-                $currentPage = I(C('VAR_PAGE'),1);
-                $reportList = D('ReportView')->where($map)->page($currentPage.','.$listRows)->select();
-             }elseif($teacher['identity'] == '班主任'){
-                $map[] = "Class.master_no = ".$teacher['teacherno'];
-                $map['Report.type'] = 0;
-                $count = D('ReportView')->where($map)->count();
-                $page = new \Think\Page($count,$listRows);
-                $show = $page->show();
-                $currentPage = I(C('VAR_PAGE'),1);
-                $reportList = D('ReportView')->where($map)->page($currentPage.','.$listRows)->select();
-             }
-            }
-
-            $class = D('class')->select();
-            $department = D('department')->select();
+            $map['Report.type'] = 0;
+            $count = D('ReportView')->where($map)->count();
+            $page = new \Think\Page($count,$listRows);
+            $show = $page->show();
+            $currentPage = I(C('VAR_PAGE'),1);
+            $reportList = D('ReportView')->where($map)->page($currentPage.','.$listRows)->select();  
             $profession = D('profession')->select();
             $corporation = D('corporation')->select();
-            $this->assign('department',$department);
-            $this->assign('class',$class);
+            $this->assign('department',$departments);
+            $this->assign('class',$classes);
             $this->assign('profession',$profession);
             $this->assign('corporation',$corporation);
             $this->assign('list',$reportList);
@@ -82,11 +81,27 @@
             $res = D('ReportView')->getResult($data);
             exit(json_encode($res));
          }else{
+            $teacher = $_SESSION['adminUser'];
             $department = I('get.department',0);
+            $class = I('get.class',0);
+            switch($teacher['type']){
+                case 0:
+                    $classes = D('class')->where("master_no='".$teacher['teacherno']."'")->select();
+                    $class = $teacher['class_id'];
+                    break;
+                case 1:
+                    $departments = D('department')->where("id='".$teacher['department_id']."'")->select();
+                    $classes = D('class')->where("dep_id='".$teacher['department_id']."'")->select();
+                    $department = $teacher['department_id'];
+                    break;
+                case 2:
+                    $departments = D('department')->select();
+                    $classes = D('class')->select();
+                    break;
+            }
             if($department)
                 $map[] = 'classno IN(select id from dg_class where dep_id='.$department.')';
             $profession = I('get.profession',0);
-            $class = I('get.class',0);
             if($class)
                 $map[] = 'classno = '.$class;
             $corporation = I('get.corporation',0);
@@ -124,12 +139,10 @@
              }
             }
 
-            $class = D('class')->select();
-            $department = D('department')->select();
             $profession = D('profession')->select();
             $corporation = D('corporation')->select();
-            $this->assign('department',$department);
-            $this->assign('class',$class);
+            $this->assign('department',$departments);
+            $this->assign('class',$classes);
             $this->assign('profession',$profession);
             $this->assign('corporation',$corporation);
             $this->assign('list',$reportList);
@@ -238,6 +251,8 @@
          }else{
              $rid = I('get.rid',0,'intval');
              $detail = D('ReportView')->getReportById($rid);
+             $pics = explode(';', $detail['pic']);
+             $this->assign('pics',$pics);
              $this->assign('report',$detail);
              return $this->display();
          }
@@ -246,6 +261,8 @@
      public function audited(){
          $rid = I('get.rid',0,'intval');
          $detail = D('ReportView')->getReportById($rid);
+         $pics = explode(';', $detail['pic']);
+         $this->assign('pics',$pics);
          $this->assign('report',$detail);
          return $this->display();
      }

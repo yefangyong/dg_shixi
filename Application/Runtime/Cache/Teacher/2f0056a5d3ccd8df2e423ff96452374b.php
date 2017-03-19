@@ -167,7 +167,7 @@
                     <div class="i on">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                学生管理
+                                用户管理
                             </p>
                         </a>
                     </div>
@@ -191,25 +191,27 @@
             <div class="pull-right">
     <div class="user">
         <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
-            <a href=""><?php echo ($_SESSION['adminUser']['username']); ?></a>
+            <a href=""><?php echo ($_SESSION['adminUser']['name']); ?></a>
             <i></i>
         </p>
         <div class="ex">
             <p><a href="">个人信息</a></p>
             <p><a href="javascript:void(0)">修改密码</a></p>
-            <p><a href="<?php echo U('Login/loginOut');?>">退出</a></p>
+            <p><a href="/index.php/Home/Login/logOut">退出</a></p>
         </div>
     </div>
 </div>
             <div class="tabs">
                 <ul>
                     <li><a href="<?php echo U('Student/index');?>" class="on">学生管理</a></li>
+                    <li><a href="<?php echo U('Student/teacher');?>" >教师管理</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="ui-path">
         <p>
+            <span class="pull-right"><a href="<?php echo U('Student/index');?>">返回</a></span>
             <a href="" class="home"></a>
             <a href="<?php echo U('Student/index');?>">学生管理</a>
             >
@@ -221,30 +223,31 @@
             <div class="ht10"></div>
             <div class="ui-form style2">
                 <form class="form-horizontal" method="post" id="studentForm">
-                    <input type="hidden" name="id" value="<?php echo ($info["id"]); ?>">
+                    <input type="hidden" name="id" id="id" value="<?php echo ($info["id"]); ?>">
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <label for="" class="control-label">手机</label>
+                            <label for="" class="control-label"><i></i>姓名</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" maxlength="11" name="phone" style="width: 210px;" value="<?php echo ($info["stuphone"]); ?>">
+                            <input type="text" class="form-control" name="name" style="width: 210px;" value="<?php echo ($info["name"]); ?>">
                         </div>
                         <div class="col-sm-2">
-                            <label for="" class="control-label">学号</label>
+                            <label for="" class="control-label"><i></i>学号</label>
                         </div>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" name="studentno" style="width: 210px;" value="<?php echo ($info["studentno"]); ?>">
                         </div>
                     </div>
                     <div class="form-group">
+                        
                         <div class="col-sm-2">
-                            <label for="" class="control-label">姓名</label>
+                            <label for="" class="control-label"><i></i>手机</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="name" style="width: 210px;" value="<?php echo ($info["name"]); ?>">
+                            <input type="text" class="form-control" maxlength="11" id="phone" name="phone" style="width: 210px;" value="<?php echo ($info["stuphone"]); ?>">
                         </div>
                         <div class="col-sm-2">
-                            <label for="" class="control-label">密码</label>
+                            <label for="" class="control-label"><i></i>密码</label>
                         </div>
                         <div class="col-sm-4">
                             <input type="password" class="form-control" name="password" style="width: 210px;" value="<?php echo ($info["password"]); ?>">
@@ -252,7 +255,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <label for="" class="control-label">院系</label>
+                            <label for="" class="control-label"><i></i>院系</label>
                         </div>
                         <div class="col-sm-4">
                             <!--<input type="text" class="form-control" name="dept" value="<?php echo ($info["deptname"]); ?>">-->
@@ -265,7 +268,7 @@
                             </div>
                         </div>
                         <div class="col-sm-2">
-                            <label for="" class="control-label">年级</label>
+                            <label for="" class="control-label"><i></i>年级</label>
                         </div>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" name="grade" value="<?php echo ($info["grade"]); ?>">
@@ -281,7 +284,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <label for="" class="control-label">班级</label>
+                            <label for="" class="control-label"><i></i>班级</label>
                         </div>
                         <div class="col-sm-4">
                             <!--<input type="text"name="class" value="<?php echo ($info["classname"]); ?>">-->
@@ -290,11 +293,11 @@
                                 <div class="ex">
                                     <?php if(is_array($class)): $i = 0; $__LIST__ = $class;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><p><a href="javascript:void(0)" class="class"><?php echo ($v["classname"]); ?></a></p><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </div>
-                                <input type="hidden" name="class">
+                                <input type="hidden" name="class" value="<?php echo ($info["classno"]); ?>">
                             </div>
                         </div>
                         <div class="col-sm-2">
-                            <label for="" class="control-label">班主任</label>
+                            <label for="" class="control-label"><i></i>班主任</label>
                         </div>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" name="master" value="<?php echo ($info["master"]); ?>" style="width: 210px; color: #000000; background-color: #fff;" readonly>
@@ -313,10 +316,10 @@
                         <div class="col-sm-4">
                             <div class="text">
                                 <p>
-                                    <a href="javascript:void(0)" class="rbox on" attr-gender="1"><i></i>男</a>
+                                    <a href="javascript:void(0)" class="rbox <?php if($info["sex"] == 1): ?>on<?php endif; ?>" attr-gender="1"><i></i>男</a>
                                     <span class="wh50"></span>
-                                    <a href="javascript:void(0)"  class="rbox" attr-gender="0"><i></i>女</a>
-                                    <input type="hidden" name="gender">
+                                    <a href="javascript:void(0)"  class="rbox <?php if($info["sex"] == 0): ?>on<?php endif; ?>" attr-gender="0"><i></i>女</a>
+                                    <input type="hidden" name="sex" value="<?php echo ($info["sex"]); ?>">
                                 </p>
                             </div>
                         </div>
@@ -327,6 +330,26 @@
                         </div>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" name="email" style="width: 210px;" value="<?php echo ($info["email"]); ?>">
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">紧急联系人</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="emegencyconcat" style="width: 210px; color: #000000; background-color: #fff;" id="emegencyconcat" value="<?php echo ($info["emegencyconcat"]); ?>" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">紧急联系人电话</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="emegencyphone" name="emegencyphone" style="width: 210px;" value="<?php echo ($info["emegencyphone"]); ?>" placeholder="">
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="" class="control-label">地址</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="address" name="address" style="width: 210px;" value="<?php echo ($info["address"]); ?>" placeholder="">
                         </div>
                     </div>
                     <div class="ht15"></div>
@@ -365,11 +388,17 @@
 
         $('.rbox').click(function(){
             var $gender = $(this).attr('attr-gender');
-            $('input[name=gender]').val($gender);
+            $('input[name=sex]').val($gender);
         });
 
         $('button[type=button]').click(function(){
 //            var $dept = $('#dept').text();
+            var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/; 
+            if(!myreg.test($("#phone").val())) 
+            { 
+                layer.msg('请输入有效的手机号码！',{icon:5});
+                return false; 
+            } 
             var $class = $('#class').text();
 //            var $grade = $('#grade').text();
             var $url = "<?php echo U('Student/update');?>";
@@ -385,6 +414,7 @@
                 success:function(msg){
                     if(msg.status==0){
                         layer.msg(msg.message,{icon:5});
+                        window.location.href="/teacher.php/Student/update/id/"+$('#id').val();
                     }else{
                         layer.msg(msg.message,{icon:6},function(msg){
 //                            window.location.href="/teacher.php/Student";
