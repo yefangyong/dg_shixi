@@ -72,7 +72,7 @@ function bindToggleOn(){
 }
 function loadAgent(){
   try{
-    var $agent=$('<script type="text/javascript" src="js/agent/agent.js"></script>');
+    var $agent=$('<script type="text/javascript" src="/Public/Student/js/agent/agent.js"></script>');
     $agent.appendTo('body');
 
     console.info('w3cutagent loaded.')

@@ -1,0 +1,26 @@
+[ 2017-03-15T08:03:24+08:00 ] 223.245.93.70 /index.php/student/login/js/agent/agent.js?_=1489536204587
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+ERR: 非法操作:js
+
+[ 2017-03-15T08:08:27+08:00 ] 223.245.93.70 /index.php?m=student&c=report&a=index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-15T08:15:43+08:00 ] 223.245.93.70 /index.php?m=student&c=report&a=index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-15T08:15:53+08:00 ] 223.245.93.70 /index.php?m=student&c=report&a=index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-15T08:15:53+08:00 ] 223.245.93.70 /index.php?m=student&c=report&a=index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-15T08:16:03+08:00 ] 223.245.93.70 /index.php?m=student&c=report&a=index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) LIMIT 1  
+

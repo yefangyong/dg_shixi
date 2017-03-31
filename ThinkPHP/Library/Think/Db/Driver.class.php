@@ -207,6 +207,7 @@ abstract class Driver {
         // 记录开始执行时间
         $this->debug(true);
         $this->PDOStatement =   $this->_linkID->prepare($str);
+       
         if(false === $this->PDOStatement) {
             $this->error();
             return false;

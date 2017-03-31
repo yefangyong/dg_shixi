@@ -1,4 +1,4 @@
-<include file="Notice/nav" />
+<include file="Public/nav" />
 <main>
     <div class="ui-head">
         <div class="container">
@@ -20,6 +20,11 @@
             <div class="ht10"></div>
             <div class="ui-table">
                 <div class="hd">
+                    <div class="ui-paging">
+                        <div class="pull-left">
+                            <a href="" class="cbox" attr-id="0"><i></i>全选</a>
+                        </div>
+                    </div>
                     <div class="tool">
                         <p>
                             <a href="/teacher.php?c=notice&a=add">新增</a>
@@ -35,21 +40,23 @@
                             <td><b>公告标题</b></td>
                             <td><b>发布人</b></td>
                             <td><b>发布对象</b></td>
+                            <td><b>对象类型</b></td>
                             <td><b>发布时间</b></td>
                             <td><b>状态</b></td>
                             <td><b>操作</b></td>
                         </tr>
                         <volist name="data" id="vo">
                             <tr>
-                                <td><a href="" class="cbox" attr-id="{$vo.nid}"></a></td>
-                                <td>{$vo.content}</td>
-                                <td>{$vo.teacher_name}</td>
-                                <td>{$vo.name}</td>
-                                <td>{$vo.pubtime|substr=0,10}</td>
+                                <td><a href="" class="cbox" attr-id="{$vo.id}"></a></td>
                                 <td>{$vo.title}</td>
+                                <td>{$vo.teacher_name}</td>
+                                <td>{$vo.publisher}</td>
+                                <td><if condition="$vo.type eq 1">学生<elseif  condition="$vo.type eq 2" />教师<else />不限</if></td>
+                                <td>{$vo.pubtime|substr=0,10}</td>
+                                <td><if condition="$vo.viewid eq 0">未读<else />已读</if></td>
                                 <td>
-                                    <a href="javascript:void();">查看</a>
-                                    <a href="javascript:void();" attr-id="{$vo.nid}" attr-message="删除" id="yfycms-delete">删除</a>
+                                    <a href="/teacher.php?c=notice&a=cat&id={$vo.id}">查看</a>
+                                    <a href="javascript:void();" attr-id="{$vo.id}" attr-message="删除" id="yfycms-delete">删除</a>
                                 </td>
                             </tr>
                         </volist>
@@ -59,10 +66,7 @@
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                {$page} 
-                <div class="pull-left">
-                    <a href="" class="cbox" attr-id="0"><i></i>全选</a>
-                </div>
+                {$page}
             </div>
         </div>
     </div>

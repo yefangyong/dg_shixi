@@ -2,17 +2,508 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="525fb28f-c3d2-4160-a661-1f5e0291d7cb" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Student/Controller/PersonalController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Student/Model/StudentViewModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Student/View/Base/personal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Student/View/Common/password.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Student/View/Personal/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Student/img/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/08/58c0226bcdfef.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/08/58c0227927400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/08/58c0229f3f2d5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/08/58c027bdaffdf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/08/58c027d8565ee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/08/58c027e28f415.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/08/58c027e8980ba.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/08/58c027fbb8c28.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/09/58c0d13acaf07.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/09/58c17ae8c2c83.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/10/58c25c2ec671b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/10/58c2c94727de9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/10/58c2c94fc130c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/10/58c2c95599661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/10/58c2c95825ac7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/10/58c2cc73928ca.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/11/58c2ce40c70a7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/11/58c2ce63b5f43.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/11/58c2ce8f1417c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/11/58c2ce97dc4a3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/11/58c2cfacf20f2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/11/58c33cf78c9f9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/11/58c33dc2b5243.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/11/58c33de5a67d7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c4b1317111f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c4b1346077f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c4b137c4cfd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c4b13a6de54.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c50fb2545bc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c51182151f3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c51583a666e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c5158a84392.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c515a3ebbd4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c523e09db10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c523e6a0605.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c523ec3bcc4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c523f14a31c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c5257205c33.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c5257763060.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c5257caa115.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c5258168647.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c53bd6bb456.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c544d46d5c8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c544f00599c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c5452948033.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c546fac4463.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c5470718e33.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c54a12474d8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c555b18fcf1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c555b66af2b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c555c143263.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c555c87b0ea.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c555dd251f0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c555e1a21e7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c556f54e9e8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c562eb61279.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/12/58c56432120c3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/13/58c5fe72ae509.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/13/58c67e14e08a4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/13/58c68e7b7cb66.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/14/58c7d522c9554.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/14/58c7d52f14ab8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/14/58c7d71e0702e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/14/58c7d726876cf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/14/58c7d73aa91df.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/14/58c7d8cb6ec3c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/14/58c7daf2f3938.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/14/58c7dbe8b68c3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/14/58c7de22a11b1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/14/58c7de2db80e0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/15/58c8da96e6317.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/15/58c8dde98b1e5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/15/58c8ddee6dd26.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/16/58ca046c1a415.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/16/58ca11bf0b51f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/17/58cb3e385ffed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/17/58cb3f093c993.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/17/58cb3ff80f703.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/17/58cbef470bb61.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cc8faa259bd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58ccf206cd44c.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58ccf28268329.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58ccf35de0130.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4c9d2c615.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4ca9a1528.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4cbb9da92.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4cc6d0328.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4ced0fd07.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4cf45564a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4cfd9f9eb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4d0825c94.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4d3597112.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4d4893291.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4d549e259.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4d684120e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4d849134f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4d9a60de6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4ddd7754a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4f6fc1890.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4f9ee27e3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/18/58cd4fbf94db2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/19/58ce098cea625.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/19/58ce0cf6b17bb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/19/58ce2ce084855.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/19/58ce2d756257a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/19/58ce407656221.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/19/58ce8cd10939f.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/19/58ce938bc2c24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/19/58ce9c0655638.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/20/58cf31ebcd9a7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/20/58cf53d8d904e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/20/58cf7dd1cdfaf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/20/58cf82eab70aa.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/20/58cf8b42cd3dd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/20/58cf93d77a77a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/20/58cf957f2ec80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/20/58cf99858e39d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/20/58cff3eea0cc8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/21/58d12b753bd67.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d1f5f961921.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d1f5f9a2442.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d1f700cc029.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d1f70106802.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d1fa2a3905e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d1fa2a614e6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d1fa6c78fe9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d1fa6e9ba81.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d1fc0658c26.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d1fc07b48eb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d1fef063806.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d1fefc3da8a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d21c9b8e152.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/22/58d21caa87fb2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d3081c1a9c4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d3082181e1c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d34892d3252.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d3489c110e9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d37780653b3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d3784ff0a4d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d37855ddd97.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d3785b1ac75.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d3787b47b32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d378fa42164.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d3791050bc7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d3791723540.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d3ef8b51c7f.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/23/58d3ef94416c5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/24/58d4d361a8d8f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/24/58d4d36f380e1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/24/58d4f21e21523.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/24/58d4f22908aa4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/24/58d4f24901952.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/24/58d4f270d4c38.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/24/58d5386ecac9d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/24/58d5387f08b1d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/25/58d60877b516e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/26/58d74dc424922.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/26/58d74dc44be09.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f2488ef5b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f258e5248.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f26546b20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f357c4ae9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f3b7a0d07.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f3be522f0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f3c93ded3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f4b0c7215.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f4b9749c6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f4bf4b984.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f4c4a149d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f4ca52eb9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f4e628af4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f4f587698.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f4fc2f85e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d7f50a0cdac.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d857db8af05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d857e86e5fe.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d857f6b8d63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d8580147cca.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d858ee68068.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d8590c56738.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d8704041ec8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d87056061c1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d8aea8dab8d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d8bdb6c092b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d8bdbe05ce5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d8be0593681.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d8be0d7754a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d8be17ac8dd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d8be20bb339.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d92179e5f4c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d92ba294e2e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d92bae13fb0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d92bccaf7f5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d92bccc47e8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/27/58d92eac1147c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58d9c162d4888.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58d9d92e89700.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58d9d9397c01f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58d9d949606a2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58d9d952c34a7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58da19ed92865.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58da1dbf8e5cc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58da1e4489b87.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58da1f78b4b23.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58da1f81b1c63.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58da1f9c88434.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58da1fa78f199.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58da732e76def.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58da733751c35.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58da75adcab2a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/28/58da7dff4aba3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/29/58db196abbf63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/29/58db42d26c4d3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/29/58db42e62d8e9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/29/58db907f0d829.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/29/58db908aa230b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/2017/03/30/58dcb51066d24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Controller/PasswordchangeController.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Controller/PasswordforgetController.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Controller/StudentController.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Model/StudentModel.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Model/TeacherModel.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Model/UserModel.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Model/VerifycodeModel.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Login/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Login/password_change.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Login/password_forget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/04f8b1a55d83ee2f9b65bcfd6fc876d9.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/5744baeaf2b4e65446d0e91d35b94fb1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Student/8613d1c8b3cbbd28e1ad5912aec87d1f.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Student/ae1877b8c0b3960c750559d0c44825d4.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/035419a8b4a2221ecca11fe9f5c75c43.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/10267ee0fadc748b2c926d7431f7ba4a.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/2b33b59896573eef4a7f0cd93c1017c3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/5a3d7b5b004bcf12e7786a5ccb587d45.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/938ed8f34cc5eef2e3cd7a290eaa6040.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/963e9cdc303d72ce11329e8ba904cc21.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/a6e079be2201a7019f561cb356cbecf1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/bf9c545c85ede1755d9ac852fb32ebc2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/d2809ffed05af3678382000eba65be62.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/dc35a2e138d2d70b851420e220f4d481.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/dc51bde9665df2622cd5a3a53396e353.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/f3dc28985b1619fd93f1dd714066d5f6.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/f7d1258ca71b4bc4e273e9ffcc9e0466.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/fe00368994bbcdd87edc38a8a04febd5.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/17_02_21.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/17_03_15.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/17_03_16.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/17_03_17.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/17_03_18.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/17_03_19.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/17_03_22.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/17_03_23.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/17_03_28.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/17_03_29.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Common/17_03_30.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/1490276554-17_03_23.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_02_21.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_02_22.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_09.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_10.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_11.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_12.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_13.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_14.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_15.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_16.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_17.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_18.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_19.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_20.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_21.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_22.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_23.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_24.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_28.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_29.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_30.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_02_20.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_08.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_09.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_10.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_11.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_12.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_13.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_14.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_15.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_16.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_17.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_18.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_19.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_20.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_21.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_22.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_23.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_24.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_28.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Student/17_03_29.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_02_20.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_02_21.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_09.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_10.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_11.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_12.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_13.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_14.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_15.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_16.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_17.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_18.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_19.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_20.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_21.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_22.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_23.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_24.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_28.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_29.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_30.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/PersonalController.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/StatisticsController.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/Model/TeacherViewModel.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/change.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Notice/cat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Personal/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Practice/importCor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Public/nav.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Statistics/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Statistics/nav.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/addclass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/adddep.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/classes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/department.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/importTea.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/teacher.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/updateclass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/updatedep.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/css/highcharts.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/highcharts-3d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/highcharts-3d.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/highcharts-more.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/highcharts-more.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/highcharts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/highcharts.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/highcharts-3d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/highcharts-3d.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/highcharts-more.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/highcharts-more.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/highcharts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/highcharts.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/accessibility.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/accessibility.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/annotations.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/annotations.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/boost.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/boost.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/broken-axis.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/broken-axis.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/data.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/drilldown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/drilldown.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/exporting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/exporting.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/funnel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/funnel.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/gantt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/gantt.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/grid-axis.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/grid-axis.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/heatmap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/heatmap.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/no-data-to-display.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/no-data-to-display.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/offline-exporting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/offline-exporting.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/overlapping-datalabels.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/overlapping-datalabels.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/series-label.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/series-label.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/solid-gauge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/solid-gauge.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/stock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/stock.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/treemap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/treemap.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/xrange-series.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/modules/xrange-series.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/themes/dark-blue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/themes/dark-green.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/themes/dark-unica.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/themes/gray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/themes/grid-light.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/themes/grid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/themes/sand-signika.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/js/themes/skies.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/lib/canvg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/lib/canvg.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/lib/jspdf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/lib/jspdf.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/lib/svg2pdf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/lib/svg2pdf.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/accessibility.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/accessibility.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/annotations.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/annotations.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/boost.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/boost.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/broken-axis.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/broken-axis.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/data.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/drilldown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/drilldown.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/exporting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/exporting.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/funnel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/funnel.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/gantt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/gantt.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/grid-axis.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/grid-axis.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/heatmap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/heatmap.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/no-data-to-display.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/no-data-to-display.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/offline-exporting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/offline-exporting.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/overlapping-datalabels.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/overlapping-datalabels.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/series-label.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/series-label.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/solid-gauge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/solid-gauge.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/stock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/stock.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/treemap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/treemap.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/xrange-series.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/modules/xrange-series.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/themes/dark-blue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/themes/dark-green.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/themes/dark-unica.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/themes/gray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/themes/grid-light.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/themes/grid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/themes/sand-signika.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/highcharts/themes/skies.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/jquery-1.8.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TOP_SDK_WORK_DIR/logs/top_biz_err_23727128_2017-03-29.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/Autoloader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/TopSdk.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/aliyun/AliyunClient.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/fileTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/ApplicationVar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/ClusterTopClient.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/HttpdnsGetRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/RequestCheckUtil.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/ResultSet.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/SpiUtils.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/TopClient.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/TopLogger.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/domain/Area.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/domain/BizResult.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/domain/FcPartnerSmsDetailDto.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/domain/KfcSearchResult.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/domain/Result.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/domain/Subtask.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/domain/Task.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/AlibabaAliqinFcFlowChargeProvinceRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/AlibabaAliqinFcFlowChargeRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/AlibabaAliqinFcFlowGradeRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/AlibabaAliqinFcFlowQueryRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/AlibabaAliqinFcSmsNumQueryRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/AlibabaAliqinFcSmsNumSendRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/AlibabaAliqinFcTtsNumSinglecallRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/AlibabaAliqinFcVoiceNumDoublecallRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/AlibabaAliqinFcVoiceNumSinglecallRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/AppipGetRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/AreasGetRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/HttpdnsGetRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/KfcKeywordSearchRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/TimeGetRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/TopAuthTokenCreateRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/TopAuthTokenRefreshRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/TopIpoutGetRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/TopSecretGetRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/TopatsResultGetRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/aliyunmsg/top/request/TopatsTaskDeleteRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shixi.sql" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shixi1_20170223.sql" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Common/function.php" afterPath="$PROJECT_DIR$/Application/Common/Common/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Home/Conf/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/ApplyController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/ApplyController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/LoginController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/LoginController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/NoticeController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/NoticeController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/ReportController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/ReportController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/SigninController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/SigninController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/TeacherController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/TeacherController.class.php" />
@@ -20,11 +511,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Student/0bb5307988c13df8886db7278ab3e6ab.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Student/0bb5307988c13df8886db7278ab3e6ab.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Student/15625c32e77cd0169056ecad236697b2.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Student/15625c32e77cd0169056ecad236697b2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Student/15d2cecfc38910f911d3440152da56ce.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Student/15d2cecfc38910f911d3440152da56ce.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Student/4d4c29e73c94f96bf3e6cec23e15b0ab.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Student/4d4c29e73c94f96bf3e6cec23e15b0ab.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Student/4db5691f90d109988c2a8ab2008d1875.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Student/4db5691f90d109988c2a8ab2008d1875.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Student/5cfe4af9052c482bea6103177eb4b38f.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Student/5cfe4af9052c482bea6103177eb4b38f.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Student/5e32e8c76fa5b7495c1d339d33a84ac6.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Student/5e32e8c76fa5b7495c1d339d33a84ac6.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Student/5e5ac89d641c02f24c1baa11cf4c9b74.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Student/5e5ac89d641c02f24c1baa11cf4c9b74.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Student/6f1e4fc6e891e190755b805234c6830a.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Student/6f1e4fc6e891e190755b805234c6830a.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Student/77ce28cf05aa11abf4399c41f8bebd1d.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Student/77ce28cf05aa11abf4399c41f8bebd1d.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Student/7c9ebf4471c4fff98099d35c6d31791c.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Student/7c9ebf4471c4fff98099d35c6d31791c.php" />
@@ -45,7 +534,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/2f0056a5d3ccd8df2e423ff96452374b.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/2f0056a5d3ccd8df2e423ff96452374b.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/326278562cc16a021145669181a6ee86.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/326278562cc16a021145669181a6ee86.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/350982bf263a9626104c4173590d8f14.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/350982bf263a9626104c4173590d8f14.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/356b93bf824ffe3a9efa2bfc3eafb16e.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/356b93bf824ffe3a9efa2bfc3eafb16e.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/3e1324fb61df9e3033bd48361efa1303.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/3e1324fb61df9e3033bd48361efa1303.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/424980051892f9a47a79d3e51c2b5d0e.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/424980051892f9a47a79d3e51c2b5d0e.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/447420ab10a9b89d090db1d7728c4485.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/447420ab10a9b89d090db1d7728c4485.php" />
@@ -67,73 +555,61 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/ce19c94f26c94234ca9d3bef30debdf0.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/ce19c94f26c94234ca9d3bef30debdf0.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/d1b228d4b939658e22032fc64a4cd4f2.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/d1b228d4b939658e22032fc64a4cd4f2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/d82cc49c673902eb483eef502a0d8e89.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/d82cc49c673902eb483eef502a0d8e89.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/db700675e8ef6157b4236c47076650d5.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/db700675e8ef6157b4236c47076650d5.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/e01028fcbe0c2419c4fe10a85a391b10.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/e01028fcbe0c2419c4fe10a85a391b10.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/e2178dcdc3f2aaa3a356a64e9432e6de.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/e2178dcdc3f2aaa3a356a64e9432e6de.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/f828199301fe58f1a073cc242807c3b3.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Teacher/f828199301fe58f1a073cc242807c3b3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_08.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_08.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_02_23.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_02_23.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_02_27.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_02_27.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_02.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_02.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_06.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_03_06.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_07.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_07.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_08.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Teacher/17_03_08.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Controller/ApplyController.class.php" afterPath="$PROJECT_DIR$/Application/Student/Controller/ApplyController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Controller/CommonController.class.php" afterPath="$PROJECT_DIR$/Application/Student/Controller/CommonController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Controller/ContactController.class.php" afterPath="$PROJECT_DIR$/Application/Student/Controller/ContactController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Controller/GradeController.class.php" afterPath="$PROJECT_DIR$/Application/Student/Controller/GradeController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Controller/ImageController.class.php" afterPath="$PROJECT_DIR$/Application/Student/Controller/ImageController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Controller/LoginController.class.php" afterPath="$PROJECT_DIR$/Application/Student/Controller/LoginController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Controller/NewsController.class.php" afterPath="$PROJECT_DIR$/Application/Student/Controller/NewsController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Controller/NoticeController.class.php" afterPath="$PROJECT_DIR$/Application/Student/Controller/NoticeController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Controller/PersonalController.class.php" afterPath="$PROJECT_DIR$/Application/Student/Controller/PersonalController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Controller/ReportController.class.php" afterPath="$PROJECT_DIR$/Application/Student/Controller/ReportController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Model/ChangeViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Student/Model/ChangeViewModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Model/LeaveViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Student/Model/LeaveViewModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Model/PracticeViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Student/Model/PracticeViewModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Model/ReportModel.class.php" afterPath="$PROJECT_DIR$/Application/Student/Model/ReportModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Model/ReportViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Student/Model/ReportViewModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/Model/StudentViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Student/Model/StudentViewModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/add.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/addLeave.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/addLeave.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/change.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/change.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/changeCorporation.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/changeCorporation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/changeJob.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/changeJob.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/index.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/leave.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/leave.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/noapply.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/noapply.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/nochange.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/nochange.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/noleave.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/noleave.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/viewApply.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/viewApply.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/viewChangeCorporation.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/viewChangeCorporation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/viewChangeJob.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/viewChangeJob.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Apply/viewLeave.html" afterPath="$PROJECT_DIR$/Application/Student/View/Apply/viewLeave.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Base/header.html" afterPath="$PROJECT_DIR$/Application/Student/View/Base/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Contact/student.html" afterPath="$PROJECT_DIR$/Application/Student/View/Contact/student.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Contact/teacher.html" afterPath="$PROJECT_DIR$/Application/Student/View/Contact/teacher.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Grade/index.html" afterPath="$PROJECT_DIR$/Application/Student/View/Grade/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/News/index.html" afterPath="$PROJECT_DIR$/Application/Student/View/News/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Base/personal.html" afterPath="$PROJECT_DIR$/Application/Student/View/Base/personal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Notice/cat.html" afterPath="$PROJECT_DIR$/Application/Student/View/Notice/cat.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Notice/index.html" afterPath="$PROJECT_DIR$/Application/Student/View/Notice/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Personal/index.html" afterPath="$PROJECT_DIR$/Application/Student/View/Personal/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Report/add.html" afterPath="$PROJECT_DIR$/Application/Student/View/Report/add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Report/edit.html" afterPath="$PROJECT_DIR$/Application/Student/View/Report/edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Report/index.html" afterPath="$PROJECT_DIR$/Application/Student/View/Report/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Student/View/Report/view.html" afterPath="$PROJECT_DIR$/Application/Student/View/Report/view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Common/function.php" afterPath="$PROJECT_DIR$/Application/Teacher/Common/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Teacher/Conf/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/ApplyController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/ApplyController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/CommonController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/CommonController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/ContactController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/ContactController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/LoginController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/LoginController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/NoticeController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/NoticeController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/PracticeController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/PracticeController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/ReportController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/ReportController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Controller/StudentController.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Controller/StudentController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/ChangeViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/ChangeViewModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/ContactViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/ContactViewModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/CorporationModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/CorporationModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/LeaveViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/LeaveViewModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/NoticeViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/NoticeViewModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/PracticeModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/PracticeModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/PracticeViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/PracticeViewModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/ReportViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/ReportViewModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/StudentModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/StudentModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/StudentViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/StudentViewModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/StudentsViewModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/StudentsViewModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/Model/TeacherModel.class.php" afterPath="$PROJECT_DIR$/Application/Teacher/Model/TeacherModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/coredited.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/coredited.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/corporation.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/corporation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/editApply.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/editApply.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/editCor.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/editCor.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/editLeave.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/editLeave.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/editPos.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/editPos.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/edited.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/edited.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/index.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/leave.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/leave.html" />
@@ -143,10 +619,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Apply/position.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Apply/position.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Contact/index.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Contact/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Contact/nav.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Contact/nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Corporation/nav.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Corporation/nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Contact/teacher.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Contact/teacher.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Corporation/add.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Corporation/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Corporation/index.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Corporation/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Notice/add.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Notice/add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Notice/index.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Notice/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Notice/nav.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Notice/nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Practice/add.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Practice/add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Practice/addCor.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Practice/addCor.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Practice/arrangement.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Practice/arrangement.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Practice/corporation.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Practice/corporation.html" />
@@ -154,6 +633,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Practice/index.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Practice/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Practice/nav.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Practice/nav.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Practice/viewCor.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Practice/viewCor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Public/layout.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Public/layout.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Public/user.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Public/user.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Report/audited.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Report/audited.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Report/auditing.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Report/auditing.html" />
@@ -161,13 +641,29 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Report/month.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Report/month.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Report/nav.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Report/nav.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Report/unaudit.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Report/unaudit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Report/weekly.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Report/weekly.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Student/add.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Student/import.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/import.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Student/index.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Student/leave.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/leave.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Student/nav.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Student/showleave.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/showleave.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Student/showweek.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/showweek.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Student/update.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/update.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Student/view.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Teacher/View/Student/week.html" afterPath="$PROJECT_DIR$/Application/Teacher/View/Student/week.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Student/css/bootstrap-datetimepicker.min.css" afterPath="$PROJECT_DIR$/Public/Student/css/bootstrap-datetimepicker.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Student/css/pages.css" afterPath="$PROJECT_DIR$/Public/Student/css/pages.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Student/js/base.js" afterPath="$PROJECT_DIR$/Public/Student/js/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Student/js/bootstrap-datetimepicker.min.js" afterPath="$PROJECT_DIR$/Public/Student/js/bootstrap-datetimepicker.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/js/image.js" afterPath="$PROJECT_DIR$/Public/js/image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/js/login.js" afterPath="$PROJECT_DIR$/Public/js/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/teacher/css/bootstrap-datetimepicker.min.css" afterPath="$PROJECT_DIR$/Public/teacher/css/bootstrap-datetimepicker.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/teacher/css/pages.css" afterPath="$PROJECT_DIR$/Public/teacher/css/pages.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/teacher/css/pages.css.bak" afterPath="$PROJECT_DIR$/Public/teacher/css/pages.css.bak" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/teacher/js/bootstrap-datetimepicker.min.js" afterPath="$PROJECT_DIR$/Public/teacher/js/bootstrap-datetimepicker.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Think/Db/Driver.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Think/Db/Driver.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Library/Think/Model.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Think/Model.class.php" />
     </list>
     <ignored path="shixi1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -188,30 +684,7 @@
     <favorites_list name="shixi1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.105263">
-              <caret line="72" column="26" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Student/View/Personal/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65810966">
-              <caret line="147" column="75" selection-start-line="147" selection-start-column="75" selection-end-line="147" selection-end-column="75" />
-              <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#main#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -219,18 +692,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Application/Student/View/Grade/index.html" />
-        <option value="$PROJECT_DIR$/Application/Student/View/Report/edit.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Notice/index.html" />
         <option value="$PROJECT_DIR$/Application/Teacher/Conf/config.php" />
         <option value="$PROJECT_DIR$/Application/Student/Conf/config.php" />
         <option value="$PROJECT_DIR$/Application/Student/View/Apply/changeCorporation.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Apply/changeJob.html" />
-        <option value="$PROJECT_DIR$/Application/Student/Model/LeaveViewModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/SigninController.class.php" />
         <option value="$PROJECT_DIR$/Application/Teacher/View/Student/index.html" />
         <option value="$PROJECT_DIR$/Application/Student/Controller/ReportViewModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Student/Model/ReportViewModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Student/View/Report/add.html" />
         <option value="$PROJECT_DIR$/Application/Teacher/Controller/StudentController.class.php" />
         <option value="$PROJECT_DIR$/Application/Student/View/Contact/student.html" />
@@ -242,13 +711,10 @@
         <option value="$PROJECT_DIR$/Application/Teacher/Controller/ContactController.class.php" />
         <option value="$PROJECT_DIR$/Application/Teacher/View/Contact/index.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Apply/index.html" />
-        <option value="$PROJECT_DIR$/Application/Student/View/Apply/viewApply.html" />
-        <option value="$PROJECT_DIR$/Application/Student/View/Apply/viewChangeCorporation.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Apply/viewChangeJob.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Apply/viewLeave.html" />
         <option value="$PROJECT_DIR$/Application/Student/Controller/ContactController.class.php" />
         <option value="$PROJECT_DIR$/Public/Student/js/H-ui-Admin.js" />
-        <option value="$PROJECT_DIR$/Application/Student/View/Report/index.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Base/personal.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Common/password.html" />
         <option value="$PROJECT_DIR$/Application/Student/Controller/CommonController.class.php" />
@@ -257,19 +723,26 @@
         <option value="$PROJECT_DIR$/Application/Student/Controller/ImageController.class.php" />
         <option value="$PROJECT_DIR$/Application/Student/Controller/NewsController.class.php" />
         <option value="$PROJECT_DIR$/Application/Student/Controller/NoticeController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Student/View/Apply/add.html" />
         <option value="$PROJECT_DIR$/Public/Student/css/pages.css" />
-        <option value="$PROJECT_DIR$/Application/Student/Controller/ApplyController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Student/View/Report/view.html" />
-        <option value="$PROJECT_DIR$/Application/Student/Controller/ReportController.class.php" />
         <option value="$PROJECT_DIR$/Application/Student/Model/ReportModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Student/View/Base/header.html" />
         <option value="$PROJECT_DIR$/Application/Student/Model/PersonalViewModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Student/Model/StudentViewModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Student/Model/PracticeViewModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Student/Controller/PersonalController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Common/Common/function.php" />
+        <option value="$PROJECT_DIR$/Application/Student/View/Apply/leave.html" />
+        <option value="$PROJECT_DIR$/Application/Student/Model/LeaveViewModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Student/View/Apply/change.html" />
         <option value="$PROJECT_DIR$/Application/Student/View/Personal/index.html" />
+        <option value="$PROJECT_DIR$/Application/Student/View/Report/view.html" />
+        <option value="$PROJECT_DIR$/Application/Student/Model/ReportViewModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Student/View/Report/index.html" />
+        <option value="$PROJECT_DIR$/Application/Student/Controller/ReportController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Student/View/Apply/viewChangeCorporation.html" />
+        <option value="$PROJECT_DIR$/Application/Student/Model/PracticeViewModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Student/View/Apply/viewApply.html" />
+        <option value="$PROJECT_DIR$/Application/Student/Controller/ApplyController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Student/View/Apply/add.html" />
+        <option value="$PROJECT_DIR$/Application/Common/Common/function.php" />
       </list>
     </option>
   </component>
@@ -375,336 +848,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Apply" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Personal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Notice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grade" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shixi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -872,7 +1015,13 @@
       <option name="project" value="LOCAL" />
       <updated>1489242298326</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="bug修复，学生端修改为个人中心">
+      <created>1489930890165</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1489930890165</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -885,16 +1034,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21801706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23134328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3243243" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -903,6 +1051,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3243243" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -943,125 +1092,15 @@
     <MESSAGE value="学生端实习报告全选删除和查询功能" />
     <MESSAGE value="教师端的查询，分页，全选删除功能" />
     <MESSAGE value="通讯录模块的修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="通讯录模块的修改" />
+    <MESSAGE value="bug修复，学生端修改为个人中心" />
+    <MESSAGE value="学生端和教师端的优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="学生端和教师端的优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Contact/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44880953">
-          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Teacher/View/Contact/teacher.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20714286">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.973684">
-          <caret line="59" column="61" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/Model/ReportViewModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="77" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/viewApply.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.026316">
-          <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/viewLeave.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4827586">
-          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/viewChangeJob.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20689656">
-          <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/viewChangeCorporation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37931034">
-          <caret line="77" column="36" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/change.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/LoginController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Teacher/Controller/ContactController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03448276">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Report/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.710526">
-          <caret line="242" column="11" selection-start-line="242" selection-start-column="11" selection-end-line="242" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Report/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6551724">
-          <caret line="46" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Common/password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.105263">
-          <caret line="77" column="58" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/Controller/NoticeController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31034482">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/Controller/NewsController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13793103">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Student/Controller/LoginController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10344828">
@@ -1094,13 +1133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03236607">
           <caret line="31" column="14" selection-start-line="25" selection-start-column="4" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.921053">
-          <caret line="34" column="86" selection-start-line="34" selection-start-column="86" selection-end-line="34" selection-end-column="86" />
         </state>
       </provider>
     </entry>
@@ -1157,7 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.034965035">
           <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1165,35 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.447369">
           <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
-          <folding>
-            <marker date="1489753048000" expanded="true" signature="178:221" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Report/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43939394">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <marker date="1489912045682" expanded="true" signature="179:222" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/Controller/ApplyController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4055944">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/Controller/ReportController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.631579">
-          <caret line="76" column="37" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1201,7 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.263158">
           <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1209,7 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.3421054">
           <caret line="7" column="50" selection-start-line="0" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1217,7 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1225,7 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1233,9 +1231,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.5263158">
           <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#span#0;n#p#0;n#div#1;n#main#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1243,15 +1238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.447369">
           <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/View/Base/personal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2368728">
-          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1259,7 +1245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.921053">
           <caret line="121" column="75" selection-start-line="121" selection-start-column="75" selection-end-line="121" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1267,7 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.97666276">
           <caret line="55" column="66" selection-start-line="55" selection-start-column="66" selection-end-line="55" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1275,7 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10151692">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,15 +1266,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.5530922">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Student/Model/PracticeViewModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.631579">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,7 +1273,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9474912">
           <caret line="52" column="32" selection-start-line="27" selection-start-column="24" selection-end-line="52" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,7 +1280,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2368728">
           <caret line="7" column="63" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1315,25 +1287,177 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4737456">
           <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/leave.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.105263">
-          <caret line="72" column="26" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="26" />
-          <folding />
+        <state vertical-scroll-proportion="-9.921053">
+          <caret line="91" column="28" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/viewChangeJob.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8646441">
+          <caret line="62" column="62" selection-start-line="62" selection-start-column="62" selection-end-line="62" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/change.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.447369">
+          <caret line="48" column="208" selection-start-line="48" selection-start-column="208" selection-end-line="48" selection-end-column="208" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/Model/ApplyModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Base/personal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2368728">
+          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Teacher/Controller/CommonController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4737456">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/LoginController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2182031">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Student/View/Personal/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65810966">
-          <caret line="147" column="75" selection-start-line="147" selection-start-column="75" selection-end-line="147" selection-end-column="75" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#main#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.2882147">
+          <caret line="93" column="66" selection-start-line="93" selection-start-column="66" selection-end-line="93" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/Model/LeaveViewModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2368728">
+          <caret line="7" column="102" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/Model/ReportViewModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2027972">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Report/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52331">
+          <caret line="109" column="44" selection-start-line="109" selection-start-column="44" selection-end-line="109" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Report/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2843823">
+          <caret line="59" column="88" selection-start-line="59" selection-start-column="88" selection-end-line="59" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="42" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/Controller/ReportController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3857809">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/viewChangeCorporation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.710526">
+          <caret line="60" column="61" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/Model/PracticeViewModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.631579">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/viewApply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.736842">
+          <caret line="69" column="75" selection-start-line="69" selection-start-column="75" selection-end-line="69" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15268065">
+          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63752913">
+          <caret line="46" column="81" selection-start-line="46" selection-start-column="81" selection-end-line="46" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/View/Apply/changeCorporation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33799535">
+          <caret line="175" column="39" selection-start-line="175" selection-start-column="39" selection-end-line="175" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Student/Controller/ApplyController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.495338">
+          <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TOP_SDK_WORK_DIR/logs/top_biz_err_23727128_2017-03-29.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6480447">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>

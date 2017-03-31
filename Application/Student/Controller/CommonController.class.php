@@ -12,7 +12,9 @@ class CommonController extends Controller {
         $isLogin = $this->isLogin();
         if(!$isLogin) {
             // 跳转到登录页面
-            $this->redirect('/home/login/index');
+            redirect('/index.php/home/login/index');
+        }else if($_SESSION['adminUser']['teacherno']){
+            redirect('/teacher.php/Report/index');
         }
     }
 

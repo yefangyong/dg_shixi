@@ -1,0 +1,1781 @@
+[ 2017-03-21T09:19:38+08:00 ] 49.77.217.154 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_report` WHERE ( id IN(184,183,182,180,179,178,177,176,175,174,173,172,171,170,169) )  [ RunTime:0.0002s ]
+SQL: UPDATE `dg_report` SET `tea_del`='0' WHERE ( `id` IN(170,173,182,176,184)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T09:20:26+08:00 ] 49.77.217.154 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=2017888 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` = 2017888 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 156 行.
+
+[ 2017-03-21T09:20:49+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-03-21T09:20:53+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2017-03-21T09:20:54+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2017-03-21T09:22:26+08:00 ] 49.77.217.154 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='1' WHERE ( `id` = 177 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T09:34:48+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2017-03-21T09:34:53+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-03-21T09:34:53+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2017-03-21T09:34:54+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-03-21T09:34:54+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-03-21T09:34:57+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-03-21T09:34:57+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-03-21T09:34:57+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2017-03-21T09:35:05+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-03-21T09:35:05+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2017-03-21T09:35:16+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-03-21T09:35:17+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-03-21T09:35:17+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-03-21T09:35:17+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-03-21T09:35:18+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-03-21T09:35:18+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-03-21T09:35:22+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-03-21T09:35:23+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-03-21T09:35:25+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2017-03-21T09:35:25+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-03-21T09:35:25+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-03-21T09:35:25+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-03-21T09:35:25+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-03-21T09:35:25+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-03-21T09:35:26+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-03-21T09:35:26+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-03-21T09:35:26+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-03-21T09:35:26+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2017-03-21T09:35:26+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-03-21T09:37:08+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-03-21T09:37:09+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2017-03-21T09:41:01+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-03-21T09:41:02+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2017-03-21T09:41:03+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-03-21T09:41:03+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2017-03-21T09:41:03+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2017-03-21T09:41:07+08:00 ] 49.77.217.154 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=58 )  [ RunTime:0.0002s ]
+
+[ 2017-03-21T09:46:09+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2017-03-21T09:46:10+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-03-21T09:46:11+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2017-03-21T09:50:44+08:00 ] 49.77.217.154 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=22 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE (  id IN(79) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2017888  [ RunTime:0.0001s ]
+SQL: INSERT INTO `dg_practice` (`corporation_id`,`guide`,`address`,`starttime`,`endtime`,`position`,`mode`,`status`,`student_id`) VALUES ('22','sss','我就是我就是我就是我就是我就是我就是我就是','2017-03-22','2017-03-31','sss','2','1','2017888') [ RunTime:0.0001s ]
+SQL: UPDATE `dg_student` SET `corporation_id`='22' WHERE `studentno` = '2017888' [ RunTime:0.0001s ]
+
+[ 2017-03-21T09:51:42+08:00 ] 49.77.217.154 /teacher.php/Practice/cancelarrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` IN(select studentno from dg_student where id IN( 79)) ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T09:52:28+08:00 ] 49.77.217.154 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=15 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE (  id IN(79) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2017888  [ RunTime:0.0001s ]
+SQL: INSERT INTO `dg_practice` (`corporation_id`,`guide`,`address`,`starttime`,`endtime`,`position`,`mode`,`status`,`student_id`) VALUES ('15','aa','上海祖冲之路188号','2017-03-21','2017-03-24','aa','2','1','2017888') [ RunTime:0.0001s ]
+SQL: UPDATE `dg_student` SET `corporation_id`='15' WHERE `studentno` = '2017888' [ RunTime:0.0001s ]
+
+[ 2017-03-21T10:04:57+08:00 ] 49.77.217.154 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=59 )  [ RunTime:0.0002s ]
+
+[ 2017-03-21T10:06:00+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2017-03-21T10:28:08+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-03-21T10:28:09+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-03-21T10:28:15+08:00 ] 49.77.217.154 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=60 )  [ RunTime:0.0002s ]
+
+[ 2017-03-21T10:29:53+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000332s ]
+
+[ 2017-03-21T10:30:44+08:00 ] 49.77.217.154 /teacher.php/Apply/editLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_leave` SET `status`='-1' WHERE ( `id` = 114 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T10:30:57+08:00 ] 49.77.217.154 /teacher.php/Apply/leave/department/0/profession/0/class/0/corporation/6/status/0/keywords/
+ERR: 1054:Unknown column 'myLeave.corporation_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_leave myLeave LEFT JOIN dg_student Student ON myLeave.student_id = Student.studentno LEFT JOIN dg_class Class ON Student.classno = Class.id WHERE (  classno = 1 ) AND (  myLeave.corporation_id = 6 ) LIMIT 1  
+
+[ 2017-03-21T10:31:06+08:00 ] 49.77.217.154 /teacher.php/Apply/leave/department/0/profession/0/class/0/corporation/10/status/0/keywords/
+ERR: 1054:Unknown column 'myLeave.corporation_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_leave myLeave LEFT JOIN dg_student Student ON myLeave.student_id = Student.studentno LEFT JOIN dg_class Class ON Student.classno = Class.id WHERE (  classno = 1 ) AND (  myLeave.corporation_id = 10 ) LIMIT 1  
+
+[ 2017-03-21T10:32:39+08:00 ] 49.77.217.154 /teacher.php/Apply/leave/department/0/profession/0/class/0/corporation/3/status/0/keywords/
+ERR: 1054:Unknown column 'myLeave.corporation_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_leave myLeave LEFT JOIN dg_student Student ON myLeave.student_id = Student.studentno LEFT JOIN dg_class Class ON Student.classno = Class.id WHERE (  classno = 1 ) AND (  myLeave.corporation_id = 3 ) LIMIT 1  
+
+[ 2017-03-21T10:33:02+08:00 ] 49.77.217.154 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=60 )  [ RunTime:0.0002s ]
+
+[ 2017-03-21T10:34:16+08:00 ] 49.77.217.154 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-03-21T10:39:24+08:00 ] 49.77.217.154 /teacher.php/Apply/leave/department/0/profession/0/class/0/corporation/3/status/0/keywords/
+ERR: 1054:Unknown column 'myLeave.corporation_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_leave myLeave LEFT JOIN dg_student Student ON myLeave.student_id = Student.studentno LEFT JOIN dg_class Class ON Student.classno = Class.id WHERE (  classno = 1 ) AND (  myLeave.corporation_id = 3 ) LIMIT 1  
+
+[ 2017-03-21T10:39:43+08:00 ] 49.77.217.154 /teacher.php/Apply/leave/department/0/profession/0/class/0/corporation/2/status/0/keywords/
+ERR: 1054:Unknown column 'myLeave.corporation_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_leave myLeave LEFT JOIN dg_student Student ON myLeave.student_id = Student.studentno LEFT JOIN dg_class Class ON Student.classno = Class.id WHERE (  classno = 1 ) AND (  myLeave.corporation_id = 2 ) LIMIT 1  
+
+[ 2017-03-21T10:49:44+08:00 ] 223.242.122.212 /teacher.php/Apply/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 155 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 157 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 159 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 160 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 161 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 162 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 163 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 168 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 170 行.
+NOTIC: [8] Undefined variable: apply /var/www/html/Application/Runtime/Cache/Teacher/757e18bfbd33d10b665325a94cd5ffb8.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-03-21T10:52:46+08:00 ] 49.77.217.154 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=13 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE (  id IN(78) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2019001  [ RunTime:0.0001s ]
+SQL: INSERT INTO `dg_practice` (`corporation_id`,`guide`,`address`,`starttime`,`endtime`,`position`,`mode`,`status`,`student_id`) VALUES ('13','朴++','喔喔','2017-03-21','2017-03-25','test++','2','1','2019001') [ RunTime:0.0002s ]
+SQL: UPDATE `dg_student` SET `corporation_id`='13' WHERE `studentno` = '2019001' [ RunTime:0.0001s ]
+
+[ 2017-03-21T10:53:01+08:00 ] 223.242.122.212 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1' WHERE ( `id` = 0 ) [ RunTime:0.0001s ]
+
+[ 2017-03-21T10:55:51+08:00 ] 49.77.217.154 /teacher.php/Practice/cancelarrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` = (select studentno from dg_student where id=74) ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T10:56:04+08:00 ] 223.242.122.212 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1' WHERE ( `id` = 0 ) [ RunTime:0.0001s ]
+
+[ 2017-03-21T10:59:39+08:00 ] 223.242.122.212 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1' WHERE ( `id` = 58 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T11:00:17+08:00 ] 223.242.122.212 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='-1' WHERE ( `id` = 61 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T11:04:45+08:00 ] 49.77.217.154 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=61 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 61 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 454 行.
+
+[ 2017-03-21T11:06:31+08:00 ] 49.77.217.154 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='1' WHERE ( `id` = 181 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T11:09:26+08:00 ] 49.77.217.154 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1' WHERE ( `id` = 62 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T11:24:46+08:00 ] 223.242.122.212 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 58 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T11:27:17+08:00 ] 49.77.217.154 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 62 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T11:44:18+08:00 ] 49.77.217.154 /teacher.php/Apply/leave/department/0/profession/0/class/0/corporation/3/status/0/keywords/
+ERR: 1054:Unknown column 'myLeave.corporation_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_leave myLeave LEFT JOIN dg_student Student ON myLeave.student_id = Student.studentno LEFT JOIN dg_class Class ON Student.classno = Class.id WHERE (  classno = 1 ) AND (  myLeave.corporation_id = 3 ) LIMIT 1  
+
+[ 2017-03-21T11:45:20+08:00 ] 49.77.217.154 /teacher.php/Notice/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_notice` WHERE ( `id` IN(72,70)  ) [ RunTime:0.0001s ]
+
+[ 2017-03-21T12:10:10+08:00 ] 49.77.217.154 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=14 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE (  id IN(74) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2018100  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_practice` SET `corporation_id`='14',`guide`='test++',`address`='美国西雅图南京路110号',`starttime`='2017-03-21',`endtime`='2017-03-31',`position`='test++',`mode`='2',`status`='1',`student_id`='2018100' WHERE `id` = 184 [ RunTime:0.0001s ]
+SQL: UPDATE `dg_student` SET `corporation_id`='14' WHERE `studentno` = '2018100' [ RunTime:0.0001s ]
+
+[ 2017-03-21T13:47:43+08:00 ] 36.57.219.251 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_practice` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 185 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T14:21:51+08:00 ] 49.77.217.154 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=11 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE (  id IN(78,77) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2018181  [ RunTime:0.0001s ]
+SQL: INSERT INTO `dg_practice` (`corporation_id`,`guide`,`address`,`starttime`,`endtime`,`position`,`mode`,`status`,`student_id`) VALUES ('11','鱼鱼','雨花台','2017-03-21','2017-03-31','ppp','2','1','2018181') [ RunTime:0.0001s ]
+SQL: UPDATE `dg_student` SET `corporation_id`='11' WHERE `studentno` = '2018181' [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2019001  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_practice` SET `corporation_id`='11',`guide`='鱼鱼',`address`='雨花台',`starttime`='2017-03-21',`endtime`='2017-03-31',`position`='ppp',`mode`='2',`status`='1',`student_id`='2019001' WHERE `id` = 180 [ RunTime:0.0001s ]
+SQL: UPDATE `dg_student` SET `corporation_id`='11' WHERE `studentno` = '2019001' [ RunTime:0.0001s ]
+
+[ 2017-03-21T17:07:46+08:00 ] 36.57.219.251 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 64 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T17:13:34+08:00 ] 49.77.217.154 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 187 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T17:15:30+08:00 ] 49.77.217.154 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 65 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T17:17:48+08:00 ] 49.77.217.154 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=2017103 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` = 2017103 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 157 行.
+
+[ 2017-03-21T17:31:02+08:00 ] 49.77.217.154 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='-1',`teacher_id`='200' WHERE ( `id` = 188 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T17:31:08+08:00 ] 49.77.217.154 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=2017103 )  [ RunTime:0.0001s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` = 2017103 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 149 行.
+
+[ 2017-03-21T17:32:46+08:00 ] 49.77.217.154 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 189 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T17:35:14+08:00 ] 49.77.217.154 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='-1',`teacher_id`='200' WHERE ( `id` = 66 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T17:35:28+08:00 ] 49.77.217.154 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=65 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 65 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 449 行.
+
+[ 2017-03-21T17:36:03+08:00 ] 49.77.217.154 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=2017103 )  [ RunTime:0.0001s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` = 2017103 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 149 行.
+
+[ 2017-03-21T17:36:12+08:00 ] 49.77.217.154 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=66 )  [ RunTime:0.0001s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 66 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 449 行.
+
+[ 2017-03-21T17:37:47+08:00 ] 49.77.217.154 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 190 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T18:04:24+08:00 ] 49.77.217.154 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=2017103 )  [ RunTime:0.0001s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` = 2017103 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 149 行.
+
+[ 2017-03-21T18:04:31+08:00 ] 49.77.217.154 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=67 )  [ RunTime:0.0002s ]
+
+[ 2017-03-21T18:04:54+08:00 ] 49.77.217.154 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=67 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 442 行.
+
+[ 2017-03-21T18:09:11+08:00 ] 49.77.217.154 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_practice` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 191 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T18:09:58+08:00 ] 223.245.80.142 /teacher.php/Apply/change.html
+ERR: 1054:Unknown column 'Change.studentno' in 'on clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_change myChange LEFT JOIN dg_corporation Corporation ON myChange.corporation_id = Corporation.id LEFT JOIN dg_student Student ON Student.studentno = myChange.student_id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_class Class ON Student.classno = Class.id LEFT JOIN (SELECT cname pricname,student_id FROM dg_change ORDER BY applytime DESC LIMIT 1,1) dgc ON Change.studentno=dgc.studentno   WHERE (  classno = 1 ) LIMIT 1  
+
+[ 2017-03-21T18:10:20+08:00 ] 223.245.80.142 /teacher.php/Apply/change.html
+ERR: 1054:Unknown column 'Change.student_id' in 'on clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_change myChange LEFT JOIN dg_corporation Corporation ON myChange.corporation_id = Corporation.id LEFT JOIN dg_student Student ON Student.studentno = myChange.student_id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_class Class ON Student.classno = Class.id LEFT JOIN (SELECT cname pricname,student_id FROM dg_change ORDER BY applytime DESC LIMIT 1,1) dgc ON Change.student_id=dgc.student_id   WHERE (  classno = 1 ) LIMIT 1  
+
+[ 2017-03-21T18:19:22+08:00 ] 223.245.80.142 /teacher.php/Apply/change.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0 WHERE (  classno = 1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_change myChange LEFT JOIN dg_corporation Corporation ON myChange.corporation_id = Corporation.id LEFT JOIN dg_student Student ON Student.studentno = myChange.student_id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_class Class ON Student.classno = Class.id LEFT JOIN dg_ 0 WHERE (  classno = 1 ) LIMIT 1  
+
+[ 2017-03-21T18:27:30+08:00 ] 223.245.80.142 /teacher.php/Apply/change.html
+ERR: 1066:Not unique table/alias: 'dgc'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_change myChange LEFT JOIN dg_corporation Corporation ON myChange.corporation_id = Corporation.id LEFT JOIN dg_student Student ON Student.studentno = myChange.student_id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_class Class ON Student.classno = Class.id LEFT JOIN (SELECT cname pricname,student_id FROM dg_change ORDER BY applytime DESC LIMIT 1,1) dgc ON Student.classno = dgc.student_id LEFT JOIN (SELECT cname pricname,student_id FROM dg_change ORDER BY applytime DESC LIMIT 1,1) dgc ON myChange.student_id=dgc.student_id   WHERE (  classno = 1 ) LIMIT 1  
+
+[ 2017-03-21T18:31:08+08:00 ] 223.245.80.142 /teacher.php/Apply/change.html
+ERR: 1054:Unknown column 'Change.student_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_change myChange LEFT JOIN dg_corporation Corporation ON myChange.corporation_id = Corporation.id LEFT JOIN dg_student Student ON Student.studentno = myChange.student_id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_class Class ON Student.classno = Class.id LEFT JOIN (SELECT cname pricname,student_id FROM dg_change WHERE student_id=Change.student_id ORDER BY applytime DESC LIMIT 1,1) dgc ON Student.classno = dgc.student_id WHERE (  classno = 1 ) LIMIT 1  
+
+[ 2017-03-21T18:31:27+08:00 ] 223.245.80.142 /teacher.php/Apply/change.html
+ERR: 1054:Unknown column 'myChange.student_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_change myChange LEFT JOIN dg_corporation Corporation ON myChange.corporation_id = Corporation.id LEFT JOIN dg_student Student ON Student.studentno = myChange.student_id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_class Class ON Student.classno = Class.id LEFT JOIN (SELECT cname pricname,student_id FROM dg_change WHERE student_id=myChange.student_id ORDER BY applytime DESC LIMIT 1,1) dgc ON Student.classno = dgc.student_id WHERE (  classno = 1 ) LIMIT 1  
+
+[ 2017-03-21T18:31:50+08:00 ] 223.245.80.142 /teacher.php/Apply/change.html
+ERR: 1054:Unknown column 'myChange.student_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_change myChange LEFT JOIN dg_corporation Corporation ON myChange.corporation_id = Corporation.id LEFT JOIN dg_student Student ON Student.studentno = myChange.student_id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_class Class ON Student.classno = Class.id LEFT JOIN (SELECT cname pricname,student_id FROM dg_change WHERE student_id=myChange.student_id ORDER BY applytime DESC LIMIT 1,1) dgc ON Student.classno = dgc.student_id WHERE (  classno = 1 ) LIMIT 1  
+
+[ 2017-03-21T18:55:10+08:00 ] 223.104.4.54 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=2017888 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` = 2017888 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 149 行.
+
+[ 2017-03-21T19:09:33+08:00 ] 223.104.4.54 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 68 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T19:16:05+08:00 ] 223.104.4.54 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=2019001 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` = 2019001 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 149 行.
+
+[ 2017-03-21T19:16:10+08:00 ] 223.104.4.54 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=2018181 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` = 2018181 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 149 行.
+
+[ 2017-03-21T19:45:45+08:00 ] 223.104.4.54 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=68 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 68 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 453 行.
+
+[ 2017-03-21T19:58:39+08:00 ] 223.245.80.142 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-03-21T19:58:47+08:00 ] 223.245.80.142 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-03-21T22:25:43+08:00 ] 223.245.80.142 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_practice` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 192 ) [ RunTime:0.0001s ]
+
+[ 2017-03-21T22:27:22+08:00 ] 223.245.80.142 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 75 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T22:35:04+08:00 ] 223.245.80.142 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 76 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T23:38:13+08:00 ] 223.245.80.142 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 79 ) [ RunTime:0.0002s ]
+
+[ 2017-03-21T23:43:02+08:00 ] 223.104.4.54 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 81 ) [ RunTime:0.0002s ]
+

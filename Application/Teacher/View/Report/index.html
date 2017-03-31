@@ -1,7 +1,7 @@
 
 <!-------------------------------------- 头部结束 -------------------------------------->
 <!-------------------------------------- 内容开始 -------------------------------------->
-<include file="Report/nav"/>
+<include file="Public/nav"/>
 <main>
     <div class="ui-head">
         <div class="container">
@@ -22,7 +22,7 @@
             <div class="ui-filter">
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="#">院系</a></p>
+                    <p><a href="#"><if condition="$_SESSION['adminUser']['type'] != 2">{$_SESSION['adminUser']['dname']}<else/>院系</if></a></p>
                     <div class="ex">
                         <div class="list">
                             <volist name="department" id="v">
@@ -44,7 +44,7 @@
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="#">班级</a></p>
+                    <p><a href="#"><if condition="$_SESSION['adminUser']['type'] eq 0">{$_SESSION['adminUser']['classname']}<else/>班级</if></a></p>
                     <div class="ex">
                         <div class="list">
                             <volist name="class" id="v">
@@ -68,8 +68,8 @@
                     <p><a href="#">评审结果</a></p>
                     <div class="ex">
                         <div class="list">
-                            <p><a name="status" attr-id="1" href="">已审核</a></p>
-                            <p><a name="status" attr-id="0" href="">未审核</a></p>
+                            <p><a name="status" attr-id="2" href="">已审核</a></p>
+                            <p><a name="status" attr-id="1" href="">未审核</a></p>
                         </div>
                     </div>
                 </div>
@@ -81,6 +81,12 @@
             <div class="ht30"></div>
             <div class="ui-table">
                 <div class="hd">
+
+            <div class="ui-paging">
+                <div class="pull-left">
+                    <a href="" class="cbox" attr-id="0"><i></i>全选</a>
+                </div>
+            </div>
                     <div class="tool">
                         <p>
                             <a href="{:U('Report/exportWeek')}">导出</a>
@@ -109,11 +115,11 @@
                                 <td>{$v.studentno}</td>
                                 <td>{$v.name}</td>
                                 <td>{$v.classname}</td>
-                                <td>{$v.pubtime|substr=0,10}</td>
-                                <td>{$v.corname}</td>
+                                <td>{$v.pubtime}</td>
+                                <td>{$v.cname}</td>
                                 <td>{$v.status|setReportStatus2}<if condition="$v.status eq 1">/{$v.score|setReportScore}</if></td>
                                 <td>
-                                    <a href="javascript:void(0)" class="edit" attr-id="{$v.rid}" attr-status="{$v.status}">查看</a>
+                                    <a href="javascript:void(0)" class="edit" attr-id="{$v.rid}" attr-status="{$v.status}"><if condition="$v['status'] eq 0">审核<else />查看</if></a>
                                     <a href="javascript:void(0)" class="del" attr-id="{$v.rid}">删除</a>
                                 </td>
                             </tr>
@@ -128,9 +134,6 @@
             <div class="ht35"></div>
             <div class="ui-paging">
                  {$page} 
-                <div class="pull-left">
-                    <a href="" class="cbox" attr-id="0"><i></i>全选</a>
-                </div>
             </div>
         </div>
     </div>

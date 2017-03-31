@@ -1,4 +1,4 @@
-<include file="Student/nav"/>
+<include file="Public/nav"/>
 <main>
     <style>
         label,td{font-size: 13px;}
@@ -10,7 +10,11 @@
                 <div class="ct">
                     <ul>
                         <li><a href="{:U('Student/index')}" class="on">学生管理</a></li>
+                    <if condition="$_SESSION['adminUser']['type'] eq 2">
                         <li><a href="{:U('Student/teacher')}" >教师管理</a></li>
+                    <li><a href="{:U('Student/classes')}" >班级管理</a></li>
+                    <li><a href="{:U('Student/department')}" >部门管理</a></li>
+                    </if>
                     </ul>
                 </div>
             </div>
@@ -29,7 +33,7 @@
         <div class="container">
             <div class="ht20"></div>
             <div class="pull-left" style="margin-right: 30px;">
-                <div class="ui-infbox">
+                <div class="ui-infbox" style="width:450px;">
                     <div class="hd">
                         <p>个人信息</p>
                     </div>
@@ -41,7 +45,7 @@
                             <div class="ct">
                                 <table>
                                     <tr>
-                                        <td><label for="">姓名</label></td>
+                                        <td width="80"><label for="">姓名</label></td>
                                         <td>{$student.name}</td>
                                     </tr>
                                     <tr>
@@ -58,7 +62,7 @@
                                     </tr>
                                     <tr>
                                         <td><label for="">联系地址</label></td>
-                                        <td>{$student.address}</td>
+                                        <td title="{$student.address}"><div style="overflow: hidden;height: 30px;">{$student.address}</div></td>
                                     </tr>
                                     <tr>
                                         <td><label for="">院系</label></td>
@@ -101,11 +105,11 @@
                                 <table>
                                     <tr>
                                         <td><label for="">实习状态</label></td>
-                                        <td>{$student.ispractice}</td>
+                                        <td>{$student.ispractice|getPracticeStatus}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">实习企业</label></td>
-                                        <td>{$student.corname}</td>
+                                        <td>{$student.cname}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">实习地址</label></td>

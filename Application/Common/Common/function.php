@@ -45,6 +45,18 @@ function getReportStatus($status){
     return $state;
 }
 
+function getReportScoreStatus($status) {
+    if($status <60) {
+        $str = '不合格';
+    }else if($status<90) {
+        $str = '合格';
+    }else{
+        $str = '优秀';
+    }
+
+    return $str;
+}
+
 function getChangeStatus($status){
     switch($status){
         case 1: $state = '已批准';break;
@@ -56,16 +68,16 @@ function getChangeStatus($status){
 
 function getProfessionStatus($status) {
     switch($status){
-        case 1: $state = '已购买';break;
-        case 0: $state = '未购买';break;
+        case 0: $state = '对口';break;
+        case 1: $state = '不对口';break;
     }
     return $state;
 }
 
 function getInsuranceStatus($status) {
     switch($status){
-        case 1: $state = '已购买';break;
-        case 0: $state = '未购买';break;
+        case 0: $state = '已购买';break;
+        case 1: $state = '未购买';break;
     }
     return $state;
 }

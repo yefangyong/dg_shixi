@@ -22,7 +22,6 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
-    <script type="text/javascript" src="/Public/Student/js/H-ui-Admin.js"></script>
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -42,7 +41,7 @@
         <div class="list">
             <ul>
                 <li>
-                    <div class="i on">
+                    <div class="i <?php echo getActive('report')?>" >
                         <a href="/index.php/student/Report/index">
                             <p><i class="ico1"></i>
                                 实习报告
@@ -51,7 +50,7 @@
                     </div>
                 </li>
                 <li>
-                    <div  class="i">
+                    <div  class="i <?php echo getActive('Apply')?>">
                         <a href="/index.php/student/Apply/index">
                             <p><i class="ico2"></i>
                                 我的申请
@@ -60,7 +59,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
+                    <div class="i <?php echo getActive('Contact')?>">
                         <a href="/index.php/student/Contact/student">
                             <p><i class="ico3"></i>
                                 通讯录
@@ -69,7 +68,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
+                    <div class="i <?php echo getActive('Notice')?>">
                         <a href="/index.php/student/Notice/index">
                             <p><i class="ico4"></i>
                                 消息管理
@@ -78,10 +77,10 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
-                        <a href="/index.php/student/Grade/index">
+                    <div class="i <?php echo getActive('Personal')?>">
+                        <a href="/index.php/student/Personal/index">
                             <p><i class="ico5"></i>
-                                我的成绩
+                                个人中心
                             </p>
                         </a>
                     </div>
@@ -99,6 +98,34 @@
     });
 </script>
 
+<style type="text/css">
+    .suofang {MARGIN: auto;WIDTH: 200px;}
+    .suofang img{}
+
+.img-square{
+/*border: 1px solid red;*/
+margin-left: 30px;
+margin-top: 10px;
+MAX-WIDTH: 100%!important;
+HEIGHT: auto!important;width:expression(this.width > 200 ? "200px" :     this.width)!important;
+}
+
+.closeLayer{
+
+/*display: none;*/
+
+z-index: 99;
+
+position:absolute; /*绝对定位*/
+
+left:230px; /*位置自己看着调整，在图片上方*/
+
+top:5px; 
+
+/*border: 1px solid red;*/
+
+}
+</style>
 <!-------------------------------------- 头部结束 -------------------------------------->
 <!-------------------------------------- 内容开始 -------------------------------------->
 <main>
@@ -106,12 +133,11 @@
         <div class="container">
             <div class="pull-right">
                                 <div class="user">
-                    <p><img src="img/avatar1.jpg" alt="">
+                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
                         <a href=""><?php echo getLoginUsername() ?></a>
                         <i></i>
                     </p>
                     <div class="ex">
-                        <p><a href="">个人信息</a></p>
                         <p><a href="/index.php/Student/Common/password">修改密码</a></p>
                         <p><a href="/index.php/Home/Login/logOut">退出</a></p>
                     </div>
@@ -139,19 +165,21 @@
             <div class="ht15"></div>
             <div class="ui-article">
                 <div class="hd">
-                    <h3><?php echo getLoginUsername();?>的实习报告</h3>
-                    <p>
-                        <?php echo ($list['course']); ?>
-                        <span class="wh30"></span>
-                        <?php echo ($list['pubtime']); ?>
-                    </p>
+                    <h3><?php echo getLoginUsername();?>的实习报告
+                        
+                        <small><?php echo ($list['course']); ?><span class="wh30"></span><?php echo ($list['pubtime']); ?></small>
+                    </h3>
                 </div>
-                <div class="ct">
+                <div class="ct" style="font-size: 20px;">
                     <?php echo ($list['content']); ?>
                 </div>
                 <hr>
                 <div class="ct">
-                    <p class="text-center"><img src="<?php echo ($list['pic']); ?>" alt=""></p>
+                    <div class="row">
+                    <?php if(is_array($pics)): $i = 0; $__LIST__ = $pics;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i; if($v): ?><div class="col-xs-3" >
+                        <img class="img-square" src="<?php echo ($v); ?>">
+                    </div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                    </div>
                 </div>
             </div>
             <div class="ht25"></div>
@@ -162,8 +190,8 @@
                             <label for="" class="control-label">意见</label>
                         </div>
                         <div class="col-sm-11">
-                            <div class="textarea">
-                                <textarea class="form-control"><?php echo ($list['suggestion']); ?></textarea>
+                            <div class="text">
+                                <p><span class="color1"><?php echo ($list['suggestion']); ?></span></p>
                             </div>
                         </div>
                     </div>
@@ -206,6 +234,9 @@
 
 </style>
 <script>
+function delcfm(){
+
+}
     $(function(){
 
     });

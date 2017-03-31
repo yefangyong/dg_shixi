@@ -1,0 +1,15 @@
+[ 2017-03-16T22:50:13+08:00 ] ::1 /index.php?m=student&c=report&a=index
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-16T22:50:48+08:00 ] ::1 /index.php/student/Apply/js/agent/agent.js?_=1489675848408
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+ERR: 非法操作:js
+
+[ 2017-03-16T22:50:53+08:00 ] ::1 /index.php/student/Apply/js/agent/agent.js?_=1489675852266
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002744s ]
+ERR: 非法操作:js
+

@@ -24,6 +24,13 @@
 
             <div class="ht30"></div>
             <div class="ui-table">
+                <div class="hd">
+                  <div class="tool">
+                    <p>
+                      <a href="/index.php?m=student&c=apply&a=changeCorporation">新增</a>
+                    </p>
+                  </div>
+                </div>
                 <div class="ct">
                     <table class="yfycms-table">
                         <tbody>
@@ -37,18 +44,20 @@
                             <td><b>评审结果</b></td>
                             <td><b>操作</b></td>
                         </tr>
+                        <volist name="data" id="v">
                         <tr>
                             <td><a href="" class="cbox"></a></td>
-                            <td>{$data['studentno']}</td>
-                            <td>{$data['name']}</td>
-                            <td>{$data['classname']}</td>
-                            <td>{$data['applytime']}</td>
-                            <td>{$data['teacher']}</td>
-                            <td>{$data['status']|getChangeStatus}</td>
+                            <td>{$v['studentno']}</td>
+                            <td>{$v['name']}</td>
+                            <td>{$v['classname']}</td>
+                            <td>{$v['applytime']}</td>
+                            <td>{$v['teacher_name']}</td>
+                            <td>{$v['status']|getChangeStatus}</td>
                             <td>
-                                <a href="javascript:void(0);" attr-id="{$data['id']}" id="yfycms-view">查看</a> <a href="javascript:void(0);" id="yfycms-delete" attr-message="删除" attr-id="{$data['id']}">删除</a>
+                                <a href="javascript:void(0);" attr-id="{$v['id']}" id="yfycms-view">查看</a> <a href="javascript:void(0);" id="yfycms-delete" attr-message="删除" attr-status="{$v['status']}"  attr-id="{$v['id']}">删除</a>
                             </td>
                         </tr>
+                        </volist>
                         </tbody>
                     </table>
                 </div>
@@ -78,11 +87,12 @@
 
     $('.yfycms-table #yfycms-delete').on('click',function(){
         var id = $(this).attr('attr-id');
+        var status = $(this).attr('attr-status');
         var message=$(this).attr('attr-message');
         var url = SCOPE.set_status_url;
         data={};
         data['id'] = id;
-
+        data['status'] = status;
         layer.open({
             type : 0,
             title : '是否提交？',
@@ -103,7 +113,7 @@
         $.post(
                 url,data,function(s){
                     if(s.status == 1){
-                        return dialog.success('删除成功','');
+                        return dialog.success('删除成功',SCOPE.jump_url);
                     }else{
                         return dialog.error('删除失败');
                     }

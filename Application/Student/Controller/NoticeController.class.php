@@ -30,13 +30,12 @@ class NoticeController extends CommonController {
 
     public function cat () {
         $id = $_GET['id'];
-        $rel = M('Notice')->where('id='.$id)->find();
+        $user_id = $_SESSION['adminUser']['studentno'];
+        $rel = M("Notice")->join("LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno")->join("LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id=$user_id")->join("LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id")->join("LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=$user_id")->where("dg_notice.id=".$id)->field("dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0, dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid, dg_teacher.name teacher_name")->select();
         if(!$rel) {
             return show(0,'此公告不存在!');
         }else {
-            $pub = M('Teacher')->where('teacherno='.$rel['user_id'])->find();
-            $rel['pub'] = $pub['name'];
-            $this->assign('list',$rel);
+            $this->assign('list',$rel[0]);
             $this->display();
         }
     }

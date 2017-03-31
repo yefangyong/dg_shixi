@@ -41,7 +41,7 @@
         <div class="list">
             <ul>
                 <li>
-                    <div class="i on">
+                    <div class="i <?php echo getActive('report')?>" >
                         <a href="/index.php/student/Report/index">
                             <p><i class="ico1"></i>
                                 实习报告
@@ -50,7 +50,7 @@
                     </div>
                 </li>
                 <li>
-                    <div  class="i">
+                    <div  class="i <?php echo getActive('Apply')?>">
                         <a href="/index.php/student/Apply/index">
                             <p><i class="ico2"></i>
                                 我的申请
@@ -59,7 +59,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
+                    <div class="i <?php echo getActive('Contact')?>">
                         <a href="/index.php/student/Contact/student">
                             <p><i class="ico3"></i>
                                 通讯录
@@ -68,7 +68,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
+                    <div class="i <?php echo getActive('Notice')?>">
                         <a href="/index.php/student/Notice/index">
                             <p><i class="ico4"></i>
                                 消息管理
@@ -77,10 +77,10 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
-                        <a href="/index.php/student/Grade/index">
+                    <div class="i <?php echo getActive('Personal')?>">
+                        <a href="/index.php/student/Personal/index">
                             <p><i class="ico5"></i>
-                                我的成绩
+                                个人中心
                             </p>
                         </a>
                     </div>
@@ -104,15 +104,14 @@
     <div class="ui-head">
         <div class="container">
             <div class="pull-right">
-                <div class="user">
-                    <p><img src="img/avatar1.jpg" alt="">
+                                <div class="user">
+                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
                         <a href=""><?php echo getLoginUsername() ?></a>
                         <i></i>
                     </p>
                     <div class="ex">
-                        <p><a href="">个人信息</a></p>
-                        <p><a href="">修改密码</a></p>
-                        <p><a href="/index.php?m=student&c=login&a=logout">退出</a></p>
+                        <p><a href="/index.php/Student/Common/password">修改密码</a></p>
+                        <p><a href="/index.php/Home/Login/logOut">退出</a></p>
                     </div>
                 </div>
             </div>
@@ -167,7 +166,7 @@
                 <div class="hd">
                     <table>
                         <tr>
-                            <td>原单位：<?php echo ($practice['name']); ?></td>
+                            <td>原单位：<?php echo ($change['pricname']); ?></td>
                             <td>现单位：<?php echo ($change['cname']); ?></td>
                             <td>岗位：<?php echo ($change['position']); ?></td>
                         </tr>
@@ -184,7 +183,7 @@
                         <?php echo ($change['reason']); ?>
                 </div>
             </div>
-            <div class="ht90"></div>
+            <div class="ht30"></div>
             <div class="ui-state">
                 <p class="text-center" style="font-size: 20px;">
                     <b>当前状态：</b><?php echo (getChangeStatus($change['status'])); ?>

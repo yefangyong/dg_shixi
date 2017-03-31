@@ -1,0 +1,64 @@
+[ 2017-03-15T09:13:33+08:00 ] ::1 /shixi/index.php/Home/login
+ERR: _STORAGE_WRITE_ERROR_:./Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php
+
+[ 2017-03-15T09:13:53+08:00 ] ::1 /shixi/index.php/Home/login
+ERR: _STORAGE_WRITE_ERROR_:./Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php
+
+[ 2017-03-15T09:14:38+08:00 ] ::1 /shixi/index.php/Home/js/agent/agent.js?_=1489540478273
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-03-15T09:15:39+08:00 ] ::1 /shixi/index.php/Home/js/agent/agent.js?_=1489540539215
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-03-15T09:15:44+08:00 ] ::1 /shixi/index.php/Home/index.php?m=home&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+ERR: 无法加载控制器:Index.php
+
+[ 2017-03-15T09:16:49+08:00 ] ::1 /shixi/index.php/Home/index.php?m=home&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+ERR: 无法加载控制器:Index.php
+
+[ 2017-03-15T09:17:43+08:00 ] ::1 /shixi/index.php/Home/js/agent/agent.js?_=1489540663428
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-03-15T18:29:30+08:00 ] ::1 /index.php/home/index.php?m=home&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001629s ]
+ERR: 无法加载控制器:Index.php
+
+[ 2017-03-15T18:30:34+08:00 ] ::1 /index.php/home/index.php?m=home&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.058062s ]
+ERR: 无法加载控制器:Index.php
+
+[ 2017-03-15T18:30:47+08:00 ] ::1 /index.php/home/index.php?m=home&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004191s ]
+ERR: 无法加载控制器:Index.php
+
+[ 2017-03-15T18:32:46+08:00 ] ::1 /index.php?m=home&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0642s ]
+SQL: SELECT dg_student.*,dg_class.classname,dg_class.dep_id,dg_department.dname,dg_department.school_id FROM `dg_student` left join dg_class ON dg_student.classno=dg_class.id left join dg_department ON dg_class.dep_id=dg_department.id left join dg_school ON dg_school.id=dg_department.school_id  WHERE `studentno` = '200'  [ RunTime:0.0154s ]
+NOTIC: [8] Undefined offset: 0 /Library/WebServer/Documents/shixi/Application/Home/Controller/LoginController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0610s ]
+SQL: SELECT dg_teacher.*,dg_class.classname,dg_class.dep_id,dg_department.dname,dg_department.school_id FROM `dg_teacher` left join dg_class ON dg_teacher.teacherno=dg_class.master_no left join dg_department ON dg_class.dep_id=dg_department.id left join dg_school ON dg_school.id=dg_department.school_id  WHERE `teacherno` = '200'  [ RunTime:0.0043s ]
+

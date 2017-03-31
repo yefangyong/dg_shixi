@@ -1,0 +1,17 @@
+[ 2017-03-17T07:19:55+08:00 ] ::1 /index.php?m=home&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT dg_student.*,dg_class.classname,dg_class.dep_id,dg_department.dname,dg_department.school_id FROM `dg_student` left join dg_class ON dg_student.classno=dg_class.id left join dg_department ON dg_class.dep_id=dg_department.id left join dg_school ON dg_school.id=dg_department.school_id  WHERE `studentno` = '20170210'  [ RunTime:0.0004s ]
+
+[ 2017-03-17T08:26:27+08:00 ] ::1 /index.php?m=home&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT dg_student.*,dg_class.classname,dg_class.dep_id,dg_department.dname,dg_department.school_id FROM `dg_student` left join dg_class ON dg_student.classno=dg_class.id left join dg_department ON dg_class.dep_id=dg_department.id left join dg_school ON dg_school.id=dg_department.school_id  WHERE `studentno` = '200'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Library/WebServer/Documents/shixi/Application/Home/Controller/LoginController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0004s ]
+SQL: SELECT dg_teacher.*,dg_class.classname,dg_class.dep_id,dg_department.dname,dg_department.school_id FROM `dg_teacher` left join dg_class ON dg_teacher.teacherno=dg_class.master_no left join dg_department ON dg_class.dep_id=dg_department.id left join dg_school ON dg_school.id=dg_department.school_id  WHERE `teacherno` = '200'  [ RunTime:0.0004s ]
+

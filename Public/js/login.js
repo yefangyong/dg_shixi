@@ -12,14 +12,14 @@ var login={
         if(!password){
             dialog.error('密码不能为空！');
         }
-        var url="/index.php?m=student&c=login&a=check";
+        var url="index.php?m=home&c=login&a=check";
         var data={'username':username,'password':password};
         $.post(url,data,function(result){
             if(result.status==0){
                 return dialog.error(result.message);
             }
             if(result.status==1){
-                return dialog.success(result.message,'/index.php?m=student&c=report&a=index');
+                return dialog.success(result.message,result.data.url);
             }
         },"JSON");
     }

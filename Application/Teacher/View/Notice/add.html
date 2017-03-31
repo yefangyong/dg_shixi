@@ -1,4 +1,4 @@
-<include file="Notice/nav" />
+<include file="Public/nav" />
 <!-------------------------------------- 内容开始 -------------------------------------->
 <main>
     <div class="ui-head">
@@ -44,9 +44,9 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
-                                <p><a href="javascript:void();">请选择您的发送对象</a></p>
+                                <p><a href="javascript:void();"><if condition="$_SESSION['adminUser']['type'] eq 0">{$_SESSION['adminUser']['classname']}<else />请选择您的发送对象</if></a></p>
                                 <input type="hidden" id="school" name="school" value="0" />
-                                <input type="hidden" id="class_id" name="class_id" value="0" />
+                                <input type="hidden" id="class_id" name="class_id" value="<if condition="$_SESSION['adminUser']['type'] eq 0">{$_SESSION['adminUser']['class_id']}<else />0</if>" />
                                 <input type="hidden" id="dep_id" name="dep_id" value="0" />
                                 <div class="ex">
                                     <if condition="$THINK.session.adminUser.type eq 2">
@@ -64,8 +64,8 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
-                                <p><a href="javascript:void();">请选择您的发送对象类型</a></p>
-                                <input type="hidden" id="type" name="type" value="0" />
+                                <p><a href="javascript:void();"><if condition="$_SESSION['adminUser']['type'] eq 0">不限<else />请选择您的发送对象类型</if></a></p>
+                                <input type="hidden" id="type" name="type" value="<if condition="$_SESSION['adminUser']['type'] eq 0">{$_SESSION['adminUser']['class_id']}<else />0</if>" />
                                 <div class="ex">
                                     <p><a href="javascript:void();" onclick="setType(0);">不限</a></p>
                                     <p><a href="javascript:void();" onclick="setType(2);">教师</a></p>
@@ -82,14 +82,6 @@
                             <div class="textarea" style="width: 93%;"><label for="">0/2000</label>
                                 <textarea class="form-control" name="content" placeholder="请输入公告内容"></textarea>
                             </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">发布时间</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control dtp" name="pubtime" id="" style="width: 210px;" placeholder="请输入上传时间" value="">
                         </div>
                     </div>
                     <div class="ht15"></div>

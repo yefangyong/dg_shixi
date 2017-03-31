@@ -1,0 +1,438 @@
+[ 2017-03-12T00:23:41+08:00 ] 39.155.185.12 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-12T07:02:50+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T07:03:03+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T07:03:37+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T07:05:31+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T07:08:48+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T07:09:11+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T07:10:38+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T07:20:42+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T07:22:05+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T07:23:49+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+
+[ 2017-03-12T07:27:04+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+
+[ 2017-03-12T07:27:44+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+
+[ 2017-03-12T07:29:04+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+
+[ 2017-03-12T07:31:18+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+
+[ 2017-03-12T07:31:35+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+
+[ 2017-03-12T07:32:02+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+
+[ 2017-03-12T07:32:14+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+
+[ 2017-03-12T07:32:25+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+
+[ 2017-03-12T07:32:41+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+
+[ 2017-03-12T07:33:25+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+
+[ 2017-03-12T07:33:52+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+
+[ 2017-03-12T07:34:40+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T07:35:07+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897',`sex`='1' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T07:37:28+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897',`sex`='0' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T07:38:09+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897',`sex`='1' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T07:38:53+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897',`sex`='1' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T07:39:06+08:00 ] 39.155.185.12 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='202cb962ac59075b964b07152d234b70',`name`='yfy',`phone`='13053112897',`sex`='1' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T07:46:05+08:00 ] 39.155.185.12 /teacher.php/Contact/index.html
+ERR: 1054:Unknown column 'Student.emergencycontact' in 'field list'
+ [ SQL语句 ] : SELECT Student.name AS stuname,Student.studentno AS studentno,Student.phone AS phone,Student.emergencycontact AS emergencycontact,Student.emergencyphone AS emergencyphone,Corporation.name AS corname,Corporation.contact AS contact,Corporation.telephone AS telephone FROM dg_student Student LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id WHERE `department_id` = '1' LIMIT 0,3  
+
+[ 2017-03-12T08:08:34+08:00 ] 39.155.185.12 /teacher.php/Practice/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON Practice.student_id = Student.studentno LEFT JOIN dg_practice Practice LEFT J' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_student Student ON Practice.student_id = Student.studentno LEFT JOIN dg_practice Practice LEFT JOIN dg_class Class ON  Student.classno = Class.id LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id  JOIN dg_profession Profession ON Profession.id = Class.profession LIMIT 1  
+
+[ 2017-03-12T12:45:43+08:00 ] 121.225.28.71 /teacher.php/Practice/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `name`='漫麦科技',`city`='南京',`type`='私企',`contact`='习近平',`position`='',`telephone`='025-3889009',`mobile`='',`email`='yk@163.com',`zipcode`='225653',`website`='',`address`='南京市雨花台区',`introduction`='一家私企',`addtime`='2017-03-12 12:45:43' WHERE ( `id` = 11 ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T12:45:58+08:00 ] 121.225.28.71 /teacher.php/Practice/delCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_corporation` WHERE ( `id` = 5 ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T18:02:52+08:00 ] 121.225.28.71 /teacher.php/Practice/addCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T18:09:07+08:00 ] 121.225.28.71 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` = 75 ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T19:58:36+08:00 ] 101.226.33.225 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-12T19:58:36+08:00 ] 101.226.33.204 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-12T20:02:59+08:00 ] 121.225.28.71 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T20:03:04+08:00 ] 121.225.28.71 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='20',`status`='-1' WHERE ( `id` = 96 ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T20:07:23+08:00 ] 121.225.28.71 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T20:07:27+08:00 ] 121.225.28.71 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='80',`status`='1' WHERE ( `id` = 97 ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T20:08:21+08:00 ] 121.225.28.71 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T20:11:20+08:00 ] 121.225.28.71 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T20:15:57+08:00 ] 121.225.28.71 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T20:22:43+08:00 ] 121.225.28.71 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_report` WHERE ( `id` = 96 ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T20:22:50+08:00 ] 121.225.28.71 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T20:23:01+08:00 ] 121.225.28.71 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T20:23:59+08:00 ] 121.225.28.71 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T20:24:30+08:00 ] 121.225.28.71 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T20:24:40+08:00 ] 121.225.28.71 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='80',`status`='1' WHERE ( `id` = 100 ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T20:26:04+08:00 ] 121.225.28.71 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T20:27:55+08:00 ] 121.225.28.71 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `id` IN(54,53)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T20:28:25+08:00 ] 121.225.28.71 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T20:28:41+08:00 ] 121.225.28.71 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_report` WHERE ( `id` IN(97,98,99)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T20:28:51+08:00 ] 121.225.28.71 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_report` WHERE ( `id` IN(100)  ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T20:29:04+08:00 ] 121.225.28.71 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T20:33:42+08:00 ] 121.225.28.71 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='-1' WHERE ( `id` = 0 ) [ RunTime:0.0001s ]
+
+[ 2017-03-12T20:35:18+08:00 ] 121.225.28.71 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='-1' WHERE ( `id` = 55 ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T21:56:35+08:00 ] 222.94.223.185 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_practice` SET `status`='-1' WHERE ( `id` = 56 ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T22:02:18+08:00 ] 222.94.223.185 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_practice` SET `status`='-1' WHERE ( `id` = 0 ) [ RunTime:0.0002s ]
+
+[ 2017-03-12T22:02:26+08:00 ] 222.94.223.185 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T22:18:57+08:00 ] 222.94.223.185 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-12T22:23:08+08:00 ] 61.235.37.202 /index.php/Teacher/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-12T22:23:34+08:00 ] 61.235.37.202 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='1' WHERE ( `id` = 58 ) [ RunTime:0.0002s ]
+

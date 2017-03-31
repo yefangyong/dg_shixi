@@ -441,7 +441,6 @@ class Model {
                 $options['where']   =   $where;
             }
         }
-
         if(is_array($options['where']) && isset($options['where'][$pk])){
             $pkValue    =   $options['where'][$pk];
         }

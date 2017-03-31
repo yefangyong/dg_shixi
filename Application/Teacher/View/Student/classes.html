@@ -1,0 +1,158 @@
+<include file="Public/nav"/>
+<main>
+    <div class="ui-head">
+        <div class="container">
+           <include file="Public/user"/>
+            <div class="tabs">
+                <ul>
+                    <li><a href="{:U('Student/index')}">学生管理</a></li>
+                    <if condition="$_SESSION['adminUser']['type'] eq 2">
+                    <li><a href="{:U('Student/teacher')}" >教师管理</a></li>
+                    <li><a href="{:U('Student/classes')}" class="on">班级管理</a></li>
+                    <li><a href="{:U('Student/department')}">部门管理</a></li>
+                    </if>
+                </ul>
+        </div>
+    </div>
+    <div class="ht15"></div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht10"></div>
+            <div class="ui-filter">
+                <span class="wh10"></span>
+                <input type="text" class="text control-form" id="keywords" placeholder="请输入班级名称">
+                <span class="wh10"></span>
+                <a href="javascript:void(0)" class="bt">查询</a>
+            </div>
+            <div class="ht30"></div>
+            <div class="ui-table">
+                <div class="hd">
+                    <div class="ui-paging">
+                        <div class="pull-left">
+                            <a href="" class="cbox" attr-id="0"><i></i>全选</a>
+                        </div>
+                    </div>
+                    <div class="tool">
+                        <p>
+                            <a href="{:U('Student/addclass')}">新增</a>
+                            &nbsp;
+                            <a href="javascript:void(0)" id="deleteall">删除</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="ct">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><b>编号</b></td>
+                            <td><b>班级名称</b></td>
+                            <td><b>年级</b></td>
+                            <td><b>系主任</b></td>
+                            <td><b>所属系部</b></td>
+                            <td><b>班级人数</b></td>
+                            <td><b>操作</b></td>
+                        </tr>
+                        <volist name="list" id="v">
+                            <tr>
+                                <td><a href="" class="cbox" attr-id="{$v.id}"></a></td>
+                                <td>{$v.id}</td>
+                                <td>{$v.classname}</td>
+                                <td>{$v.grade}</td>
+                                <td>{$v.teacher}</td>
+                                <td>{$v.dname}</td>
+                                <td>{$v.studentct}</td>
+                                <td>
+                                    <a href="__CONTROLLER__/updateclass/id/{$v.id}">编辑</a>
+                                    <a href="javascript:void(0)" class="del" attr-id="{$v.id}">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="ht35"></div>
+            <div class="ui-paging">
+               {$page}
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+
+<script>
+    $(function(){
+        $('.bt').click(function(){
+            var _department = 0;
+            var _profession = 0;
+            var _class = 0;
+            $("a[name^='department']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _department = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='profession']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _profession = $(this).attr('attr-id');
+                }
+            })
+            $("a[name^='class']").each(function(i){
+                if($(this).attr('class')=='on'){
+                    _class = $(this).attr('attr-id');
+                }
+            })
+            window.location.href="/teacher.php/Student/index/department/"+_department+"/profession/"+_profession+"/class/"+_class+"/keywords/"+$('#keywords').val();
+
+        })
+
+        $('#deleteall').click(function(){
+            var ids = new Array();
+            $('.cbox').each(function(i){
+                if($(this).attr('class')=='cbox on'){
+                    if($(this).attr('attr-id')>0)
+                    ids[ids.length]=$(this).attr('attr-id');
+                }
+            });
+            if(ids.length>0)
+                layer.confirm('您真的要删除选中记录吗?', {icon: 3, title:'删除记录'}, function(index){
+                    var $url = "{:U('Student/delclass')}";
+                    $.post($url,{id:ids},function(msg){
+                        if(msg.status==1){
+                            layer.msg(msg.message,{icon:6},function(){
+                                window.location.href="/teacher.php/Student/classes";
+                            });
+                        }else{
+                            layer.msg(msg.message,{icon:5},function(){
+                                window.location.href="/teacher.php/Student/classes";
+                            });
+                        }
+                    },'JSON');
+                })
+        });
+
+        $('.del').click(function(){
+            var $data = $(this).attr('attr-id');
+            layer.confirm('您真的要删除本条记录吗?', {icon: 3, title:'删除记录'}, function(index){
+                var $url = "{:U('Student/delclass')}";
+                $.post($url,{id:$data},function(msg){
+                    if(msg.status==1){
+                        layer.msg(msg.message,{icon:6},function(){
+                            window.location.href="/teacher.php/Student/classes";
+                        });
+                    }else{
+                        layer.msg(msg.message,{icon:5},function(){
+                            window.location.href="/teacher.php/Student/classes";
+                        });
+                    }
+                },'JSON');
+            });
+        });
+    });
+</script>

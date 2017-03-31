@@ -51,7 +51,7 @@
                                 <td>{$vo.teacher}</td>
                                 <td>{$vo.status|status}</td>
                                 <td>
-                                    <a href="javascript:void(0);" attr-id="{$vo.id}" id="yfycms-view">查看</a> <a href="javascript:void(0);" id="yfycms-delete" attr-message="删除" attr-id="{$vo.id}">删除</a>
+                                    <a href="javascript:void(0);" attr-id="{$vo.id}" id="yfycms-view">查看</a> <a href="javascript:void(0);" id="yfycms-delete" attr-message="删除" attr-status="{$vo.status}" attr-id="{$vo.id}">删除</a>
                                 </td>
                             </tr>
                         </volist>
@@ -85,11 +85,12 @@
 
         $('.yfycms-table #yfycms-delete').on('click',function(){
             var id = $(this).attr('attr-id');
+            var status = $(this).attr('attr-status');
             var message=$(this).attr('attr-message');
             var url = SCOPE.set_status_url;
             data={};
             data['id'] = id;
-
+            data['status'] = status;
             layer.open({
                 type : 0,
                 title : '是否提交？',

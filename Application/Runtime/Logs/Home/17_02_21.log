@@ -1,0 +1,6 @@
+[ 2017-02-21T11:24:08+08:00 ] ::1 /shixi/index.php/Home/Login/index.html
+ERR: Think\Model:getStudentByUsername方法不存在！
+
+[ 2017-02-21T19:05:18+08:00 ] ::1 /shixi/index.php/Home/Report/add.html
+ERR: Think\Model:insert方法不存在！
+

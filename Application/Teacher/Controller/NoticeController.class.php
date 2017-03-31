@@ -6,35 +6,20 @@ class NoticeController extends Controller {
 
     public function index() {
         $teacher = $_SESSION['adminUser'];
-        $department = I('get.department',0);
-        $class = I('get.class',0);
-        switch($teacher['type']){
-            case 0:
-                $class = $teacher['class_id'];
-                break;
-            case 1:
-                $department = $teacher['department_id'];
-                break;
-        }
-        if($department)
-            $map[] = 'department_id='.$department.'';
-        $profession = I('get.profession',0);
-        if($class)
-            $map[] = 'class_id = '.$class;
-        if($_POST['new']&&$user_id){
-            $map[]="id NOT IN(SELECT notice_id FROM dg_notice_view WHERE user_id=$user_id)";
-        }
-        if($_POST['read']&&$user_id){
-            $map[]="id ".($_POST['read']==1 ? 'NOT' : '')." IN(SELECT notice_id FROM dg_notice_view WHERE user_id=$user_id and type=0)";
-        }
+        $user_id = $teacher['teacherno'];
+        $dep_id = $teacher['dep_id'];
+        $class_id = $teacher['class_id'];
+        $map[]="dg_notice.id NOT IN(SELECT notice_id FROM dg_notice_view WHERE user_id=$user_id and type=1)";
+        $map[]="(dg_notice.dep_id=$dep_id or dg_notice.class_id=$class_id or school=1)";
+        $map[]="(user_id=$user_id or dg_notice.type!=1)";
         import('ORG.Util.Page');
         // 每页显示记录数
         $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
-        $count= D('NoticeView')->count();
+        $count= D('Notice')->count();
         $page = new \Think\Page($count,$listRows);
         $show = $page->show();
         $currentPage = I(C('VAR_PAGE'),1);
-        $data = D("NoticeView")->page($currentPage.','.$listRows)->select();
+        $data = D("Notice")->join("LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno")->join("LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id=$user_id")->join("LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id")->join("LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id ")->order(array("pubtime"=>"desc"))->page($currentPage.','.$listRows)->field("dg_notice.*,IF(dg_notice.school!=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0, dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid, dg_teacher.name teacher_name")->select();
         $this->assign('data',$data);
         $this->assign('page',$show);
         $this->assign('totalCount',$count);
@@ -93,5 +78,16 @@ class NoticeController extends Controller {
         }else {
             return show(0,'删除失败!');
         }
+    }
+
+    public function cat(){
+        $id = I('get.id');
+        $teacher = $_SESSION['adminUser'];
+        $user_id = $teacher['teacherno'];
+        $info = D("Notice")->join("LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno")->join("LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id=$user_id")->join("LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id")->join("LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=$user_id")->where("dg_notice.id=".$id)->field("dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0, dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid, dg_teacher.name teacher_name")->select();
+        D('Notice_view')->where('notice_id='.$id." and user_id=".$_SESSION['adminUser']['teacherno'])->delete();
+        $rel = D('Notice_view')->add(array('notice_id'=>$id, "user_id"=>$_SESSION['adminUser']['teacherno']));
+        $this->assign("list", $info[0]);
+        $this->display();
     }
 }

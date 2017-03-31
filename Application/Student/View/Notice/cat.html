@@ -31,7 +31,9 @@
                 <div class="hd">
                     <h3>{$list.title}</h3>
                     <p>
-                        发布人：{$list.pub}
+                        发布人：{$list.teacher_name}
+                        <span class="wh30"></span>
+                        发布对象:{$list.publisher} <if condition="$list.type eq 1">学生<elseif condition="$list.type eq 2">教师</if>
                         <span class="wh30"></span>
                         发布时间：{$list.pubtime}
                     </p>

@@ -1,0 +1,34 @@
+[ 2017-03-29T14:15:56+08:00 ] 117.136.45.136 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+NOTIC: [8] Undefined index: teacherno /var/www/html/Application/Student/Controller/CommonController.class.php 第 16 行.
+
+[ 2017-03-29T14:16:00+08:00 ] 117.136.45.136 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+NOTIC: [8] Undefined index: teacherno /var/www/html/Application/Student/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=2017300 AND status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_change` WHERE ( student_id=2017300 AND status=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_change` WHERE ( student_id=2017300 AND status=1 ) ORDER BY `applytime` desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`guide`,`phone`,`guide_email`,`reason`,`applytime`,`student_id`,`corporation_id`,`cname`,`address`,`detailaddress`) VALUES ('1','软件工程师','1','0','赵本山','13609098877','111','我需要变更岗位','2017-03-29 14:16:00','2017300','23','大疆机器人','南京江宁区','南京江宁区南京江宁区南京江宁区南京江宁区++') [ RunTime:0.0002s ]
+
+[ 2017-03-29T14:19:52+08:00 ] 117.136.45.136 /index.php?m=student&c=apply&a=changeCorporation
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [8] Undefined index: teacherno /var/www/html/Application/Student/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( name="沃尔玛超市" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=2017300 AND status=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_change` WHERE ( student_id=2017300 AND status=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_change` (`type`,`cname`,`profession`,`insurance`,`position`,`address`,`phone`,`guide`,`detailaddress`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('0','沃尔玛超市','0','0','收银员','南京江宁区','123456','马云','南京江宁区南京江宁区南京江宁区南京江宁区南京江宁区南京江宁区','变更不需要理由！','2017-03-29 14:19:52','2017300','0') [ RunTime:0.0002s ]
+

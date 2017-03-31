@@ -29,7 +29,11 @@ class ApplyController extends CommonController {
 
     public function delApply() {
         $id = $_POST['id'];
-        $rel = M('Practice')->where('id='.$id)->delete();
+        $data = [
+            'id'=>$id,
+            'status'=>0,
+        ];
+        $rel = M('Practice')->where($data)->delete();
         if($rel) {
             return show(1,'删除成功!');
         }else {
@@ -44,8 +48,6 @@ class ApplyController extends CommonController {
             $user = $_SESSION['adminUser'];
             $this->assign('student',$user);
             $this->assign('practice',$rel);
-            $corporation = M('corporation')->where('id='.$rel['corporation_id'])->find();
-            $this->assign('corporation',$corporation);
             $this->display();
         }else {
             return show(0,'不存在此申请信息!');
@@ -65,25 +67,24 @@ class ApplyController extends CommonController {
             }
             $user = $_SESSION['adminUser'];
             $data = [
-                'student_id'=>$user['studentno'],
-                'mode'=>2
+                'student_id'=>$user['studentno']
             ];
             $practice = M('Practice')->where($data)->find();
             if($practice) {
+                if($practice['mode']==2)
                 return show(0,'学校已经安排，请勿申请!');
+                else
+                return show(0,'请勿重复申请!');
             }
             $_POST['student_id'] = $user['studentno'];
             $corporation = M('corporation')->where('name="'.$_POST['cname'].'"')->find();
-            if(!$corporation) {
-                return show(0,'不存在这个公司!');
-            }
             $_POST['corporation_id'] = $corporation['id'];
-            $_POST['applytime'] = date('Y-m-d',time());
+            $_POST['applytime'] = date('Y-m-d H:i:s',time());
             $rel = M('practice')->add($_POST);
             if($rel) {
                 return show(1,'提交成功，请等待审核!');
             }else {
-                return show(0,'提价失败!');
+                return show(0,'提交失败!');
             }
         }else {
             $corpration = M('corporation')->select();
@@ -133,7 +134,11 @@ class ApplyController extends CommonController {
         if(!$rel) {
             return $this->display('Apply/noleave');
         }else {
-            $data = D('LeaveView')->getLeaveInfo($user['studentno']);
+            $map = [
+                'myLeave.student_id'=>$user['studentno'],
+                'myLeave.stu_del'=>1
+            ];
+            $data = D('LeaveView')->where($map)->select();
             foreach ($data as $k=>$v) {
                 if($data[$k]['status'] == 1) {
                     $teacher = M('Teacher')->where('teacherno='.$data[$k]['teacher_id'])->find();
@@ -149,12 +154,30 @@ class ApplyController extends CommonController {
 
     public function delLeave() {
         $id = $_POST['id'];
-        $rel = M('Leave')->where('id='.$id)->delete();
-        if($rel) {
-            return show(1,'删除成功!');
+        if($_POST['status'] == 1) {
+            //软删除
+            $data = [
+                'stu_del'=>0
+            ];
+            $rel = M('Leave')->where('id='.$id)->save($data);
+            if($rel) {
+                return show(1,'删除成功!');
+            }else {
+                return show(0,'删除失败!');
+            }
         }else {
-            return show(0,'删除失败!');
+            $data = [
+                'status'=>0,
+                'id'=>$id
+            ];
+            $rel = M('Leave')->where($data)->delete();
+            if($rel) {
+                return show(1,'删除成功!');
+            }else {
+                return show(0,'删除失败!');
+            }
         }
+
     }
 
     public function viewLeave() {
@@ -169,7 +192,7 @@ class ApplyController extends CommonController {
     public function changeCorporation() {
         if($_POST) {
             if(!$_POST['cname'] || !isset($_POST['cname'])) {
-                return show(0,'请选择企业名称！');
+                return show(0,'请填写企业名称！');
             }
             if(!$_POST['position'] || !isset($_POST['position'])) {
                 return show(0,'请填写实习岗位！');
@@ -187,15 +210,16 @@ class ApplyController extends CommonController {
             $user = $_SESSION['adminUser'];
             $_POST['student_id'] = $user['studentno'];
             $corporation = M('corporation')->where('name="'.$_POST['cname'].'"')->find();
+            $_POST['corporation_id'] = $corporation['id'];
             if(!$corporation) {
                 $_POST['corporation_id'] = 0;
             }
-            $_POST['corporation_id'] = $corporation['id'];
-            $practice = M('Practice')->where('student_id='.$user['studentno'])->find();
+            $practice = M('Practice')->where('student_id='.$user['studentno']." AND status=1")->find();
             if(!$practice) {
-                return show(0,'请先添加实习申请!');
+                return show(0,'请先添加实习申请或申请审核通过!');
             }
-            $data = M('Change')->where('student_id='.$user['studentno'])->find();
+            $data = M('Change')->where('student_id='.$user['studentno']." AND status=0")->find();
+
             if($data) {
                 return show(0, '请不要重复申请变更!');
             }else {
@@ -238,14 +262,23 @@ class ApplyController extends CommonController {
             $user = $_SESSION['adminUser'];
             $_POST['student_id'] = $user['studentno'];
             $_POST['corporation_id'] = $user['corporation_id'];
-            $practice = M('Practice')->where('student_id='.$user['studentno'])->find();
+            $practice = M('Practice')->where('student_id='.$user['studentno']." AND status=1")->find();
+            $_POST['cname'] = $practice['cname'];
+            $_POST['address'] = $practice['address'];
+            $_POST['detailaddress'] = $practice['detailaddress'];
             if(!$practice) {
-                return show(0,'请先添加实习申请!');
+                return show(0,'请先添加实习申请或申请审核通过!');
             }
-            $data = M('Change')->where('student_id='.$user['studentno'])->find();
+            $data = M('Change')->where('student_id='.$user['studentno']." AND status=0")->find();
             if($data) {
                 return show(0,'请不要重复申请!');
             }else {
+                $_changeinfo = D("Change")->where('student_id='.$user['studentno']." AND status=1")->order(array('applytime'=>'desc'))->limit(1)->select();
+                if($_changeinfo){
+                    $_POST['cname']=$_changeinfo[0]['cname'];
+                    $_POST['address'] = $_changeinfo[0]['address'];
+                    $_POST['detailaddress'] = $_changeinfo[0]['detailaddress'];
+                }
                 $rel = M('change')->add($_POST);
                 if($rel) {
                     return show(1,'提交成功，请等待审核!');
@@ -265,13 +298,8 @@ class ApplyController extends CommonController {
         if(!$rel) {
             $this->display('Apply/nochange');
         }else {
-            $data = D('ChangeView')->getChangeInfo($user['studentno']);
-            if($data['status'] == 1) {
-                $teacher = M('Teacher')->where('teacherno='.$data['teacher_id'])->find();
-                $data['teacher'] = $teacher['name'];
-            }else {
-                $data['teacher'] = '';
-            }
+            $data = D('ChangeView')->where('student_id='.$user['studentno'])->order(array('applytime'=>'desc'))->select();
+            //echo D('ChangeView')->getLastSql();
             $this->assign('data',$data);
             $this->display();
         }
@@ -279,36 +307,37 @@ class ApplyController extends CommonController {
 
     public function delChange() {
         $id  = $_POST['id'];
-        $rel = M('Change')->where('id='.$id)->delete();
-        if($rel) {
-            return show(1,'删除成功!');
-        } else {
-            return show(0,'删除失败!');
+        if($_POST['status'] == 0 ||$_POST['status'] == -1) {
+            $rel = M('Change')->where('id='.$id)->delete();
+            if($rel) {
+                return show(1,'删除成功!');
+            } else {
+                return show(0,'删除失败!');
+            }
+        }else if($_POST['status'] == 1){
+            return show(0,'已审核不能删除!');
         }
     }
 
     public function viewChange() {
         $id = $_GET['id'];
+        $user = $_SESSION['adminUser'];
         $change = M('Change')->where('id='.$id)->find();
+        $practice = M('Practice')->where('student_id='.$user['studentno'])->find();
+        $change['pricname']=$practice['cname'];
+        $change['priposition']=$practice['position'];
+        $_changeinfo = D("Change")->where(array("student_id"=>$user['studentno']." AND status=1"))->order(array('applytime'=>'desc'))->limit(1,1)->select();
+        if($_changeinfo){
+            $change['pricname']=$_changeinfo[0]['cname'];
+            $change['priposition']=$_changeinfo[0]['position'];
+        }
+        $this->assign('student',$user);
+        $this->assign('change',$change);
         if($change['type'] == 0) {
             //变更单位
-            $user = $_SESSION['adminUser'];
-            $corporation = M('Corporation')->where('id='.$user['corporation_id'])->find();
-            $change = M('Change')->where('student_id='.$user['studentno'])->find();
-            $this->assign('student',$user);
-            $this->assign('practice',$corporation);
-            $this->assign('change',$change);
             $this->display('Apply/viewChangeCorporation');
         }elseif($change['type'] == 1) {
             //变更岗位
-            $user = $_SESSION['adminUser'];
-            $practice = M('Practice')->where('student_id='.$user['studentno'])->find();
-            $corporation = M('Corporation')->where('id='.$user['corporation_id'])->find();
-            $change = M('Change')->where('student_id='.$user['studentno'])->find();
-            $this->assign('corporation',$corporation);
-            $this->assign('practice',$practice);
-            $this->assign('student',$user);
-            $this->assign('change',$change);
             $this->display('Apply/viewChangeJob');
         }
     }

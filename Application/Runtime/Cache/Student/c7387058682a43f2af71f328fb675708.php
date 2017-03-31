@@ -22,7 +22,6 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
-    <script type="text/javascript" src="/Public/Student/js/H-ui-Admin.js"></script>
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -42,7 +41,7 @@
         <div class="list">
             <ul>
                 <li>
-                    <div class="i on">
+                    <div class="i <?php echo getActive('report')?>" >
                         <a href="/index.php/student/Report/index">
                             <p><i class="ico1"></i>
                                 实习报告
@@ -51,7 +50,7 @@
                     </div>
                 </li>
                 <li>
-                    <div  class="i">
+                    <div  class="i <?php echo getActive('Apply')?>">
                         <a href="/index.php/student/Apply/index">
                             <p><i class="ico2"></i>
                                 我的申请
@@ -60,7 +59,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
+                    <div class="i <?php echo getActive('Contact')?>">
                         <a href="/index.php/student/Contact/student">
                             <p><i class="ico3"></i>
                                 通讯录
@@ -69,7 +68,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
+                    <div class="i <?php echo getActive('Notice')?>">
                         <a href="/index.php/student/Notice/index">
                             <p><i class="ico4"></i>
                                 消息管理
@@ -78,10 +77,10 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
-                        <a href="/index.php/student/Grade/index">
+                    <div class="i <?php echo getActive('Personal')?>">
+                        <a href="/index.php/student/Personal/index">
                             <p><i class="ico5"></i>
-                                我的成绩
+                                个人中心
                             </p>
                         </a>
                     </div>
@@ -106,12 +105,11 @@
         <div class="container">
             <div class="pull-right">
                                 <div class="user">
-                    <p><img src="img/avatar1.jpg" alt="">
+                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
                         <a href=""><?php echo getLoginUsername() ?></a>
                         <i></i>
                     </p>
                     <div class="ex">
-                        <p><a href="">个人信息</a></p>
                         <p><a href="/index.php/Student/Common/password">修改密码</a></p>
                         <p><a href="/index.php/Home/Login/logOut">退出</a></p>
                     </div>
@@ -134,6 +132,13 @@
 
             <div class="ht30"></div>
             <div class="ui-table">
+                <div class="hd">
+                  <div class="tool">
+                    <p>
+                      <a href="/index.php?m=student&c=apply&a=changeCorporation">新增</a>
+                    </p>
+                  </div>
+                </div>
                 <div class="ct">
                     <table class="yfycms-table">
                         <tbody>
@@ -147,18 +152,18 @@
                             <td><b>评审结果</b></td>
                             <td><b>操作</b></td>
                         </tr>
-                        <tr>
+                        <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
                             <td><a href="" class="cbox"></a></td>
-                            <td><?php echo ($data['studentno']); ?></td>
-                            <td><?php echo ($data['name']); ?></td>
-                            <td><?php echo ($data['classname']); ?></td>
-                            <td><?php echo ($data['applytime']); ?></td>
-                            <td><?php echo ($data['teacher']); ?></td>
-                            <td><?php echo (getChangeStatus($data['status'])); ?></td>
+                            <td><?php echo ($v['studentno']); ?></td>
+                            <td><?php echo ($v['name']); ?></td>
+                            <td><?php echo ($v['classname']); ?></td>
+                            <td><?php echo ($v['applytime']); ?></td>
+                            <td><?php echo ($v['teacher_name']); ?></td>
+                            <td><?php echo (getChangeStatus($v['status'])); ?></td>
                             <td>
-                                <a href="javascript:void(0);" attr-id="<?php echo ($data['id']); ?>" id="yfycms-view">查看</a> <a href="javascript:void(0);" id="yfycms-delete" attr-message="删除" attr-id="<?php echo ($data['id']); ?>">删除</a>
+                                <a href="javascript:void(0);" attr-id="<?php echo ($v['id']); ?>" id="yfycms-view">查看</a> <a href="javascript:void(0);" id="yfycms-delete" attr-message="删除" attr-status="<?php echo ($v['status']); ?>"  attr-id="<?php echo ($v['id']); ?>">删除</a>
                             </td>
-                        </tr>
+                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         </tbody>
                     </table>
                 </div>
@@ -188,11 +193,12 @@
 
     $('.yfycms-table #yfycms-delete').on('click',function(){
         var id = $(this).attr('attr-id');
+        var status = $(this).attr('attr-status');
         var message=$(this).attr('attr-message');
         var url = SCOPE.set_status_url;
         data={};
         data['id'] = id;
-
+        data['status'] = status;
         layer.open({
             type : 0,
             title : '是否提交？',
@@ -213,7 +219,7 @@
         $.post(
                 url,data,function(s){
                     if(s.status == 1){
-                        return dialog.success('删除成功','');
+                        return dialog.success('删除成功',SCOPE.jump_url);
                     }else{
                         return dialog.error('删除失败');
                     }

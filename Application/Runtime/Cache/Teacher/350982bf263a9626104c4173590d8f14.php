@@ -28,83 +28,6 @@
 
     </div>
 </header>
-<!--<nav class="navi">-->
-    <!--<div class="hd">-->
-        <!--<div class="logo">-->
-            <!--<p><a href=""><img src="/Public/teacher/img/logo.png" alt=""></a></p>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="ct">-->
-        <!--<div class="ht15"></div>-->
-        <!--<div class="list">-->
-            <!--<ul>-->
-                <!--<li>-->
-                    <!--<div class="i on">-->
-                        <!--<a href="<?php echo U('Report/index');?>">-->
-                            <!--<p><i class="ico1"></i>-->
-                                <!--实习报告-->
-                            <!--</p>-->
-                        <!--</a>-->
-                    <!--</div>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<div class="i">-->
-                        <!--<a href="<?php echo U('Apply/index');?>">-->
-                            <!--<p><i class="ico2"></i>-->
-                                <!--我的申请-->
-                            <!--</p>-->
-                        <!--</a>-->
-                    <!--</div>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<div class="i">-->
-                        <!--<a href="<?php echo U('Practice/index');?>">-->
-                            <!--<p><i class="ico6"></i>-->
-                                <!--实习管理-->
-                            <!--</p>-->
-                        <!--</a>-->
-                    <!--</div>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<div class="i">-->
-                        <!--<a href="<?php echo U('Notice/index');?>">-->
-                            <!--<p><i class="ico7"></i>-->
-                                <!--通知公告-->
-                            <!--</p>-->
-                        <!--</a>-->
-                    <!--</div>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<div class="i">-->
-                        <!--<a href="<?php echo U('Count/index');?>">-->
-                            <!--<p><i class="ico8"></i>-->
-                                <!--统计分析-->
-                            <!--</p>-->
-                        <!--</a>-->
-                    <!--</div>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<div class="i ">-->
-                        <!--<a href="<?php echo U('Student/index');?>">-->
-                            <!--<p><i class="ico9"></i>-->
-                                <!--学生管理-->
-                            <!--</p>-->
-                        <!--</a>-->
-                    <!--</div>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<div class="i">-->
-                        <!--<a href="<?php echo U('Contact/index');?>">-->
-                            <!--<p><i class="ico3"></i>-->
-                                <!--通讯录-->
-                            <!--</p>-->
-                        <!--</a>-->
-                    <!--</div>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</nav>-->
     <nav class="navi">
     <div class="hd">
         <div class="logo">
@@ -115,35 +38,8 @@
         <div class="ht15"></div>
         <div class="list">
             <ul>
-                <li>
-                    <div class="i ">
-                        <a href="<?php echo U('Report/index');?>">
-                            <p><i class="ico1"></i>
-                                实习报告
-                            </p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="i on">
-                        <a href="<?php echo U('Apply/index');?>">
-                            <p><i class="ico2"></i>
-                                申请审核
-                            </p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="i">
-                        <a href="<?php echo U('Practice/index');?>">
-                            <p><i class="ico6"></i>
-                                实习管理
-                            </p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="i">
+            <?php if($_SESSION['adminUser']['type'] == 2 or $_SESSION['adminUser']['type'] == 1): ?><li>
+                    <div class="i<?=' '.getActive('Notice')?>">
                         <a href="<?php echo U('Notice/index');?>">
                             <p><i class="ico7"></i>
                                 通知公告
@@ -152,8 +48,8 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
-                        <a href="">
+                    <div class="i<?=' '.getActive('Statistics')?>">
+                        <a href="<?php echo U('Statistics/index');?>">
                             <p><i class="ico8"></i>
                                 统计分析
                             </p>
@@ -161,16 +57,25 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i ">
-                        <a href="<?php echo U('Student/index');?>">
-                            <p><i class="ico9"></i>
-                                用户管理
+                    <div class="i<?=' '.getActive('Practice')?>">
+                        <a href="<?php echo U('Practice/index');?>">
+                            <p><i class="ico6"></i>
+                                实习管理
                             </p>
                         </a>
                     </div>
                 </li>
                 <li>
-                    <div class="i">
+                    <div class="i<?=' '.getActive('Student')?>">
+                        <a href="<?php echo U('Student/index');?>">
+                            <p><i class="ico9"></i>
+                                学生管理
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Contact')?>">
                         <a href="<?php echo U('Contact/index');?>">
                             <p><i class="ico3"></i>
                                 通讯录
@@ -178,6 +83,70 @@
                         </a>
                     </div>
                 </li>
+            <?php else: ?>
+                <li>
+                    <div class="i<?=' '.getActive('Report')?>">
+                        <a href="<?php echo U('Report/index');?>">
+                            <p><i class="ico1"></i>
+                                实习报告
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Apply')?>">
+                        <a href="<?php echo U('Apply/index');?>">
+                            <p><i class="ico2"></i>
+                                申请审核
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Practice')?>">
+                        <a href="<?php echo U('Practice/index');?>">
+                            <p><i class="ico6"></i>
+                                实习管理
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Notice')?>">
+                        <a href="<?php echo U('Notice/index');?>">
+                            <p><i class="ico7"></i>
+                                通知公告
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Statistics')?>">
+                        <a href="<?php echo U('Statistics/index');?>">
+                            <p><i class="ico8"></i>
+                                统计分析
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Student')?>">
+                        <a href="<?php echo U('Student/index');?>">
+                            <p><i class="ico9"></i>
+                                <?php if($_SESSION['adminUser']['type'] == 0): ?>学生<?php else: ?>用户<?php endif; ?>管理
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Contact')?>">
+                        <a href="<?php echo U('Contact/index');?>">
+                            <p><i class="ico3"></i>
+                                通讯录
+                            </p>
+                        </a>
+                    </div>
+                </li><?php endif; ?>
             </ul>
         </div>
     </div>
@@ -193,7 +162,6 @@
             <i></i>
         </p>
         <div class="ex">
-            <p><a href="">个人信息</a></p>
             <p><a href="javascript:void(0)">修改密码</a></p>
             <p><a href="/index.php/Home/Login/logOut">退出</a></p>
         </div>
@@ -206,7 +174,7 @@
                         <li><a href="<?php echo U('Apply/index');?>" >实习申请</a></li>
                         <!--<li><a href="<?php echo U('Apply/corporation');?>" class="on">实习单位变更</a></li>-->
                         <!--<li><a href="<?php echo U('Apply/position');?>">实习岗位变更</a></li>-->
-                        <li><a href="<?php echo U('Apply/change');?>">实习变更</a></li>
+                        <li><a href="<?php echo U('Apply/change');?>" class="on">实习变更</a></li>
                         <li><a href="<?php echo U('Apply/leave');?>">请假申请</a></li>
                     </ul>
                 </div>
@@ -253,14 +221,14 @@
                 <div class="hd">
                     <table>
                         <tr>
-                            <td>实习企业：<?php echo ($apply["corname"]); ?></td>
-                            <td>原岗位：xxx</td>
-                            <td>现岗位：xxx</td>
+                            <td>实习企业：<?php echo ($apply["cname"]); ?></td>
+                            <td>原岗位：<?php echo ($apply["position"]); ?></td>
+                            <td>现岗位：<?php echo ($apply["forposition"]); ?></td>
                         </tr>
                         <tr>
                             <td>所在地址：<?php echo ($apply["address"]); ?></td>
                             <td>企业指导老师：<?php echo ($apply["guide"]); ?></td>
-                            <td>联系电话：xxx</td>
+                            <td>联系电话：<?php echo ($apply["cphone"]); ?></td>
                         </tr>
                     </table>
                     <div class="ht15"></div>
@@ -273,11 +241,17 @@
                 </div>
             </div>
             <div class="ht30"></div>
+            <?php if($apply["status"] == 0): ?><p class="text-center">
+                <button type='button' class="bt-btn1 style1" attr-opinion="1">同意</button>
+                <span class="wh40"></span>
+                <button  type="button" class="bt-btn1 style2" attr-opinion ="-1">不同意</button>
+            </p>
+            <?php else: ?>
             <div class="ui-state">
                 <p class="text-center" style="font-size: 20px;">
                     <b>当前状态：</b><?php echo (getReportStatus($apply["status"])); ?>/<?php echo (setApplyStatus($apply["status"])); ?>
                 </p>
-            </div>
+            </div><?php endif; ?>
         </div>
     </div>
 </main>
@@ -288,13 +262,33 @@
 
     </div>
 </footer>
+<script>
+    $(function(){
+        $('button').click(function(){
+            var $id = <?php echo ($apply["chid"]); ?>;
+            if($id.length==0){
+                layer.msg('系统错误，请重新打开页面',{icon:5,time:2000},function(){
+                        window.location.href="/teacher.php/Apply/change";//跳转到列表页面
+                    });
+                return ;
+            }
+            var $data = $(this).attr('attr-opinion');
+            var $url = "<?php echo U('Apply/editChange');?>";
+            $.post($url,{'opinion':$data,'id':$id},function(msg){
+                if(msg.status==0){
+                    layer.msg(msg.message,{icon:5,time:2000},function(){
+                        window.location.href="/teacher.php/Apply/change";//跳转到列表页面
+                    });
+                }else{
+                    layer.msg(msg.message,{icon:6,time:2000},function(){
+                        window.location.href="/teacher.php/Apply/change";//跳转到列表页面
+                    });
+                }
+            },'JSON');
+        });
+    });
+</script>
 </body>
 </html>
 <script>
-    $(function(){
-       $('.i').click(function(){
-           $('.i').removeClass('on');
-           $(this).addClass('on');
-       });
-    });
 </script>

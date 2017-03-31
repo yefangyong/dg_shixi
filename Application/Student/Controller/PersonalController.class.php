@@ -10,9 +10,15 @@ class PersonalController extends Controller {
         $student = D('StudentView')->where($data)->find();
         $condition = [
             'myPractice.student_id'=>$user['studentno'],
-            'Corporation.isUsed'=>1
+            'myPractice.status'=>1
         ];
         $practice = D('PracticeView')->where($condition)->find();
+        $_changeinfo = D("Change")->where(array("student_id"=>$user['studentno']." AND status=1"))->order(array('applytime'=>'desc'))->limit(1,1)->select();
+        if($_changeinfo){
+            $_changeinfo[0]['starttime']=$practice['starttime'];
+            $_changeinfo[0]['endtime']=$practice['endtime'];
+            $practice=$_changeinfo[0];
+        }
         $weekReportCount = D('Report')->getWeekReportCountById($user['studentno']);
         $monthReportCount = D('Report')->getMonthReportCountById($user['studentno']);
         $signin = D('Signin')->getSigninById($user['studentno']);

@@ -8,6 +8,7 @@ class ReportController extends Controller {
 			$_POST[$key]=$v;
 		}	
 		unset($_POST['data']);
+		$map['tea_del']=1;
 		if($_POST['student_id']){
 			$map['student_id']=$_POST['student_id'];
 		}
@@ -94,7 +95,7 @@ class ReportController extends Controller {
 		}	
 		unset($_POST['data']);
 		$id = I('post.id',0,'intval');
-		$res = D('Report')->where("`id` = ".$id)->delete();
+		$res = D('Report')->where("`id` = ".$id)->save(array("tea_del"=>0));
 		if($res){
 		 return $this->ajaxReturn(array('status'=>1,'info'=>'删除成功','data'=>$data));
 		}else{

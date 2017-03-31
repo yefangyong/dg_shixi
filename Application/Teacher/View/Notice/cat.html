@@ -1,0 +1,67 @@
+<include file="Public/nav" />
+<!-------------------------------------- 内容开始 -------------------------------------->
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <include file="Base/personal"/>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="/teacher.php/Notice/index" class="on">公告</a></li>
+                    <li><a href="">系统消息</a></li>
+                    <li><a href="">预警信息</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ui-path">
+        <p><span class="pull-right"><a href="/teacher.php/Notice/index" style="font-size: 15px">返回</a></span>
+            <a href="" class="home"></a>
+            <a href="/teacher.php/Notice/index" style="font-size: 15px">消息管理</a>
+            &gt;
+            <a href="/teacher.php/Notice/index" style="font-size: 15px" class="on">公告查看</a>
+        </p>
+    </div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht15"></div>
+            <div class="ui-article">
+                <div class="hd">
+                    <h3>{$list.title}</h3>
+                    <p>
+                        发布人：{$list.teacher_name}
+                        <span class="wh30"></span>
+                        发布对象:{$list.publisher}  <if condition="$list.type eq 1">学生<elseif condition="$list.type eq 2">教师</if>
+                        <span class="wh30"></span>
+                        发布时间：{$list.pubtime}
+                    </p>
+                </div>
+                <div class="ct">
+                    <p>{$list.content}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+<!-------------------------------------- 尾部开始 -------------------------------------->
+</body>
+</html>
+<style>
+
+</style>
+<script>
+var $url = "{:U('Notice/read')}";
+        $.post($url,{id:{$list.id}},function(msg){
+        },'JSON');
+    $(function(){
+
+    });
+</script>

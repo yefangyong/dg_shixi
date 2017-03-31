@@ -1,4 +1,4 @@
-<include file="Apply/nav"/>
+<include file="Public/nav"/>
 <main>
     <div class="ui-head">
         <div class="container">
@@ -11,7 +11,7 @@
                         <li><a href="{:U('Apply/index')}" >实习申请</a></li>
                         <!--<li><a href="{:U('Apply/corporation')}" class="on">实习单位变更</a></li>-->
                         <!--<li><a href="{:U('Apply/position')}">实习岗位变更</a></li>-->
-                        <li><a href="{:U('Apply/change')}">实习变更</a></li>
+                        <li><a href="{:U('Apply/change')}" class="on">实习变更</a></li>
                         <li><a href="{:U('Apply/leave')}"">请假申请</a></li>
                     </ul>
                 </div>
@@ -32,7 +32,7 @@
             <div class="ht15"></div>
             <div class="ui-article">
                 <div class="hd">
-                    <h3>{$apply.stuname}的岗位变更申请</h3>
+                    <h3>{$apply.stuname}的单位变更申请</h3>
                 </div>
                 <div class="ht20"></div>
                 <div class="ui-head1">
@@ -58,14 +58,14 @@
                 <div class="hd">
                     <table>
                         <tr>
-                            <td>实习企业：{$apply.corname}</td>
-                            <td>原岗位：xxx</td>
-                            <td>现岗位：xxx</td>
+                            <td>原单位：{$apply.cname}</td>
+                            <td>现单位：{$apply.forcname}</td>
+                            <td>岗位：{$apply.forposition}</td>
                         </tr>
                         <tr>
                             <td>所在地址：{$apply.address}</td>
                             <td>企业指导老师：{$apply.guide}</td>
-                            <td>联系电话：xxx</td>
+                            <td>联系电话：{$apply.cphone}</td>
                         </tr>
                     </table>
                     <div class="ht15"></div>
@@ -78,11 +78,19 @@
                 </div>
             </div>
             <div class="ht30"></div>
+            <if condition="$apply.status eq 0">
+            <p class="text-center">
+                <button type='button' class="bt-btn1 style1" attr-opinion="1">同意</button>
+                <span class="wh40"></span>
+                <button  type="button" class="bt-btn1 style2" attr-opinion ="-1">不同意</button>
+            </p>
+            <else />
             <div class="ui-state">
                 <p class="text-center" style="font-size: 20px;">
                     <b>当前状态：</b>{$apply.status|getReportStatus}/{$apply.status|setApplyStatus}
                 </p>
             </div>
+            </if>
         </div>
     </div>
 </main>
@@ -93,3 +101,29 @@
 
     </div>
 </footer>
+<script>
+    $(function(){
+        $('button').click(function(){
+            var $id = {$apply.chid};
+            if($id.length==0){
+                layer.msg('系统错误，请重新打开页面',{icon:5,time:2000},function(){
+                        window.location.href="/teacher.php/Apply/change";//跳转到列表页面
+                    });
+                return ;
+            }
+            var $data = $(this).attr('attr-opinion');
+            var $url = "{:U('Apply/editChange')}";
+            $.post($url,{'opinion':$data,'id':$id},function(msg){
+                if(msg.status==0){
+                    layer.msg(msg.message,{icon:5,time:2000},function(){
+                        window.location.href="/teacher.php/Apply/change";//跳转到列表页面
+                    });
+                }else{
+                    layer.msg(msg.message,{icon:6,time:2000},function(){
+                        window.location.href="/teacher.php/Apply/change";//跳转到列表页面
+                    });
+                }
+            },'JSON');
+        });
+    });
+</script>

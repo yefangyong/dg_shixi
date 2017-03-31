@@ -75,9 +75,9 @@ function setTeacherType($type){
 
 function getTeacherType($type){
     switch($type){
-        case 0:$state='班主任';break;
-        case 1:$state='系主任';break;
-        case 2:;$state='校领导';break;
+        case '班主任':$state=0;break;
+        case '系主任':$state=1;break;
+        case '校领导':$state=2;break;
     }
     return $state;
 }

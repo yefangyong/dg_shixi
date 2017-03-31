@@ -1,7 +1,31 @@
-<include file="Report/nav"/>
+<include file="Public/nav"/>
 <style type="text/css">
     .suofang {MARGIN: auto;WIDTH: 200px;}
-    .suofang img{MAX-WIDTH: 100%!important;HEIGHT: auto!important;width:expression(this.width > 200 ? "200px" :     this.width)!important;}
+    .suofang img{}
+
+.img-square{
+/*border: 1px solid red;*/
+margin-left: 30px;
+margin-top: 10px;
+MAX-WIDTH: 100%!important;
+HEIGHT: auto!important;width:expression(this.width > 200 ? "200px" :     this.width)!important;
+}
+
+.closeLayer{
+
+/*display: none;*/
+
+z-index: 99;
+
+position:absolute; /*绝对定位*/
+
+left:230px; /*位置自己看着调整，在图片上方*/
+
+top:5px; 
+
+/*border: 1px solid red;*/
+
+}
 </style>
 <!-------------------------------------- 内容开始 -------------------------------------->
 <main>
@@ -30,19 +54,23 @@
             <div class="ht15"></div>
             <div class="ui-article">
                 <div class="hd">
-                    <h3>{$report.title}</h3>
-                    <p>
-                        {$report.course}
-                        <span class="wh30"></span>
-                        {$report.pubtime}
-                    </p>
+                    <h3>{$report.title}
+                        
+                        <small>{$report.course}<span class="wh30"></span>{$report.pubtime}</small>
+                    </h3>
                 </div>
                 <div class="ct" style="font-size: 15px">
                     {$report.content}
                     <div class="ct">
-                        <volist name="pics" id="v">
-                        <p class="suofang"><a href="{$v}" target="_blank"><img src="{$v}" alt=""></a></p><br />
-                        </volist>
+                        <div class="row">
+                            <volist name="pics" id="v"> 
+                                <if condition="$v">
+                                <div class="col-xs-3" >
+                                    <img class="img-square" src="{$v}">
+                                </div>
+                                </if>
+                            </volist>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -65,7 +93,7 @@
                         </div>
                         <div class="col-sm-11">
                             <div class="text">
-                                <p><span class="color1">{$report.status|setAuditStatus}<if condition="$v.status eq 1">/{$report.score|setReportScore}</if></td></span></p>
+                                <p><span class="color1">{$report.status|setReportStatus2}<if condition="$report.status eq 1">/{$report.score|setReportScore}</if></td></span></p>
                             </div>
                         </div>
                     </div>

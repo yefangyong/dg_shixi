@@ -11,6 +11,10 @@ class ReportController extends CommonController {
        if($status == 0 || $status == 1) {
            $data['status'] = $status;
        }
+       $month = I('get.month',0);
+       if($month) {
+           $data[] = "pubtime like '%".date("Y")."-".($month<10 ? '0'.$month : $month)."-%'";
+       }
        $data['stu_del'] = 1;
        import('ORG.Util.Page');
        // 每页显示记录数
@@ -20,15 +24,20 @@ class ReportController extends CommonController {
        $page = new \Think\Page($count,$listRows);
        $show = $page->show();
        $currentPage = I(C('VAR_PAGE'),1);
-       $corporation = M('Corporation')->where('id='.$userId['corporation_id'])->find();
+       $corporation = M('Practice')->where('student_id='.$userId['studentno'])->find();
        $list = D('ReportView')->where($data)->order('myReport.pubtime desc')->page($currentPage.','.$listRows)->select();
+       $this->assign("month", date('n'));
        $this->assign('page',$show);
-       $this->assign('corporation',$corporation['name']);
+       $this->assign('corporation',$corporation['cname']);
        $this->assign('data',$list);
        $this->assign('totalCount',$count);
        $this->assign('numPerPage',$listRows);
        $this->assign('currentPage',$currentPage);
        $this->display();
+   }
+
+   public function month(){
+    
    }
 
     public function add() {
@@ -85,6 +94,8 @@ class ReportController extends CommonController {
     public function edit() {
         $id = $_GET['id'];
         $data = D('Report')->getReportById($id);
+        $pics = explode(';', $data['pic']);
+        $this->assign('pics',$pics);
         $this->assign('data',$data);
         $this->display();
     }
@@ -106,7 +117,9 @@ class ReportController extends CommonController {
         if(!$rel) {
             return show(0,'不存在此报告!');
         }else {
-           $this->assign('list',$rel);
+            $pics = explode(';', $rel['pic']);
+            $this->assign('pics',$pics);
+            $this->assign('list',$rel);
             $this->display();
         }
     }

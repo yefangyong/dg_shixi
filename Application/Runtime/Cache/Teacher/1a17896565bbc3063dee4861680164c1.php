@@ -164,7 +164,7 @@
                     <div class="i ">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                用户管理
+                                学生管理
                             </p>
                         </a>
                     </div>
@@ -214,7 +214,6 @@
     </div>
     <div class="ui-path">
         <p>
-            <span class="pull-right"><a href="<?php echo U('Practice/corporation');?>">返回</a></span>
             <a href="" class="home"></a>
             <a href="<?php echo U('Practice/corporation');?>">实习企业管理</a>
             >
@@ -248,13 +247,13 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="select" style="width: 210px;">
-                                <p id="type"><a href="#"><?php if($info.type): echo ($info["type"]); else: ?>请选择企业性质<?php endif; ?></a></p>
+                                <p id="type"><a href="#">请选择企业性质</a></p>
                                 <div class="ex">
-                                    <p><a href="javascript:void(0)" onclick="document.getElementById('type').value='国资'">国资</a></p>
-                                    <p><a href="javascript:void(0)" onclick="document.getElementById('type').value='外资'">外资</a></p>
-                                    <p><a href="javascript:void(0)" onclick="document.getElementById('type').value='股份制'">股份制</a></p>
+                                    <p><a href="javascript:void(0)">国资</a></p>
+                                    <p><a href="javascript:void(0)">外资</a></p>
+                                    <p><a href="javascript:void(0)">股份制</a></p>
                                 </div>
-                                <input type="hidden" id="type" name="type" value="<?php echo ($info["type"]); ?>">
+                                <input type="hidden" name="type" value="<?php echo ($info["type"]); ?>">
                             </div>
                         </div>
                         <div class="col-sm-2">
@@ -275,7 +274,7 @@
                             <label for="" class="control-label">职务</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="position" style="width: 210px;" value="<?php echo ($info["position"]); ?>">
+                            <input type="text" class="form-control" name="position" style="width: 210px;" value="<?php echo ($info["postion"]); ?>">
                         </div>
                     </div>
                     <div class="form-group">
@@ -289,7 +288,7 @@
                             <label for="" class="control-label">移动电话</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="mobile" id="mobile" maxlength='11' style="width: 210px;" value="<?php echo ($info["mobile"]); ?>">
+                            <input type="text" class="form-control" name="mobile" id="mobile" maxlength='11' style="width: 210px;" value="<?php echo ($info["phone"]); ?>">
                         </div>
                     </div>
                     <div class="form-group">

@@ -50,7 +50,7 @@ class SigninController extends Controller {
           $_POST[$key]=$v;
         } 
         unset($_POST['data']);
-        $users = D('student')->join("LEFT JOIN dg_signin ON dg_student.studentno=dg_signin.student_id and pubtime like '".$_POST['date']."%' AND dg_student.classno=".($_POST['class_id']?$_POST['class_id']:0))->group("dg_student.studentno")->order(array("dg_student.name"=>"asc"))->field("dg_student.studentno,dg_student.name,dg_signin.address")->select();
+        $users = D('student')->join("LEFT JOIN dg_signin ON dg_student.studentno=dg_signin.student_id and pubtime like '".$_POST['date']."%' ")->where(" dg_student.classno=".($_POST['class_id']?$_POST['class_id']:0))->group("dg_student.studentno")->order(array("dg_student.name"=>"asc"))->field("dg_student.studentno,dg_student.name,dg_signin.address")->select();
         $no=0;
         for($i=0; $i<count($users); $i++){
           if(empty($users[$i]['address'])) $no++;

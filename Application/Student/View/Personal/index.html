@@ -23,52 +23,52 @@
         <div class="container">
             <div class="ht20"></div>
             <div class="pull-left" style="margin-right: 30px;">
-                <div class="ui-infbox">
+                <div class="ui-infbox" style="width:450px;">
                     <div class="hd">
                         <p>个人信息</p>
                     </div>
                     <div class="ct">
                         <div class="info">
                             <p>
-                                <img src="img/avatar2.jpg" alt="">
+                                <img src="/Public/teacher/img/avatar2.jpg" alt="">
                             </p>
                             <div class="ct">
                                 <table>
                                     <tr>
-                                        <td><label for="">姓　　名</label></td>
-                                        <td>　　{$student['name']}</td>
+                                        <td width="80"><label for="">姓　　名</label></td>
+                                        <td>{$student['name']}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">手　　机</label></td>
-                                        <td>　　{$student['phone']}</td>
+                                        <td>{$student['phone']}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">学　　号</label></td>
-                                        <td>　　{$student.studentno}</td>
+                                        <td>{$student.studentno}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">电子邮箱</label></td>
-                                        <td>　　{$student.email}</td>
+                                        <td>{$student.email}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">联系地址</label></td>
-                                        <td>　　{$student.address}</td>
+                                        <td title="{$student.address}"><div style="overflow: hidden;height: 30px;">{$student.address}</div></td>
                                     </tr>
                                     <tr>
                                         <td><label for="">院　　系</label></td>
-                                        <td>　　{$student.dname}</td>
+                                        <td>{$student.dname}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">年　　级</label></td>
-                                        <td>　　2017级</td>
+                                        <td>{$student.grade}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">班　　级</label></td>
-                                        <td>　　{$student.classname}</td>
+                                        <td>{$student.classname}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">班 主 任</label></td>
-                                        <td>　　{$student.teacher_name}</td>
+                                        <td>{$student.teacher_name}</td>
                                     </tr>
                                 </table>
                             </div>
@@ -81,9 +81,8 @@
                     <div class="hd">
                         <p>实习信息</p>
                     </div>
-                    <div class="ct">
+                    <div class="ct" style="width:350px;">
                         <div class="info">
-                            <div class="ct">
                                 <table>
                                     <tr>
                                         <td><label for="">实习状态</label></td>
@@ -91,7 +90,7 @@
                                     </tr>
                                     <tr>
                                         <td><label for="">实习企业</label></td>
-                                        <td>{$practice.name}</td>
+                                        <td>{$practice.cname}</td>
                                     </tr>
                                     <tr>
                                         <td><label for="">实习地址</label></td>
@@ -114,7 +113,6 @@
                                         <td>{$practice.phone}</td>
                                     </tr>
                                 </table>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -122,11 +120,10 @@
             <div class="pull-left">
                 <div class="ui-infbox">
                     <div class="hd">
-                        <p>实习信息</p>
+                        <p>日常任务</p>
                     </div>
-                    <div class="ct">
+                    <div class="ct" style="width:350px;">
                         <div class="info">
-                            <div class="ct">
                                 <table>
                                     <tr>
                                         <td><label for="">周　　报</label></td>
@@ -153,7 +150,6 @@
                                         <td>{$grade['score']}分</td>
                                     </tr>
                                 </table>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,40 @@
+[ 2017-03-24T01:09:54+08:00 ] 101.226.89.123 /teacher.php/home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-24T08:17:44+08:00 ] 117.88.212.199 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` = 78 ) [ RunTime:0.0002s ]
+
+[ 2017-03-24T08:18:25+08:00 ] 117.88.212.199 /teacher.php/Apply/delLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_leave` WHERE ( id=120 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_leave` WHERE ( `id` = 120 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 485 行.
+
+[ 2017-03-24T10:00:09+08:00 ] 49.77.233.215 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+
+[ 2017-03-24T10:27:17+08:00 ] 49.77.233.215 /teacher.php/Practice/addCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: INSERT INTO `dg_corporation` (`name`,`city`,`type`,`contact`,`position`,`telephone`,`mobile`,`email`,`zipcode`,`fax`,`department`,`website`,`address`,`introduction`,`addtime`) VALUES ('戴尔科技','无锡市','国资','老于','工程师','026-9999086','13898986633','1@sohu.com','250000','2222222','技术部','www.addd.com','无锡市无锡市无锡市无锡市无锡市','卖电脑的公司！','2017-03-24 10:27:17') [ RunTime:0.0002s ]
+
+[ 2017-03-24T10:32:37+08:00 ] 49.77.233.215 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`user_id`,`pubtime`) VALUES ('发布公告','0','0','1','2','发布给发布给','100','2017-03-24 :10:32:37') [ RunTime:0.0002s ]
+

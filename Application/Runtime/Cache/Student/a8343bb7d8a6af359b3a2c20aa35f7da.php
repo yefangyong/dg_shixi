@@ -22,7 +22,6 @@
     <script type="text/javascript" src="/Public/Student/js/main.js"></script>
     <!--plugin-->
     <script type="text/javascript" src="/Public/Student/js/jquery.event.move.js"></script>
-    <script type="text/javascript" src="/Public/Student/js/H-ui-Admin.js"></script>
     <!-- jQuery -->
     <script src="/Public/js/dialog/layer.js"></script>
     <script src="/Public/js/dialog.js"></script>
@@ -42,7 +41,7 @@
         <div class="list">
             <ul>
                 <li>
-                    <div class="i on">
+                    <div class="i <?php echo getActive('report')?>" >
                         <a href="/index.php/student/Report/index">
                             <p><i class="ico1"></i>
                                 实习报告
@@ -51,7 +50,7 @@
                     </div>
                 </li>
                 <li>
-                    <div  class="i">
+                    <div  class="i <?php echo getActive('Apply')?>">
                         <a href="/index.php/student/Apply/index">
                             <p><i class="ico2"></i>
                                 我的申请
@@ -60,7 +59,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
+                    <div class="i <?php echo getActive('Contact')?>">
                         <a href="/index.php/student/Contact/student">
                             <p><i class="ico3"></i>
                                 通讯录
@@ -69,7 +68,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
+                    <div class="i <?php echo getActive('Notice')?>">
                         <a href="/index.php/student/Notice/index">
                             <p><i class="ico4"></i>
                                 消息管理
@@ -78,10 +77,10 @@
                     </div>
                 </li>
                 <li>
-                    <div class="i">
-                        <a href="/index.php/student/Grade/index">
+                    <div class="i <?php echo getActive('Personal')?>">
+                        <a href="/index.php/student/Personal/index">
                             <p><i class="ico5"></i>
-                                我的成绩
+                                个人中心
                             </p>
                         </a>
                     </div>
@@ -106,12 +105,11 @@
         <div class="container">
           <div class="pull-right">
                               <div class="user">
-                    <p><img src="img/avatar1.jpg" alt="">
+                    <p><img src="/Public/teacher/img/avatar1.jpg" alt="">
                         <a href=""><?php echo getLoginUsername() ?></a>
                         <i></i>
                     </p>
                     <div class="ex">
-                        <p><a href="">个人信息</a></p>
                         <p><a href="/index.php/Student/Common/password">修改密码</a></p>
                         <p><a href="/index.php/Home/Login/logOut">退出</a></p>
                     </div>
@@ -139,22 +137,22 @@
                   <div class="ct">
                     <table>
                       <tr>
-                        <td><a href="">1</a></td>
-                        <td><a href="">2</a></td>
-                        <td><a href="" class="on">3</a></td>
-                        <td><a href="">4</a></td>
-                        <td><a href="">5</a></td>
+                        <td><a href="javascript:void(0);" <?php if($month == 1): ?>class="on"<?php endif; ?> onclick="setMonth(1);">1</a></td>
+                        <td><a href="javascript:void(0);" <?php if($month == 2): ?>class="on"<?php endif; ?> onclick="setMonth(2);">2</a></td>
+                        <td><a href="javascript:void(0);" <?php if($month == 3): ?>class="on"<?php endif; ?> onclick="setMonth(3);">3</a></td>
+                        <td><a href="javascript:void(0);" <?php if($month == 4): ?>class="on"<?php endif; ?> onclick="setMonth(4);">4</a></td>
+                        <td><a href="javascript:void(0);" <?php if($month == 5): ?>class="on"<?php endif; ?> onclick="setMonth(5);">5</a></td>
                       </tr>
                       <tr>
-                        <td><a href="">6</a></td>
-                        <td><a href="">7</a></td>
-                        <td><a href="">8</a></td>
-                        <td><a href="">9</a></td>
-                        <td><a href="">10</a></td>
+                        <td><a href="javascript:void(0);" <?php if($month == 6): ?>class="on"<?php endif; ?> onclick="setMonth(6);">6</a></td>
+                        <td><a href="javascript:void(0);" <?php if($month == 7): ?>class="on"<?php endif; ?> onclick="setMonth(7);">7</a></td>
+                        <td><a href="javascript:void(0);" <?php if($month == 8): ?>class="on"<?php endif; ?> onclick="setMonth(8);">8</a></td>
+                        <td><a href="javascript:void(0);" <?php if($month == 9): ?>class="on"<?php endif; ?> onclick="setMonth(9);">9</a></td>
+                        <td><a href="javascript:void(0);" <?php if($month == 10): ?>class="on"<?php endif; ?> onclick="setMonth(10);">10</a></td>
                       </tr>
                       <tr>
-                        <td><a href="">11</a></td>
-                        <td><a href="">12</a></td>
+                        <td><a href="javascript:void(0);" <?php if($month == 11): ?>class="on"<?php endif; ?> onclick="setMonth(11);">11</a></td>
+                        <td><a href="javascript:void(0);" <?php if($month == 12): ?>class="on"<?php endif; ?> onclick="setMonth(12);">12</a></td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
@@ -166,11 +164,11 @@
             </div>
             <span class="wh10"></span>
             <div class="select">
-              <p><a href="javascript:void(0);">批阅情况</a></p>
+              <p><a href="javascript:void(0);">审核情况</a></p>
               <div class="ex">
                 <div class="list">
-                  <p><a href="javascript:void(0);" name="status" attr-id="0">未批阅</a></p>
-                  <p><a href="javascript:void(0);" name="status" attr-id="1">已批阅</a></p>
+                  <p><a href="javascript:void(0);" name="status" attr-id="0">未审核</a></p>
+                  <p><a href="javascript:void(0);" name="status" attr-id="1">已审核</a></p>
                 </div>
               </div>
             </div>
@@ -186,6 +184,11 @@
           <div class="ht15"></div>
           <div class="ui-table">
             <div class="hd">
+              <div class="ui-paging">
+                  <div class="pull-left">
+                          <a href="" class="cbox" attr-id="0"><i></i>全选</a>
+                      </div>
+              </div>
               <div class="tool">
                 <p>
                   <a href="/index.php/student/report/add">新增</a>
@@ -218,7 +221,7 @@
                       <td><?php echo ($vo["classname"]); ?></td>
                       <td><?php echo ($vo["pubtime"]); ?></td>
                       <td><?php echo ($corporation); ?></td>
-                      <td><?php echo (status($vo["status"])); ?></td>
+                      <td><?php echo (status($vo["status"])); if($vo["status"] == 1): ?>/<?php echo (getReportScoreStatus($vo["score"])); endif; ?></td>
                       <td>
                         <a href="javascript:void(0);" attr-id="<?php echo ($vo["id"]); ?>" id="yfycms-view">查看</a>
                         <a href="javascript:void(0);" <?php if($vo["status"] == 0): ?>id="yfycms-edit"<?php endif; ?> attr-id="<?php echo ($vo["id"]); ?>">编辑</a>
@@ -232,9 +235,6 @@
           <div class="ht35"></div>
           <div class="ui-paging">
            <?php echo ($page); ?>
-            <div class="pull-left">
-              <a href="" class="cbox"><i></i>全选</a>
-            </div>
           </div>
         </div>
       </div>
@@ -253,6 +253,10 @@
   
 </style>
 <script>
+        var month = 0;
+        function setMonth(v){
+          month = v;
+        }
         var SCOPE = {
             'jump_url': '/index.php?m=student&c=report&a=index',
             'set_status_url': '/index.php?m=student&c=report&a=del',
@@ -268,7 +272,7 @@
                     status = $(this).attr('attr-id');
                 }
             });
-            window.location.href="/index.php/Student/report/index/status/"+status;
+            window.location.href="/index.php/Student/report/index/month/"+month+"/status/"+status;
         });
 
         //删除全部

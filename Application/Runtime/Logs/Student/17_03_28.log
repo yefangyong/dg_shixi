@@ -1,0 +1,72 @@
+[ 2017-03-28T22:06:48+08:00 ] 61.235.37.202 /index.php?m=student&c=report&a=index
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-28T22:10:50+08:00 ] 61.235.37.202 /index.php?m=student&c=report&a=index
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-28T22:13:22+08:00 ] 61.235.37.202 /index.php?m=student&c=report&a=index
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-28T22:16:20+08:00 ] 61.235.37.202 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: teacherno /var/www/html/Application/Student/Controller/CommonController.class.php 第 16 行.
+
+[ 2017-03-28T22:16:23+08:00 ] 61.235.37.202 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [8] Undefined index: teacherno /var/www/html/Application/Student/Controller/CommonController.class.php 第 16 行.
+
+[ 2017-03-28T22:17:22+08:00 ] 61.235.37.202 /index.php/Student/Report/index/pageNum/2.html
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-28T22:17:28+08:00 ] 61.235.37.202 /index.php/student/report/index
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-28T23:01:04+08:00 ] 180.110.231.213 /index.php?m=student&c=report&a=index
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-28T23:01:43+08:00 ] 180.110.231.213 /index.php?m=student&c=report&a=index
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-28T23:02:04+08:00 ] 180.110.231.213 /index.php?m=student&c=report&a=index
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-28T23:02:40+08:00 ] 180.110.231.213 /index.php?m=student&c=report&a=index
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-28T23:03:10+08:00 ] 180.110.231.213 /index.php?m=student&c=report&a=index
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-28T23:05:18+08:00 ] 180.110.231.213 /index.php?m=student&c=report&a=index
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-28T23:06:29+08:00 ] 180.110.231.213 /index.php?m=student&c=report&a=index
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-03-28T23:21:59+08:00 ] 180.110.231.213 /index.php?m=student&c=apply&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] Undefined index: teacherno /var/www/html/Application/Student/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2017300 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( name="信维科技" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_practice` (`cname`,`address`,`profession`,`insurance`,`position`,`guide`,`phone`,`detailaddress`,`starttime`,`endtime`,`student_id`,`corporation_id`,`applytime`) VALUES ('信维科技','南京奥体','0','0','工程师','冯坤','13590907808','南京奥体南京奥体南京奥体南京奥体南京奥体南京奥体+++','2017-03-28','2017-04-08','2017300',NULL,'2017-03-28 23:21:59') [ RunTime:0.0001s ]
+
+[ 2017-03-28T23:37:41+08:00 ] 180.110.231.213 /index.php?m=student&c=apply&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: teacherno /var/www/html/Application/Student/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2017300 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( name="大疆机器人" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_practice` (`cname`,`address`,`profession`,`insurance`,`position`,`guide`,`phone`,`detailaddress`,`starttime`,`endtime`,`student_id`,`corporation_id`,`applytime`) VALUES ('大疆机器人','南京江宁区','0','0','工程师','小果冻','13661623098','南京江宁区南京江宁区南京江宁区南京江宁区++','2017-03-28','2017-03-31','2017300',NULL,'2017-03-28 23:37:41') [ RunTime:0.0002s ]
+

@@ -1,4 +1,4 @@
-<include file="Student/nav"/>
+<include file="Public/nav"/>
 <main>
     <div class="ui-head">
         <div class="container">
@@ -7,7 +7,12 @@
             </div>
             <div class="tabs">
                 <ul>
-                    <li><a href="" class="on">学生管理</a>/li>
+                    <li><a href="{:U('Student/index')}" class="on">学生管理</a>/li>
+                    <if condition="$_SESSION['adminUser']['type'] eq 2">
+                    <li><a href="{:U('Student/teacher')}" >教师管理</a></li>
+                    <li><a href="{:U('Student/classes')}" >班级管理</a></li>
+                    <li><a href="{:U('Student/department')}" >部门管理</a></li>
+                    </if>
                 </ul>
             </div>
         </div>
@@ -26,7 +31,7 @@
             <div class="ht15"></div>
             <div class="ui-article">
                 <div class="hd">
-                    <h3>董嘉耀的请假申请</h3>
+                    <h3>{$apply.stuname}的请假申请</h3>
                     <input type="hidden" name="id" value="{$apply.id}">
                     <p>
                         紧急联系人：{$apply.emegencyconcat}
@@ -50,7 +55,7 @@
             <div class="ht90"></div>
             <div class="ui-state">
                 <p class="text-center" style="font-size: 20px;">
-                    <b>当前状态：</b>已审核/{$apply.status|isAgree}
+                    <b>当前状态：</b>{$apply.status|getReportStatus}/{$apply.status|setApplyStatus}
                 </p>
             </div>
         </div>

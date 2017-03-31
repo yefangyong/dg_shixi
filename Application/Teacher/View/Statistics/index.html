@@ -1,0 +1,244 @@
+
+<!-------------------------------------- 头部结束 -------------------------------------->
+<!-------------------------------------- 内容开始 -------------------------------------->
+<include file="Public/nav"/>
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <include file="Public/user"/>
+            <div class="tabs">
+                <ul>
+                    <li><a href="{:U('Statistics/index')}" class="on">统计报表</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ht15"></div>
+    <table width="100%" cellpadding="5" cellspacing="5"><tr><td style="border: solid 1px #ccc;" width="50%">
+<div id="container" style="min-width: 310px; height: 270px; max-width: 500px;margin:0 auto;"></div>
+</td><td style="border: solid 1px #ccc;">
+<div id="container2" style="min-width: 310px; height: 270px; max-width: 500px;margin: 0 auto; "></div>
+</td></tr><tr><td style="border: solid 1px #ccc;">
+<div id="container3" style="min-width: 310px; height: 270px; max-width: 500px;margin: 0 auto; "></div>
+</td><td style="border: solid 1px #ccc;">
+<div id="container4" style="min-width: 310px; height: 270px; max-width: 500px; margin: 0 auto;"></div>
+</td></tr></table>
+    </body>
+</main>
+
+<script type="text/javascript" src="/Public/js/jquery-1.8.3.min.js"></script>
+<script src="/Public/js/highcharts/highcharts.js"></script>
+<script src="/Public/js/highcharts/modules/exporting.js"></script>
+
+<script>
+    $(function () {
+
+
+    Highcharts.chart('container', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: '实习分布区域'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: '北京',
+                y: 56.33
+            }, {
+                name: '上海',
+                y: 24.03,
+                sliced: true,
+                selected: true
+            }, {
+                name: '南京',
+                y: 10.38
+            }, {
+                name: '杭州',
+                y: 4.77
+            }, {
+                name: '广州',
+                y: 1.11
+            }]
+        }]
+    });
+
+    Highcharts.chart('container2', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: '实习申请分布'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: '计算机1班',
+                y: 30.33
+            }, {
+                name: '计算机2班',
+                y: 14.03,
+                sliced: true,
+                selected: true
+            }, {
+                name: '计算机3班',
+                y: 36.38
+            }, {
+                name: '计算机4班',
+                y: 4.77
+            }, {
+                name: '计算机5班',
+                y: 10.91
+            }, {
+                name: '计算机6班',
+                y: 0.2
+            }]
+        }]
+    });
+    Highcharts.chart('container3', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: '班级出勤率'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: '计算机1班',
+                y: 40.33
+            }, {
+                name: '计算机2班',
+                y: 24.03,
+                sliced: true,
+                selected: true
+            }, {
+                name: '计算机3班',
+                y: 20.38
+            }, {
+                name: '计算机4班',
+                y: 4.77
+            }, {
+                name: '计算机5班',
+                y: 6.91
+            }, {
+                name: '计算机6班',
+                y: 0.2
+            }]
+        }]
+    });
+    Highcharts.chart('container4', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: '周报提交率'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: '计算机1班',
+                y: 26.33
+            }, {
+                name: '计算机2班',
+                y: 24.03,
+                sliced: true,
+                selected: true
+            }, {
+                name: '计算机3班',
+                y: 20.38
+            }, {
+                name: '计算机4班',
+                y: 14.77
+            }, {
+                name: '计算机5班',
+                y: 0.91
+            }, {
+                name: '计算机6班',
+                y: 10.2
+            }]
+        }]
+    });
+});
+</script>

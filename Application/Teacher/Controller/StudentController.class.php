@@ -34,12 +34,12 @@ class StudentController extends Controller{
         if($keywords)
             $map[] = '(studentno like "%'.$keywords.'%" or Student.name like "%'.$keywords.'%")';
         $count = D('StudentsView')->where($map)->count();
-        //echo D('StudentsView')->getLastSql();
         // 实例化分页类 传入总记录数和每页显示的记录数
         $page = new \Think\Page($count,$listRows);
         $show = $page->show();
         $currentPage = I(C('VAR_PAGE'),1);
         $studentList = D('StudentsView')->where($map)->page($currentPage.','.$listRows)->select();
+        //echo D('StudentsView')->getLastSql();
         $profession = D('profession')->select();
         $this->assign('department',$departments);
         $this->assign('class',$classes);
@@ -71,11 +71,12 @@ class StudentController extends Controller{
                 $classes = D('class')->select();
                 break;
         }
+
         import('ORG.Util.Page');
         // 每页显示记录数
         $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
         if($department)
-            $map[] = 'class_id IN(select master_no from dg_class where dep_id='.$department.')';
+            $map[] = 'department_id='.$department;
         $profession = I('get.profession',0);
         if($class)
             $map[] = 'class_id = '.$class;
@@ -83,18 +84,66 @@ class StudentController extends Controller{
         if($keywords)
             $map[] = '(teacherno like "%'.$keywords.'%" or Teacher.name like "%'.$keywords.'%")';
         $count = D('TeacherView')->where($map)->count();
-        //echo D('StudentsView')->getLastSql();
         // 实例化分页类 传入总记录数和每页显示的记录数
         $page = new \Think\Page($count,$listRows);
         $show = $page->show();
         $currentPage = I(C('VAR_PAGE'),1);
         $studentList = D('TeacherView')->where($map)->page($currentPage.','.$listRows)->select();
-
         $profession = D('profession')->select();
-        $this->assign('department',$department);
-        $this->assign('class',$class);
+        $this->assign('department',$departments);
+        $this->assign('class',$classes);
         $this->assign('profession',$profession);
         $this->assign('list',$studentList);
+        $this->assign('page',$show);
+        $this->assign('totalCount',$count);
+        $this->assign('numPerPage',$listRows);
+        $this->assign('currentPage',$currentPage);
+        return $this->display();
+    }
+
+    public function department(){
+        $teacher = $_SESSION['adminUser'];
+        $department = I('get.department',0);
+        $class = I('get.class',0);
+
+        import('ORG.Util.Page');
+        // 每页显示记录数
+        $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
+        $keywords = I('get.keywords');
+        if($keywords)
+            $map[] = '(dname like "%'.$keywords.'%" )';
+        $count = D('department')->where($map)->count();
+        // 实例化分页类 传入总记录数和每页显示的记录数
+        $page = new \Think\Page($count,$listRows);
+        $show = $page->show();
+        $currentPage = I(C('VAR_PAGE'),1);
+        $depList = D('department')->join("LEFT JOIN dg_teacher d ON dg_department.id=d.department_id and d.type=1")->where($map)->page($currentPage.','.$listRows)->field("dg_department.*,d.name teacher")->select();
+        $this->assign('list',$depList);
+        $this->assign('page',$show);
+        $this->assign('totalCount',$count);
+        $this->assign('numPerPage',$listRows);
+        $this->assign('currentPage',$currentPage);
+        return $this->display();
+    }
+
+    public function classes(){
+        $teacher = $_SESSION['adminUser'];
+        $department = I('get.department',0);
+        $class = I('get.class',0);
+
+        import('ORG.Util.Page');
+        // 每页显示记录数
+        $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
+        $keywords = I('get.keywords');
+        if($keywords)
+            $map[] = '(classname like "%'.$keywords.'%" )';
+        $count = D('class')->where($map)->count();
+        // 实例化分页类 传入总记录数和每页显示的记录数
+        $page = new \Think\Page($count,$listRows);
+        $show = $page->show();
+        $currentPage = I(C('VAR_PAGE'),1);
+        $depList = D('class')->join("LEFT JOIN dg_teacher d ON dg_class.master_no=d.teacherno and d.type=0")->join("LEFT JOIN dg_department dep ON dg_class.dep_id=dep.id")->join("LEFT JOIN (select count(*) ct,id FROM dg_student group by classno) s ON dg_class.id=s.id")->where($map)->page($currentPage.','.$listRows)->field("dg_class.*,d.name teacher,dep.dname,s.ct studentct")->select();
+        $this->assign('list',$depList);
         $this->assign('page',$show);
         $this->assign('totalCount',$count);
         $this->assign('numPerPage',$listRows);
@@ -118,6 +167,14 @@ class StudentController extends Controller{
             return 0;
         }
         $studentInfo = D('StudentView')->getStudentInfo($sid);
+        $_changeinfo = D("Change")->where(array("student_id"=>$studentInfo['studentno'],"status"=>"1"))->order(array('applytime'=>'desc'))->limit(1)->select();
+        if($_changeinfo){
+            $studentInfo['cname']=$_changeinfo[0]['cname'];
+            $studentInfo['pracaddress']=$_changeinfo[0]['address'];
+            $studentInfo['guide']=$_changeinfo[0]['guide'];
+            $studentInfo['phone']=$_changeinfo[0]['phone'];
+            $studentInfo['position']=$_changeinfo[0]['position'];
+        }
         $weeklyCount = D('Report')->getWeekCount($studentInfo['studentno']);
         $leaveCount = D('Leave')->getLeaveCount($studentInfo['studentno']);
         $signin = D('signin')->where(array('student_id'=>$studentInfo['studentno']))->order(array('pubtime'=>'desc'))->limit(1)->select();
@@ -133,8 +190,29 @@ class StudentController extends Controller{
         $stuno = I('get.id',0,'intval');
 
         if(isset($stuno)){
-            $list = D('ReportView')->getReportByStuno($stuno,0);
+            import('ORG.Util.Page');
+            // 每页显示记录数
+            $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
+            $map['Report.student_id'] = $stuno;
+            $map['Report.type'] = 0;
+            $count = D('ReportView')->where($map)->count();
+
+            $page = new \Think\Page($count,$listRows);
+            $show = $page->show();
+            $currentPage = I(C('VAR_PAGE'),1);
+            $list = D('ReportView')->where($map)->order(array("pubtime"=>"desc"))->page($currentPage.','.$listRows)->select();
+            //echo D('StudentsView')->getLastSql();
+            for($i=0; $i<count($list); $i++){
+                $_changeinfo = D("Change")->where(array("student_id"=>$list[$i]['studentno'],"status"=>1))->order(array('applytime'=>'desc'))->limit(1)->select();
+                if($_changeinfo){
+                    $list[$i]['cname']=$_changeinfo[0]['cname'];
+                }
+            }
             $this->assign('list',$list);
+            $this->assign('page',$show);
+            $this->assign('totalCount',$count);
+            $this->assign('numPerPage',$listRows);
+            $this->assign('currentPage',$currentPage);
             return $this->display();
         }
     }
@@ -153,8 +231,27 @@ class StudentController extends Controller{
         $stuno = I('get.id',0,'intval');
 
         if(isset($stuno)){
-            $list = D('LeaveView')->getLeaveByStuno($stuno);
+            import('ORG.Util.Page');
+            // 每页显示记录数
+            $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
+            $map['myLeave.student_id'] = $stuno;
+            $count = D('LeaveView')->where($map)->count();
+
+            $page = new \Think\Page($count,$listRows);
+            $show = $page->show();
+            $currentPage = I(C('VAR_PAGE'),1);
+            $list = D('LeaveView')->where($map)->order(array("pubtime"=>"desc"))->page($currentPage.','.$listRows)->select();
+            for($i=0; $i<count($list); $i++){
+                $_changeinfo = D("Change")->where(array("student_id"=>$list[$i]['studentno'],"status"=>1))->order(array('applytime'=>'desc'))->limit(1)->select();
+                if($_changeinfo){
+                    $list[$i]['cname']=$_changeinfo[0]['cname'];
+                }
+            }
             $this->assign('list',$list);
+            $this->assign('page',$show);
+            $this->assign('totalCount',$count);
+            $this->assign('numPerPage',$listRows);
+            $this->assign('currentPage',$currentPage);
             return $this->display();
         }
     }
@@ -212,10 +309,24 @@ class StudentController extends Controller{
                 show(0,'添加失败！');
             }
         }else{
-            $department = D('School')->getAllDepartment();
-            $class = D('Class')->getAllClassesName();
-            $this->assign('class',$class);
-            $this->assign('dept',$department);
+            $teacher = $_SESSION['adminUser'];
+            $department = I('get.department',0);
+            $class = I('get.class',0);
+            switch($teacher['type']){
+                case 0:
+                    $classes = D('class')->where("master_no='".$teacher['teacherno']."'")->select();
+                    break;
+                case 1:
+                    $departments = D('department')->where("id='".$teacher['department_id']."'")->select();
+                    $classes = D('class')->where("dep_id='".$teacher['department_id']."'")->select();
+                    break;
+                case 2:
+                    $departments = D('department')->select();
+                    $classes = D('class')->select();
+                    break;
+            }
+            $this->assign('class',$classes);
+            $this->assign('dept',$departments);
             return $this->display();
         }
     }
@@ -248,14 +359,29 @@ class StudentController extends Controller{
             show(1,'成功！');
 
         }else{
-            $department = D('School')->getAllDepartment();
-            $class = D('Class')->getAllClassesName();
+            
             $stuno = I('get.id',0,'intval');
             if(isset($stuno)){
                 $stuinfo = D('StudentView')->getStudentInfo($stuno);
                 $this->assign('info',$stuinfo);
-                $this->assign('dept',$department);
-                $this->assign('class',$class);
+                $teacher = $_SESSION['adminUser'];
+                $department = I('get.department',0);
+                $class = I('get.class',0);
+                switch($teacher['type']){
+                    case 0:
+                        $classes = D('class')->where("master_no='".$teacher['teacherno']."'")->select();
+                        break;
+                    case 1:
+                        $departments = D('department')->where("id='".$teacher['department_id']."'")->select();
+                        $classes = D('class')->where("dep_id='".$teacher['department_id']."'")->select();
+                        break;
+                    case 2:
+                        $departments = D('department')->select();
+                        $classes = D('class')->select();
+                        break;
+                }
+                $this->assign('class',$classes);
+                $this->assign('dept',$departments);
                 return $this->display();
             }
         }
@@ -269,6 +395,164 @@ class StudentController extends Controller{
         }
         $res  = D('Student')->delStu($id);
         if($res){
+            show(1,'删除成功！');
+        }else{
+            show(0,'删除失败');
+        }
+    }
+
+    public function adddep(){
+        if($_POST){
+            $data = I('post.','','trim');
+            if(empty($data['dname'])){
+                show(0,'请填写名称！');
+            }
+            $res = D('department')->add($data);
+            if($res){
+                show (1,'添加成功！');
+            }else{
+                show(0,'添加失败！');
+            }
+        }else{
+            return $this->display();
+        }
+    }
+
+    public function updatedep(){
+        if($_POST){
+            $depid = I('post.id',0,'intval');
+            $data = I('post.','','trim');
+            if(empty($data['dname'])){
+                show(0,'请填写名称！');
+            }
+            $res = D('department')->where("id=".$depid)->save($data);
+
+            show(1,'成功！');
+
+        }else{
+            $depid = I('get.id',0,'intval');
+            if(isset($depid)){
+                $stuinfo = D('department')->where("id=".$depid)->find();
+                $this->assign('info',$stuinfo);
+                return $this->display();
+            }
+        }
+    }
+
+    public function deldep()
+    {
+        $id = I('post.id',0,'intval');
+        if(!isset($id)||empty($id)){
+            show(0,'请选择系部');
+        }
+        if(is_array($id)){
+            D('Report')->where("student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id IN(".implode(',', $id).")))")->delete();
+            D('Practice')->where("student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id IN(".implode(',', $id).")))")->delete();
+            D('Change')->where("student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id IN(".implode(',', $id).")))")->delete();
+            D('Leave')->where("student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id IN(".implode(',', $id).")))")->delete();
+            D('Student')->where("classno IN(select id FROM dg_class WHERE dep_id IN(".implode(',', $id)."))")->delete();
+            $rs = D('department')->where("`id` IN(".implode(',', $id).") ")->delete();
+        }else{
+            D('Report')->where("student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=".$id."))")->delete();
+            D('Practice')->where("student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=".$id."))")->delete();
+            D('Change')->where("student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=".$id."))")->delete();
+            D('Leave')->where("student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=".$id."))")->delete();
+            D('Student')->where("classno IN(select id FROM dg_class WHERE dep_id=".$id.")")->delete();
+            $rs = D('department')->where("`id` = ".$id)->delete();
+        }
+        if($rs){
+            show(1,'删除成功！');
+        }else{
+            show(0,'删除失败');
+        }
+    }
+
+    public function addclass(){
+        if($_POST){
+            $data = I('post.','','trim');
+            if(empty($data['classname'])){
+                show(0,'请填写名称！');
+            }
+            if(empty($data['dep_id'])){
+                show(0,'请选择系部！');
+            }
+            if(empty($data['master_no'])){
+                show(0,'请选择班主任！');
+            }
+            $res = D('class')->add($data);
+            if($res){
+                if($data['master_no']){
+                    D('class')->where('master_no='.$data['master_no'].' and id!='.$res)->save(array('master_no'=>null));
+                    D('teacher')->where('teacherno='.$data['master_no'])->save(array('class_id'=>$res));
+                }
+                show (1,'添加成功！');
+            }else{
+                show(0,'添加失败！');
+            }
+        }else{
+            $teacher = D('teacher')->where("type=0")->select();
+            $department = D('department')->select();
+            $this->assign('teacher',$teacher);
+            $this->assign('dept',$department);
+            return $this->display();
+        }
+    }
+
+    public function updateclass(){
+        if($_POST){
+            $classid = I('post.id',0,'intval');
+            $data = I('post.','','trim');
+            if(empty($data['classname'])){
+                show(0,'请填写名称！');
+            }
+            if(empty($data['dep_id'])){
+                show(0,'请选择系部！');
+            }
+            if(empty($data['master_no'])){
+                show(0,'请选择班主任！');
+            }
+            $res = D('class')->where("id=".$classid)->save($data);
+            if($data['master_no']){
+                D('class')->where('master_no='.$data['master_no'].' and id!='.$classid)->save(array('master_no'=>null));
+                D('teacher')->where('teacherno='.$data['master_no'])->save(array('class_id'=>$classid));
+            }
+            show(1,'成功！');
+        }else{
+            $classid = I('get.id',0,'intval');
+            if(isset($classid)){
+                $stuinfo = D('class')->join("LEFT JOIN dg_teacher d ON dg_class.master_no=d.teacherno and d.type=0")->join("LEFT JOIN dg_department dep ON dg_class.dep_id=dep.id")->join("LEFT JOIN (select count(*) ct,id FROM dg_student group by classno) s ON dg_class.id=s.id")->where("dg_class.id=".$classid)->field("dg_class.*,d.name teacher,dep.dname,s.ct studentct")->find();
+                $teacher = D('teacher')->where("type=0")->select();
+                $department = D('department')->select();
+                $this->assign('teacher',$teacher);
+                $this->assign('dept',$department);
+                $this->assign('info',$stuinfo);
+                return $this->display();
+            }
+        }
+    }
+
+    public function delclass()
+    {
+        $id = I('post.id',0,'intval');
+        if(!isset($id)||empty($id)){
+            show(0,'删除失败');
+        }
+        if(is_array($id)){
+            D('Report')->where("student_id IN(select studentno FROM dg_student WHERE classno IN(".implode(',', $id)."))")->delete();
+            D('Practice')->where("student_id IN(select studentno FROM dg_student WHERE classno IN(".implode(',', $id)."))")->delete();
+            D('Change')->where("student_id IN(select studentno FROM dg_student WHERE classno IN(".implode(',', $id)."))")->delete();
+            D('Leave')->where("student_id IN(select studentno FROM dg_student WHERE classno IN(".implode(',', $id)."))")->delete();
+            D('Student')->where("classno IN(select id FROM dg_department WHERE classno IN(".implode(',', $id)."))")->delete();
+            $rs = D('class')->where("`id` IN(".implode(',', $id).") ")->delete();
+        }else{
+            D('Report')->where("student_id IN(select studentno FROM dg_student WHERE classno=".$id.")")->delete();
+            D('Practice')->where("student_id IN(select studentno FROM dg_student WHERE classno=".$id.")")->delete();
+            D('Change')->where("student_id IN(select studentno FROM dg_student WHERE classno=".$id.")")->delete();
+            D('Leave')->where("student_id IN(select studentno FROM dg_student WHERE classno=".$id.")")->delete();
+            D('Student')->where("classno =".$id)->delete();
+            $rs = D('class')->where("`id` = ".$id)->delete();
+        }
+        if($rs){
             show(1,'删除成功！');
         }else{
             show(0,'删除失败');
@@ -442,27 +726,30 @@ class StudentController extends Controller{
                 $ct = $db->where(array('teacherno'=>$data['teacherno']))->select();
                 $data['name']=$lines[$i]['2'];
                 $data['password']=md5($lines[$i]['3']);
-                $data['phone']=md5($lines[$i]['4']);
-                $data['type']=intval($lines[$i]['5']);
-                $data['identity']=getTeacherType($data['type']);
+                $data['phone']=($lines[$i]['4']);
+                $data['identity']=$lines[$i]['5'];
+                $data['type']=getTeacherType($data['identity']);
                 $data['classname']=trim($lines[$i]['6']);
                 $data['grade']=$lines[$i]['7'];
                 $data['dname']=$lines[$i]['8'];
 
                 $departmentinfo = $departmentdb->where(array('dname="'.$data['dname'].'"'))->select();
                 if(!$departmentinfo[0]){
+                    if($data['dname'])
                     $id = $departmentdb->add(array('dname'=>$data['dname'],'school_id'=>1));
                     $departmentinfo = $departmentdb->where(array('id="'.$id.'"'))->select();
                 }
-                $data['department_id']=$departmentinfo[0]['id'];
+                $data['department_id']=$departmentinfo[0]['id'] ? $departmentinfo[0]['id'] : 0;
                 $classinfo = $classdb->where(array('classname="'.$data['classname'].'"'))->select();
                 if(!$classinfo[0]){
-                    $id = $classdb->add(array('classname'=>$data['classname'],'grade'=>$data['grade'],'dep_id'=>$departmentinfo[0]['id'],'master'=>$data['name'],'addtime'=>date('Y-m-d H:i:s')));
+                    if($data['classname'])
+                    $id = $classdb->add(array('classname'=>$data['classname'],'grade'=>$data['grade'],'dep_id'=>$departmentinfo[0]['id'],'master'=>$data['name'],'master_no'=>($data['type']==0 ? $data['teacherno']:''),'addtime'=>date('Y-m-d H:i:s')));
                     $classinfo = $classdb->where(array('id="'.$id.'"'))->select();
                 }else{
-                    $classdb->where('id='.$classinfo[0]['id'])->save(array('classname'=>$data['classname'],'grade'=>$data['grade'],'dep_id'=>$departmentinfo[0]['id'],'master'=>$data['name'],'addtime'=>date('Y-m-d H:i:s')));
+                    if($data['classname'])
+                    $classdb->where('id='.$classinfo[0]['id'])->save(array('classname'=>$data['classname'],'grade'=>$data['grade'],'dep_id'=>$departmentinfo[0]['id'],'master'=>$data['name'],'master_no'=>($data['type']==0 ? $data['teacherno']:''),'addtime'=>date('Y-m-d H:i:s')));
                 }
-                $data['class_id']=$classinfo[0]['id'];
+                $data['class_id']=$classinfo[0]['id'] ? $classinfo[0]['id'] : 0;
                 $data['addtime'] = date('Y-m-d H:i:s',time());
                 if($ct[0])
                     $db->where(array('id'=>$ct[0]['id']))->save($data);

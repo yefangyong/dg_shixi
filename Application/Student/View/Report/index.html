@@ -29,22 +29,22 @@
                   <div class="ct">
                     <table>
                       <tr>
-                        <td><a href="">1</a></td>
-                        <td><a href="">2</a></td>
-                        <td><a href="" class="on">3</a></td>
-                        <td><a href="">4</a></td>
-                        <td><a href="">5</a></td>
+                        <td><a href="javascript:void(0);" <if condition="$month eq 1">class="on"</if> onclick="setMonth(1);">1</a></td>
+                        <td><a href="javascript:void(0);" <if condition="$month eq 2">class="on"</if> onclick="setMonth(2);">2</a></td>
+                        <td><a href="javascript:void(0);" <if condition="$month eq 3">class="on"</if> onclick="setMonth(3);">3</a></td>
+                        <td><a href="javascript:void(0);" <if condition="$month eq 4">class="on"</if> onclick="setMonth(4);">4</a></td>
+                        <td><a href="javascript:void(0);" <if condition="$month eq 5">class="on"</if> onclick="setMonth(5);">5</a></td>
                       </tr>
                       <tr>
-                        <td><a href="">6</a></td>
-                        <td><a href="">7</a></td>
-                        <td><a href="">8</a></td>
-                        <td><a href="">9</a></td>
-                        <td><a href="">10</a></td>
+                        <td><a href="javascript:void(0);" <if condition="$month eq 6">class="on"</if> onclick="setMonth(6);">6</a></td>
+                        <td><a href="javascript:void(0);" <if condition="$month eq 7">class="on"</if> onclick="setMonth(7);">7</a></td>
+                        <td><a href="javascript:void(0);" <if condition="$month eq 8">class="on"</if> onclick="setMonth(8);">8</a></td>
+                        <td><a href="javascript:void(0);" <if condition="$month eq 9">class="on"</if> onclick="setMonth(9);">9</a></td>
+                        <td><a href="javascript:void(0);" <if condition="$month eq 10">class="on"</if> onclick="setMonth(10);">10</a></td>
                       </tr>
                       <tr>
-                        <td><a href="">11</a></td>
-                        <td><a href="">12</a></td>
+                        <td><a href="javascript:void(0);" <if condition="$month eq 11">class="on"</if> onclick="setMonth(11);">11</a></td>
+                        <td><a href="javascript:void(0);" <if condition="$month eq 12">class="on"</if> onclick="setMonth(12);">12</a></td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
@@ -56,11 +56,11 @@
             </div>
             <span class="wh10"></span>
             <div class="select">
-              <p><a href="javascript:void(0);">批阅情况</a></p>
+              <p><a href="javascript:void(0);">审核情况</a></p>
               <div class="ex">
                 <div class="list">
-                  <p><a href="javascript:void(0);" name="status" attr-id="0">未批阅</a></p>
-                  <p><a href="javascript:void(0);" name="status" attr-id="1">已批阅</a></p>
+                  <p><a href="javascript:void(0);" name="status" attr-id="0">未审核</a></p>
+                  <p><a href="javascript:void(0);" name="status" attr-id="1">已审核</a></p>
                 </div>
               </div>
             </div>
@@ -76,6 +76,11 @@
           <div class="ht15"></div>
           <div class="ui-table">
             <div class="hd">
+              <div class="ui-paging">
+                  <div class="pull-left">
+                          <a href="" class="cbox" attr-id="0"><i></i>全选</a>
+                      </div>
+              </div>
               <div class="tool">
                 <p>
                   <a href="/index.php/student/report/add">新增</a>
@@ -109,7 +114,7 @@
                       <td>{$vo.classname}</td>
                       <td>{$vo.pubtime}</td>
                       <td>{$corporation}</td>
-                      <td>{$vo.status|status}</td>
+                      <td>{$vo.status|status}<if condition="$vo.status eq 1">/{$vo.score|getReportScoreStatus}</if></td>
                       <td>
                         <a href="javascript:void(0);" attr-id="{$vo.id}" id="yfycms-view">查看</a>
                         <a href="javascript:void(0);" <if condition="$vo.status eq 0">id="yfycms-edit"</if> attr-id="{$vo.id}">编辑</a>
@@ -124,9 +129,6 @@
           <div class="ht35"></div>
           <div class="ui-paging">
            {$page}
-            <div class="pull-left">
-              <a href="" class="cbox"><i></i>全选</a>
-            </div>
           </div>
         </div>
       </div>
@@ -145,6 +147,10 @@
   
 </style>
 <script>
+        var month = 0;
+        function setMonth(v){
+          month = v;
+        }
         var SCOPE = {
             'jump_url': '/index.php?m=student&c=report&a=index',
             'set_status_url': '/index.php?m=student&c=report&a=del',
@@ -160,7 +166,7 @@
                     status = $(this).attr('attr-id');
                 }
             });
-            window.location.href="/index.php/Student/report/index/status/"+status;
+            window.location.href="/index.php/Student/report/index/month/"+month+"/status/"+status;
         });
 
         //删除全部

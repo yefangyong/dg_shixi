@@ -1,0 +1,687 @@
+[ 2017-03-19T12:20:16+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="梦梦" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('test','0','1','0','1','test to机设011','2017-03-19 :12:20:16','200') [ RunTime:0.0001s ]
+
+[ 2017-03-19T12:25:38+08:00 ] 58.217.174.90 /teacher.php/Notice/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_notice` WHERE ( `id` IN(52,53)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T12:32:38+08:00 ] 58.217.174.90 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE ( `id` IN(149,150,148,146,147,144,145)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T12:47:02+08:00 ] 58.217.174.90 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+
+[ 2017-03-19T12:47:16+08:00 ] 58.217.174.90 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='20',`status`='-1' WHERE ( `id` = 151 ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T15:01:08+08:00 ] 58.217.174.90 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=16 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE (  id IN(79) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2017888  [ RunTime:0.0001s ]
+SQL: INSERT INTO `dg_practice` (`corporation_id`,`guide`,`address`,`starttime`,`endtime`,`position`,`mode`,`student_id`) VALUES ('16','马云','北京市海淀区','2017-03-19','2017-03-31','tst','2','2017888') [ RunTime:0.0001s ]
+
+[ 2017-03-19T15:03:08+08:00 ] 58.217.174.90 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+
+[ 2017-03-19T15:03:31+08:00 ] 58.217.174.90 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_report` SET `suggestion`='app端午照片显示！',`score`='60',`status`='1' WHERE ( `id` = 152 ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T15:03:36+08:00 ] 58.217.174.90 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+
+[ 2017-03-19T15:04:41+08:00 ] 58.217.174.90 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+
+[ 2017-03-19T15:05:01+08:00 ] 58.217.174.90 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='test ok',`score`='90',`status`='1' WHERE ( `id` = 153 ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T15:05:06+08:00 ] 58.217.174.90 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-03-19T15:05:16+08:00 ] 101.226.66.173 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T15:15:14+08:00 ] 58.217.174.90 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+
+[ 2017-03-19T15:27:29+08:00 ] 101.226.68.197 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T15:27:29+08:00 ] 101.226.89.116 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T15:27:29+08:00 ] 112.65.193.15 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T15:40:04+08:00 ] 58.217.174.90 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=10 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE (  id IN(79) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2017888  [ RunTime:0.0001s ]
+SQL: INSERT INTO `dg_practice` (`corporation_id`,`guide`,`address`,`starttime`,`endtime`,`position`,`mode`,`student_id`) VALUES ('10','马云','百度大厦','2017-03-19','2017-03-31','test','2','2017888') [ RunTime:0.0001s ]
+
+[ 2017-03-19T15:50:00+08:00 ] 58.217.174.90 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='-1' WHERE ( `id` = 120 ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T15:52:06+08:00 ] 101.226.125.16 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T15:53:02+08:00 ] 58.217.174.90 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='1' WHERE ( `id` = 121 ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T16:30:51+08:00 ] 101.226.33.219 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T16:31:11+08:00 ] 101.226.51.230 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T16:31:36+08:00 ] 101.226.33.216 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T16:31:39+08:00 ] 101.226.125.111 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T16:32:22+08:00 ] 58.217.174.90 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_practice` SET `status`='1' WHERE ( `id` = 122 ) [ RunTime:0.0001s ]
+
+[ 2017-03-19T16:32:30+08:00 ] 101.226.102.97 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T16:32:34+08:00 ] 101.226.33.240 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T16:34:06+08:00 ] 117.185.27.113 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T16:54:37+08:00 ] 58.243.254.130 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T16:54:41+08:00 ] 58.243.254.130 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T16:56:28+08:00 ] 58.243.254.130 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T16:57:14+08:00 ] 58.243.254.130 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T16:57:21+08:00 ] 58.243.254.130 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T17:00:18+08:00 ] 101.226.33.219 /teacher.php/home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T17:34:57+08:00 ] 180.153.201.15 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T17:35:03+08:00 ] 101.226.99.195 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T17:35:03+08:00 ] 58.217.174.90 /teacher.php/Apply/delLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_leave` WHERE ( `id` IN(96,97,98,99)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T17:35:16+08:00 ] 101.226.99.196 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T17:36:34+08:00 ] 58.217.174.90 /teacher.php/Apply/editLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_leave` SET `status`='1' WHERE ( `id` = 100 ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T17:37:26+08:00 ] 140.207.185.107 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T17:38:07+08:00 ] 223.242.122.212 /teacher.php/Home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-19T17:44:12+08:00 ] 58.217.174.90 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=11 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE (  id IN(1,70,71,79,74,78,77) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 20170209  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_practice` SET `corporation_id`='11',`guide`='李克强',`address`='南京市雨花台区',`starttime`='2017-03-19',`endtime`='2017-05-20',`position`='test',`mode`='2',`student_id`='20170209' WHERE `id` = 1 [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2017102  [ RunTime:0.0001s ]
+SQL: INSERT INTO `dg_practice` (`corporation_id`,`guide`,`address`,`starttime`,`endtime`,`position`,`mode`,`student_id`) VALUES ('11','李克强','南京市雨花台区','2017-03-19','2017-05-20','test','2','2017102') [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2017103  [ RunTime:0.0001s ]
+SQL: INSERT INTO `dg_practice` (`corporation_id`,`guide`,`address`,`starttime`,`endtime`,`position`,`mode`,`student_id`) VALUES ('11','李克强','南京市雨花台区','2017-03-19','2017-05-20','test','2','2017103') [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2017888  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_practice` SET `corporation_id`='11',`guide`='李克强',`address`='南京市雨花台区',`starttime`='2017-03-19',`endtime`='2017-05-20',`position`='test',`mode`='2',`student_id`='2017888' WHERE `id` = 122 [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2018100  [ RunTime:0.0001s ]
+SQL: INSERT INTO `dg_practice` (`corporation_id`,`guide`,`address`,`starttime`,`endtime`,`position`,`mode`,`student_id`) VALUES ('11','李克强','南京市雨花台区','2017-03-19','2017-05-20','test','2','2018100') [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2019001  [ RunTime:0.0001s ]
+SQL: INSERT INTO `dg_practice` (`corporation_id`,`guide`,`address`,`starttime`,`endtime`,`position`,`mode`,`student_id`) VALUES ('11','李克强','南京市雨花台区','2017-03-19','2017-05-20','test','2','2019001') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2018181  [ RunTime:0.0001s ]
+SQL: INSERT INTO `dg_practice` (`corporation_id`,`guide`,`address`,`starttime`,`endtime`,`position`,`mode`,`student_id`) VALUES ('11','李克强','南京市雨花台区','2017-03-19','2017-05-20','test','2','2018181') [ RunTime:0.0001s ]
+
+[ 2017-03-19T17:44:13+08:00 ] 58.217.174.90 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=11 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE (  id IN(1,70,71,79,74,78,77) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 20170209  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_practice` SET `corporation_id`='11',`guide`='李克强',`address`='南京市雨花台区',`starttime`='2017-03-19',`endtime`='2017-05-20',`position`='test',`mode`='2',`student_id`='20170209' WHERE `id` = 1 [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2017102  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_practice` SET `corporation_id`='11',`guide`='李克强',`address`='南京市雨花台区',`starttime`='2017-03-19',`endtime`='2017-05-20',`position`='test',`mode`='2',`student_id`='2017102' WHERE `id` = 123 [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2017103  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_practice` SET `corporation_id`='11',`guide`='李克强',`address`='南京市雨花台区',`starttime`='2017-03-19',`endtime`='2017-05-20',`position`='test',`mode`='2',`student_id`='2017103' WHERE `id` = 124 [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2017888  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_practice` SET `corporation_id`='11',`guide`='李克强',`address`='南京市雨花台区',`starttime`='2017-03-19',`endtime`='2017-05-20',`position`='test',`mode`='2',`student_id`='2017888' WHERE `id` = 122 [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2018100  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_practice` SET `corporation_id`='11',`guide`='李克强',`address`='南京市雨花台区',`starttime`='2017-03-19',`endtime`='2017-05-20',`position`='test',`mode`='2',`student_id`='2018100' WHERE `id` = 125 [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2019001  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_practice` SET `corporation_id`='11',`guide`='李克强',`address`='南京市雨花台区',`starttime`='2017-03-19',`endtime`='2017-05-20',`position`='test',`mode`='2',`student_id`='2019001' WHERE `id` = 126 [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2018181  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_practice` SET `corporation_id`='11',`guide`='李克强',`address`='南京市雨花台区',`starttime`='2017-03-19',`endtime`='2017-05-20',`position`='test',`mode`='2',`student_id`='2018181' WHERE `id` = 127 [ RunTime:0.0001s ]
+
+[ 2017-03-19T17:45:34+08:00 ] 58.217.174.90 /teacher.php/Practice/cancelarrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` = (select studentno from dg_student where id=77) ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T17:56:13+08:00 ] 223.242.122.212 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T18:47:15+08:00 ] 223.242.122.212 /teacher.php/Notice/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM dg_notice Notice LEFT JOIN dg_teacher Teacher ON Notice.user_id = Teacher.t' at line 1
+ [ SQL语句 ] : SELECT IF(dg.notice.type=0,IF(dg_notice.class_id!=0,IF(dg_notice.dep_id!=0,IFNULL(dg_notice_view.id FROM dg_notice Notice LEFT JOIN dg_teacher Teacher ON Notice.user_id = Teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id=200 LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=200  LIMIT 0,15  
+
+[ 2017-03-19T18:48:13+08:00 ] 223.242.122.212 /teacher.php/Notice/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM dg_notice Notice LEFT JOIN dg_teacher Teacher ON Notice.user_id = Teacher.t' at line 1
+ [ SQL语句 ] : SELECT IF(dg.notice.type=0,IF(dg_notice.class_id!=0,IF(dg_notice.dep_id!=0,IFNULL(dg_notice_view.id FROM dg_notice Notice LEFT JOIN dg_teacher Teacher ON Notice.user_id = Teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id=200 LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=200  LIMIT 0,15  
+
+[ 2017-03-19T18:50:09+08:00 ] 223.242.122.212 /teacher.php/Notice/index
+ERR: 1146:Table 'shixi1.dg_n_otice' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dg_n_otice`
+
+[ 2017-03-19T18:51:03+08:00 ] 223.242.122.212 /teacher.php/Notice/index
+ERR: 1054:Unknown column 'dg.notice.type' in 'field list'
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg.notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name,`teacher_name` FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id=200 LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=200  LIMIT 0,15  
+
+[ 2017-03-19T18:51:25+08:00 ] 223.242.122.212 /teacher.php/Notice/index
+ERR: 1054:Unknown column 'teacher_name' in 'field list'
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name,`teacher_name` FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id=200 LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=200  LIMIT 0,15  
+
+[ 2017-03-19T18:51:47+08:00 ] 223.242.122.212 /index.php?m=teacher&c=notice&a=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_notice` WHERE ( id=50 ) [ RunTime:0.0001s ]
+
+[ 2017-03-19T18:51:51+08:00 ] 223.242.122.212 /index.php?m=teacher&c=notice&a=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_notice` WHERE ( id=55 ) [ RunTime:0.0001s ]
+
+[ 2017-03-19T18:52:01+08:00 ] 223.242.122.212 /teacher.php?c=notice&a=cat&id=57
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN dg_teacher Teacher ON Notice.user_id = Teacher.teacherno WHERE ( notic' at line 1
+ [ SQL语句 ] : DELETE FROM dg_notice Notice LEFT JOIN dg_teacher Teacher ON Notice.user_id = Teacher.teacherno WHERE ( notice_id=57 and user_id=200 )
+
+[ 2017-03-19T18:53:16+08:00 ] 223.242.122.212 /teacher.php?c=notice&a=cat&id=57
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  WHERE ( id=57 ) 
+
+[ 2017-03-19T18:53:44+08:00 ] 223.242.122.212 /teacher.php?c=notice&a=cat&id=57
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id=200 LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=200  WHERE ( id=57 ) 
+
+[ 2017-03-19T18:54:06+08:00 ] 223.242.122.212 /teacher.php?c=notice&a=cat&id=57
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN dg_teacher Teacher ON Notice.user_id = Teacher.teacherno WHERE ( notic' at line 1
+ [ SQL语句 ] : DELETE FROM dg_notice Notice LEFT JOIN dg_teacher Teacher ON Notice.user_id = Teacher.teacherno WHERE ( notice_id=57 and user_id=200 )
+
+[ 2017-03-19T18:55:08+08:00 ] 223.242.122.212 /teacher.php?c=notice&a=cat&id=57
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN dg_teacher Teacher ON Notice.user_id = Teacher.teacherno WHERE ( notic' at line 1
+ [ SQL语句 ] : DELETE FROM dg_notice Notice LEFT JOIN dg_teacher Teacher ON Notice.user_id = Teacher.teacherno WHERE ( notice_id=57 and user_id=200 )
+
+[ 2017-03-19T18:56:30+08:00 ] 223.242.122.212 /teacher.php?c=notice&a=cat&id=57
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN dg_teacher Teacher ON Notice.user_id = Teacher.teacherno WHERE ( notic' at line 1
+ [ SQL语句 ] : DELETE FROM dg_notice Notice LEFT JOIN dg_teacher Teacher ON Notice.user_id = Teacher.teacherno WHERE ( notice_id=57 and user_id=200 )
+
+[ 2017-03-19T18:58:04+08:00 ] 223.242.122.212 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T18:58:35+08:00 ] 223.242.122.212 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T18:58:46+08:00 ] 58.217.174.90 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T18:58:52+08:00 ] 58.217.174.90 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T18:58:59+08:00 ] 101.226.33.219 /teacher.php/Notice/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  LIMIT 0,15  
+
+[ 2017-03-19T19:00:58+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="梦梦" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('TO 机设011','0','1','0','1','to 机设011','2017-03-19 :19:00:58','200') [ RunTime:0.0002s ]
+
+[ 2017-03-19T19:01:50+08:00 ] 58.217.174.90 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T19:41:55+08:00 ] 58.217.174.90 /teacher.php/Notice/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_notice` WHERE ( `id` IN(51,57,58,56)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T19:42:27+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="梦梦" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('To jishe011','0','1','0','0','111111111111111111111111111111111','2017-03-19 :19:42:27','200') [ RunTime:0.0002s ]
+
+[ 2017-03-19T19:42:35+08:00 ] 58.217.174.90 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T19:42:45+08:00 ] 101.226.33.225 /teacher.php?c=notice&a=cat&id=59
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  WHERE ( dg_notice.id=59 ) 
+
+[ 2017-03-19T19:44:41+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="梦梦" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('toooooooo','0','1','0','0','dd ','2017-03-19 :19:44:41','200') [ RunTime:0.0001s ]
+
+[ 2017-03-19T19:44:47+08:00 ] 58.217.174.90 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T19:44:57+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="梦梦" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('333','0','1','0','0','3333','2017-03-19 :19:44:57','200') [ RunTime:0.0001s ]
+
+[ 2017-03-19T19:46:04+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('123','0','0','1','2','ss','2017-03-19 :19:46:04','100') [ RunTime:0.0001s ]
+
+[ 2017-03-19T19:46:18+08:00 ] 58.217.174.90 /teacher.php/Notice/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  LIMIT 0,15  
+
+[ 2017-03-19T19:46:20+08:00 ] 58.217.174.90 /teacher.php/Notice/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  LIMIT 0,15  
+
+[ 2017-03-19T19:47:11+08:00 ] 58.217.174.90 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T19:47:20+08:00 ] 101.226.66.178 /teacher.php?c=notice&a=cat&id=62
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  WHERE ( dg_notice.id=62 ) 
+
+[ 2017-03-19T19:47:52+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('1','0','0','1','0','11','2017-03-19 :19:47:52','100') [ RunTime:0.0001s ]
+
+[ 2017-03-19T19:49:18+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('123','0','0','1','0','22','2017-03-19 :19:49:18','100') [ RunTime:0.0001s ]
+
+[ 2017-03-19T19:49:26+08:00 ] 58.217.174.90 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T19:49:32+08:00 ] 58.217.174.90 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T19:58:55+08:00 ] 58.217.174.90 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE ( `id` IN(152,153)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T20:00:12+08:00 ] 58.217.174.90 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_report` WHERE ( `id` = 158 ) [ RunTime:0.0001s ]
+
+[ 2017-03-19T20:40:49+08:00 ] 223.242.122.212 /teacher.php?c=notice&a=cat&id=51
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  WHERE ( dg_notice.id=51 ) 
+
+[ 2017-03-19T20:41:01+08:00 ] 223.242.122.212 /teacher.php?c=notice&a=cat&id=51
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  WHERE ( dg_notice.id=51 ) 
+
+[ 2017-03-19T20:41:30+08:00 ] 223.242.122.212 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T20:42:34+08:00 ] 223.242.122.212 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T20:42:41+08:00 ] 223.242.122.212 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T20:55:39+08:00 ] 223.242.122.212 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T20:55:45+08:00 ] 223.242.122.212 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T21:00:24+08:00 ] 58.217.174.90 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+
+[ 2017-03-19T21:00:34+08:00 ] 58.217.174.90 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE ( `id` = 159 ) [ RunTime:0.0001s ]
+
+[ 2017-03-19T21:08:50+08:00 ] 58.217.174.90 /teacher.php/Practice/addCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: INSERT INTO `dg_corporation` (`name`,`city`,`type`,`contact`,`position`,`telephone`,`mobile`,`email`,`zipcode`,`website`,`address`,`introduction`,`addtime`) VALUES ('娃哈哈','杭州市西湖区','国资','宗总','CEO','13661623988','13661623988','11@sohu.com','200000','www.wahaha.com','杭州西湖区西湖区西湖区西湖区','娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈娃哈哈！','2017-03-19 21:08:50') [ RunTime:0.0002s ]
+
+[ 2017-03-19T21:10:34+08:00 ] 58.217.174.90 /teacher.php/Practice/delCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_corporation` WHERE ( `id` = 19 ) [ RunTime:0.0001s ]
+
+[ 2017-03-19T21:10:52+08:00 ] 58.217.174.90 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE (   id IN(2,3,6,10,11,13,14,15,16,22,23) ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T21:11:39+08:00 ] 58.217.174.90 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE (   id IN(2,3,6,10,11,13,14,15,16,22,23) ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T21:11:59+08:00 ] 58.217.174.90 /teacher.php/Notice/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  ORDER BY `pubtime` desc LIMIT 0,15  
+
+[ 2017-03-19T21:12:48+08:00 ] 58.217.174.90 /teacher.php/Notice/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  ORDER BY `pubtime` desc LIMIT 0,15  
+
+[ 2017-03-19T21:13:33+08:00 ] 223.242.122.212 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T21:14:35+08:00 ] 58.217.174.90 /teacher.php/Notice/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_notice` WHERE ( `id` IN(64,63,62,61,60,59)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T21:14:50+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('11','0','0','1','0','111','2017-03-19 :21:14:50','100') [ RunTime:0.0001s ]
+
+[ 2017-03-19T21:14:53+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('11','0','0','1','0','111','2017-03-19 :21:14:53','100') [ RunTime:0.0001s ]
+
+[ 2017-03-19T21:15:58+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('111','0','0','1','0','111','2017-03-19 :21:15:58','100') [ RunTime:0.0001s ]
+
+[ 2017-03-19T21:16:12+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('22','0','0','1','0','222','2017-03-19 :21:16:12','100') [ RunTime:0.0001s ]
+
+[ 2017-03-19T21:16:24+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('de','0','0','1','2','de','2017-03-19 :21:16:24','100') [ RunTime:0.0001s ]
+
+[ 2017-03-19T21:20:19+08:00 ] 180.153.206.17 /index.php/Teacher/Notice/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  ORDER BY `pubtime` desc LIMIT 0,15  
+
+[ 2017-03-19T21:24:38+08:00 ] 58.217.174.90 /teacher.php/Notice/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_notice` WHERE ( `id` IN(69,68,67,66,65)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T21:25:32+08:00 ] 58.217.174.90 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="梦梦" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`pubtime`,`user_id`) VALUES ('test','0','1','0','0','to 机设011','2017-03-19 :21:25:32','200') [ RunTime:0.0001s ]
+
+[ 2017-03-19T21:25:38+08:00 ] 58.217.174.90 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: 非法操作:read
+
+[ 2017-03-19T21:55:09+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-03-19T21:55:14+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-03-19T21:55:18+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+
+[ 2017-03-19T21:55:22+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-03-19T21:55:25+08:00 ] 61.235.37.202 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='50',`status`='-1' WHERE ( `id` = 161 ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T22:56:30+08:00 ] 58.217.174.90 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+

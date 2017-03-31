@@ -1,0 +1,622 @@
+[ 2017-03-23T03:47:10+08:00 ] 101.226.125.104 /index.php/Teacher/Notice/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  ORDER BY `pubtime` desc LIMIT 0,15  
+
+[ 2017-03-23T11:02:55+08:00 ] 49.65.251.223 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+ERR: 非法操作:read
+
+[ 2017-03-23T11:03:05+08:00 ] 101.226.33.220 /teacher.php?c=notice&a=cat&id=86
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  WHERE ( dg_notice.id=86 ) 
+
+[ 2017-03-23T11:06:08+08:00 ] 49.65.251.223 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: 非法操作:read
+
+[ 2017-03-23T11:06:18+08:00 ] 101.226.89.120 /teacher.php?c=notice&a=cat&id=87
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.type=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id and dg_notice_view.type=0 and dg_notice_view.user_id=  WHERE ( dg_notice.id=87 ) 
+
+[ 2017-03-23T11:08:14+08:00 ] 49.65.251.223 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=6 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE (  id IN(71) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2017103  [ RunTime:0.0001s ]
+SQL: INSERT INTO `dg_practice` (`corporation_id`,`guide`,`address`,`starttime`,`endtime`,`position`,`mode`,`status`,`student_id`) VALUES ('6','123','的点点滴滴多多','2017-03-23','2017-03-31','123','2','1','2017103') [ RunTime:0.0001s ]
+SQL: UPDATE `dg_student` SET `corporation_id`='6' WHERE `studentno` = '2017103' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: error /var/www/html/Application/Teacher/Controller/PracticeController.class.php 第 419 行.
+
+[ 2017-03-23T11:08:48+08:00 ] 49.65.251.223 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id IN(2017103) )  [ RunTime:0.0001s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` IN(2017103)  ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 149 行.
+
+[ 2017-03-23T11:09:08+08:00 ] 49.65.251.223 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+
+[ 2017-03-23T11:09:49+08:00 ] 49.65.251.223 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-03-23T11:10:21+08:00 ] 49.65.251.223 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` = 86 ) [ RunTime:0.0001s ]
+
+[ 2017-03-23T11:17:31+08:00 ] 49.65.251.223 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_student` SET `studentno`='2017103',`password`='202cb962ac59075b964b07152d234b70',`name`='孟非',`phone`='18800009996',`sex`='0' WHERE ( `id` = 71 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T11:23:57+08:00 ] 49.65.251.223 /index.php/teacher/contact/teacher/department/1/keywords/
+ERR: 1054:Unknown column 'dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE (   dep_id=1 ) LIMIT 1  
+
+[ 2017-03-23T11:26:02+08:00 ] 49.65.251.223 /index.php/teacher/contact/teacher/department/2/keywords/
+ERR: 1054:Unknown column 'dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE (   dep_id=2 ) LIMIT 1  
+
+[ 2017-03-23T11:26:20+08:00 ] 49.65.251.223 /index.php/teacher/contact/teacher/department/0/keywords/aa
+ERR: 1054:Unknown column 'teacher.name' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE (  (teacherno like "%aa%" or teacher.name like "%aa%") ) LIMIT 1  
+
+[ 2017-03-23T12:03:40+08:00 ] 49.65.251.223 /index.php/Teacher/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=2017888 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` = 2017888 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 149 行.
+
+[ 2017-03-23T12:03:55+08:00 ] 49.65.251.223 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id IN(87,86,64,58) )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` IN(64,58)  ) [ RunTime:0.0001s ]
+
+[ 2017-03-23T12:04:18+08:00 ] 49.65.251.223 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 87 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T12:04:24+08:00 ] 49.65.251.223 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=87 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 87 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 453 行.
+
+[ 2017-03-23T12:04:33+08:00 ] 49.65.251.223 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=86 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 86 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 453 行.
+
+[ 2017-03-23T12:39:34+08:00 ] 49.65.251.223 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+
+[ 2017-03-23T12:45:15+08:00 ] 49.65.251.223 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0007s ]
+SQL: UPDATE `dg_practice` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 207 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T13:11:37+08:00 ] 49.65.251.223 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 88 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T13:19:04+08:00 ] 36.6.183.220 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=88 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 88 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 453 行.
+
+[ 2017-03-23T13:31:46+08:00 ] 36.6.183.220 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 89 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T13:35:24+08:00 ] 49.65.251.223 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=90 )  [ RunTime:0.0002s ]
+
+[ 2017-03-23T13:35:28+08:00 ] 49.65.251.223 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 90 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T13:35:33+08:00 ] 49.65.251.223 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=89 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 89 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 453 行.
+
+[ 2017-03-23T13:35:38+08:00 ] 49.65.251.223 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=90 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 90 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 453 行.
+
+[ 2017-03-23T13:38:34+08:00 ] 49.65.251.223 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 91 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T13:41:52+08:00 ] 49.65.251.223 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='-1',`teacher_id`='200' WHERE ( `id` = 92 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T14:02:06+08:00 ] 49.65.251.223 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 93 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T14:03:01+08:00 ] 49.65.251.223 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=91 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 91 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 453 行.
+
+[ 2017-03-23T14:03:06+08:00 ] 49.65.251.223 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=92 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 92 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 453 行.
+
+[ 2017-03-23T14:03:11+08:00 ] 49.65.251.223 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=93 )  [ RunTime:0.0001s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 93 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 453 行.
+
+[ 2017-03-23T14:05:34+08:00 ] 49.65.251.223 /teacher.php/Practice/cancelarrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` = (select studentno from dg_student where id=79) ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T14:07:26+08:00 ] 49.65.251.223 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 208 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T14:21:47+08:00 ] 49.65.251.223 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 94 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T14:50:27+08:00 ] 36.6.183.220 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-03-23T14:53:34+08:00 ] 49.65.251.223 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 95 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T14:57:30+08:00 ] 49.65.251.223 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 96 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T15:11:28+08:00 ] 36.6.183.220 /index.php/teacher/contact/teacher/department/0/keywords/%E5%8F%B6
+ERR: 1054:Unknown column 'teacher.name' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE (  (teacherno like "%叶%" or teacher.name like "%叶%") ) LIMIT 1  
+
+[ 2017-03-23T15:12:26+08:00 ] 36.6.183.220 /index.php/teacher/contact/teacher/department/0/keywords/%E5%8F%B6
+ERR: 1054:Unknown column 'teacher.name' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE (  (teacherno like "%叶%" or teacher.name like "%叶%") ) LIMIT 1  
+
+[ 2017-03-23T15:12:35+08:00 ] 36.6.183.220 /index.php/teacher/contact/teacher/department/0/keywords/%E5%8F%B6
+ERR: 1054:Unknown column 'teacher.name' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE (  (teacherno like "%叶%" or teacher.name like "%叶%") ) LIMIT 1  
+
+[ 2017-03-23T15:12:59+08:00 ] 36.6.183.220 /index.php/teacher/contact/teacher/department/0/keywords/%E5%8F%B6
+ERR: 1054:Unknown column 'teacher.name' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE (  (teacherno like "%叶%" or teacher.name like "%叶%") ) LIMIT 1  
+
+[ 2017-03-23T15:14:16+08:00 ] 36.6.183.220 /index.php/teacher/contact/teacher/department/0/keywords/%E5%8F%B6
+ERR: 1054:Unknown column 'teacher.name' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE (  (teacherno like "%叶%" or teacher.name like "%叶%") ) LIMIT 1  
+
+[ 2017-03-23T15:14:41+08:00 ] 36.6.183.220 /index.php/teacher/contact/teacher/department/0/keywords/%E5%8F%B6
+ERR: 1054:Unknown column 'teacher.name' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE (  (teacherno like "%叶%" or teacher.name like "%叶%") ) LIMIT 1  
+
+[ 2017-03-23T15:14:42+08:00 ] 36.6.183.220 /index.php/teacher/contact/teacher/department/0/keywords/%E5%8F%B6
+ERR: 1054:Unknown column 'teacher.name' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE (  (teacherno like "%叶%" or teacher.name like "%叶%") ) LIMIT 1  
+
+[ 2017-03-23T15:15:54+08:00 ] 36.6.183.220 /index.php/teacher/contact/teacher/department/1/keywords/
+ERR: 1054:Unknown column 'dep_id' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE (   dep_id=1 ) LIMIT 1  
+
+[ 2017-03-23T18:49:59+08:00 ] 36.57.215.120 /index.php/Teacher/login/logout
+ERR: 非法操作:logout
+
+[ 2017-03-23T18:51:06+08:00 ] 36.57.215.120 /index.php/Teacher/login/logout
+ERR: 非法操作:logout
+
+[ 2017-03-23T18:51:11+08:00 ] 36.57.215.120 /index.php/Teacher/login/logout
+ERR: 非法操作:logout
+
+[ 2017-03-23T18:53:04+08:00 ] 36.57.215.120 /index.php/Teacher/login/logout
+ERR: 非法操作:logout
+
+[ 2017-03-23T18:53:27+08:00 ] 36.57.215.120 /index.php/Teacher/login/logout
+ERR: 非法操作:logout
+
+[ 2017-03-23T18:53:50+08:00 ] 36.57.215.120 /index.php/Teacher/login/logout
+ERR: 非法操作:logout
+
+[ 2017-03-23T18:54:40+08:00 ] 36.57.215.120 /index.php/Teacher/login/logout
+ERR: 非法操作:logout
+
+[ 2017-03-23T19:37:40+08:00 ] 36.57.215.120 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_practice` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 214 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T19:46:03+08:00 ] 36.57.215.120 /teacher.php/Apply/delApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=20170209 )  [ RunTime:0.0001s ]
+SQL: DELETE FROM `dg_practice` WHERE ( `student_id` = 20170209 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 149 行.
+
+[ 2017-03-23T19:57:58+08:00 ] 36.57.215.120 /teacher.php/Apply/editApply.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_practice` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 215 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T20:21:04+08:00 ] 36.57.215.120 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=3 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SELECT `studentno` FROM `dg_student` WHERE (  id IN(78) )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_practice` WHERE `student_id` = 2019001  [ RunTime:0.0001s ]
+SQL: INSERT INTO `dg_practice` (`corporation_id`,`guide`,`address`,`starttime`,`endtime`,`position`,`mode`,`status`,`student_id`) VALUES ('3','企业指导老师','百度大厦','2017-03-24','2017-03-31','实习岗位','2','1','2019001') [ RunTime:0.0001s ]
+SQL: UPDATE `dg_student` SET `corporation_id`='3' WHERE `studentno` = '2019001' [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: error /var/www/html/Application/Teacher/Controller/PracticeController.class.php 第 420 行.
+
+[ 2017-03-23T20:37:55+08:00 ] 36.57.215.120 /teacher.php/Practice/addCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: INSERT INTO `dg_corporation` (`name`,`city`,`type`,`contact`,`position`,`telephone`,`mobile`,`email`,`zipcode`,`website`,`address`,`introduction`,`addtime`) VALUES ('谷歌','企业地址','外资','企业联系人','职务','0101234567','13111111111','test@gmail.com','123456','www.ifeng.com','详细地址详细地址详细地址','企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍','2017-03-23 20:37:55') [ RunTime:0.0002s ]
+
+[ 2017-03-23T20:39:56+08:00 ] 36.57.215.120 /teacher.php/Practice/editCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_corporation` SET `name`='谷歌',`city`='企业地址',`type`='外资',`contact`='企业联系人',`position`='职务',`telephone`='0101234567',`mobile`='13111111111',`email`='test@gmail.com',`zipcode`='225653',`fax`='0101234567',`department`='部门',`website`='www.ifeng.com',`address`='详细地址详细地址详细地址',`introduction`='企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',`addtime`='2017-03-23 20:39:56' WHERE ( `id` = 26 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T20:44:55+08:00 ] 36.57.215.120 /index.php?m=teacher&c=notice&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_teacher` WHERE ( name="叶方勇" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_notice` (`title`,`school`,`class_id`,`dep_id`,`type`,`content`,`user_id`,`pubtime`) VALUES ('托尔斯泰','0','0','1','2','托尔斯泰托尔斯泰托尔斯泰','100','2017-03-23 :20:44:55') [ RunTime:0.0001s ]
+
+[ 2017-03-23T21:43:17+08:00 ] 36.57.215.120 /index.php/Teacher/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-03-23T21:43:41+08:00 ] 36.57.215.120 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+
+[ 2017-03-23T21:45:04+08:00 ] 36.57.215.120 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+
+[ 2017-03-23T22:12:58+08:00 ] 117.88.212.199 /teacher.php/Student/view/id/79
+ERR: 1054:Unknown column 'Profession.school' in 'on clause'
+ [ SQL语句 ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.phone AS stuphone,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.id AS sid,Student.emegencyconcat AS emegencyconcat,Student.emegencyphone AS emegencyphone,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.cname AS cname,Practice.address AS pracaddress,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id WHERE ( Student.id = 79 ) LIMIT 1  
+
+[ 2017-03-23T22:13:05+08:00 ] 117.88.212.199 /teacher.php/Student/view/id/79
+ERR: 1054:Unknown column 'Profession.school' in 'on clause'
+ [ SQL语句 ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.phone AS stuphone,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.id AS sid,Student.emegencyconcat AS emegencyconcat,Student.emegencyphone AS emegencyphone,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.cname AS cname,Practice.address AS pracaddress,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id WHERE ( Student.id = 79 ) LIMIT 1  
+
+[ 2017-03-23T22:13:08+08:00 ] 101.226.89.117 /teacher.php/Student/view/id/79
+ERR: 1054:Unknown column 'Profession.school' in 'on clause'
+ [ SQL语句 ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.phone AS stuphone,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.id AS sid,Student.emegencyconcat AS emegencyconcat,Student.emegencyphone AS emegencyphone,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.cname AS cname,Practice.address AS pracaddress,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id WHERE ( Student.id = 79 ) LIMIT 1  
+
+[ 2017-03-23T22:14:54+08:00 ] 117.88.212.199 /teacher.php/Student/view/id/71
+ERR: 1054:Unknown column 'Profession.school' in 'on clause'
+ [ SQL语句 ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.phone AS stuphone,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.id AS sid,Student.emegencyconcat AS emegencyconcat,Student.emegencyphone AS emegencyphone,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.cname AS cname,Practice.address AS pracaddress,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id WHERE ( Student.id = 71 ) LIMIT 1  
+
+[ 2017-03-23T22:15:23+08:00 ] 36.57.215.120 /teacher.php/Student/view/id/1
+ERR: 1054:Unknown column 'Profession.school' in 'on clause'
+ [ SQL语句 ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.phone AS stuphone,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.id AS sid,Student.emegencyconcat AS emegencyconcat,Student.emegencyphone AS emegencyphone,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.cname AS cname,Practice.address AS pracaddress,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id WHERE ( Student.id = 1 ) LIMIT 1  
+
+[ 2017-03-23T22:17:05+08:00 ] 117.88.212.199 /index.php/Teacher/login/logout
+ERR: 非法操作:logout
+
+[ 2017-03-23T22:36:57+08:00 ] 36.57.215.120 /index.php/Teacher/login/logout
+ERR: 非法操作:logout
+
+[ 2017-03-23T22:37:49+08:00 ] 180.153.205.252 /teacher.php/home/login/index.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-23T22:39:17+08:00 ] 180.153.205.254 /teacher.php/Notice/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.school!=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id   ORDER BY `pubtime` desc LIMIT 0,15  
+
+[ 2017-03-23T22:41:17+08:00 ] 117.88.212.199 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_report` WHERE ( id IN(190,189) )  [ RunTime:0.0002s ]
+
+[ 2017-03-23T22:41:26+08:00 ] 117.88.212.199 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+
+[ 2017-03-23T22:41:31+08:00 ] 117.88.212.199 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+
+[ 2017-03-23T22:41:36+08:00 ] 117.88.212.199 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0007s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='60',`status`='1' WHERE ( `id` = 190 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T22:41:41+08:00 ] 117.88.212.199 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-03-23T22:41:46+08:00 ] 117.88.212.199 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='100',`status`='1' WHERE ( `id` = 189 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T22:41:53+08:00 ] 117.88.212.199 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_report` WHERE ( id=190 )  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_report` SET `tea_del`='0' WHERE ( `id` = 190 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ReportController.class.php 第 238 行.
+
+[ 2017-03-23T22:42:00+08:00 ] 117.88.212.199 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_report` WHERE ( id=189 )  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_report` SET `tea_del`='0' WHERE ( `id` = 189 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ReportController.class.php 第 238 行.
+
+[ 2017-03-23T22:42:39+08:00 ] 117.136.66.180 /teacher.php/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+ERR: 非法操作:read
+
+[ 2017-03-23T23:06:16+08:00 ] 36.57.215.120 /index.php/Teacher/Statistics/index.html
+ERR: 模板不存在:./Application/Teacher/View/Statistics/index.html
+
+[ 2017-03-23T23:40:57+08:00 ] 117.88.212.199 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_report` WHERE ( id IN(197,196,195,192,191,187,186,185,183,180,179,178,177,175,174) )  [ RunTime:0.0002s ]
+SQL: UPDATE `dg_report` SET `tea_del`='0' WHERE ( `id` IN(186,187,191,192,197)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T23:41:53+08:00 ] 117.88.212.199 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-03-23T23:41:57+08:00 ] 117.88.212.199 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='30',`status`='-1' WHERE ( `id` = 196 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T23:42:01+08:00 ] 117.88.212.199 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+
+[ 2017-03-23T23:42:07+08:00 ] 117.88.212.199 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='90',`status`='1' WHERE ( `id` = 195 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T23:42:12+08:00 ] 117.88.212.199 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+
+[ 2017-03-23T23:42:15+08:00 ] 117.88.212.199 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='50',`status`='-1' WHERE ( `id` = 185 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T23:42:21+08:00 ] 117.88.212.199 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+
+[ 2017-03-23T23:42:25+08:00 ] 117.88.212.199 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_report` SET `suggestion`='',`score`='60',`status`='1' WHERE ( `id` = 167 ) [ RunTime:0.0002s ]
+
+[ 2017-03-23T23:42:37+08:00 ] 117.88.212.199 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_report` WHERE ( id IN(196,195,185,183,180,179,178,177,175,174,172,171,169,168,167) )  [ RunTime:0.0002s ]
+SQL: UPDATE `dg_report` SET `tea_del`='0' WHERE ( `id` IN(167,195)  ) [ RunTime:0.0001s ]
+
+[ 2017-03-23T23:42:54+08:00 ] 117.88.212.199 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_report` WHERE ( id=171 )  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_report` SET `tea_del`='0' WHERE ( `id` = 171 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ReportController.class.php 第 238 行.
+
+[ 2017-03-23T23:43:00+08:00 ] 117.88.212.199 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+
+[ 2017-03-23T23:49:50+08:00 ] 117.88.212.199 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_report` WHERE ( id=196 )  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_report` SET `tea_del`='0' WHERE ( `id` = 196 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ReportController.class.php 第 238 行.
+
+[ 2017-03-23T23:50:22+08:00 ] 117.88.212.199 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-03-23T23:51:04+08:00 ] 117.88.212.199 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_report` WHERE ( id=185 )  [ RunTime:0.0002s ]
+SQL: UPDATE `dg_report` SET `tea_del`='0' WHERE ( `id` = 185 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ReportController.class.php 第 238 行.
+
+[ 2017-03-23T23:51:27+08:00 ] 117.88.212.199 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_report` WHERE ( id IN(183,162,161,160,157,156) )  [ RunTime:0.0002s ]
+SQL: UPDATE `dg_report` SET `tea_del`='0' WHERE ( `id` IN(160,162)  ) [ RunTime:0.0001s ]
+
+[ 2017-03-23T23:51:34+08:00 ] 117.88.212.199 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_report` WHERE ( id=161 )  [ RunTime:0.0001s ]
+SQL: UPDATE `dg_report` SET `tea_del`='0' WHERE ( `id` = 161 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ReportController.class.php 第 238 行.
+

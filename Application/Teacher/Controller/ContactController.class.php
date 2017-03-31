@@ -1,6 +1,6 @@
 <?php
  namespace Teacher\Controller;
- use Student\Controller\CommonController;
+ use Teacher\Controller\CommonController;
 
  class ContactController extends CommonController{
      public function index(){
@@ -22,6 +22,12 @@
         $show = $page->show();
         $currentPage = I(C('VAR_PAGE'),1);
         $stuList = D("ContactView")->where($map)->page($currentPage.','.$listRows)->select();
+        for($i=0; $i<count($stuList); $i++){
+            $_changeinfo = D("Change")->where(array("student_id"=>$stuList[$i]['studentno']))->order(array('applytime'=>'desc'))->limit(1)->select();
+            if($_changeinfo){
+                $stuList[$i]['cname']=$_changeinfo[0]['cname'];
+            }
+        }
         $department = D('department')->select();
         $profession = D('profession')->select();
         $class = D('class')->select();
@@ -40,14 +46,14 @@
      {
         $department = I('get.department',0);
         if($department)
-            $map[] = ' dep_id='.$department;
+            $map[] = ' department_id='.$department;
         $profession = I('get.profession',0);
         $class = I('get.class',0);
         if($class)
             $map[] = 'class_id = '.$class;
         $keywords = I('get.keywords');
         if($keywords)
-            $map[] = '(teacherno like "%'.$keywords.'%" or teacher.name like "%'.$keywords.'%")';
+            $map[] = '(teacherno like "%'.$keywords.'%" or dg_teacher.name like "%'.$keywords.'%")';
         import('ORG.Util.Page');
         // 每页显示记录数
         $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));

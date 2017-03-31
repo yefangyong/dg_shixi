@@ -1,4 +1,4 @@
-<include file="Student/nav"/>
+<include file="Public/nav"/>
 <main>
     <div class="ui-head">
         <div class="container">
@@ -6,6 +6,11 @@
             <div class="tabs">
                 <ul>
                     <li><a href="{:U('Student/index')}" class="on">学生管理</a></li>
+                    <if condition="$_SESSION['adminUser']['type'] eq 2">
+                    <li><a href="{:U('Student/teacher')}" >教师管理</a></li>
+                    <li><a href="{:U('Student/classes')}" >班级管理</a></li>
+                    <li><a href="{:U('Student/department')}" >部门管理</a></li>
+                    </if>
                 </ul>
             </div>
         </div>
@@ -44,8 +49,8 @@
                                 <td>{$v.stuname}</td>
                                 <td>{$v.classname}</td>
                                 <td>{$v.applytime}</td>
-                                <td>&nbsp;</td>
-                                <td>{$v.status|setAuditStatus}</td>
+                                <td>{$v.cname}</td>
+                                <td>{$v.status|getReportStatus}</td>
                                 <td>
                                     <a href="__CONTROLLER__/showleave/id/{$v.id}">查看</a>
                                 </td>
@@ -57,16 +62,7 @@
             </div>
             <div class="ht35"></div>
             <div class="ui-paging">
-                <span>共15页，共143条记录</span>
-                &nbsp;
-                <ul>
-                    <li><a href=""><</a></li>
-                    <li><a href="" class="on">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">></a></li>
-                </ul>
+                {$page}
                 <div class="pull-left">
                     <a href="" class="cbox"><i></i>全选</a>
                 </div>

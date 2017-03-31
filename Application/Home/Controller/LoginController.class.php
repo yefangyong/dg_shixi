@@ -21,9 +21,12 @@ class LoginController extends Controller {
         $rel = $rel[0];
         $url = '/index.php?m=student&c=report&a=index';
         if(empty($rel)){
-            $rel = D('teacher')->join("left join dg_class ON dg_teacher.teacherno=dg_class.master_no")->join("left join dg_department ON dg_class.dep_id=dg_department.id")->join("left join dg_school ON dg_school.id=dg_department.school_id")->where(array('teacherno'=>$username))->field("dg_teacher.*,dg_class.classname,dg_class.dep_id,dg_department.dname,dg_department.school_id")->select();
+            $rel = D('teacher')->join("left join dg_class ON dg_teacher.teacherno=dg_class.master_no")->join("left join dg_department ON dg_teacher.department_id=dg_department.id")->join("left join dg_school ON dg_school.id=dg_department.school_id")->where(array('teacherno'=>$username))->field("dg_teacher.*,dg_class.classname,dg_class.dep_id,dg_department.dname,dg_department.school_id")->select();
             $rel = $rel[0];
-            $url = '/teacher.php/Report/index';
+            if($rel['type']==0)
+                $url = '/teacher.php/Report/index';
+            else
+                $url = '/teacher.php/Notice/index';
         }
 
         if(!$rel) {

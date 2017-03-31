@@ -4,43 +4,49 @@ use Think\Controller;
 class NoticeController extends Controller {
 
    public function map(){
-   		$jsondata = json_decode($_POST['data']);
-  		foreach( $jsondata AS $key => $v){
-  			$_POST[$key]=$v;
-  		}	
-  		unset($_POST['data']);
+      $jsondata = json_decode($_POST['data']);
+      foreach( $jsondata AS $key => $v){
+        $_POST[$key]=$v;
+      } 
+      unset($_POST['data']);
       $user_id = 0;
       $user_id = $_POST['student_id'] ? $_POST['student_id'] : $_POST['teacher_id'];
-  		if($user_id){
+      if($user_id){
         //$map['user_id']=$_POST['user_id'];
-  		}
+      }
       if($_POST['new']&&$user_id){
         $map[]="id NOT IN(SELECT notice_id FROM dg_notice_view WHERE user_id=$user_id)";
       }
       if($_POST['read']&&$user_id){
         $map[]="id ".($_POST['read']==1 ? 'NOT' : '')." IN(SELECT notice_id FROM dg_notice_view WHERE user_id=$user_id and type=0)";
       }
-  		return $map;
+      if($_POST['student_id']){
+        $map[]="((dg_notice.class_id=(select classno from dg_student where studentno=".$user_id.") or school=1) and dg_notice.type != 2)";
+      }
+      if($_POST['teacher_id']){
+        $map[]="((dg_notice.dep_id=(select dep_id from dg_teacher where teacherno=".$_POST['teacher_id'].")  or dg_notice.class_id=(select class_id from dg_teacher where teacherno=".$_POST['teacher_id'].") or school=1) and dg_notice.type != 1)";
+      }
+      return $map;
    }
 
    public function index() {
         $map = $this->map();
 
-    		$order = I('get._order',D('notice')->getPk());
-    		// 排序方式 默认为降序排列
-    		$sort  = I('get._sort','desc');
-    		$worder[$order]= $sort;
-    		// 统计
-    		$count = D('notice')->where($map)->count();
-    		import('ORG.Util.Page');
-    		// 每页显示记录数
-    		$listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
-    		// 实例化分页类 传入总记录数和每页显示的记录数
-    		$page = new \Think\Page($count,$listRows);
-    		// 当前页数
-    		$currentPage = I(C('VAR_PAGE'),1);
-       	$data = D('notice')->where($map)->order($worder)->page($currentPage.','.$listRows)->select();
-       	return $this->ajaxReturn(array('status'=>1,'info'=>'操作成功','data'=>$data));
+        $order = I('get._order',D('notice')->getPk());
+        // 排序方式 默认为降序排列
+        $sort  = I('get._sort','desc');
+        $worder[$order]= $sort;
+        // 统计
+        $count = D('notice')->where($map)->count();
+        import('ORG.Util.Page');
+        // 每页显示记录数
+        $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
+        // 实例化分页类 传入总记录数和每页显示的记录数
+        $page = new \Think\Page($count,$listRows);
+        // 当前页数
+        $currentPage = I(C('VAR_PAGE'),1);
+        $data = D('notice')->where($map)->order($worder)->page($currentPage.','.$listRows)->select();
+        return $this->ajaxReturn(array('status'=>1,'info'=>'操作成功','data'=>$data));
    }
 
    public function add() {

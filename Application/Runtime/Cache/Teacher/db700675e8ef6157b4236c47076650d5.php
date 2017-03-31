@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <title>教师端</title>
-    <link rel="stylesheet" type="text/css" href="/Public/teacher/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/Public/teacher/css/bootstrap-customize.css">
-    <link rel="stylesheet" type="text/css" href="/Public/teacher/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/Public/teacher/css/pages.css">
-    <script type="text/javascript" src="/Public/teacher/js/html5.js"></script>
-    <script type="text/javascript" src="/Public/teacher/js/jquery.js"></script>
-    <script type="text/javascript" src="/Public/teacher/js/bootstrap.js"></script>
-    <script type="text/javascript" src="/Public/teacher/js/respond.src.js"></script>
-    <script type="text/javascript" src="/Public/teacher/js/base.js"></script>
-    <script type="text/javascript" src="/Public/teacher/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/shixi/Public/teacher/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/shixi/Public/teacher/css/bootstrap-customize.css">
+    <link rel="stylesheet" type="text/css" href="/shixi/Public/teacher/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/shixi/Public/teacher/css/pages.css">
+    <script type="text/javascript" src="/shixi/Public/teacher/js/html5.js"></script>
+    <script type="text/javascript" src="/shixi/Public/teacher/js/jquery.js"></script>
+    <script type="text/javascript" src="/shixi/Public/teacher/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/shixi/Public/teacher/js/respond.src.js"></script>
+    <script type="text/javascript" src="/shixi/Public/teacher/js/base.js"></script>
+    <script type="text/javascript" src="/shixi/Public/teacher/js/main.js"></script>
     <!--plugin-->
-    <script type="text/javascript" src="/Public/teacher/js/jquery.event.move.js"></script>
-    <script type="text/javascript" src="/Public/js/dialog/layer.js"></script>
+    <script type="text/javascript" src="/shixi/Public/teacher/js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="/shixi/Public/js/dialog/layer.js"></script>
 </head>
 <body class="full-height page-login">
 <!-------------------------------------- 头部开始 -------------------------------------->
@@ -32,7 +32,7 @@
 <main>
     <div class="ui-login">
         <div class="hd">
-            <p><img src="/Public/teacher/img/login-logo.png" alt=""></p>
+            <p><img src="/shixi/Public/teacher/img/login-logo.png" alt=""></p>
         </div>
         <div class="ct">
             <div class="form" >

@@ -1,4 +1,4 @@
-<include file="Practice/nav"/>
+<include file="Public/nav"/>
 
     <div class="ui-head">
         <div class="container">
@@ -25,7 +25,7 @@
             <div class="ui-filter">
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="#">院系</a></p>
+                    <p><a href="#"><if condition="$_SESSION['adminUser']['type'] != 2">{$_SESSION['adminUser']['dname']}<else/>院系</if></a></p>
                     <div class="ex">
                         <div class="list">
                             <volist name="department" id="v">
@@ -47,7 +47,7 @@
                 </div>
                 <span class="wh10"></span>
                 <div class="select">
-                    <p><a href="#">班级</a></p>
+                    <p><a href="#"><if condition="$_SESSION['adminUser']['type'] eq 0">{$_SESSION['adminUser']['classname']}<else/>班级</if></a></p>
                     <div class="ex">
                         <div class="list">
                             <volist name="class" id="v">
@@ -75,15 +75,18 @@
             <div class="ht30"></div>
             <div class="ui-table">
                 <div class="hd" style="width: 140%;">
+                    <div class="ui-paging">
+                        <div class="pull-left">
+                            <a href="" class="cbox" attr-id="0"><i></i>全选</a>
+                        </div>
+                    </div>
                     <div class="tool">
                         <p>
                             <a href="javascript:void(0)" id="arrangement">批量安排岗位</a>
                             &nbsp;
                             <a href="javascript:void(0)" id="cancel">取消安排岗位</a>
                             &nbsp;
-                            <a href="">导入</a>
-                            &nbsp;
-                            <a href="">导出</a>
+                            <a href="{:U('Practice/export')}">导出</a>
                         </p>
                     </div>
                 </div>
@@ -111,7 +114,7 @@
                                     <td>{$v.stuname}</td>
                                     <td>{$v.classname}</td>
                                     <td>{$v.phone}</td>
-                                    <td>{$v.corname}</td>
+                                    <td>{$v.cname}</td>
                                     <td>{$v.position}</td>
                                     <td>{$v.guide}</td>
                                     <td>{$v.mode|setPracticeMode}</td>
@@ -136,9 +139,6 @@
             <div class="ht35"></div>
             <div class="ui-paging" style="width: 140%;">
                 {$page} 
-                <div class="pull-left">
-                    <a href="" class="cbox" attr-id="0"><i></i>全选</a>
-                </div>
             </div>
         </div>
     </div>

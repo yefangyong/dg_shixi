@@ -16,9 +16,9 @@ $(function() {
                 var obj = JSON.parse(data); //由JSON字符串转换为JSON对象
                 console.log(data);
                 $('#' + file.id).find('.data').html(' 上传完毕');
-                $("#upload_org_code_img").attr("src",obj.data);
-                $("#file_upload_image").attr('value',obj.data);
-                $("#upload_org_code_img").show();
+                var imgstr = "<div class='col-xs-3' ><img class='img-square' src='" + obj.data + "'><div class='closeLayer'  onClick='delcfm('" + obj.data + "')' href='#' id='huajiao'><img  src='/Public/Student/img/close.png'></div></div>";
+                $("#uploadimagediv").append($(imgstr));
+                $("#file_upload_image").attr('value',$("#file_upload_image").attr('value')+';'+obj.data);
             }else{
                 alert('上传失败');
             }

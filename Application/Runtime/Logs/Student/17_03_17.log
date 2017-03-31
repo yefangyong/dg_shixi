@@ -1,0 +1,352 @@
+[ 2017-03-17T07:20:01+08:00 ] ::1 /index.php/student/Apply/js/agent/agent.js?_=1489706401446
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:20:03+08:00 ] ::1 /index.php/student/Contact/js/agent/agent.js?_=1489706403351
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:20:11+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489706411219
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:20:12+08:00 ] ::1 /index.php/student/Grade/js/agent/agent.js?_=1489706412858
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:20:15+08:00 ] ::1 /index.php/student/Apply/js/agent/agent.js?_=1489706415367
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:20:17+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489706417411
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:22:36+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489706556470
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:28:09+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489706889666
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:28:17+08:00 ] ::1 /index.php/Student/Notice/userdel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Undefined index: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 50 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 51 行.
+NOTIC: [8] Undefined index: student_id /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 55 行.
+NOTIC: [8] Undefined index: teacher_id /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 66 行.
+
+[ 2017-03-17T07:29:33+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489706973475
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:29:41+08:00 ] ::1 /index.php/Student/Notice/userdel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+NOTIC: [8] Undefined index: adminuser /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 62 行.
+
+[ 2017-03-17T07:29:53+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489706993059
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:30:06+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489707006163
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:30:13+08:00 ] ::1 /index.php/Student/Notice/userdel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+NOTIC: [8] Undefined index: adminuser /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 62 行.
+
+[ 2017-03-17T07:31:34+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489707094008
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:31:42+08:00 ] ::1 /index.php/Student/Notice/userdel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Undefined index: adminuser /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 63 行.
+
+[ 2017-03-17T07:31:51+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489707110823
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:31:53+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489707112703
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:32:22+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489707141741
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:32:26+08:00 ] ::1 /index.php/Student/Notice/userdel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined variable: error /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `dg_notice_view` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_notice_view` WHERE ( notice_id=2 and user_id=8 ) [ RunTime:0.0002s ]
+SQL: INSERT INTO `dg_notice_view` (`notice_id`,`user_id`,`type`) VALUES ('2','8','1') [ RunTime:0.0022s ]
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 70 行.
+
+[ 2017-03-17T07:33:00+08:00 ] ::1 /index.php/Student/Notice/userdel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Undefined variable: error /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `dg_notice_view` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_notice_view` WHERE ( notice_id=2 and user_id=20170210 ) [ RunTime:0.0002s ]
+SQL: INSERT INTO `dg_notice_view` (`notice_id`,`user_id`,`type`) VALUES ('2','20170210','1') [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 70 行.
+
+[ 2017-03-17T07:37:57+08:00 ] ::1 /index.php/Student/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+NOTIC: [8] Undefined index: adminuser /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 38 行.
+
+[ 2017-03-17T07:38:37+08:00 ] ::1 /index.php/Student/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] Undefined variable: error /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `dg_notice_view` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_notice_view` WHERE ( notice_id=2 and user_id=20170210 ) [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_notice_view` (`notice_id`,`user_id`) VALUES ('2','20170210') [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 44 行.
+
+[ 2017-03-17T07:47:58+08:00 ] ::1 /index.php/Student/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+NOTIC: [8] Undefined variable: error /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `dg_notice_view` [ RunTime:0.0008s ]
+SQL: DELETE FROM `dg_notice_view` WHERE ( notice_id=2 and user_id=20170210 ) [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_notice_view` (`notice_id`,`user_id`) VALUES ('2','20170210') [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 57 行.
+
+[ 2017-03-17T07:53:21+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489708400498
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:54:28+08:00 ] ::1 /index.php/student/Notice/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_i' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_notice` LEFT JOIN dg_notice_view dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id=20170210  WHERE (  id NOT IN(SELECT notice_id FROM dg_notice_view WHERE user_id=20170210) ) AND (  (dg_notice.dep_id=1 or dg_notice.class_id=1 or school=1) ) LIMIT 1  
+
+[ 2017-03-17T07:54:42+08:00 ] ::1 /index.php/student/Notice/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_i' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_notice` LEFT JOIN dg_notice_view dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id=20170210  WHERE (  id NOT IN(SELECT notice_id FROM dg_notice_view WHERE user_id=20170210) ) AND (  (dg_notice.dep_id=1 or dg_notice.class_id=1 or school=1) ) LIMIT 1  
+
+[ 2017-03-17T07:54:44+08:00 ] ::1 /index.php/student/Notice/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_i' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_notice` LEFT JOIN dg_notice_view dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id=20170210  WHERE (  id NOT IN(SELECT notice_id FROM dg_notice_view WHERE user_id=20170210) ) AND (  (dg_notice.dep_id=1 or dg_notice.class_id=1 or school=1) ) LIMIT 1  
+
+[ 2017-03-17T07:55:31+08:00 ] ::1 /index.php/student/Notice/index
+ERR: 1052:Column 'id' in IN/ALL/ANY subquery is ambiguous
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `dg_notice` LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id=20170210  WHERE (  id NOT IN(SELECT notice_id FROM dg_notice_view WHERE user_id=20170210) ) AND (  (dg_notice.dep_id=1 or dg_notice.class_id=1 or school=1) ) LIMIT 1  
+
+[ 2017-03-17T07:55:57+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489708557212
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:56:28+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489708588299
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:56:45+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489708605123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:57:25+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489708644830
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:58:59+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489708738695
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T07:59:18+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489708757610
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T08:01:01+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489708861232
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T08:01:27+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489708887003
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T08:01:41+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489708900912
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T08:02:09+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489708928592
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T08:03:32+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489709011626
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T08:03:37+08:00 ] ::1 /index.php/Student/Notice/read.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined variable: error /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `dg_notice_view` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_notice_view` WHERE ( notice_id=2 and user_id=20170210 ) [ RunTime:0.0002s ]
+SQL: INSERT INTO `dg_notice_view` (`notice_id`,`user_id`) VALUES ('2','20170210') [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 61 行.
+
+[ 2017-03-17T08:03:40+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489709019702
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T08:04:59+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489709098970
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T08:05:25+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489709125060
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T08:11:02+08:00 ] ::1 /index.php/student/Notice/js/agent/agent.js?_=1489709461634
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T08:11:08+08:00 ] ::1 /index.php/Student/Notice/userdel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] Undefined index: notice_id /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 72 行.
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 79 行.
+
+[ 2017-03-17T08:11:32+08:00 ] ::1 /index.php/Student/Notice/userdel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+NOTIC: [8] Undefined index: id /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 72 行.
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 79 行.
+
+[ 2017-03-17T08:12:06+08:00 ] ::1 /index.php/Student/Notice/userdel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+NOTIC: [8] Undefined index: id /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 72 行.
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 79 行.
+
+[ 2017-03-17T08:12:28+08:00 ] ::1 /index.php/Student/Notice/userdel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [8] Undefined index: id /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 72 行.
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 79 行.
+
+[ 2017-03-17T08:12:57+08:00 ] ::1 /index.php/Student/Notice/userdel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+NOTIC: [8] Undefined variable: error /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `dg_notice_view` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: notice_id /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 81 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and user_id=20170210 )' at line 1
+ [ SQL语句 ] : DELETE FROM `dg_notice_view` WHERE ( notice_id= and user_id=20170210 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and user_id=20170210 )' at line 1
+ [ SQL语句 ] : DELETE FROM `dg_notice_view` WHERE ( notice_id= and user_id=20170210 )
+
+[ 2017-03-17T08:13:50+08:00 ] ::1 /index.php/Student/Notice/userdel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8] Undefined variable: error /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `dg_notice_view` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_notice_view` WHERE ( notice_id=2 and user_id=20170210 ) [ RunTime:0.0038s ]
+SQL: INSERT INTO `dg_notice_view` (`user_id`,`type`,`notice_id`) VALUES ('20170210','1','2') [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: data /Library/WebServer/Documents/shixi/Application/Student/Controller/NoticeController.class.php 第 96 行.
+
+[ 2017-03-17T08:26:18+08:00 ] ::1 /index.php/student/Apply/js/agent/agent.js?_=1489710378128
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+ERR: 非法操作:js
+
+[ 2017-03-17T08:26:19+08:00 ] ::1 /index.php/student/Contact/js/agent/agent.js?_=1489710379699
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+ERR: 非法操作:js
+

@@ -5,8 +5,8 @@ use Think\Model\ViewModel;
 class LeaveViewModel extends ViewModel {
     public $viewFields = array(
 
-        'Leave' => array('id','applytime','teacher_id','status','_as'=>'myLeave'),
-        'Student' => array('studentno','name','id'=>'sid','_on'=>'myLeave.student_id=Student.studentno'),
+        'Leave' => array('id','applytime','student_id','stu_del','teacher_id','status','_as'=>'myLeave','_type'=>'LEFT'),
+        'Student' => array('studentno','name','id'=>'sid','_on'=>'myLeave.student_id=Student.studentno','_type'=>'LEFT'),
         'Class'=>array('classname','_on'=>'Student.classno=Class.id')
 
     );

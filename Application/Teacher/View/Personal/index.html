@@ -1,0 +1,99 @@
+<include file="Public/nav" />
+<!-------------------------------------- 头部结束 -------------------------------------->
+<!-------------------------------------- 内容开始 -------------------------------------->
+<main>
+    <div class="ui-head">
+        <div class="container">
+            <div class="pull-right">
+                <include file="Public/personal"/>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="" class="on">个人中心</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ui-path">
+        <p>
+            <a href="" class="home"></a>
+        </p>
+    </div>
+    <div class="ui-main">
+        <div class="container">
+            <div class="ht20"></div>
+            <div class="pull-left" style="margin-right: 30px;">
+                <div class="ui-infbox">
+                    <div class="hd">
+                        <p>个人信息</p>
+                    </div>
+                    <div class="ct">
+                        <div class="info">
+                            <p>
+                                <img src="/Public/teacher/img/avatar2.jpg" alt="">
+                            </p>
+                            <div class="ct">
+                                <table>
+                                    <tr>
+                                        <td><label for="">姓　　名</label></td>
+                                        <td>　　{$student['name']}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">手　　机</label></td>
+                                        <td>　　{$student['phone']}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">学　　号</label></td>
+                                        <td>　　{$student.studentno}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">电子邮箱</label></td>
+                                        <td>　　{$student.email}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">联系地址</label></td>
+                                        <td>　　{$student.address}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">院　　系</label></td>
+                                        <td>　　{$student.dname}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">年　　级</label></td>
+                                        <td>　　2017级</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">班　　级</label></td>
+                                        <td>　　{$student.classname}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">班 主 任</label></td>
+                                        <td>　　{$student.teacher_name}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-------------------------------------- 内容结束 -------------------------------------->
+<!-------------------------------------- 尾部开始 -------------------------------------->
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+<!-------------------------------------- 尾部开始 -------------------------------------->
+</body>
+</html>
+<style>
+
+</style>
+<script>
+    $(function(){
+
+    });
+</script>

@@ -1,0 +1,1007 @@
+[ 2017-03-14T08:24:29+08:00 ] 223.245.93.70 /index.php/student/login/js/agent/agent.js?_=1489451069457
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T08:24:36+08:00 ] 223.245.93.70 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-14T08:24:40+08:00 ] 223.245.93.70 /index.php/student/Apply/js/agent/agent.js?_=1489451080278
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T08:24:42+08:00 ] 223.245.93.70 /index.php/student/Apply/js/agent/agent.js?_=1489451082041
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T08:24:48+08:00 ] 223.245.93.70 /index.php/student/Apply/js/agent/agent.js?_=1489451088467
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T08:24:56+08:00 ] 223.245.93.70 /index.php/student/apply/js/agent/agent.js?_=1489451096185
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T08:25:00+08:00 ] 223.245.93.70 /index.php/student/Contact/js/agent/agent.js?_=1489451100735
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T08:25:02+08:00 ] 223.245.93.70 /index.php/student/Report/js/agent/agent.js?_=1489451102216
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T08:25:03+08:00 ] 223.245.93.70 /index.php/student/Apply/js/agent/agent.js?_=1489451102960
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T08:30:20+08:00 ] 223.245.93.70 /index.php/student/Apply/js/agent/agent.js?_=1489451420378
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T11:27:27+08:00 ] 116.231.184.69 /index.php/student/login/js/agent/agent.js?_=1489462048389
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T12:24:34+08:00 ] 49.77.216.171 /index.php/student/Apply/js/agent/agent.js?_=1489465524781
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T15:01:18+08:00 ] 49.77.216.171 /index.php/student/Apply/js/agent/agent.js?_=1489474929076
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T15:01:20+08:00 ] 49.77.216.171 /index.php/student/Apply/js/agent/agent.js?_=1489474930691
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T15:01:25+08:00 ] 49.77.216.171 /index.php/student/Apply/js/agent/agent.js?_=1489474935341
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T15:02:35+08:00 ] 49.77.216.171 /index.php?m=student&c=apply&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( name="漫麦科技" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_practice` (`cname`,`profession`,`insurance`,`position`,`phone`,`detailaddress`,`starttime`,`endtime`,`student_id`,`corporation_id`,`applytime`) VALUES ('漫麦科技','1','1','Audio工程师','13698986633','南京市雨花台区小行路19号','2017-3-14','2017-6-18','2017105','11','2017-03-14') [ RunTime:0.0002s ]
+
+[ 2017-03-14T15:04:17+08:00 ] 49.77.216.171 /index.php/student/Apply/js/agent/agent.js?_=1489475107796
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T15:05:16+08:00 ] 49.77.216.171 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=2017105 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_change` WHERE ( student_id=2017105 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`guide`,`phone`,`guide_email`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','RF工程师','0','0','李克强','18821099866','yk@qq.com','我想换一个岗位，没有啥原因！','2017-03-14 15:05:16','2017105','0') [ RunTime:0.0002s ]
+
+[ 2017-03-14T18:11:19+08:00 ] 116.231.184.69 /index.php/student/login/js/agent/agent.js?_=1489486279773
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:11:26+08:00 ] 116.231.184.69 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-14T18:11:31+08:00 ] 116.231.184.69 /index.php/Student/Report/index/pageNum/js/agent/agent.js?_=1489486292146
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT myReport.id AS id,myReport.pubtime AS pubtime,myReport.student_id AS student_id,myReport.status AS status,Student.id AS sid,Student.studentno AS studentno,Student.name AS name,Student.classno AS classno,Class.id AS cid,Class.classname AS classname FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' ORDER BY myReport.pubtime desc LIMIT 0,4   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2017-03-14T18:11:53+08:00 ] 116.231.184.69 /index.php/Student/Report/index/pageNum/js/agent/agent.js?_=1489486313839
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT myReport.id AS id,myReport.pubtime AS pubtime,myReport.student_id AS student_id,myReport.status AS status,Student.id AS sid,Student.studentno AS studentno,Student.name AS name,Student.classno AS classno,Class.id AS cid,Class.classname AS classname FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' ORDER BY myReport.pubtime desc LIMIT 0,4   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-03-14T18:11:54+08:00 ] 116.231.184.69 /index.php/student/Apply/js/agent/agent.js?_=1489486315737
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:11:56+08:00 ] 116.231.184.69 /index.php/student/Apply/js/agent/agent.js?_=1489486317320
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:11:57+08:00 ] 116.231.184.69 /index.php/student/Contact/js/agent/agent.js?_=1489486317831
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:11:59+08:00 ] 116.231.184.69 /index.php/student/Contact/js/agent/agent.js?_=1489486319958
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:12:02+08:00 ] 116.231.184.69 /index.php/Student/Contact/student/pageNum/js/agent/agent.js?_=1489486323261
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_student` WHERE `classno` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_student` WHERE `classno` = 1 LIMIT 0,4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-03-14T18:12:04+08:00 ] 116.231.184.69 /index.php/Student/Contact/student/pageNum/js/agent/agent.js?_=1489486325184
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_student` WHERE `classno` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dg_student` WHERE `classno` = 1 LIMIT 0,4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2017-03-14T18:12:06+08:00 ] 116.231.184.69 /index.php/Student/Contact/student/pageNum/js/agent/agent.js?_=1489486327014
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_student` WHERE `classno` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_student` WHERE `classno` = 1 LIMIT 0,4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2017-03-14T18:12:07+08:00 ] 116.231.184.69 /index.php/Student/Contact/student/pageNum/js/agent/agent.js?_=1489486328212
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_student` WHERE `classno` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dg_student` WHERE `classno` = 1 LIMIT 0,4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-03-14T18:12:20+08:00 ] 116.231.184.69 /index.php/student/contact/student/keywords/js/agent/agent.js?_=1489486341361
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_student` WHERE `classno` = 1 AND (  (studentno like "%js%" or name like "%js%") ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dg_student` WHERE `classno` = 1 AND (  (studentno like "%js%" or name like "%js%") ) LIMIT 0,4   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-03-14T18:12:26+08:00 ] 116.231.184.69 /index.php/student/contact/student/keywords/js/agent/agent.js?_=1489486347167
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_student` WHERE `classno` = 1 AND (  (studentno like "%js%" or name like "%js%") ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dg_student` WHERE `classno` = 1 AND (  (studentno like "%js%" or name like "%js%") ) LIMIT 0,4   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2017-03-14T18:12:34+08:00 ] 116.231.184.69 /index.php/Student/Contact/student/pageNum/js/agent/agent.js?_=1489486355148
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_student` WHERE `classno` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_student` WHERE `classno` = 1 LIMIT 0,4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2017-03-14T18:12:36+08:00 ] 116.231.184.69 /index.php/Student/Contact/student/pageNum/js/agent/agent.js?_=1489486357651
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_student` WHERE `classno` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dg_student` WHERE `classno` = 1 LIMIT 0,4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-03-14T18:12:46+08:00 ] 116.231.184.69 /index.php/student/contact/student/keywords/js/agent/agent.js?_=1489486367057
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_student` WHERE `classno` = 1 AND (  (studentno like "%js%" or name like "%js%") ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dg_student` WHERE `classno` = 1 AND (  (studentno like "%js%" or name like "%js%") ) LIMIT 0,4   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2017-03-14T18:12:50+08:00 ] 116.231.184.69 /index.php/student/Contact/js/agent/agent.js?_=1489486370914
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:13:37+08:00 ] 116.231.184.69 /index.php/student/contact/teacher/department/1/keywords/js/agent/agent.js?_=1489486418410
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE `department_id` = 1 AND (  (name like "%js%") ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dg_teacher` WHERE `department_id` = 1 AND (  (name like "%js%") ) LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_department` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_department`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2017-03-14T18:13:39+08:00 ] 116.231.184.69 /index.php/student/contact/teacher/department/1/keywords/js/agent/agent.js?_=1489486419802
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE `department_id` = 1 AND (  (name like "%js%") ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dg_teacher` WHERE `department_id` = 1 AND (  (name like "%js%") ) LIMIT 0,4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_department` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_department`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-03-14T18:13:42+08:00 ] 116.231.184.69 /index.php/student/contact/teacher/department/5/keywords/js/agent/agent.js?_=1489486422778
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE `department_id` = 5 AND (  (name like "%js%") ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dg_teacher` WHERE `department_id` = 5 AND (  (name like "%js%") ) LIMIT 0,4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_department` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_department`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2017-03-14T18:13:46+08:00 ] 116.231.184.69 /index.php/student/contact/teacher/department/0/keywords/js/agent/agent.js?_=1489486427391
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dg_teacher` WHERE (  (name like "%js%") ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dg_teacher` WHERE (  (name like "%js%") ) LIMIT 0,4   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_department` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_department`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-03-14T18:13:54+08:00 ] 116.231.184.69 /index.php/student/Contact/js/agent/agent.js?_=1489486435141
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:13:56+08:00 ] 116.231.184.69 /index.php/student/Contact/js/agent/agent.js?_=1489486437626
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:13:58+08:00 ] 116.231.184.69 /index.php/student/Notice/js/agent/agent.js?_=1489486438820
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:14:00+08:00 ] 116.231.184.69 /index.php/student/Notice/js/agent/agent.js?_=1489486441265
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:14:01+08:00 ] 116.231.184.69 /index.php/student/Notice/js/agent/agent.js?_=1489486442072
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:14:02+08:00 ] 116.231.184.69 /index.php/student/Notice/js/agent/agent.js?_=1489486442861
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:14:02+08:00 ] 116.231.184.69 /index.php/student/Notice/js/agent/agent.js?_=1489486443539
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:14:03+08:00 ] 116.231.184.69 /index.php/student/Notice/js/agent/agent.js?_=1489486444101
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:14:05+08:00 ] 116.231.184.69 /index.php/student/Notice/js/agent/agent.js?_=1489486446120
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:14:23+08:00 ] 116.231.184.69 /index.php/student/report/js/agent/agent.js?_=1489486463897
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:14:26+08:00 ] 116.231.184.69 /index.php/student/report/js/agent/agent.js?_=1489486467244
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:22:34+08:00 ] 116.231.184.69 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Undefined index: id /var/www/html/Application/Student/Controller/ReportController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: INSERT INTO `dg_report` (`title`,`content`,`pic`,`address`,`student_id`,`pubtime`) VALUES ('啊是的噶','啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的度噶速度噶速度过啊是的噶是的噶速度噶速度噶速度过啊是的噶是','','撒旦噶速度噶','20170209','2017-03-14 :18:22:34') [ RunTime:0.0002s ]
+
+[ 2017-03-14T18:22:40+08:00 ] 116.231.184.69 /index.php/student/report/js/agent/agent.js?_=1489486961722
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:22:53+08:00 ] 116.231.184.69 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined index: id /var/www/html/Application/Student/Controller/ReportController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: INSERT INTO `dg_report` (`title`,`content`,`pic`,`address`,`student_id`,`pubtime`) VALUES ('大噶','爱的撒旦噶速度噶                                                                                                               ','','啊对方噶速度过','20170209','2017-03-14 :18:22:53') [ RunTime:0.0002s ]
+
+[ 2017-03-14T18:22:57+08:00 ] 116.231.184.69 /index.php/Student/Report/index/pageNum/js/agent/agent.js?_=1489486978441
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT myReport.id AS id,myReport.pubtime AS pubtime,myReport.student_id AS student_id,myReport.status AS status,Student.id AS sid,Student.studentno AS studentno,Student.name AS name,Student.classno AS classno,Class.id AS cid,Class.classname AS classname FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' ORDER BY myReport.pubtime desc LIMIT 0,4   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2017-03-14T18:22:59+08:00 ] 116.231.184.69 /index.php/Student/Report/index/pageNum/js/agent/agent.js?_=1489486980173
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT myReport.id AS id,myReport.pubtime AS pubtime,myReport.student_id AS student_id,myReport.status AS status,Student.id AS sid,Student.studentno AS studentno,Student.name AS name,Student.classno AS classno,Class.id AS cid,Class.classname AS classname FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' ORDER BY myReport.pubtime desc LIMIT 0,4   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2017-03-14T18:23:01+08:00 ] 116.231.184.69 /index.php/student/report/js/agent/agent.js?_=1489486982212
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:23:07+08:00 ] 116.231.184.69 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: id /var/www/html/Application/Student/Controller/ReportController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: INSERT INTO `dg_report` (`title`,`content`,`pic`,`address`,`student_id`,`pubtime`) VALUES ('asdgasg','阿斯顿嘎斯大概','','阿斯顿噶四','20170209','2017-03-14 :18:23:07') [ RunTime:0.0001s ]
+
+[ 2017-03-14T18:24:00+08:00 ] 116.231.184.69 /index.php/student/Apply/js/agent/agent.js?_=1489487041642
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:24:07+08:00 ] 116.231.184.69 /index.php/student/Apply/js/agent/agent.js?_=1489487048010
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:24:18+08:00 ] 116.231.184.69 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=20170209 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_change` WHERE ( student_id=20170209 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+SQL: INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`guide`,`phone`,`guide_email`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','阿斯顿发','0','1','啊是的噶个','0','啊是个大三帝国','阿斯顿噶速度噶速度感','2017-03-14 18:24:18','20170209','2') [ RunTime:0.0002s ]
+
+[ 2017-03-14T18:25:02+08:00 ] 116.231.184.69 /index.php?m=student&c=apply&a=delChange
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_change` WHERE ( id=36 ) [ RunTime:0.0002s ]
+
+[ 2017-03-14T18:25:11+08:00 ] 116.231.184.69 /index.php/student/Apply/js/agent/agent.js?_=1489487112063
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:25:19+08:00 ] 116.231.184.69 /index.php?m=student&c=apply&a=changeJob
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=20170209 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_change` WHERE ( student_id=20170209 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_change` (`type`,`position`,`profession`,`insurance`,`guide`,`phone`,`guide_email`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('1','1','0','1','1','1','1','1','2017-03-14 18:25:19','20170209','2') [ RunTime:0.0002s ]
+
+[ 2017-03-14T18:28:35+08:00 ] 116.231.184.69 /index.php?m=student&c=apply&a=addLeave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: INSERT INTO `dg_leave` (`content`,`emegencyconcat`,`telephone`,`starttime`,`endtime`,`applytime`,`student_id`) VALUES ('撒旦噶速度噶说过','爱上噶速度','爱国','爱国','按规定','2017-03-14 18:28:35','20170209') [ RunTime:0.0002s ]
+
+[ 2017-03-14T18:42:40+08:00 ] 116.231.184.69 /index.php/student/Grade/js/agent/agent.js?_=1489488161061
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:42:44+08:00 ] 116.231.184.69 /index.php/student/Report/js/agent/agent.js?_=1489488165558
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:42:47+08:00 ] 116.231.184.69 /index.php/student/Report/js/agent/agent.js?_=1489488168449
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:42:52+08:00 ] 116.231.184.69 /index.php/student/report/js/agent/agent.js?_=1489488173179
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:42:57+08:00 ] 116.231.184.69 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [8] Undefined index: id /var/www/html/Application/Student/Controller/ReportController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: INSERT INTO `dg_report` (`title`,`content`,`pic`,`address`,`student_id`,`pubtime`) VALUES ('阿道夫','啊多少个','','啊都是帅哥','20170209','2017-03-14 :18:42:57') [ RunTime:0.0002s ]
+
+[ 2017-03-14T18:43:02+08:00 ] 116.231.184.69 /index.php/student/Grade/js/agent/agent.js?_=1489488183354
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:43:06+08:00 ] 116.231.184.69 /index.php/student/Report/js/agent/agent.js?_=1489488187579
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:43:08+08:00 ] 116.231.184.69 /index.php/student/report/js/agent/agent.js?_=1489488189335
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:43:13+08:00 ] 116.231.184.69 /index.php?m=student&c=report&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [8] Undefined index: id /var/www/html/Application/Student/Controller/ReportController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: INSERT INTO `dg_report` (`title`,`content`,`pic`,`address`,`student_id`,`pubtime`) VALUES ('矮冬瓜','啊说过的','','啊是的噶','20170209','2017-03-14 :18:43:13') [ RunTime:0.0002s ]
+
+[ 2017-03-14T18:43:15+08:00 ] 116.231.184.69 /index.php/student/Grade/js/agent/agent.js?_=1489488196532
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:43:31+08:00 ] 116.231.184.69 /index.php/student/Report/js/agent/agent.js?_=1489488212364
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:43:32+08:00 ] 116.231.184.69 /index.php/student/Report/js/agent/agent.js?_=1489488213411
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:43:36+08:00 ] 116.231.184.69 /index.php/Student/Report/index/pageNum/js/agent/agent.js?_=1489488216986
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT myReport.id AS id,myReport.pubtime AS pubtime,myReport.student_id AS student_id,myReport.status AS status,Student.id AS sid,Student.studentno AS studentno,Student.name AS name,Student.classno AS classno,Class.id AS cid,Class.classname AS classname FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' ORDER BY myReport.pubtime desc LIMIT 0,4   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-03-14T18:43:37+08:00 ] 116.231.184.69 /index.php/Student/Report/index/pageNum/js/agent/agent.js?_=1489488218539
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT myReport.id AS id,myReport.pubtime AS pubtime,myReport.student_id AS student_id,myReport.status AS status,Student.id AS sid,Student.studentno AS studentno,Student.name AS name,Student.classno AS classno,Class.id AS cid,Class.classname AS classname FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' ORDER BY myReport.pubtime desc LIMIT 0,4   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2017-03-14T18:43:42+08:00 ] 116.231.184.69 /index.php/Student/Report/index/pageNum/js/agent/agent.js?_=1489488223044
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT myReport.id AS id,myReport.pubtime AS pubtime,myReport.student_id AS student_id,myReport.status AS status,Student.id AS sid,Student.studentno AS studentno,Student.name AS name,Student.classno AS classno,Class.id AS cid,Class.classname AS classname FROM dg_report myReport  JOIN dg_student Student ON myReport.student_id = Student.studentno  JOIN dg_class Class ON Student.classno=Class.id WHERE myReport.student_id = '20170209' ORDER BY myReport.pubtime desc LIMIT 0,4   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2017-03-14T18:43:42+08:00 ] 116.231.184.69 /index.php/student/Grade/js/agent/agent.js?_=1489488223743
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:45:24+08:00 ] 116.231.184.69 /index.php/student/Report/js/agent/agent.js?_=1489488324943
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:45:25+08:00 ] 116.231.184.69 /index.php/student/Report/js/agent/agent.js?_=1489488326179
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:45:26+08:00 ] 116.231.184.69 /index.php/student/Report/js/agent/agent.js?_=1489488327605
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:45:28+08:00 ] 116.231.184.69 /index.php/student/Report/js/agent/agent.js?_=1489488329475
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T18:45:31+08:00 ] 116.231.184.69 /index.php/student/Grade/js/agent/agent.js?_=1489488332607
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T19:28:23+08:00 ] 49.77.216.171 /index.php?m=student&c=apply&a=change
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_teacher` WHERE ( teacherno= ) LIMIT 1  
+
+[ 2017-03-14T19:28:28+08:00 ] 49.77.216.171 /index.php?m=student&c=apply&a=change
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_teacher` WHERE ( teacherno= ) LIMIT 1  
+
+[ 2017-03-14T19:28:39+08:00 ] 49.77.216.171 /index.php?m=student&c=apply&a=change
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_teacher` WHERE ( teacherno= ) LIMIT 1  
+
+[ 2017-03-14T19:34:33+08:00 ] 61.235.37.202 /index.php/student/Login/js/agent/agent.js?_=1489491284430
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T19:34:38+08:00 ] 61.235.37.202 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_student` WHERE ( name="yfy" ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-14T19:34:43+08:00 ] 61.235.37.202 /index.php/student/Apply/js/agent/agent.js?_=1489491295075
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T19:34:52+08:00 ] 61.235.37.202 /index.php/student/Apply/js/agent/agent.js?_=1489491304330
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T19:34:53+08:00 ] 101.226.125.103 /index.php/student/Apply/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_practice` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-14T19:34:55+08:00 ] 101.226.69.246 /index.php?m=student&c=apply&a=change
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_change` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-14T19:34:59+08:00 ] 117.185.27.113 /index.php?m=student&c=apply
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_practice` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-14T19:36:42+08:00 ] 61.235.37.202 /index.php/student/Report/js/agent/agent.js?_=1489491413495
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T19:37:22+08:00 ] 49.77.216.171 /index.php?m=student&c=apply&a=change
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_teacher` WHERE ( teacherno= ) LIMIT 1  
+
+[ 2017-03-14T19:37:29+08:00 ] 49.77.216.171 /index.php?m=student&c=apply&a=change
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_teacher` WHERE ( teacherno= ) LIMIT 1  
+
+[ 2017-03-14T19:39:58+08:00 ] 61.235.37.202 /index.php?m=student&c=report
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-14T19:40:52+08:00 ] 61.235.37.202 /index.php/student/Login/js/agent/agent.js?_=1489491664388
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T19:41:04+08:00 ] 61.235.37.202 /index.php?m=student&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_student` WHERE ( name="齐秦" ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-14T19:41:08+08:00 ] 61.235.37.202 /index.php/student/Apply/js/agent/agent.js?_=1489491679582
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+ERR: 非法操作:js
+
+[ 2017-03-14T19:41:22+08:00 ] 101.226.66.172 /index.php?m=student&c=apply
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_practice` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-14T19:41:40+08:00 ] 42.51.203.204 /index.php?m=student&c=apply&a=change
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_change` WHERE ( student_id= ) LIMIT 1  
+
+[ 2017-03-14T19:42:15+08:00 ] 61.235.37.202 /index.php?m=student&c=apply&a=changeCorporation
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_corporation` WHERE ( name="漫麦科技" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_practice` WHERE ( student_id=2018181 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dg_change` WHERE ( student_id=2018181 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_change` (`type`,`cname`,`profession`,`insurance`,`position`,`address`,`phone`,`guide`,`detailaddress`,`reason`,`applytime`,`student_id`,`corporation_id`) VALUES ('0','漫麦科技','0','0','php','安徽省','13053112897','周波','安徽省蚌埠市蚌埠医学院','换个工作','2017-03-14 19:42:15','2018181','11') [ RunTime:0.0002s ]
+
+[ 2017-03-14T19:48:19+08:00 ] 61.235.37.202 /index.php/student/Report/js/agent/agent.js?_=1489492110828
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: 非法操作:js
+

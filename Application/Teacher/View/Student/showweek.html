@@ -1,4 +1,4 @@
-<include file="Report/nav"/>
+<include file="Public/nav"/>
 <!-------------------------------------- 内容开始 -------------------------------------->
 <main>
     <div class="ui-head">
@@ -7,6 +7,11 @@
             <div class="tabs">
                 <ul>
                     <li> <a href="{:U('Student/index')}" class="on">学生管理</a></li>
+                    <if condition="$_SESSION['adminUser']['type'] eq 2">
+                    <li><a href="{:U('Student/teacher')}" >教师管理</a></li>
+                    <li><a href="{:U('Student/classes')}" >班级管理</a></li>
+                    <li><a href="{:U('Student/department')}" >部门管理</a></li>
+                    </if>
                 </ul>
             </div>
         </div>
@@ -58,7 +63,7 @@
                         </div>
                         <div class="col-sm-11">
                             <div class="text">
-                                <p><span class="color1">{$report.status|setAuditStatus}</td></span></p>
+                                <p><span class="color1">{$report.status|setReportStatus2}<if condition="$report.status eq 1">/{$report.score|setReportScore}</if></td></span></p>
                             </div>
                         </div>
                     </div>

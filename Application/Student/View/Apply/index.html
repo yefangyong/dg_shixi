@@ -111,7 +111,7 @@
             $.post(
                     url,data,function(s){
                         if(s.status == 1){
-                            return dialog.success('删除成功','');
+                            return dialog.success('删除成功',SCOPE.jump_url);
                         }else{
                             return dialog.error('删除失败');
                         }

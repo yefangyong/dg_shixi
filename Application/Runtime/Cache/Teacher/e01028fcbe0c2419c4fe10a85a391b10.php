@@ -167,7 +167,7 @@
                     <div class="i on">
                         <a href="<?php echo U('Student/index');?>">
                             <p><i class="ico9"></i>
-                                用户管理
+                                学生管理
                             </p>
                         </a>
                     </div>
@@ -225,10 +225,10 @@
                 <form class="form-horizontal" method="post" id="studentForm">
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <label for="" class="control-label"><i></i>姓名</label>
+                            <label for="" class="control-label"><i></i>手机</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="name" style="width: 210px;" placeholder="请输入你的姓名" id="stuname" onblur="isEmpty(this.id)">
+                            <input type="text" class="form-control" maxlength="11" name="phone" style="width: 210px;" placeholder="请输入您的手机号码"  id="phone" onblur="isEmpty(this.id)">
                         </div>
                         <div class="col-sm-2">
                             <label for="" class="control-label"><i></i>学号</label>
@@ -238,12 +238,11 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        
                         <div class="col-sm-2">
-                            <label for="" class="control-label"><i></i>手机</label>
+                            <label for="" class="control-label"><i></i>姓名</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" maxlength="11" name="phone" style="width: 210px;" placeholder="请输入您的手机号码"  id="phone" onblur="isEmpty(this.id)">
+                            <input type="text" class="form-control" name="name" style="width: 210px;" placeholder="请输入你的姓名" id="stuname" onblur="isEmpty(this.id)">
                         </div>
                         <div class="col-sm-2">
                             <label for="" class="control-label"><i></i>密码</label>
@@ -326,26 +325,6 @@
                         </div>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" name="email" style="width: 210px;" placeholder="请输入电子邮箱">
-                        </div>
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">紧急联系人</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control" name="emegencyconcat" style="width: 210px; color: #000000; background-color: #fff;" id="emegencyconcat" >
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">紧急联系人电话</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control" id="emegencyphone" name="emegencyphone" style="width: 210px;" placeholder="">
-                        </div>
-                        <div class="col-sm-2">
-                            <label for="" class="control-label">地址</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control" id="address" name="address" style="width: 210px;" placeholder="">
                         </div>
                     </div>
                     <div class="ht15"></div>

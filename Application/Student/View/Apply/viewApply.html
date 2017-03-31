@@ -60,20 +60,20 @@
                 <div class="hd">
                     <table>
                         <tr>
-                            <td align="left">企业名称：{$corporation['name']}</td>
-                            <td align="">企业地址：{$corporation['address']}</td>
+                            <td align="left">企业名称：{$practice['cname']}</td>
+                            <td align="">企业地址：{$practice['address']}</td>
                             <td align="">专业对口：{$practice['profession']|getProfessionStatus}</td>
                             <td align="">保险购买：{$practice['insurance']|getInsuranceStatus}</td>
                         </tr>
                         <tr>
                             <td align="left">职务：{$practice['position']}</td>
-                            <td align="">企业联系人：{$corporation['contact']}</td>
-                            <td align="" colspan="2">联系电话：{$corporation['mobile']}</td>
+                            <td align="">企业指导老师：{$practice['guide']}</td>
+                            <td align="">联系电话：{$practice['phone']}</td>
                         </tr>
                         <tr>
                             <td align="left">详细地址：{$practice['detailaddress']}</td>
-                            <td align="">开始日期：{$practice['starttime']}</td>
-                            <td align="" colspan="2">结束日期：{$practice['endtime']}</td>
+                            <td align="">开始日期：{$practice['starttime']|substr=0,10}</td>
+                            <td align="" colspan="2">结束日期：{$practice['endtime']|substr=0,10}</td>
                         </tr>
                     </table>
                 </div>

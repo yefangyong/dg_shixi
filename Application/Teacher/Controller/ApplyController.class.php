@@ -14,7 +14,7 @@ class ApplyController extends CommonController{
                 show(0,'审核失败');
             }
         }else{
-        $teacher = $_SESSION['adminUser'];
+            $teacher = $_SESSION['adminUser'];
             $department = I('get.department',0);
             $class = I('get.class',0);
             switch($teacher['type']){
@@ -42,11 +42,13 @@ class ApplyController extends CommonController{
             if($corporation)
                 $map[] = 'Practice.corporation_id = '.$corporation;
             $status = I('get.status',0);
-            if($status)
-                $map[] = 'Practice.status = '.($status-1);
+            if($status!=0)
+                $map[] = 'Practice.status = '.($status>0 ? $status-1 : $status);
             $keywords = I('get.keywords');
             if($keywords)
                 $map[] = '(studentno like "%'.$keywords.'%" or Student.name like "%'.$keywords.'%")';
+
+            $map[] = "Practice.mode=1";
 
             import('ORG.Util.Page');
             // 每页显示记录数
@@ -56,15 +58,7 @@ class ApplyController extends CommonController{
             $show = $page->show();
             $currentPage = I(C('VAR_PAGE'),1);
             $applyList = D('PracticeView')->where($map)->page($currentPage.','.$listRows)->select();
-            foreach ($applyList as $k => $v) {
-                //根据有无实习公司查询公司名称
-                if ($v['corporation_id'] != 0) {
-                    $corname = D('Corporation')->getNameById($v['corporation_id']);
-                    $applyList[$k]['corname'] = $corname['name'];
-                } else {
-                    $applyList[$k]['corname'] = '';
-                }
-            }
+            //echo D('PracticeView')->getLastSql();
             $profession = D('profession')->select();
             $corporation = D('corporation')->select();
             $this->assign('department',$departments);
@@ -110,6 +104,7 @@ class ApplyController extends CommonController{
         if($_POST){
             $opinion = I('post.opinion',0,'intval');
             $data['status'] = $opinion;
+            $data['teacher_id'] = $_SESSION['adminUser']['teacherno'];
             $id = I('post.id',0,'intval');
             $res = D('Practice')->setResult($id,$data);
             if($res){
@@ -134,11 +129,28 @@ class ApplyController extends CommonController{
         if(!isset($id)||empty($id)){
             show(0,'删除失败！');
         }
+        if(is_array($id)){
+            $res = D('Practice')->where("student_id IN(".implode(',', $id).")")->select();
+            $id = array();
+            for($i=0; $i<count($res); $i++){
+                if($res[$i]['status']==1){
+                    $id[]=$res[$i]['student_id'];
+                }else{
+                    $nook[]=$res[$i]['student_id'];
+                }
+            }
+        }else{
+            $info = D('Practice')->where("student_id=".$id)->select();
+            if($info[0]['status']==0){
+                show(0,'未审核状态，不能删除');
+                return ;
+            }
+        }
         $res = D('Practice')->delApply($id);
         if($res){
-            show(1,'删除成功！');
+            show(1,'删除成功！'.($nook ? '部分未审核状态，不能删除:'.implode(',', $nook) : ''));
         }else{
-            show(0,'删除失败！');
+            show(0,'删除失败！'.($nook ? '部分未审核状态，不能删除:'.implode(',', $nook) : ''));
         }
     }
 
@@ -170,10 +182,10 @@ class ApplyController extends CommonController{
             $map[] = 'classno = '.$class;
         $corporation = I('get.corporation',0);
         if($corporation)
-            $map[] = 'Practice.corporation_id = '.$corporation;
+            $map[] = 'myChange.cname = (select name from dg_corporation where id='.$corporation.")";
         $status = I('get.status',0);
-        if($status)
-            $map[] = 'myChange.status = '.($status-1);
+        if($status!=0)
+            $map[] = 'myChange.status = '.($status>0 ? $status-1 : $status);
         $keywords = I('get.keywords');
         if($keywords)
             $map[] = '(studentno like "%'.$keywords.'%" or Student.name like "%'.$keywords.'%")';
@@ -181,11 +193,11 @@ class ApplyController extends CommonController{
         import('ORG.Util.Page');
         // 每页显示记录数
         $listRows = I('post.numPerPage',C('PAGE_LISTROWS'));
-        $count= D('ChangeView')->where($map)->count();
         $page = new \Think\Page($count,$listRows);
         $show = $page->show();
         $currentPage = I(C('VAR_PAGE'),1);
-        $applyList = D("ChangeView")->where($map)->page($currentPage.','.$listRows)->select();
+        $count= D('ChangeView')->where($map)->count();
+        $applyList = D("ChangeView")->where($map)->order(array("applytime"=>"desc"))->page($currentPage.','.$listRows)->select();
         $profession = D('profession')->select();
         $corporation = D('corporation')->select();
         $this->assign('department',$departments);
@@ -262,17 +274,12 @@ class ApplyController extends CommonController{
         return $this->display();
     }
 
-    public function corEdited($data)
-    {
-        $this->assign('apply',$data);
-        $this->display('coredited');
-    }
-
     public function editChange()
     {
         if($_POST){
             $opinion = I('post.opinion',0,'intval');
             $data['status'] = $opinion;
+            $data['teacher_id'] = $_SESSION['adminUser']['teacherno'];
             $id = I('post.id',0,'intval');
             $res = D('Change')->setResult($id,$data);
             if($res){
@@ -283,38 +290,18 @@ class ApplyController extends CommonController{
         }else{
             $id = I('get.id',0,'intval');
             $apply = D('ChangeView')->getApply($id);
-            if($apply['type']==0){
-                return $this->editPos();
+            $_changeinfo = D("Change")->where(array("student_id"=>$apply['studentno'],"status"=>1))->order(array('applytime'=>'desc'))->limit(1,1)->select();
+            if($_changeinfo){
+                $apply['cname']=$_changeinfo[0]['cname'];
+            }
+            $this->assign('apply',$apply);
+            if($apply['type']==1){
+                $this->display('posedited');
             }else{
-                return $this->editCor();
+                $this->display('coredited');
             }
         }
     }
-
-    public function editCor()
-    {
-        if($_POST){
-            $opinion = I('post.opinion',0,'intval');
-            $data['status'] = $opinion;
-            $id = I('post.id',0,'intval');
-            $res = D('Change')->setResult($id,$data);
-            if($res){
-                show(1,'审核成功');
-            }else{
-                show(0,'审核失败');
-            }
-        }else{
-            $id = I('get.id',0,'intval');
-            $apply = D('ChangeView')->getApply($id);
-            if(!$apply['status']){
-                $this->assign('apply',$apply);
-                $this->display('Apply/editCor');
-            }else{
-                $this->corEdited($apply);
-            }
-        }
-    }
-
     //实习岗位变更
 
     public function position()
@@ -333,36 +320,6 @@ class ApplyController extends CommonController{
         $this->assign('numPerPage',$listRows);
         $this->assign('currentPage',$currentPage);
         return $this->display();
-    }
-
-    public function posEdited($data)
-    {
-        $this->assign('apply',$data);
-        $this->display('posedited');
-    }
-
-    public function editPos()
-    {
-        if($_POST){
-            $opinion = I('post.opinion',0,'intval');
-            $data['status'] = $opinion;
-            $id = I('post.id',0,'intval');
-            $res = D('Change')->setResult($id,$data);
-            if($res){
-                show(1,'审核成功');
-            }else{
-                show(0,'审核失败');
-            }
-        }else{
-            $id = I('get.id',0,'intval');
-            $apply = D('ChangeView')->getApply($id);
-            if(!$apply['status']){
-                $this->assign('apply',$apply);
-                $this->display('Apply/editPos');
-            }else{
-                $this->posEdited($apply);
-            }
-        }
     }
 
     //请假申请
@@ -394,10 +351,10 @@ class ApplyController extends CommonController{
             $map[] = 'classno = '.$class;
         $corporation = I('get.corporation',0);
         if($corporation)
-            $map[] = 'Practice.corporation_id = '.$corporation;
+            $map[] = 'myLeave.student_id IN (select student_id from dg_practice where cname=(select name from dg_corporation where id='.$corporation.")) or myLeave.student_id IN (select student_id from dg_change where cname=(select name from dg_corporation where id=".$corporation."))";
         $status = I('get.status',0);
-        if($status)
-            $map[] = 'myLeave.status = '.($status-1);
+        if($status!=0)
+            $map[] = 'myLeave.status = '.($status>0 ? $status-1 : $status);
         $keywords = I('get.keywords');
         if($keywords)
             $map[] = '(studentno like "%'.$keywords.'%" or Student.name like "%'.$keywords.'%")';
@@ -451,6 +408,7 @@ class ApplyController extends CommonController{
         if($_POST){
             $opinion = I('post.opinion',0,'intval');
             $data['status'] = $opinion;
+            $data['teacher_id'] = $_SESSION['adminUser']['teacherno'];
             $id = I('post.id',0,'intval');
             $res = D('Leave')->setResult($id,$data);
             if($res){
@@ -475,11 +433,28 @@ class ApplyController extends CommonController{
         if(!isset($id)||empty($id)){
             show(0,'删除失败！');
         }
+        if(is_array($id)){
+            $res = D('Change')->where("id IN(".implode(',', $id).")")->select();
+            $id = array();
+            for($i=0; $i<count($res); $i++){
+                if($res[$i]['status']==1){
+                    $id[]=$res[$i]['id'];
+                }else{
+                    $nook[]=$res[$i]['student_id'];
+                }
+            }
+        }else{
+            $info = D('Change')->where("id=".$id)->select();
+            if($info[0]['status']==0){
+                show(0,'未审核状态，不能删除');
+                return ;
+            }
+        }
         $res = D('Change')->delApply($id);
         if($res){
-            show(1,'删除成功！');
+            show(1,'删除成功！'.($nook ? '部分未审核状态，不能删除:'.implode(',', $nook) : ''));
         }else{
-            show(0,'删除失败！');
+            show(0,'删除失败！'.($nook ? '部分未审核状态，不能删除:'.implode(',', $nook) : ''));
         }
     }
 
@@ -488,11 +463,28 @@ class ApplyController extends CommonController{
         if(!isset($id)||empty($id)){
             show(0,'删除失败！');
         }
+        if(is_array($id)){
+            $res = D('Leave')->where("id IN(".implode(',', $id).")")->select();
+            $id = array();
+            for($i=0; $i<count($res); $i++){
+                if($res[$i]['status']==1){
+                    $id[]=$res[$i]['id'];
+                }else{
+                    $nook[]=$res[$i]['student_id'];
+                }
+            }
+        }else{
+            $info = D('Leave')->where("id=".$id)->select();
+            if($info[0]['status']==0){
+                show(0,'未审核状态，不能删除');
+                return ;
+            }
+        }
         $res = D('Leave')->delApply($id);
         if($res){
-            show(1,'删除成功！');
+            show(1,'删除成功！'.($nook ? '部分未审核状态，不能删除:'.implode(',', $nook) : ''));
         }else{
-            show(0,'删除失败！');
+            show(0,'删除失败！'.($nook ? '部分未审核状态，不能删除:'.implode(',', $nook) : ''));
         }
     }
 

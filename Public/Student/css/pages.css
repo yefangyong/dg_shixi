@@ -110,6 +110,7 @@
   border: 1px solid #e4e2e2;
   box-shadow: 0 3px 3px #e4e2e2;
   display: none;
+  z-index: 9999;
 }
 .ui-head .user:hover >.ex{
   display: block;
@@ -223,7 +224,7 @@
 }
 .ui-table table tr td{
   border-right: 1px solid #f6f6f6;
-  padding: 10px 30px;
+  padding: 10px 20px;
   color: #000;
   line-height: 1em;
   font-size: 15px;
@@ -286,7 +287,6 @@
   line-height: 30px;
   text-align: right;
   color: #c9c7c7;
-  margin-bottom: 15px;
 }
 .ui-paging ul{
   margin-bottom: 0;
@@ -358,7 +358,7 @@
 .ui-filter .select >.ex{
   position: absolute;
   top: 30px;
-  padding-top: 10px;
+  z-index: 9999;
   display: none;
 }
 .ui-filter .select.on >.ex{
@@ -413,7 +413,7 @@
   color: #fff;
 }
 .ui-filter .select .list{
-  width: 105px;
+  width:180px;
   border: 1px solid #e4e2e2;
   background-color: #f5f3f3;
 }
@@ -437,14 +437,6 @@
   line-height: 30px;
   font-size: 14px;
 }
-.ui-filter .text{
-  display: inline-block;
-  width: 155px;
-  height: 30px;
-  text-indent: 10px;
-  position: relative;
-  top: -1px;
-}
 .ui-filter .bt{
   display: inline-block;
   line-height: 32px;
@@ -454,6 +446,16 @@
   color: #fff;
   font-size: 14px;
 }
+
+.ui-filter .text{
+  display: inline-block;
+  width: 155px;
+  height: 30px;
+  text-indent: 10px;
+  position: relative;
+  top: -1px;
+}
+
 .ui-filter .bt:active{
   background-color: #3885eb;
 }
@@ -858,6 +860,7 @@
 .ui-path p a{
   color: #64a6fd;
   opacity: .5;
+  font-size: 15px;
 }
 .ui-path p a:hover{
   text-decoration: underline;
@@ -872,9 +875,6 @@
   background: url(../img/ico-home.png);
   vertical-align: middle;
   margin-right: 10px;
-  opacity: 1;
-}
-.ui-path p .pull-right a{
   opacity: 1;
 }
 .ui-map{
@@ -912,7 +912,7 @@
   height: 50px;
   padding: 6px 20px;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 20px;
 }
 .ui-login .form .forget{
   color: #7a8599;
@@ -932,6 +932,7 @@
   color: #fff;
   font-size: 16px;
   background-color: #64a6fd;
+  width:390px;
 }
 .ui-login .form .bt:active{
   background-color: #3885eb;
@@ -939,16 +940,24 @@
 .ui-article{
 
 }
+.ui-article hr{
+  border-top-color: #ddd;
+}
 .ui-article >.hd{
-
+  margin-bottom: 10px;
 }
 .ui-article >.hd h3{
   line-height: 1em;
   padding: 10px 0;
-  border-bottom: 1px solid #f7f7f7;
+  border-bottom: 1px solid #ddd;
   text-align: center;
   color: #000000;
   font-size: 20px;
+}
+.ui-article >.hd h3 small{
+  color: #949494;
+  font-size: 14px;
+  margin-left: 20px;
 }
 .ui-article >.hd p{
   line-height: 1em;
@@ -993,7 +1002,7 @@
   margin-bottom: 0;
   color: #949494;
   font-size: 14px;
-  width: 200px;
+  width: 400px;
   text-align: left;
 }
 .ui-article >.ft p label b{
@@ -1216,7 +1225,7 @@
 .ui-infbox >.hd p{
   text-align: center;
   color: #000000;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 35px;
 }
 .ui-infbox >.ct{
@@ -1244,19 +1253,12 @@
 }
 .ui-infbox .info table tr td{
   color: #64a6fd;
-  line-height: 32px;
-  font-size: 14px;
+  line-height: 28px;
 }
 .ui-infbox .info label{
   font-weight: normal;
   margin-bottom: 0;
   color: #aaa;
-}
-.ui-infbox .info a{
-  color: #64a6fd;
-}
-.ui-infbox .info a:hover{
-  text-decoration: underline;
 }
 .ui-head1{
   background-color: #78a9e6;
@@ -1267,13 +1269,27 @@
   color: #fff;
   font-size: 14px;
 }
-.ui-state{
-
-}
-.ui-state p{
-  text-align: center;
-  color: #000000;
-  font-size: 20px;
-}
 
 /*----------customize----------*/
+.viewcor{
+  padding:9px 10px 0 8px !important;
+  width:200px;
+  font-size:14px;
+  margin-left:5px;
+  color: #64a6fd;
+}
+
+.width117{
+  width: 117px;
+  display: inline-block;
+}
+
+
+.width106{
+  width: 94px;
+  display: inline-block;
+}
+
+
+
+

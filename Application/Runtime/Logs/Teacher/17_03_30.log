@@ -1,0 +1,7 @@
+[ 2017-03-30T10:29:35+08:00 ] 49.77.233.167 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_student` SET `studentno`='2017300',`password`='202cb962ac59075b964b07152d234b70',`name`='test',`phone`='18116272106',`sex`='1' WHERE ( `id` = 94 ) [ RunTime:0.0002s ]
+

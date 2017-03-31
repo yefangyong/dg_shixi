@@ -1,0 +1,30 @@
+[ 2017-03-15T19:01:10+08:00 ] ::1 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.052045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.093695s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0045s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) 
+
+[ 2017-03-15T19:01:24+08:00 ] ::1 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.046401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.059690s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0098s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) 
+
+[ 2017-03-15T19:01:25+08:00 ] ::1 /teacher.php/Practice/arrangement.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004459s ]
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0124s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `dg_corporation` WHERE ( id= ) 
+

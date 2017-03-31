@@ -1,0 +1,824 @@
+[ 2017-03-09T10:13:58+08:00 ] 116.226.184.99 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-09T10:14:24+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-03-09T10:14:28+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-03-09T10:14:30+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '请选择班级名称' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:14:33+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '请选择班级名称' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('2','2','2','2','','',NULL,'1','2017-03-09 10:14:33')
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('2','2','2','2','','',NULL,'1','2017-03-09 10:14:33')
+
+[ 2017-03-09T10:14:45+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:14:48+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('2','2','2','2','','','1','1','2017-03-09 10:14:48') [ RunTime:0.0002s ]
+
+[ 2017-03-09T10:15:05+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:15:07+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('3','3','3','3','','','1','1','2017-03-09 10:15:07') [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:15:24+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0006s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:15:25+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('4','4','4','4','','','1','1','2017-03-09 10:15:25') [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:15:42+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:15:43+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('5','5','5','5','','','1','1','2017-03-09 10:15:43') [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:16:18+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:16:19+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('6','6','6','6','','','1','1','2017-03-09 10:16:19') [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:16:40+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:16:44+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('6','6','6','6','','','1','1','2017-03-09 10:16:44') [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:17:01+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '请选择班级名称' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('7','7','7','7','','',NULL,'1','2017-03-09 10:17:01')
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('7','7','7','7','','',NULL,'1','2017-03-09 10:17:01')
+
+[ 2017-03-09T10:17:02+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '请选择班级名称' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('7','7','7','7','','',NULL,'1','2017-03-09 10:17:02')
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('7','7','7','7','','',NULL,'1','2017-03-09 10:17:02')
+
+[ 2017-03-09T10:17:05+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '请选择班级名称' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('7','7','7','7','','',NULL,'1','2017-03-09 10:17:05')
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('7','7','7','7','','',NULL,'1','2017-03-09 10:17:05')
+
+[ 2017-03-09T10:17:08+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '请选择班级名称' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('7','7','7','7','','',NULL,'1','2017-03-09 10:17:08')
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('7','7','7','7','','',NULL,'1','2017-03-09 10:17:08')
+
+[ 2017-03-09T10:17:13+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-09T10:17:14+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('7','7','7','7','','','1','1','2017-03-09 10:17:14') [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:17:33+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:17:34+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('8','8','8','8','','','1','1','2017-03-09 10:17:34') [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:19:08+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '请选择班级名称' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('8','8','8','8','','',NULL,'1','2017-03-09 10:19:08')
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('8','8','8','8','','',NULL,'1','2017-03-09 10:19:08')
+
+[ 2017-03-09T10:19:21+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '请选择班级名称' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('9','9','9','9','','',NULL,'1','2017-03-09 10:19:21')
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('9','9','9','9','','',NULL,'1','2017-03-09 10:19:21')
+
+[ 2017-03-09T10:19:26+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0005s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '自动化002' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:19:27+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '自动化002' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('9','9','9','9','','','2','1','2017-03-09 10:19:27') [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:19:51+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '自动化002' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:19:53+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '自动化002' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('10','10','10','10','','','2','1','2017-03-09 10:19:53') [ RunTime:0.0002s ]
+
+[ 2017-03-09T10:20:21+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0005s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '自动化002' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:20:22+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '自动化002' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('11','11','11','11','','','2','1','2017-03-09 10:20:22') [ RunTime:0.0002s ]
+
+[ 2017-03-09T10:24:21+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '请选择班级名称' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('12','12','12','12','','',NULL,'1','2017-03-09 10:24:21')
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('12','12','12','12','','',NULL,'1','2017-03-09 10:24:21')
+
+[ 2017-03-09T10:24:26+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0005s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:24:27+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('12','12','12','12','','','1','1','2017-03-09 10:24:27') [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:24:47+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-09T10:24:48+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:24:53+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('13','13','13','13','','','1','1','2017-03-09 10:24:53') [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:25:11+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '请选择班级名称' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('14','14','14','14','','',NULL,'1','2017-03-09 10:25:11')
+ERR: 1048:Column 'classno' cannot be null
+ [ SQL语句 ] : INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('14','14','14','14','','',NULL,'1','2017-03-09 10:25:11')
+
+[ 2017-03-09T10:25:13+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0005s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:25:14+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('14','14','14','14','','','1','1','2017-03-09 10:25:14') [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:25:36+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '自动化002' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:25:38+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '自动化002' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('14','14','14','14','','','2','1','2017-03-09 10:25:38') [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:26:14+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0005s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:26:16+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('15','15','15','15','','','1','1','2017-03-09 10:26:16') [ RunTime:0.0002s ]
+
+[ 2017-03-09T10:26:42+08:00 ] 116.226.184.99 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:26:43+08:00 ] 116.226.184.99 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('15','15','15','15','','','1','1','2017-03-09 10:26:43') [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:45:41+08:00 ] 223.242.120.90 /teacher.php/Student/index/department//profession//class//keywords/20170210
+ERR: 1054:Unknown column 'keywords' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id WHERE (  classno IN(select id from dg_class where dep_id=profession) ) AND (  classno = keywords ) LIMIT 1  
+
+[ 2017-03-09T10:46:32+08:00 ] 49.77.217.214 /teacher.php/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:47:43+08:00 ] 116.226.184.99 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='123',`name`='yfy',`phone`='13053112897',`classno`='1',`course`='a',`email`='1281074511@qq.com' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:47:44+08:00 ] 116.226.184.99 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='123',`name`='yfy',`phone`='13053112897',`classno`='1',`course`='a',`email`='1281074511@qq.com' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:47:44+08:00 ] 116.226.184.99 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='123',`name`='yfy',`phone`='13053112897',`classno`='1',`course`='a',`email`='1281074511@qq.com' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:47:44+08:00 ] 116.226.184.99 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='123',`name`='yfy',`phone`='13053112897',`classno`='1',`course`='a',`email`='1281074511@qq.com' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:47:44+08:00 ] 116.226.184.99 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='123',`name`='yfy',`phone`='13053112897',`classno`='1',`course`='a',`email`='1281074511@qq.com' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:47:45+08:00 ] 116.226.184.99 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='123',`name`='yfy',`phone`='13053112897',`classno`='1',`course`='a',`email`='1281074511@qq.com' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:47:45+08:00 ] 116.226.184.99 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='123',`name`='yfy',`phone`='13053112897',`classno`='1',`course`='a',`email`='1281074511@qq.com' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:47:45+08:00 ] 116.226.184.99 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='123',`name`='yfy',`phone`='13053112897',`classno`='1',`course`='a',`email`='1281074511@qq.com' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:47:45+08:00 ] 116.226.184.99 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='123',`name`='yfy',`phone`='13053112897',`classno`='1',`course`='a',`email`='1281074511@qq.com' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:47:45+08:00 ] 116.226.184.99 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='123',`name`='yfy',`phone`='13053112897',`classno`='1',`course`='a',`email`='1281074511@qq.com' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:47:45+08:00 ] 116.226.184.99 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='123',`name`='yfy',`phone`='13053112897',`classno`='1',`course`='a',`email`='1281074511@qq.com' WHERE ( `id` = 1 ) [ RunTime:0.0002s ]
+
+[ 2017-03-09T10:47:46+08:00 ] 116.226.184.99 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='123',`name`='yfy',`phone`='13053112897',`classno`='1',`course`='a',`email`='1281074511@qq.com' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:47:46+08:00 ] 116.226.184.99 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_student` SET `studentno`='20170209',`password`='123',`name`='yfy',`phone`='13053112897',`classno`='1',`course`='a',`email`='1281074511@qq.com' WHERE ( `id` = 1 ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T10:48:18+08:00 ] 223.242.120.90 /teacher.php/Student/index/department/0/profession/0/class/0/keywords/20170210
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id WHERE (  (studentno like "%20170210%" or name like "%20170210%" ) LIMIT 1  
+
+[ 2017-03-09T10:48:50+08:00 ] 223.242.120.90 /teacher.php/Student/index/department/0/profession/0/class/0/keywords/20170210
+ERR: 1052:Column 'name' in where clause is ambiguous
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id WHERE (  (studentno like "%20170210%" or name like "%20170210%") ) LIMIT 1  
+
+[ 2017-03-09T10:49:29+08:00 ] 223.242.120.90 /teacher.php/Student/index/department/0/profession/0/class/0/keywords/20170210
+ERR: 1054:Unknown column 'dg_student.name' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id WHERE (  (studentno like "%20170210%" or dg_student.name like "%20170210%") ) LIMIT 1  
+
+[ 2017-03-09T10:55:41+08:00 ] 49.77.217.214 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` IN(51,52,53,54,55,56)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-09T10:59:23+08:00 ] 180.153.206.21 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-09T10:59:25+08:00 ] 101.226.89.120 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-09T11:02:16+08:00 ] 61.235.37.202 /index.php/Teacher/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = 'yfy' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T11:02:32+08:00 ] 61.235.37.202 /index.php/Teacher/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-09T12:54:56+08:00 ] 117.65.61.66 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` IN(57,58)  ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T12:55:35+08:00 ] 117.65.61.66 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` IN(49,50)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-09T12:55:48+08:00 ] 117.65.61.66 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` IN(47,48)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-09T12:56:00+08:00 ] 117.65.61.66 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` IN(59,60)  ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T18:03:57+08:00 ] 61.235.37.202 /index.php/Teacher/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-09T18:04:03+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-09T18:04:29+08:00 ] 61.235.37.202 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` IN(44,45,46)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-09T18:05:46+08:00 ] 61.235.37.202 /index.php?m=teacher&c=notice&a=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_notice` WHERE ( id=38 ) [ RunTime:0.0001s ]
+
+[ 2017-03-09T18:14:02+08:00 ] 61.235.37.202 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '自动化002' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T18:14:03+08:00 ] 61.235.37.202 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0005s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T19:14:13+08:00 ] 61.235.37.202 /index.php/Teacher/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-09T19:14:20+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-09T19:14:26+08:00 ] 61.235.37.202 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='sda',`score`='40',`status`='-1' WHERE ( `id` = 59 ) [ RunTime:0.0002s ]
+
+[ 2017-03-09T19:14:35+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-09T19:14:38+08:00 ] 61.235.37.202 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='dasdfas',`score`='50',`status`='-1' WHERE ( `id` = 60 ) [ RunTime:0.0002s ]
+
+[ 2017-03-09T19:14:46+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-09T19:14:50+08:00 ] 61.235.37.202 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_report` SET `suggestion`='dsadas',`score`='80',`status`='1' WHERE ( `id` = 65 ) [ RunTime:0.0002s ]
+
+[ 2017-03-09T19:14:55+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-09T19:14:59+08:00 ] 61.235.37.202 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='sdasf',`score`='80',`status`='1' WHERE ( `id` = 66 ) [ RunTime:0.0002s ]
+
+[ 2017-03-09T21:40:06+08:00 ] 61.235.37.202 /index.php/Teacher/login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = '叶方勇' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-09T21:41:52+08:00 ] 61.235.37.202 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='-1' WHERE `id` = 2 [ RunTime:0.0002s ]
+
+[ 2017-03-09T21:41:59+08:00 ] 61.235.37.202 /teacher.php/Practice/setCorStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_corporation` SET `isUsed`='1' WHERE `id` = 2 [ RunTime:0.0002s ]
+
+[ 2017-03-09T22:13:31+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+
+[ 2017-03-09T22:13:35+08:00 ] 61.235.37.202 /teacher.php/Report/auditing.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_report` SET `suggestion`='777',`score`='90',`status`='1' WHERE ( `id` = 76 ) [ RunTime:0.0002s ]
+
+[ 2017-03-09T22:13:59+08:00 ] 61.235.37.202 /teacher.php/Practice/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-03-09T22:14:02+08:00 ] 61.235.37.202 /teacher.php/Practice/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 21 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-03-09T22:14:46+08:00 ] 58.217.174.38 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '自动化002' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T22:16:06+08:00 ] 58.217.174.38 /teacher.php/Student/getMaster.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `master` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-03-09T22:16:13+08:00 ] 58.217.174.38 /teacher.php/Student/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '机设011' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_student` (`phone`,`studentno`,`name`,`password`,`course`,`email`,`classno`,`sex`,`addtime`) VALUES ('18116273108','2017188','yyy','321','','','1','1','2017-03-09 22:16:13') [ RunTime:0.0002s ]
+
+[ 2017-03-09T22:19:13+08:00 ] 58.217.174.38 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` = 67 ) [ RunTime:0.0002s ]
+
+[ 2017-03-09T22:20:55+08:00 ] 58.217.174.38 /teacher.php/Student/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_student` WHERE ( `id` IN(63,61,62,66,64,65)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-09T22:36:35+08:00 ] 58.217.174.38 /teacher.php/Student/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `dg_class` WHERE `classname` = '自动化002' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-03-09T22:49:52+08:00 ] 180.153.160.24 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-09T22:49:52+08:00 ] 101.226.33.224 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-09T22:49:52+08:00 ] 101.226.66.180 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-09T22:49:52+08:00 ] 180.163.1.46 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+
+[ 2017-03-09T22:49:52+08:00 ] 180.153.214.176 /teacher.php/student/login/index.html
+ERR: 非法操作:login
+

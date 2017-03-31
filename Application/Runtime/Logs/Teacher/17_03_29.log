@@ -1,0 +1,392 @@
+[ 2017-03-29T11:34:55+08:00 ] 218.22.105.102 /teacher.php/Student/index.html
+ERR: _STORAGE_WRITE_ERROR_:./Application/Runtime/Cache/Teacher/9dc5820349cd486981b3778670aebfdd.php
+
+[ 2017-03-29T11:35:36+08:00 ] 218.22.105.102 /teacher.php/Student/classes.html
+ERR: 模板不存在:./Application/Teacher/View/Student/classes.html
+
+[ 2017-03-29T11:35:47+08:00 ] 218.22.105.102 /teacher.php/Student/department.html
+ERR: 模板不存在:./Application/Teacher/View/Student/department.html
+
+[ 2017-03-29T13:52:50+08:00 ] 101.226.33.216 /teacher.php/Notice/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_no' at line 1
+ [ SQL语句 ] : SELECT dg_notice.*,IF(dg_notice.school!=0,'所有人',IF(dg_notice.class_id!=0,dg_class.classname,IF(dg_notice.dep_id!=0,dg_department.dname,'所有'))) publisher,dg_department.dname,IFNULL(dg_notice_view.id,0) viewid,dg_teacher.name teacher_name FROM `dg_notice` LEFT JOIN dg_teacher ON dg_notice.user_id=dg_teacher.teacherno LEFT JOIN dg_notice_view ON dg_notice.id=dg_notice_view.notice_id and dg_notice_view.type=0 and dg_notice_view.user_id= LEFT JOIN dg_class ON dg_notice.class_id=dg_class.id LEFT JOIN dg_department ON dg_notice.dep_id=dg_department.id   ORDER BY `pubtime` desc LIMIT 0,15  
+
+[ 2017-03-29T13:53:36+08:00 ] 49.77.233.167 /teacher.php/Student/delclass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_report` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=6) ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_practice` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=6) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_change` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=6) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_leave` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=6) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_student` WHERE ( classno =6 ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_class` WHERE ( `id` = 6 ) [ RunTime:0.0002s ]
+
+[ 2017-03-29T13:53:49+08:00 ] 49.77.233.167 /teacher.php/Student/deldep.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=8)) ) [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_practice` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=8)) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_change` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=8)) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_leave` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=8)) ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_student` WHERE ( classno IN(select id FROM dg_class WHERE dep_id=8) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_department` [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_department` WHERE ( `id` = 8 ) [ RunTime:0.0001s ]
+
+[ 2017-03-29T13:53:53+08:00 ] 49.77.233.167 /teacher.php/Student/class/id/
+ERR: 非法操作:class
+
+[ 2017-03-29T13:59:35+08:00 ] 117.136.45.136 /teacher.php/Student/updateclass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_class` SET `id`='11',`classname`='信息110班',`master_no`='103',`dep_id`='9',`grade`='' WHERE ( id=11 ) [ RunTime:0.0002s ]
+SQL: UPDATE `dg_class` SET `master_no`=NULL WHERE ( master_no=103 and id!=11 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0003s ]
+SQL: UPDATE `dg_teacher` SET `class_id`='11' WHERE ( teacherno=103 ) [ RunTime:0.0001s ]
+
+[ 2017-03-29T13:59:59+08:00 ] 117.136.45.136 /teacher.php/Student/deldep.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=9)) ) [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_practice` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=9)) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_change` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=9)) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_leave` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=9)) ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_student` WHERE ( classno IN(select id FROM dg_class WHERE dep_id=9) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_department` [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_department` WHERE ( `id` = 9 ) [ RunTime:0.0001s ]
+
+[ 2017-03-29T14:00:09+08:00 ] 117.136.45.136 /teacher.php/Student/deldep.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=5)) ) [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_practice` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=5)) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_change` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=5)) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_leave` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=5)) ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_student` WHERE ( classno IN(select id FROM dg_class WHERE dep_id=5) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_department` [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_department` WHERE ( `id` = 5 ) [ RunTime:0.0001s ]
+
+[ 2017-03-29T14:00:15+08:00 ] 117.136.45.136 /teacher.php/Student/deldep.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=4)) ) [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_practice` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=4)) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_change` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=4)) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_leave` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=4)) ) [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_student` WHERE ( classno IN(select id FROM dg_class WHERE dep_id=4) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_department` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_department` WHERE ( `id` = 4 ) [ RunTime:0.0002s ]
+
+[ 2017-03-29T14:00:27+08:00 ] 117.136.45.136 /teacher.php/Student/deldep.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=3)) ) [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_practice` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=3)) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_change` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=3)) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_leave` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno IN(select id FROM dg_class WHERE dep_id=3)) ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_student` WHERE ( classno IN(select id FROM dg_class WHERE dep_id=3) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_department` [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_department` WHERE ( `id` = 3 ) [ RunTime:0.0001s ]
+
+[ 2017-03-29T14:01:18+08:00 ] 117.136.45.136 /teacher.php/Student/adddep.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `dg_department` [ RunTime:0.0004s ]
+SQL: INSERT INTO `dg_department` (`dname`,`telephone`) VALUES ('计算机科学与技术','13661623965') [ RunTime:0.0001s ]
+
+[ 2017-03-29T14:01:46+08:00 ] 117.136.45.136 /teacher.php/Student/delclass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_report` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=3) ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_practice` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=3) ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_change` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=3) ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_leave` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=3) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_student` WHERE ( classno =3 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_class` WHERE ( `id` = 3 ) [ RunTime:0.0001s ]
+
+[ 2017-03-29T14:01:52+08:00 ] 117.136.45.136 /teacher.php/Student/delclass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=5) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_practice` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=5) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_change` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=5) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_leave` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=5) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_student` WHERE ( classno =5 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_class` WHERE ( `id` = 5 ) [ RunTime:0.0001s ]
+
+[ 2017-03-29T14:02:02+08:00 ] 117.136.45.136 /teacher.php/Student/delclass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=4) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_practice` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=4) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0027s ]
+SQL: DELETE FROM `dg_change` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=4) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_leave` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=4) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_student` WHERE ( classno =4 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_class` WHERE ( `id` = 4 ) [ RunTime:0.0002s ]
+
+[ 2017-03-29T14:02:08+08:00 ] 117.136.45.136 /teacher.php/Student/delclass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=11) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_practice` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=11) ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_change` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=11) ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_leave` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=11) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_student` WHERE ( classno =11 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_class` WHERE ( `id` = 11 ) [ RunTime:0.0001s ]
+
+[ 2017-03-29T14:02:16+08:00 ] 117.136.45.136 /teacher.php/Student/delclass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_report` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=10) ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_practice` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=10) ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0004s ]
+SQL: DELETE FROM `dg_change` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=10) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_leave` WHERE ( student_id IN(select studentno FROM dg_student WHERE classno=10) ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_student` WHERE ( classno =10 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0003s ]
+SQL: DELETE FROM `dg_class` WHERE ( `id` = 10 ) [ RunTime:0.0001s ]
+
+[ 2017-03-29T14:05:00+08:00 ] 117.136.45.136 /teacher.php/Student/updateclass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_class` SET `id`='2',`classname`='自动化002',`master_no`='103',`dep_id`='2',`grade`='1' WHERE ( id=2 ) [ RunTime:0.0002s ]
+SQL: UPDATE `dg_class` SET `master_no`=NULL WHERE ( master_no=103 and id!=2 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0003s ]
+SQL: UPDATE `dg_teacher` SET `class_id`='2' WHERE ( teacherno=103 ) [ RunTime:0.0001s ]
+
+[ 2017-03-29T14:05:22+08:00 ] 117.136.45.136 /teacher.php/Student/updateclass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `dg_class` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_class` SET `id`='1',`classname`='机设011',`master_no`='200',`dep_id`='1',`grade`='1' WHERE ( id=1 ) [ RunTime:0.0002s ]
+SQL: UPDATE `dg_class` SET `master_no`=NULL WHERE ( master_no=200 and id!=1 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `dg_teacher` [ RunTime:0.0004s ]
+SQL: UPDATE `dg_teacher` SET `class_id`='1' WHERE ( teacherno=200 ) [ RunTime:0.0001s ]
+
+[ 2017-03-29T14:17:53+08:00 ] 117.136.45.136 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_change` SET `status`='-1',`teacher_id`='200' WHERE ( `id` = 108 ) [ RunTime:0.0002s ]
+
+[ 2017-03-29T14:21:41+08:00 ] 117.136.45.136 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: UPDATE `dg_change` SET `status`='1',`teacher_id`='200' WHERE ( `id` = 109 ) [ RunTime:0.0002s ]
+
+[ 2017-03-29T14:39:04+08:00 ] 49.77.233.167 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=107 )  [ RunTime:0.0002s ]
+
+[ 2017-03-29T14:39:10+08:00 ] 49.77.233.167 /teacher.php/Apply/editChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: UPDATE `dg_change` SET `status`='-1',`teacher_id`='200' WHERE ( `id` = 107 ) [ RunTime:0.0002s ]
+
+[ 2017-03-29T14:39:33+08:00 ] 49.77.233.167 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id IN(107,100,99,98,97,96,95,94) )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` IN(96,94,95,97)  ) [ RunTime:0.0001s ]
+
+[ 2017-03-29T14:39:48+08:00 ] 49.77.233.167 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=98 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 98 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 455 行.
+
+[ 2017-03-29T14:39:54+08:00 ] 49.77.233.167 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=99 )  [ RunTime:0.0002s ]
+
+[ 2017-03-29T14:40:00+08:00 ] 49.77.233.167 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=100 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 100 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 455 行.
+
+[ 2017-03-29T14:40:05+08:00 ] 49.77.233.167 /teacher.php/Apply/delChange.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_change` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_change` WHERE ( id=107 )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_change` WHERE ( `id` = 107 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ApplyController.class.php 第 455 行.
+
+[ 2017-03-29T14:42:49+08:00 ] 117.136.45.136 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+
+[ 2017-03-29T14:42:49+08:00 ] 117.136.45.136 /teacher.php/Report/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+
+[ 2017-03-29T14:43:23+08:00 ] 117.136.45.136 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_report` WHERE ( id=206 )  [ RunTime:0.0002s ]
+SQL: UPDATE `dg_report` SET `tea_del`='0' WHERE ( `id` = 206 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ReportController.class.php 第 238 行.
+
+[ 2017-03-29T14:43:33+08:00 ] 117.136.45.136 /teacher.php/Report/del.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dg_report` WHERE ( id=211 )  [ RunTime:0.0002s ]
+SQL: UPDATE `dg_report` SET `tea_del`='0' WHERE ( `id` = 211 ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: nook /var/www/html/Application/Teacher/Controller/ReportController.class.php 第 238 行.
+
+[ 2017-03-29T14:43:54+08:00 ] 117.136.45.136 /teacher.php/Apply/delLeave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dg_leave` WHERE ( id IN(107,111,112,115,114,117,118,119,124,125,126,127,128) )  [ RunTime:0.0002s ]
+SQL: DELETE FROM `dg_leave` WHERE ( `id` IN(111,115,125,126,128)  ) [ RunTime:0.0002s ]
+
+[ 2017-03-29T15:02:59+08:00 ] 117.136.45.136 /teacher.php/Practice/addCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: INSERT INTO `dg_corporation` (`name`,`city`,`type`,`contact`,`position`,`telephone`,`mobile`,`email`,`zipcode`,`fax`,`department`,`website`,`address`,`introduction`,`addtime`) VALUES ('搜狐科技','北京','外资','张朝阳','','18900998866','','','','','','','北京朝阳北京朝阳北京朝阳北京朝阳北京朝阳北+++','搜狐网络，搜狐视频','2017-03-29 15:02:59') [ RunTime:0.0003s ]
+
+[ 2017-03-29T15:32:09+08:00 ] 117.136.45.136 /teacher.php/Practice/delCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0006s ]
+SQL: DELETE FROM `dg_corporation` WHERE ( `id` = 31 ) [ RunTime:0.0001s ]
+
+[ 2017-03-29T15:35:27+08:00 ] 117.136.45.136 /teacher.php/Practice/addCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: INSERT INTO `dg_corporation` (`name`,`city`,`type`,`contact`,`position`,`telephone`,`mobile`,`email`,`zipcode`,`fax`,`department`,`website`,`address`,`introduction`,`addtime`) VALUES ('搜狐科技','北京','外资','张朝阳','CEO','15890908866','15890908866','yk_0821@163.com','20000','010-3877990','董事会','www.sohu.com','北京朝阳北京朝阳北京朝阳+++','搜狐网络，搜狐视频，搜狐网络，搜狐视频，搜狐网络，搜狐视频，搜狐网络，搜狐视频，搜狐网络，搜狐视频，搜狐网络，搜狐视频，搜狐网络，搜狐视频，搜狐网络，搜狐视频，搜狐网络，搜狐视频，搜狐网络，搜狐视频，搜狐网络，搜狐视频，搜狐网络，搜狐视频，搜狐网络，搜狐视频，搜狐网络，搜狐视频，搜狐网络，搜狐视频！','2017-03-29 15:35:27') [ RunTime:0.0002s ]
+
+[ 2017-03-29T16:41:24+08:00 ] 49.77.233.167 /teacher.php/Practice/delCor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined index: studentno /var/www/html/Application/Teacher/Controller/CommonController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
+SQL: DELETE FROM `dg_corporation` WHERE ( `id` = 14 ) [ RunTime:0.0001s ]
+

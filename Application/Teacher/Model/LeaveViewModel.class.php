@@ -6,6 +6,7 @@ class LeaveViewModel extends ViewModel{
     public $viewFields = array(
         'Leave' => array('id','emegencyconcat','telephone','content','status','applytime','starttime','endtime','student_id','_as'=>'myLeave','_type'=>'LEFT'),
         'Student' => array('name'=>'stuname','studentno','_on'=>'myLeave.student_id = Student.studentno','_type'=>'LEFT'),
+        'Practice' => array('cname','_on'=>'Student.studentno = Practice.student_id','_type'=>'LEFT'),
         'Class' => array('classname','_on'=>'Student.classno = Class.id','_type'=>'LEFT')
     );
 

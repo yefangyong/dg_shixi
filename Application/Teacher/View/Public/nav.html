@@ -1,0 +1,125 @@
+<nav class="navi">
+    <div class="hd">
+        <div class="logo">
+            <p><a href=""><img src="__PUBLIC__/teacher/img/logo.png" alt=""></a></p>
+        </div>
+    </div>
+    <div class="ct">
+        <div class="ht15"></div>
+        <div class="list">
+            <ul>
+            <if condition="$_SESSION['adminUser']['type'] eq 2 or $_SESSION['adminUser']['type'] eq 1">
+                <li>
+                    <div class="i<?=' '.getActive('Notice')?>">
+                        <a href="{:U('Notice/index')}">
+                            <p><i class="ico7"></i>
+                                通知公告
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Statistics')?>">
+                        <a href="{:U('Statistics/index')}">
+                            <p><i class="ico8"></i>
+                                统计分析
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Practice')?>">
+                        <a href="{:U('Practice/index')}">
+                            <p><i class="ico6"></i>
+                                实习管理
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Student')?>">
+                        <a href="{:U('Student/index')}">
+                            <p><i class="ico9"></i>
+                                学生管理
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Contact')?>">
+                        <a href="{:U('Contact/index')}">
+                            <p><i class="ico3"></i>
+                                通讯录
+                            </p>
+                        </a>
+                    </div>
+                </li>
+            <else />
+                <li>
+                    <div class="i<?=' '.getActive('Report')?>">
+                        <a href="{:U('Report/index')}">
+                            <p><i class="ico1"></i>
+                                实习报告
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Apply')?>">
+                        <a href="{:U('Apply/index')}">
+                            <p><i class="ico2"></i>
+                                申请审核
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Practice')?>">
+                        <a href="{:U('Practice/index')}">
+                            <p><i class="ico6"></i>
+                                实习管理
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Notice')?>">
+                        <a href="{:U('Notice/index')}">
+                            <p><i class="ico7"></i>
+                                通知公告
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Statistics')?>">
+                        <a href="{:U('Statistics/index')}">
+                            <p><i class="ico8"></i>
+                                统计分析
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Student')?>">
+                        <a href="{:U('Student/index')}">
+                            <p><i class="ico9"></i>
+                                <if condition="$_SESSION['adminUser']['type'] eq 0">学生<else />用户</if>管理
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="i<?=' '.getActive('Contact')?>">
+                        <a href="{:U('Contact/index')}">
+                            <p><i class="ico3"></i>
+                                通讯录
+                            </p>
+                        </a>
+                    </div>
+                </li>
+            </if>
+            </ul>
+        </div>
+    </div>
+</nav>

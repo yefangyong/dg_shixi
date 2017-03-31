@@ -12,7 +12,9 @@ class CommonController extends Controller {
     public function init() {
         $isLogin = $this->isLogin();
         if(!$isLogin) {
-            $this->redirect('/Home/login/index');
+            $this->redirect('/Login/index');
+        }else if($_SESSION['adminUser']['studentno']){
+            redirect('/index.php?m=student&c=report&a=index');
         }
         $this->assign('user',session('adminUser')['name']);
     }

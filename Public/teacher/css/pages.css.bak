@@ -2,50 +2,15 @@
 .ui-head{
   background-color: #fff;
   padding: 0 40px;
-  padding-left: 10px;
-  height: 84px;
   border-bottom: 1px solid #dcdcdc;
   position: relative;
   z-index: 1;
 }
 .ui-head .tabs{
-  width: 50%;
-  position: relative;
-  height: 84px;
-  padding: 0 30px;
-  overflow: hidden;
-  min-width: 660px;
-}
-.ui-head .tabs .aw{
-  display: inline-block;
-  width: 20px;
-  height: 64px;
-  background: none no-repeat center rgba(210, 210, 210, .4);
-  position: absolute;
-  top: 10px;
-  display: none;
-}
-.ui-head .tabs .aw:hover{
-  background-color: rgba(210, 210, 210, .6);
-}
-.ui-head .tabs.has-scroll .aw{
-  
-}
-.ui-head .tabs .aw.prev{
-  background-image: url(../img/aw-l1.png);
-  left: 0;
-}
-.ui-head .tabs .aw.next{
-  background-image: url(../img/aw-r3.png);
-  right: 0;
-}
-.ui-head .tabs >.ct{
-  overflow: auto;
-  height: 104px;
+
 }
 .ui-head .tabs ul{
   margin-bottom: 0;
-  width: 200%;
 }
 .ui-head .tabs ul li{
   float: left;
@@ -144,34 +109,6 @@
 .ui-table >.ct{
 
 }
-.ui-table >.ct .aw{
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  background: none no-repeat center rgba(210, 210, 210, .4);
-  position: absolute;
-  top: 50%;
-  margin-top: -22.5px;
-  display: block;
-}
-.ui-table >.ct .aw:hover{
-  background-color: rgba(210, 210, 210, .6);
-}
-.ui-table >.ct.has-scroll .aw{
-  display: block;
-}
-.ui-table >.ct .aw.prev{
-  background-image: url(../img/aw-l1.png);
-  left: 0;
-}
-.ui-table >.ct .aw.next{
-  background-image: url(../img/aw-r3.png);
-  right: 0;
-}
-.ui-table >.ct .tb{
-  overflow: auto;
-  position: relative;
-}
 .ui-table .tool{
 
 }
@@ -213,7 +150,7 @@
   background-image: url(../img/radio-on.png);
 }
 .ui-table table{
-  min-width: 100%;
+  width: 100%;
 }
 .ui-table table tr{
   border-bottom: 1px solid #f6f6f6;
@@ -353,7 +290,6 @@
   top: 30px;
   padding-top: 10px;
   display: none;
-  z-index: 9999;
 }
 .ui-filter .select.on >.ex{
   display: block;
@@ -591,11 +527,25 @@
   width: 105px;
   height: 40px;
   position: relative;
-  vertical-align: middle;
 }
 .ui-form .select >p{
 
 }
+
+.clear-select{
+  display:  block !important;
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #000;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  /*在选择框的最右侧中间显示小箭头图片*/
+  /*background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll rightright center transparent;*/
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px;
+}
+
 .ui-form .select >p a{
   display: block;
   height: 40px;
@@ -606,9 +556,6 @@
   color: #949494;
   font-size: 14px;
   line-height: 26px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .ui-form .select.on >p a{
   background-image: url(../img/aw-d1.png);
@@ -639,53 +586,37 @@
 .ui-form .select.on >.ex{
   display: block;
 }
-.ui-form .select >.ex p{
+/*.ui-form .select >.ex p{*/
+
+/*}*/
+/*.ui-form .select >.ex p a{*/
+  /*display: block;*/
+  /*line-height: 40px;*/
+  /*color: #2a2a2a;*/
+  /*font-size: 14px;*/
+  /*text-indent: 12px;*/
+/*}*/
+/*.ui-form .select >.ex p a:hover{*/
+  /*color: #fff;*/
+  /*background-color: #89bcf1;*/
+/*}*/
+
+.ui-form .select >.ex option p{
 
 }
-.ui-form .select >.ex p a{
+.ui-form .select >.ex option p a{
   display: block;
   line-height: 40px;
   color: #2a2a2a;
   font-size: 14px;
   text-indent: 12px;
-  height: 40px;
-  padding-right: 12px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
-.ui-form .select >.ex p a:hover{
+.ui-form .select >.ex option p a:hover{
   color: #fff;
   background-color: #89bcf1;
 }
 
-.ui-form .select >.ex table{
-  width: 100%;
-}
-.ui-form .select >.ex table tr{
 
-}
-.ui-form .select >.ex table tr td{
-  text-align: center;
-  padding: 4px 0;
-}
-.ui-form .select >.ex table a{
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  line-height: 22px;
-  text-align: center;
-  color: #282828;
-  font-size: 14px;
-  border-radius: 50%;
-}
-.ui-form .select >.ex table a:hover{
-  text-decoration: underline;
-}
-.ui-form .select >.ex table a.on{
-  background-color: #89bcf1;
-  color: #fff;
-}
 .ui-form .textarea{
   position: relative;
 }
@@ -810,7 +741,6 @@
 .ui-form .rbox.on i{
   background-image: url(../img/radio-on.png);
 }
-
 .ui-path{
   margin: 0 15px;
   padding: 10px 0;
@@ -886,17 +816,15 @@
 .ui-login .form .bt{
   display: block;
   height: 50px;
+  width: 388px;
   border-radius: 4px;
   line-height: 50px;
   text-align: center;
   color: #fff;
   font-size: 16px;
   background-color: #64a6fd;
-  width:390px;
 }
-.ui-login .form .bt:active{
-  background-color: #3885eb;
-}
+
 .ui-article{
 
 }
@@ -915,21 +843,6 @@
   line-height: 1em;
   padding: 15px 0;
   text-align: center;
-  color: #949494;
-  font-size: 14px;
-}
-.ui-article >.hd p.text-left{
-  text-align: left;
-}
-.ui-article >.hd table{
-  width: 100%;
-}
-.ui-article >.hd table tr{
-
-}
-.ui-article >.hd table tr td{
-  line-height: 1em;
-  padding: 15px 0;
   color: #949494;
   font-size: 14px;
 }
@@ -1167,10 +1080,6 @@
   width: 320px;
   border: 1px solid #dedede;
 }
-.ui-infbox.style2{
-  border: none;
-  padding-left: 15px;
-}
 .ui-infbox >.hd{
   border-bottom: 1px solid #dedede;
 }
@@ -1211,15 +1120,6 @@
   font-weight: normal;
   margin-bottom: 0;
   color: #aaa;
-}
-.ui-head1{
-  background-color: #f8f7f7;
-}
-.ui-head1 p{
-  line-height: 30px;
-  text-indent: 15px;
-  color: #2a2a2a;
-  font-size: 14px;
 }
 
 /*----------customize----------*/

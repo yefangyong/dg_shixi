@@ -287,7 +287,6 @@
   line-height: 30px;
   text-align: right;
   color: #c9c7c7;
-  margin-bottom: 15px;
 }
 .ui-paging ul{
   margin-bottom: 0;
@@ -414,7 +413,7 @@
   color: #fff;
 }
 .ui-filter .select .list{
-  width: 105px;
+  width:180px;
   border: 1px solid #e4e2e2;
   background-color: #f5f3f3;
 }
@@ -941,16 +940,24 @@
 .ui-article{
 
 }
+.ui-article hr{
+  border-top-color: #ddd;
+}
 .ui-article >.hd{
-
+  margin-bottom: 10px;
 }
 .ui-article >.hd h3{
   line-height: 1em;
   padding: 10px 0;
-  border-bottom: 1px solid #f7f7f7;
+  border-bottom: 1px solid #ddd;
   text-align: center;
   color: #000000;
   font-size: 20px;
+}
+.ui-article >.hd h3 small{
+  color: #949494;
+  font-size: 14px;
+  margin-left: 20px;
 }
 .ui-article >.hd p{
   line-height: 1em;

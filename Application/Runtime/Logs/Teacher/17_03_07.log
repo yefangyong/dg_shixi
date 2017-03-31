@@ -1,498 +1,11 @@
-[ 2017-03-07T05:21:04+08:00 ] 180.102.214.16 /teacher.php/login/index.html
+[ 2017-03-07T03:51:10+08:00 ] ::1 /shixi/teacher.php/login/index.html
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
-SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `dg_user` WHERE `username` = 'Âè∂ÊñπÂãá' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
-
-[ 2017-03-07T08:49:53+08:00 ] 49.65.251.163 /teacher.php/login/index.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
-SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `dg_user` WHERE `username` = 'Âè∂ÊñπÂãá' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
-
-[ 2017-03-07T14:49:05+08:00 ] 220.178.150.44 /index.php/Teacher/login/index.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
-SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `dg_user` WHERE `username` = 'Âè∂ÊñπÂãá' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
-
-[ 2017-03-07T14:49:13+08:00 ] 220.178.150.44 /teacher.php/Report/edit.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-
-[ 2017-03-07T14:50:03+08:00 ] 220.178.150.44 /teacher.php/Apply/editApply.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-SQL: SHOW COLUMNS FROM `dg_practice` [ RunTime:0.0006s ]
-SQL: UPDATE `dg_practice` SET `status`='1' WHERE ( `id` = 17 ) [ RunTime:0.0002s ]
-
-[ 2017-03-07T14:50:51+08:00 ] 220.178.150.44 /teacher.php/Practice/setCorStatus.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-
-[ 2017-03-07T14:51:52+08:00 ] 220.178.150.44 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 16 ) [ RunTime:0.0002s ]
-
-[ 2017-03-07T14:52:00+08:00 ] 220.178.150.44 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0007s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 23 ) [ RunTime:0.0002s ]
-
-[ 2017-03-07T14:52:06+08:00 ] 220.178.150.44 /teacher.php/Report/edit.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-
-[ 2017-03-07T14:52:24+08:00 ] 220.178.150.44 /teacher.php/Report/edit.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-
-[ 2017-03-07T14:53:16+08:00 ] 121.237.221.47 /teacher.php/login/index.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
-SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `dg_user` WHERE `username` = 'Âè∂ÊñπÂãá' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
-
-[ 2017-03-07T15:03:16+08:00 ] 180.111.33.22 /teacher.php/Apply/editLeave.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
-SQL: UPDATE `dg_leave` SET `status`='-1' WHERE ( `id` = 16 ) [ RunTime:0.0002s ]
-
-[ 2017-03-07T15:05:41+08:00 ] 180.111.33.22 /teacher.php/Apply/delLeave.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_leave` WHERE ( `id` = 10 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T16:25:41+08:00 ] 180.111.33.22 /teacher.php/Student/view/id/37
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( Student.id = 37 ) LIMIT 1' at line 1
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address AS address,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report WHERE ( Student.id = 37 ) LIMIT 1  
-
-[ 2017-03-07T16:25:48+08:00 ] 180.111.33.22 /teacher.php/Student/view/id/34
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( Student.id = 34 ) LIMIT 1' at line 1
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address AS address,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report WHERE ( Student.id = 34 ) LIMIT 1  
-
-[ 2017-03-07T16:25:51+08:00 ] 180.153.206.20 /teacher.php/student/view/id/37
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( Student.id = 37 ) LIMIT 1' at line 1
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address AS address,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report WHERE ( Student.id = 37 ) LIMIT 1  
-
-[ 2017-03-07T16:25:51+08:00 ] 101.226.65.108 /teacher.php/Student/view/id/37
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( Student.id = 37 ) LIMIT 1' at line 1
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address AS address,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report WHERE ( Student.id = 37 ) LIMIT 1  
-
-[ 2017-03-07T16:25:57+08:00 ] 101.226.125.111 /teacher.php/Student/view/id/34
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( Student.id = 34 ) LIMIT 1' at line 1
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address AS address,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report WHERE ( Student.id = 34 ) LIMIT 1  
-
-[ 2017-03-07T16:25:58+08:00 ] 61.151.226.199 /teacher.php/student/view/id/34
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( Student.id = 34 ) LIMIT 1' at line 1
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address AS address,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report WHERE ( Student.id = 34 ) LIMIT 1  
-
-[ 2017-03-07T16:26:31+08:00 ] 121.237.221.47 /teacher.php/Student/view/id/1
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( Student.id = 1 ) LIMIT 1' at line 1
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address AS address,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report WHERE ( Student.id = 1 ) LIMIT 1  
-
-[ 2017-03-07T16:26:46+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 37 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T16:26:57+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 33 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T16:27:04+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 32 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T16:27:11+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 34 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T16:27:18+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 36 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T16:27:25+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 35 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T16:27:34+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 31 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T16:27:41+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 30 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T16:27:48+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 28 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T16:27:54+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 27 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T16:28:01+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0004s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 29 ) [ RunTime:0.0002s ]
-
-[ 2017-03-07T16:50:53+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:50:53')
-
-[ 2017-03-07T16:50:56+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:50:56')
-
-[ 2017-03-07T16:52:48+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:52:48')
-
-[ 2017-03-07T16:52:48+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:52:48')
-
-[ 2017-03-07T16:52:48+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:52:48')
-
-[ 2017-03-07T16:52:49+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:52:49')
-
-[ 2017-03-07T16:52:49+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:52:49')
-
-[ 2017-03-07T16:55:22+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:55:22')
-
-[ 2017-03-07T16:55:22+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:55:22')
-
-[ 2017-03-07T16:55:23+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:55:23')
-
-[ 2017-03-07T16:55:23+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:55:23')
-
-[ 2017-03-07T16:55:24+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:55:24')
-
-[ 2017-03-07T16:55:24+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:55:24')
-
-[ 2017-03-07T16:55:34+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:55:34')
-
-[ 2017-03-07T16:55:35+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:55:35')
-
-[ 2017-03-07T16:55:35+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:55:35')
-
-[ 2017-03-07T16:55:35+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:55:35')
-
-[ 2017-03-07T16:55:35+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:55:35')
-
-[ 2017-03-07T16:55:35+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:55:35')
-
-[ 2017-03-07T16:55:35+08:00 ] 180.111.33.22 /teacher.php/Student/import.html
-ERR: 1048:Column 'password' cannot be null
- [ SQLËØ≠Âè• ] : INSERT INTO `dg_student` (`studentno`,`name`,`password`,`phone`,`classno`,`email`,`sex`,`address`,`addtime`) VALUES ('œÌJÎN—(Îw∫ïÄ”õßQr÷\'Ä÷r&è	â','Ï=;ƒÕlwÔbDŸΩNo·ÔjÏÒá<`X´Êïü ≥◊Û\'ˆêé}:$8>å]g€È	»Ó>ô~\0\0ˇˇ\0PK\0\0\0\0\0!\0µU0#ı\0\0\0L\0\0\0Œ_rels/.rels ¢ (†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0åíœN√0∆ÔHºC‰˚ÍnH°•ªLHª!T¿$Óµç£$@˜ˆÑÇJc€—ˆÁœ?[ﬁÓÊiTb/N√∫(A±3b{◊jx≠üV†b\"gi«éaW›ﬁl_x§îõb◊˚®≤ãã∫î¸#b4OÒÏr•ë0Q ah—ì®e‹îÂ=ÜøP-<’¡j{™>˙<˘≤∑4Mox/Ê}bóNå@û;ÀvÂCf©œ€®öBÀIÉÛú”…˚\"cû&⁄\\OÙˇ∂8q\"Kâ–H‡Û<ﬂäs@ÎÎÅ.üh©¯ΩŒ<‚ßÑ·Md¯a¡≈T_\0\0\0ˇˇ\0PK\0\0\0\0\0!\0Å>îóÙ\0\0\0∫\0\0\0xl/_rels/workbook.xml.rels ¢(†\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0¨íœJƒ0∆ÔÇÔÊn”Æ\"\"õÓEÑΩj}ÄêLõ≤m2„üæΩ°¢€ÖeΩÙ¯f»˜˝2ôÌÓkƒ&ÍÉWP%Ù&ÿﬁw',NULL,NULL,NULL,NULL,'1',NULL,'2017-03-07 16:55:35')
-
-[ 2017-03-07T17:06:36+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 39 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T17:06:44+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 38 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T17:12:51+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 40 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T17:41:28+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 41 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T17:44:36+08:00 ] 116.231.184.69 /teacher.php/login/index.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
-SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `dg_user` WHERE `username` = 'yfy' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0001s ]
-
-[ 2017-03-07T19:09:43+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 26 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T19:09:49+08:00 ] 180.111.33.22 /teacher.php/Student/del.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
-SQL: SHOW COLUMNS FROM `dg_student` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_student` WHERE ( `id` = 25 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T19:50:30+08:00 ] 180.102.214.16 /teacher.php/Student/view/id/42
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS address AS reportaddress,Report.suggestion AS suggestion FROM dg_student Stud' at line 1
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address AS reportaddress AS address AS reportaddress,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report ON Report.student_id = Student.studentno WHERE ( Student.id = 42 ) LIMIT 1  
-
-[ 2017-03-07T19:52:45+08:00 ] 180.102.214.16 /teacher.php/Student/view/id/42
-ERR: 1054:Unknown column 'Report.address_reportaddress' in 'field list'
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address_reportaddress AS address_reportaddress,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report ON Report.student_id = Student.studentno WHERE ( Student.id = 42 ) LIMIT 1  
-
-[ 2017-03-07T20:30:03+08:00 ] 61.235.37.202 /teacher.php/login/index.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
-SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0006s ]
-SQL: SELECT * FROM `dg_user` WHERE `username` = 'Âè∂ÊñπÂãá' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
-
-[ 2017-03-07T20:30:12+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-
-[ 2017-03-07T20:30:38+08:00 ] 61.235.37.202 /teacher.php/Apply/editLeave.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-SQL: SHOW COLUMNS FROM `dg_leave` [ RunTime:0.0005s ]
-SQL: UPDATE `dg_leave` SET `status`='1' WHERE ( `id` = 22 ) [ RunTime:0.0002s ]
-
-[ 2017-03-07T20:31:18+08:00 ] 180.153.206.18 /teacher.php/student/login/index.html
-ERR: ÈùûÊ≥ïÊìç‰Ωú:login
-
-[ 2017-03-07T20:38:58+08:00 ] 61.235.37.202 /index.php?m=teacher&c=notice&a=del
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
-SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_notice` WHERE ( id=25 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T20:39:02+08:00 ] 61.235.37.202 /index.php?m=teacher&c=notice&a=del
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
-SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_notice` WHERE ( id=23 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T20:39:07+08:00 ] 61.235.37.202 /index.php?m=teacher&c=notice&a=del
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
-SQL: SHOW COLUMNS FROM `dg_notice` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_notice` WHERE ( id=24 ) [ RunTime:0.0002s ]
-
-[ 2017-03-07T21:37:54+08:00 ] 180.102.214.16 /teacher.php/Student/view/id/42
-ERR: 1054:Unknown column 'Report.address_reportaddress' in 'field list'
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address_reportaddress AS address_reportaddress,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report ON Report.student_id = Student.studentno WHERE ( Student.id = 42 ) LIMIT 1  
-
-[ 2017-03-07T22:07:10+08:00 ] 58.212.247.133 /teacher.php/login/index.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
-SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `dg_user` WHERE `username` = 'Âè∂ÊñπÂãá' AND `password` = '7483890205c6b5cabdc9f2ac2be60fb8' LIMIT 1   [ RunTime:0.0002s ]
-
-[ 2017-03-07T22:07:12+08:00 ] 58.212.247.133 /teacher.php/login/index.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
-SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `dg_user` WHERE `username` = 'Âè∂ÊñπÂãá' AND `password` = '7483890205c6b5cabdc9f2ac2be60fb8' LIMIT 1   [ RunTime:0.0001s ]
-
-[ 2017-03-07T22:07:16+08:00 ] 58.212.247.133 /teacher.php/login/index.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
-SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0005s ]
-SQL: SELECT * FROM `dg_user` WHERE `username` = 'Âè∂ÊñπÂãá' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0002s ]
-
-[ 2017-03-07T22:24:15+08:00 ] 180.102.214.16 /teacher.php/Student/view/id/42
-ERR: 1054:Unknown column 'Report.address_reportaddress' in 'field list'
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address_reportaddress AS address_reportaddress,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report ON Report.student_id = Student.studentno WHERE ( Student.id = 42 ) LIMIT 1  
-
-[ 2017-03-07T22:26:19+08:00 ] 180.102.214.16 /teacher.php/Student/view/id/42
-ERR: 1054:Unknown column 'Report.address_reportaddress' in 'field list'
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address_reportaddress AS address_reportaddress,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report ON Report.student_id = Student.studentno WHERE ( Student.id = 42 ) LIMIT 1  
-
-[ 2017-03-07T22:26:48+08:00 ] 180.102.214.16 /teacher.php/Student/view/id/42
-ERR: 1054:Unknown column 'Report.address_reportaddress' in 'field list'
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address_reportaddress AS address_reportaddress,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report ON Report.student_id = Student.studentno WHERE ( Student.id = 42 ) LIMIT 1  
-
-[ 2017-03-07T22:27:18+08:00 ] 180.102.214.16 /teacher.php/Student/view/id/42
-ERR: 1054:Unknown column 'Report.address_reportaddress' in 'field list'
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address_reportaddress AS address_reportaddress,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report ON Report.student_id = Student.studentno WHERE ( Student.id = 42 ) LIMIT 1  
-
-[ 2017-03-07T22:37:58+08:00 ] 61.235.37.202 /teacher.php/Practice/delCor.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-SQL: SHOW COLUMNS FROM `dg_corporation` [ RunTime:0.0005s ]
-SQL: DELETE FROM `dg_corporation` WHERE ( `id` = 7 ) [ RunTime:0.0001s ]
-
-[ 2017-03-07T22:40:17+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-
-[ 2017-03-07T22:40:38+08:00 ] 101.226.33.216 /teacher.php/student/login/index.html
-ERR: ÈùûÊ≥ïÊìç‰Ωú:login
-
-[ 2017-03-07T22:40:51+08:00 ] 119.7.217.165 /teacher.php/student/login/index.html
-ERR: ÈùûÊ≥ïÊìç‰Ωú:login
-
-[ 2017-03-07T22:43:19+08:00 ] 58.212.247.133 /teacher.php/Student/view/id/1
-ERR: 1054:Unknown column 'Report.address_reportaddress' in 'field list'
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address_reportaddress AS address_reportaddress,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report ON Report.student_id = Student.studentno WHERE ( Student.id = 1 ) LIMIT 1  
-
-[ 2017-03-07T22:43:25+08:00 ] 58.212.247.133 /teacher.php/Student/view/id/42
-ERR: 1054:Unknown column 'Report.address_reportaddress' in 'field list'
- [ SQLËØ≠Âè• ] : SELECT Student.id AS id,Student.studentno AS studentno,Student.password AS password,Student.name AS name,Student.address AS address,Student.email AS email,Student.sex AS sex,Student.phone AS stuphone,Student.id AS sid,Class.classname AS classname,Class.grade AS grade,Class.master AS master,School.name AS deptname,Practice.guide AS guide,Practice.phone AS phone,Practice.isPractice AS isPractice,Practice.position AS position,Practice.starttime AS starttime,Practice.endtime AS endtime,Corporation.name AS corname,Report.id AS rid,Report.pubtime AS pubtime,Report.pic AS pic,Report.status AS status,Report.title AS title,Report.content AS content,Report.course AS course,Report.result AS result,Report.address_reportaddress AS address_reportaddress,Report.suggestion AS suggestion FROM dg_student Student LEFT JOIN dg_class Class ON Class.id = Student.classno LEFT JOIN dg_profession Profession ON Profession.id = Class.profession LEFT JOIN dg_school School ON Profession.school = School.id LEFT JOIN dg_practice Practice ON Practice.student_id = Student.studentno LEFT JOIN dg_corporation Corporation ON Practice.corporation_id = Corporation.id LEFT JOIN dg_report Report ON Report.student_id = Student.studentno WHERE ( Student.id = 42 ) LIMIT 1  
-
-[ 2017-03-07T22:44:30+08:00 ] 101.226.125.100 /teacher.php/student/login/index.html
-ERR: ÈùûÊ≥ïÊìç‰Ωú:login
-
-[ 2017-03-07T22:44:30+08:00 ] 101.226.33.208 /teacher.php/student/login/index.html
-ERR: ÈùûÊ≥ïÊìç‰Ωú:login
-
-[ 2017-03-07T22:56:53+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-
-[ 2017-03-07T22:57:01+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-
-[ 2017-03-07T22:57:06+08:00 ] 61.235.37.202 /teacher.php/Report/auditing.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
-SQL: UPDATE `dg_report` SET `suggestion`='',`score`='20',`status`='-1' WHERE ( `id` = 35 ) [ RunTime:0.0002s ]
-
-[ 2017-03-07T22:57:18+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-
-[ 2017-03-07T22:57:18+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-
-[ 2017-03-07T22:57:20+08:00 ] 61.235.37.202 /teacher.php/Report/auditing.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
-SQL: SHOW COLUMNS FROM `dg_report` [ RunTime:0.0005s ]
-SQL: UPDATE `dg_report` SET `suggestion`='',`score`='70',`status`='1' WHERE ( `id` = 32 ) [ RunTime:0.0002s ]
-
-[ 2017-03-07T22:57:29+08:00 ] 61.235.37.202 /teacher.php/Report/edit.html
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
-NOTIC: [8] Undefined index: USERNAME /var/www/html/Application/Teacher/Controller/CommonController.class.php Á¨¨ 21 Ë°å.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003033s ]
+SQL: SHOW COLUMNS FROM `dg_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dg_user` WHERE `username` = 'Âè∂ÊñπÂãá' AND `password` = '202cb962ac59075b964b07152d234b70' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-07T04:06:05+08:00 ] ::1 /shixi/teacher.php/Student/export.html
+ERR: 1054:Unknown column 'dg_class.name' in 'field list'
+ [ SQLËØ≠Âè• ] : SELECT dg_student.*,dg_class.name classname FROM `dg_student` LEFT JOIN dg_class ON dg_student.classno=dg_class.id  
 

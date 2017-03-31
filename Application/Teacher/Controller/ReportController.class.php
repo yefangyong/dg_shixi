@@ -33,6 +33,7 @@
                     $classes = D('class')->select();
                     break;
             }
+            $map['tea_del']=1;
             if($department)
                 $map[] = 'Student.classno IN(select id from dg_class where dep_id='.$department.')';
             if($class)
@@ -54,7 +55,13 @@
             $page = new \Think\Page($count,$listRows);
             $show = $page->show();
             $currentPage = I(C('VAR_PAGE'),1);
-            $reportList = D('ReportView')->where($map)->page($currentPage.','.$listRows)->select();  
+            $reportList = D('ReportView')->where($map)->order(array("pubtime"=>"desc"))->page($currentPage.','.$listRows)->select();  
+            for($i=0; $i<count($reportList); $i++){
+                $_changeinfo = D("Change")->where(array("student_id"=>$reportList[$i]['studentno'],"status"=>"1"))->order(array('applytime'=>'desc'))->limit(1)->select();
+                if($_changeinfo){
+                    $reportList[$i]['cname']=$_changeinfo[0]['cname'];
+                }
+            }
             $profession = D('profession')->select();
             $corporation = D('corporation')->select();
             $this->assign('department',$departments);
@@ -99,6 +106,7 @@
                     $classes = D('class')->select();
                     break;
             }
+            $map['tea_del']=0;
             if($department)
                 $map[] = 'classno IN(select id from dg_class where dep_id='.$department.')';
             $profession = I('get.profession',0);
@@ -205,12 +213,32 @@
      public function del()
      {
          $id = I('post.id',0,'intval');
-         $res = D('Report')->delReportById($id);
-         if($res){
-             show(1,'删除成功');
-         }else{
-             show(0,'删除失败');
-         }
+
+         if(is_array($id)){
+            $res = D('Report')->where("id IN(".implode(',', $id).")")->select();
+            $id = array();
+            for($i=0; $i<count($res); $i++){
+                if($res[$i]['status']==1){
+                    $id[]=$res[$i]['id'];
+                }else{
+                    $nook[]=$res[$i]['student_id'];
+                }
+            }
+            if($id)
+            $res = D('Report')->where("`id` IN(".implode(",", $id).") ")->save(array("tea_del"=>0));
+        }else{
+            $info = D('Report')->where("id=".$id)->select();
+            if($info[0]['status']==0){
+                show(0,'未审核状态，不能删除');
+                return ;
+            }
+            $res = D('Report')->where("`id` = ".$id)->save(array("tea_del"=>0));
+        }
+        if($res){
+            show(1,'删除成功！'.($nook ? '部分未审核状态，不能删除:'.implode(',', $nook) : ''));
+        }else{
+            show(0,'删除失败！'.($nook ? '部分未审核状态，不能删除:'.implode(',', $nook) : ''));
+        }
      }
 
      public function edit(){

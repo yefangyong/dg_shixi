@@ -48,12 +48,19 @@ class PracticeController extends CommonController{
             $list = D('PracticeView')->where($map)->page($currentPage.','.$listRows)->select();
             $dept = D('School')->getAllDepartment();
             foreach ($list as $k => $v) {
+                $_changeinfo = D("Change")->where(array("student_id"=>$list[$k]['studentno'],"status"=>"1"))->order(array('applytime'=>'desc'))->limit(1)->select();
+
+                if($_changeinfo){
+                    $list[$k]['cname']=$_changeinfo[0]['cname'];
+                    $list[$k]['position']=$_changeinfo[0]['position'];
+                    $list[$k]['guide']=$_changeinfo[0]['guide'];
+                }
                 //根据有无实习公司查询公司名称
-                if ($v['corporation_id'] != 0) {
+                elseif ($v['corporation_id'] != 0) {
                     $corname = D('Corporation')->getNameById($v['corporation_id']);
-                    $list[$k]['corname'] = $corname['name'];
+                    $list[$k]['cname'] = $corname['name'];
                 } else {
-                    $list[$k]['corname'] = '';
+                    
                 }
             }
             $this->assign('dept', $dept);
@@ -86,7 +93,7 @@ class PracticeController extends CommonController{
         $page = new \Think\Page($count,$listRows);
         $show = $page->show();
         $currentPage = I(C('VAR_PAGE'),1);
-        $corporationList = D('Corporation')->where($map)->page($currentPage.','.$listRows)->select();
+        $corporationList = D('Corporation')->where($map)->order("CONVERT(city USING gbk)")->page($currentPage.','.$listRows)->select();
         $address = D('Corporation')->getAddress();
         $this->assign('list',$corporationList);
         $this->assign('page',$show);
@@ -95,6 +102,38 @@ class PracticeController extends CommonController{
         $this->assign('currentPage',$currentPage);
         $this->assign('address',$address);
         return $this->display();
+    }
+
+    public function export(){
+        $applyList = D('PracticeView')->where($map)->page($currentPage.','.$listRows)->select();
+        foreach ($applyList as $k => $v) {
+            $_changeinfo = D("Change")->where(array("student_id"=>$applyList[$k]['studentno']." AND status=1"))->order(array('applytime'=>'desc'))->limit(1)->select();
+            if($_changeinfo){
+                $applyList[$k]['cname']=$_changeinfo[0]['cname'];
+                $applyList[$k]['poisition']=$_changeinfo[0]['poisition'];
+                $applyList[$k]['guide']=$_changeinfo[0]['guide'];
+            }
+            //根据有无实习公司查询公司名称
+            elseif ($v['corporation_id'] != 0) {
+                $corname = D('Corporation')->getNameById($v['corporation_id']);
+                $applyList[$k]['cname'] = $corname['name'];
+            } else {
+                
+            }
+        }
+        $str = "#,学号,姓名,班级,联系电话,实习单位,实习岗位,企业老师,安排方式";
+        $str .= "\n";
+        $row = 1;
+        for($i=0; $i<count($applyList); $i++)
+        {
+            $str .= $row++.','.$applyList[$i]['studentno'].','.$applyList[$i]['stuname'].','.$applyList[$i]['classname'].','.$applyList[$i]['phone'].','.$applyList[$i]['cname'].','.$applyList[$i]['position'].','.$applyList[$i]['guide'].','.setPracticeMode($applyList[$i]['mode'])."\n";
+        }
+        $str = mb_convert_encoding($str, "GBK", "UTF-8");
+        Header('Cache-Control: private, must-revalidate, max-age=0');
+        Header("Content-type: application/octet-stream"); 
+        Header("Content-Disposition: attachment; filename=Practice-".date('Ymd').".csv"); 
+        echo $str;
+        exit;
     }
 
     public function exportCor(){
@@ -209,7 +248,8 @@ class PracticeController extends CommonController{
             $data["mobile"] = I('post.mobile','','trim');
             $data["email"] = I('post.email','','trim');
             $data["zipcode"] = I('post.zipcode','','trim');
-//            $data["fax"] = I('post.fax','','trim');
+            $data["fax"] = I('post.fax','','trim');
+            $data["department"] = I('post.department','','trim');
             $data["website"] = I('post.website','','trim');
             $data['address'] = I('post.address','','trim');
              if(!isset($data['address'])||empty($data['address'])){
@@ -265,6 +305,7 @@ class PracticeController extends CommonController{
             $data["email"] = I('post.email','','trim');
             $data["zipcode"] = I('post.zipcode','','trim');
             $data["fax"] = I('post.fax','','trim');
+            $data["department"] = I('post.department','','trim');
             $data["website"] = I('post.website','','trim');
             $data['address'] = I('post.address','','trim');
             if(!isset($data['address'])||empty($data['address'])){
@@ -365,6 +406,7 @@ class PracticeController extends CommonController{
                 show(0,'日期范围不正确！');
             }
             $data['mode']=2;
+            $data['status']=1;
             $studentids = D('student')->where(array("id IN(".$_POST['studentids'].")"))->field('studentno')->select();
             for($i=0; $i<count($studentids); $i++){
                 $practiceinfo = D('practice')->where(array('student_id'=>$studentids[$i]['studentno']))->select();
@@ -372,13 +414,14 @@ class PracticeController extends CommonController{
                 if(empty($practiceinfo)){
                     $res[]=D('practice')->add($data);
                 }else{
-                    $res[]=D('practice')->where(array('id'=>$practiceinfo[0]['id']))->save($data);
+                    $error[]=$data['student_id'];
                 }
+                D('student')->where(array('studentno'=>$studentids[$i]['studentno']))->save(array('corporation_id'=>$data['corporation_id']));
             }
             if($res){
-                show(1,'安排成功');
+                show(1,'安排成功'.($error ? ',部分已经分配或申请状态，不能分配:'.implode(',', $error) : ''));
             }else{
-                show(0,'安排失败');
+                show(0,'安排失败'.($error ? ',部分已经分配或申请状态，不能分配:'.implode(',', $error) : ''));
             }
         }else{
             $corporation  = D('corporation')->select();
@@ -390,10 +433,6 @@ class PracticeController extends CommonController{
         }
     }
     
-    public function export(){
-        return $this->display();
-    }
-
     public function evaluation()
     {
         return $this->display();

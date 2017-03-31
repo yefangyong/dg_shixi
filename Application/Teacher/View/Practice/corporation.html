@@ -1,4 +1,4 @@
-<include file="Practice/nav"/>
+<include file="Public/nav"/>
 <!-------------------------------------- 内容开始 -------------------------------------->
 <main>
     <div class="ui-head">
@@ -39,6 +39,11 @@
             <div class="ht30"></div>
             <div class="ui-table">
                 <div class="hd">
+                    <div class="ui-paging">
+                        <div class="pull-left">
+                            <a href="" class="cbox" attr-id="0"><i></i>全选</a>
+                        </div>
+                    </div>
                     <div class="tool">
                         <p>
                             <a href="{:U('Practice/addCor')}">新增</a>
@@ -92,9 +97,6 @@
             <div class="ht35"></div>
             <div class="ui-paging">
                  {$page} 
-                <div class="pull-left">
-                    <a href="" class="cbox" attr-id="0"><i></i>全选</a>
-                </div>
             </div>
         </div>
     </div>

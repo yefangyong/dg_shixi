@@ -1,4 +1,4 @@
-<include file="Student/nav"/>
+<include file="Public/nav"/>
 <main>
     <style>
         label,td{font-size: 13px;}
@@ -10,7 +10,11 @@
                 <div class="ct">
                     <ul>
                         <li><a href="{:U('Student/index')}" class="on">学生管理</a></li>
-                        <li><a href="{:U('Student/teacher')}" >教师管理</a></li>
+                    <if condition="$_SESSION['adminUser']['type'] eq 2">
+                      <li><a href="{:U('Student/teacher')}" >教师管理</a></li>
+                      <li><a href="{:U('Student/classes')}" >班级管理</a></li>
+                      <li><a href="{:U('Student/department')}" >部门管理</a></li>
+                    </if>
                     </ul>
                 </div>
             </div>
